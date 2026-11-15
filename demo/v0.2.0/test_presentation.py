@@ -80,7 +80,7 @@ class PresentationTests(unittest.TestCase):
         for name in ['ONE_PAGER.md','DEMO_SCRIPT.md','SOURCE_REFERENCES.md','CLAIM_VERIFICATION.md','SUBMISSION_CHECKLIST.md']:
             self.assertTrue((ROOT/'submission'/name).is_file())
         readme=(ROOT/'README.md').read_text(encoding='utf-8')
-        self.assertIn('draft awaiting personal approval',readme)
+        self.assertIn('no project license is invented',readme)
         self.assertIn('prefers-reduced-motion: reduce',readme)
         self.assertNotIn('agreement?NLL',readme)
 

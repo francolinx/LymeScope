@@ -19,6 +19,6 @@
 
 **Limits.** Correlated sites, selected sequences and missing coordinates limit inference; no external functional validation, new target, protection or clinical claim. The [claim index](../docs/claim-index.json) preserves sources and limitations. Eligibility awaits organizers; no project license is invented.
 
-**Repository:** https://github.com/francolinx/LymeScope · [Reviewed feature branch](https://github.com/francolinx/LymeScope/tree/feature/ospc-masked-scoring-v0.2.0) · [Sources](SOURCE_REFERENCES.md) · [Offline workbench](../docs/index.html). Main is preserved; Pages hosting is not claimed live.
+**Repository:** https://github.com/francolinx/LymeScope · [Sources](SOURCE_REFERENCES.md) · [Offline workbench](../docs/index.html). Prepared for the reviewed main release; publication requires the lead's approval. Pages hosting is not claimed live.
 
 Submission: November 15, 2026, noon Central. Live demo: 1:00 PM; five minutes maximum. New research cutoff: 10:30 AM Central. Saved CPU and personal-Spark GPU evidence work offline; event timing is optional.

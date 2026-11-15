@@ -16,7 +16,7 @@ EXPERIMENT=ROOT/'sparkprep/experiments/stretch_v0.2.0_20261115T072916Z'
 SOURCE_COMMIT='aafe818a20ea025370cf4b65145a9684e80aaaef'
 FRONTIER=ROOT/'sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z'
 FRONTIER_COMMIT='82fb8b53018ba4012ccebf02a29efa87b892f6ed'
-BRANCH='feature/ospc-masked-scoring-v0.2.0'
+BRANCH='main'  # Reviewed homepage release target; no publication performed here.
 SCENES=('coverage-evidence','ospc-rotation','alignment-map','residue-mapping','ospc-dimer')
 FIGURES=('full_panel_agreement_predictability','experimental_dimer_comparison','calculated_sasa_dimer_context')
 
@@ -70,7 +70,7 @@ def build():
               'source_demo':'demo/v0.2.0/index.html','source_demo_sha256':digest(DEMO/'index.html'),
               'page_sha256':digest(DOCS/'index.html'),'scientific_source_commit':SOURCE_COMMIT,
               'frontier_source_commit':FRONTIER_COMMIT,
-              'files':records,'total_copied_bytes':sum(x['bytes'] for x in records),
+              'repository_link_ref':BRANCH,'files':records,'total_copied_bytes':sum(x['bytes'] for x in records),
               'model_weights_included':False,'hosting_settings_changed':False}
     (DOCS/'workbench-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8',newline='\n')
     print(json.dumps({'page':str(DOCS/'index.html'),'copied_files':len(records),'bytes':manifest['total_copied_bytes']}))

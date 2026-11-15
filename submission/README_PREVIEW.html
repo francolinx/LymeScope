@@ -3,15 +3,49 @@
 <title>LymeScope — local README preview</title><style>body{margin:0;background:#f3f7f7;color:#183440;font:17px/1.65 system-ui,sans-serif}main{max-width:940px;margin:32px auto;padding:32px;background:white}h1,h2{line-height:1.2}h1{letter-spacing:.12em;font-size:46px}h2{border-top:1px solid #cfe0e3;padding-top:25px;margin-top:38px}a{color:#086b78}img,svg{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto}td,th{padding:10px;border:1px solid #d3e1e4}code{overflow-wrap:anywhere}blockquote{border-left:4px solid #188a87;margin-left:0;padding:6px 20px;background:#edf7f6}summary{cursor:pointer}picture{display:block}@media(max-width:600px){main{padding:18px;margin:0}h1{font-size:34px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style><main><p><strong>Local preview.</strong> GitHub rendering has not been verified.</p><h1>LYMESCOPE</h1>
 <p><strong>Making the invisible biology of Lyme disease explorable.</strong></p>
 <p>More than <strong>80,000 Lyme cases are reported to CDC each year</strong>. A separate claims-based estimate suggests <strong>476,000 people are diagnosed and treated</strong>; these are different measures, with different limitations. <a href="https://www.cdc.gov/lyme/data-research/facts-stats/">CDC</a> · <a href="../docs/claim-index.md#c01">Evidence C01</a></p>
+<p>LymeScope focuses on <strong>OspC, outer surface protein C</strong>, a Borrelia surface antigen with experimentally studied structures and antibody interactions. Its purpose is to let researchers challenge a seemingly convincing residue score by tracing it to observations, model assumptions and coordinates. <a href="https://doi.org/10.1093/emboj/20.5.971">Experimental OspC structure</a> · <a href="https://doi.org/10.4049/jimmunol.2400247">B11–OspC study</a></p>
 <p><strong>Question:</strong> Within 30 selected natural OspC sequences, does empirical sequence agreement track a protein language model’s ability to predict each original residue? <strong>Result:</strong> A completed personal-GB10 experiment scored 6,305 singleton masks and found weak descriptive agreement–predictability correlation across 202 fully covered columns (Spearman rho <strong>0.134696</strong>). <strong>Limit:</strong> This selected-panel result does not establish immune protection, antibody accessibility, a vaccine target or clinical utility. <a href="../docs/claim-index.md#c02">C02</a> · <a href="../docs/claim-index.md#c04">C04</a> · <a href="../docs/claim-index.md#c07">C07</a></p>
+<p><picture><source media="(prefers-reduced-motion: reduce)" srcset="../demo/v0.2.0/assets/ospc-dimer.png"><img src="../demo/v0.2.0/assets/ospc-dimer.gif" alt="Real experimental 1GGQ OspC dimer rotating as a rigid body. Teal and blue are the two deposited chains; amber marks the separate 8 angstrom C-alpha proximity proxy." width="960"></picture></p>
+<p><strong>Start with the real molecule.</strong> Deposited experimental 1GGQ chains A/B, with rigid camera rotation—not a predicted fold or molecular dynamics. Amber is the <strong>8 Å Cα proximity proxy</strong>, distinct from the <strong>4.5 Å heavy-atom contacts</strong> and calculated SASA below. <a href="../demo/v0.2.0/assets/ospc-dimer.png">Static image</a> · <a href="https://www.rcsb.org/structure/1GGQ">Experimental source</a> · <a href="../docs/claim-index.md#c09">Geometry and limits</a></p>
+<p><strong>This page is the complete scientific presentation.</strong> Read the findings, visuals, methods and limits below without leaving GitHub. The <a href="../docs/index.html">optional interactive workbench</a>, <a href="ONE_PAGER.md">one-page summary</a> and <a href="../docs/claim-index.md">claim index</a> provide deeper inspection. Pages is not live yet.</p>
 <p><img alt="Real full-panel agreement and masked-original-residue NLL, with experimental-coordinate contact context and panel sensitivity." src="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_agreement_predictability.png" /></p>
 <p><em>Original saved scientific output. Lower NLL means more predictable under the pinned checkpoint. Incomplete columns remain visible and are excluded from full-coverage ranks. <a href="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_agreement_predictability.svg">Full-size SVG</a> · <a href="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_comparison_v2/column_comparison.tsv">Exact data</a>.</em></p>
-<h2>Open the evidence workbench</h2>
-<p><strong><a href="../docs/index.html">Guided workbench: <code>docs/index.html</code></a></strong> · <a href="../demo/v0.2.0/index.html">Original demo</a> · <a href="../sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/index.html">Frozen v0.1.0 viewer</a></p>
-<p>Open the HTML after downloading/cloning this feature branch. The workbench is zero-build, with embedded data and local assets: no model, server, package installation or network is needed. <strong>GitHub’s file view shows source; GitHub Pages hosting is prepared, not claimed live.</strong> <a href="../RUN_LOCALLY.md">Local instructions</a> · <a href="../docs/PAGES_PREPARATION.md">Pages preparation</a></p>
-<pre><code class="language-text">git clone --branch feature/ospc-masked-scoring-v0.2.0 https://github.com/francolinx/LymeScope.git
-# Then open LymeScope/docs/index.html in a browser.
-</code></pre>
+<h2>How to read the evidence</h2>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Meaning here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MEASURED</strong></td>
+<td>Recorded execution or observation, with its hardware and timing scope stated</td>
+</tr>
+<tr>
+<td><strong>VERIFIED EXPERIMENTAL STRUCTURE</strong></td>
+<td>Pre-existing deposited coordinates with checked assembly and sequence correspondence</td>
+</tr>
+<tr>
+<td><strong>CALCULATED</strong></td>
+<td>A reproducible statistic or geometric quantity derived from saved data</td>
+</tr>
+<tr>
+<td><strong>EXPLORATORY</strong></td>
+<td>A descriptive or held-region diagnostic with limited generalizability; not functional validation</td>
+</tr>
+<tr>
+<td><strong>PLANNED</strong></td>
+<td>A prepared workflow or research proposal, not a completed measurement</td>
+</tr>
+<tr>
+<td><strong>NOT RUN</strong></td>
+<td>No result exists for that execution; a placeholder is not evidence</td>
+</tr>
+</tbody>
+</table>
+<p><strong>UNVERIFIED</strong> marks an unresolved identity or observation, such as the VAST backend. A result may be measured on a personal Spark while its biological interpretation remains exploratory.</p>
 <table>
 <thead>
 <tr>
@@ -44,19 +78,6 @@
 </tbody>
 </table>
 <p><a href="../docs/claim-index.md#c03">C03</a> · <a href="../docs/claim-index.md#c08">C08</a> · <a href="../docs/claim-index.md#c09">C09–C12</a> · <a href="../docs/claim-index.md#c15">Independent evidence C15</a></p>
-<h2>From experimental structure to local scientific AI</h2>
-<p>X-ray/NMR → homology, threading and ab initio methods → CASP blind assessment → AlphaFold → protein language models → local, inspectable evidence analysis. These approaches answer different questions; there is no universal historical accuracy percentage. <a href="SOURCE_REFERENCES.md#timeline-sources">Primary-source timeline</a> · <a href="../demo/v0.2.0/assets/biology-timeline.svg">Accessible original timeline</a></p>
-<p>LymeScope uses <strong>ESM-2 for residue scoring</strong> and <strong>existing experimental PDB structures for coordinates</strong>. ESMFold and AlphaFold are historical context, not the source of these OspC coordinates. <a href="../docs/claim-index.md#c06">C06</a> · <a href="../docs/claim-index.md#c11">C11</a></p>
-<details>
-<summary><strong>Three original scientific animations — with static alternatives</strong></summary>
-<p><picture><source media="(prefers-reduced-motion: reduce)" srcset="../demo/v0.2.0/assets/ospc-dimer.png"><img src="../demo/v0.2.0/assets/ospc-dimer.gif" alt="Rigid rotation of experimentally observed 1GGQ chains A and B. Amber is the separate 8 angstrom C-alpha proximity proxy." width="960"></picture></p>
-<p><strong>The actual homodimer.</strong> Teal/blue show the deposited partners; amber is the legacy <strong>8 Å Cα proximity proxy</strong>, distinct from the current <strong>4.5 Å heavy-atom contact</strong> field. Rotation is camera motion, not folding or dynamics. <a href="../demo/v0.2.0/assets/ospc-dimer.png">Static</a>.</p>
-<p><picture><source media="(prefers-reduced-motion: reduce)" srcset="../demo/v0.2.0/assets/residue-mapping.png"><img src="../demo/v0.2.0/assets/residue-mapping.gif" alt="Frozen alignment column 68 maps to Q07337 position 67 and observed 1GGQ A Ser67, with 30 of 30 coverage and 66.7 percent agreement." width="960"></picture></p>
-<p><strong>An explicit sequence-to-structure map.</strong> Column 68 → Q07337 position 67 → 1GGQ A Ser67. Coverage and agreement travel with the correspondence. <a href="../demo/v0.2.0/assets/residue-mapping.png">Static</a>.</p>
-<p><picture><source media="(prefers-reduced-motion: reduce)" srcset="../demo/v0.2.0/assets/coverage-evidence.png"><img src="../demo/v0.2.0/assets/coverage-evidence.gif" alt="Two 100 percent agreement values are supported by 30 of 30 versus one of 30 observations." width="960"></picture></p>
-<p><strong>The coverage trap.</strong> The percentage is correctly calculated from one observation; that is insufficient support for broad conservation in this panel. <a href="../demo/v0.2.0/assets/coverage-evidence.png">Static</a>.</p>
-<p>Original asset hashes, frame counts and sources: <a href="../demo/v0.2.0/assets/manifest.json">manifest</a>, <a href="../docs/claim-index.md#c16">C16</a>. The interactive workbench starts with static images and offers deliberate play/stop controls. Browser playback is a separate validation step.</p>
-</details>
 <h2>What was measured</h2>
 <table>
 <thead>
@@ -116,26 +137,57 @@
 </table>
 <p><a href="../docs/claim-index.md#c02">C02</a> · <a href="../docs/claim-index.md#c04">C04–C05</a> · <a href="../docs/claim-index.md#c07">C07</a> · <a href="../docs/claim-index.md#c09">C09–C10</a> · <a href="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/calculated_sasa_dimer_context.svg">Original SASA figure</a></p>
 <p><strong>Unknown is a data state.</strong> Unobserved/unmapped contact and SASA values stay null, distinct from observed false and calculated zero. The current aggregate is <strong><code>full_panel_comparison_v2</code></strong>. <a href="../docs/claim-index.md#c12">C12</a></p>
-<h2>CIQ / NVIDIA / VAST event architecture</h2>
-<pre><code class="language-mermaid">flowchart LR
-  A[&quot;Frozen panel + explicit mapping&quot;] --&gt; B[&quot;Personal NVIDIA GB10: completed ESM-2&quot;]
-  B --&gt; C[&quot;Pinned scientific evidence in Git&quot;]
-  C --&gt; D[&quot;Offline guided workbench&quot;]
-  C -. &quot;Authorized staging pending&quot; .-&gt; E[&quot;CIQ Fuzzball / Team 15&quot;]
-  E -. &quot;Scientific trial pending&quot; .-&gt; F[&quot;Spark30: 6,305 masks&quot;]
-  E -. &quot;Concurrent trial pending&quot; .-&gt; G[&quot;Spark29 + Spark30: 3,156 / 3,149&quot;]
-  E --- H[&quot;Team 15 shared NFS storage&quot;]
-</code></pre>
-<p>Saved event receipts demonstrate a real CUDA calculation on Spark30 and identical shared-storage bytes read on Spark29 and Spark30. They establish infrastructure, not scientific scaling. <strong>VAST backend identity remains UNVERIFIED.</strong> The saved provisioner is NFS; current CLI reads timed out, and NFS alone does not identify its storage vendor. The <a href="../workflows/ospc-spark-v0.2.1/VAST_STORAGE_PLAN.md">scientific shared-storage plan</a> reuses the existing 1 GiB volume, with exact object-cache ingress, one shared model copy and separate output shards—all <strong>PLANNED</strong>. <a href="VAST_EVIDENCE.md">VAST evidence and blockers</a> · <a href="../docs/claim-index.md#c13">Receipts / C13</a></p>
-<p>The morning trial reuses the exact batch-8 scorer and existing six-file model cache. Independent GPU task shards are <strong>not</strong> NCCL/RDMA or distributed-model capacity. Physical-node attribution, runtime/pilot checks, exact task coverage, fixed numerical tolerance and complete coordinator makespan are acceptance gates. <a href="../docs/MORNING_RUNBOOK.md">Morning runbook</a> · <a href="../workflows/ospc-spark-v0.2.1/VENUE_HANDOFF.md">Exact venue contract</a> · <a href="../docs/claim-index.md#c14">C14</a></p>
-<h2>Challenge, reproduce, inspect</h2>
-<ul>
-<li><strong>Start here:</strong> <a href="../docs/claim-index.md">claim index</a> / <a href="../docs/claim-index.json">machine-readable JSON</a>, <a href="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/SCIENCE_FINDINGS.md">methods and limits</a>, <a href="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_v1/residue_nll.tsv">raw 6,305 scores</a>.</li>
-<li><strong>Exact source:</strong> personal-Spark commit <a href="https://github.com/francolinx/LymeScope/commit/aafe818a20ea025370cf4b65145a9684e80aaaef"><code>aafe818a20ea025370cf4b65145a9684e80aaaef</code></a>; frozen baseline <code>8058846c05d4dccd60117dd29ef784af43570418</code>. Raw-score SHA256: <code>b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f</code>.</li>
-<li><strong>Model:</strong> <code>facebook/esm2_t6_8M_UR50D</code>, revision <code>c731040fcd8d73dceaa04b0a8e6329b345b0f5df</code>; eval/inference, float32, eager attention, full-vocabulary log-softmax. Full natural sequences, with exact accession/position/sequence-hash provenance. <a href="../docs/claim-index.md#c06">C06</a>.</li>
-<li><strong>Validation:</strong> <a href="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/provenance/tests_full_release.log">published 16-test Spark receipt</a>, <a href="spark-integration-validation.json">laptop integration checks</a>, <a href="frontier-validation.json">historical frontier sprint checks</a>, <a href="frontier-science-integration-validation.json">current optional science import: 59 passing Python tests and both offline UI copies</a>. Offline fixtures are distinct from actual inference; browser rendering is not inferred from tests.</li>
-<li><strong>Attribution:</strong> <a href="SOURCE_REFERENCES.md">primary sources and terms</a>. No project license is invented; public visibility does not grant redistribution rights to third-party material.</li>
-</ul>
+<p><strong>EXPLORATORY · The measurements can disagree.</strong> Empirical modal agreement counts the most common observed residue. Masked NLL measures the probability assigned to an original residue when it is hidden from ESM-2. Lower NLL means greater predictability under that checkpoint. Across F=202, agreement versus predictability (negative NLL) has descriptive Spearman <strong>rho 0.134696</strong>, using average tied ranks; it is not a significance claim.</p>
+<table>
+<thead>
+<tr>
+<th>Alignment column</th>
+<th>Actual residue counts</th>
+<th style="text-align: right;">Coverage</th>
+<th style="text-align: right;">Modal agreement</th>
+<th style="text-align: right;">Mean original-residue NLL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>177</strong></td>
+<td>G:30</td>
+<td style="text-align: right;">30/30</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;"><strong>4.01135 nats</strong></td>
+</tr>
+<tr>
+<td><strong>129</strong></td>
+<td>A:9, D:3, E:12, K:5, T:1</td>
+<td style="text-align: right;">30/30</td>
+<td style="text-align: right;">40%</td>
+<td style="text-align: right;"><strong>1.54783 nats</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The invariant glycine column is less predictable to this model than the original residues in the variable column. These selected examples illustrate different measurements, not immune function. The 239 overlapping sensitivity subsets reuse per-sequence scores and the fixed alignment; remaining subset size is the coverage denominator. They are not independent replicates or population confidence intervals. <a href="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_comparison_v2/column_comparison.tsv">Exact saved columns</a></p>
+<h2>Scientific animation gallery</h2>
+<p>All six original animations are visible in this page: the dimer above, four scientific views below, and the explicitly historical task-shard illustration in the architecture section. Scientific views use saved measurements or experimental coordinates. Every animation has a static alternative. No animation depicts protein folding or a measured event speedup.</p>
+<h3>From sequences to evidence</h3>
+<p><picture><source media="(prefers-reduced-motion: reduce)" srcset="../demo/v0.2.0/assets/alignment-map.png"><img src="../demo/v0.2.0/assets/alignment-map.gif" alt="The saved 30 by 218 OspC alignment becomes column summaries while keeping coverage and empirical agreement distinct." width="960"></picture></p>
+<p><strong>Thirty natural sequences, 218 columns.</strong> The animation summarizes the fixed alignment; 202 columns have full coverage. Gaps reduce support, and agreement describes only observed residues. <a href="../demo/v0.2.0/assets/alignment-map.png">Static</a> · <a href="../sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/viewer_data.json">Frozen data</a> · <a href="../docs/claim-index.md#c02">C02</a></p>
+<h3>Follow a residue across coordinate systems</h3>
+<p><picture><source media="(prefers-reduced-motion: reduce)" srcset="../demo/v0.2.0/assets/residue-mapping.png"><img src="../demo/v0.2.0/assets/residue-mapping.gif" alt="Frozen alignment column 68 maps to Q07337 position 67 and observed 1GGQ A Ser67, with 30 of 30 coverage and 66.7 percent agreement." width="960"></picture></p>
+<p><strong>An explicit sequence-to-structure map.</strong> Column 68 → Q07337 position 67 → 1GGQ A Ser67. Coverage and agreement travel with the correspondence; author numbering and alignment columns are not interchangeable. <a href="../demo/v0.2.0/assets/residue-mapping.png">Static</a> · <a href="../demo/v0.2.0/assets/manifest.json">Mapping provenance</a></p>
+<h3>The coverage trap</h3>
+<p><picture><source media="(prefers-reduced-motion: reduce)" srcset="../demo/v0.2.0/assets/coverage-evidence.png"><img src="../demo/v0.2.0/assets/coverage-evidence.gif" alt="Two 100 percent agreement values are supported by 30 of 30 versus one of 30 observations." width="960"></picture></p>
+<p><strong>The denominator changes the interpretation.</strong> The percentage is correctly calculated from one observation; that is insufficient support for broad conservation in this panel. <a href="../demo/v0.2.0/assets/coverage-evidence.png">Static</a> · <a href="../docs/claim-index.md#c03">C03</a></p>
+<h3>What the experiment actually observed</h3>
+<p><picture><source media="(prefers-reduced-motion: reduce)" srcset="../demo/v0.2.0/assets/ospc-rotation.png"><img src="../demo/v0.2.0/assets/ospc-rotation.gif" alt="The 162 observed C-alpha coordinates of experimental 1GGQ chain A rotate without changing the deposited structure." width="960"></picture></p>
+<p><strong>Observed coordinates only.</strong> This single-chain view uses 162 deposited Cα positions. Unobserved residues are not assigned invented coordinates. Rigid rotation is a presentation device, not a new structural prediction. <a href="../demo/v0.2.0/assets/ospc-rotation.png">Static</a> · <a href="https://www.rcsb.org/structure/1GGQ">PDB 1GGQ</a> · <a href="../docs/claim-index.md#c02">F/M/MF definitions</a></p>
+<p>Original asset hashes, frame counts and sources: <a href="../demo/v0.2.0/assets/manifest.json">manifest</a>, <a href="../docs/claim-index.md#c16">C16</a>. The interactive workbench starts with static images and offers deliberate play/stop controls. Browser playback is a separate validation step.</p>
+<p>All six GIFs are 960×640, contain 60 decoded frames and loop over 10.8 seconds; together they total 3,577,575 bytes (3.41 MiB). Images use a bounded display width and scale with the page. The diagrams have their own contrasting backgrounds; reduced-motion picture sources and direct static links accompany them. No JavaScript is required by this README.</p>
+<h2>Experimental structures and calculated geometry</h2>
+<p><strong>VERIFIED EXPERIMENTAL STRUCTURE</strong> — 1GGQ's deposited A/B biological assembly is checked before interchain geometry is calculated. 1G5Z supplies a separately mapped reference with its deposited symmetry partner. Native precursor position, alignment column, chain identity and PDB author/label numbering remain separate. <a href="https://doi.org/10.1093/emboj/20.5.971">Kumaran et al., EMBO J 2001</a> · <a href="https://doi.org/10.1074/jbc.M010062200">Eicken et al., J Biol Chem 2001</a></p>
+<p><img alt="Original comparison of the experimental 1GGQ and 1G5Z dimers, their constructs and calculated interchain contacts." src="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/experimental_dimer_comparison.png" /></p>
+<p><strong>CALCULATED</strong> — At a fixed <strong>4.5 Å protein-heavy-atom cutoff</strong>, 1GGQ has <strong>118 interchain residue pairs</strong> and <strong>51 contacting residues per partner</strong>. The preserved animation's <strong>8 Å Cα proxy</strong> gives <strong>49/162</strong> per partner; it is a different definition. Neither is an antibody-contact endpoint. The antibody experiment below uses separate Fab–OspC atom pairs.</p>
+<p><img alt="Original calculated SASA figure with distinct monomer, dimer and dimerization-loss quantities, based on deposited experimental coordinates." src="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/calculated_sasa_dimer_context.png" /></p>
+<p>Calculated solvent-accessible surface area uses a <strong>1.40 Å probe</strong> and <strong>1,920 sampling points per atom</strong>. The total 1GGQ SASA loss on dimerization is <strong>4,081.16 Å²</strong>; mean partner interface area is half, <strong>2,040.58 Å²</strong>. This is static geometry for incomplete constructs, not measured physiological solvent exposure or antibody accessibility. Unobserved coordinates remain null; a calculated zero is a separate valid state. <a href="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/sasa_context_summary.json">Saved SASA method and results</a></p>
 <h2>A hypothesis tested — and not supported</h2>
 <p>Does agreement–predictability discordance add information about <strong>experimentally observed antibody contacts</strong>, beyond agreement, reference amino-acid identity and unbound structural geometry? The optional personal-Spark sprint tested this predeclared question using the existing scores and exact experimental-complex mappings. <strong>Adding signed discordance did not improve the primary B11 diagnostic.</strong> <a href="../docs/claim-index.md#c18">Evidence C18</a></p>
 <p><img alt="Original frontier figure: real experimental antibody footprint and a negative added-discordance diagnostic." src="../sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/results/FRONTIER_EXPERIMENT.png" /></p>
@@ -162,6 +214,149 @@
 </table>
 <p><strong>Brier error worsened by +0.005388.</strong> These are correlated sites in one selected antigen/reference, evaluated with eight held-region blocks and five-column guards, not external functional validation. The figure also retains a small exploratory mean-NLL-added difference; it does not establish a biological advance or overturn the primary negative result. No new inference occurred. <a href="../sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/RESULT_SUMMARY.md">Exact result</a> · <a href="../sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/METHODS_AND_LIMITATIONS.md">Methods and limitations</a></p>
 <p>Story 4 exposes <strong>31 eligible B11 contacts / 152 sites</strong> in 9BIF and supporting <strong>25 / 152</strong> B5 contacts in 7UIJ's own eligible set. Whole-construct observed counts are 32 and 27 respectively. The <strong>8C1 HDX region is literature-derived</strong>, with null atomic-contact labels. Antibody contacts, homodimer contacts and calculated SASA stay separate; missing coordinates remain unknown. These are pre-existing experimental structures, not AI-generated folds, and no new antibody target or protection claim is made. <a href="../docs/claim-index.md#c15">C15</a> · <a href="../sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/results/FRONTIER_EXPERIMENT.svg">Original SVG</a></p>
+<p>Primary experimental sources: <strong>human B11</strong>, Rudolph et al., <em>J Immunology</em> (2024), <a href="https://doi.org/10.4049/jimmunol.2400247">paper</a> / <a href="https://www.rcsb.org/structure/9BIF">9BIF</a>; <strong>mouse B5</strong>, Rudolph et al., <em>mBio</em> (2023), <a href="https://doi.org/10.1128/mbio.02981-22">paper</a> / <a href="https://www.rcsb.org/structure/7UIJ">7UIJ</a>; <strong>8C1 HDX-region study</strong>, Vance et al., <em>Microbiology Spectrum</em> (2025), <a href="https://doi.org/10.1128/spectrum.02883-24">paper</a>. B11 and B5 are related structural contexts, not independent clinical validation. Missing Fab loops can leave genuine contacts unobserved; a false distance label is not biological non-binding.</p>
 <p>Pinned frontier source: <a href="https://github.com/francolinx/LymeScope/commit/82fb8b53018ba4012ccebf02a29efa87b892f6ed"><code>82fb8b53018ba4012ccebf02a29efa87b892f6ed</code></a>. The next research step would require separately justified data or an external validation design; this negative diagnostic is retained in full. The v0.2.1 masked-scoring result and venue contract are unchanged.</p>
 <p><strong>Submission:</strong> <a href="ONE_PAGER.md">one-page summary</a> · <a href="DEMO_SCRIPT.md">five-minute demo</a> · <a href="SUBMISSION_CHECKLIST.md">checklist</a>. November 15: research cutoff <strong>10:30 AM Central</strong>, submission <strong>noon</strong>, live demo <strong>1:00 PM</strong>. The completed personal-Spark result and offline fallback do not depend on a venue GPU run.</p>
-<p>Project lead statement remains <strong>draft awaiting personal approval</strong>; organizer eligibility and submission-route confirmation are tracked in the checklist. Main and hosting settings require separate approval.</p></main></html>
+<h2>From experimental structure to local scientific AI</h2>
+<p>X-ray/NMR → homology, threading and ab initio methods → CASP blind assessment → AlphaFold → protein language models → local, inspectable evidence analysis. These approaches answer different questions; there is no universal historical accuracy percentage. <a href="SOURCE_REFERENCES.md#timeline-sources">Primary-source timeline</a> · <a href="../demo/v0.2.0/assets/biology-timeline.svg">Accessible original timeline</a></p>
+<p><img alt="Illustrated timeline: experimental X-ray and NMR structures, threading and homology, CASP blind assessment, AlphaFold, ESM language models and LymeScope's inspectable local evidence." src="../demo/v0.2.0/assets/biology-timeline.svg" /></p>
+<table>
+<thead>
+<tr>
+<th>Milestone</th>
+<th>What changed — and what it does not imply</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1958 · X-ray structural biology</strong></td>
+<td>Myoglobin demonstrated a route from diffraction measurements to a protein model. Experimental coordinates remain central evidence. <a href="https://www.nature.com/articles/181662a0">Kendrew et al., Nature</a></td>
+</tr>
+<tr>
+<td><strong>1980s · Solution NMR</strong></td>
+<td>Spectroscopic constraints and distance geometry provided another experimental route. <a href="https://pubmed.ncbi.nlm.nih.gov/2582141/">Havel &amp; Wüthrich, J Mol Biol</a></td>
+</tr>
+<tr>
+<td><strong>Homology, threading, ab initio</strong></td>
+<td>Comparative models use related templates; threading tests sequence–fold compatibility; ab initio/fragment methods search conformations without a close full-structure template. These routes overlap and have no single accuracy percentage. <a href="https://doi.org/10.1006/jmbi.1993.1626">Šali &amp; Blundell, 1993</a> · <a href="https://doi.org/10.1038/358086a0">Jones et al., 1992</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/9149153/">Simons et al., 1997</a></td>
+</tr>
+<tr>
+<td><strong>1994 onward · CASP</strong></td>
+<td>Blind assessments compare predictions with structures not available to participants. <a href="https://www.ebi.ac.uk/training/online/courses/alphafold/validation-and-impact/how-have-alphafolds-predictions-of-protein-structure-been-validated/">EMBL-EBI overview</a></td>
+</tr>
+<tr>
+<td><strong>2018–2024 · AlphaFold</strong></td>
+<td>CASP13/14 milestones, the AlphaFold2 paper/database and AlphaFold3 expanded prediction capabilities. Prediction remains different from experimental evidence. <a href="https://doi.org/10.1038/s41586-021-03819-2">Jumper et al., 2021</a> · <a href="https://doi.org/10.1038/s41586-024-07487-w">Abramson et al., 2024</a></td>
+</tr>
+<tr>
+<td><strong>ESM · Protein language models</strong></td>
+<td>Sequence-trained models learn contextual residue representations; ESMFold research also addressed structure. LymeScope uses <strong>ESM-2 masked scoring</strong>, not ESMFold coordinates. <a href="https://pubmed.ncbi.nlm.nih.gov/36927031/">Lin et al., Science 2023</a></td>
+</tr>
+<tr>
+<td><strong>2026 · LymeScope</strong></td>
+<td>Connect selected natural sequences, experimental coordinates, local masked-residue scoring and a falsifiable antibody-contact diagnostic. The contribution is inspectable evidence, not a new fold or validated epitope predictor.</td>
+</tr>
+</tbody>
+</table>
+<p>LymeScope uses <strong>ESM-2 for residue scoring</strong> and <strong>existing experimental PDB structures for coordinates</strong>. ESMFold and AlphaFold are historical context, not the source of these OspC coordinates. <a href="../docs/claim-index.md#c06">C06</a> · <a href="../docs/claim-index.md#c11">C11</a></p>
+<h2>CIQ / NVIDIA / VAST event architecture</h2>
+<p><strong>PLANNED · Historical architecture illustration, not a benchmark.</strong> This sixth original GIF shows the earlier <strong>batch-16</strong> design: <strong>415</strong> per-sequence scoring forwards, split <strong>208/207</strong>. Its labels are preserved as development history. <strong>The completed experiment and current venue contract use batch 8: 805 forwards, split 403/402.</strong> The biological workload is the same 6,305 natural-residue masks; no repeated sequences are added to manufacture scaling.</p>
+<p><picture><source media="(prefers-reduced-motion: reduce)" srcset="../demo/v0.2.0/assets/task-shards.png"><img src="../demo/v0.2.0/assets/task-shards.gif" alt="Historical, unexecuted batch-16 task-shard illustration: 6,305 masks in 415 forwards, split 208 and 207. These are not measured timings; the current batch-8 protocol uses 805 forwards, split 403 and 402." width="960"></picture></p>
+<p><strong>What it demonstrates:</strong> whole-sequence tasks can be assigned to independent GPU workers and merged after exact coverage checks. <strong>What it cannot establish:</strong> performance, numerical equivalence, physical-node placement or model capacity. <a href="../demo/v0.2.0/assets/task-shards.png">Static illustration</a> · <a href="../workflows/ospc-spark-v0.2.1/VENUE_HANDOFF.md">Current batch-8 contract</a></p>
+<pre><code class="language-mermaid">flowchart LR
+  A[&quot;Frozen panel + explicit mapping&quot;] --&gt; B[&quot;Personal NVIDIA GB10: completed ESM-2&quot;]
+  B --&gt; C[&quot;Pinned scientific evidence in Git&quot;]
+  C --&gt; D[&quot;Offline guided workbench&quot;]
+  C -. &quot;Authorized staging pending&quot; .-&gt; E[&quot;CIQ Fuzzball / Team 15&quot;]
+  E -. &quot;Scientific trial pending&quot; .-&gt; F[&quot;Spark30: 6,305 masks&quot;]
+  E -. &quot;Concurrent trial pending&quot; .-&gt; G[&quot;Spark29 + Spark30: 3,156 / 3,149&quot;]
+  E --- H[&quot;Team 15 shared NFS storage&quot;]
+</code></pre>
+<p>Saved event receipts demonstrate a real CUDA calculation on Spark30 and identical shared-storage bytes read on Spark29 and Spark30. They establish infrastructure, not scientific scaling. <strong>VAST backend identity remains UNVERIFIED.</strong> The saved provisioner is NFS; current CLI reads timed out, and NFS alone does not identify its storage vendor. The <a href="../workflows/ospc-spark-v0.2.1/VAST_STORAGE_PLAN.md">scientific shared-storage plan</a> reuses the existing 1 GiB volume, with exact object-cache ingress, one shared model copy and separate output shards—all <strong>PLANNED</strong>. <a href="VAST_EVIDENCE.md">VAST evidence and blockers</a> · <a href="../docs/claim-index.md#c13">Receipts / C13</a></p>
+<p><strong>MEASURED infrastructure evidence:</strong> Fuzzball scheduled a CUDA matrix operation on physical Spark30's NVIDIA GB10; <code>ones(32,32) @ ones(32,32)</code> produced a summed result of <strong>32,768</strong> on <code>cuda:0</code>. A <strong>78-byte</strong> persistent sentinel written by Spark30 was read with identical SHA256 on both Spark29 and Spark30. Those receipts demonstrate GPU execution and shared-storage consistency, not a scientific throughput speedup. The event runtime receipt records PyTorch 2.10.0a0, CUDA 13.0 and an image-cache hit. <a href="../findings/phase-b-results.json">Original event receipts</a></p>
+<p>The proposed scientific storage path is: verified inputs and the pinned model cache → existing Team 15 shared volume (<strong>VAST backing unverified</strong>) → Fuzzball tasks on Spark29/Spark30 → separate persistent output shards → exact merge/numerical validation → LymeScope evidence. Every scientific transfer/run on this path is <strong>PLANNED</strong>. No new volume or storage tuning is required by this plan.</p>
+<table>
+<thead>
+<tr>
+<th>Current exact trial</th>
+<th>Physical node(s)</th>
+<th style="text-align: right;">Successful masks required</th>
+<th style="text-align: right;">Scoring forwards</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NOT RUN · one node</strong></td>
+<td>Spark30</td>
+<td style="text-align: right;">6,305</td>
+<td style="text-align: right;">805</td>
+</tr>
+<tr>
+<td><strong>NOT RUN · two concurrent shards</strong></td>
+<td>Spark29 / Spark30</td>
+<td style="text-align: right;">3,156 / 3,149</td>
+<td style="text-align: right;">403 / 402</td>
+</tr>
+</tbody>
+</table>
+<p>Three warm-up calls per process are separate. First pass the 210-position Q07337 pilot on each actual runtime, then require identical tasks/hashes and numerical agreement within <code>abs(error) &lt;= 1e-4 + 1e-5*abs(reference)</code>. Record queue/startup, staging, model load/transfer, warm compute, output writes, merge and total coordinator makespan separately. No event speedup exists yet; negative scaling would be reported honestly.</p>
+<p>The morning trial reuses the exact batch-8 scorer and existing six-file model cache. Independent GPU task shards are <strong>not</strong> NCCL/RDMA or distributed-model capacity. Physical-node attribution, runtime/pilot checks, exact task coverage, fixed numerical tolerance and complete coordinator makespan are acceptance gates. <a href="../docs/MORNING_RUNBOOK.md">Morning runbook</a> · <a href="../workflows/ospc-spark-v0.2.1/VENUE_HANDOFF.md">Exact venue contract</a> · <a href="../docs/claim-index.md#c14">C14</a></p>
+<h2>Challenge, reproduce, inspect</h2>
+<p><strong>Primary method.</strong> For each observed standard residue, create one independently masked example and compute <code>NLL = -log P(original residue | masked sequence)</code>. Multiple examples share a batch; no alignment gap, padding, BOS or EOS receives a score. Token offsets are asserted and all scored accession/ungapped-position pairs map through the frozen alignment. NLL uses stable full-vocabulary log-softmax in evaluation/inference mode, float32/eager attention, TF32 off and no autocast. This is neither an unmasked score nor entropy or substitution log-odds.</p>
+<p><strong>Aggregation.</strong> Column NLL is the mean among contributing observed residues, with count and coverage explicit. Sequence pseudo-perplexity is <code>exp(mean residue NLL)</code> over the stated full natural sequence. Residue scores, column means and sequence means are different statistical levels. Per-sequence batching gives actual calls <code>sum(ceil(length_s / 8)) = 805</code>; the implementation counts successful calls and records warm-up calls separately. F=202 defines the primary comparison; partial columns remain descriptive.</p>
+<p><strong>Verification actually completed.</strong> The published personal-Spark release records 16 passing experiment tests. This laptop separately passed <strong>26 published frontier mapping/numerical tests + 33 import/presentation tests = 59 Python tests</strong>, plus source and packaged offline UI fixtures checking all 218 saved NLL values, all 218 B11 contact states, 30 sequence summaries and four guided stories. An earlier preserved receipt records 26 baseline tests. All six GIFs decode across all 360 frames. These checks do not constitute a new GPU inference run, external biological validation or browser rendering.</p>
+<ul>
+<li><strong>Start here:</strong> <a href="../docs/claim-index.md">claim index</a> / <a href="../docs/claim-index.json">machine-readable JSON</a>, <a href="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/SCIENCE_FINDINGS.md">methods and limits</a>, <a href="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_v1/residue_nll.tsv">raw 6,305 scores</a>.</li>
+<li><strong>Exact source:</strong> personal-Spark commit <a href="https://github.com/francolinx/LymeScope/commit/aafe818a20ea025370cf4b65145a9684e80aaaef"><code>aafe818a20ea025370cf4b65145a9684e80aaaef</code></a>; frozen baseline <code>8058846c05d4dccd60117dd29ef784af43570418</code>. Raw-score SHA256: <code>b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f</code>.</li>
+<li><strong>Model:</strong> <code>facebook/esm2_t6_8M_UR50D</code>, revision <code>c731040fcd8d73dceaa04b0a8e6329b345b0f5df</code>; eval/inference, float32, eager attention, full-vocabulary log-softmax. Full natural sequences, with exact accession/position/sequence-hash provenance. <a href="../docs/claim-index.md#c06">C06</a>.</li>
+<li><strong>Validation:</strong> <a href="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/provenance/tests_full_release.log">published 16-test Spark receipt</a>, <a href="spark-integration-validation.json">laptop integration checks</a>, <a href="frontier-validation.json">historical frontier sprint checks</a>, <a href="frontier-science-integration-validation.json">current optional science import: 59 passing Python tests and both offline UI copies</a>. Offline fixtures are distinct from actual inference; browser rendering is not inferred from tests.</li>
+<li><strong>Attribution:</strong> <a href="SOURCE_REFERENCES.md">primary sources and terms</a>. No project license is invented; public visibility does not grant redistribution rights to third-party material.</li>
+</ul>
+<h2>Research trajectory and limits</h2>
+<p>The completed sequence/model comparison motivated a falsifiable antibody-contact question. The predeclared diagnostic did not support added signed-discordance value, so it is retained as a negative result. A next study would need an independently justified validation design, additional experimentally characterized antigen contexts and controls for residue chemistry, sequence relatedness, sampling and missing structure. No new model, generated sequence, mutation optimization or clinical trial is implied by that proposal.</p>
+<p>This selected 30-sequence panel is unweighted and alignment-dependent; correlated residues and overlapping subsets are not independent population samples. Coordinate contacts depend on construct, cutoff, resolution and missing atoms. NLL depends on the chosen checkpoint and sequence context. None of these measurements establishes a safe/protective vaccine target, antibody accessibility, immune escape, universal conservation, diagnosis or treatment. Experimental function and clinical utility require separate evidence.</p>
+<table>
+<thead>
+<tr>
+<th>Deliverable</th>
+<th>Current status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frozen panel, explicit mapping and CPU fallback</td>
+<td><strong>CALCULATED / preserved</strong></td>
+</tr>
+<tr>
+<td>Personal-Spark ESM-2 full panel</td>
+<td><strong>MEASURED</strong>, 6,305 masks; 9.909 s warm GPU scoring</td>
+</tr>
+<tr>
+<td>Experimental dimer geometry and SASA</td>
+<td><strong>VERIFIED EXPERIMENTAL STRUCTURE / CALCULATED</strong>, with missingness</td>
+</tr>
+<tr>
+<td>Antibody mapping and added-discordance diagnostic</td>
+<td><strong>CALCULATED / EXPLORATORY</strong>, primary result negative</td>
+</tr>
+<tr>
+<td>Event CUDA operation and shared-byte reads</td>
+<td><strong>MEASURED infrastructure only</strong></td>
+</tr>
+<tr>
+<td>Event identical one/two-node scientific benchmark</td>
+<td><strong>PLANNED / NOT RUN</strong></td>
+</tr>
+<tr>
+<td>VAST vendor/backend identity</td>
+<td><strong>UNVERIFIED</strong></td>
+</tr>
+<tr>
+<td>README/workbench browser rendering and Pages hosting</td>
+<td><strong>NOT VERIFIED / not enabled</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The source code and saved evidence allow scrutiny without treating a proposed application as an established result. Original structure investigators, the <a href="https://www.uniprot.org/help/publications">UniProt Consortium</a>, <a href="https://doi.org/10.1093/molbev/mst010">MAFFT authors</a> and Meta FAIR are credited. <a href="https://www.rcsb.org/pages/policies">PDB archive data are CC0</a>; <a href="https://rest.uniprot.org/help/license">UniProt content carries attribution terms</a>. Paper content has its own rights; no project license is invented. Organizer eligibility and submission-route confirmation remain open checklist items.</p>
+<h2>Optional interactive inspection</h2>
+<p>Everything essential is visible above. For per-column interaction, the <a href="../docs/index.html">guided workbench</a>, <a href="../demo/v0.2.0/index.html">source demo</a> and <a href="../sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/index.html">unchanged frozen viewer</a> supplement this presentation. They contain embedded data and local media, with no live model/server dependency. <strong>GitHub Pages hosting is prepared, not claimed live.</strong> GitHub file links show source; use a local checkout to run the HTML. <a href="../RUN_LOCALLY.md">Local instructions</a> · <a href="../docs/PAGES_PREPARATION.md">Hosting preparation</a></p></main></html>

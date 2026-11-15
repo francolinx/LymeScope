@@ -3,9 +3,10 @@
   "status": "PREPARED_NOT_HOSTED_OR_BROWSER_VERIFIED",
   "source_demo": "demo/v0.2.0/index.html",
   "source_demo_sha256": "8609204acb7a9530335a5f8dbf5e3c605e00af41daee6a57a1f22272445d68b5",
-  "page_sha256": "dfb738ab839a9b345fbd5b5f3914715e26bbce452ae13f4d55372810059c6208",
+  "page_sha256": "dfc5586dbb56c0b374cd65e52ee2b0ec4da590ef2b6990e91461f089d0cbc12b",
   "scientific_source_commit": "aafe818a20ea025370cf4b65145a9684e80aaaef",
   "frontier_source_commit": "82fb8b53018ba4012ccebf02a29efa87b892f6ed",
+  "repository_link_ref": "main",
   "files": [
     {
       "source": "demo/v0.2.0/assets/coverage-evidence.png",
