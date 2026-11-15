@@ -1,0 +1,16 @@
+version: v4
+volumes:
+  data: {use: shared, name: datasets}
+jobs:
+  mount-schema-check:
+    image: {uri: 'docker://rockylinux:9'}
+    command: ['true']
+    resource:
+      cpu: {cores: 1}
+      memory: {size: 512MiB}
+      annotations:
+        fuzzball.io/provisioner_definition_id: team15
+    mounts:
+      /datasets:
+        volume: data
+        read-only: true

@@ -1,0 +1,111 @@
+# Authorized Phase B: exactly one submission, only after writer success/export.
+# Event v4 syntax: https://ui.fb-hack.civilfritz.net/docs/appendices/workflow-syntax/
+# Generic multinode: https://ui.fb-hack.civilfritz.net/docs/parallel-and-distributed/generic/
+# Uses the Rocky image already executed in Phase A; per-node cache may vary.
+# No installs, model weights, model calls, shared-dataset changes, or services.
+# Execution limits exclude queueing and image staging.
+version: v4
+volumes:
+  project:
+    use: team15
+    name: lymescope-project
+  reports:
+    use: team15
+    size: 16MiB
+    egress:
+      - source:
+          uri: file://report.txt
+        destination:
+          uri: fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt
+        policy:
+          timeout:
+            execute: 1m
+jobs:
+  storage-two-node-read:
+    image:
+      uri: docker://rockylinux:9
+    policy:
+      timeout:
+        execute: 2m
+      restart: never
+    resource:
+      cpu:
+        cores: 1
+      memory:
+        size: 1GiB
+      annotations:
+        fuzzball.io/provisioner_definition_id: team15
+    multinode:
+      nodes: 2
+      implementation: generic
+    env:
+      - MULTINODE_WRAPPER_FORWARD_STREAMS=1
+    mounts:
+      /project: project
+      /reports: reports
+    script: |
+      #!/bin/bash
+      set -euo pipefail
+      test -r /multinode/generic-helper
+      . /multinode/generic-helper
+      mkdir /project/verification/phase-b-20261114T173521-7908c2da/read-receipts
+      exec_rankN - <<'WORKER'
+      set -eu
+      python3 - <<'PY'
+      import hashlib,json,socket,platform
+      from pathlib import Path
+      p=Path('/project/verification/phase-b-20261114T173521-7908c2da')
+      expected=b'LymeScope persistent NFS verification\nrun_id=phase-b-20261114T173521-7908c2da\n'
+      with (p/"sentinel.txt").open("rb") as stream:
+          actual=stream.read(2048)
+      assert actual==expected, "Persistent bytes mismatch"
+      actual_hash=hashlib.sha256(actual).hexdigest()
+      assert actual_hash=='39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d', "Persistent SHA256 mismatch"
+      receipt=dict(run_id='phase-b-20261114T173521-7908c2da',container_hostname=socket.gethostname(),
+                   architecture=platform.machine(),test_file=str(p/"sentinel.txt"),
+                   bytes=len(actual),sha256=actual_hash,bytes_match=True,sha256_match=True)
+      receipt["rank"]=1
+      receipt["status"]="PASS"
+      data=json.dumps(receipt,sort_keys=True)
+      with (p/"read-receipts"/"rank1.txt").open("x") as f:
+          f.write(data+"\n"); f.flush()
+      print(data)
+      PY
+      WORKER
+      exec_rank0 - <<'HEAD'
+      set -eu
+      python3 - <<'PY'
+      import hashlib,json,socket,platform
+      from pathlib import Path
+      p=Path('/project/verification/phase-b-20261114T173521-7908c2da')
+      expected=b'LymeScope persistent NFS verification\nrun_id=phase-b-20261114T173521-7908c2da\n'
+      with (p/"sentinel.txt").open("rb") as stream:
+          actual=stream.read(2048)
+      assert actual==expected, "Persistent bytes mismatch"
+      actual_hash=hashlib.sha256(actual).hexdigest()
+      assert actual_hash=='39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d', "Persistent SHA256 mismatch"
+      receipt=dict(run_id='phase-b-20261114T173521-7908c2da',container_hostname=socket.gethostname(),
+                   architecture=platform.machine(),test_file=str(p/"sentinel.txt"),
+                   bytes=len(actual),sha256=actual_hash,bytes_match=True,sha256_match=True)
+      receipt["rank"]=0
+      receipt["status"]="PASS"
+      data=json.dumps(receipt,sort_keys=True)
+      with (p/"read-receipts"/"rank0.txt").open("x") as f:
+          f.write(data+"\n"); f.flush()
+      print(data)
+      PY
+      i=0
+      while [ ! -s /project/verification/phase-b-20261114T173521-7908c2da/read-receipts/rank1.txt ]; do
+        i=$((i + 1))
+        [ "$i" -le 30 ] || { echo 'FAIL: worker receipt missing'; exit 21; }
+        sleep 1
+      done
+      {
+        printf 'two-node shared-storage verification\n'
+        printf 'run_id=phase-b-20261114T173521-7908c2da\n'
+        printf 'allocated_container_hostlist=%s\n' "$MULTINODE_HOSTLIST_NOSLOTS"
+        cat /project/verification/phase-b-20261114T173521-7908c2da/read-receipts/rank0.txt /project/verification/phase-b-20261114T173521-7908c2da/read-receipts/rank1.txt
+        printf 'TWO_RANK_READ=PASS; verify physical scheduler node identities separately\n'
+      } | tee /reports/report.txt
+      HEAD
+      wait_rank0

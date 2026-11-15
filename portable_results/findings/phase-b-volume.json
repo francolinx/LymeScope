@@ -1,0 +1,20 @@
+{
+  "id": "01a1dc69-7808-7695-b6d3-f8a3f6e5a437",
+  "name": "lymescope-project",
+  "displayName": "lymescope-project",
+  "description": "LymeScope small project artifacts; no images or model weights",
+  "createTime": "2026-11-14T23:34:22.085219Z",
+  "accessTime": "2026-11-14T23:34:22.085219Z",
+  "status": "VOLUME_STATUS_ENABLED",
+  "clusterId": "294995c2-2cfc-14a6-8007-35485c2e35a7",
+  "storageProvisionerId": "4dfde680-0cc5-3488-9376-7cf20605b12f",
+  "storageProvisionerName": "team15",
+  "persistent": true,
+  "ownerUid": 100036,
+  "ownerGid": 100056,
+  "permissions": 488,
+  "sizeBytes": "1073741824",
+  "createdBy": "2d256648-8cfc-49df-a4f1-e2ba5ac5a3b7",
+  "createdByName": "team15@fb-hack.local",
+  "source": "VOLUME_SOURCE_PROVISIONED"
+}

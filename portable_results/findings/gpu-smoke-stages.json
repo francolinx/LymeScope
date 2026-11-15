@@ -1,0 +1,655 @@
+{
+  "workflowId": "79a4aa69-4307-4184-9764-84b915f58579",
+  "description": {
+    "createTime": "2026-11-14T23:02:04.809488Z",
+    "email": "team15@fb-hack.local",
+    "endTime": "2026-11-14T23:02:06.637634Z",
+    "name": "gpu-smoke-team15.fz",
+    "startTime": "2026-11-14T23:02:04.873457Z",
+    "status": {
+      "stages": [
+        {
+          "createTime": "2026-11-14T23:02:04.809488Z",
+          "dependsOn": [],
+          "details": {
+            "id": "79a4aa69-4307-4184-9764-84b915f58579"
+          },
+          "endTime": "2026-11-14T23:02:06.637634Z",
+          "id": "79a4aa69-4307-4184-9764-84b915f58579",
+          "kind": "STAGE_KIND_WORKFLOW",
+          "name": "79a4aa69-4307-4184-9764-84b915f58579",
+          "requiredBy": [],
+          "startTime": "2026-11-14T23:02:04.873457Z",
+          "status": "finished"
+        },
+        {
+          "createTime": "2026-11-14T23:02:04.809488Z",
+          "dependsOn": [],
+          "details": {
+            "id": "96a88ff6-b7d3-5da7-bd58-4aa50e1c3e78",
+            "persistent": false
+          },
+          "endTime": "2026-11-14T23:02:04.962141Z",
+          "id": "96a88ff6-b7d3-5da7-bd58-4aa50e1c3e78",
+          "kind": "STAGE_KIND_VOLUME",
+          "name": "smoke-output",
+          "requiredBy": [
+            {
+              "id": "ee65c8ae-040e-5074-bf30-bdf89777e8d2",
+              "name": "file://report.txt -> fuzzball://group/lymescope/gpu-smoke-20261114/report.txt"
+            },
+            {
+              "id": "cf35730f-9168-5ec9-a815-004f67cd9fa1",
+              "name": "gpu-smoke"
+            }
+          ],
+          "startTime": "2026-11-14T23:02:04.898577Z",
+          "status": "finished"
+        },
+        {
+          "createTime": "2026-11-14T23:02:04.809488Z",
+          "dependsOn": [],
+          "details": {
+            "arch": "arm64",
+            "id": "44dea734-4a9e-5e3d-aaa5-fb83e83f20e1",
+            "segment": "",
+            "uri": "docker://rockylinux:9"
+          },
+          "displayName": "gpu-smoke-image",
+          "endTime": "2026-11-14T23:02:05.173954Z",
+          "id": "44dea734-4a9e-5e3d-aaa5-fb83e83f20e1",
+          "kind": "STAGE_KIND_IMAGE",
+          "name": "docker://rockylinux:9 (arm64)",
+          "requiredBy": [
+            {
+              "id": "cf35730f-9168-5ec9-a815-004f67cd9fa1",
+              "name": "gpu-smoke"
+            }
+          ],
+          "startTime": "2026-11-14T23:02:04.867805Z",
+          "status": "finished"
+        },
+        {
+          "createTime": "2026-11-14T23:02:04.809488Z",
+          "dependsOn": [
+            {
+              "id": "44dea734-4a9e-5e3d-aaa5-fb83e83f20e1",
+              "name": "docker://rockylinux:9 (arm64)"
+            },
+            {
+              "id": "96a88ff6-b7d3-5da7-bd58-4aa50e1c3e78",
+              "name": "smoke-output"
+            }
+          ],
+          "details": {
+            "ContainerId": "cf35730f-9168-5ec9-a815-004f67cd9fa1.0",
+            "Host": "192.168.99.39:7331",
+            "command": null,
+            "id": "cf35730f-9168-5ec9-a815-004f67cd9fa1",
+            "image": "docker://rockylinux:9",
+            "mounts": {
+              "/smoke": "smoke-output"
+            }
+          },
+          "endTime": "2026-11-14T23:02:06.148077Z",
+          "exitCode": 0,
+          "id": "cf35730f-9168-5ec9-a815-004f67cd9fa1",
+          "kind": "STAGE_KIND_JOB",
+          "name": "gpu-smoke",
+          "requiredBy": [
+            {
+              "id": "ee65c8ae-040e-5074-bf30-bdf89777e8d2",
+              "name": "file://report.txt -> fuzzball://group/lymescope/gpu-smoke-20261114/report.txt"
+            }
+          ],
+          "startTime": "2026-11-14T23:02:05.492666Z",
+          "status": "finished"
+        },
+        {
+          "createTime": "2026-11-14T23:02:04.809488Z",
+          "dependsOn": [
+            {
+              "id": "cf35730f-9168-5ec9-a815-004f67cd9fa1",
+              "name": "gpu-smoke"
+            },
+            {
+              "id": "96a88ff6-b7d3-5da7-bd58-4aa50e1c3e78",
+              "name": "smoke-output"
+            }
+          ],
+          "details": {
+            "ContainerId": "ee65c8ae-040e-5074-bf30-bdf89777e8d2.0",
+            "Host": "192.168.99.39:7331",
+            "destination": "fuzzball://group/lymescope/gpu-smoke-20261114/report.txt",
+            "id": "ee65c8ae-040e-5074-bf30-bdf89777e8d2",
+            "source": "file://report.txt"
+          },
+          "displayName": "smoke-output-egress-0",
+          "endTime": "2026-11-14T23:02:06.598445Z",
+          "id": "ee65c8ae-040e-5074-bf30-bdf89777e8d2",
+          "kind": "STAGE_KIND_FILE",
+          "name": "file://report.txt -> fuzzball://group/lymescope/gpu-smoke-20261114/report.txt",
+          "requiredBy": [],
+          "startTime": "2026-11-14T23:02:06.178361Z",
+          "status": "finished"
+        }
+      ]
+    },
+    "userId": "2d256648-8cfc-49df-a4f1-e2ba5ac5a3b7",
+    "workflowStatus": "finished"
+  },
+  "events": {
+    "events": [
+      {
+        "displayName": "smoke-output-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_PRIORITY_SET",
+        "message": "Priority set (workflow: 0, organization: 0, group: 0, user: 0)",
+        "metadata": {
+          "account_priority": "0",
+          "organization_priority": "0",
+          "user_priority": "0",
+          "weight": "1",
+          "workflow_priority": "0"
+        },
+        "stageId": "ee65c8ae-040e-5074-bf30-bdf89777e8d2",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/gpu-smoke-20261114/report.txt",
+        "timestamp": "2026-11-14T23:02:04.838670Z"
+      },
+      {
+        "displayName": "smoke-output-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_WAITING_ON_DEPENDENCY",
+        "message": "Waiting for smoke-output to finish",
+        "metadata": {
+          "dependency_name": "smoke-output",
+          "dependency_status": "FINISHED"
+        },
+        "stageId": "ee65c8ae-040e-5074-bf30-bdf89777e8d2",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/gpu-smoke-20261114/report.txt",
+        "timestamp": "2026-11-14T23:02:04.838691Z"
+      },
+      {
+        "displayName": "smoke-output-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_WAITING_ON_DEPENDENCY",
+        "message": "Waiting for gpu-smoke to finish",
+        "metadata": {
+          "dependency_name": "gpu-smoke",
+          "dependency_status": "FINISHED"
+        },
+        "stageId": "ee65c8ae-040e-5074-bf30-bdf89777e8d2",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/gpu-smoke-20261114/report.txt",
+        "timestamp": "2026-11-14T23:02:04.838694Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_PRIORITY_SET",
+        "message": "Priority set (workflow: 0, organization: 0, group: 0, user: 0)",
+        "metadata": {
+          "account_priority": "0",
+          "organization_priority": "0",
+          "user_priority": "0",
+          "weight": "1",
+          "workflow_priority": "0"
+        },
+        "stageId": "cf35730f-9168-5ec9-a815-004f67cd9fa1",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "gpu-smoke",
+        "timestamp": "2026-11-14T23:02:04.842758Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_WAITING_ON_DEPENDENCY",
+        "message": "Waiting for gpu-smoke-image to finish",
+        "metadata": {
+          "dependency_name": "gpu-smoke-image",
+          "dependency_status": "FINISHED"
+        },
+        "stageId": "cf35730f-9168-5ec9-a815-004f67cd9fa1",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "gpu-smoke",
+        "timestamp": "2026-11-14T23:02:04.842772Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_WAITING_ON_DEPENDENCY",
+        "message": "Waiting for smoke-output to finish",
+        "metadata": {
+          "dependency_name": "smoke-output",
+          "dependency_status": "FINISHED"
+        },
+        "stageId": "cf35730f-9168-5ec9-a815-004f67cd9fa1",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "gpu-smoke",
+        "timestamp": "2026-11-14T23:02:04.842775Z"
+      },
+      {
+        "displayName": "gpu-smoke-image",
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "READY_QUEUE",
+          "queue_time": "2026-11-14T23:02:04.834715635Z"
+        },
+        "stageId": "44dea734-4a9e-5e3d-aaa5-fb83e83f20e1",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:02:04.846647Z"
+      },
+      {
+        "displayName": "gpu-smoke-image",
+        "eventType": "STAGE_EVENT_TYPE_PRIORITY_SET",
+        "message": "Priority set (workflow: 0, organization: 0, group: 0, user: 0)",
+        "metadata": {
+          "account_priority": "0",
+          "organization_priority": "0",
+          "user_priority": "0",
+          "weight": "1",
+          "workflow_priority": "0"
+        },
+        "stageId": "44dea734-4a9e-5e3d-aaa5-fb83e83f20e1",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:02:04.846671Z"
+      },
+      {
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "READY_QUEUE",
+          "queue_time": "2026-11-14T23:02:04.834715635Z"
+        },
+        "stageId": "96a88ff6-b7d3-5da7-bd58-4aa50e1c3e78",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "smoke-output",
+        "timestamp": "2026-11-14T23:02:04.850619Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_PRIORITY_SET",
+        "message": "Priority set (workflow: 0, organization: 0, group: 0, user: 0)",
+        "metadata": {
+          "account_priority": "0",
+          "organization_priority": "0",
+          "user_priority": "0",
+          "weight": "1",
+          "workflow_priority": "0"
+        },
+        "stageId": "96a88ff6-b7d3-5da7-bd58-4aa50e1c3e78",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "smoke-output",
+        "timestamp": "2026-11-14T23:02:04.850649Z"
+      },
+      {
+        "displayName": "gpu-smoke-image",
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "RUNNING_QUEUE",
+          "queue_time": "2026-11-14T23:02:04.869070814Z"
+        },
+        "stageId": "44dea734-4a9e-5e3d-aaa5-fb83e83f20e1",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:02:04.869898Z"
+      },
+      {
+        "displayName": "gpu-smoke-image",
+        "eventType": "STAGE_EVENT_TYPE_RESOURCES_ALLOCATED",
+        "message": "Resources allocated (node: 192.168.99.39/7331, requested cpu: 1, requested memory: 1 GB, projected cpus: 1 (ids: 0), projected numa nodes: 1 (ids: 0))",
+        "metadata": {
+          "cpu": "1",
+          "memory": "1000000000",
+          "node": "192.168.99.39/7331",
+          "projected_cpus": "0",
+          "projected_numa_nodes": "0"
+        },
+        "stageId": "44dea734-4a9e-5e3d-aaa5-fb83e83f20e1",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:02:04.872925Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_WORKFLOW_STARTED",
+        "message": "Workflow started",
+        "stageId": "79a4aa69-4307-4184-9764-84b915f58579",
+        "stageKind": "STAGE_KIND_WORKFLOW",
+        "stageName": "79a4aa69-4307-4184-9764-84b915f58579",
+        "timestamp": "2026-11-14T23:02:04.875887Z"
+      },
+      {
+        "displayName": "gpu-smoke-image",
+        "eventType": "STAGE_EVENT_TYPE_STAGE_STARTED",
+        "message": "Stage started",
+        "metadata": {
+          "name": "gpu-smoke-image"
+        },
+        "stageId": "44dea734-4a9e-5e3d-aaa5-fb83e83f20e1",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:02:04.890801Z"
+      },
+      {
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "RUNNING_QUEUE",
+          "queue_time": "2026-11-14T23:02:04.890763355Z"
+        },
+        "stageId": "96a88ff6-b7d3-5da7-bd58-4aa50e1c3e78",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "smoke-output",
+        "timestamp": "2026-11-14T23:02:04.891362Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_RESOURCES_ALLOCATED",
+        "message": "Resources allocated (node: 192.168.99.39/7331, requested cpu: 1, requested memory: 2 GB, requested devices: 1, projected cpus: 1 (ids: 1), projected numa nodes: 1 (ids: 0))",
+        "metadata": {
+          "cpu": "1",
+          "devices": "1",
+          "memory": "2147483648",
+          "node": "192.168.99.39/7331",
+          "projected_cpus": "1",
+          "projected_numa_nodes": "0"
+        },
+        "stageId": "96a88ff6-b7d3-5da7-bd58-4aa50e1c3e78",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "smoke-output",
+        "timestamp": "2026-11-14T23:02:04.893495Z"
+      },
+      {
+        "displayName": "gpu-smoke-image",
+        "eventType": "STAGE_EVENT_TYPE_IMAGE_PULL_STARTED",
+        "message": "Pulling image: docker://rockylinux:9",
+        "metadata": {
+          "uri": "docker://rockylinux:9"
+        },
+        "stageId": "44dea734-4a9e-5e3d-aaa5-fb83e83f20e1",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:02:04.896798Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_STARTED",
+        "message": "Stage started",
+        "metadata": {
+          "name": "smoke-output"
+        },
+        "stageId": "96a88ff6-b7d3-5da7-bd58-4aa50e1c3e78",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "smoke-output",
+        "timestamp": "2026-11-14T23:02:04.908073Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_VOLUME_CREATED",
+        "message": "Volume created: 01a1dc4b-e989-7148-adfb-042a230665ad, persistent: false",
+        "metadata": {
+          "capacity_bytes": "16000000",
+          "cost_per_gb_hour": "0",
+          "id": "01a1dc4b-e989-7148-adfb-042a230665ad",
+          "persistent": "false",
+          "storage_provisioner_id": "bec17c4c-d66f-367d-874b-ebc02bf0dd9c"
+        },
+        "stageId": "96a88ff6-b7d3-5da7-bd58-4aa50e1c3e78",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "smoke-output",
+        "timestamp": "2026-11-14T23:02:04.946972Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_FINISHED",
+        "message": "Stage finished",
+        "metadata": {
+          "name": "smoke-output"
+        },
+        "stageId": "96a88ff6-b7d3-5da7-bd58-4aa50e1c3e78",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "smoke-output",
+        "timestamp": "2026-11-14T23:02:04.971481Z"
+      },
+      {
+        "displayName": "gpu-smoke-image",
+        "eventType": "STAGE_EVENT_TYPE_IMAGE_CACHE_HIT",
+        "message": "Image available in cache",
+        "stageId": "44dea734-4a9e-5e3d-aaa5-fb83e83f20e1",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:02:05.157914Z"
+      },
+      {
+        "displayName": "gpu-smoke-image",
+        "eventType": "STAGE_EVENT_TYPE_IMAGE_PULL_COMPLETED",
+        "message": "Image pull complete: 63.1 MB, 268ms",
+        "metadata": {
+          "duration": "268ms",
+          "size": "66187264"
+        },
+        "stageId": "44dea734-4a9e-5e3d-aaa5-fb83e83f20e1",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:02:05.164732Z"
+      },
+      {
+        "displayName": "gpu-smoke-image",
+        "eventType": "STAGE_EVENT_TYPE_STAGE_FINISHED",
+        "message": "Stage finished",
+        "metadata": {
+          "name": "gpu-smoke-image"
+        },
+        "stageId": "44dea734-4a9e-5e3d-aaa5-fb83e83f20e1",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:02:05.183619Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_DEPENDENCY_SATISFIED",
+        "message": "All dependencies satisfied, stage ready for scheduling",
+        "stageId": "cf35730f-9168-5ec9-a815-004f67cd9fa1",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "gpu-smoke",
+        "timestamp": "2026-11-14T23:02:05.187439Z"
+      },
+      {
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "READY_QUEUE",
+          "queue_time": "2026-11-14T23:02:05.187435938Z"
+        },
+        "stageId": "cf35730f-9168-5ec9-a815-004f67cd9fa1",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "gpu-smoke",
+        "timestamp": "2026-11-14T23:02:05.188167Z"
+      },
+      {
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "RUNNING_QUEUE",
+          "queue_time": "2026-11-14T23:02:05.201203231Z"
+        },
+        "stageId": "cf35730f-9168-5ec9-a815-004f67cd9fa1",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "gpu-smoke",
+        "timestamp": "2026-11-14T23:02:05.201828Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_RESOURCES_ALLOCATED",
+        "message": "Resources allocated (node: 192.168.99.39/7331, requested cpu: 1, requested memory: 2 GB, requested devices: 1, projected cpus: 1 (ids: 0), projected numa nodes: 1 (ids: 0))",
+        "metadata": {
+          "cpu": "1",
+          "devices": "1",
+          "memory": "2147483648",
+          "node": "192.168.99.39/7331",
+          "projected_cpus": "0",
+          "projected_numa_nodes": "0"
+        },
+        "stageId": "cf35730f-9168-5ec9-a815-004f67cd9fa1",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "gpu-smoke",
+        "timestamp": "2026-11-14T23:02:05.204636Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_READY",
+        "message": "Stage ready",
+        "stageId": "cf35730f-9168-5ec9-a815-004f67cd9fa1",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "gpu-smoke",
+        "timestamp": "2026-11-14T23:02:05.206080Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_STARTED",
+        "message": "Stage started",
+        "metadata": {
+          "name": "gpu-smoke"
+        },
+        "stageId": "cf35730f-9168-5ec9-a815-004f67cd9fa1",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "gpu-smoke",
+        "timestamp": "2026-11-14T23:02:05.507128Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_CONTAINER_STARTED",
+        "message": "Container started on node: 192.168.99.39/7331 (enforced cpus: 1 (ids: 0), enforced numa nodes: 1 (ids: 0))",
+        "metadata": {
+          "container_id": "cf35730f-9168-5ec9-a815-004f67cd9fa1.0",
+          "enforced_cpus": "0",
+          "enforced_numa_nodes": "0",
+          "node": "192.168.99.39:7331"
+        },
+        "stageId": "cf35730f-9168-5ec9-a815-004f67cd9fa1",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "gpu-smoke",
+        "timestamp": "2026-11-14T23:02:05.507149Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_CONTAINER_EXITED",
+        "message": "Container exited with code: 0",
+        "metadata": {
+          "exit_code": "0"
+        },
+        "stageId": "cf35730f-9168-5ec9-a815-004f67cd9fa1",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "gpu-smoke",
+        "timestamp": "2026-11-14T23:02:06.061651Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_FINISHED",
+        "message": "Stage finished",
+        "metadata": {
+          "name": "gpu-smoke"
+        },
+        "stageId": "cf35730f-9168-5ec9-a815-004f67cd9fa1",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "gpu-smoke",
+        "timestamp": "2026-11-14T23:02:06.157913Z"
+      },
+      {
+        "displayName": "smoke-output-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_DEPENDENCY_SATISFIED",
+        "message": "All dependencies satisfied, stage ready for scheduling",
+        "stageId": "ee65c8ae-040e-5074-bf30-bdf89777e8d2",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/gpu-smoke-20261114/report.txt",
+        "timestamp": "2026-11-14T23:02:06.161697Z"
+      },
+      {
+        "displayName": "smoke-output-egress-0",
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "READY_QUEUE",
+          "queue_time": "2026-11-14T23:02:06.161692294Z"
+        },
+        "stageId": "ee65c8ae-040e-5074-bf30-bdf89777e8d2",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/gpu-smoke-20261114/report.txt",
+        "timestamp": "2026-11-14T23:02:06.162252Z"
+      },
+      {
+        "displayName": "smoke-output-egress-0",
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "RUNNING_QUEUE",
+          "queue_time": "2026-11-14T23:02:06.176994071Z"
+        },
+        "stageId": "ee65c8ae-040e-5074-bf30-bdf89777e8d2",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/gpu-smoke-20261114/report.txt",
+        "timestamp": "2026-11-14T23:02:06.177556Z"
+      },
+      {
+        "displayName": "smoke-output-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_RESOURCES_ALLOCATED",
+        "message": "Resources allocated (node: 192.168.99.39/7331, requested cpu: 1, requested memory: 1 GB, projected cpus: 1 (ids: 0), projected numa nodes: 1 (ids: 0))",
+        "metadata": {
+          "cpu": "1",
+          "memory": "1000000000",
+          "node": "192.168.99.39/7331",
+          "projected_cpus": "0",
+          "projected_numa_nodes": "0"
+        },
+        "stageId": "ee65c8ae-040e-5074-bf30-bdf89777e8d2",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/gpu-smoke-20261114/report.txt",
+        "timestamp": "2026-11-14T23:02:06.179639Z"
+      },
+      {
+        "displayName": "smoke-output-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_STAGE_STARTED",
+        "message": "Stage started",
+        "metadata": {
+          "name": "smoke-output-egress-0"
+        },
+        "stageId": "ee65c8ae-040e-5074-bf30-bdf89777e8d2",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/gpu-smoke-20261114/report.txt",
+        "timestamp": "2026-11-14T23:02:06.188080Z"
+      },
+      {
+        "displayName": "smoke-output-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_FILE_TRANSFER_TYPE",
+        "message": "Transfer type: egress",
+        "metadata": {
+          "type": "egress"
+        },
+        "stageId": "ee65c8ae-040e-5074-bf30-bdf89777e8d2",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/gpu-smoke-20261114/report.txt",
+        "timestamp": "2026-11-14T23:02:06.188096Z"
+      },
+      {
+        "displayName": "smoke-output-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_FILE_TRANSFER_STARTED",
+        "message": "Transfer started: file:///csi-publish/ee65c8ae-040e-5074-bf30-bdf89777e8d2/ephemeral/79a4aa69-4307-4184-9764-84b915f58579/smoke-output/report.txt → fuzzball://group/lymescope/gpu-smoke-20261114/report.txt",
+        "metadata": {
+          "destination": "fuzzball://group/lymescope/gpu-smoke-20261114/report.txt",
+          "source": "file:///csi-publish/ee65c8ae-040e-5074-bf30-bdf89777e8d2/ephemeral/79a4aa69-4307-4184-9764-84b915f58579/smoke-output/report.txt"
+        },
+        "stageId": "ee65c8ae-040e-5074-bf30-bdf89777e8d2",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/gpu-smoke-20261114/report.txt",
+        "timestamp": "2026-11-14T23:02:06.200863Z"
+      },
+      {
+        "displayName": "smoke-output-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_FILE_TRANSFER_COMPLETED",
+        "message": "Transfer complete",
+        "stageId": "ee65c8ae-040e-5074-bf30-bdf89777e8d2",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/gpu-smoke-20261114/report.txt",
+        "timestamp": "2026-11-14T23:02:06.604222Z"
+      },
+      {
+        "displayName": "smoke-output-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_STAGE_FINISHED",
+        "message": "Stage finished",
+        "metadata": {
+          "name": "smoke-output-egress-0"
+        },
+        "stageId": "ee65c8ae-040e-5074-bf30-bdf89777e8d2",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/gpu-smoke-20261114/report.txt",
+        "timestamp": "2026-11-14T23:02:06.608320Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_WORKFLOW_FINISHED",
+        "message": "Workflow finished",
+        "stageId": "79a4aa69-4307-4184-9764-84b915f58579",
+        "stageKind": "STAGE_KIND_WORKFLOW",
+        "stageName": "79a4aa69-4307-4184-9764-84b915f58579",
+        "timestamp": "2026-11-14T23:02:06.616265Z"
+      }
+    ],
+    "total": 42
+  }
+}

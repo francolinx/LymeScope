@@ -1,0 +1,793 @@
+{
+  "workflowId": "9d279ac6-741f-48b1-88c3-1a61a0a56aa6",
+  "retrievedAt": "2026-11-14T23:38:44.739Z",
+  "describe": {
+    "createTime": "2026-11-14T23:37:13.595615Z",
+    "email": "team15@fb-hack.local",
+    "endTime": "2026-11-14T23:37:48.052799Z",
+    "name": "storage-two-node-read-team15.fz",
+    "startTime": "2026-11-14T23:37:13.654949Z",
+    "status": {
+      "stages": [
+        {
+          "createTime": "2026-11-14T23:37:13.595615Z",
+          "dependsOn": [],
+          "details": {
+            "id": "9d279ac6-741f-48b1-88c3-1a61a0a56aa6"
+          },
+          "endTime": "2026-11-14T23:37:48.052799Z",
+          "id": "9d279ac6-741f-48b1-88c3-1a61a0a56aa6",
+          "kind": "STAGE_KIND_WORKFLOW",
+          "name": "9d279ac6-741f-48b1-88c3-1a61a0a56aa6",
+          "requiredBy": [],
+          "startTime": "2026-11-14T23:37:13.654949Z",
+          "status": "finished"
+        },
+        {
+          "createTime": "2026-11-14T23:37:13.595615Z",
+          "dependsOn": [],
+          "details": {
+            "id": "d3372fd0-d5aa-5119-96e0-a6f82adddcee",
+            "persistent": true
+          },
+          "endTime": "2026-11-14T23:37:13.735450Z",
+          "id": "d3372fd0-d5aa-5119-96e0-a6f82adddcee",
+          "kind": "STAGE_KIND_VOLUME",
+          "name": "project",
+          "requiredBy": [
+            {
+              "id": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+              "name": "storage-two-node-read"
+            }
+          ],
+          "startTime": "2026-11-14T23:37:13.698049Z",
+          "status": "finished"
+        },
+        {
+          "createTime": "2026-11-14T23:37:13.595615Z",
+          "dependsOn": [],
+          "details": {
+            "id": "6df04d8a-3aec-5923-822d-72c7bcde26ef",
+            "persistent": false
+          },
+          "endTime": "2026-11-14T23:37:14.404076Z",
+          "id": "6df04d8a-3aec-5923-822d-72c7bcde26ef",
+          "kind": "STAGE_KIND_VOLUME",
+          "name": "reports",
+          "requiredBy": [
+            {
+              "id": "37596db4-7a37-5ceb-8f19-952b6c323dc4",
+              "name": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt"
+            },
+            {
+              "id": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+              "name": "storage-two-node-read"
+            }
+          ],
+          "startTime": "2026-11-14T23:37:13.675216Z",
+          "status": "finished"
+        },
+        {
+          "createTime": "2026-11-14T23:37:13.595615Z",
+          "dependsOn": [],
+          "details": {
+            "arch": "arm64",
+            "id": "96e995e1-0a90-57c9-bf19-2d20688e8467",
+            "segment": "",
+            "uri": "docker://rockylinux:9"
+          },
+          "displayName": "storage-two-node-read-image",
+          "endTime": "2026-11-14T23:37:13.931219Z",
+          "id": "96e995e1-0a90-57c9-bf19-2d20688e8467",
+          "kind": "STAGE_KIND_IMAGE",
+          "name": "docker://rockylinux:9 (arm64)",
+          "requiredBy": [
+            {
+              "id": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+              "name": "storage-two-node-read"
+            }
+          ],
+          "startTime": "2026-11-14T23:37:13.650302Z",
+          "status": "finished"
+        },
+        {
+          "createTime": "2026-11-14T23:37:13.595615Z",
+          "dependsOn": [
+            {
+              "id": "96e995e1-0a90-57c9-bf19-2d20688e8467",
+              "name": "docker://rockylinux:9 (arm64)"
+            },
+            {
+              "id": "d3372fd0-d5aa-5119-96e0-a6f82adddcee",
+              "name": "project"
+            },
+            {
+              "id": "6df04d8a-3aec-5923-822d-72c7bcde26ef",
+              "name": "reports"
+            }
+          ],
+          "details": {
+            "ContainerId": "efeba751-fe73-540e-a992-a6d0e8c2cbcf.0",
+            "Host": "192.168.99.39:7331",
+            "Hosts": [
+              "192.168.99.39:7331",
+              "192.168.99.38:7331"
+            ],
+            "command": null,
+            "id": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+            "image": "docker://rockylinux:9",
+            "mounts": {
+              "/project": "project",
+              "/reports": "reports"
+            }
+          },
+          "endTime": "2026-11-14T23:37:46.983029Z",
+          "exitCode": 0,
+          "id": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+          "kind": "STAGE_KIND_JOB",
+          "name": "storage-two-node-read",
+          "requiredBy": [
+            {
+              "id": "37596db4-7a37-5ceb-8f19-952b6c323dc4",
+              "name": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt"
+            }
+          ],
+          "startTime": "2026-11-14T23:37:16.286747Z",
+          "status": "finished"
+        },
+        {
+          "createTime": "2026-11-14T23:37:13.595615Z",
+          "dependsOn": [
+            {
+              "id": "6df04d8a-3aec-5923-822d-72c7bcde26ef",
+              "name": "reports"
+            },
+            {
+              "id": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+              "name": "storage-two-node-read"
+            }
+          ],
+          "details": {
+            "ContainerId": "37596db4-7a37-5ceb-8f19-952b6c323dc4.0",
+            "Host": "192.168.99.39:7331",
+            "destination": "fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt",
+            "id": "37596db4-7a37-5ceb-8f19-952b6c323dc4",
+            "source": "file://report.txt"
+          },
+          "displayName": "reports-egress-0",
+          "endTime": "2026-11-14T23:37:47.808520Z",
+          "id": "37596db4-7a37-5ceb-8f19-952b6c323dc4",
+          "kind": "STAGE_KIND_FILE",
+          "name": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt",
+          "requiredBy": [],
+          "startTime": "2026-11-14T23:37:47.014340Z",
+          "status": "finished"
+        }
+      ]
+    },
+    "userId": "2d256648-8cfc-49df-a4f1-e2ba5ac5a3b7",
+    "workflowStatus": "finished"
+  },
+  "events": {
+    "events": [
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_PRIORITY_SET",
+        "message": "Priority set (workflow: 0, organization: 0, group: 0, user: 0)",
+        "metadata": {
+          "account_priority": "0",
+          "organization_priority": "0",
+          "user_priority": "0",
+          "weight": "1",
+          "workflow_priority": "0"
+        },
+        "stageId": "37596db4-7a37-5ceb-8f19-952b6c323dc4",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt",
+        "timestamp": "2026-11-14T23:37:13.618416Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_WAITING_ON_DEPENDENCY",
+        "message": "Waiting for reports to finish",
+        "metadata": {
+          "dependency_name": "reports",
+          "dependency_status": "FINISHED"
+        },
+        "stageId": "37596db4-7a37-5ceb-8f19-952b6c323dc4",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt",
+        "timestamp": "2026-11-14T23:37:13.618436Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_WAITING_ON_DEPENDENCY",
+        "message": "Waiting for storage-two-node-read to finish",
+        "metadata": {
+          "dependency_name": "storage-two-node-read",
+          "dependency_status": "FINISHED"
+        },
+        "stageId": "37596db4-7a37-5ceb-8f19-952b6c323dc4",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt",
+        "timestamp": "2026-11-14T23:37:13.618443Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_PRIORITY_SET",
+        "message": "Priority set (workflow: 0, organization: 0, group: 0, user: 0)",
+        "metadata": {
+          "account_priority": "0",
+          "organization_priority": "0",
+          "user_priority": "0",
+          "weight": "1",
+          "workflow_priority": "0"
+        },
+        "stageId": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "storage-two-node-read",
+        "timestamp": "2026-11-14T23:37:13.621854Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_WAITING_ON_DEPENDENCY",
+        "message": "Waiting for storage-two-node-read-image to finish",
+        "metadata": {
+          "dependency_name": "storage-two-node-read-image",
+          "dependency_status": "FINISHED"
+        },
+        "stageId": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "storage-two-node-read",
+        "timestamp": "2026-11-14T23:37:13.621872Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_WAITING_ON_DEPENDENCY",
+        "message": "Waiting for project to finish",
+        "metadata": {
+          "dependency_name": "project",
+          "dependency_status": "FINISHED"
+        },
+        "stageId": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "storage-two-node-read",
+        "timestamp": "2026-11-14T23:37:13.621881Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_WAITING_ON_DEPENDENCY",
+        "message": "Waiting for reports to finish",
+        "metadata": {
+          "dependency_name": "reports",
+          "dependency_status": "FINISHED"
+        },
+        "stageId": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "storage-two-node-read",
+        "timestamp": "2026-11-14T23:37:13.621926Z"
+      },
+      {
+        "displayName": "storage-two-node-read-image",
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "READY_QUEUE",
+          "queue_time": "2026-11-14T23:37:13.614722538Z"
+        },
+        "stageId": "96e995e1-0a90-57c9-bf19-2d20688e8467",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:37:13.628669Z"
+      },
+      {
+        "displayName": "storage-two-node-read-image",
+        "eventType": "STAGE_EVENT_TYPE_PRIORITY_SET",
+        "message": "Priority set (workflow: 0, organization: 0, group: 0, user: 0)",
+        "metadata": {
+          "account_priority": "0",
+          "organization_priority": "0",
+          "user_priority": "0",
+          "weight": "1",
+          "workflow_priority": "0"
+        },
+        "stageId": "96e995e1-0a90-57c9-bf19-2d20688e8467",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:37:13.629048Z"
+      },
+      {
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "READY_QUEUE",
+          "queue_time": "2026-11-14T23:37:13.614722538Z"
+        },
+        "stageId": "6df04d8a-3aec-5923-822d-72c7bcde26ef",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "reports",
+        "timestamp": "2026-11-14T23:37:13.632327Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_PRIORITY_SET",
+        "message": "Priority set (workflow: 0, organization: 0, group: 0, user: 0)",
+        "metadata": {
+          "account_priority": "0",
+          "organization_priority": "0",
+          "user_priority": "0",
+          "weight": "1",
+          "workflow_priority": "0"
+        },
+        "stageId": "6df04d8a-3aec-5923-822d-72c7bcde26ef",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "reports",
+        "timestamp": "2026-11-14T23:37:13.632356Z"
+      },
+      {
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "READY_QUEUE",
+          "queue_time": "2026-11-14T23:37:13.614722538Z"
+        },
+        "stageId": "d3372fd0-d5aa-5119-96e0-a6f82adddcee",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "project",
+        "timestamp": "2026-11-14T23:37:13.636874Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_PRIORITY_SET",
+        "message": "Priority set (workflow: 0, organization: 0, group: 0, user: 0)",
+        "metadata": {
+          "account_priority": "0",
+          "organization_priority": "0",
+          "user_priority": "0",
+          "weight": "1",
+          "workflow_priority": "0"
+        },
+        "stageId": "d3372fd0-d5aa-5119-96e0-a6f82adddcee",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "project",
+        "timestamp": "2026-11-14T23:37:13.636928Z"
+      },
+      {
+        "displayName": "storage-two-node-read-image",
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "RUNNING_QUEUE",
+          "queue_time": "2026-11-14T23:37:13.647734551Z"
+        },
+        "stageId": "96e995e1-0a90-57c9-bf19-2d20688e8467",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:37:13.648384Z"
+      },
+      {
+        "displayName": "storage-two-node-read-image",
+        "eventType": "STAGE_EVENT_TYPE_RESOURCES_ALLOCATED",
+        "message": "Resources allocated (node: 192.168.99.39/7331, requested cpu: 1, requested memory: 1 GB, projected cpus: 1 (ids: 16), projected numa nodes: 1 (ids: 0))",
+        "metadata": {
+          "cpu": "1",
+          "memory": "1000000000",
+          "node": "192.168.99.39/7331",
+          "projected_cpus": "16",
+          "projected_numa_nodes": "0"
+        },
+        "stageId": "96e995e1-0a90-57c9-bf19-2d20688e8467",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:37:13.650276Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_WORKFLOW_STARTED",
+        "message": "Workflow started",
+        "stageId": "9d279ac6-741f-48b1-88c3-1a61a0a56aa6",
+        "stageKind": "STAGE_KIND_WORKFLOW",
+        "stageName": "9d279ac6-741f-48b1-88c3-1a61a0a56aa6",
+        "timestamp": "2026-11-14T23:37:13.654272Z"
+      },
+      {
+        "displayName": "storage-two-node-read-image",
+        "eventType": "STAGE_EVENT_TYPE_STAGE_STARTED",
+        "message": "Stage started",
+        "metadata": {
+          "name": "storage-two-node-read-image"
+        },
+        "stageId": "96e995e1-0a90-57c9-bf19-2d20688e8467",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:37:13.657661Z"
+      },
+      {
+        "displayName": "storage-two-node-read-image",
+        "eventType": "STAGE_EVENT_TYPE_IMAGE_PULL_STARTED",
+        "message": "Pulling image: docker://rockylinux:9",
+        "metadata": {
+          "uri": "docker://rockylinux:9"
+        },
+        "stageId": "96e995e1-0a90-57c9-bf19-2d20688e8467",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:37:13.663550Z"
+      },
+      {
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "RUNNING_QUEUE",
+          "queue_time": "2026-11-14T23:37:13.67344136Z"
+        },
+        "stageId": "6df04d8a-3aec-5923-822d-72c7bcde26ef",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "reports",
+        "timestamp": "2026-11-14T23:37:13.674097Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_RESOURCES_ALLOCATED",
+        "message": "Resources allocated (node: 192.168.99.38/7331, requested cpu: 1, requested memory: 1 MB, projected cpus: 1 (ids: 0), projected numa nodes: 1 (ids: 0))",
+        "metadata": {
+          "cpu": "1",
+          "memory": "1048576",
+          "node": "192.168.99.38/7331",
+          "projected_cpus": "0",
+          "projected_numa_nodes": "0"
+        },
+        "stageId": "6df04d8a-3aec-5923-822d-72c7bcde26ef",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "reports",
+        "timestamp": "2026-11-14T23:37:13.675709Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_STARTED",
+        "message": "Stage started",
+        "metadata": {
+          "name": "reports"
+        },
+        "stageId": "6df04d8a-3aec-5923-822d-72c7bcde26ef",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "reports",
+        "timestamp": "2026-11-14T23:37:13.681499Z"
+      },
+      {
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "RUNNING_QUEUE",
+          "queue_time": "2026-11-14T23:37:13.696146924Z"
+        },
+        "stageId": "d3372fd0-d5aa-5119-96e0-a6f82adddcee",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "project",
+        "timestamp": "2026-11-14T23:37:13.696979Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_RESOURCES_ALLOCATED",
+        "message": "Resources allocated (node: 192.168.99.39/7331, requested cpu: 1, requested memory: 1 MB, projected cpus: 1 (ids: 17), projected numa nodes: 1 (ids: 0))",
+        "metadata": {
+          "cpu": "1",
+          "memory": "1048576",
+          "node": "192.168.99.39/7331",
+          "projected_cpus": "17",
+          "projected_numa_nodes": "0"
+        },
+        "stageId": "d3372fd0-d5aa-5119-96e0-a6f82adddcee",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "project",
+        "timestamp": "2026-11-14T23:37:13.699187Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_STARTED",
+        "message": "Stage started",
+        "metadata": {
+          "name": "project"
+        },
+        "stageId": "d3372fd0-d5aa-5119-96e0-a6f82adddcee",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "project",
+        "timestamp": "2026-11-14T23:37:13.704770Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_VOLUME_CREATED",
+        "message": "Volume created: 01a1dc69-7808-7695-b6d3-f8a3f6e5a437, persistent: true",
+        "metadata": {
+          "capacity_bytes": "1073741824",
+          "cost_per_gb_hour": "0",
+          "id": "01a1dc69-7808-7695-b6d3-f8a3f6e5a437",
+          "persistent": "true",
+          "storage_provisioner_id": "4dfde680-0cc5-3488-9376-7cf20605b12f"
+        },
+        "stageId": "d3372fd0-d5aa-5119-96e0-a6f82adddcee",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "project",
+        "timestamp": "2026-11-14T23:37:13.718007Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_FINISHED",
+        "message": "Stage finished",
+        "metadata": {
+          "name": "project"
+        },
+        "stageId": "d3372fd0-d5aa-5119-96e0-a6f82adddcee",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "project",
+        "timestamp": "2026-11-14T23:37:13.741038Z"
+      },
+      {
+        "displayName": "storage-two-node-read-image",
+        "eventType": "STAGE_EVENT_TYPE_IMAGE_CACHE_HIT",
+        "message": "Image available in cache",
+        "stageId": "96e995e1-0a90-57c9-bf19-2d20688e8467",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:37:13.910460Z"
+      },
+      {
+        "displayName": "storage-two-node-read-image",
+        "eventType": "STAGE_EVENT_TYPE_IMAGE_PULL_COMPLETED",
+        "message": "Image pull complete: 63.1 MB, 254ms",
+        "metadata": {
+          "duration": "254ms",
+          "size": "66187264"
+        },
+        "stageId": "96e995e1-0a90-57c9-bf19-2d20688e8467",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:37:13.918062Z"
+      },
+      {
+        "displayName": "storage-two-node-read-image",
+        "eventType": "STAGE_EVENT_TYPE_STAGE_FINISHED",
+        "message": "Stage finished",
+        "metadata": {
+          "name": "storage-two-node-read-image"
+        },
+        "stageId": "96e995e1-0a90-57c9-bf19-2d20688e8467",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://rockylinux:9 (arm64)",
+        "timestamp": "2026-11-14T23:37:13.936533Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_VOLUME_CREATED",
+        "message": "Volume created: 01a1dc6c-1989-75c7-aeeb-a93d36284f44, persistent: false",
+        "metadata": {
+          "capacity_bytes": "16000000",
+          "cost_per_gb_hour": "0",
+          "id": "01a1dc6c-1989-75c7-aeeb-a93d36284f44",
+          "persistent": "false",
+          "storage_provisioner_id": "4dfde680-0cc5-3488-9376-7cf20605b12f"
+        },
+        "stageId": "6df04d8a-3aec-5923-822d-72c7bcde26ef",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "reports",
+        "timestamp": "2026-11-14T23:37:14.383436Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_FINISHED",
+        "message": "Stage finished",
+        "metadata": {
+          "name": "reports"
+        },
+        "stageId": "6df04d8a-3aec-5923-822d-72c7bcde26ef",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "reports",
+        "timestamp": "2026-11-14T23:37:14.410074Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_DEPENDENCY_SATISFIED",
+        "message": "All dependencies satisfied, stage ready for scheduling",
+        "stageId": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "storage-two-node-read",
+        "timestamp": "2026-11-14T23:37:14.414956Z"
+      },
+      {
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "READY_QUEUE",
+          "queue_time": "2026-11-14T23:37:14.414953151Z"
+        },
+        "stageId": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "storage-two-node-read",
+        "timestamp": "2026-11-14T23:37:14.415536Z"
+      },
+      {
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "RUNNING_QUEUE",
+          "queue_time": "2026-11-14T23:37:14.443264559Z"
+        },
+        "stageId": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "storage-two-node-read",
+        "timestamp": "2026-11-14T23:37:14.443838Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_RESOURCES_ALLOCATED",
+        "message": "Resources allocated (node: 192.168.99.39/7331,192.168.99.38/7331, requested cpu: 1, requested memory: 1 GB, requested devices: 1, projected cpus: 1;1 (ids: 16;0), projected numa nodes: 1;1 (ids: 0;0))",
+        "metadata": {
+          "cpu": "1",
+          "devices": "1",
+          "memory": "1073741824",
+          "node": "192.168.99.39/7331,192.168.99.38/7331",
+          "projected_cpus": "16;0",
+          "projected_numa_nodes": "0;0"
+        },
+        "stageId": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "storage-two-node-read",
+        "timestamp": "2026-11-14T23:37:14.447230Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_READY",
+        "message": "Stage ready",
+        "stageId": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "storage-two-node-read",
+        "timestamp": "2026-11-14T23:37:14.447634Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_STARTED",
+        "message": "Stage started",
+        "metadata": {
+          "name": "storage-two-node-read"
+        },
+        "stageId": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "storage-two-node-read",
+        "timestamp": "2026-11-14T23:37:16.291888Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_CONTAINER_STARTED",
+        "message": "Container started on node: 192.168.99.39/7331 (enforced cpus: 1 (ids: 16), enforced numa nodes: 1 (ids: 0))",
+        "metadata": {
+          "container_id": "efeba751-fe73-540e-a992-a6d0e8c2cbcf.0",
+          "enforced_cpus": "16",
+          "enforced_numa_nodes": "0",
+          "node": "192.168.99.39:7331"
+        },
+        "stageId": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "storage-two-node-read",
+        "timestamp": "2026-11-14T23:37:16.291909Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_CONTAINER_EXITED",
+        "message": "Container exited with code: 0",
+        "metadata": {
+          "exit_code": "0"
+        },
+        "stageId": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "storage-two-node-read",
+        "timestamp": "2026-11-14T23:37:46.876532Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_FINISHED",
+        "message": "Stage finished",
+        "metadata": {
+          "name": "storage-two-node-read"
+        },
+        "stageId": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "storage-two-node-read",
+        "timestamp": "2026-11-14T23:37:46.988246Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_DEPENDENCY_SATISFIED",
+        "message": "All dependencies satisfied, stage ready for scheduling",
+        "stageId": "37596db4-7a37-5ceb-8f19-952b6c323dc4",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt",
+        "timestamp": "2026-11-14T23:37:46.992381Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "READY_QUEUE",
+          "queue_time": "2026-11-14T23:37:46.992378681Z"
+        },
+        "stageId": "37596db4-7a37-5ceb-8f19-952b6c323dc4",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt",
+        "timestamp": "2026-11-14T23:37:46.992910Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "RUNNING_QUEUE",
+          "queue_time": "2026-11-14T23:37:47.011089387Z"
+        },
+        "stageId": "37596db4-7a37-5ceb-8f19-952b6c323dc4",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt",
+        "timestamp": "2026-11-14T23:37:47.011595Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_RESOURCES_ALLOCATED",
+        "message": "Resources allocated (node: 192.168.99.39/7331, requested cpu: 1, requested memory: 1 GB, projected cpus: 1 (ids: 16), projected numa nodes: 1 (ids: 0))",
+        "metadata": {
+          "cpu": "1",
+          "memory": "1000000000",
+          "node": "192.168.99.39/7331",
+          "projected_cpus": "16",
+          "projected_numa_nodes": "0"
+        },
+        "stageId": "37596db4-7a37-5ceb-8f19-952b6c323dc4",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt",
+        "timestamp": "2026-11-14T23:37:47.013886Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_STAGE_STARTED",
+        "message": "Stage started",
+        "metadata": {
+          "name": "reports-egress-0"
+        },
+        "stageId": "37596db4-7a37-5ceb-8f19-952b6c323dc4",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt",
+        "timestamp": "2026-11-14T23:37:47.019350Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_FILE_TRANSFER_TYPE",
+        "message": "Transfer type: egress",
+        "metadata": {
+          "type": "egress"
+        },
+        "stageId": "37596db4-7a37-5ceb-8f19-952b6c323dc4",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt",
+        "timestamp": "2026-11-14T23:37:47.019370Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_FILE_TRANSFER_STARTED",
+        "message": "Transfer started: file:///csi-publish/37596db4-7a37-5ceb-8f19-952b6c323dc4/ephemeral/9d279ac6-741f-48b1-88c3-1a61a0a56aa6/reports/report.txt → fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt",
+        "metadata": {
+          "destination": "fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt",
+          "source": "file:///csi-publish/37596db4-7a37-5ceb-8f19-952b6c323dc4/ephemeral/9d279ac6-741f-48b1-88c3-1a61a0a56aa6/reports/report.txt"
+        },
+        "stageId": "37596db4-7a37-5ceb-8f19-952b6c323dc4",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt",
+        "timestamp": "2026-11-14T23:37:47.429075Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_FILE_TRANSFER_COMPLETED",
+        "message": "Transfer complete",
+        "stageId": "37596db4-7a37-5ceb-8f19-952b6c323dc4",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt",
+        "timestamp": "2026-11-14T23:37:47.811027Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_STAGE_FINISHED",
+        "message": "Stage finished",
+        "metadata": {
+          "name": "reports-egress-0"
+        },
+        "stageId": "37596db4-7a37-5ceb-8f19-952b6c323dc4",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt",
+        "timestamp": "2026-11-14T23:37:47.814630Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_WORKFLOW_FINISHED",
+        "message": "Workflow finished",
+        "stageId": "9d279ac6-741f-48b1-88c3-1a61a0a56aa6",
+        "stageKind": "STAGE_KIND_WORKFLOW",
+        "stageName": "9d279ac6-741f-48b1-88c3-1a61a0a56aa6",
+        "timestamp": "2026-11-14T23:37:47.826415Z"
+      }
+    ],
+    "total": 50
+  },
+  "log": "2026-11-14T23:37:16.776282857Z stdout F {\"architecture\": \"aarch64\", \"bytes\": 78, \"bytes_match\": true, \"container_hostname\": \"storage-two-node-read-0\", \"rank\": 0, \"run_id\": \"phase-b-20261114T173521-7908c2da\", \"sha256\": \"39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d\", \"sha256_match\": true, \"status\": \"PASS\", \"test_file\": \"/project/verification/phase-b-20261114T173521-7908c2da/sentinel.txt\"}\n2026-11-14T23:37:17.097316672Z stdout F {\"architecture\": \"aarch64\", \"bytes\": 78, \"bytes_match\": true, \"container_hostname\": \"storage-two-node-read-1\", \"rank\": 1, \"run_id\": \"phase-b-20261114T173521-7908c2da\", \"sha256\": \"39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d\", \"sha256_match\": true, \"status\": \"PASS\", \"test_file\": \"/project/verification/phase-b-20261114T173521-7908c2da/sentinel.txt\"}\n2026-11-14T23:37:46.859458239Z stdout F two-node shared-storage verification\n2026-11-14T23:37:46.859474239Z stdout F run_id=phase-b-20261114T173521-7908c2da\n2026-11-14T23:37:46.859476383Z stdout F allocated_container_hostlist=storage-two-node-read-1,storage-two-node-read-0\n2026-11-14T23:37:46.859478671Z stdout F {\"architecture\": \"aarch64\", \"bytes\": 78, \"bytes_match\": true, \"container_hostname\": \"storage-two-node-read-0\", \"rank\": 0, \"run_id\": \"phase-b-20261114T173521-7908c2da\", \"sha256\": \"39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d\", \"sha256_match\": true, \"status\": \"PASS\", \"test_file\": \"/project/verification/phase-b-20261114T173521-7908c2da/sentinel.txt\"}\n2026-11-14T23:37:46.859908816Z stdout F {\"architecture\": \"aarch64\", \"bytes\": 78, \"bytes_match\": true, \"container_hostname\": \"storage-two-node-read-1\", \"rank\": 1, \"run_id\": \"phase-b-20261114T173521-7908c2da\", \"sha256\": \"39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d\", \"sha256_match\": true, \"status\": \"PASS\", \"test_file\": \"/project/verification/phase-b-20261114T173521-7908c2da/sentinel.txt\"}\n2026-11-14T23:37:46.859923552Z stdout F TWO_RANK_READ=PASS; verify physical scheduler node identities separately\n",
+  "report": {
+    "content": "two-node shared-storage verification\nrun_id=phase-b-20261114T173521-7908c2da\nallocated_container_hostlist=storage-two-node-read-1,storage-two-node-read-0\n{\"architecture\": \"aarch64\", \"bytes\": 78, \"bytes_match\": true, \"container_hostname\": \"storage-two-node-read-0\", \"rank\": 0, \"run_id\": \"phase-b-20261114T173521-7908c2da\", \"sha256\": \"39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d\", \"sha256_match\": true, \"status\": \"PASS\", \"test_file\": \"/project/verification/phase-b-20261114T173521-7908c2da/sentinel.txt\"}\n{\"architecture\": \"aarch64\", \"bytes\": 78, \"bytes_match\": true, \"container_hostname\": \"storage-two-node-read-1\", \"rank\": 1, \"run_id\": \"phase-b-20261114T173521-7908c2da\", \"sha256\": \"39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d\", \"sha256_match\": true, \"status\": \"PASS\", \"test_file\": \"/project/verification/phase-b-20261114T173521-7908c2da/sentinel.txt\"}\nTWO_RANK_READ=PASS; verify physical scheduler node identities separately\n",
+    "contentLength": 967,
+    "digest": "sha256:cf63c2a5226c9c0a9c437bb1b6ff41ab2e0e04984c001e616baa653dd0bf5459",
+    "returnedBytes": 967,
+    "uri": "fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/storage-two-node-read.txt"
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-14T18:03:08-06:00",
+  "label": "Saved results from completed cluster runs.",
+  "files": [
+    {
+      "path": "findings/gpu-smoke-run.json",
+      "sha256": "9f906e9e1cd89bf8dd7f928ce56d00a6251e996692cdfc76b68be86015c925ec",
+      "bytes": 2549,
+      "classification": "setup_evidence",
+      "provenance": "Sanitized local evidence of Phase A or its preflight"
+    },
+    {
+      "path": "findings/gpu-smoke-report.txt",
+      "sha256": "7057b334374032ab9ca97a5da4003ec25bb13463500705f5992e6885a1f5224c",
+      "bytes": 2062,
+      "classification": "setup_evidence",
+      "provenance": "Retrieved via read-only object_get; group report digest recorded in run JSON"
+    },
+    {
+      "path": "findings/gpu-smoke-job.log",
+      "sha256": "57ea8fbad56d1ec13c2c34d61da5e3a107f529905aa791de66a5319d7ae677f3",
+      "bytes": 3298,
+      "classification": "setup_evidence",
+      "provenance": "Sanitized local evidence of Phase A or its preflight"
+    },
+    {
+      "path": "findings/gpu-smoke-run.log",
+      "sha256": "13787aadbdec23702fbeae7f0112b247bf68ee96ff4fe819eaaf099a3e10c884",
+      "bytes": 3370,
+      "classification": "setup_evidence",
+      "provenance": "Sanitized local evidence of Phase A or its preflight"
+    },
+    {
+      "path": "findings/gpu-smoke-stages.json",
+      "sha256": "f9dccf2d09248b41c3ebe4ca490de787a7d1c0a853db87b6de3d0f24dcdf4f1a",
+      "bytes": 25086,
+      "classification": "setup_evidence",
+      "provenance": "Sanitized local evidence of Phase A or its preflight"
+    },
+    {
+      "path": "findings/gpu-smoke-validation.json",
+      "sha256": "0c7a024583d3599b8139c57805ea6688b7267e9e581e53170fa2f26b5fa2441c",
+      "bytes": 2059,
+      "classification": "setup_evidence",
+      "provenance": "Sanitized local evidence of Phase A or its preflight"
+    },
+    {
+      "path": "findings/fuzzball-resource-discovery.json",
+      "sha256": "e76b33253fe2c1bea9eb191708cb3b3977b492485a32354979b2c5e2c8557edf",
+      "bytes": 17598,
+      "classification": "setup_evidence",
+      "provenance": "Sanitized local evidence of Phase A or its preflight"
+    },
+    {
+      "path": "workflows/gpu-smoke-team15.fz",
+      "sha256": "d5daef96b0a2f00522e6c7343b2f409c0cb87af85010eb31f3391103636d9f72",
+      "bytes": 3718,
+      "classification": "executed_workflow",
+      "provenance": "Exact approved and submitted definition; hash verified before one submission"
+    },
+    {
+      "path": "findings/phase-b-approval-bundle.json",
+      "sha256": "99a42da35520ff513672bacb31eb0d454922a7f9cb02e8f6552cc4454a2f6ab1",
+      "bytes": 7350,
+      "classification": "proposal",
+      "provenance": "Prepared proposal only; not executed"
+    },
+    {
+      "path": "findings/phase-b-validation.json",
+      "sha256": "32627a21481624e1f79211a83394c3b9d24df98e0abb80fcfc60b76dea2e4495",
+      "bytes": 1591,
+      "classification": "proposal_validation",
+      "provenance": "Installed CLI validation; missing-volume failures are preserved"
+    },
+    {
+      "path": "workflows/pytorch-storage-write-team15.fz",
+      "sha256": "73f9b6bee7fe698ee0d7df1c38a8340b7085b44d154613c5ea53893fa4a7c575",
+      "bytes": 4108,
+      "classification": "executed_workflow",
+      "provenance": "Final approved Phase B workflow; one recorded submission, exact hash in run record"
+    },
+    {
+      "path": "workflows/storage-two-node-read-team15.fz",
+      "sha256": "d7353498d3f6fb327589aec8a53fa23ca247008f5006572720e9c5a47894f435",
+      "bytes": 4560,
+      "classification": "executed_workflow",
+      "provenance": "Final approved Phase B workflow; one recorded submission, exact hash in run record"
+    },
+    {
+      "path": "workflows/datasets-metadata-team15.HOLD.fz",
+      "sha256": "367b0ea0a2cd4bdb5210834601a3f9bc555c1c0e9c2efb9bfafecad6cb8e25b9",
+      "bytes": 2705,
+      "classification": "proposed_workflow",
+      "provenance": "Local proposal only; unexecuted"
+    },
+    {
+      "path": "milestones.md",
+      "sha256": "0200d782394548769ccc43258ff3acc686d49df373c26f1c81dcb9fb35b91da3",
+      "bytes": 1975,
+      "classification": "handoff",
+      "provenance": "Local checkpoint or offline viewer verification; not remote computation"
+    },
+    {
+      "path": "RUN_LOCALLY.md",
+      "sha256": "1bca4e62e3d8a8d8890ce11b53fd2f547a73d7ff6b63f27e489b62e4e80a2ccd",
+      "bytes": 4760,
+      "classification": "handoff",
+      "provenance": "Local checkpoint or offline viewer verification; not remote computation"
+    },
+    {
+      "path": "NEXT_SESSION.md",
+      "sha256": "458ba04452a3b10f640b94bacbe5f430a0bcc6411d424a79de066d553ceff520",
+      "bytes": 7390,
+      "classification": "handoff",
+      "provenance": "Local checkpoint or offline viewer verification; not remote computation"
+    },
+    {
+      "path": "findings/local-viewer-validation.json",
+      "sha256": "a4bd9a959c0a219c43bcb62dce183a96ee11a54485061b283ddb9774675ce460",
+      "bytes": 399,
+      "classification": "handoff",
+      "provenance": "Local checkpoint or offline viewer verification; not remote computation"
+    },
+    {
+      "path": "findings/phase-b-results.json",
+      "sha256": "0e85a5ef8a39fe7cdd0e72d5572491e3788f80f84609f73fab3431c18fcacedf",
+      "bytes": 13429,
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-test-contract.json",
+      "sha256": "13dcea8e64271da9fafd5e443fa8f3c123feb6044e169b32f00dcf13cf9453b3",
+      "bytes": 565,
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-sentinel.expected.txt",
+      "sha256": "39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d",
+      "bytes": 78,
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-final-preflight.json",
+      "sha256": "fadbc6621297ed67e94f2ef3f3edef180785beeec206ea8f6e8da82954c8456c",
+      "bytes": 1517,
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-compatibility.json",
+      "sha256": "43028ba6d40b1df7e87d81b348436f2024630d483e88226bc7e4b22021b108b8",
+      "bytes": 3419,
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-image-preflight.json",
+      "sha256": "e085264a7cde5e2c2fc6126b09368ab1693f9b4f96e8be258014a9ed13f62897",
+      "bytes": 770,
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-volume.json",
+      "sha256": "1e18e8b2d13531c1baa37dfb5328739b587b86e3d60f06dd6a5a5b72b334cf36",
+      "bytes": 748,
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-volume-action.json",
+      "sha256": "9d7ae86313029d79a6df798d152b19b57bc5cc07fb7f2b759c80a7b10f6e60e5",
+      "bytes": 407,
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/scientific-importer-tests.json",
+      "sha256": "27ba46eb8ac9ca680c7965ccdbf9db273d12ff37b3db0993a99868dea4b682f7",
+      "bytes": 146,
+      "classification": "local_import_preparation",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-writer-run.json",
+      "sha256": "9bd55ee02f8871fdcf828da72e777fca537a91536ac5f6c2dcfdb931531ce8ab",
+      "bytes": 4723,
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-writer-evidence.json",
+      "sha256": "651cdc8f3edf9ff84023fed6f16f0ca08b6d9649c9f7b54709ac974df9321430",
+      "bytes": 37642,
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-writer-report.txt",
+      "sha256": "148b9ecc835e7b4c134f92d587a51a6a4b182b5e252e634e5c1e1434eb22df6b",
+      "bytes": 2642,
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-reader-run.json",
+      "sha256": "4fd4aaa81514151f61998c8b723f82bbbf0e6568e2aa686d1b2a9f7643d8291f",
+      "bytes": 5122,
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-reader-evidence.json",
+      "sha256": "f6c0818641a6da073f484da3bbd9963e70d4889ca542ea7ffa636ff16c706898",
+      "bytes": 33999,
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-reader-report.txt",
+      "sha256": "cf63c2a5226c9c0a9c437bb1b6ff41ab2e0e04984c001e616baa653dd0bf5459",
+      "bytes": 967,
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-writer.log",
+      "sha256": "8e4c2e1ce9cee58f08ddc5d23c5f5bdd5b1f9b49ab80beb3f9968c70569d5ea4",
+      "bytes": 3601,
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-reader.log",
+      "sha256": "8653cc258e4a9890b4955df83cf6d1e434483ab5f19e694b26fdb66b385f133f",
+      "bytes": 2027,
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "scripts/import_scientific_bundle.py",
+      "sha256": "f92392eaa4766db7215f09ebbe65e727ff0162dbcd5b0bb8314c07061f70548b",
+      "bytes": 11909,
+      "classification": "local_import_preparation",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "scientific_bundle_contract.json",
+      "sha256": "84aa7ecddf7bffafc215a73729e79986e2add0743808a64e38d49dd160862eea",
+      "bytes": 2586,
+      "classification": "local_import_preparation",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/next-scientific-run-proposal.json",
+      "sha256": "30d7f98baf1a2d042e50218ab8105c7be90173a34b4c6d8391727c7ed5d0a151",
+      "bytes": 2238,
+      "classification": "unexecuted_proposal",
+      "provenance": "Bounded resource envelope on hold for real manifest and scientific command"
+    },
+    {
+      "path": "findings/phase-b-local-viewer-validation.json",
+      "sha256": "6717c95a5400185e1c00cdf5927df1fb06ee1a3e21bb5fb024643382f1cb6f42",
+      "bytes": 407,
+      "classification": "offline_viewer_verification",
+      "provenance": "Headless browser rendering with cluster requests and process DNS disabled; Windows network unchanged"
+    },
+    {
+      "path": "findings/departure-checkpoint.json",
+      "sha256": "e97224f079f662bd7bbf14b85c566f24f8c812ade7c04a5c3e663260b268293c",
+      "bytes": 1981,
+      "classification": "handoff",
+      "provenance": "Sanitized departure checkpoint; no scientific outputs"
+    },
+    {
+      "path": "findings/departure-local-verification.json",
+      "sha256": "c9cc2db22d7926ff72a675f280c5d0a5a0f36e94c06a1b0865a13c1999722cf2",
+      "bytes": 203,
+      "classification": "handoff",
+      "provenance": "Sanitized departure checkpoint; no scientific outputs"
+    },
+    {
+      "path": "README.md",
+      "sha256": "440288004fe326f32518a1fdd2293101aa629f878ceec35ffdf8c92c596f47d7",
+      "bytes": 1542,
+      "classification": "handoff",
+      "provenance": "Sanitized departure checkpoint; no scientific outputs"
+    },
+    {
+      "path": "sparkprep/README.md",
+      "sha256": "b89a8fc0f04f7c1d279a25b03e7168799cb21d2fa8e248508069a6a6a6b53846",
+      "bytes": 504,
+      "classification": "handoff",
+      "provenance": "Sanitized departure checkpoint; no scientific outputs"
+    },
+    {
+      "path": "index.html",
+      "sha256": "9f6b31bf937f865dcead39d30c858dfe339737dc3913bc62f8bb82228d89afe1",
+      "bytes": 6527,
+      "classification": "offline_viewer",
+      "provenance": "Generated locally from findings/result-export-index.json"
+    },
+    {
+      "path": "results-index.json",
+      "sha256": "8c4b340c4aba4e40039f0faadf7c1270e43bce681c46306f2e48737b11edebd6",
+      "bytes": 13407,
+      "classification": "result_index",
+      "provenance": "Generated locally from findings/result-export-index.json"
+    }
+  ],
+  "missing": [
+    "Actual compact protein bundle from darkstar90@spark-6771 (not available on this laptop)",
+    "Scientific method/data contract and exact model/settings, if any",
+    "Real scientific outputs and generated structures",
+    "Pre-existing reference structures and provenance",
+    "Identical-workload one-node/two-node scientific pilot"
+  ],
+  "exclusions": [
+    "model weights",
+    "whole dataset volumes",
+    "authentication files",
+    "tokens",
+    "unrelated team data"
+  ],
+  "self_hash_note": "manifest.json does not hash itself"
+}

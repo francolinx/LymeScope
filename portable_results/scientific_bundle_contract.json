@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "document_type": "BUNDLE CONTRACT ONLY: no scientific data or results",
+  "origin": {
+    "host": "darkstar90@spark-6771",
+    "workspace": "/home/darkstar90/lymescope-sparkprep",
+    "availability": "Not automatically available on this Windows laptop. No connection or transfer performed."
+  },
+  "bundle_manifest": {
+    "filename": "bundle_manifest.json",
+    "required": [
+      "schema_version=1",
+      "bundle_id (letters/digits/underscore/hyphen, <=64 chars)",
+      "files"
+    ],
+    "file_entry_required": [
+      "path (relative POSIX path)",
+      "role",
+      "bytes",
+      "sha256 (lowercase hex)"
+    ],
+    "roles": [
+      "fasta",
+      "sequence_metadata",
+      "source_manifest",
+      "reference_structure"
+    ],
+    "reference_entry_additional": [
+      "origin=pre-existing",
+      "reference_id",
+      "source_id"
+    ]
+  },
+  "sequence_metadata": {
+    "format": "JSON list",
+    "required_fields": [
+      "sequence_id (matches first whitespace-delimited FASTA header token)",
+      "accession",
+      "source_id"
+    ]
+  },
+  "source_manifest": {
+    "format": "JSON object with sources list",
+    "source_required": [
+      "id",
+      "url (HTTPS, credential-free)",
+      "license",
+      "citation",
+      "retrieved_at"
+    ],
+    "note": "Record real source/license information. Hash checks do not establish license suitability or scientific validity."
+  },
+  "fasta": {
+    "upper_case": true,
+    "max_sequences": 512,
+    "max_residues_per_sequence": 10000,
+    "ambiguous": "BXZJ permitted but flagged; U and O accepted. One terminal stop permitted. Internal stops/gaps rejected. Original bytes preserved."
+  },
+  "structures": {
+    "accepted": [
+      ".pdb",
+      ".cif",
+      ".mmcif"
+    ],
+    "label": "pre-existing",
+    "validation": "Recognizable coordinate record check only; chain/sequence mapping and biological relevance require scientific review."
+  },
+  "limits": {
+    "files": 128,
+    "file_bytes": 20971520,
+    "total_bytes": 104857600
+  },
+  "commands": {
+    "validate_only": "python scripts/import_scientific_bundle.py \"C:\\path\\to\\compact-bundle.zip\"",
+    "import": "python scripts/import_scientific_bundle.py \"C:\\path\\to\\compact-bundle.zip\" --import-to scientific_inputs"
+  },
+  "scope": "Local files only; no network requests, package installs, model downloads, or scientific job submissions. Each output directory is new; imported content is byte-verified.",
+  "missing": "Actual bundle and scientific method are not supplied. Empty example fields are not fabricated data."
+}

@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-11-14T17:45:33.437667-06:00",
+  "portableFilesChecked": 39,
+  "manifestHashes": "PASS",
+  "localEvidenceLinks": "PASS",
+  "actualInfrastructureRunsRendered": 3,
+  "scientificRuns": 0,
+  "clusterRequestsDisabled": true,
+  "browserDnsDisabledForTestProcess": true,
+  "windowsNetworkConfigurationChanged": false,
+  "screenshot": "findings/phase-b-saved-results-viewer.png"
+}

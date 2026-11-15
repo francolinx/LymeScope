@@ -1,0 +1,20 @@
+﻿[
+    {
+        "file":  "workflows/pytorch-storage-write-team15.fz",
+        "sha256":  "73f9b6bee7fe698ee0d7df1c38a8340b7085b44d154613c5ea53893fa4a7c575",
+        "validationExitCode":  0,
+        "validationOutput":  "\"workflows/pytorch-storage-write-team15.fz\" has been validated.",
+        "scoreExitCode":  0,
+        "scoreOutput":  "{\n  \"score\": 0.5013241,\n  \"annotations\": {},\n  \"costEstimate\": 0.12533333333333335,\n  \"readyQueueDepth\": \"9\",\n  \"runningQueueDepth\": \"31\",\n  \"usableCapacity\": 41,\n  \"clusterId\": \"294995c2-2cfc-14a6-8007-35485c2e35a7\",\n  \"blockingQueueDepth\": \"4\",\n  \"candidateEffectivePriority\": 7.425830555555555e-7\n}",
+        "checkedAt":  "2026-11-14T17:35:22.4536622-06:00"
+    },
+    {
+        "file":  "workflows/storage-two-node-read-team15.fz",
+        "sha256":  "d7353498d3f6fb327589aec8a53fa23ca247008f5006572720e9c5a47894f435",
+        "validationExitCode":  0,
+        "validationOutput":  "\"workflows/storage-two-node-read-team15.fz\" has been validated.",
+        "scoreExitCode":  0,
+        "scoreOutput":  "{\n  \"score\": 0.500112,\n  \"annotations\": {},\n  \"costEstimate\": 0.12566666666666665,\n  \"readyQueueDepth\": \"9\",\n  \"runningQueueDepth\": \"31\",\n  \"usableCapacity\": 41,\n  \"clusterId\": \"294995c2-2cfc-14a6-8007-35485c2e35a7\",\n  \"blockingQueueDepth\": \"4\",\n  \"candidateEffectivePriority\": 5.829861111111111e-8\n}",
+        "checkedAt":  "2026-11-14T17:35:22.8071463-06:00"
+    }
+]

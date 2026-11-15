@@ -1,0 +1,69 @@
+﻿{
+  "definition": {
+    "version": "v4",
+    "volumes": {
+      "data": {
+        "name": "datasets",
+        "type": "",
+        "ingress": [],
+        "egress": [],
+        "path": "",
+        "reference": "",
+        "use": "shared",
+        "size": "",
+        "annotations": {}
+      }
+    },
+    "jobs": {
+      "mount-schema-check": {
+        "name": "",
+        "image": {
+          "uri": "docker://rockylinux:9",
+          "secrets": {},
+          "secret": "",
+          "decryptionSecret": "",
+          "cache": "",
+          "cache-ttl": "0"
+        },
+        "command": [
+          "true"
+        ],
+        "env": [],
+        "mounts": {
+          "/datasets": {
+            "volume": "data"
+          }
+        },
+        "cwd": "",
+        "requires": [],
+        "resource": {
+          "cpu": {
+            "affinity": "",
+            "cores": 1,
+            "sockets": 0
+          },
+          "memory": {
+            "size": "512MiB"
+          },
+          "devices": {},
+          "annotations": {
+            "fuzzball.io/provisioner_definition_id": "team15"
+          }
+        },
+        "script": "",
+        "args": [],
+        "files": {},
+        "depends-on": []
+      }
+    },
+    "annotations": {},
+    "files": {},
+    "services": {},
+    "preemptible": false,
+    "images": {}
+  },
+  "detectedVersion": "v4",
+  "upgraded": false,
+  "errors": [],
+  "warnings": []
+}

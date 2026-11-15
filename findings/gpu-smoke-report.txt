@@ -1,0 +1,31 @@
+LymeScope GPU smoke test
+execution_hostname=gpu-smoke
+cpu_architecture=aarch64
+CUDA_VISIBLE_DEVICES=unset
+NVIDIA_VISIBLE_DEVICES=GPU-97e5d33f-5ef1-6799-f514-f3f0fd0d687f
+
+GPU inventory:
+GPU 0: NVIDIA GB10 (UUID: GPU-97e5d33f-5ef1-6799-f514-f3f0fd0d687f)
+
+Driver report (CUDA Version is the driver-supported ceiling):
+Sat Nov 14 23:02:05 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.173.02             Driver Version: 580.173.02     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GB10                    On  |   0000000F:01:00.0 Off |                  N/A |
+| N/A   40C    P8              4W /  N/A  | Not Supported          |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+DRIVER_CHECK=PASS; PYTORCH_CHECK=SKIPPED (torch absent)

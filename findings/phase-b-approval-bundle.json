@@ -1,0 +1,141 @@
+{
+  "capturedAt": "2026-11-14T23:08:49.249Z",
+  "phaseAWorkflowId": "79a4aa69-4307-4184-9764-84b915f58579",
+  "status": "PREPARED_NOT_AUTHORIZED_NOT_EXECUTED",
+  "remoteActions": [
+    {
+      "order": 1,
+      "action": "Reuse an existing authorized team15/lymescope-project only if metadata confirms NFS and sufficient capacity; otherwise create exactly one volume",
+      "command": "& \"C:\\Users\\franc\\bin\\fuzzball.exe\" volume create team15 lymescope-project --size 1GiB --description \"LymeScope small protein pilot and verification outputs\"",
+      "persistentCapacity": "1GiB",
+      "provisioner": "team15",
+      "filesWritten": "sentinel (<1KiB), runtime.json and two read receipts; later scientific data needs separate approval",
+      "retainBeyondAccessCutoff": "UNKNOWN; not relied upon"
+    },
+    {
+      "order": 2,
+      "action": "After volume exists, rerun workflow validate and score --check on both files; stop on any failure",
+      "writeOrCompute": false
+    },
+    {
+      "order": 3,
+      "action": "Submit pytorch-storage-write-team15.fz once; retrieve report/logs/events immediately",
+      "workflowFile": "workflows/pytorch-storage-write-team15.fz",
+      "image": "docker://nvcr.io/nvidia/pytorch:25.11-py3",
+      "nodes": 1,
+      "gpuPerNode": 1,
+      "cpuPerNode": 2,
+      "memoryPerNode": "16GiB",
+      "executeTimeout": "2m",
+      "ephemeralReportVolume": "team15 NFS 16MiB",
+      "egressTimeout": "1m",
+      "operation": "32x32 float32 all-ones CUDA matrix product; exact expected sum 32768; create and read <1KiB sentinel on persistent NFS"
+    },
+    {
+      "order": 4,
+      "action": "Only after step 3 succeeds and evidence is exported: submit storage-two-node-read-team15.fz once; export report/logs/events immediately",
+      "workflowFile": "workflows/storage-two-node-read-team15.fz",
+      "image": "docker://rockylinux:9",
+      "nodes": 2,
+      "gpuPerNode": 0,
+      "cpuPerNode": 1,
+      "memoryPerNode": "1GiB",
+      "executeTimeout": "2m",
+      "ephemeralReportVolume": "team15 NFS 16MiB",
+      "egressTimeout": "1m",
+      "operation": "Generic multinode helper dispatches one reader per node, verifies known sentinel hash, produces two rank receipts; correlate both physical node IDs with workflow events"
+    }
+  ],
+  "downloads": {
+    "containerImages": [
+      "nvcr.io/nvidia/pytorch:25.11-py3 (multi-GB pull/conversion possible; exact transfer size and cluster cache unknown)",
+      "rockylinux:9 (Phase A cache hit confirmed; per-node staging can still occur)"
+    ],
+    "modelWeights": "NONE",
+    "packages": "NONE",
+    "datasets": "NONE",
+    "reportUploads": "one small text report per workflow, bounded script output; read inline and immediately save locally"
+  },
+  "validation": {
+    "gpuAndStorage": "MCP local parse valid with NotFound warning; CLI validation exit 1, missing proposed persistent volume. Full validation must pass after approved creation and before either submit.",
+    "datasetDraft": "CLI validation exit 0 and MCP valid. HOLD: enforced read-only mount is unconfirmed; script fails before directory access unless /proc/self/mountinfo reports ro.",
+    "records": "findings/phase-b-validation.json",
+    "mcp": [
+      {
+        "valid": true,
+        "warnings": [
+          "server validation unavailable: rpc error: code = NotFound desc = volume \"lymescope-project\" not found on provisioner \"team15\" — create it with 'fuzzball volume create team15 lymescope-project', import an existing volume with 'fuzzball volume provisioner scan team15', or list available volumes with 'fuzzball volume list team15'"
+        ]
+      },
+      {
+        "valid": true,
+        "warnings": [
+          "server validation unavailable: rpc error: code = NotFound desc = volume \"lymescope-project\" not found on provisioner \"team15\" — create it with 'fuzzball volume create team15 lymescope-project', import an existing volume with 'fuzzball volume provisioner scan team15', or list available volumes with 'fuzzball volume list team15'"
+        ]
+      },
+      {
+        "valid": true
+      }
+    ]
+  },
+  "mountFinding": {
+    "probe": "findings/mount-schema-probe.fz",
+    "normalized": "findings/mount-schema-probe-normalized.json",
+    "result": "read-only:true discarded; arbitrary unknown field also accepted by validator. No claim that a read-only job mount is supported.",
+    "mentorQuestion": "In installed Fuzzball 4.3.1, what supported workflow mount syntax enforces read-only access to shared/datasets? The CLI's normalized v4 definition discarded read-only:true. Is the existing shared datasets export already mounted read-only?"
+  },
+  "datasetHold": {
+    "workflow": "workflows/datasets-metadata-team15.HOLD.fz",
+    "limits": {
+      "entries": 100,
+      "depth": 2,
+      "seconds": 15,
+      "jobTimeout": "1m",
+      "fileContentBytes": 0,
+      "followSymlinks": false
+    },
+    "remoteExecutionApproved": false
+  },
+  "imageEvidence": [
+    {
+      "source": "https://ui.fb-hack.civilfritz.net/docs/appendices/workflow-syntax/",
+      "fact": "Event guide uses the nvcr.io/nvidia/pytorch image family (old 24.01 example); only its v4 workflow syntax and image family are reused."
+    },
+    {
+      "source": "https://build.nvidia.com/spark/unsloth",
+      "fact": "NVIDIA DGX Spark hardware table lists nvcr.io/nvidia/pytorch:25.11-py3. Only the base image is proposed; none of the playbook's package/model installation steps."
+    },
+    {
+      "source": "https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/rel-25-11.html",
+      "fact": "Preinstalled PyTorch 2.10.0a0+b558c986e8 and CUDA 13.0.2; runtime verification still required."
+    },
+    {
+      "source": "https://docs.nvidia.com/deploy/cuda-compatibility/latest/minor-version-compatibility.html",
+      "fact": "CUDA 13.x minimum driver family >=580; observed 580.173.02 meets this family-level requirement, which is not proof of working Fuzzball GPU kernels."
+    },
+    {
+      "source": "https://ui.fb-hack.civilfritz.net/docs/parallel-and-distributed/generic/",
+      "fact": "Documented generic multinode helpers allow commands on both allocated nodes. Their runtime availability has not yet been tested."
+    }
+  ],
+  "scientificWork": {
+    "status": "BLOCKED awaiting concrete small real protein dataset and scientific/data handoff; no scientific job approved or drafted with guessed inputs",
+    "required": [
+      "Exact sequence/structure identifiers and licensed source",
+      "Small exact input file and sha256",
+      "Biological question and justified method",
+      "Model/version/settings and required weights, if any",
+      "Bounded output contract",
+      "Identical input/method/settings for one/two-node pilot with meaningful partition"
+    ],
+    "scientificRuns": 0,
+    "benchmarkPairs": 0
+  },
+  "cutoff": {
+    "departureTargetCentral": "2026-11-14T19:30:00-06:00",
+    "organizerAccessCutoff": "UNKNOWN, may be earlier; no assumption of overnight access",
+    "exportWindow": "last 45 minutes of actual access; if access lasts to departure, begin 18:45 Central",
+    "offlineViewingWindow": "last 15 minutes of actual access; if access lasts to departure, begin 19:15 Central",
+    "submissionGate": "No new scientific compute once export reserve begins; export every completed result immediately"
+  }
+}

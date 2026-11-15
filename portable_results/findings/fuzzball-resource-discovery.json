@@ -1,0 +1,440 @@
+{
+  "observed_at_utc": "2026-11-14T22:49:13.982Z",
+  "purpose": "Read-only resource discovery and preparation; no workflows submitted.",
+  "group": {
+    "name": "team15",
+    "id": "3dc1e570-4036-4fcb-8438-f0ca5b710e87"
+  },
+  "environment": {
+    "cli_agent_version": "4.3.1 (previously confirmed)",
+    "mcp": "Connected local STDIO; read-only; unchanged",
+    "cluster_id": "294995c2-2cfc-14a6-8007-35485c2e35a7",
+    "cluster_name": "fb-hack"
+  },
+  "compute": {
+    "provisioner": "team15",
+    "backend": "static",
+    "backend_id": "team15",
+    "evidence": [
+      "Installed CLI node provisioner get team15 returned id=team15 and resource.annotations[fuzzball.io/provisioner_definition_id]=team15.",
+      "Complete installed CLI node list --output json returned 42 nodes. Exactly two have definitionId=team15; both also carry the matching resource annotation.",
+      "Read-only workflow_score with_checks=true accepted the workflow pinned to team15 using the current team15 context.",
+      "Negative control changed only the provisioner annotation to a nonexistent definition; scheduling preflight rejected it with no suitable provision definition found for job gpu-smoke."
+    ],
+    "nodes": [
+      {
+        "host_name": "CIQ-CHI-SPARK29",
+        "node_id": "192.168.99.38/7331",
+        "definition_id": "team15",
+        "status": "READY",
+        "health": "HEALTHY"
+      },
+      {
+        "host_name": "CIQ-CHI-SPARK30",
+        "node_id": "192.168.99.39/7331",
+        "definition_id": "team15",
+        "status": "READY",
+        "health": "HEALTHY"
+      }
+    ],
+    "per_node": {
+      "cpu_architecture": "ARM64",
+      "cpu_cores": 20,
+      "memory_bytes": 137304735744,
+      "memory_gib_rounded": 127.9,
+      "gpus": 1,
+      "gpu_model": "NVIDIA GB10",
+      "gpu_family": "Blackwell",
+      "compute_capability": "12.1"
+    },
+    "policy": {
+      "group_compute_policy": "No compute policy grants configured for this group.",
+      "organization_compute_policy": "No compute policy grants configured.",
+      "qualification": "These empty grant lists do not independently establish an exclusive group ACL. The assignment evidence is the named provisioner, explicit node mapping, and successful scoped scheduling preflight. Definition policy expressions and the central enforcement setting were not exposed by the inspected member-facing metadata. No administrator access was requested."
+    },
+    "availability_caveat": "Ready/healthy is a metadata snapshot, not a reservation. GPU free counts are not evidence of idle GPUs. Hostnames were identified from provisioner metadata, not their numeric suffixes.",
+    "response_limit_note": "MCP node_list with full resource objects was explicitly truncated to 25 of 42 nodes. The CLI's full JSON response was used to establish the two matching nodes."
+  },
+  "storage": {
+    "team": {
+      "provisioner": "team15",
+      "id": "4dfde680-0cc5-3488-9376-7cf20605b12f",
+      "description": "Team 15 storage",
+      "status": "READY",
+      "driver": "NFS",
+      "node_local": false,
+      "team15_policies": [
+        "access",
+        "create",
+        "ephemeral"
+      ],
+      "evidence": "volume provisioner info team15 --output json lists team15 explicitly in accessPolicy, createPolicy, and ephemeralPolicy group names.",
+      "visible_persistent_volumes": [],
+      "volume_query": "MCP volume_list(provisioner=team15) returned total=0."
+    },
+    "scratch": {
+      "provisioner": "team15-scratch",
+      "id": "bec17c4c-d66f-367d-874b-ebc02bf0dd9c",
+      "description": "Local NVMe scratch storage",
+      "status": "READY",
+      "driver": "HOSTPATH",
+      "node_local": true,
+      "team15_policies": [
+        "ephemeral"
+      ],
+      "access_policy_present": false,
+      "create_policy_present": false,
+      "evidence": "volume provisioner info team15-scratch lists team15 under ephemeralPolicy; driver.local=true."
+    },
+    "shared": {
+      "provisioner": "shared",
+      "id": "8e925d86-b2aa-31e2-8a82-ebeac0915024",
+      "status": "READY",
+      "driver": "NFS",
+      "node_local": false,
+      "access_policy": "all=true",
+      "team_create_permission": false,
+      "team_ephemeral_permission": false,
+      "volume": {
+        "name": "datasets",
+        "id": "01a1d6bf-b4d3-7933-b590-b473cc46b288",
+        "status": "ENABLED",
+        "persistent": true,
+        "source": "EXTERNAL"
+      },
+      "evidence": "MCP volume_list and targeted volume_info(shared,datasets) both returned the volume; provisioner accessPolicy.all=true authorizes existing-volume access.",
+      "volume_exists": true,
+      "files_inspected": false,
+      "filesystem_access_tested": false,
+      "model_weights_confirmed": false,
+      "compatible_runtime_tested": false,
+      "qualification": "Volume metadata and a mount access policy do not establish file contents, file-level permissions, model weights, or tested runtime compatibility. Capacity was not reported; that does not imply an empty volume.",
+      "possible_future_inspection": "A separately approved short job with a genuinely read-only datasets mount could list bounded filenames/sizes. No file-browser service or volume-mount job was launched."
+    }
+  },
+  "assets": {
+    "group_object_cache": {
+      "uri": "fb://group/",
+      "total": 0,
+      "evidence": "MCP object_list returned objects=[] and total=0."
+    },
+    "confirmed_data_files": [],
+    "confirmed_model_weights": [],
+    "confirmed_cached_runtime_images": [],
+    "tested_runtime_images": [],
+    "catalog": {
+      "total": 29,
+      "complete_listing": true,
+      "entries": [
+        {
+          "id": "a45ffc93-7ea8-5b7f-8d37-45b3e910070f",
+          "name": "Ministral 3 8B",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "8edac02e-a141-550d-9ac8-834be8504fcf",
+          "name": "Mistral Medium 3.5",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "db65a5af-2eeb-5150-9faa-eee0be17bfbc",
+          "name": "Printer Example",
+          "category": "EXAMPLES",
+          "provider": "CIQ"
+        },
+        {
+          "id": "7da47277-007a-5a29-bd5a-db1d54ea1d47",
+          "name": "Nemotron 3 Nano",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "d76bf3bb-1068-5c15-b8ad-45edccdf5262",
+          "name": "LiteLLM Model Gateway",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "d3e6552b-f11d-5800-80f8-036dd888949d",
+          "name": "Nemotron 3 Super",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "cf7bc2c7-5158-58d4-9ea1-4cdc6f515324",
+          "name": "Qwen3-Coder Next 80B",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "8665d50c-4d91-526b-9b24-5c5e93bccc79",
+          "name": "Filebrowser",
+          "category": "UTILITIES",
+          "provider": "CIQ"
+        },
+        {
+          "id": "1eb34794-e105-5617-96f6-93bf54131888",
+          "name": "RStudio Server",
+          "category": "DATA_SCIENCE",
+          "provider": "CIQ"
+        },
+        {
+          "id": "ae263272-9afc-5e0d-a9da-bd49857a5dc5",
+          "name": "GPT-OSS 20B",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "e4b8e0e9-3c00-53a8-8e7d-2ac2b5027418",
+          "name": "Qwen3-Coder 30B",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "09c1c675-c7f6-59bb-aa6f-5fdd1705875b",
+          "name": "rag",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "391fc517-ccfd-5c75-a9da-98861a91171d",
+          "name": "vLLM inference server",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "d14794d4-0e1c-56cc-bc00-5da4e81d06a5",
+          "name": "Llama 4 Scout",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "b2969617-519a-5de6-8a9c-f771a22f7211",
+          "name": "hermes-agent",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "2ddc43b4-9576-52b5-9b7d-fe363237c16c",
+          "name": "MPI Hello, World",
+          "category": "EXAMPLES",
+          "provider": "CIQ"
+        },
+        {
+          "id": "f949f417-cf68-5405-bfb9-a7f6555de2b8",
+          "name": "Open WebUI",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "13b8b4db-682d-5a52-9cb0-abe2cd5e5cf9",
+          "name": "OpenCode",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "51b278a3-5aaa-5f8e-8e9e-39e7d3cf75ab",
+          "name": "Jupyter Server",
+          "category": "UTILITIES",
+          "provider": "CIQ"
+        },
+        {
+          "id": "695d41af-4b53-5430-8d69-bfaa43ed6d31",
+          "name": "Local LLM chat",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "1a2618cd-c335-51eb-b0c9-440c4341701d",
+          "name": "OpenFOAM Motorbike Flow Example",
+          "category": "SIMULATION",
+          "provider": "CIQ"
+        },
+        {
+          "id": "03724952-fe0d-51dc-9248-bdfe007a6d6c",
+          "name": "Dependent Jobs Example",
+          "category": "EXAMPLES",
+          "provider": "CIQ"
+        },
+        {
+          "id": "3293fdb5-b57f-5f64-87ee-9bb002f1a929",
+          "name": "Hello, World",
+          "category": "EXAMPLES",
+          "provider": "CIQ"
+        },
+        {
+          "id": "4be392e6-87a2-5710-ba6d-752eddb47412",
+          "name": "Rclone server for data management",
+          "category": "UTILITIES",
+          "provider": "CIQ"
+        },
+        {
+          "id": "cc8a4405-3657-5ccb-bf31-71990b354867",
+          "name": "Gemma 4 31B",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "d1895537-c048-5620-ad69-099fa761f4a7",
+          "name": "Ministral 3 14B",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "e3fc118a-814c-594b-babf-072eee4a1eeb",
+          "name": "Fuzzball Cloud Commander File Browser",
+          "category": "UTILITIES",
+          "provider": "CIQ"
+        },
+        {
+          "id": "dced9402-905c-5cfd-8aef-e8e3453e4177",
+          "name": "vLLM",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        },
+        {
+          "id": "a20d6da5-937c-5d45-8a96-5d8f20f1b564",
+          "name": "GPT-OSS 120B",
+          "category": "ML_AND_AI",
+          "provider": "CIQ"
+        }
+      ],
+      "pytorch_option": {
+        "name": "Jupyter Server",
+        "id": "51b278a3-5aaa-5f8e-8e9e-39e7d3cf75ab",
+        "evidence": "Fetched catalog entry exposes Type=pytorch and a GPU count parameter; decoded image pattern is docker://quay.io/jupyter/<Type>-notebook:2026-06-05.",
+        "candidate_image": "docker://quay.io/jupyter/pytorch-notebook:2026-06-05",
+        "arm64_gpu_compatibility_confirmed": false,
+        "local_cache_confirmed": false,
+        "qualification": "Template availability only; no notebook service was launched and no PyTorch/CUDA execution was tested."
+      },
+      "protein_workflows": {
+        "matching_live_catalog_entries": [],
+        "search_terms": [
+          "BLAST",
+          "protein",
+          "AlphaFold",
+          "ESMFold",
+          "Boltz",
+          "ColabFold",
+          "folding"
+        ],
+        "documentation_example": "BLAST",
+        "qualification": "Connected event docs describe BLAST, but no matching protein-analysis entry was present among the 29 live catalog entries."
+      },
+      "serving_configurations": [
+        {
+          "name": "vLLM",
+          "id": "dced9402-905c-5cfd-8aef-e8e3453e4177",
+          "image": "docker://vllm/vllm-openai:v0.28.0",
+          "default_model": "hf://openai/gpt-oss-20b",
+          "nodes": 1,
+          "gpus_per_node": 1,
+          "cores_per_node": 8,
+          "memory_per_node": "32GiB"
+        },
+        {
+          "name": "vLLM inference server",
+          "id": "391fc517-ccfd-5c75-a9da-98861a91171d",
+          "image": "docker://vllm/vllm-openai:latest",
+          "default_model": "openai/gpt-oss-20b",
+          "default_gpu_model": "NVIDIA L40S"
+        },
+        {
+          "name": "Open WebUI",
+          "id": "f949f417-cf68-5405-bfb9-a7f6555de2b8",
+          "description_evidence": "Catalog description identifies Open WebUI plus Ollama."
+        },
+        {
+          "name": "Local LLM chat",
+          "id": "695d41af-4b53-5430-8d69-bfaa43ed6d31",
+          "description_evidence": "Catalog description identifies vLLM plus web chat."
+        },
+        {
+          "name": "LiteLLM Model Gateway",
+          "id": "d76bf3bb-1068-5c15-b8ad-45edccdf5262",
+          "description_evidence": "Catalog description identifies a gateway to model-serving workflow endpoints."
+        }
+      ],
+      "qualification": "These are definitions installed in this event's live catalog, not evidence of downloaded weights, cached container layers, running endpoints, or compatibility with GB10. No public Fuzzball 4.4 template was substituted."
+    }
+  },
+  "smoke_test": {
+    "file": "workflows/gpu-smoke-team15.fz",
+    "sha256": "d5daef96b0a2f00522e6c7343b2f409c0cb87af85010eb31f3391103636d9f72",
+    "image": "docker://rockylinux:9",
+    "basis": "Connected event GPU example uses this exact image and nvidia.com/gpu:1; Docker Official Images metadata lists ARM64 support.",
+    "image_local_availability": "Unverified. The team object-cache listing was empty; node-local caches were not inspected.",
+    "image_note": "The official library/rockylinux image metadata maps tag 9 to the older 9.3.20231119 build. It is used here to match the event's small driver-only example, not as a claim of a current ML runtime.",
+    "allocation": {
+      "provisioner": "team15",
+      "pin": "resource.annotations.fuzzball.io/provisioner_definition_id=team15",
+      "nodes": 1,
+      "gpus": 1,
+      "cpu_cores": 1,
+      "memory": "2GiB",
+      "ephemeral_scratch": "16MiB on team15-scratch"
+    },
+    "job_execution_limit": "2m",
+    "egress_limit": "1m",
+    "time_limit_caveat": "Job execution timeout does not bound queue wait or image staging.",
+    "actions": [
+      "Print execution hostname and CPU architecture; fail if not ARM64.",
+      "Run nvidia-smi -L and nvidia-smi; report GPU/driver visibility.",
+      "If a Python interpreter and torch already exist, report torch and CUDA runtime details and compute a 16-element tensor sum on one visible GPU; expected result 32.0.",
+      "If Python or torch is absent, report a driver-only pass with PyTorch explicitly skipped.",
+      "Write a small report to ephemeral scratch for object-cache egress."
+    ],
+    "output_uri": "fuzzball://group/lymescope/gpu-smoke-20261114/report.txt",
+    "output_path_note": "Prepared for one approved first run; choose a new report path for a later rerun.",
+    "package_installations": false,
+    "model_downloads": false,
+    "shared_dataset_mounts": false,
+    "services": false,
+    "submitted": false,
+    "remaining_blockers": [
+      "Approval for one remote execution, including the base-image fetch if uncached and small report egress.",
+      "Image cache presence, injected-driver compatibility, and any tensor runtime remain unverified until execution."
+    ],
+    "smallest_next_remote_action": "One explicitly approved CLI submission of this workflow, keeping MCP read-only. No model weights, package installs, services, or shared dataset access."
+  },
+  "sources": {
+    "cli": [
+      "fuzzball node provisioner list",
+      "fuzzball node provisioner get team15 --output json",
+      "fuzzball node list --output json",
+      "fuzzball group compute-policy get",
+      "fuzzball organization compute-policy get",
+      "fuzzball volume provisioner info team15 --output json",
+      "fuzzball volume provisioner info team15-scratch --output json",
+      "fuzzball volume provisioner info shared --output json",
+      "fuzzball workflow validate workflows/gpu-smoke-team15.fz"
+    ],
+    "cli_invocation": "& \"C:\\Users\\franc\\bin\\fuzzball.exe\" <arguments>",
+    "event_documentation": [
+      "https://ui.fb-hack.civilfritz.net/docs/advanced-hardware/gpus/",
+      "https://ui.fb-hack.civilfritz.net/docs/appendices/workflow-syntax/",
+      "https://ui.fb-hack.civilfritz.net/docs/entity-admin/account-admin/acc-compute-policy/",
+      "https://ui.fb-hack.civilfritz.net/docs/volume-admin/provisioners/provisioner-access-policies/",
+      "https://ui.fb-hack.civilfritz.net/docs/central-config/configuration-reference/",
+      "https://ui.fb-hack.civilfritz.net/docs/object-cache/",
+      "https://ui.fb-hack.civilfritz.net/docs/workflow-examples/open-source-examples/blast/blast-run/"
+    ],
+    "image_metadata": "https://raw.githubusercontent.com/docker-library/official-images/master/library/rockylinux",
+    "image_maintenance_note": "https://raw.githubusercontent.com/docker-library/docs/master/rockylinux/README.md"
+  },
+  "boundaries_observed": {
+    "mcp_read_only": true,
+    "remote_jobs_submitted": 0,
+    "services_launched": 0,
+    "uploads_performed": 0,
+    "model_weights_downloaded": 0,
+    "cluster_permissions_changed": false,
+    "secrets_read_or_printed": false,
+    "shared_datasets_modified": false,
+    "github_publication": false
+  }
+}
+

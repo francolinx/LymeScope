@@ -1,0 +1,10 @@
+{
+  "runId": "phase-b-20261114T173521-7908c2da",
+  "testDirectory": "/project/verification/phase-b-20261114T173521-7908c2da",
+  "testFile": "/project/verification/phase-b-20261114T173521-7908c2da/sentinel.txt",
+  "expectedBytes": 78,
+  "expectedSha256": "39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d",
+  "expectedText": "LymeScope persistent NFS verification\nrun_id=phase-b-20261114T173521-7908c2da\n",
+  "writerWorkflow": "workflows/pytorch-storage-write-team15.fz",
+  "readerWorkflow": "workflows/storage-two-node-read-team15.fz"
+}

@@ -1,0 +1,789 @@
+{
+  "workflowId": "2f5d31fa-223c-4f5f-8df4-721fee85309a",
+  "retrievedAt": "2026-11-14T23:36:53.065Z",
+  "describe": {
+    "createTime": "2026-11-14T23:36:12.391252Z",
+    "email": "team15@fb-hack.local",
+    "endTime": "2026-11-14T23:36:27.620820Z",
+    "name": "pytorch-storage-write-team15.fz",
+    "startTime": "2026-11-14T23:36:12.474812Z",
+    "status": {
+      "stages": [
+        {
+          "createTime": "2026-11-14T23:36:12.391252Z",
+          "dependsOn": [],
+          "details": {
+            "id": "2f5d31fa-223c-4f5f-8df4-721fee85309a"
+          },
+          "endTime": "2026-11-14T23:36:27.620820Z",
+          "id": "2f5d31fa-223c-4f5f-8df4-721fee85309a",
+          "kind": "STAGE_KIND_WORKFLOW",
+          "name": "2f5d31fa-223c-4f5f-8df4-721fee85309a",
+          "requiredBy": [],
+          "startTime": "2026-11-14T23:36:12.474812Z",
+          "status": "finished"
+        },
+        {
+          "createTime": "2026-11-14T23:36:12.391252Z",
+          "dependsOn": [],
+          "details": {
+            "id": "2ed4eaab-18f9-519d-b0b6-3550698aacee",
+            "persistent": true
+          },
+          "endTime": "2026-11-14T23:36:12.547303Z",
+          "id": "2ed4eaab-18f9-519d-b0b6-3550698aacee",
+          "kind": "STAGE_KIND_VOLUME",
+          "name": "project",
+          "requiredBy": [
+            {
+              "id": "434b8807-bc70-527b-ad12-26896e66a050",
+              "name": "pytorch-and-storage-write"
+            }
+          ],
+          "startTime": "2026-11-14T23:36:12.512445Z",
+          "status": "finished"
+        },
+        {
+          "createTime": "2026-11-14T23:36:12.391252Z",
+          "dependsOn": [],
+          "details": {
+            "id": "82a32a45-92d6-5d49-b5fb-73e42ed12fbc",
+            "persistent": false
+          },
+          "endTime": "2026-11-14T23:36:13.267828Z",
+          "id": "82a32a45-92d6-5d49-b5fb-73e42ed12fbc",
+          "kind": "STAGE_KIND_VOLUME",
+          "name": "reports",
+          "requiredBy": [
+            {
+              "id": "0221ab06-ba40-5fa8-811e-5de58a12f8b0",
+              "name": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt"
+            },
+            {
+              "id": "434b8807-bc70-527b-ad12-26896e66a050",
+              "name": "pytorch-and-storage-write"
+            }
+          ],
+          "startTime": "2026-11-14T23:36:12.491858Z",
+          "status": "finished"
+        },
+        {
+          "createTime": "2026-11-14T23:36:12.391252Z",
+          "dependsOn": [],
+          "details": {
+            "arch": "arm64",
+            "id": "4a8ea868-615b-5696-8403-d9d75da4f866",
+            "segment": "",
+            "uri": "docker://nvcr.io/nvidia/pytorch:25.11-py3"
+          },
+          "displayName": "pytorch-and-storage-write-image",
+          "endTime": "2026-11-14T23:36:12.790722Z",
+          "id": "4a8ea868-615b-5696-8403-d9d75da4f866",
+          "kind": "STAGE_KIND_IMAGE",
+          "name": "docker://nvcr.io/nvidia/pytorch:25.11-py3 (arm64)",
+          "requiredBy": [
+            {
+              "id": "434b8807-bc70-527b-ad12-26896e66a050",
+              "name": "pytorch-and-storage-write"
+            }
+          ],
+          "startTime": "2026-11-14T23:36:12.454287Z",
+          "status": "finished"
+        },
+        {
+          "createTime": "2026-11-14T23:36:12.391252Z",
+          "dependsOn": [
+            {
+              "id": "4a8ea868-615b-5696-8403-d9d75da4f866",
+              "name": "docker://nvcr.io/nvidia/pytorch:25.11-py3 (arm64)"
+            },
+            {
+              "id": "2ed4eaab-18f9-519d-b0b6-3550698aacee",
+              "name": "project"
+            },
+            {
+              "id": "82a32a45-92d6-5d49-b5fb-73e42ed12fbc",
+              "name": "reports"
+            }
+          ],
+          "details": {
+            "ContainerId": "434b8807-bc70-527b-ad12-26896e66a050.0",
+            "Host": "192.168.99.39:7331",
+            "command": null,
+            "id": "434b8807-bc70-527b-ad12-26896e66a050",
+            "image": "docker://nvcr.io/nvidia/pytorch:25.11-py3",
+            "mounts": {
+              "/project": "project",
+              "/reports": "reports"
+            }
+          },
+          "endTime": "2026-11-14T23:36:26.827162Z",
+          "exitCode": 0,
+          "id": "434b8807-bc70-527b-ad12-26896e66a050",
+          "kind": "STAGE_KIND_JOB",
+          "name": "pytorch-and-storage-write",
+          "requiredBy": [
+            {
+              "id": "0221ab06-ba40-5fa8-811e-5de58a12f8b0",
+              "name": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt"
+            }
+          ],
+          "startTime": "2026-11-14T23:36:14.000315Z",
+          "status": "finished"
+        },
+        {
+          "createTime": "2026-11-14T23:36:12.391252Z",
+          "dependsOn": [
+            {
+              "id": "434b8807-bc70-527b-ad12-26896e66a050",
+              "name": "pytorch-and-storage-write"
+            },
+            {
+              "id": "82a32a45-92d6-5d49-b5fb-73e42ed12fbc",
+              "name": "reports"
+            }
+          ],
+          "details": {
+            "ContainerId": "0221ab06-ba40-5fa8-811e-5de58a12f8b0.0",
+            "Host": "192.168.99.39:7331",
+            "destination": "fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt",
+            "id": "0221ab06-ba40-5fa8-811e-5de58a12f8b0",
+            "source": "file://report.txt"
+          },
+          "displayName": "reports-egress-0",
+          "endTime": "2026-11-14T23:36:27.347608Z",
+          "id": "0221ab06-ba40-5fa8-811e-5de58a12f8b0",
+          "kind": "STAGE_KIND_FILE",
+          "name": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt",
+          "requiredBy": [],
+          "startTime": "2026-11-14T23:36:26.861135Z",
+          "status": "finished"
+        }
+      ]
+    },
+    "userId": "2d256648-8cfc-49df-a4f1-e2ba5ac5a3b7",
+    "workflowStatus": "finished"
+  },
+  "events": {
+    "events": [
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_PRIORITY_SET",
+        "message": "Priority set (workflow: 0, organization: 0, group: 0, user: 0)",
+        "metadata": {
+          "account_priority": "0",
+          "organization_priority": "0",
+          "user_priority": "0",
+          "weight": "1",
+          "workflow_priority": "0"
+        },
+        "stageId": "0221ab06-ba40-5fa8-811e-5de58a12f8b0",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt",
+        "timestamp": "2026-11-14T23:36:12.423492Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_WAITING_ON_DEPENDENCY",
+        "message": "Waiting for reports to finish",
+        "metadata": {
+          "dependency_name": "reports",
+          "dependency_status": "FINISHED"
+        },
+        "stageId": "0221ab06-ba40-5fa8-811e-5de58a12f8b0",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt",
+        "timestamp": "2026-11-14T23:36:12.423521Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_WAITING_ON_DEPENDENCY",
+        "message": "Waiting for pytorch-and-storage-write to finish",
+        "metadata": {
+          "dependency_name": "pytorch-and-storage-write",
+          "dependency_status": "FINISHED"
+        },
+        "stageId": "0221ab06-ba40-5fa8-811e-5de58a12f8b0",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt",
+        "timestamp": "2026-11-14T23:36:12.423533Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_PRIORITY_SET",
+        "message": "Priority set (workflow: 0, organization: 0, group: 0, user: 0)",
+        "metadata": {
+          "account_priority": "0",
+          "organization_priority": "0",
+          "user_priority": "0",
+          "weight": "1",
+          "workflow_priority": "0"
+        },
+        "stageId": "434b8807-bc70-527b-ad12-26896e66a050",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "pytorch-and-storage-write",
+        "timestamp": "2026-11-14T23:36:12.428769Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_WAITING_ON_DEPENDENCY",
+        "message": "Waiting for pytorch-and-storage-write-image to finish",
+        "metadata": {
+          "dependency_name": "pytorch-and-storage-write-image",
+          "dependency_status": "FINISHED"
+        },
+        "stageId": "434b8807-bc70-527b-ad12-26896e66a050",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "pytorch-and-storage-write",
+        "timestamp": "2026-11-14T23:36:12.428795Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_WAITING_ON_DEPENDENCY",
+        "message": "Waiting for project to finish",
+        "metadata": {
+          "dependency_name": "project",
+          "dependency_status": "FINISHED"
+        },
+        "stageId": "434b8807-bc70-527b-ad12-26896e66a050",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "pytorch-and-storage-write",
+        "timestamp": "2026-11-14T23:36:12.428815Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_WAITING_ON_DEPENDENCY",
+        "message": "Waiting for reports to finish",
+        "metadata": {
+          "dependency_name": "reports",
+          "dependency_status": "FINISHED"
+        },
+        "stageId": "434b8807-bc70-527b-ad12-26896e66a050",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "pytorch-and-storage-write",
+        "timestamp": "2026-11-14T23:36:12.428834Z"
+      },
+      {
+        "displayName": "pytorch-and-storage-write-image",
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "READY_QUEUE",
+          "queue_time": "2026-11-14T23:36:12.418093506Z"
+        },
+        "stageId": "4a8ea868-615b-5696-8403-d9d75da4f866",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://nvcr.io/nvidia/pytorch:25.11-py3 (arm64)",
+        "timestamp": "2026-11-14T23:36:12.434314Z"
+      },
+      {
+        "displayName": "pytorch-and-storage-write-image",
+        "eventType": "STAGE_EVENT_TYPE_PRIORITY_SET",
+        "message": "Priority set (workflow: 0, organization: 0, group: 0, user: 0)",
+        "metadata": {
+          "account_priority": "0",
+          "organization_priority": "0",
+          "user_priority": "0",
+          "weight": "1",
+          "workflow_priority": "0"
+        },
+        "stageId": "4a8ea868-615b-5696-8403-d9d75da4f866",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://nvcr.io/nvidia/pytorch:25.11-py3 (arm64)",
+        "timestamp": "2026-11-14T23:36:12.434329Z"
+      },
+      {
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "READY_QUEUE",
+          "queue_time": "2026-11-14T23:36:12.418093506Z"
+        },
+        "stageId": "82a32a45-92d6-5d49-b5fb-73e42ed12fbc",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "reports",
+        "timestamp": "2026-11-14T23:36:12.437758Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_PRIORITY_SET",
+        "message": "Priority set (workflow: 0, organization: 0, group: 0, user: 0)",
+        "metadata": {
+          "account_priority": "0",
+          "organization_priority": "0",
+          "user_priority": "0",
+          "weight": "1",
+          "workflow_priority": "0"
+        },
+        "stageId": "82a32a45-92d6-5d49-b5fb-73e42ed12fbc",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "reports",
+        "timestamp": "2026-11-14T23:36:12.437782Z"
+      },
+      {
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "READY_QUEUE",
+          "queue_time": "2026-11-14T23:36:12.418093506Z"
+        },
+        "stageId": "2ed4eaab-18f9-519d-b0b6-3550698aacee",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "project",
+        "timestamp": "2026-11-14T23:36:12.441523Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_PRIORITY_SET",
+        "message": "Priority set (workflow: 0, organization: 0, group: 0, user: 0)",
+        "metadata": {
+          "account_priority": "0",
+          "organization_priority": "0",
+          "user_priority": "0",
+          "weight": "1",
+          "workflow_priority": "0"
+        },
+        "stageId": "2ed4eaab-18f9-519d-b0b6-3550698aacee",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "project",
+        "timestamp": "2026-11-14T23:36:12.441563Z"
+      },
+      {
+        "displayName": "pytorch-and-storage-write-image",
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "RUNNING_QUEUE",
+          "queue_time": "2026-11-14T23:36:12.45292253Z"
+        },
+        "stageId": "4a8ea868-615b-5696-8403-d9d75da4f866",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://nvcr.io/nvidia/pytorch:25.11-py3 (arm64)",
+        "timestamp": "2026-11-14T23:36:12.453498Z"
+      },
+      {
+        "displayName": "pytorch-and-storage-write-image",
+        "eventType": "STAGE_EVENT_TYPE_RESOURCES_ALLOCATED",
+        "message": "Resources allocated (node: 192.168.99.39/7331, requested cpu: 1, requested memory: 1 GB, projected cpus: 1 (ids: 16), projected numa nodes: 1 (ids: 0))",
+        "metadata": {
+          "cpu": "1",
+          "memory": "1000000000",
+          "node": "192.168.99.39/7331",
+          "projected_cpus": "16",
+          "projected_numa_nodes": "0"
+        },
+        "stageId": "4a8ea868-615b-5696-8403-d9d75da4f866",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://nvcr.io/nvidia/pytorch:25.11-py3 (arm64)",
+        "timestamp": "2026-11-14T23:36:12.456358Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_WORKFLOW_STARTED",
+        "message": "Workflow started",
+        "stageId": "2f5d31fa-223c-4f5f-8df4-721fee85309a",
+        "stageKind": "STAGE_KIND_WORKFLOW",
+        "stageName": "2f5d31fa-223c-4f5f-8df4-721fee85309a",
+        "timestamp": "2026-11-14T23:36:12.459566Z"
+      },
+      {
+        "displayName": "pytorch-and-storage-write-image",
+        "eventType": "STAGE_EVENT_TYPE_STAGE_STARTED",
+        "message": "Stage started",
+        "metadata": {
+          "name": "pytorch-and-storage-write-image"
+        },
+        "stageId": "4a8ea868-615b-5696-8403-d9d75da4f866",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://nvcr.io/nvidia/pytorch:25.11-py3 (arm64)",
+        "timestamp": "2026-11-14T23:36:12.459825Z"
+      },
+      {
+        "displayName": "pytorch-and-storage-write-image",
+        "eventType": "STAGE_EVENT_TYPE_IMAGE_PULL_STARTED",
+        "message": "Pulling image: docker://nvcr.io/nvidia/pytorch:25.11-py3",
+        "metadata": {
+          "uri": "docker://nvcr.io/nvidia/pytorch:25.11-py3"
+        },
+        "stageId": "4a8ea868-615b-5696-8403-d9d75da4f866",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://nvcr.io/nvidia/pytorch:25.11-py3 (arm64)",
+        "timestamp": "2026-11-14T23:36:12.466147Z"
+      },
+      {
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "RUNNING_QUEUE",
+          "queue_time": "2026-11-14T23:36:12.490896788Z"
+        },
+        "stageId": "82a32a45-92d6-5d49-b5fb-73e42ed12fbc",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "reports",
+        "timestamp": "2026-11-14T23:36:12.491459Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_RESOURCES_ALLOCATED",
+        "message": "Resources allocated (node: 192.168.99.39/7331, requested cpu: 1, requested memory: 1 MB, projected cpus: 1 (ids: 17), projected numa nodes: 1 (ids: 0))",
+        "metadata": {
+          "cpu": "1",
+          "memory": "1048576",
+          "node": "192.168.99.39/7331",
+          "projected_cpus": "17",
+          "projected_numa_nodes": "0"
+        },
+        "stageId": "82a32a45-92d6-5d49-b5fb-73e42ed12fbc",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "reports",
+        "timestamp": "2026-11-14T23:36:12.494980Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_STARTED",
+        "message": "Stage started",
+        "metadata": {
+          "name": "reports"
+        },
+        "stageId": "82a32a45-92d6-5d49-b5fb-73e42ed12fbc",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "reports",
+        "timestamp": "2026-11-14T23:36:12.496722Z"
+      },
+      {
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "RUNNING_QUEUE",
+          "queue_time": "2026-11-14T23:36:12.508976749Z"
+        },
+        "stageId": "2ed4eaab-18f9-519d-b0b6-3550698aacee",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "project",
+        "timestamp": "2026-11-14T23:36:12.510041Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_RESOURCES_ALLOCATED",
+        "message": "Resources allocated (node: 192.168.99.39/7331, requested cpu: 1, requested memory: 1 MB, projected cpus: 1 (ids: 18), projected numa nodes: 1 (ids: 0))",
+        "metadata": {
+          "cpu": "1",
+          "memory": "1048576",
+          "node": "192.168.99.39/7331",
+          "projected_cpus": "18",
+          "projected_numa_nodes": "0"
+        },
+        "stageId": "2ed4eaab-18f9-519d-b0b6-3550698aacee",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "project",
+        "timestamp": "2026-11-14T23:36:12.514360Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_STARTED",
+        "message": "Stage started",
+        "metadata": {
+          "name": "project"
+        },
+        "stageId": "2ed4eaab-18f9-519d-b0b6-3550698aacee",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "project",
+        "timestamp": "2026-11-14T23:36:12.517609Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_VOLUME_CREATED",
+        "message": "Volume created: 01a1dc69-7808-7695-b6d3-f8a3f6e5a437, persistent: true",
+        "metadata": {
+          "capacity_bytes": "1073741824",
+          "cost_per_gb_hour": "0",
+          "id": "01a1dc69-7808-7695-b6d3-f8a3f6e5a437",
+          "persistent": "true",
+          "storage_provisioner_id": "4dfde680-0cc5-3488-9376-7cf20605b12f"
+        },
+        "stageId": "2ed4eaab-18f9-519d-b0b6-3550698aacee",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "project",
+        "timestamp": "2026-11-14T23:36:12.530449Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_FINISHED",
+        "message": "Stage finished",
+        "metadata": {
+          "name": "project"
+        },
+        "stageId": "2ed4eaab-18f9-519d-b0b6-3550698aacee",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "project",
+        "timestamp": "2026-11-14T23:36:12.553121Z"
+      },
+      {
+        "displayName": "pytorch-and-storage-write-image",
+        "eventType": "STAGE_EVENT_TYPE_IMAGE_CACHE_HIT",
+        "message": "Image available in cache",
+        "stageId": "4a8ea868-615b-5696-8403-d9d75da4f866",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://nvcr.io/nvidia/pytorch:25.11-py3 (arm64)",
+        "timestamp": "2026-11-14T23:36:12.764019Z"
+      },
+      {
+        "displayName": "pytorch-and-storage-write-image",
+        "eventType": "STAGE_EVENT_TYPE_IMAGE_PULL_COMPLETED",
+        "message": "Image pull complete: 8.9 GB, 309ms",
+        "metadata": {
+          "duration": "309ms",
+          "size": "9590988800"
+        },
+        "stageId": "4a8ea868-615b-5696-8403-d9d75da4f866",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://nvcr.io/nvidia/pytorch:25.11-py3 (arm64)",
+        "timestamp": "2026-11-14T23:36:12.774854Z"
+      },
+      {
+        "displayName": "pytorch-and-storage-write-image",
+        "eventType": "STAGE_EVENT_TYPE_STAGE_FINISHED",
+        "message": "Stage finished",
+        "metadata": {
+          "name": "pytorch-and-storage-write-image"
+        },
+        "stageId": "4a8ea868-615b-5696-8403-d9d75da4f866",
+        "stageKind": "STAGE_KIND_IMAGE",
+        "stageName": "docker://nvcr.io/nvidia/pytorch:25.11-py3 (arm64)",
+        "timestamp": "2026-11-14T23:36:12.796655Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_VOLUME_CREATED",
+        "message": "Volume created: 01a1dc6b-2aba-7eec-b570-eff99fc7c05e, persistent: false",
+        "metadata": {
+          "capacity_bytes": "16000000",
+          "cost_per_gb_hour": "0",
+          "id": "01a1dc6b-2aba-7eec-b570-eff99fc7c05e",
+          "persistent": "false",
+          "storage_provisioner_id": "4dfde680-0cc5-3488-9376-7cf20605b12f"
+        },
+        "stageId": "82a32a45-92d6-5d49-b5fb-73e42ed12fbc",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "reports",
+        "timestamp": "2026-11-14T23:36:13.249544Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_FINISHED",
+        "message": "Stage finished",
+        "metadata": {
+          "name": "reports"
+        },
+        "stageId": "82a32a45-92d6-5d49-b5fb-73e42ed12fbc",
+        "stageKind": "STAGE_KIND_VOLUME",
+        "stageName": "reports",
+        "timestamp": "2026-11-14T23:36:13.273387Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_DEPENDENCY_SATISFIED",
+        "message": "All dependencies satisfied, stage ready for scheduling",
+        "stageId": "434b8807-bc70-527b-ad12-26896e66a050",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "pytorch-and-storage-write",
+        "timestamp": "2026-11-14T23:36:13.280715Z"
+      },
+      {
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "READY_QUEUE",
+          "queue_time": "2026-11-14T23:36:13.280713Z"
+        },
+        "stageId": "434b8807-bc70-527b-ad12-26896e66a050",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "pytorch-and-storage-write",
+        "timestamp": "2026-11-14T23:36:13.281210Z"
+      },
+      {
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "RUNNING_QUEUE",
+          "queue_time": "2026-11-14T23:36:13.296277098Z"
+        },
+        "stageId": "434b8807-bc70-527b-ad12-26896e66a050",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "pytorch-and-storage-write",
+        "timestamp": "2026-11-14T23:36:13.297160Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_RESOURCES_ALLOCATED",
+        "message": "Resources allocated (node: 192.168.99.39/7331, requested cpu: 2, requested memory: 17 GB, requested devices: 1, projected cpus: 2 (ids: 16-17), projected numa nodes: 1 (ids: 0))",
+        "metadata": {
+          "cpu": "2",
+          "devices": "1",
+          "memory": "17179869184",
+          "node": "192.168.99.39/7331",
+          "projected_cpus": "16-17",
+          "projected_numa_nodes": "0"
+        },
+        "stageId": "434b8807-bc70-527b-ad12-26896e66a050",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "pytorch-and-storage-write",
+        "timestamp": "2026-11-14T23:36:13.299876Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_READY",
+        "message": "Stage ready",
+        "stageId": "434b8807-bc70-527b-ad12-26896e66a050",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "pytorch-and-storage-write",
+        "timestamp": "2026-11-14T23:36:13.300777Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_STARTED",
+        "message": "Stage started",
+        "metadata": {
+          "name": "pytorch-and-storage-write"
+        },
+        "stageId": "434b8807-bc70-527b-ad12-26896e66a050",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "pytorch-and-storage-write",
+        "timestamp": "2026-11-14T23:36:14.005862Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_CONTAINER_STARTED",
+        "message": "Container started on node: 192.168.99.39/7331 (enforced cpus: 2 (ids: 16-17), enforced numa nodes: 1 (ids: 0))",
+        "metadata": {
+          "container_id": "434b8807-bc70-527b-ad12-26896e66a050.0",
+          "enforced_cpus": "16-17",
+          "enforced_numa_nodes": "0",
+          "node": "192.168.99.39:7331"
+        },
+        "stageId": "434b8807-bc70-527b-ad12-26896e66a050",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "pytorch-and-storage-write",
+        "timestamp": "2026-11-14T23:36:14.005883Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_CONTAINER_EXITED",
+        "message": "Container exited with code: 0",
+        "metadata": {
+          "exit_code": "0"
+        },
+        "stageId": "434b8807-bc70-527b-ad12-26896e66a050",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "pytorch-and-storage-write",
+        "timestamp": "2026-11-14T23:36:26.762706Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_STAGE_FINISHED",
+        "message": "Stage finished",
+        "metadata": {
+          "name": "pytorch-and-storage-write"
+        },
+        "stageId": "434b8807-bc70-527b-ad12-26896e66a050",
+        "stageKind": "STAGE_KIND_JOB",
+        "stageName": "pytorch-and-storage-write",
+        "timestamp": "2026-11-14T23:36:26.832802Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_DEPENDENCY_SATISFIED",
+        "message": "All dependencies satisfied, stage ready for scheduling",
+        "stageId": "0221ab06-ba40-5fa8-811e-5de58a12f8b0",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt",
+        "timestamp": "2026-11-14T23:36:26.841891Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "READY_QUEUE",
+          "queue_time": "2026-11-14T23:36:26.84188359Z"
+        },
+        "stageId": "0221ab06-ba40-5fa8-811e-5de58a12f8b0",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt",
+        "timestamp": "2026-11-14T23:36:26.842850Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "message": "queue_entered",
+        "metadata": {
+          "queue": "RUNNING_QUEUE",
+          "queue_time": "2026-11-14T23:36:26.857016779Z"
+        },
+        "stageId": "0221ab06-ba40-5fa8-811e-5de58a12f8b0",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt",
+        "timestamp": "2026-11-14T23:36:26.857607Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_RESOURCES_ALLOCATED",
+        "message": "Resources allocated (node: 192.168.99.39/7331, requested cpu: 1, requested memory: 1 GB, projected cpus: 1 (ids: 18), projected numa nodes: 1 (ids: 0))",
+        "metadata": {
+          "cpu": "1",
+          "memory": "1000000000",
+          "node": "192.168.99.39/7331",
+          "projected_cpus": "18",
+          "projected_numa_nodes": "0"
+        },
+        "stageId": "0221ab06-ba40-5fa8-811e-5de58a12f8b0",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt",
+        "timestamp": "2026-11-14T23:36:26.859254Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_STAGE_STARTED",
+        "message": "Stage started",
+        "metadata": {
+          "name": "reports-egress-0"
+        },
+        "stageId": "0221ab06-ba40-5fa8-811e-5de58a12f8b0",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt",
+        "timestamp": "2026-11-14T23:36:26.865922Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_FILE_TRANSFER_TYPE",
+        "message": "Transfer type: egress",
+        "metadata": {
+          "type": "egress"
+        },
+        "stageId": "0221ab06-ba40-5fa8-811e-5de58a12f8b0",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt",
+        "timestamp": "2026-11-14T23:36:26.865941Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_FILE_TRANSFER_STARTED",
+        "message": "Transfer started: file:///csi-publish/0221ab06-ba40-5fa8-811e-5de58a12f8b0/ephemeral/2f5d31fa-223c-4f5f-8df4-721fee85309a/reports/report.txt → fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt",
+        "metadata": {
+          "destination": "fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt",
+          "source": "file:///csi-publish/0221ab06-ba40-5fa8-811e-5de58a12f8b0/ephemeral/2f5d31fa-223c-4f5f-8df4-721fee85309a/reports/report.txt"
+        },
+        "stageId": "0221ab06-ba40-5fa8-811e-5de58a12f8b0",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt",
+        "timestamp": "2026-11-14T23:36:27.059359Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_FILE_TRANSFER_COMPLETED",
+        "message": "Transfer complete",
+        "stageId": "0221ab06-ba40-5fa8-811e-5de58a12f8b0",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt",
+        "timestamp": "2026-11-14T23:36:27.350223Z"
+      },
+      {
+        "displayName": "reports-egress-0",
+        "eventType": "STAGE_EVENT_TYPE_STAGE_FINISHED",
+        "message": "Stage finished",
+        "metadata": {
+          "name": "reports-egress-0"
+        },
+        "stageId": "0221ab06-ba40-5fa8-811e-5de58a12f8b0",
+        "stageKind": "STAGE_KIND_FILE",
+        "stageName": "file://report.txt -> fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt",
+        "timestamp": "2026-11-14T23:36:27.353676Z"
+      },
+      {
+        "eventType": "STAGE_EVENT_TYPE_WORKFLOW_FINISHED",
+        "message": "Workflow finished",
+        "stageId": "2f5d31fa-223c-4f5f-8df4-721fee85309a",
+        "stageKind": "STAGE_KIND_WORKFLOW",
+        "stageName": "2f5d31fa-223c-4f5f-8df4-721fee85309a",
+        "timestamp": "2026-11-14T23:36:27.365989Z"
+      }
+    ],
+    "total": 50
+  },
+  "log": "2026-11-14T23:36:14.369828096Z stdout F pytorch-and-storage-write\n2026-11-14T23:36:14.369865696Z stdout F aarch64\n2026-11-14T23:36:14.384952747Z stdout F Sat Nov 14 23:36:14 2026       \n2026-11-14T23:36:14.384973883Z stdout F +-----------------------------------------------------------------------------------------+\n2026-11-14T23:36:14.384977803Z stdout F | NVIDIA-SMI 580.173.02             Driver Version: 580.173.02     CUDA Version: 13.0     |\n2026-11-14T23:36:14.384980827Z stdout F +-----------------------------------------+------------------------+----------------------+\n2026-11-14T23:36:14.384983707Z stdout F | GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n2026-11-14T23:36:14.384986107Z stdout F | Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n2026-11-14T23:36:14.384988843Z stdout F |                                         |                        |               MIG M. |\n2026-11-14T23:36:14.384991243Z stdout F |=========================================+========================+======================|\n2026-11-14T23:36:14.410423836Z stdout F |   0  NVIDIA GB10                    On  |   0000000F:01:00.0 Off |                  N/A |\n2026-11-14T23:36:14.410442284Z stdout F | N/A   41C    P8              4W /  N/A  | Not Supported          |      0%      Default |\n2026-11-14T23:36:14.410446572Z stdout F |                                         |                        |                  N/A |\n2026-11-14T23:36:14.410449292Z stdout F +-----------------------------------------+------------------------+----------------------+\n2026-11-14T23:36:14.410948174Z stdout F \n2026-11-14T23:36:14.410964511Z stdout F +-----------------------------------------------------------------------------------------+\n2026-11-14T23:36:14.410968495Z stdout F | Processes:                                                                              |\n2026-11-14T23:36:14.410971199Z stdout F |  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n2026-11-14T23:36:14.410973567Z stdout F |        ID   ID                                                               Usage      |\n2026-11-14T23:36:14.410975903Z stdout F |=========================================================================================|\n2026-11-14T23:36:14.411604017Z stdout F |  No running processes found                                                             |\n2026-11-14T23:36:14.411621633Z stdout F +-----------------------------------------------------------------------------------------+\n2026-11-14T23:36:23.80532024Z stdout F {\"architecture\": \"aarch64\", \"capability\": [12, 1], \"compiled_architectures\": [\"sm_80\", \"sm_86\", \"sm_90\", \"sm_100\", \"sm_110\", \"sm_120\", \"compute_120\"], \"cuda_runtime\": \"13.0\", \"cuda_synchronized\": true, \"driver_version\": \"580.173.02\", \"gpu_name\": \"NVIDIA GB10\", \"gpu_operation\": \"ones(32,32) @ ones(32,32)\", \"gpu_result\": 32768.0, \"hostname\": \"pytorch-and-storage-write\", \"kind\": \"runtime_setup_test\", \"peak_cuda_allocated_bytes\": 8529408, \"persistence_write\": \"PASS\", \"python_version\": \"3.12.3\", \"result_device\": \"cuda:0\", \"run_id\": \"phase-b-20261114T173521-7908c2da\", \"scientific_result\": false, \"sentinel_bytes\": 78, \"sentinel_path\": \"/project/verification/phase-b-20261114T173521-7908c2da/sentinel.txt\", \"sentinel_sha256\": \"39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d\", \"status\": \"PASS\", \"torch_version\": \"2.10.0a0+b558c986e8.nv25.11\"}\n2026-11-14T23:36:23.805336896Z stdout F GPU_CALCULATION=PASS; PERSISTENT_WRITE_AND_LOCAL_READ=PASS\n",
+  "report": {
+    "content": "pytorch-and-storage-write\naarch64\nSat Nov 14 23:36:14 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.173.02             Driver Version: 580.173.02     CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GB10                    On  |   0000000F:01:00.0 Off |                  N/A |\n| N/A   41C    P8              4W /  N/A  | Not Supported          |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n{\"architecture\": \"aarch64\", \"capability\": [12, 1], \"compiled_architectures\": [\"sm_80\", \"sm_86\", \"sm_90\", \"sm_100\", \"sm_110\", \"sm_120\", \"compute_120\"], \"cuda_runtime\": \"13.0\", \"cuda_synchronized\": true, \"driver_version\": \"580.173.02\", \"gpu_name\": \"NVIDIA GB10\", \"gpu_operation\": \"ones(32,32) @ ones(32,32)\", \"gpu_result\": 32768.0, \"hostname\": \"pytorch-and-storage-write\", \"kind\": \"runtime_setup_test\", \"peak_cuda_allocated_bytes\": 8529408, \"persistence_write\": \"PASS\", \"python_version\": \"3.12.3\", \"result_device\": \"cuda:0\", \"run_id\": \"phase-b-20261114T173521-7908c2da\", \"scientific_result\": false, \"sentinel_bytes\": 78, \"sentinel_path\": \"/project/verification/phase-b-20261114T173521-7908c2da/sentinel.txt\", \"sentinel_sha256\": \"39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d\", \"status\": \"PASS\", \"torch_version\": \"2.10.0a0+b558c986e8.nv25.11\"}\nGPU_CALCULATION=PASS; PERSISTENT_WRITE_AND_LOCAL_READ=PASS\n",
+    "contentLength": 2642,
+    "digest": "sha256:148b9ecc835e7b4c134f92d587a51a6a4b182b5e252e634e5c1e1434eb22df6b",
+    "returnedBytes": 2642,
+    "uri": "fuzzball://group/lymescope/phase-b-20261114T173521-7908c2da/pytorch-and-storage-write.txt"
+  }
+}

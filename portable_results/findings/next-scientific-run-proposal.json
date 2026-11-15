@@ -1,0 +1,40 @@
+{
+  "status": "HOLD_FOR_ACTUAL_INPUT_MANIFEST_AND_METHOD_NOT_APPROVAL_READY",
+  "remoteActionsTaken": 0,
+  "origin": {
+    "host": "darkstar90@spark-6771",
+    "workspace": "/home/darkstar90/lymescope-sparkprep",
+    "localAvailability": "NOT PRESENT"
+  },
+  "nextLocalAction": "Validate the actual compact transferred bundle with scripts/import_scientific_bundle.py, then inspect the scientific method/data contract before authoring the job.",
+  "proposedRemoteEnvelope": {
+    "submissions": 1,
+    "computeProvisioner": "team15",
+    "nodes": 1,
+    "gpus": 1,
+    "cpus": 2,
+    "memory": "16GiB",
+    "executionTimeout": "2m",
+    "image": "docker://nvcr.io/nvidia/pytorch:25.11-py3",
+    "packagesToInstall": 0,
+    "modelWeightDownloads": 0,
+    "inputUploadMaxBytes": 5242880,
+    "inputUpload": "Only explicitly selected, manifest-hashed FASTA/metadata/reference files needed for the approved method",
+    "persistentVolume": "team15/lymescope-project, existing 1GiB, unique run directory",
+    "newPersistentVolumes": 0,
+    "resize": false,
+    "reportEgressMaxBytes": 1048576,
+    "export": "Immediately retrieve exact inputs, outputs, logs, workflow hash/ID, scheduler host, stage times and provenance to portable_results"
+  },
+  "scientificCommand": null,
+  "inputManifestSha256": null,
+  "approvalGates": [
+    "Actual bundle imported and validated locally; no fabricated sequences or paths",
+    "Scientifically meaningful method from the parallel session agreed; exact command, settings and input IDs recorded",
+    "Method uses the verified image's existing packages and needs no weights, or a new specific proposal identifies additional requirements",
+    "Final workflow validation and scheduling checks pass",
+    "Enough actual node-access time remains before final 45-minute export reserve"
+  ],
+  "pilot": "Not included in this one-run proposal. After a successful meaningful scientific result, prepare an identical-input/method one-node/two-node pilot with verified physical participation and no meaningless repetitions.",
+  "reasonNotExecutable": "Neither the real input manifest nor the scientific command is on this laptop. Resource limits alone do not make a scientific run reproducible or approval-ready."
+}

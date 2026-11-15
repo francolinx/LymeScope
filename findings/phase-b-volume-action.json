@@ -1,0 +1,12 @@
+﻿{
+    "action":  "create",
+    "provisioner":  "team15",
+    "name":  "lymescope-project",
+    "requestedCapacity":  "1GiB",
+    "attemptCount":  1,
+    "startedAt":  "2026-11-14T17:34:21.6544002-06:00",
+    "status":  "created",
+    "cliExitCode":  0,
+    "output":  "Volume \"lymescope-project\" created on provisioner \"team15\"",
+    "completedAt":  "2026-11-14T17:34:22.2148441-06:00"
+}

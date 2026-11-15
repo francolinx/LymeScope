@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-11-14T18:01:58.569995-06:00",
+  "finalJob": {
+    "status": "SKIPPED",
+    "workflowId": null,
+    "submissionCount": 0,
+    "reason": "Actual input bundle not imported; exact scientific method missing. No validated exact Spark29 placement plus cached-image evidence available within departure gate."
+  },
+  "knownWorkflows": [
+    {
+      "id": "79a4aa69-4307-4184-9764-84b915f58579",
+      "status": "finished"
+    },
+    {
+      "id": "2f5d31fa-223c-4f5f-8df4-721fee85309a",
+      "status": "finished"
+    },
+    {
+      "id": "9d279ac6-741f-48b1-88c3-1a61a0a56aa6",
+      "status": "finished"
+    }
+  ],
+  "trackedActiveWorkflows": [],
+  "clusterReadback": "All three statuses rechecked through read-only workflow_list at departure",
+  "inputTransfer": {
+    "status": "BLOCKED_HOST_KEY_VERIFICATION",
+    "source": "darkstar90@spark-6771:/home/darkstar90/lymescope-sparkprep/exports/lymescope_ospc_handoff_v0.1.0.tar.gz",
+    "expectedBytes": 264149,
+    "expectedSha256": "1ce0fff5a1b8d7d24ed6d70844f798484ac81231bcf2350ddcd8f6551ec1fa0f",
+    "actualBytes": null,
+    "actualSha256": null,
+    "reason": "No ED25519 host key is known for spark-6771; strict checking refused connection. No host key accepted, no files imported."
+  },
+  "sparkprepSourceCheckpoint": "NOT_IMPORTED; same host-key blocker, filename/manifest not provided",
+  "github": {
+    "verifiedAccount": "francolinx",
+    "existingRepository": "https://github.com/francolinx/LymeScope",
+    "visibility": "public",
+    "policy": "Preserve existing visibility and history; no duplicate repository",
+    "ghCli": "Not found in PATH or standard installation paths; Git credential manager and connected GitHub account authenticated"
+  },
+  "accessPlan": "Organizer said about 10 minutes at urgent checkpoint. No further event-cluster actions planned. No overnight access; Sunday Nov 15 08:00 Central return, future access must be confirmed."
+}

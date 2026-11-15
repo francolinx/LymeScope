@@ -1,0 +1,32 @@
+﻿79a4aa69-4307-4184-9764-84b915f58579
+2026-11-14T23:02:05.664400639Z stdout F LymeScope GPU smoke test
+2026-11-14T23:02:05.664426143Z stdout F execution_hostname=gpu-smoke
+2026-11-14T23:02:05.66644258Z stdout F cpu_architecture=aarch64
+2026-11-14T23:02:05.669582924Z stdout F CUDA_VISIBLE_DEVICES=unset
+2026-11-14T23:02:05.669596221Z stdout F NVIDIA_VISIBLE_DEVICES=GPU-97e5d33f-5ef1-6799-f514-f3f0fd0d687f
+2026-11-14T23:02:05.669598445Z stdout F 
+2026-11-14T23:02:05.669600301Z stdout F GPU inventory:
+2026-11-14T23:02:05.706011676Z stdout F GPU 0: NVIDIA GB10 (UUID: GPU-97e5d33f-5ef1-6799-f514-f3f0fd0d687f)
+2026-11-14T23:02:05.711102841Z stdout F 
+2026-11-14T23:02:05.711117177Z stdout F Driver report (CUDA Version is the driver-supported ceiling):
+2026-11-14T23:02:05.735653786Z stdout F Sat Nov 14 23:02:05 2026       
+2026-11-14T23:02:05.735669162Z stdout F +-----------------------------------------------------------------------------------------+
+2026-11-14T23:02:05.735672874Z stdout F | NVIDIA-SMI 580.173.02             Driver Version: 580.173.02     CUDA Version: 13.0     |
+2026-11-14T23:02:05.735674778Z stdout F +-----------------------------------------+------------------------+----------------------+
+2026-11-14T23:02:05.73567641Z stdout F | GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+2026-11-14T23:02:05.735678186Z stdout F | Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+2026-11-14T23:02:05.735683146Z stdout F |                                         |                        |               MIG M. |
+2026-11-14T23:02:05.735684826Z stdout F |=========================================+========================+======================|
+2026-11-14T23:02:05.759783081Z stdout F |   0  NVIDIA GB10                    On  |   0000000F:01:00.0 Off |                  N/A |
+2026-11-14T23:02:05.759797497Z stdout F | N/A   40C    P8              4W /  N/A  | Not Supported          |      0%      Default |
+2026-11-14T23:02:05.759799433Z stdout F |                                         |                        |                  N/A |
+2026-11-14T23:02:05.759801113Z stdout F +-----------------------------------------+------------------------+----------------------+
+2026-11-14T23:02:05.760947196Z stdout F 
+2026-11-14T23:02:05.76096086Z stdout F +-----------------------------------------------------------------------------------------+
+2026-11-14T23:02:05.760963276Z stdout F | Processes:                                                                              |
+2026-11-14T23:02:05.760965052Z stdout F |  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+2026-11-14T23:02:05.760966828Z stdout F |        ID   ID                                                               Usage      |
+2026-11-14T23:02:05.760968844Z stdout F |=========================================================================================|
+2026-11-14T23:02:05.762357472Z stdout F |  No running processes found                                                             |
+2026-11-14T23:02:05.762371488Z stdout F +-----------------------------------------------------------------------------------------+
+2026-11-14T23:02:06.04338557Z stdout F DRIVER_CHECK=PASS; PYTORCH_CHECK=SKIPPED (torch absent)

@@ -1,0 +1,302 @@
+{
+  "label": "Saved results from completed cluster runs.",
+  "generated_from": "Only actual local exported evidence. No cluster requests are made by the viewer or export script.",
+  "runs": [
+    {
+      "id": "79a4aa69-4307-4184-9764-84b915f58579",
+      "title": "ARM64 GPU driver smoke test",
+      "kind": "setup_test",
+      "scientific_result": false,
+      "status": "FINISHED, exit 0",
+      "physical_nodes": [
+        "CIQ-CHI-SPARK30"
+      ],
+      "result": "ARM64 execution and NVIDIA GB10 driver visibility passed. PyTorch GPU calculation NOT TESTED: torch absent.",
+      "timing": "2026-11-14 17:02:04.809 to 17:02:06.638 Central (workflow lifecycle; not a scientific benchmark)",
+      "inputs": "Exact approved workflow only; no protein dataset or model",
+      "model": "None",
+      "success_count": 1,
+      "failure_count": 0,
+      "files": [
+        "findings/gpu-smoke-run.json",
+        "findings/gpu-smoke-report.txt",
+        "findings/gpu-smoke-job.log",
+        "findings/gpu-smoke-stages.json",
+        "workflows/gpu-smoke-team15.fz"
+      ]
+    },
+    {
+      "id": "2f5d31fa-223c-4f5f-8df4-721fee85309a",
+      "title": "PyTorch CUDA calculation and persistent NFS write",
+      "kind": "infrastructure_test",
+      "scientific_result": false,
+      "status": "FINISHED, exit 0",
+      "physical_nodes": [
+        "CIQ-CHI-SPARK30"
+      ],
+      "result": "PASS: a deterministic 32x32 matrix product executed on cuda:0, synchronized and returned 32768. A unique 78-byte NFS file was written and read back.",
+      "timing": "2026-11-14T23:36:12.391252Z to 2026-11-14T23:36:27.620820Z (UTC; complete workflow lifecycle, not a scientific timing)",
+      "inputs": "78-byte run-identified infrastructure sentinel; no protein dataset",
+      "model": "No model. Python 3.12.3; PyTorch 2.10.0a0+b558c986e8.nv25.11; CUDA runtime 13.0; NVIDIA driver 580.173.02",
+      "success_count": 1,
+      "failure_count": 0,
+      "files": [
+        "findings/phase-b-writer-run.json",
+        "findings/phase-b-writer-report.txt",
+        "findings/phase-b-writer.log",
+        "findings/phase-b-writer-evidence.json",
+        "workflows/pytorch-storage-write-team15.fz"
+      ]
+    },
+    {
+      "id": "9d279ac6-741f-48b1-88c3-1a61a0a56aa6",
+      "title": "Two-node shared-storage verification",
+      "kind": "infrastructure_test",
+      "scientific_result": false,
+      "status": "FINISHED, exit 0",
+      "physical_nodes": [
+        "CIQ-CHI-SPARK29",
+        "CIQ-CHI-SPARK30"
+      ],
+      "result": "PASS: both physical nodes read identical expected bytes and SHA256. This is not GPU scaling, RDMA or a scientific benchmark.",
+      "timing": "2026-11-14T23:37:13.595615Z to 2026-11-14T23:37:48.052799Z (UTC; complete workflow lifecycle, not a scientific timing)",
+      "inputs": "78-byte run-identified infrastructure sentinel; no protein dataset",
+      "model": "No model. Rocky Linux 9; CPU-only verification",
+      "success_count": 2,
+      "failure_count": 0,
+      "files": [
+        "findings/phase-b-reader-run.json",
+        "findings/phase-b-reader-report.txt",
+        "findings/phase-b-reader.log",
+        "findings/phase-b-reader-evidence.json",
+        "workflows/storage-two-node-read-team15.fz"
+      ]
+    }
+  ],
+  "scientific_runs": [],
+  "benchmark": {
+    "status": "NOT STARTED",
+    "pilot_pairs": 0,
+    "rule": "One versus two nodes must use identical real inputs and method/settings; record all physical nodes, stage timings, successes/failures and immediate exports. A single timing pair is a pilot, not a benchmark study."
+  },
+  "missing": [
+    "Actual compact protein bundle from darkstar90@spark-6771 (not available on this laptop)",
+    "Scientific method/data contract and exact model/settings, if any",
+    "Real scientific outputs and generated structures",
+    "Pre-existing reference structures and provenance",
+    "Identical-workload one-node/two-node scientific pilot"
+  ],
+  "evidence_files": [
+    {
+      "path": "findings/gpu-smoke-run.json",
+      "provenance": "Sanitized local evidence of Phase A or its preflight",
+      "classification": "setup_evidence"
+    },
+    {
+      "path": "findings/gpu-smoke-report.txt",
+      "provenance": "Retrieved via read-only object_get; group report digest recorded in run JSON",
+      "classification": "setup_evidence"
+    },
+    {
+      "path": "findings/gpu-smoke-job.log",
+      "provenance": "Sanitized local evidence of Phase A or its preflight",
+      "classification": "setup_evidence"
+    },
+    {
+      "path": "findings/gpu-smoke-run.log",
+      "provenance": "Sanitized local evidence of Phase A or its preflight",
+      "classification": "setup_evidence"
+    },
+    {
+      "path": "findings/gpu-smoke-stages.json",
+      "provenance": "Sanitized local evidence of Phase A or its preflight",
+      "classification": "setup_evidence"
+    },
+    {
+      "path": "findings/gpu-smoke-validation.json",
+      "provenance": "Sanitized local evidence of Phase A or its preflight",
+      "classification": "setup_evidence"
+    },
+    {
+      "path": "findings/fuzzball-resource-discovery.json",
+      "provenance": "Sanitized local evidence of Phase A or its preflight",
+      "classification": "setup_evidence"
+    },
+    {
+      "path": "workflows/gpu-smoke-team15.fz",
+      "provenance": "Exact approved and submitted definition; hash verified before one submission",
+      "classification": "executed_workflow"
+    },
+    {
+      "path": "findings/phase-b-approval-bundle.json",
+      "provenance": "Prepared proposal only; not executed",
+      "classification": "proposal"
+    },
+    {
+      "path": "findings/phase-b-validation.json",
+      "provenance": "Installed CLI validation; missing-volume failures are preserved",
+      "classification": "proposal_validation"
+    },
+    {
+      "path": "workflows/pytorch-storage-write-team15.fz",
+      "provenance": "Final approved Phase B workflow; one recorded submission, exact hash in run record",
+      "classification": "executed_workflow"
+    },
+    {
+      "path": "workflows/storage-two-node-read-team15.fz",
+      "provenance": "Final approved Phase B workflow; one recorded submission, exact hash in run record",
+      "classification": "executed_workflow"
+    },
+    {
+      "path": "workflows/datasets-metadata-team15.HOLD.fz",
+      "provenance": "Local proposal only; unexecuted",
+      "classification": "proposed_workflow"
+    },
+    {
+      "path": "milestones.md",
+      "provenance": "Local checkpoint or offline viewer verification; not remote computation",
+      "classification": "handoff"
+    },
+    {
+      "path": "RUN_LOCALLY.md",
+      "provenance": "Local checkpoint or offline viewer verification; not remote computation",
+      "classification": "handoff"
+    },
+    {
+      "path": "NEXT_SESSION.md",
+      "provenance": "Local checkpoint or offline viewer verification; not remote computation",
+      "classification": "handoff"
+    },
+    {
+      "path": "findings/local-viewer-validation.json",
+      "provenance": "Local checkpoint or offline viewer verification; not remote computation",
+      "classification": "handoff"
+    },
+    {
+      "path": "findings/phase-b-results.json",
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-test-contract.json",
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-sentinel.expected.txt",
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-final-preflight.json",
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-compatibility.json",
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-image-preflight.json",
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-volume.json",
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-volume-action.json",
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/scientific-importer-tests.json",
+      "classification": "local_import_preparation",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-writer-run.json",
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-writer-evidence.json",
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-writer-report.txt",
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-reader-run.json",
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-reader-evidence.json",
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-reader-report.txt",
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-writer.log",
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/phase-b-reader.log",
+      "classification": "infrastructure_evidence",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "scripts/import_scientific_bundle.py",
+      "classification": "local_import_preparation",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "scientific_bundle_contract.json",
+      "classification": "local_import_preparation",
+      "provenance": "Actual infrastructure execution/preflight evidence or explicitly labeled local preparation; not scientific output"
+    },
+    {
+      "path": "findings/next-scientific-run-proposal.json",
+      "classification": "unexecuted_proposal",
+      "provenance": "Bounded resource envelope on hold for real manifest and scientific command"
+    },
+    {
+      "path": "findings/phase-b-local-viewer-validation.json",
+      "classification": "offline_viewer_verification",
+      "provenance": "Headless browser rendering with cluster requests and process DNS disabled; Windows network unchanged"
+    },
+    {
+      "path": "findings/departure-checkpoint.json",
+      "classification": "handoff",
+      "provenance": "Sanitized departure checkpoint; no scientific outputs"
+    },
+    {
+      "path": "findings/departure-local-verification.json",
+      "classification": "handoff",
+      "provenance": "Sanitized departure checkpoint; no scientific outputs"
+    },
+    {
+      "path": "README.md",
+      "classification": "handoff",
+      "provenance": "Sanitized departure checkpoint; no scientific outputs"
+    },
+    {
+      "path": "sparkprep/README.md",
+      "classification": "handoff",
+      "provenance": "Sanitized departure checkpoint; no scientific outputs"
+    }
+  ],
+  "infrastructure_only": true
+}

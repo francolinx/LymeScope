@@ -1,0 +1,146 @@
+{
+  "workflowFile": "workflows/storage-two-node-read-team15.fz",
+  "submittedSha256": "d7353498d3f6fb327589aec8a53fa23ca247008f5006572720e9c5a47894f435",
+  "submissionAttemptCount": 1,
+  "startedAt": "2026-11-14T17:37:13.2520538-06:00",
+  "status": "finished",
+  "workflowId": "9d279ac6-741f-48b1-88c3-1a61a0a56aa6",
+  "writerWorkflowId": "2f5d31fa-223c-4f5f-8df4-721fee85309a",
+  "cliExitCode": 0,
+  "output": "9d279ac6-741f-48b1-88c3-1a61a0a56aa6",
+  "completedAt": "2026-11-14T17:37:13.5398608-06:00",
+  "jobId": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+  "exitCode": 0,
+  "resultLabel": "two-node shared-storage verification",
+  "scientificBenchmark": false,
+  "gpuScalingBenchmark": false,
+  "rdmaBenchmark": false,
+  "receipts": [
+    {
+      "architecture": "aarch64",
+      "bytes": 78,
+      "bytes_match": true,
+      "container_hostname": "storage-two-node-read-0",
+      "rank": 0,
+      "run_id": "phase-b-20261114T173521-7908c2da",
+      "sha256": "39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d",
+      "sha256_match": true,
+      "status": "PASS",
+      "test_file": "/project/verification/phase-b-20261114T173521-7908c2da/sentinel.txt",
+      "schedulerHost": "192.168.99.39:7331",
+      "physicalNode": "CIQ-CHI-SPARK30"
+    },
+    {
+      "architecture": "aarch64",
+      "bytes": 78,
+      "bytes_match": true,
+      "container_hostname": "storage-two-node-read-1",
+      "rank": 1,
+      "run_id": "phase-b-20261114T173521-7908c2da",
+      "sha256": "39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d",
+      "sha256_match": true,
+      "status": "PASS",
+      "test_file": "/project/verification/phase-b-20261114T173521-7908c2da/sentinel.txt",
+      "schedulerHost": "192.168.99.38:7331",
+      "physicalNode": "CIQ-CHI-SPARK29"
+    }
+  ],
+  "nodeMappingBasis": "Scheduler Hosts contains only Spark30 and Spark29; explicit Host and ContainerId .0 identify rank0 as Spark30; rank1 is the sole remaining scheduled node Spark29. Generic multinode executes ranks on allocated nodes.",
+  "localReport": "findings/phase-b-reader-report.txt",
+  "reportDigest": "sha256:cf63c2a5226c9c0a9c437bb1b6ff41ab2e0e04984c001e616baa653dd0bf5459",
+  "localReportVerified": true,
+  "evidence": "findings/phase-b-reader-evidence.json",
+  "log": "findings/phase-b-reader.log",
+  "stageTimings": [
+    {
+      "stage": "9d279ac6-741f-48b1-88c3-1a61a0a56aa6",
+      "kind": "STAGE_KIND_WORKFLOW",
+      "status": "finished",
+      "start": "2026-11-14T23:37:13.654949Z",
+      "end": "2026-11-14T23:37:48.052799Z",
+      "seconds": 34.39785,
+      "exitCode": null
+    },
+    {
+      "stage": "project",
+      "kind": "STAGE_KIND_VOLUME",
+      "status": "finished",
+      "start": "2026-11-14T23:37:13.698049Z",
+      "end": "2026-11-14T23:37:13.735450Z",
+      "seconds": 0.037401,
+      "exitCode": null
+    },
+    {
+      "stage": "reports",
+      "kind": "STAGE_KIND_VOLUME",
+      "status": "finished",
+      "start": "2026-11-14T23:37:13.675216Z",
+      "end": "2026-11-14T23:37:14.404076Z",
+      "seconds": 0.72886,
+      "exitCode": null
+    },
+    {
+      "stage": "storage-two-node-read-image",
+      "kind": "STAGE_KIND_IMAGE",
+      "status": "finished",
+      "start": "2026-11-14T23:37:13.650302Z",
+      "end": "2026-11-14T23:37:13.931219Z",
+      "seconds": 0.280917,
+      "exitCode": null
+    },
+    {
+      "stage": "storage-two-node-read",
+      "kind": "STAGE_KIND_JOB",
+      "status": "finished",
+      "start": "2026-11-14T23:37:16.286747Z",
+      "end": "2026-11-14T23:37:46.983029Z",
+      "seconds": 30.696282,
+      "exitCode": 0
+    },
+    {
+      "stage": "reports-egress-0",
+      "kind": "STAGE_KIND_FILE",
+      "status": "finished",
+      "start": "2026-11-14T23:37:47.014340Z",
+      "end": "2026-11-14T23:37:47.808520Z",
+      "seconds": 0.79418,
+      "exitCode": null
+    }
+  ],
+  "jobQueueEvents": [
+    {
+      "message": "queue_entered",
+      "metadata": {
+        "queue": "READY_QUEUE",
+        "queue_time": "2026-11-14T23:37:14.414953151Z"
+      },
+      "stageId": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+      "stageKind": "STAGE_KIND_JOB",
+      "stageName": "storage-two-node-read",
+      "timestamp": "2026-11-14T23:37:14.415536Z"
+    },
+    {
+      "message": "queue_entered",
+      "metadata": {
+        "queue": "RUNNING_QUEUE",
+        "queue_time": "2026-11-14T23:37:14.443264559Z"
+      },
+      "stageId": "efeba751-fe73-540e-a992-a6d0e8c2cbcf",
+      "stageKind": "STAGE_KIND_JOB",
+      "stageName": "storage-two-node-read",
+      "timestamp": "2026-11-14T23:37:14.443838Z"
+    }
+  ],
+  "workflowCreateTime": "2026-11-14T23:37:13.595615Z",
+  "workflowEndTime": "2026-11-14T23:37:48.052799Z",
+  "imageCacheHit": true,
+  "temporaryReportVolumes": [
+    {
+      "capacity_bytes": "16000000",
+      "cost_per_gb_hour": "0",
+      "id": "01a1dc6c-1989-75c7-aeeb-a93d36284f44",
+      "persistent": "false",
+      "storage_provisioner_id": "4dfde680-0cc5-3488-9376-7cf20605b12f"
+    }
+  ]
+}

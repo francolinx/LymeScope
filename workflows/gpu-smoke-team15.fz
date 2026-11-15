@@ -1,0 +1,105 @@
+# Prepared only: do not submit without approval.
+# Based on the connected event documentation's "Using GPUs with Fuzzball":
+# https://ui.fb-hack.civilfritz.net/docs/advanced-hardware/gpus/
+# v4 syntax and execution timeout:
+# https://ui.fb-hack.civilfritz.net/docs/appendices/workflow-syntax/
+# The Rocky image is documented and published for ARM64, but its cluster cache
+# status, injected-driver compatibility, and installed Python/PyTorch are untested.
+# This is a driver smoke test; tensor validation is conditional on existing torch.
+# The 2m limit covers job execution, not queue wait or container-image staging.
+# No installs, model downloads, ingress, services, or shared-dataset mounts.
+version: v4
+
+volumes:
+  smoke-output:
+    use: team15-scratch
+    size: 16MiB
+    egress:
+      - source:
+          uri: file://report.txt
+        destination:
+          uri: fuzzball://group/lymescope/gpu-smoke-20261114/report.txt
+        policy:
+          timeout:
+            execute: 1m
+
+jobs:
+  gpu-smoke:
+    image:
+      uri: docker://rockylinux:9
+    policy:
+      timeout:
+        execute: 2m
+      restart: never
+    resource:
+      cpu:
+        cores: 1
+      memory:
+        size: 2GiB
+      devices:
+        nvidia.com/gpu: 1
+      annotations:
+        fuzzball.io/provisioner_definition_id: team15
+    mounts:
+      /smoke: smoke-output
+    script: |
+      #!/bin/bash
+      set -uo pipefail
+      {
+        printf 'LymeScope GPU smoke test\n'
+        printf 'execution_hostname='
+        hostname || exit 10
+        printf 'cpu_architecture='
+        uname -m || exit 10
+        case "$(uname -m)" in
+          aarch64|arm64) ;;
+          *) printf 'FAIL: expected ARM64 allocation\n'; exit 11 ;;
+        esac
+        printf 'CUDA_VISIBLE_DEVICES=%s\n' "${CUDA_VISIBLE_DEVICES:-unset}"
+        printf 'NVIDIA_VISIBLE_DEVICES=%s\n' "${NVIDIA_VISIBLE_DEVICES:-unset}"
+        printf '\nGPU inventory:\n'
+        nvidia-smi -L || exit 12
+        printf '\nDriver report (CUDA Version is the driver-supported ceiling):\n'
+        nvidia-smi || exit 12
+
+        python_bin=""
+        if command -v python3 >/dev/null 2>&1; then
+          python_bin="$(command -v python3)"
+        elif command -v python >/dev/null 2>&1; then
+          python_bin="$(command -v python)"
+        fi
+        if [ -z "$python_bin" ]; then
+          printf '\nDRIVER_CHECK=PASS; PYTORCH_CHECK=SKIPPED (Python absent)\n'
+        else
+          "$python_bin" - <<'PY'
+      import importlib.util
+      import sys
+
+      if importlib.util.find_spec("torch") is None:
+          print("DRIVER_CHECK=PASS; PYTORCH_CHECK=SKIPPED (torch absent)")
+          sys.exit(0)
+
+      import torch
+
+      print("pytorch_version=" + torch.__version__)
+      print("pytorch_cuda_runtime=" + str(torch.version.cuda))
+      print("cuda_available=" + str(torch.cuda.is_available()))
+      print("cuda_device_count=" + str(torch.cuda.device_count()))
+      if not torch.cuda.is_available():
+          raise RuntimeError("Installed PyTorch cannot use CUDA")
+      if torch.cuda.device_count() != 1:
+          raise RuntimeError("Expected exactly one visible GPU")
+      print("gpu_name=" + torch.cuda.get_device_name(0))
+      print("gpu_compute_capability=" + str(torch.cuda.get_device_capability(0)))
+      print("torch_compiled_architectures=" + str(torch.cuda.get_arch_list()))
+      x = torch.ones(16, device="cuda", dtype=torch.float32)
+      result = (x + x).sum().item()
+      torch.cuda.synchronize()
+      if result != 32.0:
+          raise RuntimeError("Unexpected GPU result: " + str(result))
+      print("gpu_result=" + str(result))
+      print("DRIVER_CHECK=PASS; PYTORCH_CHECK=PASS")
+      PY
+        fi
+      } 2>&1 | tee /smoke/report.txt
+

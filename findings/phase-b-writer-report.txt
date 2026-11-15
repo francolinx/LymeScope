@@ -1,0 +1,24 @@
+pytorch-and-storage-write
+aarch64
+Sat Nov 14 23:36:14 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.173.02             Driver Version: 580.173.02     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GB10                    On  |   0000000F:01:00.0 Off |                  N/A |
+| N/A   41C    P8              4W /  N/A  | Not Supported          |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+{"architecture": "aarch64", "capability": [12, 1], "compiled_architectures": ["sm_80", "sm_86", "sm_90", "sm_100", "sm_110", "sm_120", "compute_120"], "cuda_runtime": "13.0", "cuda_synchronized": true, "driver_version": "580.173.02", "gpu_name": "NVIDIA GB10", "gpu_operation": "ones(32,32) @ ones(32,32)", "gpu_result": 32768.0, "hostname": "pytorch-and-storage-write", "kind": "runtime_setup_test", "peak_cuda_allocated_bytes": 8529408, "persistence_write": "PASS", "python_version": "3.12.3", "result_device": "cuda:0", "run_id": "phase-b-20261114T173521-7908c2da", "scientific_result": false, "sentinel_bytes": 78, "sentinel_path": "/project/verification/phase-b-20261114T173521-7908c2da/sentinel.txt", "sentinel_sha256": "39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d", "status": "PASS", "torch_version": "2.10.0a0+b558c986e8.nv25.11"}
+GPU_CALCULATION=PASS; PERSISTENT_WRITE_AND_LOCAL_READ=PASS

@@ -1,0 +1,24 @@
+2026-11-14T23:36:14.369828096Z stdout F pytorch-and-storage-write
+2026-11-14T23:36:14.369865696Z stdout F aarch64
+2026-11-14T23:36:14.384952747Z stdout F Sat Nov 14 23:36:14 2026       
+2026-11-14T23:36:14.384973883Z stdout F +-----------------------------------------------------------------------------------------+
+2026-11-14T23:36:14.384977803Z stdout F | NVIDIA-SMI 580.173.02             Driver Version: 580.173.02     CUDA Version: 13.0     |
+2026-11-14T23:36:14.384980827Z stdout F +-----------------------------------------+------------------------+----------------------+
+2026-11-14T23:36:14.384983707Z stdout F | GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+2026-11-14T23:36:14.384986107Z stdout F | Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+2026-11-14T23:36:14.384988843Z stdout F |                                         |                        |               MIG M. |
+2026-11-14T23:36:14.384991243Z stdout F |=========================================+========================+======================|
+2026-11-14T23:36:14.410423836Z stdout F |   0  NVIDIA GB10                    On  |   0000000F:01:00.0 Off |                  N/A |
+2026-11-14T23:36:14.410442284Z stdout F | N/A   41C    P8              4W /  N/A  | Not Supported          |      0%      Default |
+2026-11-14T23:36:14.410446572Z stdout F |                                         |                        |                  N/A |
+2026-11-14T23:36:14.410449292Z stdout F +-----------------------------------------+------------------------+----------------------+
+2026-11-14T23:36:14.410948174Z stdout F 
+2026-11-14T23:36:14.410964511Z stdout F +-----------------------------------------------------------------------------------------+
+2026-11-14T23:36:14.410968495Z stdout F | Processes:                                                                              |
+2026-11-14T23:36:14.410971199Z stdout F |  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+2026-11-14T23:36:14.410973567Z stdout F |        ID   ID                                                               Usage      |
+2026-11-14T23:36:14.410975903Z stdout F |=========================================================================================|
+2026-11-14T23:36:14.411604017Z stdout F |  No running processes found                                                             |
+2026-11-14T23:36:14.411621633Z stdout F +-----------------------------------------------------------------------------------------+
+2026-11-14T23:36:23.80532024Z stdout F {"architecture": "aarch64", "capability": [12, 1], "compiled_architectures": ["sm_80", "sm_86", "sm_90", "sm_100", "sm_110", "sm_120", "compute_120"], "cuda_runtime": "13.0", "cuda_synchronized": true, "driver_version": "580.173.02", "gpu_name": "NVIDIA GB10", "gpu_operation": "ones(32,32) @ ones(32,32)", "gpu_result": 32768.0, "hostname": "pytorch-and-storage-write", "kind": "runtime_setup_test", "peak_cuda_allocated_bytes": 8529408, "persistence_write": "PASS", "python_version": "3.12.3", "result_device": "cuda:0", "run_id": "phase-b-20261114T173521-7908c2da", "scientific_result": false, "sentinel_bytes": 78, "sentinel_path": "/project/verification/phase-b-20261114T173521-7908c2da/sentinel.txt", "sentinel_sha256": "39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d", "status": "PASS", "torch_version": "2.10.0a0+b558c986e8.nv25.11"}
+2026-11-14T23:36:23.805336896Z stdout F GPU_CALCULATION=PASS; PERSISTENT_WRITE_AND_LOCAL_READ=PASS

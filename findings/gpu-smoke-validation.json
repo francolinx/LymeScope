@@ -1,0 +1,53 @@
+{
+  "observed_at_utc": "2026-11-14T22:49:13.982Z",
+  "workflow": "workflows/gpu-smoke-team15.fz",
+  "sha256": "d5daef96b0a2f00522e6c7343b2f409c0cb87af85010eb31f3391103636d9f72",
+  "mcp_validation": {
+    "valid": true,
+    "reported_errors": [],
+    "reported_warnings": [],
+    "note": "Response contained only valid=true."
+  },
+  "installed_cli_validation": {
+    "exit_code": 0,
+    "message": "Workflow has been validated."
+  },
+  "python_static_check": {
+    "syntax_valid": true,
+    "executed": false
+  },
+  "scheduling_preflight": {
+    "with_checks": true,
+    "response": [
+      {
+        "score": 0.5002865,
+        "costEstimate": 0.12283333333333334,
+        "readyQueueDepth": "8",
+        "runningQueueDepth": "35",
+        "usableCapacity": 41,
+        "clusterId": "294995c2-2cfc-14a6-8007-35485c2e35a7",
+        "blockingQueueDepth": "2",
+        "candidateEffectivePriority": 5.490055555555555e-8
+      }
+    ],
+    "job_submitted": false
+  },
+  "provisioner_pin_negative_control": {
+    "changed_field": "resource.annotations.fuzzball.io/provisioner_definition_id",
+    "value": "lymescopes-nonexistent-provisioner-check",
+    "expected_rejection": true,
+    "result": [
+      {
+        "message": "score workflow: no suitable provision definition found for job gpu-smoke (allocation ID 8bf6ba37-6341-5d4e-a557-5f185b4897eb) (FailedPrecondition). The resource is not in a state that allows this operation (e.g. acting on a workflow that already finished); describe it first to check its current state"
+      }
+    ],
+    "job_submitted": false
+  },
+  "corrected_argument_error": "An initial score request supplied cluster_id; this non-federate cluster rejected that argument as InvalidArgument. The corrected read-only request omitted it and succeeded.",
+  "limits": [
+    "Validation does not execute the shell or import torch.",
+    "Scheduling preflight does not reserve a node, pull an image, or test CUDA.",
+    "The negative control used a nonexistent provisioner; it was not an attempt to access another team's allocation."
+  ]
+}
+

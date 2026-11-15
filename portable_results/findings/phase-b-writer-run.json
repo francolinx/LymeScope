@@ -1,0 +1,147 @@
+{
+  "workflowFile": "workflows/pytorch-storage-write-team15.fz",
+  "submittedSha256": "73f9b6bee7fe698ee0d7df1c38a8340b7085b44d154613c5ea53893fa4a7c575",
+  "submissionAttemptCount": 1,
+  "startedAt": "2026-11-14T17:36:12.0274574-06:00",
+  "status": "finished",
+  "workflowId": "2f5d31fa-223c-4f5f-8df4-721fee85309a",
+  "cliExitCode": 0,
+  "output": "2f5d31fa-223c-4f5f-8df4-721fee85309a",
+  "completedAt": "2026-11-14T17:36:12.3405567-06:00",
+  "jobId": "434b8807-bc70-527b-ad12-26896e66a050",
+  "exitCode": 0,
+  "schedulerHost": "192.168.99.39:7331",
+  "physicalNode": "CIQ-CHI-SPARK30",
+  "result": {
+    "architecture": "aarch64",
+    "capability": [
+      12,
+      1
+    ],
+    "compiled_architectures": [
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_110",
+      "sm_120",
+      "compute_120"
+    ],
+    "cuda_runtime": "13.0",
+    "cuda_synchronized": true,
+    "driver_version": "580.173.02",
+    "gpu_name": "NVIDIA GB10",
+    "gpu_operation": "ones(32,32) @ ones(32,32)",
+    "gpu_result": 32768.0,
+    "hostname": "pytorch-and-storage-write",
+    "kind": "runtime_setup_test",
+    "peak_cuda_allocated_bytes": 8529408,
+    "persistence_write": "PASS",
+    "python_version": "3.12.3",
+    "result_device": "cuda:0",
+    "run_id": "phase-b-20261114T173521-7908c2da",
+    "scientific_result": false,
+    "sentinel_bytes": 78,
+    "sentinel_path": "/project/verification/phase-b-20261114T173521-7908c2da/sentinel.txt",
+    "sentinel_sha256": "39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d",
+    "status": "PASS",
+    "torch_version": "2.10.0a0+b558c986e8.nv25.11"
+  },
+  "localReport": "findings/phase-b-writer-report.txt",
+  "reportDigest": "sha256:148b9ecc835e7b4c134f92d587a51a6a4b182b5e252e634e5c1e1434eb22df6b",
+  "localReportVerified": true,
+  "evidence": "findings/phase-b-writer-evidence.json",
+  "log": "findings/phase-b-writer.log",
+  "stageTimings": [
+    {
+      "stage": "2f5d31fa-223c-4f5f-8df4-721fee85309a",
+      "kind": "STAGE_KIND_WORKFLOW",
+      "status": "finished",
+      "start": "2026-11-14T23:36:12.474812Z",
+      "end": "2026-11-14T23:36:27.620820Z",
+      "seconds": 15.146008,
+      "exitCode": null
+    },
+    {
+      "stage": "project",
+      "kind": "STAGE_KIND_VOLUME",
+      "status": "finished",
+      "start": "2026-11-14T23:36:12.512445Z",
+      "end": "2026-11-14T23:36:12.547303Z",
+      "seconds": 0.034858,
+      "exitCode": null
+    },
+    {
+      "stage": "reports",
+      "kind": "STAGE_KIND_VOLUME",
+      "status": "finished",
+      "start": "2026-11-14T23:36:12.491858Z",
+      "end": "2026-11-14T23:36:13.267828Z",
+      "seconds": 0.77597,
+      "exitCode": null
+    },
+    {
+      "stage": "pytorch-and-storage-write-image",
+      "kind": "STAGE_KIND_IMAGE",
+      "status": "finished",
+      "start": "2026-11-14T23:36:12.454287Z",
+      "end": "2026-11-14T23:36:12.790722Z",
+      "seconds": 0.336435,
+      "exitCode": null
+    },
+    {
+      "stage": "pytorch-and-storage-write",
+      "kind": "STAGE_KIND_JOB",
+      "status": "finished",
+      "start": "2026-11-14T23:36:14.000315Z",
+      "end": "2026-11-14T23:36:26.827162Z",
+      "seconds": 12.826847,
+      "exitCode": 0
+    },
+    {
+      "stage": "reports-egress-0",
+      "kind": "STAGE_KIND_FILE",
+      "status": "finished",
+      "start": "2026-11-14T23:36:26.861135Z",
+      "end": "2026-11-14T23:36:27.347608Z",
+      "seconds": 0.486473,
+      "exitCode": null
+    }
+  ],
+  "jobQueueEvents": [
+    {
+      "message": "queue_entered",
+      "metadata": {
+        "queue": "READY_QUEUE",
+        "queue_time": "2026-11-14T23:36:13.280713Z"
+      },
+      "stageId": "434b8807-bc70-527b-ad12-26896e66a050",
+      "stageKind": "STAGE_KIND_JOB",
+      "stageName": "pytorch-and-storage-write",
+      "timestamp": "2026-11-14T23:36:13.281210Z"
+    },
+    {
+      "message": "queue_entered",
+      "metadata": {
+        "queue": "RUNNING_QUEUE",
+        "queue_time": "2026-11-14T23:36:13.296277098Z"
+      },
+      "stageId": "434b8807-bc70-527b-ad12-26896e66a050",
+      "stageKind": "STAGE_KIND_JOB",
+      "stageName": "pytorch-and-storage-write",
+      "timestamp": "2026-11-14T23:36:13.297160Z"
+    }
+  ],
+  "workflowCreateTime": "2026-11-14T23:36:12.391252Z",
+  "workflowEndTime": "2026-11-14T23:36:27.620820Z",
+  "imageCacheHit": true,
+  "temporaryReportVolumes": [
+    {
+      "capacity_bytes": "16000000",
+      "cost_per_gb_hour": "0",
+      "id": "01a1dc6b-2aba-7eec-b570-eff99fc7c05e",
+      "persistent": "false",
+      "storage_provisioner_id": "4dfde680-0cc5-3488-9376-7cf20605b12f"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "chrome_exit_code": 0,
+  "saved_results_label_rendered": true,
+  "actual_workflow_id_rendered": true,
+  "not_tested_rendered": true,
+  "scientific_empty_state_rendered": true,
+  "screenshot_exists": true,
+  "cluster_requests_disabled": true,
+  "browser_dns_disabled_for_this_process": true,
+  "windows_network_configuration_changed": false,
+  "report_object_digest_verified": true
+}

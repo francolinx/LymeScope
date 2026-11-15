@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-11-14T17:34:07.318232-06:00",
+  "image": "nvcr.io/nvidia/pytorch:25.11-py3",
+  "source": "https://nvcr.io/v2/nvidia/pytorch/manifests/25.11-py3",
+  "indexDigest": "sha256:417cbf33f87b5378849df37983552cd1f8bc8b62fe1ceabe004de816a55dff21",
+  "arm64ManifestDigest": "sha256:4a85d8cf6fb3a943280960b8948cf4e9b6eca77b4414c68c9b2c7bb863f79b70",
+  "platform": {
+    "architecture": "arm64",
+    "os": "linux"
+  },
+  "configArchitecture": "arm64",
+  "configOs": "linux",
+  "compressedLayerBytes": 9505677821,
+  "layerCount": 81,
+  "imageRequirements": {
+    "NVIDIA_REQUIRE_CUDA": "cuda>=9.0",
+    "CUDA_VERSION": "13.0.2.006",
+    "NVIDIA_PYTORCH_VERSION": "25.11"
+  },
+  "layersDownloaded": false,
+  "credentialsDisplayed": false
+}

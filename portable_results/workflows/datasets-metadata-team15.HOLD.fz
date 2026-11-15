@@ -1,0 +1,68 @@
+# HOLD: excluded from next approval; no documented enforced read-only job mount.
+# read-only:true was silently discarded by installed CLI normalization.
+# This job fails closed before directory access unless /datasets is mounted ro.
+# Never attempt a write to test the mount. No symlink traversal or file reads.
+version: v4
+volumes:
+  datasets:
+    use: shared
+    name: datasets
+  reports:
+    use: team15
+    size: 16MiB
+    egress:
+      - source:
+          uri: file://report.txt
+        destination:
+          uri: fuzzball://group/lymescope/phase-b-20261114/datasets-metadata.txt
+        policy:
+          timeout:
+            execute: 1m
+jobs:
+  datasets-metadata:
+    image:
+      uri: docker://rockylinux:9
+    policy:
+      timeout:
+        execute: 1m
+      restart: never
+    resource:
+      cpu:
+        cores: 1
+      memory:
+        size: 1GiB
+      annotations:
+        fuzzball.io/provisioner_definition_id: team15
+    mounts:
+      /datasets: datasets
+      /reports: reports
+    script: |
+      #!/bin/bash
+      set -euo pipefail
+      {
+        python3 - <<'PY'
+      import json, os, stat, time
+      from collections import deque
+      root="/datasets"
+      with open("/proc/self/mountinfo") as f:
+          mounts=[line.split() for line in f if line.split()[4] == root]
+      if not mounts or "ro" not in mounts[-1][5].split(","):
+          raise SystemExit("BLOCKED: /datasets is not an enforced read-only mount; inspected no contents")
+      print(json.dumps(dict(kind="dataset_metadata_inventory",scientific_result=False,read_only_verified=True)))
+      queue=deque([(root,0)])
+      count=0; deadline=time.monotonic()+15
+      while queue and count < 100 and time.monotonic() < deadline:
+          directory,depth=queue.popleft()
+          with os.scandir(directory) as entries:
+              for entry in entries:
+                  if count >= 100 or time.monotonic() >= deadline: break
+                  st=entry.stat(follow_symlinks=False)
+                  print(json.dumps(dict(path=os.path.relpath(entry.path,root),
+                                       type="directory" if stat.S_ISDIR(st.st_mode) else "symlink" if stat.S_ISLNK(st.st_mode) else "file" if stat.S_ISREG(st.st_mode) else "other",
+                                       bytes=st.st_size,mtime_ns=st.st_mtime_ns)))
+                  count+=1
+                  if depth < 1 and stat.S_ISDIR(st.st_mode): queue.append((entry.path,depth+1))
+      print(json.dumps(dict(entries_inspected=count,entry_limit=100,depth_limit=2,time_limit_seconds=15,
+                           file_contents_read=False,weights_present="UNCONFIRMED",bounded_partial_listing=True)))
+      PY
+      } 2>&1 | tee /reports/report.txt

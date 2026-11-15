@@ -1,0 +1,116 @@
+{
+  "checkedAt": "2026-11-14T23:34:34.927Z",
+  "savedDriver": "580.173.02",
+  "savedReport": "findings/gpu-smoke-report.txt",
+  "imageCuda": "13.0.2.006",
+  "requiredDriver": "580.95.05 (CUDA 13.0 Update 2 table; >=580 family minimum)",
+  "comparison": "PASS: 580.173.02 >=580.95.05",
+  "sources": [
+    "https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/rel-25-11.html",
+    "https://docs.nvidia.com/cuda/archive/13.0.2/cuda-toolkit-release-notes/index.html"
+  ],
+  "registryEvidence": "findings/phase-b-image-preflight.json",
+  "notes": [
+    "NGC catalog API anonymous lookup returned 401; public OCI registry standard anonymous Bearer flow succeeded. No user credential or token was displayed or stored.",
+    "Metadata only downloaded on laptop; no image layers downloaded locally.",
+    "Runtime CUDA execution remains untested until approved job succeeds."
+  ],
+  "provisioner": {
+    "id": null,
+    "name": "team15",
+    "driverType": "NFS",
+    "local": false,
+    "accessPolicy": {
+      "groups": {
+        "names": [
+          "team15@fb-hack.local",
+          "team15"
+        ]
+      }
+    },
+    "createPolicy": {
+      "groups": {
+        "names": [
+          "team15@fb-hack.local",
+          "team15"
+        ]
+      }
+    },
+    "ephemeralPolicy": {
+      "groups": {
+        "names": [
+          "team15@fb-hack.local",
+          "team15"
+        ]
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "192.168.99.38/7331",
+      "hostName": "CIQ-CHI-SPARK29",
+      "definitionId": "team15",
+      "total": {
+        "cpu": {
+          "cores": 20,
+          "sockets": 1
+        },
+        "mem": {
+          "bytes": "137304735744"
+        },
+        "devices": {
+          "cpu/arm64": 1,
+          "cpu/arm64/sve": 1,
+          "io.fuzzball/multinode": 1,
+          "nvidia.com/gpu": 1
+        }
+      },
+      "annotations": {
+        "fuzzball.io/provisioner_backend": "static",
+        "fuzzball.io/provisioner_deadline": "0:2026-11-14T15:19:55Z",
+        "fuzzball.io/provisioner_definition_id": "team15",
+        "nvidia.com/gpu.arch": "Blackwell",
+        "nvidia.com/gpu.compute.major": "12",
+        "nvidia.com/gpu.compute.minor": "1",
+        "nvidia.com/gpu.count": "1",
+        "nvidia.com/gpu.family": "blackwell",
+        "nvidia.com/gpu.model": "NVIDIA GB10",
+        "nvidia.com/gpu.product": "NVIDIA-GB10"
+      },
+      "status": "NODE_STATUS_READY"
+    },
+    {
+      "id": "192.168.99.39/7331",
+      "hostName": "CIQ-CHI-SPARK30",
+      "definitionId": "team15",
+      "total": {
+        "cpu": {
+          "cores": 20,
+          "sockets": 1
+        },
+        "mem": {
+          "bytes": "137304735744"
+        },
+        "devices": {
+          "cpu/arm64": 1,
+          "cpu/arm64/sve": 1,
+          "io.fuzzball/multinode": 1,
+          "nvidia.com/gpu": 1
+        }
+      },
+      "annotations": {
+        "fuzzball.io/provisioner_backend": "static",
+        "fuzzball.io/provisioner_deadline": "0:2026-11-14T15:19:55Z",
+        "fuzzball.io/provisioner_definition_id": "team15",
+        "nvidia.com/gpu.arch": "Blackwell",
+        "nvidia.com/gpu.compute.major": "12",
+        "nvidia.com/gpu.compute.minor": "1",
+        "nvidia.com/gpu.count": "1",
+        "nvidia.com/gpu.family": "blackwell",
+        "nvidia.com/gpu.model": "NVIDIA GB10",
+        "nvidia.com/gpu.product": "NVIDIA-GB10"
+      },
+      "status": "NODE_STATUS_READY"
+    }
+  ]
+}
