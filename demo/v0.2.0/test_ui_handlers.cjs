@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const assert = require('node:assert/strict');
-const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+const html = fs.readFileSync(process.argv[2] ? path.resolve(process.argv[2]) : path.join(__dirname, 'index.html'), 'utf8');
 const context = JSON.parse(html.match(/<script id="context" type="application\/json">([\s\S]*?)<\/script>/)[1]);
 const source = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m => m[1]).join('\n');
 class Element {
@@ -17,6 +17,7 @@ class Element {
 const ids=new Map();
 for(const id of ['context','column','column-detail','mapping','regions','processing','assembly','proxy-note','correspondence','reference-summary','full-count','observed-count','intersection-count','previous','next','reference','research-observation','scene','scene-image','scene-caption','motion'])ids.set(id,new Element());
 for(const id of ['model-observation','science-detail','sequence-scores'])ids.set(id,new Element());
+for(const id of ['story-coverage','story-disagreement','story-dimer','story-experiment','story-step','story-image','story-media-actions','story-motion','story-status','story-title','story-intro','story-content','story-caption','story-caution','story-back','story-next'])ids.set(id,new Element());
 ids.get('context').textContent=JSON.stringify(context);
 const buttons=[154,173].map(column=>{const x=new Element('button');x.dataset.column=String(column);return x;});
 const document={getElementById:id=>{assert(ids.has(id),id);return ids.get(id);},createElement:tag=>new Element(tag),querySelectorAll:selector=>{assert.equal(selector,'[data-column]');return buttons;}};
@@ -65,3 +66,23 @@ for(const c of context.spark_science.evidence.columns){
   if(c.reference_1GGQ_A_contact_4_5_A===null)assert.match(display,/contact.*unknown/);
 }
 console.log('PASS: offline UI handlers, all 218 saved NLLs, 30 sequence rows, null/false/zero, navigation and reference switching. Browser rendering NOT tested.');
+assert.equal(ids.get('story-coverage')['aria-pressed'],'true');
+assert.match(text(ids.get('story-content')),/1\/30 sequences/);
+assert.equal(ids.get('story-image').hidden,true);
+ids.get('story-next').events.click();
+assert.match(text(ids.get('story-content')),/4.01135/);
+assert.match(text(ids.get('story-content')),/1.54783/);
+assert.match(text(ids.get('story-content')),/E: 12/);
+ids.get('story-next').events.click();
+assert.match(text(ids.get('story-content')),/118 residue pairs/);
+assert.match(text(ids.get('story-content')),/4,081.16/);
+assert.match(ids.get('story-image').src,/ospc-dimer.png$/);
+ids.get('story-motion').events.click();assert.match(ids.get('story-image').src,/ospc-dimer.gif$/);
+ids.get('story-next').events.click();
+assert.match(text(ids.get('story-content')),/Human antibody B11/);
+assert.match(text(ids.get('story-status')),/MAPPING PENDING/);
+assert.equal(context.experimental_evidence.antibody_contact_by_alignment_column,null);
+assert.equal(ids.get('story-image').hidden,true);
+ids.get('story-back').events.click();assert.match(ids.get('story-image').src,/ospc-dimer.png$/);
+ids.get('story-coverage').events.click();assert.match(text(ids.get('story-title')),/one observation/);
+console.log('PASS: four guided stories, measured comparisons, explicit pending antibody mapping, static-first dimer and navigation.');

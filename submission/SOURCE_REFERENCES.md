@@ -26,8 +26,17 @@ Reviewed November 15, 2026. These links identify primary research, institutional
 - [Google DeepMind chronology](https://deepmind.google/science/alphafold/) supports AlphaFold at CASP13 in 2018 and subsequent milestones.
 - Jumper et al. (2021), AlphaFold2 publication following CASP14 in 2020. [Nature](https://www.nature.com/articles/s41586-021-03819-2).
 - [EMBL-EBI, July 2022 database expansion](https://www.ebi.ac.uk/about/news/technology-and-innovation/alphafold-200-million/) documents the 2021 launch and wider predicted-structure availability.
-- Lin et al. (2023), *Evolutionary-scale prediction of atomic-level protein structure with a language model*. [PubMed 36927031](https://pubmed.ncbi.nlm.nih.gov/36927031/). Attribution: FAIR, Meta AI; not Chan Zuckerberg Initiative. ESMFold is historical context; the project uses ESM-2 masked scoring, currently unrun.
+- Lin et al. (2023), *Evolutionary-scale prediction of atomic-level protein structure with a language model*. [PubMed 36927031](https://pubmed.ncbi.nlm.nih.gov/36927031/). Attribution: FAIR, Meta AI; not Chan Zuckerberg Initiative. ESMFold is historical context; the project completed ESM-2 masked scoring on the personal Spark. The event scientific benchmark remains unrun.
 - Abramson et al. (2024), *Accurate structure prediction of biomolecular interactions with AlphaFold 3*. [Nature](https://www.nature.com/articles/s41586-024-07487-w). Broad research context, not a LymeScope feature. Publisher access can vary; the [developer's chronology](https://deepmind.google/science/alphafold/) also records the 2024 release. No paid content or figures are reproduced.
+
+## Independent experimental antibody evidence
+
+These primary records were checked on November 15, 2026. They support educational source cards only. No antibody-contact residue labels have been imported into the LymeScope alignment.
+
+- Rudolph et al. (2024), human B11 Fab–OspC complex: [PDB 9BIF](https://www.rcsb.org/structure/9BIF), [J. Immunology DOI](https://doi.org/10.4049/jimmunol.2400247). X-ray resolution 3.09 Å; entry version 1.0. Published experimental evidence is distinct from our pending residue mapping.
+- Rudolph et al. (2023), mouse B5–OspC complex: [PDB 7UIJ](https://www.rcsb.org/structure/7UIJ), [mBio DOI](https://doi.org/10.1128/mbio.02981-22). X-ray resolution 2.70 Å; entry version 1.3. An antibody interface must not be replaced by an OspC homodimer contact proxy.
+- Vance et al. (2025), 8C1 type-specific binding-region study: [Microbiology Spectrum DOI](https://doi.org/10.1128/spectrum.02883-24). A literature-defined region is not a list of observed atomic contacts. No structure is assigned to this card.
+- [Machine-readable source inventory](../docs/frontier_v0.3.0/experimental-evidence.json), [claim index](../docs/claim-index.json). Precursor, author, label and frozen-alignment numbering require explicit correspondence before any overlay.
 
 ## Rights and event eligibility
 

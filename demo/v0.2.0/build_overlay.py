@@ -142,10 +142,13 @@ def write_overlay():
     from spark_adapter import load_evidence
     data['spark_science'] = load_evidence(data)
     data['model_scoring'] = 'COMPLETED_PERSONAL_SPARK'
+    data['experimental_evidence'] = json.loads((REPO / 'docs/frontier_v0.3.0/experimental-evidence.json').read_text(encoding='utf-8'))
     # Only this versioned demo layer is generated; no frozen file is written.
     (HERE / "context.json").write_text(json.dumps(data, indent=2, allow_nan=False) + "\n", encoding="utf-8", newline="\n")
     embedded = json.dumps(data, ensure_ascii=False, allow_nan=False).replace("<", "\\u003c")
     template = (HERE / "index.template.html").read_text(encoding="utf-8")
+    template = template.replace('__GUIDED_HTML__', (HERE / 'guided.html').read_text(encoding='utf-8'))
+    template = template.replace('__GUIDED_JS__', (HERE / 'guided.js').read_text(encoding='utf-8'))
     require(template.count("__CONTEXT_JSON__") == 1, "Expected one data slot")
     (HERE / "index.html").write_text(template.replace("__CONTEXT_JSON__", embedded), encoding="utf-8", newline="\n")
     return data

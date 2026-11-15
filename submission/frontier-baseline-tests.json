@@ -1,0 +1,36 @@
+{
+  "schema": "lymescope.frontier_baseline_tests.v1",
+  "sprint_start": "2026-11-15T08:40:09Z",
+  "execution_kind": "OFFLINE_CPU_ONLY",
+  "passed": 26,
+  "tests": [
+    {
+      "name": "importer",
+      "chunk_id": "76d338",
+      "wall_time_seconds": 0.4643149,
+      "exit_code": 0,
+      "original_token_count": 226,
+      "output": "test_hash_corruption (test_import_scientific_bundle.ImportChecks.test_hash_corruption) ... ok\r\ntest_invalid_residue (test_import_scientific_bundle.ImportChecks.test_invalid_residue) ... ok\r\ntest_metadata_must_cover_fasta (test_import_scientific_bundle.ImportChecks.test_metadata_must_cover_fasta) ... ok\r\ntest_unlisted_file (test_import_scientific_bundle.ImportChecks.test_unlisted_file) ... ok\r\ntest_valid_and_missing_reference_explicit (test_import_scientific_bundle.ImportChecks.test_valid_and_missing_reference_explicit) ... ok\r\ntest_valid_zip (test_import_scientific_bundle.ImportChecks.test_valid_zip) ... ok\r\ntest_windows_paths (test_import_scientific_bundle.ImportChecks.test_windows_paths) ... ok\r\ntest_zip_traversal (test_import_scientific_bundle.ImportChecks.test_zip_traversal) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 8 tests in 0.022s\r\n\r\nOK\r\n"
+    },
+    {
+      "name": "baseline",
+      "chunk_id": "0a3281",
+      "wall_time_seconds": 0.4807137,
+      "exit_code": 0,
+      "original_token_count": 385,
+      "output": "test_ambiguous_and_missing (test_baseline.BaselineTests.test_ambiguous_and_missing) ... ok\r\ntest_gaps (test_baseline.BaselineTests.test_gaps) ... ok\r\ntest_identical (test_baseline.BaselineTests.test_identical) ... ok\r\ntest_mapping_insertion_and_unobserved (test_baseline.BaselineTests.test_mapping_insertion_and_unobserved) ... ok\r\ntest_undefined (test_baseline.BaselineTests.test_undefined) ... ok\r\ntest_variable_tie (test_baseline.BaselineTests.test_variable_tie) ... ok\r\ntest_actual_frozen_reference_correspondence (test_baseline.FrozenReferenceTests.test_actual_frozen_reference_correspondence) ... C:\\Users\\franc\\Projects\\LymeScope\\sparkprep\\analysis\\ospc_comparison_v0.1.0\\baseline.py:7: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\\\Users\\\\franc\\\\Projects\\\\LymeScope\\\\sparkprep\\\\analysis\\\\ospc_comparison_v0.1.0\\\\frozen_inputs\\\\input_sequences.fasta' mode='r' encoding='cp1252'>\r\n  for line in open(path):\r\nResourceWarning: Enable tracemalloc to get the object allocation traceback\r\nC:\\Users\\franc\\Projects\\LymeScope\\sparkprep\\analysis\\ospc_comparison_v0.1.0\\cif_reader.py:20: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\\\Users\\\\franc\\\\Projects\\\\LymeScope\\\\sparkprep\\\\analysis\\\\ospc_comparison_v0.1.0\\\\frozen_inputs\\\\reference_structures\\\\1GGQ.cif' mode='r' encoding='cp1252'>\r\n  ts=list(cif_tokens(path));out={};i=0\r\nResourceWarning: Enable tracemalloc to get the object allocation traceback\r\nok\r\n\r\n----------------------------------------------------------------------\r\nRan 7 tests in 0.075s\r\n\r\nOK\r\n"
+    },
+    {
+      "name": "frozen_results",
+      "chunk_id": "b29fc2",
+      "wall_time_seconds": 0.4918123,
+      "exit_code": 0,
+      "original_token_count": 281,
+      "output": "test_ambiguous_and_missing (test_baseline.BaselineTests.test_ambiguous_and_missing) ... ok\r\ntest_gaps (test_baseline.BaselineTests.test_gaps) ... ok\r\ntest_identical (test_baseline.BaselineTests.test_identical) ... ok\r\ntest_mapping_insertion_and_unobserved (test_baseline.BaselineTests.test_mapping_insertion_and_unobserved) ... ok\r\ntest_undefined (test_baseline.BaselineTests.test_undefined) ... ok\r\ntest_variable_tie (test_baseline.BaselineTests.test_variable_tie) ... ok\r\ntest_all_saved_statistics (test_results.ScientificResultsTests.test_all_saved_statistics) ... ok\r\ntest_real_structure_mapping (test_results.ScientificResultsTests.test_real_structure_mapping) ... ok\r\ntest_roundtrip_and_identifiers (test_results.ScientificResultsTests.test_roundtrip_and_identifiers) ... ok\r\ntest_saved_tsv_matches_viewer (test_results.ScientificResultsTests.test_saved_tsv_matches_viewer) ... ok\r\ntest_secondary_empty_category_explanation (test_results.ScientificResultsTests.test_secondary_empty_category_explanation) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 11 tests in 0.077s\r\n\r\nOK\r\n"
+    }
+  ],
+  "notes": [
+    "Existing unclosed-file ResourceWarnings in two frozen-source reads; tests passed.",
+    "Fixture test directories remain ignored and are not published."
+  ]
+}

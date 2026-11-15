@@ -64,6 +64,8 @@ class OverlayTests(unittest.TestCase):
         saved = json.loads((__import__('pathlib').Path(__file__).parent / "context.json").read_text())
         from spark_adapter import load_evidence
         expected = dict(self.data, spark_science=load_evidence(self.data), model_scoring='COMPLETED_PERSONAL_SPARK')
+        from pathlib import Path
+        expected['experimental_evidence'] = json.loads((Path(__file__).resolve().parents[2]/'docs/frontier_v0.3.0/experimental-evidence.json').read_text(encoding='utf-8'))
         self.assertEqual(saved, expected)
         self.assertEqual(saved['spark_science']['event_benchmark'], 'NOT_RUN')
 

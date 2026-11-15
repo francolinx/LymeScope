@@ -1,0 +1,585 @@
+{
+  "schema": "lymescope.claim_index.v1",
+  "publication_scope": "feature/ospc-masked-scoring-v0.2.0",
+  "scientific_source_commit": "aafe818a20ea025370cf4b65145a9684e80aaaef",
+  "baseline_commit": "8058846c05d4dccd60117dd29ef784af43570418",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "assertion": "CDC distinguishes more than 80,000 annually reported Lyme cases from a claims-based estimate of 476,000 people diagnosed and treated.",
+      "evidence_level": "PUBLIC_HEALTH_SOURCE",
+      "sources": [],
+      "method": "Primary CDC surveillance page checked November 15, 2026.",
+      "run_id": null,
+      "primary_references": [
+        "https://www.cdc.gov/lyme/data-research/facts-stats/"
+      ],
+      "interpretation_limitations": "Different measures; neither is an exact infection count. Claims estimates may overcount; surveillance has underreporting/misclassification.",
+      "verification_status": "PRIMARY_RECORD_VERIFIED",
+      "metrics": {}
+    },
+    {
+      "claim_id": "C02",
+      "assertion": "The selected panel has 30 natural sequences, 218 fixed columns, F=202 fully covered, M=162 observed mapped columns, and MF=159.",
+      "evidence_level": "FROZEN_BASELINE",
+      "sources": [
+        {
+          "path": "sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/viewer_data.json",
+          "sha256": "d0b13b25800b908ed2a515b15c394666df34f361db1242d715978a1ee8e67f1e",
+          "bytes": 292411,
+          "commit": "8058846c05d4dccd60117dd29ef784af43570418"
+        }
+      ],
+      "method": "Saved coverage and explicit coordinate-status mapping.",
+      "run_id": null,
+      "primary_references": [],
+      "interpretation_limitations": "Selected related sequences; not universal conservation or independent residue samples.",
+      "verification_status": "VERIFIED_SAVED_EVIDENCE",
+      "metrics": {
+        "sequences": 30,
+        "columns": 218,
+        "F": 202,
+        "M": 162,
+        "MF": 159,
+        "M_minus_F": [
+          75,
+          86,
+          119
+        ]
+      }
+    },
+    {
+      "claim_id": "C03",
+      "assertion": "Columns 154 and 173 each have modal agreement 1.0 from one of 30 observations and no reference coordinate.",
+      "evidence_level": "FROZEN_BASELINE",
+      "sources": [
+        {
+          "path": "sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/viewer_data.json",
+          "sha256": "d0b13b25800b908ed2a515b15c394666df34f361db1242d715978a1ee8e67f1e",
+          "bytes": 292411,
+          "commit": "8058846c05d4dccd60117dd29ef784af43570418"
+        }
+      ],
+      "method": "Observed standard-residue fraction; gaps excluded from agreement and retained in coverage.",
+      "run_id": null,
+      "primary_references": [],
+      "interpretation_limitations": "The percentage is correctly calculated from one observation; that is insufficient support for broad conservation in this panel.",
+      "verification_status": "VERIFIED_SAVED_EVIDENCE",
+      "metrics": {
+        "154": {
+          "count": 1,
+          "coverage": 0.03333333333333333,
+          "modal_fraction": 1.0,
+          "contact": null
+        },
+        "173": {
+          "count": 1,
+          "coverage": 0.03333333333333333,
+          "modal_fraction": 1.0,
+          "contact": null
+        }
+      }
+    },
+    {
+      "claim_id": "C04",
+      "assertion": "The personal Spark completed 6,305 original-residue masks in 805 scoring forwards at per-sequence batch size 8.",
+      "evidence_level": "PERSONAL_SPARK_COMPUTATION",
+      "sources": [
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_v1/timings.json",
+          "sha256": "84ac459bfc1df0e1986f6852967fcfeca8725b23e408063364a9b1e2c673fa1d",
+          "bytes": 15230,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        },
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_validation.json",
+          "sha256": "972b1a4705885859315558b7eb9c36dfb1d542f472cdbfaf7ad324a1a8570e01",
+          "bytes": 461,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        }
+      ],
+      "method": "One mask per example; sum of per-sequence ceil(length/batch size); actual successful calls recorded.",
+      "run_id": "stretch_v0.2.0_20261115T072916Z/full_panel_v1",
+      "primary_references": [],
+      "interpretation_limitations": "Three warm-up forwards / 24 examples are additional, not scientific rows.",
+      "verification_status": "VERIFIED_SAVED_EVIDENCE",
+      "metrics": {
+        "scoring_masked_examples": 6305,
+        "scoring_forward_passes": 805,
+        "batch_size": 8,
+        "warmup_forward_passes": 3,
+        "warmup_masked_examples": 24,
+        "total_forward_passes": 808
+      }
+    },
+    {
+      "claim_id": "C05",
+      "assertion": "Personal GB10 warm scoring took 9.909294 seconds; load/transfer took 0.313129 seconds.",
+      "evidence_level": "PERSONAL_SPARK_COMPUTATION",
+      "sources": [
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_v1/timings.json",
+          "sha256": "84ac459bfc1df0e1986f6852967fcfeca8725b23e408063364a9b1e2c673fa1d",
+          "bytes": 15230,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        }
+      ],
+      "method": "Synchronized GPU scoring and separate load/transfer receipt.",
+      "run_id": "stretch_v0.2.0_20261115T072916Z/full_panel_v1",
+      "primary_references": [],
+      "interpretation_limitations": "One personal-host run, not a matched venue benchmark. Process wall starts after imports; OS page cache uncontrolled.",
+      "verification_status": "VERIFIED_SAVED_EVIDENCE",
+      "metrics": {
+        "host": "spark-6771",
+        "device": "NVIDIA GB10",
+        "warm_scoring_wall_s": 9.909293619999517,
+        "model_load_and_cuda_transfer_s": 0.31312917199829826,
+        "first_forward_after_load_s": 0.2378330539977469,
+        "end_to_end_wall_s": 10.510127191999345,
+        "peak_gpu_allocated_bytes": 137314816,
+        "peak_gpu_reserved_bytes": 247463936
+      }
+    },
+    {
+      "claim_id": "C06",
+      "assertion": "The primary score is masked-original-residue NLL under pinned ESM-2 8M, using all 33 vocabulary logits.",
+      "evidence_level": "METHOD_AND_PROVENANCE",
+      "sources": [
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/provenance/method_contract.json",
+          "sha256": "78c9126f67ebd4ea3a0d58d28a4c8e926686f72d5dc1270837ff1a598b9ab311",
+          "bytes": 893,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        },
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/provenance/model_download_receipt.json",
+          "sha256": "df689a83c921688698c5c2c2131f2bcc975fac70f08311c58d4657cffa15760d",
+          "bytes": 1477,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        }
+      ],
+      "method": "Natural-log softmax, eval/inference mode, fp32/eager, TF32 disabled, one masked original residue; exact token/mapping assertions.",
+      "run_id": null,
+      "primary_references": [
+        "https://huggingface.co/facebook/esm2_t6_8M_UR50D",
+        "https://doi.org/10.1126/science.ade2574"
+      ],
+      "interpretation_limitations": "Neither empirical conservation nor entropy, mutation effect, function, immunogenicity or an autoregressive sequence likelihood.",
+      "verification_status": "VERIFIED_SAVED_EVIDENCE",
+      "metrics": {
+        "model": "facebook/esm2_t6_8M_UR50D",
+        "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+        "score_sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f"
+      }
+    },
+    {
+      "claim_id": "C07",
+      "assertion": "Agreement versus predictability has descriptive Spearman rho 0.134696 across F=202; 239 overlapping fixed-alignment subsets assess sensitivity.",
+      "evidence_level": "PERSONAL_SPARK_COMPUTATION",
+      "sources": [
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/joint_sensitivity_summary.json",
+          "sha256": "6ae74fa76d6951acbadc70a7c9521dc58d133aa27936fc0d373d3577b3b88210",
+          "bytes": 7746,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        },
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_comparison_v2/column_comparison.tsv",
+          "sha256": "9dd159882c783ae23f2c50535e2acf8afc572390a48c984766fc0bb0e5edc02d",
+          "bytes": 58988,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        }
+      ],
+      "method": "Common full-coverage column set, average tied ranks; reuse unchanged per-sequence scores.",
+      "run_id": "stretch_v0.2.0_20261115T072916Z/full_panel_v1",
+      "primary_references": [],
+      "interpretation_limitations": "Overlapping subsets are not independent replicates or a population confidence interval; no significance claim.",
+      "verification_status": "VERIFIED_SAVED_EVIDENCE",
+      "metrics": {
+        "full_panel_agreement_predictability_spearman_rho": 0.13469642371821905,
+        "panel_designs": 239,
+        "fixed_full_coverage_columns": 202,
+        "additional_model_forward_passes": 0,
+        "half_panel_rho_min": 0.061683797269686355,
+        "half_panel_rho_max": 0.17543481996932783
+      }
+    },
+    {
+      "claim_id": "C08",
+      "assertion": "Columns 177 and 129 illustrate high agreement/high NLL versus lower agreement/lower NLL.",
+      "evidence_level": "PERSONAL_SPARK_COMPUTATION",
+      "sources": [
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/laptop_evidence_v1.json",
+          "sha256": "35ff10c8979ad364e0e39cb2350439b1cfd742212a2bf66594a13b993dab57d5",
+          "bytes": 352567,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        }
+      ],
+      "method": "Column mean NLL among observed original residues, shown beside empirical residue counts.",
+      "run_id": "stretch_v0.2.0_20261115T072916Z/full_panel_v1",
+      "primary_references": [],
+      "interpretation_limitations": "Illustrative selected positions, not an antibody-binding or biological-function prediction.",
+      "verification_status": "VERIFIED_SAVED_EVIDENCE",
+      "metrics": {
+        "177": {
+          "alignment_column": 177,
+          "coverage": 1.0,
+          "observed_residue_count": 30,
+          "original_residue_counts": {
+            "G": 30
+          },
+          "modal_fraction": 1.0,
+          "empirical_entropy_nats": -0.0,
+          "mean_masked_nll_nats": 4.01134684085846,
+          "sample_sd_masked_nll_nats": 0.3701916228482549,
+          "agreement_minus_predictability_percentile": 0.7935323383084577,
+          "reference_1GGQ_A_observation_status": "observed",
+          "reference_1GGQ_A_contact_4_5_A": false,
+          "half_panel_agreement_range": [
+            1.0,
+            1.0
+          ],
+          "half_panel_mean_nll_range": [
+            3.876374673843384,
+            4.199015744527181
+          ],
+          "half_panel_discordance_range": [
+            0.7164179104477612,
+            0.7810945273631841
+          ],
+          "reference_1GGQ_A_calculated_monomer_sasa_A2": 0.0,
+          "reference_1GGQ_A_calculated_dimer_sasa_A2": 0.0,
+          "reference_1GGQ_A_calculated_delta_sasa_A2": 0.0
+        },
+        "129": {
+          "alignment_column": 129,
+          "coverage": 1.0,
+          "observed_residue_count": 30,
+          "original_residue_counts": {
+            "A": 9,
+            "D": 3,
+            "E": 12,
+            "K": 5,
+            "T": 1
+          },
+          "modal_fraction": 0.4,
+          "empirical_entropy_nats": 1.3699664676069283,
+          "mean_masked_nll_nats": 1.5478251298268637,
+          "sample_sd_masked_nll_nats": 0.4430759996212764,
+          "agreement_minus_predictability_percentile": -0.8681592039800995,
+          "reference_1GGQ_A_observation_status": "observed",
+          "reference_1GGQ_A_contact_4_5_A": false,
+          "half_panel_agreement_range": [
+            0.26666666666666666,
+            0.6666666666666666
+          ],
+          "half_panel_mean_nll_range": [
+            1.349915099143982,
+            1.7541674693425497
+          ],
+          "half_panel_discordance_range": [
+            -0.9129353233830846,
+            -0.681592039800995
+          ],
+          "reference_1GGQ_A_calculated_monomer_sasa_A2": 60.96455584834902,
+          "reference_1GGQ_A_calculated_dimer_sasa_A2": 60.96455584834902,
+          "reference_1GGQ_A_calculated_delta_sasa_A2": 0.0
+        }
+      }
+    },
+    {
+      "claim_id": "C09",
+      "assertion": "1GGQ assembly 1 has 118 interchain heavy-atom residue pairs within 4.5 Å and 51 contacting residues per partner.",
+      "evidence_level": "COMPUTED_EXPERIMENTAL_GEOMETRY",
+      "sources": [
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/dimer_context_summary.json",
+          "sha256": "ecd344751b0adbcecbedb81065413b4804e4bf903ca605569b891b01d815b841",
+          "bytes": 2852,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        },
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/dimer_contacts.tsv",
+          "sha256": "d0c76c9c87dd9b0eeab06fcbb618cb21101392d23125648ee72b8537b42ee85d",
+          "bytes": 18015,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        }
+      ],
+      "method": "minimum interchain nonhydrogen atom distance <=4.5 A; model1, positive occupancy, alt . or A; deposited biological dimer assembly operators applied; waters/ions/nonprotein excluded",
+      "run_id": null,
+      "primary_references": [
+        "https://www.rcsb.org/structure/1GGQ",
+        "https://doi.org/10.1093/emboj/20.5.971"
+      ],
+      "interpretation_limitations": "OspC–OspC dimer contacts, not antibody contacts. Cutoff/construct dependent; missing coordinates are unknown.",
+      "verification_status": "VERIFIED_SAVED_EVIDENCE",
+      "metrics": {
+        "pdb_id": "1GGQ",
+        "assembly_id": "1",
+        "assembly_details": {
+          "id": "1",
+          "details": "author_and_software_defined_assembly",
+          "method_details": "PISA",
+          "oligomeric_details": "dimeric",
+          "oligomeric_count": "2"
+        },
+        "instances": [
+          {
+            "instance": "A@1",
+            "heavy_atoms": 1210
+          },
+          {
+            "instance": "B@1",
+            "heavy_atoms": 1213
+          }
+        ],
+        "residue_pairs_within_4_5_A": 118,
+        "left_contact_residues": 51,
+        "right_contact_residues": 51,
+        "pairs_at_4_0_A": 73,
+        "pairs_at_5_0_A": 156
+      }
+    },
+    {
+      "claim_id": "C10",
+      "assertion": "1GGQ calculated total SASA loss is 4,081.16 Å²; mean partner interface area is half, 2,040.58 Å².",
+      "evidence_level": "CALCULATED_SASA",
+      "sources": [
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/sasa_context_summary.json",
+          "sha256": "82b63e6649d493951da3c28d8eec8bbd52a09cf03ce4c4a47844b8c03ebd5209",
+          "bytes": 3411,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        },
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/sasa_dimer_context.tsv",
+          "sha256": "bee61c0cd4e16ab9bd409386ed65415bd0f62cb5def792f219fcafe6c2d08b1d",
+          "bytes": 91887,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        }
+      ],
+      "method": "Heavy-atom Shrake–Rupley-style Fibonacci sampling, stated element radii, 1.40 Å probe, 1,920 points/atom.",
+      "run_id": null,
+      "primary_references": [],
+      "interpretation_limitations": "Static incomplete constructs; no physiological/antibody accessibility measurement or exposed/buried classification.",
+      "verification_status": "VERIFIED_SAVED_EVIDENCE",
+      "metrics": {
+        "pdb_id": "1GGQ",
+        "assembly_id": 1,
+        "sphere_points_per_atom": 1920,
+        "heavy_atoms": 2423,
+        "monomer_sasa_sum_A2": 18609.796890127665,
+        "dimer_sasa_A2": 14528.63860391203,
+        "total_sasa_loss_A2": 4081.158286215635,
+        "mean_partner_interface_area_A2": 2040.5791431078176,
+        "elapsed_s": 1.4700093469982676
+      }
+    },
+    {
+      "claim_id": "C11",
+      "assertion": "The second reference 1G5Z uses an explicitly transformed symmetry partner and an exact Q44717 construct correspondence.",
+      "evidence_level": "COMPUTED_EXPERIMENTAL_GEOMETRY",
+      "sources": [
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/dimer_alignment_mapping.tsv",
+          "sha256": "88708adf90315d63204a64c9bd0e41aa802f9f14067567846df0876bd49bfef9",
+          "bytes": 71330,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        },
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/dimer_context_summary.json",
+          "sha256": "ecd344751b0adbcecbedb81065413b4804e4bf903ca605569b891b01d815b841",
+          "bytes": 2852,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        }
+      ],
+      "method": "Whole-construct sequence identity and deposited assembly operators.",
+      "run_id": null,
+      "primary_references": [
+        "https://www.rcsb.org/structure/1G5Z",
+        "https://doi.org/10.1074/jbc.M010062200"
+      ],
+      "interpretation_limitations": "Residue numbering is not transferred by accession metadata alone. Separate structure, not a new model-generated fold.",
+      "verification_status": "VERIFIED_SAVED_EVIDENCE",
+      "metrics": {
+        "pdb_id": "1G5Z",
+        "assembly_id": "1",
+        "assembly_details": {
+          "id": "1",
+          "details": "author_and_software_defined_assembly",
+          "method_details": "PISA,PQS",
+          "oligomeric_details": "dimeric",
+          "oligomeric_count": "2"
+        },
+        "instances": [
+          {
+            "instance": "A@1",
+            "heavy_atoms": 1240
+          },
+          {
+            "instance": "A@2",
+            "heavy_atoms": 1240
+          }
+        ],
+        "residue_pairs_within_4_5_A": 120,
+        "left_contact_residues": 51,
+        "right_contact_residues": 51,
+        "pairs_at_4_0_A": 76,
+        "pairs_at_5_0_A": 143
+      }
+    },
+    {
+      "claim_id": "C12",
+      "assertion": "Current v2 unknown/unobserved contacts and SASA remain null, distinct from observed false and calculated zero.",
+      "evidence_level": "DATA_SEMANTICS",
+      "sources": [
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/laptop_evidence_v1.json",
+          "sha256": "35ff10c8979ad364e0e39cb2350439b1cfd742212a2bf66594a13b993dab57d5",
+          "bytes": 352567,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        },
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/provenance/analysis_corrections.json",
+          "sha256": "d262917a9fe35686bcdd56c65664be96f0cc0d9101b1a5dd045083803da0e4d1",
+          "bytes": 400,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        }
+      ],
+      "method": "Typed adapter and explicit coordinate status; v2 supersedes the earlier false labels.",
+      "run_id": null,
+      "primary_references": [],
+      "interpretation_limitations": "The schema suffix evidence.v1 does not mean the superseded comparison_v1 aggregate.",
+      "verification_status": "VERIFIED_SAVED_EVIDENCE",
+      "metrics": {}
+    },
+    {
+      "claim_id": "C13",
+      "assertion": "CIQ Fuzzball ran a CUDA calculation on Spark30 and verified identical stored bytes on Spark29 and Spark30.",
+      "evidence_level": "EVENT_INFRASTRUCTURE",
+      "sources": [
+        {
+          "path": "findings/phase-b-results.json",
+          "sha256": "0e85a5ef8a39fe7cdd0e72d5572491e3788f80f84609f73fab3431c18fcacedf",
+          "bytes": 13429,
+          "commit": null
+        }
+      ],
+      "method": "Saved CUDA and shared-NFS write/read receipts with physical-node attribution.",
+      "run_id": null,
+      "primary_references": [],
+      "interpretation_limitations": "Infrastructure proof, not the scientific throughput benchmark. Vendor/backend identity is not established by identical-byte reads alone.",
+      "verification_status": "VERIFIED_SAVED_EVIDENCE",
+      "metrics": {
+        "cuda": "PASS",
+        "shared_storage": "PASS",
+        "event_scientific_benchmark": "NOT_RUN"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "assertion": "The matched event scientific one-node/two-node comparison is prepared but NOT RUN.",
+      "evidence_level": "PLANNED_WORKFLOW",
+      "sources": [
+        {
+          "path": "workflows/ospc-spark-v0.2.1/trial.HOLD.json",
+          "sha256": "7e1d408df0cc974e384cfc7a729539abfb24f6e2917537a29446858c6bdc4a13",
+          "bytes": 5531,
+          "commit": null
+        }
+      ],
+      "method": "Spark30 all tasks, then concurrent Spark29/Spark30 shards; identical batch-8 protocol.",
+      "run_id": null,
+      "primary_references": [],
+      "interpretation_limitations": "Authorization, staging, runtime, placement and venue pilots are gates. No measured speedup.",
+      "verification_status": "NOT_RUN",
+      "metrics": {
+        "one_node_masks": 6305,
+        "two_node_masks": [
+          3156,
+          3149
+        ],
+        "one_node_calls": 805,
+        "two_node_calls": [
+          403,
+          402
+        ],
+        "speedup": null
+      }
+    },
+    {
+      "claim_id": "C15",
+      "assertion": "Published B11/9BIF, B5/7UIJ and the 8C1 study supply independent experimental context; no antibody residue overlay is yet imported.",
+      "evidence_level": "PUBLISHED_EXPERIMENTAL_CONTEXT",
+      "sources": [
+        {
+          "path": "docs/frontier_v0.3.0/experimental-evidence.json",
+          "sha256": "517479305fe353d8c054b6729f121b133910f5d338fd7bdb0fdb3a269cf605ca",
+          "bytes": 3304,
+          "commit": null
+        }
+      ],
+      "method": "Official PDB metadata and primary paper records checked; educational source card only.",
+      "run_id": null,
+      "primary_references": [
+        "https://pubmed.ncbi.nlm.nih.gov/39240158/",
+        "https://pubmed.ncbi.nlm.nih.gov/36976016/",
+        "https://journals.asm.org/doi/10.1128/spectrum.02883-24"
+      ],
+      "interpretation_limitations": "Published numbering requires validated chain/sequence/alignment mapping. Homodimer contacts are not antibody contacts.",
+      "verification_status": "SOURCE_VERIFIED_MAPPING_PENDING",
+      "metrics": {
+        "mapping_status": "PENDING_SPARK_VALIDATION",
+        "mapped_contact_positions": null
+      }
+    },
+    {
+      "claim_id": "C16",
+      "assertion": "The animations use saved alignment/coordinates and rigid camera motion; they are not new predicted structures or dynamics.",
+      "evidence_level": "PRESENTATION_OF_SAVED_EVIDENCE",
+      "sources": [
+        {
+          "path": "demo/v0.2.0/assets/manifest.json",
+          "sha256": "4aee04a6c73a6cc47ce860db8e0caaa74cfeff216247af27c5a729e724957069",
+          "bytes": 6424,
+          "commit": null
+        }
+      ],
+      "method": "Original Pillow/NumPy renders, static alternatives, source hashes and decoded-frame checks.",
+      "run_id": null,
+      "primary_references": [],
+      "interpretation_limitations": "The legacy dimer amber color is a separate 8 Å Cα proxy (49 residues/chain), not the 4.5 Å heavy-atom field. Browser playback requires its own check.",
+      "verification_status": "VERIFIED_SAVED_EVIDENCE",
+      "metrics": {}
+    },
+    {
+      "claim_id": "C17",
+      "assertion": "The published personal-Spark experiment reports sixteen passing tests and an independent full-result arithmetic audit.",
+      "evidence_level": "PUBLISHED_VALIDATION",
+      "sources": [
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/provenance/tests_full_release.log",
+          "sha256": "2435c770b78306d2c4f92ec4dfc09cfb7b958dcaee72e053013aaa8b165c73d9",
+          "bytes": 1851,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        },
+        {
+          "path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_validation.json",
+          "sha256": "972b1a4705885859315558b7eb9c36dfb1d542f472cdbfaf7ad324a1a8570e01",
+          "bytes": 461,
+          "commit": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+        }
+      ],
+      "method": "Saved runtime test receipt plus independent CSV arithmetic, task identity and mapping checks.",
+      "run_id": null,
+      "primary_references": [],
+      "interpretation_limitations": "Laptop offline fixtures do not validate new real-model inference; local runtime limitations are reported separately.",
+      "verification_status": "VERIFIED_SAVED_EVIDENCE",
+      "metrics": {
+        "published_tests_passed": 16
+      }
+    }
+  ],
+  "rule": "Every claim identifies measurement level, source bytes, method and limits. Pending work is not a result."
+}

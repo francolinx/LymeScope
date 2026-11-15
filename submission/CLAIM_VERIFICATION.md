@@ -1,4 +1,6 @@
-# Claim verification — version 0.2.0
+# Claim verification — Frontier integration
+
+The discoverable [17-claim index](../docs/claim-index.md) and [JSON index](../docs/claim-index.json) now connect assertions to exact source paths, SHA256 hashes, methods, evidence levels and limitations. This human checklist supplements that index; historical validation receipts remain unchanged.
 
 | Claim or visual | Evidence and verification | Allowed interpretation |
 |---|---|---|
@@ -22,10 +24,13 @@
 | Calculated SASA | Separate saved CPU calculation, explicit radii/probe/resolution | Static incomplete constructs; not measured physiological accessibility |
 | Null contact/SASA fields | v2 typed adapter plus local rejection/UI tests | Unknown is not false or zero; no fabricated coordinates |
 | Event one/two-node scientific benchmark | Prepared exact batch-8 contract; no event scientific receipt | NOT RUN; no speedup claim |
+| B11 / B5 / 8C1 educational cards | Primary PDB/publication metadata and source inventory | Published experimental context only; alignment-level antibody labels are pending and null |
+| Four-story workbench | Saved coverage, current v2 NLL, original dimer images and source cards | Offline control fixtures passed; browser rendering remains unverified |
+| GitHub Pages package | Local docs/index.html and byte-checked asset copies | Prepared source only; no hosting settings changed or live-site claim |
 | Historical milestones | Linked primary/institutional sources | No universal historical accuracy percentage |
 | Future applications | Explicit prospective research framing | Not current LymeScope features or clinical promises |
 | Personal motivation | Proposed wording submitted to lead | DRAFT until explicitly approved; no invented personal illness |
 
-All animation files are original local CPU renders. Asset decoding and static frame inspection are distinct from browser playback. See [asset manifest](../demo/v0.2.0/assets/manifest.json) and [validation receipt](validation.json). The main branch, frozen evidence and manifests are preserved.
+All animation files are original local CPU renders. Asset decoding and static frame inspection are distinct from browser playback. See [asset manifest](../demo/v0.2.0/assets/manifest.json), historical [validation receipt](validation.json), and current [Frontier checks](frontier-validation.json). The main branch, frozen evidence and manifests are preserved.
 
 The scientific contract is the user's final Claude reference plus accepted corrections. No entropy, embedding dispersion, substitution log-odds, permutation experiment or 59-sequence expansion has replaced masked-original-residue NLL.

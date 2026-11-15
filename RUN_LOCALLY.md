@@ -1,6 +1,6 @@
 # View saved LymeScope results
 
-> Current demo: [demo/v0.2.0/index.html](demo/v0.2.0/index.html) includes the completed personal-Spark 6,305-mask experiment and original scientific figures. Keep repository directories together; no model, server or network is required to view saved results. Browser rendering is NOT VERIFIED: the normal tool returned “The browser access host is unavailable.” The frozen viewer and historical receipts below remain available.
+> Current guided workbench: [docs/index.html](docs/index.html), with source at [demo/v0.2.0/index.html](demo/v0.2.0/index.html), includes the completed personal-Spark 6,305-mask experiment, original figures and four evidence stories. Keep repository directories together; no model, server or network is required for saved results. External source links require a connection. Browser launch is NOT CONFIRMED and rendering is NOT VERIFIED: the normal tool returned “The browser access host is unavailable.” GitHub Pages is prepared, not claimed live. The frozen viewer and historical receipts below remain available.
 
 ## Completed personal-Spark analysis
 

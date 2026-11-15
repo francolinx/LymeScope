@@ -14,7 +14,7 @@ MILESTONES=[
  ('2021 / 22','Predictions become a resource','AlphaFold DB launches, then expands.','https://www.ebi.ac.uk/about/news/technology-and-innovation/alphafold-200-million/'),
  ('2023','Language models meet structure','Meta FAIR publishes ESMFold research.','https://pubmed.ncbi.nlm.nih.gov/36927031/'),
  ('2024','Molecular interactions','AlphaFold3: joint structure prediction.','https://www.nature.com/articles/s41586-024-07487-w'),
- ('2026','LymeScope: inspect the evidence','Local workflow; CPU OspC baseline complete.','https://github.com/francolinx/LymeScope')]
+ ('2026','LymeScope: inspect the evidence','CPU baseline; masked GPU scoring.','https://github.com/francolinx/LymeScope')]
 
 
 def build():
@@ -34,8 +34,8 @@ def build():
                     f'<text x="80" y="{y+48}" font-size="27" font-weight="650">{html.escape(title)}</text>',
                     f'<text x="80" y="{y+84}" font-size="22" fill="#a8c2ca">{html.escape(detail)}</text></a>'])
     svg.extend(['<text x="30" y="1604" font-size="19" fill="#a8c2ca">Not a universal accuracy scale. Experiments remain essential.</text>','</g></svg>'])
-    (assets/'biology-timeline.svg').write_text('\n'.join(svg)+'\n',encoding='utf-8')
-    (assets/'timeline-sources.json').write_text(json.dumps(MILESTONES,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+    (assets/'biology-timeline.svg').write_text('\n'.join(svg)+'\n',encoding='utf-8',newline='\n')
+    (assets/'timeline-sources.json').write_text(json.dumps(MILESTONES,indent=2,ensure_ascii=False)+'\n',encoding='utf-8',newline='\n')
     import markdown
     source=(ROOT/'README.md').read_text(encoding='utf-8').replace('<details>','<details markdown="1">')
     body=markdown.markdown(source,extensions=['tables','fenced_code','md_in_html'])

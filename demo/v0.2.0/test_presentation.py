@@ -16,7 +16,11 @@ ROOT=HERE.parents[1]
 def local_links(path):
     text=path.read_text(encoding='utf-8')
     links=re.findall(r'!?\[[^\]]*\]\(([^)]+)\)',text)
-    links+=re.findall(r'(?:href|src|srcset)=["\']([^"\']+)["\']',text)
+    class Links(HTMLParser):
+        def handle_starttag(self,tag,attrs):
+            for name,value in attrs:
+                if name in ('href','src','srcset') and value:links.append(value)
+    Links().feed(text)  # Do not mistake a JavaScript .src string fragment for an HTML attribute.
     for link in links:
         parsed=urlsplit(link)
         if not parsed.scheme and not parsed.netloc and parsed.path:

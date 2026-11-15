@@ -1,0 +1,62 @@
+{
+  "schema": "lymescope.educational_experimental_evidence.v1",
+  "checked_at_utc": "2026-11-15T08:42:57Z",
+  "kind": "primary_source_inventory_not_a_residue_mapping",
+  "mapping_status": "PENDING_SPARK_VALIDATION",
+  "mapped_antibody_contact_positions": null,
+  "antibody_contact_by_alignment_column": null,
+  "new_coordinate_files_downloaded_on_laptop": 0,
+  "question": "Does agreement/predictability discordance add descriptive information about experimentally observed interaction regions beyond amino-acid identity, conservation and geometry?",
+  "interpretation": "A falsifiable research question, not an established result. Published antibody contacts and OspC homodimer contacts are different quantities.",
+  "sources": [
+    {
+      "id": "B11_9BIF",
+      "label": "Human antibody B11",
+      "pdb_id": "9BIF",
+      "pdb_url": "https://www.rcsb.org/structure/9BIF",
+      "entry_version_seen": "1.0",
+      "method": "X-ray diffraction",
+      "resolution_angstrom": 3.09,
+      "released": "2024-11-20",
+      "citation": "Rudolph et al., J Immunol (2024)",
+      "doi": "10.4049/jimmunol.2400247",
+      "primary_reference": "https://pubmed.ncbi.nlm.nih.gov/39240158/",
+      "evidence": "A deposited experimental Fab B11–OspC complex provides an independent source for a future validated contact mapping.",
+      "verification_status": "PRIMARY_RECORD_VERIFIED",
+      "lymescope_mapping": "NOT_IMPORTED",
+      "limitation": "No chain, residue-number or frozen-alignment correspondence is assumed here; no antibody-contact labels are transferred to the homodimer view."
+    },
+    {
+      "id": "B5_7UIJ",
+      "label": "Mouse antibody B5",
+      "pdb_id": "7UIJ",
+      "pdb_url": "https://www.rcsb.org/structure/7UIJ",
+      "entry_version_seen": "1.3",
+      "method": "X-ray diffraction",
+      "resolution_angstrom": 2.70,
+      "released": "2023-04-05",
+      "citation": "Rudolph et al., mBio (2023)",
+      "doi": "10.1128/mbio.02981-22",
+      "primary_reference": "https://pubmed.ncbi.nlm.nih.gov/36976016/",
+      "evidence": "A deposited experimental B5–OspC complex is a second independent structural source.",
+      "verification_status": "PRIMARY_RECORD_VERIFIED",
+      "lymescope_mapping": "NOT_IMPORTED",
+      "limitation": "Published experimental conclusions do not validate a LymeScope predictor or generalize to every sequence in this selected panel."
+    },
+    {
+      "id": "8C1_LITERATURE",
+      "label": "8C1 binding-region study",
+      "pdb_id": null,
+      "pdb_url": null,
+      "method": "Literature-defined binding-region evidence including HDX-MS",
+      "citation": "Vance et al., Microbiology Spectrum (2025)",
+      "doi": "10.1128/spectrum.02883-24",
+      "primary_reference": "https://journals.asm.org/doi/10.1128/spectrum.02883-24",
+      "metadata_reference": "https://journals.asm.org/doi/reader/metadata/10.1128/spectrum.02883-24",
+      "evidence": "A published type-specific binding-region study offers a different evidence type from an atomic contact calculation.",
+      "verification_status": "PRIMARY_RECORD_VERIFIED",
+      "lymescope_mapping": "NOT_IMPORTED",
+      "limitation": "A literature-defined region is not a list of direct atomic contacts. Published numbering is not automatically a frozen alignment index."
+    }
+  ]
+}

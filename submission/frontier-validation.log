@@ -1,0 +1,86 @@
+=== adapter_and_overlay ===
+test_assembly_validation_precedes_proxy (test_overlay.OverlayTests.test_assembly_validation_precedes_proxy) ... ok
+test_cleavage_is_annotated_not_a_sequence_deletion (test_overlay.OverlayTests.test_cleavage_is_annotated_not_a_sequence_deletion) ... ok
+test_generated_data_matches_builder_and_published_spark_adapter (test_overlay.OverlayTests.test_generated_data_matches_builder_and_published_spark_adapter) ... ok
+test_low_coverage_columns_never_gain_coordinates (test_overlay.OverlayTests.test_low_coverage_columns_never_gain_coordinates) ... ok
+test_population_sets_are_distinct (test_overlay.OverlayTests.test_population_sets_are_distinct) ... ok
+test_proxy_is_defined_only_on_observed_primary_coordinates (test_overlay.OverlayTests.test_proxy_is_defined_only_on_observed_primary_coordinates) ... ok
+test_secondary_reference_numbering_and_provenance (test_overlay.OverlayTests.test_secondary_reference_numbering_and_provenance) ... ok
+test_illustrative_values_and_sensitivity_match_saved_results (test_spark_adapter.SparkAdapterTests.test_illustrative_values_and_sensitivity_match_saved_results) ... ok
+test_published_counts_and_current_aggregate (test_spark_adapter.SparkAdapterTests.test_published_counts_and_current_aggregate) ... ok
+test_reject_incomplete_column_ranking (test_spark_adapter.SparkAdapterTests.test_reject_incomplete_column_ranking) ... ok
+test_reject_loss_of_null_semantics (test_spark_adapter.SparkAdapterTests.test_reject_loss_of_null_semantics) ... ok
+test_reject_superseded_aggregate (test_spark_adapter.SparkAdapterTests.test_reject_superseded_aggregate) ... ok
+test_reject_unbatched_call_estimate (test_spark_adapter.SparkAdapterTests.test_reject_unbatched_call_estimate) ... ok
+test_rendered_payload_preserves_source_columns (test_spark_adapter.SparkAdapterTests.test_rendered_payload_preserves_source_columns) ... ok
+test_unknown_is_not_false_or_zero (test_spark_adapter.SparkAdapterTests.test_unknown_is_not_false_or_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.643s
+
+OK
+
+=== available_published_cpu_science ===
+test_1g5z_symmetry (test_science.ScienceTests.test_1g5z_symmetry) ... ok
+test_alignment_mapping_bijection (test_science.ScienceTests.test_alignment_mapping_bijection) ... ok
+test_average_rank_ties (test_science.ScienceTests.test_average_rank_ties) ... ok
+test_calculated_sasa_monotonicity_and_resolution (test_science.ScienceTests.test_calculated_sasa_monotonicity_and_resolution) ... ok
+test_cell_contacts_against_exhaustive_real_atoms (test_science.ScienceTests.test_cell_contacts_against_exhaustive_real_atoms) ... ok
+test_comparison_rejects_two_matching_partial_panels (test_science.ScienceTests.test_comparison_rejects_two_matching_partial_panels) ... ok
+test_complete_model_results_independent_audit (test_science.ScienceTests.test_complete_model_results_independent_audit) ... ok
+test_frozen_input_hashes (test_science.ScienceTests.test_frozen_input_hashes) ... ok
+test_partial_pilot_cannot_masquerade_as_panel (test_science.ScienceTests.test_partial_pilot_cannot_masquerade_as_panel) ... ok
+test_sensitivity_defined_denominator (test_science.ScienceTests.test_sensitivity_defined_denominator) ... ok
+test_shard_partition (test_science.ScienceTests.test_shard_partition) ... ok
+test_typed_evidence_structure_mapping (test_science.ScienceTests.test_typed_evidence_structure_mapping) ... ok
+test_unknown_structure_contact_is_never_false (test_science.ScienceTests.test_unknown_structure_contact_is_never_false) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.228s
+
+OK
+
+=== presentation_links_and_assets ===
+test_all_document_and_demo_relative_links_resolve (test_presentation.PresentationTests.test_all_document_and_demo_relative_links_resolve) ... ok
+test_scientific_asset_claims_match_saved_context (test_presentation.PresentationTests.test_scientific_asset_claims_match_saved_context) ... ok
+test_six_actual_looping_gifs_and_static_alternatives (test_presentation.PresentationTests.test_six_actual_looping_gifs_and_static_alternatives) ... ok
+test_static_first_demo_and_required_submission_files (test_presentation.PresentationTests.test_static_first_demo_and_required_submission_files) ... ok
+test_timeline_is_accessible_and_sourced (test_presentation.PresentationTests.test_timeline_is_accessible_and_sourced) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.943s
+
+OK
+
+=== frontier_claims_and_packaging ===
+test_claim_index_sources_are_exact_and_levels_explicit (test_frontier.FrontierTests.test_claim_index_sources_are_exact_and_levels_explicit) ... ok
+test_no_unvalidated_antibody_labels (test_frontier.FrontierTests.test_no_unvalidated_antibody_labels) ... ok
+test_package_local_links_and_media (test_frontier.FrontierTests.test_package_local_links_and_media) ... ok
+test_packaged_assets_match_original_bytes (test_frontier.FrontierTests.test_packaged_assets_match_original_bytes) ... ok
+test_packaged_embedded_data_are_identical (test_frontier.FrontierTests.test_packaged_embedded_data_are_identical) ... ok
+test_three_original_readme_animations_have_static_alternatives (test_frontier.FrontierTests.test_three_original_readme_animations_have_static_alternatives) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.064s
+
+OK
+
+=== venue_acceptance_offline ===
+test_matching_but_corrupted_reference_identity_is_rejected (test_venue_scores.VenueAcceptanceTests.test_matching_but_corrupted_reference_identity_is_rejected) ... ok
+test_nonfinite_negative_or_out_of_tolerance_fail (test_venue_scores.VenueAcceptanceTests.test_nonfinite_negative_or_out_of_tolerance_fail) ... ok
+test_partial_pilot_is_not_accepted (test_venue_scores.VenueAcceptanceTests.test_partial_pilot_is_not_accepted) ... ok
+test_relative_errors_and_zero_denominator_are_explicit (test_venue_scores.VenueAcceptanceTests.test_relative_errors_and_zero_denominator_are_explicit) ... ok
+test_saved_6305_scores_against_saved_v2_merge (test_venue_scores.VenueAcceptanceTests.test_saved_6305_scores_against_saved_v2_merge) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.182s
+
+OK
+
+=== source_demo_ui_fixtures ===
+PASS: offline UI handlers, all 218 saved NLLs, 30 sequence rows, null/false/zero, navigation and reference switching. Browser rendering NOT tested.
+PASS: four guided stories, measured comparisons, explicit pending antibody mapping, static-first dimer and navigation.
+
+=== packaged_demo_ui_fixtures ===
+PASS: offline UI handlers, all 218 saved NLLs, 30 sequence rows, null/false/zero, navigation and reference switching. Browser rendering NOT tested.
+PASS: four guided stories, measured comparisons, explicit pending antibody mapping, static-first dimer and navigation.

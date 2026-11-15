@@ -1,0 +1,136 @@
+{
+  "schema": "lymescope.frontier_validation.v1",
+  "checked_at": "2026-11-15T08:58:35.817035+00:00",
+  "starting_commit": "9e46ec46b85ed2990f89e16cbf6e7aba707e0c95",
+  "scientific_source_commit": "aafe818a20ea025370cf4b65145a9684e80aaaef",
+  "branch": "feature/ospc-masked-scoring-v0.2.0",
+  "model_inference_runs": 0,
+  "cluster_calls": 0,
+  "model_downloads": 0,
+  "baseline_tests_passed_this_sprint": 26,
+  "baseline_receipt": "submission/frontier-baseline-tests.json",
+  "browser_launch": "NOT_CONFIRMED",
+  "browser_rendering": "NOT_VERIFIED",
+  "browser_screenshot": "NOT_CAPTURED",
+  "browser_error": "The browser access host is unavailable",
+  "browser_route": "normal scoped Chrome request for local docs/index.html; no alternate route",
+  "published_spark_tests": {
+    "passed": 16,
+    "locally_rerun_inference": false
+  },
+  "not_run_locally": [
+    {
+      "test": "ScienceTests.test_calculated_sasa_analytical_spheres",
+      "reason": "Published source imports Unix resource, unavailable on Windows"
+    },
+    {
+      "test": "TorchMaskTests.test_mask_single_original_only",
+      "reason": "torch absent"
+    },
+    {
+      "test": "TorchMaskTests.test_full_vocabulary_nll_known_uniform",
+      "reason": "torch absent"
+    }
+  ],
+  "resolved_check_failures": [
+    {
+      "check": "presentation relative links",
+      "cause": "Old regex mistook JavaScript .src string fragments for HTML attributes",
+      "resolution": "Parse actual HTML attributes with HTMLParser; dynamic image behavior covered separately by UI fixtures"
+    }
+  ],
+  "checks": [
+    {
+      "name": "adapter_and_overlay",
+      "exit_code": 0,
+      "expected_tests": 15,
+      "command": [
+        "C:\\Users\\franc\\anaconda3\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_overlay",
+        "test_spark_adapter"
+      ]
+    },
+    {
+      "name": "available_published_cpu_science",
+      "exit_code": 0,
+      "expected_tests": 13,
+      "command": [
+        "C:\\Users\\franc\\anaconda3\\python.exe",
+        "-B",
+        "-c",
+        "import unittest,sys;from test_science import ScienceTests;names=[n for n in unittest.defaultTestLoader.getTestCaseNames(ScienceTests) if n!='test_calculated_sasa_analytical_spheres'];suite=unittest.TestSuite(ScienceTests(n) for n in names);r=unittest.TextTestRunner(verbosity=2).run(suite);sys.exit(not r.wasSuccessful())"
+      ]
+    },
+    {
+      "name": "presentation_links_and_assets",
+      "exit_code": 0,
+      "expected_tests": 5,
+      "command": [
+        "C:\\Users\\franc\\anaconda3\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_presentation"
+      ]
+    },
+    {
+      "name": "frontier_claims_and_packaging",
+      "exit_code": 0,
+      "expected_tests": 6,
+      "command": [
+        "C:\\Users\\franc\\anaconda3\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_frontier"
+      ]
+    },
+    {
+      "name": "venue_acceptance_offline",
+      "exit_code": 0,
+      "expected_tests": 5,
+      "command": [
+        "C:\\Users\\franc\\anaconda3\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_venue_scores"
+      ]
+    },
+    {
+      "name": "source_demo_ui_fixtures",
+      "exit_code": 0,
+      "expected_tests": null,
+      "command": [
+        "node",
+        "demo/v0.2.0/test_ui_handlers.cjs"
+      ]
+    },
+    {
+      "name": "packaged_demo_ui_fixtures",
+      "exit_code": 0,
+      "expected_tests": null,
+      "command": [
+        "node",
+        "demo/v0.2.0/test_ui_handlers.cjs",
+        "docs/index.html"
+      ]
+    }
+  ],
+  "venue_task_specification": "PASS_OFFLINE_ONLY",
+  "preservation": {
+    "imported_science_unchanged": true,
+    "frozen_baseline_unchanged": true,
+    "main_unchanged": true,
+    "starting_fallback_preserved": true
+  },
+  "python_tests_passed": 70,
+  "all_available_checks_passed": true
+}

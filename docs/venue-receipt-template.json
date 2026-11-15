@@ -1,0 +1,51 @@
+{
+  "schema": "lymescope.venue_coordinator_receipt.v1",
+  "status": "NOT_RUN_TEMPLATE",
+  "authorized_execution_window": null,
+  "scientific_commit": "aafe818a20ea025370cf4b65145a9684e80aaaef",
+  "model_revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+  "batch_size": 8,
+  "precision": "float32; eager; TF32 disabled; no autocast",
+  "input_hashes": null,
+  "model_file_hashes": null,
+  "runtime_fingerprints": null,
+  "scheduler_export_path_and_sha256": null,
+  "task_physical_node_mapping": null,
+  "venue_pilot_results": null,
+  "one_node": {
+    "required_physical_nodes": ["Spark30"],
+    "expected_masks": [6305],
+    "expected_scoring_calls": [805],
+    "coordinator_started_utc": null,
+    "coordinator_finished_utc": null,
+    "stage_times_s": null,
+    "worker_timing_receipts": null,
+    "completed_task_ids_path_and_sha256": null,
+    "failed_positions": null
+  },
+  "two_node": {
+    "required_physical_nodes": ["Spark29", "Spark30"],
+    "expected_masks": [3156, 3149],
+    "expected_scoring_calls": [403, 402],
+    "coordinator_started_utc": null,
+    "coordinator_finished_utc": null,
+    "stage_times_s": null,
+    "worker_timing_receipts": null,
+    "overlapping_execution_verified": null,
+    "completed_task_ids_path_and_sha256": null,
+    "failed_positions": null
+  },
+  "numerical_acceptance": {
+    "atol": 0.0001,
+    "rtol": 0.00001,
+    "relative_scale": "abs(reference NLL)",
+    "max_absolute_deviation": null,
+    "max_relative_deviation": null,
+    "zero_reference_relative_error_policy": "zero when equal; otherwise undefined/infinite explicitly",
+    "exact_task_identity_pass": null,
+    "within_tolerance": null
+  },
+  "full_workflow_speedup": null,
+  "compute_only_speedup": null,
+  "interpretation": "One timing pair is a pilot. Worker elapsed sums are not coordinator makespan; personal-Spark timings are not the event baseline."
+}

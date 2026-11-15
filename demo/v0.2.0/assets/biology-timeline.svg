@@ -45,6 +45,6 @@
 <a href="https://github.com/francolinx/LymeScope"><circle cx="49" cy="1465" r="8" fill="#ffc16b"/>
 <text x="80" y="1472" font-size="24" font-weight="700" fill="#ffc16b">2026</text>
 <text x="80" y="1513" font-size="27" font-weight="650">LymeScope: inspect the evidence</text>
-<text x="80" y="1549" font-size="22" fill="#a8c2ca">Local workflow; CPU OspC baseline complete.</text></a>
+<text x="80" y="1549" font-size="22" fill="#a8c2ca">CPU baseline; masked GPU scoring.</text></a>
 <text x="30" y="1604" font-size="19" fill="#a8c2ca">Not a universal accuracy scale. Experiments remain essential.</text>
 </g></svg>

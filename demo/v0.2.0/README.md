@@ -2,13 +2,15 @@
 
 Open `index.html` directly. All display data are embedded; no server, package, model, CDN or remote connection is required. The existing frozen viewer remains linked and unchanged. `build_overlay.py` regenerates only this new versioned demo layer from saved evidence and its template; it does not write scientific files or original manifests.
 
+The Frontier extension reuses this application: `guided.html`/`guided.js` add four saved-evidence stories, not a second scientific implementation. Coverage, 177/129 model disagreement, the observed homodimer, and source-verified antibody evidence remain separate. Antibody contact mapping is explicitly pending and null. Story changes restore static images. `docs/build_workbench.py` produces an offline/Pages-ready copy in `docs/index.html`; it never configures hosting. The packaged assets match their originals byte-for-byte.
+
 The overlay keeps three populations distinct: 202 fully covered alignment columns, 162 observed mapped 1GGQ residues, and their 159-column intersection. Columns 154/173 remain alignment-only and display 1/30 coverage. Masked-original-residue NLL is completed on the personal Spark. Event scientific benchmarking remains NOT RUN.
 
 `spark_adapter.py` validates the published schema, frozen-input identities, current v2 aggregate, counts and null semantics, then embeds the evidence in this existing demo. The three original scientific PNGs appear first with SVG links. Column controls show NLL/contributor counts, primary 1GGQ heavy-atom contacts and calculated SASA separately. Thirty sequence summaries retain full-length scoring scope. Source commit: `aafe818a20ea025370cf4b65145a9684e80aaaef`. No model is loaded here.
 
 The 8 Å C-alpha proxy remains distinct from the new 4.5 Å heavy-atom contact field. Primary 1GGQ contact/SASA annotations never silently become 1G5Z values. The old batch-16 task animation is retained on disk but removed from the scene selector: the current venue protocol uses batch 8 / 805 scoring calls. No additional illustration was generated.
 
-Run `python -B -m unittest -v test_overlay test_spark_adapter` and `node test_ui_handlers.cjs` for offline checks. These are not browser-rendering or actual-inference tests.
+Run `python -B -m unittest -v test_overlay test_spark_adapter test_frontier` and `node test_ui_handlers.cjs` for offline checks. From the repository root, `node demo/v0.2.0/test_ui_handlers.cjs docs/index.html` exercises the packaged copy too. The existing presentation suite uses Pillow; `submission/validate_frontier.py` records current checks separately from historical receipts. These are not browser-rendering or actual-inference tests.
 
 Biological labels come from the saved UniProt features for Q07337/Q44717. Signal 1–18 and Chain beginning 19 agree, but the supplied evidence is prediction/rule based. We describe an annotated boundary and do not claim measured cleavage or remove any frozen residue. The segment between the annotated mature-chain start and the construct is a tether candidate, with no claim of measured flexibility/accessibility.
 
