@@ -12,8 +12,8 @@ Updated 2026-11-14T18:03:08-06:00. Organizer's ten-minute departure checkpoint o
 | BLOCKED | Personal-Spark frozen input import | Host key not trusted; strict verification stopped transfer; expected hash in NEXT_SESSION.md |
 | BLOCKED | First protein result (former 6:15 PM target) | No imported input or fixed method; target abandoned for export checkpoint |
 | NOT STARTED | Identical-workload pilot (former 6:50 PM target) | No scientific baseline; infrastructure tests do not count |
-| DONE | Inspectable infrastructure viewer | portable_results/index.html; no scientific outputs claimed |
-| IN PROGRESS | Local Git/recovery/GitHub checkpoint | Git initialized only within this project after root/history inspection; final receipt outside repository |
+| DONE | Inspectable infrastructure viewer | findings/departure-viewer-validation.json; Chrome rendered with cluster/network requests disabled; 17 local links verified; no scientific outputs claimed |
+| DONE | Local Git/recovery/GitHub checkpoint | findings/departure-publication.json and departure-recovery.json; initial commit pushed and compared with remote main; final receipt outside repository |
 | NOT STARTED | Final submission review | Public repository content review required before Sunday noon |
 
 No fabricated scientific output, benchmark or timing. The earlier 7:30 PM access assumption is withdrawn. The final 45-minute export reserve could not be retained after the short-notice cutoff; export and offline verification were prioritized immediately. No additional event-cluster calls are needed for viewing or backup.

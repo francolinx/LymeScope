@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-11-14T18:05:41.561984-06:00",
+  "browser": "Chrome headless",
+  "status": "PASS",
+  "clusterRequestsDisabled": true,
+  "processDnsBlocked": true,
+  "windowsNetworkingChanged": false,
+  "portableManifestFilesVerified": 44,
+  "localEvidenceLinksVerified": 17,
+  "scientificResults": 0
+}

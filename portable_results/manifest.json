@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-14T18:03:08-06:00",
+  "generated_at": "2026-11-14T18:06:26-06:00",
   "label": "Saved results from completed cluster runs.",
   "files": [
     {
@@ -96,22 +96,22 @@
     },
     {
       "path": "milestones.md",
-      "sha256": "0200d782394548769ccc43258ff3acc686d49df373c26f1c81dcb9fb35b91da3",
-      "bytes": 1975,
+      "sha256": "a1769b4c9101e299e8a575950a58ddb60e2aed108d3f3ec43a71bf0554f46dcf",
+      "bytes": 2109,
       "classification": "handoff",
       "provenance": "Local checkpoint or offline viewer verification; not remote computation"
     },
     {
       "path": "RUN_LOCALLY.md",
-      "sha256": "1bca4e62e3d8a8d8890ce11b53fd2f547a73d7ff6b63f27e489b62e4e80a2ccd",
-      "bytes": 4760,
+      "sha256": "77f2a1ff0eb14f39d7e6eff8905888917e422472ac459cb390b8a10d5ad4b8de",
+      "bytes": 5117,
       "classification": "handoff",
       "provenance": "Local checkpoint or offline viewer verification; not remote computation"
     },
     {
       "path": "NEXT_SESSION.md",
-      "sha256": "458ba04452a3b10f640b94bacbe5f430a0bcc6411d424a79de066d553ceff520",
-      "bytes": 7390,
+      "sha256": "72d17839167ae2a72dd5bf28be4488debd88c78f0c16ca6fa27477a437497090",
+      "bytes": 8409,
       "classification": "handoff",
       "provenance": "Local checkpoint or offline viewer verification; not remote computation"
     },
@@ -271,8 +271,8 @@
     },
     {
       "path": "findings/departure-checkpoint.json",
-      "sha256": "e97224f079f662bd7bbf14b85c566f24f8c812ade7c04a5c3e663260b268293c",
-      "bytes": 1981,
+      "sha256": "3772e2104ee3400d50534d634ba3a416abb7e943e593388a398c14c2ed30c173",
+      "bytes": 2235,
       "classification": "handoff",
       "provenance": "Sanitized departure checkpoint; no scientific outputs"
     },
@@ -298,16 +298,37 @@
       "provenance": "Sanitized departure checkpoint; no scientific outputs"
     },
     {
+      "path": "findings/departure-viewer-validation.json",
+      "sha256": "22775c1392f3bd3fe10636ee08e3c1b7e3453d01712230c86532dd1062af6d62",
+      "bytes": 319,
+      "classification": "departure_verification",
+      "provenance": "Actual local verification and initial GitHub push; no scientific results"
+    },
+    {
+      "path": "findings/departure-publication.json",
+      "sha256": "7850695f942df7a6b020ebbc8d158d3df6ede7a9b6f9a182e7b7d499acbe2042",
+      "bytes": 464,
+      "classification": "departure_verification",
+      "provenance": "Actual local verification and initial GitHub push; no scientific results"
+    },
+    {
+      "path": "findings/departure-recovery.json",
+      "sha256": "103840047010d8136b414f97f854a7df43556e47d8297d1f1a60660373c9e775",
+      "bytes": 1089,
+      "classification": "departure_verification",
+      "provenance": "Actual local verification and initial GitHub push; no scientific results"
+    },
+    {
       "path": "index.html",
-      "sha256": "9f6b31bf937f865dcead39d30c858dfe339737dc3913bc62f8bb82228d89afe1",
+      "sha256": "974b13690c9e361247463c9d9e3760200f87597ad0dac3852dcf379d9925bba7",
       "bytes": 6527,
       "classification": "offline_viewer",
       "provenance": "Generated locally from findings/result-export-index.json"
     },
     {
       "path": "results-index.json",
-      "sha256": "8c4b340c4aba4e40039f0faadf7c1270e43bce681c46306f2e48737b11edebd6",
-      "bytes": 13407,
+      "sha256": "dc39c67fcf25125371804ca37c5f23aacfcfcd370024ee486dc7b0685d783af2",
+      "bytes": 14058,
       "classification": "result_index",
       "provenance": "Generated locally from findings/result-export-index.json"
     }

@@ -1,0 +1,26 @@
+{
+  "createdAt": "2026-11-14T18:05:08.677328-06:00",
+  "localCommit": "fab1199b0a007c6c661c84381db1ff78ce14f2a0",
+  "archive": "C:\\Users\\franc\\Projects\\LymeScope-recovery\\LymeScope-20261114T180508-0600.zip",
+  "archiveSha256": "83f71d52c07eccf40652cc8b8ee7dd5c646c7ce350589872fa7e4010d47dbe24",
+  "archiveFilesVerified": 99,
+  "gitBundle": "C:\\Users\\franc\\Projects\\LymeScope-recovery\\LymeScope-20261114T180508-0600.bundle",
+  "gitBundleSha256": "6ddfded70d3f7d9fd37e16bc07f3c193ad0a1824632a65b0d7fb71b6fa644d07",
+  "gitBundleVerified": true,
+  "githubPush": "NOT_YET_ATTEMPTED",
+  "excluded": [
+    "browser profile",
+    "synthetic fixture directories",
+    "Python bytecode",
+    "credential stores",
+    "raw transcripts",
+    "model weights",
+    "environments",
+    "compiled tools"
+  ],
+  "missingSparkArtifacts": [
+    "lymescope_ospc_handoff_v0.1.0.tar.gz",
+    "separate source/analysis checkpoint"
+  ],
+  "meaning": "Initial verified recovery snapshot, retained. A later final snapshot includes publication and offline-viewer verification."
+}

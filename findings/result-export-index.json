@@ -296,6 +296,21 @@
       "path": "sparkprep/README.md",
       "classification": "handoff",
       "provenance": "Sanitized departure checkpoint; no scientific outputs"
+    },
+    {
+      "path": "findings/departure-viewer-validation.json",
+      "classification": "departure_verification",
+      "provenance": "Actual local verification and initial GitHub push; no scientific results"
+    },
+    {
+      "path": "findings/departure-publication.json",
+      "classification": "departure_verification",
+      "provenance": "Actual local verification and initial GitHub push; no scientific results"
+    },
+    {
+      "path": "findings/departure-recovery.json",
+      "classification": "departure_verification",
+      "provenance": "Actual local verification and initial GitHub push; no scientific results"
     }
   ],
   "infrastructure_only": true

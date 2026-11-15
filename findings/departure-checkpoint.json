@@ -37,7 +37,10 @@
     "existingRepository": "https://github.com/francolinx/LymeScope",
     "visibility": "public",
     "policy": "Preserve existing visibility and history; no duplicate repository",
-    "ghCli": "Not found in PATH or standard installation paths; Git credential manager and connected GitHub account authenticated"
+    "ghCli": "Not found in PATH or standard installation paths; Git credential manager and connected GitHub account authenticated",
+    "push": "VERIFIED_INITIAL_CHECKPOINT",
+    "initialVerifiedCommit": "fab1199b0a007c6c661c84381db1ff78ce14f2a0",
+    "authorization": "User explicitly authorized this existing PUBLIC repository main branch; no visibility change or new repository"
   },
   "accessPlan": "Organizer said about 10 minutes at urgent checkpoint. No further event-cluster actions planned. No overnight access; Sunday Nov 15 08:00 Central return, future access must be confirmed."
 }

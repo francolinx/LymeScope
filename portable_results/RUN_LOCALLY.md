@@ -53,3 +53,5 @@ These commands validate/import locally only. They do not approve or submit a sci
 ## Recovery
 
 Timestamped recovery ZIP and Git bundle are saved outside this repository under C:\Users\franc\Projects\LymeScope-recovery. The adjacent receipt records exact paths, SHA256 values and commit. Verify the ZIP hash, test its archive integrity and run `git bundle verify` from a Git repository before restoring. Keep the portable_results directory intact. No credential stores or browser profiles belong in these backups.
+
+Departure browser recheck passed at approximately 6:05 PM Central: real infrastructure cards, all 17 local evidence links, and all 44 then-current manifest files. Cluster connections and process DNS were disabled; Windows networking was unchanged. See findings/departure-viewer-validation.json. Later additions are local handoff/evidence documents only.

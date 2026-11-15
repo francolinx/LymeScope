@@ -61,3 +61,9 @@ Then author and validate the exact scientific workflow and scheduling request. O
 
 Run the first meaningful protein analysis, then prepare an identical-input/method one-node/two-node pilot with physical host evidence. A single pair is a pilot; incomplete comparisons must stay labeled incomplete. Verify actual availability of cluster storage tomorrow; never assume overnight access. Reserve the last 45 minutes of actual access for export/validation and last 15 minutes for local viewing with cluster requests disabled.
 
+
+## Verified checkpoint publication and recovery
+
+The reviewed laptop checkpoint was pushed to https://github.com/francolinx/LymeScope, public, branch main. Initial local/remote SHA equality is recorded in findings/departure-publication.json. A verified recovery ZIP and Git bundle are outside the repository in C:\Users\franc\Projects\LymeScope-recovery. The final adjacent receipt contains final commit and archive/bundle SHA256 hashes. No personal-Spark artifact is included. Browser verification with process-only network blocking passed at departure; see findings/departure-viewer-validation.json.
+
+Intentionally excluded from publication and safe recovery archives: Chrome test profile, synthetic test output directories, Python bytecode, credential stores, raw transcripts, environments, model weights/caches and compiled tools. Synthetic test source is included. Retrieved log whitespace is preserved to retain exact hashes. No archives or third-party scientific data were present for publication review.

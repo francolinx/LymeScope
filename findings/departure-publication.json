@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/francolinx/LymeScope",
+  "branch": "main",
+  "visibility": "public",
+  "localCommit": "fab1199b0a007c6c661c84381db1ff78ce14f2a0",
+  "remoteCommit": "fab1199b0a007c6c661c84381db1ff78ce14f2a0",
+  "pushVerified": true,
+  "meaning": "Initial departure checkpoint push verified. Final local/remote HEAD and recovery hashes are recorded in the external final receipt.",
+  "checkedAt": "2026-11-14T18:06:26.284508-06:00"
+}
