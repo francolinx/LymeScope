@@ -1,4 +1,25 @@
-# LymeScope departure handoff
+# LymeScope current handoff
+
+Updated November 14, 2026, 10:16 PM Central, after local integration of recovery commit `55fcd984554eb12d7a62bd42d42675863fe0f2ea`. Local and fetched remote main were both at `727deea5f8fb0b07d7ae2d348aef7ed738ab8fef` before the protected fast-forward. No divergence or ignored-file collision occurred. The published recovery branch is retained.
+
+## Verified current state
+
+- Completed personal-Spark CPU analysis is local: [open saved results](sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/index.html). It has 30 sequences, 218 aligned columns, 76 identical columns at full coverage, and 162 scored observed residues on experimental 1GGQ chain A. This is a descriptive panel comparison, not generated folding, GPU scaling or a protection claim.
+- The 308 imported source files match the recovery audit. All 367 available SHA256-list entries and 489 JSON-manifest entries pass, including the unchanged 47-file infrastructure manifest. Four absent archive/sidecar paths are explicitly marked `INTENTIONALLY_EXCLUDED` in the existing audit. Do not rewrite historical manifests to hide these exclusions.
+- All 26 existing tests passed with Python 3.14.4 and no installation: eight importer, seven earlier baseline, 11 completed results. The earlier baseline emitted two unclosed-file resource warnings; preserved source was not altered.
+- Viewer file existence, embedded-data equality and seven local links are verified. Chrome opened the viewer; its OspC window title was read back. Browser rendering is NOT VERIFIED in this laptop session: computer-use access to Chrome was denied. Earlier Spark browser receipts remain historical evidence only.
+- Pre-existing synthetic fixtures were preserved and verified in a timestamped private ZIP; browser profile and bytecode cache were retained in place without opening or hashing their contents. Tests add eight more ignored synthetic fixture directories. No unpublished scientific work was discovered.
+- Current evidence: [integration receipt](findings/laptop-spark-integration.json), [test log](findings/laptop-spark-tests.log). Post-push SHA equality and final ZIP/Git-bundle hashes belong in the adjacent private receipt under `C:\Users\franc\Projects\LymeScope-recovery`, so the committed receipt does not attempt to hash its own commit.
+
+## Next work
+
+Use the saved completed viewer for review/demo; no cluster access or scientific rerun is needed. A fresh visual rendering check remains outstanding. The original private Spark archives were not transferred to this laptop; the recovery backup covers the reviewed Git contents and local preservation receipts, not excluded source-host operational data.
+
+Final submission/content review remains due Sunday, November 15, noon Central. No license has been selected. Any cluster/GPU experiment, model/package download, or new scientific execution requires a separate request. The previous identical-workload scaling pilot and GPU-model work remain unperformed.
+
+## Historical departure handoff (retained; current state above supersedes it)
+
+The following records the earlier event-cluster departure and transfer blocker. Its statements that personal-Spark inputs/results are missing, and its proposed next scientific command, describe that earlier checkpoint rather than the recovered laptop state.
 
 **SUBMISSION TODO:** review contents and confirm a public final submission repository before Sunday, November 15, noon Central. Existing francolinx/LymeScope was already public; preserve its history and visibility. Do not add a license without the owner's choice.
 

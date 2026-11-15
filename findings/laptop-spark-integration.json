@@ -1,0 +1,296 @@
+{
+  "checkedAt": "2026-11-15T04:15:05.142698+00:00",
+  "recoveryCommit": "55fcd984554eb12d7a62bd42d42675863fe0f2ea",
+  "checksumLists": [
+    {
+      "path": "sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/SHA256SUMS",
+      "verified": 54,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/analysis/ospc_comparison_v0.1.0/SHA256SUMS",
+      "verified": 31,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/SHA256SUMS",
+      "verified": 54,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/SHA256SUMS",
+      "verified": 83,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/exports/lymescope_ospc_handoff_v0.1.0/SHA256SUMS",
+      "verified": 15,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/SHA256SUMS",
+      "verified": 54,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/exports/lymescope_source_analysis_checkpoint_v0.1.0/SHA256SUMS",
+      "verified": 75,
+      "missing": [
+        "frozen/lymescope_ospc_handoff_v0.1.0.tar.gz",
+        "frozen/lymescope_ospc_handoff_v0.1.0.tar.gz.sha256"
+      ],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/exports/SHA256SUMS",
+      "verified": 1,
+      "missing": [
+        "lymescope_data_bundle.tar.gz",
+        "bundle_contents.sha256"
+      ],
+      "mismatches": []
+    }
+  ],
+  "jsonManifests": [
+    {
+      "path": "portable_results/manifest.json",
+      "verified": 47,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/analysis/ospc_comparison_v0.1.0/analysis_manifest.json",
+      "verified": 30,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/analysis/ospc_comparison_v0.1.0/frozen_inputs/source_manifest.json",
+      "verified": 14,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/analysis_manifest.json",
+      "verified": 53,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/inputs/source_manifest.json",
+      "verified": 14,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/analysis_manifest.json",
+      "verified": 53,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/inputs/source_manifest.json",
+      "verified": 14,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/CHECKPOINT_MANIFEST.json",
+      "verified": 82,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/exports/lymescope_ospc_handoff_v0.1.0/source_manifest.json",
+      "verified": 14,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/analysis_manifest.json",
+      "verified": 53,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/inputs/source_manifest.json",
+      "verified": 14,
+      "missing": [],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/exports/lymescope_source_analysis_checkpoint_v0.1.0/CHECKPOINT_MANIFEST.json",
+      "verified": 74,
+      "missing": [
+        "frozen/lymescope_ospc_handoff_v0.1.0.tar.gz",
+        "frozen/lymescope_ospc_handoff_v0.1.0.tar.gz.sha256"
+      ],
+      "mismatches": []
+    },
+    {
+      "path": "sparkprep/source_manifest.json",
+      "verified": 27,
+      "missing": [],
+      "mismatches": []
+    }
+  ],
+  "scientificOutputsModified": false,
+  "tests": {
+    "checkedAt": "2026-11-15T04:16:06.209275+00:00",
+    "python": "3.14.4",
+    "suites": [
+      {
+        "suite": "importer",
+        "directory": ".",
+        "command": [
+          "python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-v"
+        ],
+        "tests": 8,
+        "exitCode": 0,
+        "status": "PASS",
+        "resourceWarnings": 0
+      },
+      {
+        "suite": "frozen_baseline",
+        "directory": "sparkprep/analysis/ospc_comparison_v0.1.0",
+        "command": [
+          "python",
+          "-B",
+          "-m",
+          "unittest",
+          "-v",
+          "test_baseline"
+        ],
+        "tests": 7,
+        "exitCode": 0,
+        "status": "PASS",
+        "resourceWarnings": 2
+      },
+      {
+        "suite": "completed_results",
+        "directory": "sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/source",
+        "command": [
+          "python",
+          "-B",
+          "-m",
+          "unittest",
+          "-v",
+          "test_baseline",
+          "test_results"
+        ],
+        "tests": 11,
+        "exitCode": 0,
+        "status": "PASS",
+        "resourceWarnings": 0
+      }
+    ],
+    "downloads": 0,
+    "scientificReruns": 0,
+    "log": "findings/laptop-spark-tests.log"
+  },
+  "viewer": {
+    "path": "sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/index.html",
+    "fileExists": true,
+    "sha256": "9e92cbe685a165413b210b1896fba5610230c9a934826e0cae2a05d37af1a97b",
+    "embeddedDataMatchesSavedJson": true,
+    "localLinksVerified": 7,
+    "externalAssetReferences": 0,
+    "browserLaunch": "CONFIRMED: Chrome window title read back after Windows Start-Process",
+    "rendering": "NOT_VERIFIED: computer-use Chrome access denied",
+    "automationError": "Computer Use was not approved to use chrome",
+    "launchCheckedAt": "2026-11-15T04:18:56.239046+00:00",
+    "windowTitle": "OspC panel comparison v0.1.0 - Google Chrome",
+    "browserProcessId": 17112
+  },
+  "manifestConclusion": {
+    "status": "PASS_FOR_INCLUDED_FILES",
+    "sha256EntriesVerified": 367,
+    "jsonManifestEntriesVerified": 489,
+    "intentionalExclusions": [
+      {
+        "path": "sparkprep/exports/bundle_contents.sha256",
+        "reason": "Original packaged archive/receipt retained intact locally; publish reviewed extracted content and archive provenance."
+      },
+      {
+        "path": "sparkprep/exports/lymescope_data_bundle.tar.gz",
+        "reason": "Original packaged archive/receipt retained intact locally; publish reviewed extracted content and archive provenance."
+      },
+      {
+        "path": "sparkprep/exports/lymescope_source_analysis_checkpoint_v0.1.0/frozen/lymescope_ospc_handoff_v0.1.0.tar.gz",
+        "reason": "Original packaged archive/receipt retained intact locally; publish reviewed extracted content and archive provenance."
+      },
+      {
+        "path": "sparkprep/exports/lymescope_source_analysis_checkpoint_v0.1.0/frozen/lymescope_ospc_handoff_v0.1.0.tar.gz.sha256",
+        "reason": "Original packaged archive/receipt retained intact locally; publish reviewed extracted content and archive provenance."
+      }
+    ],
+    "unexplainedMissingFiles": 0,
+    "hashMismatches": 0,
+    "originalManifestsModified": false
+  },
+  "integration": {
+    "method": "git merge --ff-only --no-overwrite-ignore 55fcd984554eb12d7a62bd42d42675863fe0f2ea",
+    "previousLocalMain": "727deea5f8fb0b07d7ae2d348aef7ed738ab8fef",
+    "fetchedOriginMainBeforeMerge": "727deea5f8fb0b07d7ae2d348aef7ed738ab8fef",
+    "recoveryBranch": "recovery/spark-20261115T031226Z",
+    "recoveryCommit": "55fcd984554eb12d7a62bd42d42675863fe0f2ea",
+    "addedFiles": 311,
+    "sourceFilesMatchedToExistingAudit": 308,
+    "auditDocuments": 3,
+    "conflicts": 0,
+    "ignoredFileCollisions": 0,
+    "ignoredFilesOverwriteProtection": true
+  },
+  "preservation": {
+    "preIntegrationReceipt": "C:/Users/franc/Projects/LymeScope-recovery/pre-integration-20261115T041429Z.json",
+    "preExistingSyntheticFixtureFiles": 35,
+    "preExistingSyntheticFixtureDirectories": 8,
+    "newIgnoredSyntheticFixtureDirectories": 8,
+    "profileAndCache": "Retained in place; contents not opened, hashed or copied",
+    "historicalReceiptsAndScientificOutputs": "Unmodified",
+    "originalExcludedArchives": "Not transferred to laptop; private source-host snapshot is outside this backup scope"
+  },
+  "publication": {
+    "receiptScope": "Local integration and validation before the documentation commit; not a final publication receipt",
+    "finalReadbackLocation": "Timestamped integration-final receipt under C:/Users/franc/Projects/LymeScope-recovery",
+    "method": "Normal push to existing main; no force push; recovery branch retained"
+  },
+  "actions": {
+    "clusterJobs": 0,
+    "newScientificExperiments": 0,
+    "ignoreConfigurationChanges": 0,
+    "destructiveGitOperations": 0,
+    "packageModelOrArchiveDownloads": 0
+  },
+  "secretReview": {
+    "checkedAt": "2026-11-15T04:18:16.578522+00:00",
+    "scope": "Recovery additions plus current documentation/validation changes only; no credentials or caches opened",
+    "filesScanned": 318,
+    "candidateLocations": [],
+    "patterns": [
+      "private_key",
+      "github_token",
+      "aws_access_key",
+      "google_api_key",
+      "slack_token",
+      "openai_key",
+      "credential_url",
+      "literal_secret_assignment",
+      "authorization_bearer"
+    ],
+    "limitation": "Pattern scan supplements the existing reviewed recovery audit; it is not a guarantee against all possible secrets."
+  }
+}

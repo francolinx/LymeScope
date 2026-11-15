@@ -1,0 +1,52 @@
+SUITE: importer
+test_hash_corruption (test_import_scientific_bundle.ImportChecks.test_hash_corruption) ... ok
+test_invalid_residue (test_import_scientific_bundle.ImportChecks.test_invalid_residue) ... ok
+test_metadata_must_cover_fasta (test_import_scientific_bundle.ImportChecks.test_metadata_must_cover_fasta) ... ok
+test_unlisted_file (test_import_scientific_bundle.ImportChecks.test_unlisted_file) ... ok
+test_valid_and_missing_reference_explicit (test_import_scientific_bundle.ImportChecks.test_valid_and_missing_reference_explicit) ... ok
+test_valid_zip (test_import_scientific_bundle.ImportChecks.test_valid_zip) ... ok
+test_windows_paths (test_import_scientific_bundle.ImportChecks.test_windows_paths) ... ok
+test_zip_traversal (test_import_scientific_bundle.ImportChecks.test_zip_traversal) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.028s
+
+OK
+
+SUITE: frozen_baseline
+test_ambiguous_and_missing (test_baseline.BaselineTests.test_ambiguous_and_missing) ... ok
+test_gaps (test_baseline.BaselineTests.test_gaps) ... ok
+test_identical (test_baseline.BaselineTests.test_identical) ... ok
+test_mapping_insertion_and_unobserved (test_baseline.BaselineTests.test_mapping_insertion_and_unobserved) ... ok
+test_undefined (test_baseline.BaselineTests.test_undefined) ... ok
+test_variable_tie (test_baseline.BaselineTests.test_variable_tie) ... ok
+test_actual_frozen_reference_correspondence (test_baseline.FrozenReferenceTests.test_actual_frozen_reference_correspondence) ... C:\Users\franc\Projects\LymeScope\sparkprep\analysis\ospc_comparison_v0.1.0\baseline.py:7: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\Users\\franc\\Projects\\LymeScope\\sparkprep\\analysis\\ospc_comparison_v0.1.0\\frozen_inputs\\input_sequences.fasta' mode='r' encoding='cp1252'>
+  for line in open(path):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\franc\Projects\LymeScope\sparkprep\analysis\ospc_comparison_v0.1.0\cif_reader.py:20: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\Users\\franc\\Projects\\LymeScope\\sparkprep\\analysis\\ospc_comparison_v0.1.0\\frozen_inputs\\reference_structures\\1GGQ.cif' mode='r' encoding='cp1252'>
+  ts=list(cif_tokens(path));out={};i=0
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.082s
+
+OK
+
+SUITE: completed_results
+test_ambiguous_and_missing (test_baseline.BaselineTests.test_ambiguous_and_missing) ... ok
+test_gaps (test_baseline.BaselineTests.test_gaps) ... ok
+test_identical (test_baseline.BaselineTests.test_identical) ... ok
+test_mapping_insertion_and_unobserved (test_baseline.BaselineTests.test_mapping_insertion_and_unobserved) ... ok
+test_undefined (test_baseline.BaselineTests.test_undefined) ... ok
+test_variable_tie (test_baseline.BaselineTests.test_variable_tie) ... ok
+test_all_saved_statistics (test_results.ScientificResultsTests.test_all_saved_statistics) ... ok
+test_real_structure_mapping (test_results.ScientificResultsTests.test_real_structure_mapping) ... ok
+test_roundtrip_and_identifiers (test_results.ScientificResultsTests.test_roundtrip_and_identifiers) ... ok
+test_saved_tsv_matches_viewer (test_results.ScientificResultsTests.test_saved_tsv_matches_viewer) ... ok
+test_secondary_empty_category_explanation (test_results.ScientificResultsTests.test_secondary_empty_category_explanation) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.088s
+
+OK
