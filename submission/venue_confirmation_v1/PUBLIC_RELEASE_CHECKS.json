@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "recorded_at_utc": "2026-11-15T17:28:05.473052+00:00",
+  "preserved_remote_commit": "6ad4bb776a1f0a89132f465fd6f63ecff93c73a2",
+  "remote_published_files_unchanged": 40,
+  "six_picture_blocks_unchanged": true,
+  "frozen_science_edits": false,
+  "frontier_and_confirmation_scores_exact": 6305,
+  "public_provenance_readback": "PASS",
+  "secret_private_path_gpu_uuid_object_uri_scan": "PASS",
+  "final_pdf_bytes_unchanged": true,
+  "browser_rendering": "UNVERIFIED",
+  "raw_readback_hashes_distinguished_from_public_hashes": true
+}

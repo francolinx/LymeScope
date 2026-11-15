@@ -37,6 +37,26 @@ All **25 exported artifacts** passed independent hash/readback verification. **V
 
 [Sanitized event report](submission/venue_secondnode_v1/SPRINT_RESULT.md) · [Exact acceptance data](submission/venue_secondnode_v1/RESULT.json) · [Completed workflow receipt](submission/venue_secondnode_v1/WORKFLOW_RECEIPT.json) · [Readback and publication provenance](submission/venue_secondnode_v1/PUBLICATION_PROVENANCE.json) · [Completed demo insert](submission/venue_secondnode_v1/DEMO_INSERT.md) · [Offline display with timing bars (HTML source)](demo/venue-secondnode-v1/index.html). The HTML runs from a local checkout; this link is not a hosted web app. This release covers only workflow `79319e56-f368-4eba-8cae-7c646737b9fc` and its preserved pilot evidence, not subsequent optimization.
 
+## Separate exploratory workload-placement result
+
+After the original negative-scaling result above, one post-hoc whole-sequence reassignment preserved the same 6,305 natural tasks, pinned model, batch 8 and float32/eager method. All scores again matched the frozen reference and original event single-node output with zero maximum absolute and relative deviation.
+
+| Prepared-input coordinator phase | Time |
+|---|---:|
+| Original single node | 52.111 s |
+| Original equal-count two nodes | 67.982 s |
+| One exploratory throughput-informed split | 51.952 s |
+
+The exploratory phase was **23.6% shorter than the original two-node phase**. Its 0.3% difference from single node is **near parity, not established acceleration**. Spark29 handled 1,691 masks/216 calls and Spark30 4,614 masks/589 calls; scoring overlapped for 22.707 seconds. This is one post-hoc trial, with diagnostic sampling added only in that trial. Common setup and final export are excluded; whole-workflow speedup was not measured. The cause of the historical node asymmetry remains unresolved.
+
+[Findings and limitations](submission/venue_frontier_v1/FRONTIER_RESULT.md) · [Exact acceptance](submission/venue_frontier_v1/RESULT.json) · [Offline comparison (HTML source)](demo/venue-frontier-v1/index.html) · [Final one-page PDF](output/pdf/LYMESCOPE_FRONTIER_VERIFIED_20261115.pdf). Public metadata extracts omit operational paths and GPU identifiers; [publication provenance](submission/venue_frontier_v1/PUBLICATION_PROVENANCE.json) maps original readback hashes to sanitized public bytes. The later confirmation is reported separately below.
+
+## One fresh confirmation pair
+
+The unchanged previously selected partition was checked once more against a fresh full Spark30 run. Prepared-input coordinator phases measured **54.568 s single node and 50.039 s two nodes: 8.3% lower / 1.091x in this pair**. All 6,305 tasks appeared exactly once in both outputs, with zero maximum absolute/relative score deviation; physical Spark29/Spark30 scoring overlapped for 20.765 s. Twenty-four exports passed hash readback.
+
+The original equal-count configuration was not repeated. The partition was selected post hoc; single-node science preceded two-node science in fixed order, with both workers reserved. These phases exclude common setup/export and do not establish cold-launch or general scaling. The two optimized phase observations (51.952 and 50.039 s) are reported separately. [Confirmation findings](submission/venue_confirmation_v1/FINAL_CONFIRMATION.md) · [Exact acceptance](submission/venue_confirmation_v1/RESULT.json) · [Sanitized public provenance](submission/venue_confirmation_v1/PUBLICATION_PROVENANCE.json). The protected PDF/ZIP predate this confirmation and remain valid for their stated earlier scope.
+
 ## How to read the evidence
 
 | Label | Meaning here |
@@ -149,7 +169,7 @@ Primary experimental sources: **human B11**, Rudolph et al., *J Immunology* (202
 
 Pinned frontier source: [`82fb8b53018ba4012ccebf02a29efa87b892f6ed`](https://github.com/francolinx/LymeScope/commit/82fb8b53018ba4012ccebf02a29efa87b892f6ed). The next research step would require separately justified data or an external validation design; this negative diagnostic is retained in full. The v0.2.1 masked-scoring result and venue contract are unchanged.
 
-**Submission:** [one-page summary](submission/ONE_PAGER.md) · [five-minute demo](submission/DEMO_SCRIPT.md) · [checklist](submission/SUBMISSION_CHECKLIST.md). November 15: research cutoff **10:30 AM Central**, submission **noon**, live demo **1:00 PM**. The completed personal-Spark result and offline fallback do not depend on a venue GPU run.
+**Submission:** [one-page summary](submission/ONE_PAGER.md) · [five-minute demo](submission/DEMO_SCRIPT.md) · [checklist](submission/SUBMISSION_CHECKLIST.md). November 15: current authorized research cutoff **11:40 AM Central**, submission **noon**, live demo **1:00 PM**. The completed personal-Spark result and offline fallback do not depend on a venue GPU run.
 
 ## From experimental structure to local scientific AI
 

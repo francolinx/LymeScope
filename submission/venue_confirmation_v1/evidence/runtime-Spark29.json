@@ -1,0 +1,16 @@
+{
+  "status": "READY",
+  "node": "Spark29",
+  "utc": "2026-11-15T17:23:53.007764+00:00",
+  "imports_and_gpu_check_s": 29.89305695099938,
+  "versions": {
+    "python": "3.12.3 (main, Aug 14 2025, 17:47:21) [GCC 13.3.0]",
+    "torch": "2.10.0a0+b558c986e8.nv25.11",
+    "cuda": "13.0",
+    "transformers": "5.20.0",
+    "tokenizers": "0.23.3",
+    "safetensors": "0.8.0",
+    "numpy": "2.5.4",
+    "scipy": "1.16.3"
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "schema": "lymescope.frontier_publication.v1",
+  "base_public_commit": "6ad4bb776a1f0a89132f465fd6f63ecff93c73a2",
+  "preserved_local_release_commit": "1aa8f2e922b3db0efdda8c1adfd88aa000c344b8",
+  "workflow_id": "3f511bf2-b3b7-4346-b5d8-9a56cef5fc53",
+  "scope": "One completed exploratory trial; excludes later confirmation. Original readback hashes refer to raw source bytes; published hashes refer to reviewed public extracts.",
+  "sanitization": "Host and GPU UUID fields removed; physical nodes normalized to Spark29/Spark30. Workflow stages reduced to completed workflow and jobs. Operational staging paths omitted. Numerical scores and timing values unchanged.",
+  "artifacts": [
+    {
+      "path": "submission/venue_frontier_v1/ASSIGNMENT.json",
+      "original_sha256": "d30165a1f27cf597b975215a9ffb0cada30859130508ec466080aa3287d36e24",
+      "original_bytes": 153262,
+      "published_sha256": "d30165a1f27cf597b975215a9ffb0cada30859130508ec466080aa3287d36e24",
+      "published_bytes": 153262,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_frontier_v1/FRONTIER_RESULT.md",
+      "original_sha256": "49973d993383712a5de43c8b965c3c499efef59a75d78d329e7605cfb2442dcc",
+      "original_bytes": 7606,
+      "published_sha256": "1911e49a3759d4769ab0fe8046ba697a0d0467ebb8d569c40eefbecd636d0402",
+      "published_bytes": 8039,
+      "byte_identical": false,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_frontier_v1/NODE_OBSERVATIONS.json",
+      "original_sha256": "5a2487fae75be8699d65d3e38b0becdb0c1f0f693c8888edd97715c6e82318e0",
+      "original_bytes": 2528,
+      "published_sha256": "0bf813a9b12550d86d72b20b5b675e83634e689f20af489f394d254ef73dfe64",
+      "published_bytes": 2251,
+      "byte_identical": false,
+      "removed_fields": [
+        "/current_exploratory_observations/Spark29/during_scoring/uuid",
+        "/current_exploratory_observations/Spark30/during_scoring/uuid"
+      ]
+    },
+    {
+      "path": "submission/venue_frontier_v1/PREPARATION_ATTEMPTS.json",
+      "original_sha256": "52f15e1b12f8d31a4a4718cf5b034316e91f7ac6a9f28fa5b9a1e162e86a0986",
+      "original_bytes": 1176,
+      "published_sha256": "52f15e1b12f8d31a4a4718cf5b034316e91f7ac6a9f28fa5b9a1e162e86a0986",
+      "published_bytes": 1176,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_frontier_v1/QA.json",
+      "original_sha256": "7b892a070571c89a48c2118ff7405ab54edc2e39778cfafb1306c31098e8e4fc",
+      "original_bytes": 437,
+      "published_sha256": "7b892a070571c89a48c2118ff7405ab54edc2e39778cfafb1306c31098e8e4fc",
+      "published_bytes": 437,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_frontier_v1/READBACK_RECEIPT.json",
+      "original_sha256": "acdf7dd6080a74dcb70e1d768b8fa6d92d5d7c66b8783c21325252447d18bd5e",
+      "original_bytes": 6414,
+      "published_sha256": "bc6daf1854a1b4d1944a66166d7d155a91997fc7827b26029294b42c38f55a6f",
+      "published_bytes": 6459,
+      "byte_identical": false,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_frontier_v1/RESOURCE_RECONCILIATION.json",
+      "original_sha256": "393eb2bf584b3f13f90795ae626a9f9ecf7da5baab07dda703e2ce3a0dc7609b",
+      "original_bytes": 689,
+      "published_sha256": "393eb2bf584b3f13f90795ae626a9f9ecf7da5baab07dda703e2ce3a0dc7609b",
+      "published_bytes": 689,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_frontier_v1/RESULT.json",
+      "original_sha256": "2017978dce330260d1fa4e4a958eee7555869c82019935c6dc9d6b4a14d53ed8",
+      "original_bytes": 3229,
+      "published_sha256": "2017978dce330260d1fa4e4a958eee7555869c82019935c6dc9d6b4a14d53ed8",
+      "published_bytes": 3229,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_frontier_v1/TIMING_BREAKDOWN.json",
+      "original_sha256": "077785bacccae55ff276a48445dbd5837ef3bbda34f263377615ccf6b451d3ca",
+      "original_bytes": 936,
+      "published_sha256": "077785bacccae55ff276a48445dbd5837ef3bbda34f263377615ccf6b451d3ca",
+      "published_bytes": 936,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_frontier_v1/WORKFLOW_RECEIPT.json",
+      "original_sha256": "f3c143e69773577538f85c515e52d980674e10c85dfbeafd0f48b58c0a9a2178",
+      "original_bytes": 12494,
+      "published_sha256": "115bfb4353830c6394563e98fd93aeda6d0a13cb439f5bc5e73843ad12d97c06",
+      "published_bytes": 1718,
+      "byte_identical": false,
+      "removed_fields": [
+        "/stages (non-workflow/non-job omitted)"
+      ]
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/matched-result.json",
+      "original_sha256": "db0d8f2d9067ad46d031f4a172de75192a4b346ae61a1d0c25c5a45f4da9d16a",
+      "original_bytes": 1222,
+      "published_sha256": "db0d8f2d9067ad46d031f4a172de75192a4b346ae61a1d0c25c5a45f4da9d16a",
+      "published_bytes": 1222,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/node-observations-Spark29.json",
+      "original_sha256": "79ddd699f00ba28ecc8e56e71e2da13e6b91fad065d6c8e8c15c5163c33dd1b4",
+      "original_bytes": 37839,
+      "published_sha256": "c2705e2e3801007dbe1f4f1ce25bb2d53d9196dee74a4237601f1578c02d033d",
+      "published_bytes": 38645,
+      "byte_identical": false,
+      "removed_fields": [
+        "GPU UUID values embedded in diagnostic CSV strings redacted; numeric fields retained"
+      ]
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/node-observations-Spark30.json",
+      "original_sha256": "98b776aead81b5b8d8532aafd50525e2fb5d61777b71cc4444ef3798b45aa24b",
+      "original_bytes": 38660,
+      "published_sha256": "fbd501365025fc41bf9ef33b5f309e60c4db06276abb18f50b0f059521ef32d7",
+      "published_bytes": 39482,
+      "byte_identical": false,
+      "removed_fields": [
+        "GPU UUID values embedded in diagnostic CSV strings redacted; numeric fields retained"
+      ]
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/package-verification-Spark29.json",
+      "original_sha256": "af43c880bbb0a7e6142629c51367a1ca9bfb87135bda17d5517fedf2b5b9879a",
+      "original_bytes": 1134,
+      "published_sha256": "af43c880bbb0a7e6142629c51367a1ca9bfb87135bda17d5517fedf2b5b9879a",
+      "published_bytes": 1134,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/package-verification-Spark30.json",
+      "original_sha256": "af43c880bbb0a7e6142629c51367a1ca9bfb87135bda17d5517fedf2b5b9879a",
+      "original_bytes": 1134,
+      "published_sha256": "af43c880bbb0a7e6142629c51367a1ca9bfb87135bda17d5517fedf2b5b9879a",
+      "published_bytes": 1134,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runs/two-Spark29/pilot_correctness.json",
+      "original_sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "original_bytes": 199,
+      "published_sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "published_bytes": 199,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runs/two-Spark29/residue_nll.tsv",
+      "original_sha256": "6d64e4d3e67cc8e81cda027a7f6485577cb2227b3e940f7bd1cb59abc6a1fbdc",
+      "original_bytes": 191249,
+      "published_sha256": "6d64e4d3e67cc8e81cda027a7f6485577cb2227b3e940f7bd1cb59abc6a1fbdc",
+      "published_bytes": 191249,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runs/two-Spark29/scoring_interval.json",
+      "original_sha256": "3db7d26171359925e911e7d0d2efbc831f842c4718e7c4005aa7de9ed6fbe914",
+      "original_bytes": 320,
+      "published_sha256": "3db7d26171359925e911e7d0d2efbc831f842c4718e7c4005aa7de9ed6fbe914",
+      "published_bytes": 320,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runs/two-Spark29/timings.json",
+      "original_sha256": "305a0da09988076b8aa96edd7dee491a9ca0bc65c9e305aa85f4210a275b949d",
+      "original_bytes": 6133,
+      "published_sha256": "922db57b1000dbff2c135521814700ac13faa80431df2ee992ab231ad77ce9ab",
+      "published_bytes": 6111,
+      "byte_identical": false,
+      "removed_fields": [
+        "/host"
+      ]
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runs/two-Spark30/pilot_correctness.json",
+      "original_sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "original_bytes": 199,
+      "published_sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "published_bytes": 199,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runs/two-Spark30/residue_nll.tsv",
+      "original_sha256": "24664e8364738510a0507112f0c067b7ef36572ad5f5c7c165f6d46c26f96282",
+      "original_bytes": 520480,
+      "published_sha256": "24664e8364738510a0507112f0c067b7ef36572ad5f5c7c165f6d46c26f96282",
+      "published_bytes": 520480,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runs/two-Spark30/scoring_interval.json",
+      "original_sha256": "aefb8bd916cec1a3e77481f136e6daf68bf94d025ee419aa8db225e0eb1c03bf",
+      "original_bytes": 320,
+      "published_sha256": "aefb8bd916cec1a3e77481f136e6daf68bf94d025ee419aa8db225e0eb1c03bf",
+      "published_bytes": 320,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runs/two-Spark30/timings.json",
+      "original_sha256": "851384f3fa1d73931e60f0cac56f3ec8a0f0ab423da1e6717f741ca69f3c3075",
+      "original_bytes": 11911,
+      "published_sha256": "02a393c94c196d482af2f8851569735e2e87b4361b3c5224d4e19b32aa23b353",
+      "published_bytes": 11889,
+      "byte_identical": false,
+      "removed_fields": [
+        "/host"
+      ]
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runtime-Spark29.json",
+      "original_sha256": "0862c0d04ed30f48ddde96bcfc6d162be8fd0512ddbdcaa52a70930a332f555b",
+      "original_bytes": 479,
+      "published_sha256": "3026a15c3b52ecaa31e9afeac75bc6c768e89c9bfc4cc1d5ead127c032b3e34c",
+      "published_bytes": 421,
+      "byte_identical": false,
+      "removed_fields": [
+        "/gpu_uuid"
+      ]
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runtime-Spark30.json",
+      "original_sha256": "99bac08e49924b45d7dcf1b565a45016cc8403cdb26ae66968545a8bc709202a",
+      "original_bytes": 479,
+      "published_sha256": "b544dbe094f814efb05d1c7be528f917d87cf1cb1c234c235d53812cbe7567c6",
+      "published_bytes": 421,
+      "byte_identical": false,
+      "removed_fields": [
+        "/gpu_uuid"
+      ]
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/two-Spark29.json",
+      "original_sha256": "b74c641e7067eb73e0ca4db92bfb22f9f4a721d23f8899739bffbe6437ebbde9",
+      "original_bytes": 7844,
+      "published_sha256": "945ee33fe71ee4e11d812741d23bbe1addef88291a85b2de1dfd799fea0e3e4e",
+      "published_bytes": 7820,
+      "byte_identical": false,
+      "removed_fields": [
+        "/timings/host"
+      ]
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/two-Spark30.json",
+      "original_sha256": "7e6d92f4e11cfed00ae38acdbf70a2ec8025e60a6ea5a298776c9daf64745836",
+      "original_bytes": 13903,
+      "published_sha256": "b9cf93720d3bda20332664039c8310254527f0e5a08327b1377a73ad825bc27e",
+      "published_bytes": 13879,
+      "byte_identical": false,
+      "removed_fields": [
+        "/timings/host"
+      ]
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/two-merged.tsv",
+      "original_sha256": "ea043d2df33841260d322caebe2a8939750f0df9818920653008b872ffbfee84",
+      "original_bytes": 717934,
+      "published_sha256": "ea043d2df33841260d322caebe2a8939750f0df9818920653008b872ffbfee84",
+      "published_bytes": 717934,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "demo/venue-frontier-v1/index.html",
+      "original_sha256": "0db31204da7554e25d8c9523fe0459cd607db0368b7fea22306317bf995ecc27",
+      "original_bytes": 6553,
+      "published_sha256": "0db31204da7554e25d8c9523fe0459cd607db0368b7fea22306317bf995ecc27",
+      "published_bytes": 6553,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/DEMO_SCRIPT.md",
+      "original_sha256": "a1dd3f5d67d3448a45352c7da06f07efb4f4aa4d062e87a12178d3c7a230bbec",
+      "original_bytes": 6754,
+      "published_sha256": "a1dd3f5d67d3448a45352c7da06f07efb4f4aa4d062e87a12178d3c7a230bbec",
+      "published_bytes": 6754,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "output/pdf/LYMESCOPE_FRONTIER_VERIFIED_20261115.pdf",
+      "original_sha256": "3dca3fc1be4d811ca8a884708f9b0aa832715f68988bde1d34076609316105b3",
+      "original_bytes": 77999,
+      "published_sha256": "3dca3fc1be4d811ca8a884708f9b0aa832715f68988bde1d34076609316105b3",
+      "published_bytes": 77999,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "output/pdf/LYMESCOPE_EVENT_VERIFIED_20261115.pdf",
+      "original_sha256": "08aba1552ba8f5f7dbbf3341dbc428ccd6ba324565827ebd3f02d43e096eb079",
+      "original_bytes": 77656,
+      "published_sha256": "08aba1552ba8f5f7dbbf3341dbc428ccd6ba324565827ebd3f02d43e096eb079",
+      "published_bytes": 77656,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "output/pdf/LYMESCOPE_ONE_PAGE.pdf",
+      "original_sha256": "bf335120edbc0e100fbefbd64c88dfba32a7769ba1e6ccfb76fe265bab52a494",
+      "original_bytes": 78552,
+      "published_sha256": "bf335120edbc0e100fbefbd64c88dfba32a7769ba1e6ccfb76fe265bab52a494",
+      "published_bytes": 78552,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/frontier_release_v2/ONE_PAGER.md",
+      "original_sha256": "03c3adff96db72396781d45631f212f26aba323ec5d0985807e01281c6505068",
+      "original_bytes": 5181,
+      "published_sha256": "03c3adff96db72396781d45631f212f26aba323ec5d0985807e01281c6505068",
+      "published_bytes": 5181,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/frontier_release_v2/RELEASE_RECEIPT.json",
+      "original_sha256": "21211764ec7bbcbd3c22ec4b796646e81c02c4e20b6932a90d23f1fdff3698bf",
+      "original_bytes": 1608,
+      "published_sha256": "21211764ec7bbcbd3c22ec4b796646e81c02c4e20b6932a90d23f1fdff3698bf",
+      "published_bytes": 1608,
+      "byte_identical": true,
+      "removed_fields": []
+    }
+  ]
+}

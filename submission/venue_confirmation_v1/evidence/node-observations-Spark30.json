@@ -1,0 +1,3238 @@
+{
+  "node": "Spark30",
+  "samples": [
+    {
+      "observed_at_utc": "2026-11-15T17:23:53.259257+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 41, 0, 208, [N/A], 4.58, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04277314200044202
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:23:54.303825+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 41, 0, 208, [N/A], 4.61, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04432679499950609
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:23:55.348013+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 41, 0, 208, [N/A], 4.62, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.043945384000835475
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:23:56.392175+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 41, 0, 208, [N/A], 4.64, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04392106399973272
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:23:57.434462+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 41, 0, 208, [N/A], 4.68, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04204443599883234
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:23:58.480063+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 41, 0, 208, [N/A], 4.67, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.0453473399993527
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:23:59.523018+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 41, 0, 208, [N/A], 4.67, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.0427109649990598
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:00.567299+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 41, 0, 208, [N/A], 4.66, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04402784900048573
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:01.609569+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 41, 0, 208, [N/A], 4.70, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.0420414919990435
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:02.651242+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 41, 0, 208, [N/A], 4.68, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04133670499868458
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:03.694020+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 41, 0, 208, [N/A], 4.68, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.042533685998932924
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:04.738048+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 41, 0, 208, [N/A], 4.67, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04379442400022526
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:05.782009+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 41, 0, 208, [N/A], 4.66, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04371944800004712
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:06.827028+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 41, 0, 208, [N/A], 4.67, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04477965799924277
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:07.871044+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 41, 0, 208, [N/A], 4.68, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04377565700087871
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:08.916562+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 41, 0, 208, [N/A], 4.74, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04527394800061302
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:09.959163+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 41, 0, 208, [N/A], 4.74, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04236429199954728
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:10.996203+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 42, 0, 2418, [N/A], 7.86, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03678478999972867
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:12.032746+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 42, 4, 2431, [N/A], 11.03, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03629568399992422
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:13.071417+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 44, 26, 2515, [N/A], 23.44, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03829628099992988
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:14.108834+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 44, 28, 2509, [N/A], 23.78, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03717487100038852
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:15.145873+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 45, 27, 2509, [N/A], 24.20, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.036655411999163334
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:16.187994+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 44, 27, 2509, [N/A], 24.04, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.041883875001076376
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:17.226371+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 45, 25, 2515, [N/A], 24.26, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.038162584000019706
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:18.263114+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 45, 28, 2515, [N/A], 24.22, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.036459332000958966
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:19.300222+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 45, 29, 2515, [N/A], 24.41, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.036871046000669594
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:20.338088+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 45, 27, 2509, [N/A], 24.22, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03763197499938542
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:21.377066+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 46, 31, 2515, [N/A], 24.33, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.038722489998690435
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:22.413870+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 46, 29, 2509, [N/A], 24.30, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03635656499864126
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:23.451993+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 46, 28, 2515, [N/A], 24.31, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03779701499843213
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:24.489130+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 46, 28, 2509, [N/A], 24.24, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.036903973001244594
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:25.527588+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 46, 30, 2515, [N/A], 24.04, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03822143400066125
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:26.566436+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 46, 27, 2515, [N/A], 24.31, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03862807400037127
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:27.603342+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 46, 29, 2509, [N/A], 24.35, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.0366474449983798
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:28.640038+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 46, 28, 2515, [N/A], 24.33, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.036458597000091686
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:29.676441+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 28, 2515, [N/A], 24.38, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.0361655550004798
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:30.714771+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 29, 2509, [N/A], 24.23, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03809242399984214
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:31.753763+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 27, 2509, [N/A], 24.30, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03850274599972181
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:32.791814+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 46, 24, 2509, [N/A], 24.42, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03782421600044472
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:33.829823+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 46, 18, 2502, [N/A], 24.20, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03774255100142909
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:34.866991+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 23, 2515, [N/A], 24.36, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03693003700027475
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:35.903209+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 26, 2509, [N/A], 24.15, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03597464199992828
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:36.938141+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 27, 2515, [N/A], 24.75, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03469084700009262
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:37.977926+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 26, 2515, [N/A], 24.58, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03950295600043319
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:39.016432+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 26, 2515, [N/A], 24.32, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03826628100068774
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:40.052494+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 28, 2509, [N/A], 24.29, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03582390699921234
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:41.092118+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 26, 2509, [N/A], 24.41, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03938412400020752
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:42.130551+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 48, 27, 2515, [N/A], 24.49, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03820572000040556
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:43.169876+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 27, 2515, [N/A], 24.45, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03904553200118244
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:44.207984+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 48, 26, 2515, [N/A], 24.37, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.037701448000007076
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:45.244339+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 46, 0, 2411, [N/A], 15.11, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03609659499852569
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:46.279216+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 46, 0, 2411, [N/A], 10.66, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.034623823999936576
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:47.348042+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 45, 0, 2411, [N/A], 10.66, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.0687132279999787
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:48.381070+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 45, 0, 2411, [N/A], 10.75, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.032776329999251175
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:49.424331+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 45, 0, 247, [N/A], 7.45, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.0430200219998369
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:50.468872+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 44, 0, 208, [N/A], 5.23, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04430602599859412
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:51.513022+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 44, 0, 208, [N/A], 5.21, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04403196100065543
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:52.556131+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 44, 0, 208, [N/A], 4.86, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.042876981000517844
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:53.599706+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 44, 0, 208, [N/A], 4.77, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.043344135001461837
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:54.642245+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 44, 0, 208, [N/A], 4.71, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.042307331999836606
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:55.684514+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 44, 0, 208, [N/A], 4.74, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04203145900100935
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:56.727000+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 44, 0, 208, [N/A], 4.74, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.042239909000272746
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:57.769731+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 44, 0, 208, [N/A], 4.68, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04249293199973181
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:58.811985+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 44, 0, 208, [N/A], 4.67, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.041996787000243785
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:24:59.854159+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 44, 0, 208, [N/A], 4.74, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04193648399996164
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:00.899069+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 44, 0, 208, [N/A], 4.72, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.044675210998320836
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:01.941745+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 44, 0, 208, [N/A], 4.69, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04244029199981014
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:02.982327+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 43, 0, 208, [N/A], 4.66, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.04034895999939181
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:04.027774+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P8, 43, 0, 208, [N/A], 4.74, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.045317484000406694
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:05.088337+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 44, 3, 1703, [N/A], 5.99, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.060435380999479094
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:06.124531+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 44, 12, 2463, [N/A], 12.20, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03551670600063517
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:07.160317+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 44, 0, 2411, [N/A], 10.55, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.035099663999062614
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:08.197365+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 44, 0, 2411, [N/A], 10.55, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03637461099970096
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:09.232092+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 44, 0, 2411, [N/A], 10.53, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03402953400109254
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:10.266226+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 44, 0, 2411, [N/A], 10.52, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03402134099997056
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:11.301189+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 44, 0, 2411, [N/A], 10.53, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.034274941999683506
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:12.338960+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 45, 28, 2483, [N/A], 14.10, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.037530662999415654
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:13.376740+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 46, 26, 2509, [N/A], 24.22, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03765541500069958
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:14.414788+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 28, 2509, [N/A], 24.15, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03777880699999514
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:15.451462+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 28, 2509, [N/A], 24.09, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03634960400086129
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:16.489512+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 46, 14, 2515, [N/A], 23.69, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03761079099967901
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:17.527321+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 28, 2515, [N/A], 24.17, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03756952699950489
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:18.562582+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 25, 2509, [N/A], 24.16, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.0350202879999415
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:19.600493+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 48, 37, 2515, [N/A], 24.62, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03755535099844565
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:20.638622+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 25, 2509, [N/A], 24.16, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.037892231999649084
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:21.676197+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 25, 2515, [N/A], 24.44, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.0373426299993298
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:22.713490+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 48, 28, 2515, [N/A], 24.08, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03704611799912527
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:23.753605+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 48, 28, 2515, [N/A], 24.15, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03987286299889092
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:24.790971+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 48, 28, 2515, [N/A], 24.21, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03713394100122969
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:25.828839+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 48, 25, 2509, [N/A], 23.80, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03747875800036127
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:26.866807+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 48, 25, 2509, [N/A], 24.35, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.037733624998509185
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:27.902562+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 47, 28, 2509, [N/A], 24.18, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03530569699978514
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:28.941240+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 48, 28, 2509, [N/A], 24.28, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.038431866001701565
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:29.979278+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 48, 28, 2509, [N/A], 24.25, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03779472899987013
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:31.015820+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 48, 26, 2515, [N/A], 24.26, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.036323187001471524
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:32.052732+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 48, 26, 2515, [N/A], 24.39, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03662672500104236
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:33.090808+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 48, 27, 2509, [N/A], 24.34, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03783167300025525
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:34.127954+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 48, 24, 2502, [N/A], 24.26, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03691021300073771
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:35.169044+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 49, 21, 2509, [N/A], 24.16, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.040852591999282595
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:36.205364+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 49, 26, 2509, [N/A], 23.82, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03586030599944934
+    },
+    {
+      "observed_at_utc": "2026-11-15T17:25:37.241318+00:00",
+      "gpu": {
+        "fields": [
+          "uuid",
+          "pstate",
+          "temperature.gpu",
+          "utilization.gpu",
+          "clocks.sm",
+          "clocks.mem",
+          "power.draw",
+          "power.limit",
+          "memory.used"
+        ],
+        "exit_code": 0,
+        "csv": "[GPU identifier omitted], P0, 46, 0, 2411, [N/A], 10.78, [N/A], [N/A]",
+        "error": ""
+      },
+      "allowed_cpu_cores": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "allowed_cpu_frequency_khz": {
+        "0": 2808000,
+        "1": 2808000,
+        "2": 2808000,
+        "3": 2808000
+      },
+      "observation_wall_s": 0.03570243400099571
+    }
+  ],
+  "purpose": "Read-only observations; cannot establish historical cause; possible small instrumentation overhead"
+}

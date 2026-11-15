@@ -1,0 +1,107 @@
+{
+  "historical_root_cause": "UNRESOLVED",
+  "current_exploratory_observations": {
+    "Spark29": {
+      "all_samples": 50,
+      "samples_during_scoring": 21,
+      "during_scoring": {
+        "pstate": [
+          "P0"
+        ],
+        "temperature.gpu": {
+          "minimum": 41.0,
+          "median": 41.0,
+          "maximum": 41.0
+        },
+        "utilization.gpu": {
+          "minimum": 19.0,
+          "median": 21.0,
+          "maximum": 66.0
+        },
+        "clocks.sm": {
+          "minimum": 507.0,
+          "median": 507.0,
+          "maximum": 507.0
+        },
+        "clocks.mem": [
+          "[N/A]"
+        ],
+        "power.draw": {
+          "minimum": 6.39,
+          "median": 6.53,
+          "maximum": 8.43
+        },
+        "power.limit": [
+          "[N/A]"
+        ],
+        "memory.used": [
+          "[N/A]"
+        ]
+      },
+      "cpu_affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "torch_threads": 4,
+      "allowed_cpu_frequency_khz_values": [
+        2808000
+      ]
+    },
+    "Spark30": {
+      "all_samples": 51,
+      "samples_during_scoring": 22,
+      "during_scoring": {
+        "pstate": [
+          "P0"
+        ],
+        "temperature.gpu": {
+          "minimum": 44.0,
+          "median": 46.0,
+          "maximum": 47.0
+        },
+        "utilization.gpu": {
+          "minimum": 26.0,
+          "median": 28.0,
+          "maximum": 31.0
+        },
+        "clocks.sm": {
+          "minimum": 2509.0,
+          "median": 2515.0,
+          "maximum": 2535.0
+        },
+        "clocks.mem": [
+          "[N/A]"
+        ],
+        "power.draw": {
+          "minimum": 23.55,
+          "median": 24.925,
+          "maximum": 25.28
+        },
+        "power.limit": [
+          "[N/A]"
+        ],
+        "memory.used": [
+          "[N/A]"
+        ]
+      },
+      "cpu_affinity": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "torch_threads": 4,
+      "allowed_cpu_frequency_khz_values": [
+        2808000
+      ]
+    }
+  },
+  "not_measured": [
+    "historical GPU clocks/thermals/power/contention",
+    "power limit and GPU memory used unavailable in nvidia-smi",
+    "CPU tokenization isolated duration",
+    "independent host-clock calibration"
+  ]
+}

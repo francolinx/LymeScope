@@ -1,0 +1,19 @@
+{
+  "workflow_status": "STAGE_STATUS_FINISHED",
+  "workflow_start_utc": "2026-11-15T17:22:51.312675Z",
+  "workflow_end_utc": "2026-11-15T17:25:53.500624Z",
+  "workflow_s": 182.187949,
+  "queue_create_to_start_s": 0.161969,
+  "image_stage_s": 0.384188,
+  "model_object_ingress_s": 0.939699,
+  "runtime_restore_job_s": 27.680017,
+  "export_24_artifacts_span_s": 5.893983,
+  "laptop_download_hash_readback_s": 2.893401099994662,
+  "not_separately_instrumented": [
+    "dispatch versus Python imports",
+    "output writes versus merge/validation subtimings"
+  ],
+  "all_stages_finished": true,
+  "additional_science_jobs": "NONE",
+  "scope": "Combined confirmation workflow includes both fresh phases; no cold-launch speedup comparison; overlapping stages must not be summed"
+}

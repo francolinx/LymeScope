@@ -1,0 +1,48 @@
+{
+  "schema": "lymescope.public_confirmation_workflow_receipt.v1",
+  "workflow_status": "STAGE_STATUS_FINISHED",
+  "source_sha256": "6f81d8c990e96a7fbdbc4df3a5cd6a0173f3858b3895d7cca798f045d7241945",
+  "scope": "Sanitized completed workflow and jobs; unrelated operational stages/paths omitted; metrics unchanged.",
+  "stages": [
+    {
+      "id": "d8331ef3-53ba-4cdb-94c9-985a4cd4377c",
+      "kind": "STAGE_KIND_WORKFLOW",
+      "name": "d8331ef3-53ba-4cdb-94c9-985a4cd4377c",
+      "status": "STAGE_STATUS_FINISHED",
+      "startTime": "2026-11-15T17:22:51.312675Z",
+      "endTime": "2026-11-15T17:25:53.500624Z",
+      "physical_node": null,
+      "duration_s": 182.187949
+    },
+    {
+      "id": "f3c7e2e7-ca49-5ded-821b-0819329c0565",
+      "kind": "STAGE_KIND_JOB",
+      "name": "stage-runtime",
+      "status": "STAGE_STATUS_FINISHED",
+      "startTime": "2026-11-15T17:22:53.807480Z",
+      "endTime": "2026-11-15T17:23:21.487497Z",
+      "physical_node": "Spark30",
+      "duration_s": 27.680017
+    },
+    {
+      "id": "8148bb6d-ee81-50c3-a5a0-e1826d37aeed",
+      "kind": "STAGE_KIND_JOB",
+      "name": "worker-a",
+      "status": "STAGE_STATUS_FINISHED",
+      "startTime": "2026-11-15T17:23:22.434768Z",
+      "endTime": "2026-11-15T17:25:39.463069Z",
+      "physical_node": "Spark29",
+      "duration_s": 137.028301
+    },
+    {
+      "id": "21c346d8-0dc1-5383-a759-b1798b628a4c",
+      "kind": "STAGE_KIND_JOB",
+      "name": "worker-b",
+      "status": "STAGE_STATUS_FINISHED",
+      "startTime": "2026-11-15T17:23:22.178613Z",
+      "endTime": "2026-11-15T17:25:39.771554Z",
+      "physical_node": "Spark30",
+      "duration_s": 137.592941
+    }
+  ]
+}

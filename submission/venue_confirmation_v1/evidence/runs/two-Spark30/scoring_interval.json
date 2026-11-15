@@ -1,0 +1,13 @@
+{
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "torch_threads": 4,
+  "warm_scoring_started_at_utc": "2026-11-15T17:25:12.007707+00:00",
+  "warm_scoring_started_epoch": 1794763512.0077348,
+  "warm_scoring_finished_at_utc": "2026-11-15T17:25:36.163524+00:00",
+  "warm_scoring_finished_epoch": 1794763536.1635458
+}

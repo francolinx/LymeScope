@@ -1,0 +1,12 @@
+{
+  "offline_fixture_tests": {
+    "passed": 5,
+    "real_inference": false
+  },
+  "independent_saved_score_validation": "PASS;6305 exact tasks;0 absolute/relative error",
+  "html_local_links": "PASS",
+  "private_data_pattern_scan": "PASS",
+  "browser_rendering": "UNVERIFIED; supported Computer Use denied URL enforcement; no bypass",
+  "original_baseline_40_artifact_hashes": "PASS",
+  "no_frozen_scientific_edits": true
+}

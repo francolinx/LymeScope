@@ -1,0 +1,311 @@
+{
+  "schema": "lymescope.confirmation_publication.v1",
+  "workflow_id": "d8331ef3-53ba-4cdb-94c9-985a4cd4377c",
+  "scope": "One confirmation pair, fixed previously selected post-hoc partition. Original readback hashes identify original privately preserved bytes; public hashes identify sanitized extracts. Scores/timings unchanged.",
+  "artifacts": [
+    {
+      "path": "submission/venue_confirmation_v1/FINAL_CONFIRMATION.md",
+      "original_sha256": "05fd52285f8555a5a9758149ec65016a12f04a31c70c6937dcdd3553b3e8b511",
+      "original_bytes": 7480,
+      "published_sha256": "0d9edb11806f9a43c909f1d58e27e8835ffe9b14b77e642725d7408bdf674398",
+      "published_bytes": 7456,
+      "byte_identical": false,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/RESULT.json",
+      "original_sha256": "572a99e20d45ca9a9b4dc33f929b8c38070c414b2552908ecbb283dc0e27ce2f",
+      "original_bytes": 4348,
+      "published_sha256": "572a99e20d45ca9a9b4dc33f929b8c38070c414b2552908ecbb283dc0e27ce2f",
+      "published_bytes": 4348,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/NODE_OBSERVATIONS.json",
+      "original_sha256": "2e886b7a1404ab8d52b87bc4297821b12cc7029ad0381f8e2d73fbdba0b7169f",
+      "original_bytes": 2527,
+      "published_sha256": "9b974b18e9b7902ceab8d26df5de83d3cc3d9359d177d6660b5666f0bcbc7a26",
+      "published_bytes": 2250,
+      "byte_identical": false,
+      "removed_fields": [
+        "/current_exploratory_observations/Spark29/during_scoring/uuid",
+        "/current_exploratory_observations/Spark30/during_scoring/uuid"
+      ]
+    },
+    {
+      "path": "submission/venue_confirmation_v1/READBACK_RECEIPT.json",
+      "original_sha256": "dd10fb119c198eafa57c5481ec985bcd72e5cfb7764f0df6aa11a6140fdacc91",
+      "original_bytes": 8491,
+      "published_sha256": "4ee4f26d1bd4859bd7ccf5b49f43d47561dd6ad857e678ce6cf29aa281b28a93",
+      "published_bytes": 8449,
+      "byte_identical": false,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/WORKFLOW_RECEIPT.json",
+      "original_sha256": "6f81d8c990e96a7fbdbc4df3a5cd6a0173f3858b3895d7cca798f045d7241945",
+      "original_bytes": 15793,
+      "published_sha256": "1c274aacfed9b9c219c526cb22a499cab03fa3833823c12e4861271f77a35f61",
+      "published_bytes": 1675,
+      "byte_identical": false,
+      "removed_fields": [
+        "/stages (non-workflow/non-job omitted)"
+      ]
+    },
+    {
+      "path": "submission/venue_confirmation_v1/ASSIGNMENT.json",
+      "original_sha256": "d30165a1f27cf597b975215a9ffb0cada30859130508ec466080aa3287d36e24",
+      "original_bytes": 153262,
+      "published_sha256": "d30165a1f27cf597b975215a9ffb0cada30859130508ec466080aa3287d36e24",
+      "published_bytes": 153262,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/TIMING_BREAKDOWN.json",
+      "original_sha256": "99c53cdda7bc3fdd2601e0c039173beeb6beb76d718e7733bd500e74668e0dd0",
+      "original_bytes": 793,
+      "published_sha256": "99c53cdda7bc3fdd2601e0c039173beeb6beb76d718e7733bd500e74668e0dd0",
+      "published_bytes": 793,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/two-Spark29.json",
+      "original_sha256": "e0235316a8a3dba03f33bf55749ae734132698b4d49dbb603f33f34783cc438f",
+      "original_bytes": 7846,
+      "published_sha256": "0fd9d28a425f28090a223f5db1a60e18680f2f2ed769da42e84870e796b30e2e",
+      "published_bytes": 7822,
+      "byte_identical": false,
+      "removed_fields": [
+        "/timings/host"
+      ]
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/two-Spark30.json",
+      "original_sha256": "41849068823f23805096bbc1beda33d9fcc757f179f4e695dc2144774d8d3ca0",
+      "original_bytes": 13899,
+      "published_sha256": "9088a03443ffbb30da031a4e22afc0c5dc2eccb0010b8207a115ada605a017e4",
+      "published_bytes": 13875,
+      "byte_identical": false,
+      "removed_fields": [
+        "/timings/host"
+      ]
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runtime-Spark29.json",
+      "original_sha256": "a3a556d3e9e422fe053a66e07c646aa1a01b6b8f015f163a635782910088022e",
+      "original_bytes": 478,
+      "published_sha256": "80c6e1a6327e07aa21e7d22e615a05b74945a9677f60722f5df7f448326830e7",
+      "published_bytes": 420,
+      "byte_identical": false,
+      "removed_fields": [
+        "/gpu_uuid"
+      ]
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runtime-Spark30.json",
+      "original_sha256": "7de44961043a36aff4efdfc223a1243b7159cd8940b10417258c610cf85c4bcd",
+      "original_bytes": 479,
+      "published_sha256": "946680708c7bca9509aa8e25dc6d5bac749ff64bf7b556ded06b0ceaa88a64c2",
+      "published_bytes": 421,
+      "byte_identical": false,
+      "removed_fields": [
+        "/gpu_uuid"
+      ]
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/matched-result.json",
+      "original_sha256": "2bf2c361f9ced3ebbd404a80da67c2c20df21a842d9075abb827a4822afd2af1",
+      "original_bytes": 1490,
+      "published_sha256": "2bf2c361f9ced3ebbd404a80da67c2c20df21a842d9075abb827a4822afd2af1",
+      "published_bytes": 1490,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/two-merged.tsv",
+      "original_sha256": "ea043d2df33841260d322caebe2a8939750f0df9818920653008b872ffbfee84",
+      "original_bytes": 717934,
+      "published_sha256": "ea043d2df33841260d322caebe2a8939750f0df9818920653008b872ffbfee84",
+      "published_bytes": 717934,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/node-observations-Spark29.json",
+      "original_sha256": "d0d9436434026f8a46a31cb3e53a25f99a6f551f5c8362816ea6ce890255dab2",
+      "original_bytes": 75506,
+      "published_sha256": "31b87a9eba1102a3c6010d50682fda82f31f2354bd53433fc36f309dba79d6e4",
+      "published_bytes": 77112,
+      "byte_identical": false,
+      "removed_fields": [
+        "GPU UUID values embedded in diagnostic CSV strings redacted; numeric fields retained"
+      ]
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/node-observations-Spark30.json",
+      "original_sha256": "c71be7fb027af57bb8e985a64b4e292626f1dd0026534ec1fec6c52a9072ce9d",
+      "original_bytes": 76423,
+      "published_sha256": "5f453adfd6297d36f85cd8590c0b3c6a4cceb3fe75f53c3e78194367564ea60f",
+      "published_bytes": 78045,
+      "byte_identical": false,
+      "removed_fields": [
+        "GPU UUID values embedded in diagnostic CSV strings redacted; numeric fields retained"
+      ]
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/package-verification-Spark29.json",
+      "original_sha256": "af43c880bbb0a7e6142629c51367a1ca9bfb87135bda17d5517fedf2b5b9879a",
+      "original_bytes": 1134,
+      "published_sha256": "af43c880bbb0a7e6142629c51367a1ca9bfb87135bda17d5517fedf2b5b9879a",
+      "published_bytes": 1134,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/package-verification-Spark30.json",
+      "original_sha256": "af43c880bbb0a7e6142629c51367a1ca9bfb87135bda17d5517fedf2b5b9879a",
+      "original_bytes": 1134,
+      "published_sha256": "af43c880bbb0a7e6142629c51367a1ca9bfb87135bda17d5517fedf2b5b9879a",
+      "published_bytes": 1134,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/two-Spark29/timings.json",
+      "original_sha256": "0130b2ba2df961055976bb3c6c48dcc5d19d3b007f8de151d25b83ae81966198",
+      "original_bytes": 6135,
+      "published_sha256": "eb23015ae2eb9b6b11ffb8b5c409a3d639a529e62fc4ee85ab9fef96d6121f9f",
+      "published_bytes": 6113,
+      "byte_identical": false,
+      "removed_fields": [
+        "/host"
+      ]
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/two-Spark29/residue_nll.tsv",
+      "original_sha256": "6d64e4d3e67cc8e81cda027a7f6485577cb2227b3e940f7bd1cb59abc6a1fbdc",
+      "original_bytes": 191249,
+      "published_sha256": "6d64e4d3e67cc8e81cda027a7f6485577cb2227b3e940f7bd1cb59abc6a1fbdc",
+      "published_bytes": 191249,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/two-Spark29/scoring_interval.json",
+      "original_sha256": "77ec5e73880bed53c3df3f37da3a079c0da13109fec3e24ade192427e2497b29",
+      "original_bytes": 320,
+      "published_sha256": "77ec5e73880bed53c3df3f37da3a079c0da13109fec3e24ade192427e2497b29",
+      "published_bytes": 320,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/two-Spark29/pilot_correctness.json",
+      "original_sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "original_bytes": 199,
+      "published_sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "published_bytes": 199,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/two-Spark30/timings.json",
+      "original_sha256": "f78df547f981c46256708b1249e2013e15bff237c20f372eca4f0ead8921e28b",
+      "original_bytes": 11906,
+      "published_sha256": "5c982b978d098e5dcd69a62458c7bff80b57a81a5b72dbfff1e09d42f91565d9",
+      "published_bytes": 11884,
+      "byte_identical": false,
+      "removed_fields": [
+        "/host"
+      ]
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/two-Spark30/residue_nll.tsv",
+      "original_sha256": "24664e8364738510a0507112f0c067b7ef36572ad5f5c7c165f6d46c26f96282",
+      "original_bytes": 520480,
+      "published_sha256": "24664e8364738510a0507112f0c067b7ef36572ad5f5c7c165f6d46c26f96282",
+      "published_bytes": 520480,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/two-Spark30/scoring_interval.json",
+      "original_sha256": "8165818138ab6d26d41716b2d1579ca82ea4921e6be5611f5aa41d5909985085",
+      "original_bytes": 321,
+      "published_sha256": "8165818138ab6d26d41716b2d1579ca82ea4921e6be5611f5aa41d5909985085",
+      "published_bytes": 321,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/two-Spark30/pilot_correctness.json",
+      "original_sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "original_bytes": 199,
+      "published_sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "published_bytes": 199,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/one-Spark30.json",
+      "original_sha256": "923105b58aa1bb0a57e36305d4cdb0ba0b2dd84924d5f22236f2f532945d44fe",
+      "original_bytes": 17619,
+      "published_sha256": "935719b5ca2bb1df3fec351e81dddb25b9f54cbd2765670d97a973b528fa9103",
+      "published_bytes": 17595,
+      "byte_identical": false,
+      "removed_fields": [
+        "/timings/host"
+      ]
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/one-phase.json",
+      "original_sha256": "cf4129b2c658864bbe17f4baef30083289852c0f59e0e1b233f1087c7ca8689b",
+      "original_bytes": 163,
+      "published_sha256": "cf4129b2c658864bbe17f4baef30083289852c0f59e0e1b233f1087c7ca8689b",
+      "published_bytes": 163,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/one-Spark30/timings.json",
+      "original_sha256": "5ba1ac2341be75a6055d04f6f13730bdee23531b2a817ed8df1f1206119e7766",
+      "original_bytes": 15207,
+      "published_sha256": "60138ac763f3d94e125e7b0c9637cde19fcadf05dbdc807fec57710d63650231",
+      "published_bytes": 15185,
+      "byte_identical": false,
+      "removed_fields": [
+        "/host"
+      ]
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/one-Spark30/residue_nll.tsv",
+      "original_sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+      "original_bytes": 711628,
+      "published_sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+      "published_bytes": 711628,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/one-Spark30/scoring_interval.json",
+      "original_sha256": "18f346ca2d2bf0700aaed3c446492ec92170649dae47e360efe8745843f812e9",
+      "original_bytes": 320,
+      "published_sha256": "18f346ca2d2bf0700aaed3c446492ec92170649dae47e360efe8745843f812e9",
+      "published_bytes": 320,
+      "byte_identical": true,
+      "removed_fields": []
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/one-Spark30/pilot_correctness.json",
+      "original_sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "original_bytes": 199,
+      "published_sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "published_bytes": 199,
+      "byte_identical": true,
+      "removed_fields": []
+    }
+  ]
+}

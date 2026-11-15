@@ -1,0 +1,101 @@
+{
+  "schema": "lymescope.confirmation.local_acceptance.v1",
+  "status": "PASS",
+  "recorded_at_utc": "2026-11-15T17:26:46.257774+00:00",
+  "workflow_id": "d8331ef3-53ba-4cdb-94c9-985a4cd4377c",
+  "post_hoc_exploratory": true,
+  "checks": {
+    "merged_vs_frozen": {
+      "status": "PASS",
+      "tasks": 6305,
+      "max_absolute_error_nats": 0.0,
+      "max_relative_error": 0.0
+    },
+    "merged_vs_original_single": {
+      "status": "PASS",
+      "tasks": 6305,
+      "max_absolute_error_nats": 0.0,
+      "max_relative_error": 0.0
+    },
+    "fresh_single_vs_frozen": {
+      "status": "PASS",
+      "tasks": 6305,
+      "max_absolute_error_nats": 0.0,
+      "max_relative_error": 0.0
+    },
+    "merged_vs_fresh_single": {
+      "status": "PASS",
+      "tasks": 6305,
+      "max_absolute_error_nats": 0.0,
+      "max_relative_error": 0.0
+    }
+  },
+  "exact_tasks": 6305,
+  "duplicates": 0,
+  "missing": 0,
+  "scoring_calls": 805,
+  "shards": {
+    "Spark29": {
+      "masks": 1691,
+      "scoring_calls": 216,
+      "warm_scoring_s": 20.765014144000816,
+      "model_load_and_cuda_transfer_s": 2.4884351000000606,
+      "process_wall_s": 29.76828907500021,
+      "peak_gpu_allocated_bytes": 138363392,
+      "peak_gpu_reserved_bytes": 249561088,
+      "process_max_rss_bytes": 1548963840
+    },
+    "Spark30": {
+      "masks": 4614,
+      "scoring_calls": 589,
+      "warm_scoring_s": 24.155782555999394,
+      "model_load_and_cuda_transfer_s": 2.233565501999692,
+      "process_wall_s": 33.26141516399912,
+      "peak_gpu_allocated_bytes": 137579008,
+      "peak_gpu_reserved_bytes": 186646528,
+      "process_max_rss_bytes": 1550860288
+    }
+  },
+  "scoring_overlap_s": 20.765074729919434,
+  "warm_max_s": 24.155782555999394,
+  "coordinator_s": 50.03899876200012,
+  "original_single_coordinator_s": 52.11052724599904,
+  "original_equal_count_coordinator_s": 67.98228979600026,
+  "coordinator_improvement_vs_original_two_percent": 26.3940668780707,
+  "coordinator_speedup_vs_original_two": 1.3585861323753419,
+  "coordinator_improvement_vs_single_percent": 3.9752591145735705,
+  "coordinator_speedup_vs_single": 1.0413982800465633,
+  "warm_improvement_vs_original_two_percent": 43.025120404006124,
+  "warm_speedup_vs_single": 1.2512130759139388,
+  "full_workflow_s": 182.187949,
+  "scope": "Fresh full Spark30 then exact previously selected optimized partition, within one workflow; common setup/export excluded; Spark29 reserved idle during single; telemetry in both phases",
+  "cautions": [
+    "One confirmation pair of a previously selected post-hoc partition; preliminary evidence, not a general scaling estimate.",
+    "About 1 Hz diagnostic sampling in both confirmation phases; original baseline had no sampler.",
+    "Historical asymmetry root cause UNRESOLVED; no causal attribution to scheduling, clocks, power or contention.",
+    "Fresh single-versus-two comparison is reported explicitly; no cold-launch whole-workflow speedup comparison.",
+    "Scoring interval overlap uses host UTC epochs; no independent clock calibration.",
+    "Subset TSV shard=0 refers to each adapter-selected whole-sequence set; assignment.json defines physical partitions."
+  ],
+  "assignment_provenance": {
+    "local_sha256": "bc65b4c29ea0959e5df52fbbe8687c5c3c7893b741d3b3d4464097f79bc85547",
+    "executed_lf_sha256": "bc65b4c29ea0959e5df52fbbe8687c5c3c7893b741d3b3d4464097f79bc85547",
+    "difference": "Local and executed assignment bytes identical; unchanged from prior optimized execution"
+  },
+  "merged_sha256": "ea043d2df33841260d322caebe2a8939750f0df9818920653008b872ffbfee84",
+  "original_evidence_manifest_verified": true,
+  "fresh_single": {
+    "masks": 6305,
+    "scoring_calls": 805,
+    "warm_scoring_s": 32.48766615599925,
+    "coordinator_s": 54.56769071799863,
+    "model_load_and_cuda_transfer_s": 2.4588164090000646,
+    "process_wall_s": 36.39036440500058,
+    "sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f"
+  },
+  "fresh_pair_coordinator_speedup": 1.0905032488267457,
+  "fresh_pair_coordinator_reduction_percent": 8.29921863360944,
+  "fresh_pair_warm_speedup": 1.3449229425991223,
+  "previous_exploratory_coordinator_s": 51.95236732900048,
+  "assignment_unchanged_from_exploratory": true
+}

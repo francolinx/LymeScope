@@ -1,0 +1,36 @@
+{
+  "status": "READY_FOR_APPROVAL_NOT_PUBLISHED_OR_SUBMITTED",
+  "recorded_at_utc": "2026-11-15T17:14:14.071962+00:00",
+  "pdf_pages": 1,
+  "page_points": [
+    612,
+    792
+  ],
+  "pdf_links": [
+    "https://github.com/francolinx/LymeScope/tree/aafe818a20ea025370cf4b65145a9684e80aaaef/sparkprep/experiments/stretch_v0.2.0_20261115T072916Z",
+    "https://github.com/francolinx/LymeScope/tree/82fb8b53018ba4012ccebf02a29efa87b892f6ed/sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z",
+    "https://github.com/francolinx/LymeScope"
+  ],
+  "poppler_visual_inspection": "PASS; one page, readable, no clipping or overlap",
+  "scope": "Preserved original event result and one post-hoc exploratory trial; no whole-workflow speedup claim",
+  "files": [
+    {
+      "path": "output/pdf/LYMESCOPE_FRONTIER_VERIFIED_20261115.pdf",
+      "bytes": 77999,
+      "sha256": "3dca3fc1be4d811ca8a884708f9b0aa832715f68988bde1d34076609316105b3"
+    },
+    {
+      "path": "submission/frontier_release_v2/ONE_PAGER.md",
+      "bytes": 5181,
+      "sha256": "03c3adff96db72396781d45631f212f26aba323ec5d0985807e01281c6505068"
+    },
+    {
+      "path": "submission/frontier_release_v2/one-page-preview.png",
+      "bytes": 478509,
+      "sha256": "e77d2bd3bf3bfbd47cecc687360de472fd9f4884f4e06dda26685455da23a59b"
+    }
+  ],
+  "prior_event_v3_zip": "PRESERVED BUT SUPERSEDED / NOT RECOMMENDED; stale demo row and README status fixed in current documents and v4",
+  "prior_pdfs_preserved": true,
+  "browser_rendering_of_new_html": "NOT VERIFIED; no automation bypass attempted"
+}

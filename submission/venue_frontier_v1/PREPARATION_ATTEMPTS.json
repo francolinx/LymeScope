@@ -1,0 +1,25 @@
+{
+  "recorded_at_utc": "2026-11-15T17:14:31.030467+00:00",
+  "completed_scientific_trials": 1,
+  "pre_scoring_failures": [
+    {
+      "workflow_id": "fe10acb3-8b8a-4b49-9498-7495a539ca3c",
+      "status": "FAILED_BEFORE_GPU_JOBS_STARTED",
+      "masked_examples": 0,
+      "scoring_forwards": 0,
+      "cause": "Runtime guard rejected transitive regex 2026.11.15 instead of baseline 2026.11.9",
+      "correction": "Locked all 31 baseline distributions and wheel SHA256 hashes; no dependency-version substitution"
+    },
+    {
+      "workflow_id": "b79e8907-ef72-4790-8d9b-a8e3d45f1417",
+      "status": "FAILED_BEFORE_SCORER_RUN",
+      "masked_examples": 0,
+      "scoring_forwards": 0,
+      "cause": "Input-hash wrapper used Windows backslash path separators on Linux",
+      "correction": "Normalize only wrapper relative paths to POSIX with traversal checks; original input bytes, assignment content and scorer unchanged",
+      "failure_readback_workflow_id": "3ae48d78-fba3-4a0a-9993-5f62f13a1bfc"
+    }
+  ],
+  "completed_workflow_id": "3f511bf2-b3b7-4346-b5d8-9a56cef5fc53",
+  "further_gpu_attempts": "NONE; scientific execution finished"
+}

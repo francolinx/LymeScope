@@ -1,0 +1,19 @@
+{
+  "workflow_id": "3f511bf2-b3b7-4346-b5d8-9a56cef5fc53",
+  "workflow_started_at_utc": "2026-11-15T17:06:54.124021Z",
+  "workflow_finished_at_utc": "2026-11-15T17:09:02.766682Z",
+  "workflow_s": 128.642661,
+  "queue_create_to_start_s": 0.155115,
+  "image_stage_s": 0.503644,
+  "image_behavior": "Existing image staging completed in under one second; no separate registry-transfer timing claim",
+  "model_object_ingress_s": 0.899839,
+  "runtime_restore_job_s": 27.849521,
+  "export_18_artifacts_span_s": 4.771716,
+  "laptop_download_and_hash_s": 4.571851799999422,
+  "prepared_input_coordinator_s": 51.95236732900048,
+  "not_separately_instrumented": [
+    "GPU dispatch vs Python imports",
+    "persistent output writes vs merge/validation subtimings"
+  ],
+  "timing_scope_warning": "Do not sum overlapping stages. Whole exploratory workflow is not equivalent work to original combined pilot/single/two workflow."
+}

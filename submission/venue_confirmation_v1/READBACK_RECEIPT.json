@@ -1,0 +1,200 @@
+{
+  "workflow_id": "d8331ef3-53ba-4cdb-94c9-985a4cd4377c",
+  "recorded_at_utc": "2026-11-15T17:26:11.419558+00:00",
+  "laptop_transfer_and_hash_readback_s": 2.893401099994662,
+  "files": [
+    {
+      "file": "two-Spark29.json",
+      "bytes": 7846,
+      "sha256": "e0235316a8a3dba03f33bf55749ae734132698b4d49dbb603f33f34783cc438f",
+      "object_digest": "sha256:e0235316a8a3dba03f33bf55749ae734132698b4d49dbb603f33f34783cc438f",
+      "laptop_readback_pass": true,
+      "download_s": 0.442010399994615
+    },
+    {
+      "file": "two-Spark30.json",
+      "bytes": 13899,
+      "sha256": "41849068823f23805096bbc1beda33d9fcc757f179f4e695dc2144774d8d3ca0",
+      "object_digest": "sha256:41849068823f23805096bbc1beda33d9fcc757f179f4e695dc2144774d8d3ca0",
+      "laptop_readback_pass": true,
+      "download_s": 0.4293604000049527
+    },
+    {
+      "file": "runtime-Spark29.json",
+      "bytes": 478,
+      "sha256": "a3a556d3e9e422fe053a66e07c646aa1a01b6b8f015f163a635782910088022e",
+      "object_digest": "sha256:a3a556d3e9e422fe053a66e07c646aa1a01b6b8f015f163a635782910088022e",
+      "laptop_readback_pass": true,
+      "download_s": 0.42766620000475086
+    },
+    {
+      "file": "runtime-Spark30.json",
+      "bytes": 479,
+      "sha256": "7de44961043a36aff4efdfc223a1243b7159cd8940b10417258c610cf85c4bcd",
+      "object_digest": "sha256:7de44961043a36aff4efdfc223a1243b7159cd8940b10417258c610cf85c4bcd",
+      "laptop_readback_pass": true,
+      "download_s": 0.4401750000033644
+    },
+    {
+      "file": "matched-result.json",
+      "bytes": 1490,
+      "sha256": "2bf2c361f9ced3ebbd404a80da67c2c20df21a842d9075abb827a4822afd2af1",
+      "object_digest": "sha256:2bf2c361f9ced3ebbd404a80da67c2c20df21a842d9075abb827a4822afd2af1",
+      "laptop_readback_pass": true,
+      "download_s": 0.6480636000051163
+    },
+    {
+      "file": "two-merged.tsv",
+      "bytes": 717934,
+      "sha256": "ea043d2df33841260d322caebe2a8939750f0df9818920653008b872ffbfee84",
+      "object_digest": "sha256:ea043d2df33841260d322caebe2a8939750f0df9818920653008b872ffbfee84",
+      "laptop_readback_pass": true,
+      "download_s": 0.6433574999973644
+    },
+    {
+      "file": "node-observations-Spark29.json",
+      "bytes": 75506,
+      "sha256": "d0d9436434026f8a46a31cb3e53a25f99a6f551f5c8362816ea6ce890255dab2",
+      "object_digest": "sha256:d0d9436434026f8a46a31cb3e53a25f99a6f551f5c8362816ea6ce890255dab2",
+      "laptop_readback_pass": true,
+      "download_s": 0.5902643000008538
+    },
+    {
+      "file": "node-observations-Spark30.json",
+      "bytes": 76423,
+      "sha256": "c71be7fb027af57bb8e985a64b4e292626f1dd0026534ec1fec6c52a9072ce9d",
+      "object_digest": "sha256:c71be7fb027af57bb8e985a64b4e292626f1dd0026534ec1fec6c52a9072ce9d",
+      "laptop_readback_pass": true,
+      "download_s": 0.6522832999980892
+    },
+    {
+      "file": "package-verification-Spark29.json",
+      "bytes": 1134,
+      "sha256": "af43c880bbb0a7e6142629c51367a1ca9bfb87135bda17d5517fedf2b5b9879a",
+      "object_digest": "sha256:af43c880bbb0a7e6142629c51367a1ca9bfb87135bda17d5517fedf2b5b9879a",
+      "laptop_readback_pass": true,
+      "download_s": 0.5361464000015985
+    },
+    {
+      "file": "package-verification-Spark30.json",
+      "bytes": 1134,
+      "sha256": "af43c880bbb0a7e6142629c51367a1ca9bfb87135bda17d5517fedf2b5b9879a",
+      "object_digest": "sha256:af43c880bbb0a7e6142629c51367a1ca9bfb87135bda17d5517fedf2b5b9879a",
+      "laptop_readback_pass": true,
+      "download_s": 0.5042887999952654
+    },
+    {
+      "file": "runs/two-Spark29/timings.json",
+      "bytes": 6135,
+      "sha256": "0130b2ba2df961055976bb3c6c48dcc5d19d3b007f8de151d25b83ae81966198",
+      "object_digest": "sha256:0130b2ba2df961055976bb3c6c48dcc5d19d3b007f8de151d25b83ae81966198",
+      "laptop_readback_pass": true,
+      "download_s": 0.4789401000016369
+    },
+    {
+      "file": "runs/two-Spark29/residue_nll.tsv",
+      "bytes": 191249,
+      "sha256": "6d64e4d3e67cc8e81cda027a7f6485577cb2227b3e940f7bd1cb59abc6a1fbdc",
+      "object_digest": "sha256:6d64e4d3e67cc8e81cda027a7f6485577cb2227b3e940f7bd1cb59abc6a1fbdc",
+      "laptop_readback_pass": true,
+      "download_s": 0.5041262999948231
+    },
+    {
+      "file": "runs/two-Spark29/scoring_interval.json",
+      "bytes": 320,
+      "sha256": "77ec5e73880bed53c3df3f37da3a079c0da13109fec3e24ade192427e2497b29",
+      "object_digest": "sha256:77ec5e73880bed53c3df3f37da3a079c0da13109fec3e24ade192427e2497b29",
+      "laptop_readback_pass": true,
+      "download_s": 0.3254151000001002
+    },
+    {
+      "file": "runs/two-Spark29/pilot_correctness.json",
+      "bytes": 199,
+      "sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "object_digest": "sha256:2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "laptop_readback_pass": true,
+      "download_s": 0.33937580000201706
+    },
+    {
+      "file": "runs/two-Spark30/timings.json",
+      "bytes": 11906,
+      "sha256": "f78df547f981c46256708b1249e2013e15bff237c20f372eca4f0ead8921e28b",
+      "object_digest": "sha256:f78df547f981c46256708b1249e2013e15bff237c20f372eca4f0ead8921e28b",
+      "laptop_readback_pass": true,
+      "download_s": 0.3177693999969051
+    },
+    {
+      "file": "runs/two-Spark30/residue_nll.tsv",
+      "bytes": 520480,
+      "sha256": "24664e8364738510a0507112f0c067b7ef36572ad5f5c7c165f6d46c26f96282",
+      "object_digest": "sha256:24664e8364738510a0507112f0c067b7ef36572ad5f5c7c165f6d46c26f96282",
+      "laptop_readback_pass": true,
+      "download_s": 0.3549349999957485
+    },
+    {
+      "file": "runs/two-Spark30/scoring_interval.json",
+      "bytes": 321,
+      "sha256": "8165818138ab6d26d41716b2d1579ca82ea4921e6be5611f5aa41d5909985085",
+      "object_digest": "sha256:8165818138ab6d26d41716b2d1579ca82ea4921e6be5611f5aa41d5909985085",
+      "laptop_readback_pass": true,
+      "download_s": 0.3591177999987849
+    },
+    {
+      "file": "runs/two-Spark30/pilot_correctness.json",
+      "bytes": 199,
+      "sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "object_digest": "sha256:2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "laptop_readback_pass": true,
+      "download_s": 0.34315390000119805
+    },
+    {
+      "file": "one-Spark30.json",
+      "bytes": 17619,
+      "sha256": "923105b58aa1bb0a57e36305d4cdb0ba0b2dd84924d5f22236f2f532945d44fe",
+      "object_digest": "sha256:923105b58aa1bb0a57e36305d4cdb0ba0b2dd84924d5f22236f2f532945d44fe",
+      "laptop_readback_pass": true,
+      "download_s": 0.3362236999964807
+    },
+    {
+      "file": "one-phase.json",
+      "bytes": 163,
+      "sha256": "cf4129b2c658864bbe17f4baef30083289852c0f59e0e1b233f1087c7ca8689b",
+      "object_digest": "sha256:cf4129b2c658864bbe17f4baef30083289852c0f59e0e1b233f1087c7ca8689b",
+      "laptop_readback_pass": true,
+      "download_s": 0.31725770000048215
+    },
+    {
+      "file": "runs/one-Spark30/timings.json",
+      "bytes": 15207,
+      "sha256": "5ba1ac2341be75a6055d04f6f13730bdee23531b2a817ed8df1f1206119e7766",
+      "object_digest": "sha256:5ba1ac2341be75a6055d04f6f13730bdee23531b2a817ed8df1f1206119e7766",
+      "laptop_readback_pass": true,
+      "download_s": 0.6220960999999079
+    },
+    {
+      "file": "runs/one-Spark30/residue_nll.tsv",
+      "bytes": 711628,
+      "sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+      "object_digest": "sha256:b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+      "laptop_readback_pass": true,
+      "download_s": 0.645057400004589
+    },
+    {
+      "file": "runs/one-Spark30/scoring_interval.json",
+      "bytes": 320,
+      "sha256": "18f346ca2d2bf0700aaed3c446492ec92170649dae47e360efe8745843f812e9",
+      "object_digest": "sha256:18f346ca2d2bf0700aaed3c446492ec92170649dae47e360efe8745843f812e9",
+      "laptop_readback_pass": true,
+      "download_s": 0.5407524000038393
+    },
+    {
+      "file": "runs/one-Spark30/pilot_correctness.json",
+      "bytes": 199,
+      "sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "object_digest": "sha256:2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "laptop_readback_pass": true,
+      "download_s": 0.5260303000031854
+    }
+  ],
+  "publication_scope": "Hashes in files identify original privately preserved bytes. PUBLICATION_PROVENANCE.json maps original to sanitized public hashes."
+}

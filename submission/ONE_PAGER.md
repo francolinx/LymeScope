@@ -21,4 +21,8 @@
 
 **Repository:** https://github.com/francolinx/LymeScope · [Sources](SOURCE_REFERENCES.md) · [Offline workbench](../docs/index.html). The lead authorized the reviewed GitHub fallback; organizer submission remains separate. Pages hosting is not claimed live.
 
-Submission: November 15, 2026, noon Central. Live demo: 1:00 PM; five minutes maximum. New research cutoff: 10:30 AM Central. Saved CPU and personal-Spark GPU evidence work offline; event timing is optional.
+Submission: November 15, 2026, noon Central. Live demo: 1:00 PM; five minutes maximum. Current authorized research cutoff: 11:40 AM Central. Saved CPU and personal-Spark GPU evidence work offline; event timing is optional.
+
+**Separately labeled exploratory follow-up.** One later whole-sequence partition reproduced all 6,305 original scores with zero absolute/relative deviation and reduced the prepared two-node phase to 51.952 s, 23.6% below the original 67.982 s. Against the original single-node 52.111 s, this is near parity, not established acceleration. One post-hoc timing observation, no whole-workflow speedup. [Final reviewed one-page PDF](../output/pdf/LYMESCOPE_FRONTIER_VERIFIED_20261115.pdf) · [Full limitations and evidence](venue_frontier_v1/FRONTIER_RESULT.md). A later confirmation is reported separately below.
+
+**Separate confirmation addendum:** A fresh pair measured 54.568 s single-node versus 50.039 s optimized two-node prepared-input coordinator time (8.3% reduction / 1.091x for this pair), with all 6,305 scores exact and 20.765 s scoring overlap. Fixed post-hoc partition, fixed single-then-two order; original equal-count split not repeated. No general or cold-launch scaling claim. [Verified confirmation](venue_confirmation_v1/FINAL_CONFIRMATION.md). The preserved PDF/ZIP retain the earlier exploratory scope and were not regenerated.

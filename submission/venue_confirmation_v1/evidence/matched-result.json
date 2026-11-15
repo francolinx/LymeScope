@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "One predeclared confirmation pair: fresh Spark30 full panel then unchanged optimized two-node partition; prepared-input phases; common setup/export separate",
+  "two_started_at_utc": "2026-11-15T17:24:48.009981+00:00",
+  "two_finished_at_utc": "2026-11-15T17:25:38.048951+00:00",
+  "two_coordinator_makespan_s": 50.03899876200012,
+  "one_phase": {
+    "started_at_utc": "2026-11-15T17:23:53.222666+00:00",
+    "finished_at_utc": "2026-11-15T17:24:47.790336+00:00",
+    "coordinator_makespan_s": 54.56769071799863
+  },
+  "merged_comparison": {
+    "status": "PASS",
+    "task_count": 6305,
+    "max_absolute_error_nats": 0.0,
+    "tolerance": "abs(candidate-reference) <= 1e-4 + 1e-5*abs(reference)",
+    "reference_sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+    "candidate_sha256": "ea043d2df33841260d322caebe2a8939750f0df9818920653008b872ffbfee84",
+    "max_relative_error": 0.0,
+    "warm_scoring_overlap_s": 20.765074729919434,
+    "merged_sha256": "ea043d2df33841260d322caebe2a8939750f0df9818920653008b872ffbfee84"
+  },
+  "assignment_sha256": "bc65b4c29ea0959e5df52fbbe8687c5c3c7893b741d3b3d4464097f79bc85547",
+  "shared_setup_excluded_from_phase": true,
+  "diagnostic_sampling": "Read-only GPU/allowed-CPU observations at approximately 1 Hz on both workers; baseline had no sampler",
+  "no_whole_workflow_speedup_claim": true,
+  "post_hoc_exploratory": true,
+  "confirmation_of_previously_selected_partition": true
+}

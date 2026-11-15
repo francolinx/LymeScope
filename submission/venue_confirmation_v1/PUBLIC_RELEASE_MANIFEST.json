@@ -1,0 +1,360 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 34886,
+      "sha256": "642b13367aae5bc8bed17018e871e3d1790cccfd5fba8dc1a55be7718c05de55"
+    },
+    {
+      "path": "demo/venue-frontier-v1/index.html",
+      "bytes": 6553,
+      "sha256": "0db31204da7554e25d8c9523fe0459cd607db0368b7fea22306317bf995ecc27"
+    },
+    {
+      "path": "output/pdf/LYMESCOPE_EVENT_VERIFIED_20261115.pdf",
+      "bytes": 77656,
+      "sha256": "08aba1552ba8f5f7dbbf3341dbc428ccd6ba324565827ebd3f02d43e096eb079"
+    },
+    {
+      "path": "output/pdf/LYMESCOPE_FRONTIER_VERIFIED_20261115.pdf",
+      "bytes": 77999,
+      "sha256": "3dca3fc1be4d811ca8a884708f9b0aa832715f68988bde1d34076609316105b3"
+    },
+    {
+      "path": "output/pdf/LYMESCOPE_ONE_PAGE.pdf",
+      "bytes": 78552,
+      "sha256": "bf335120edbc0e100fbefbd64c88dfba32a7769ba1e6ccfb76fe265bab52a494"
+    },
+    {
+      "path": "submission/DEMO_SCRIPT.md",
+      "bytes": 6754,
+      "sha256": "a1dd3f5d67d3448a45352c7da06f07efb4f4aa4d062e87a12178d3c7a230bbec"
+    },
+    {
+      "path": "submission/ONE_PAGER.md",
+      "bytes": 5912,
+      "sha256": "acf088d6018255c9668e476bf0c7b28fb9d962145211179e5f1e24090ef7b901"
+    },
+    {
+      "path": "submission/SUBMISSION_CHECKLIST.md",
+      "bytes": 6428,
+      "sha256": "949a60106d134f9aa92d62d9aceb3ae18f77f3a0301fb9c154dd05f96e43ce70"
+    },
+    {
+      "path": "submission/frontier_release_v2/ONE_PAGER.md",
+      "bytes": 5181,
+      "sha256": "03c3adff96db72396781d45631f212f26aba323ec5d0985807e01281c6505068"
+    },
+    {
+      "path": "submission/frontier_release_v2/RELEASE_RECEIPT.json",
+      "bytes": 1608,
+      "sha256": "21211764ec7bbcbd3c22ec4b796646e81c02c4e20b6932a90d23f1fdff3698bf"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/ASSIGNMENT.json",
+      "bytes": 153262,
+      "sha256": "d30165a1f27cf597b975215a9ffb0cada30859130508ec466080aa3287d36e24"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/FINAL_CONFIRMATION.md",
+      "bytes": 7456,
+      "sha256": "0d9edb11806f9a43c909f1d58e27e8835ffe9b14b77e642725d7408bdf674398"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/NODE_OBSERVATIONS.json",
+      "bytes": 2250,
+      "sha256": "9b974b18e9b7902ceab8d26df5de83d3cc3d9359d177d6660b5666f0bcbc7a26"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/PUBLICATION_PROVENANCE.json",
+      "bytes": 13784,
+      "sha256": "aeb393058a7bebacdbed53abc77beae243d9b42db4ab6dedcd844dfffbb62e17"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/READBACK_RECEIPT.json",
+      "bytes": 8449,
+      "sha256": "4ee4f26d1bd4859bd7ccf5b49f43d47561dd6ad857e678ce6cf29aa281b28a93"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/RESULT.json",
+      "bytes": 4348,
+      "sha256": "572a99e20d45ca9a9b4dc33f929b8c38070c414b2552908ecbb283dc0e27ce2f"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/TIMING_BREAKDOWN.json",
+      "bytes": 793,
+      "sha256": "99c53cdda7bc3fdd2601e0c039173beeb6beb76d718e7733bd500e74668e0dd0"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/WORKFLOW_RECEIPT.json",
+      "bytes": 1675,
+      "sha256": "1c274aacfed9b9c219c526cb22a499cab03fa3833823c12e4861271f77a35f61"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/matched-result.json",
+      "bytes": 1490,
+      "sha256": "2bf2c361f9ced3ebbd404a80da67c2c20df21a842d9075abb827a4822afd2af1"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/node-observations-Spark29.json",
+      "bytes": 77112,
+      "sha256": "31b87a9eba1102a3c6010d50682fda82f31f2354bd53433fc36f309dba79d6e4"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/node-observations-Spark30.json",
+      "bytes": 78045,
+      "sha256": "5f453adfd6297d36f85cd8590c0b3c6a4cceb3fe75f53c3e78194367564ea60f"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/one-Spark30.json",
+      "bytes": 17595,
+      "sha256": "935719b5ca2bb1df3fec351e81dddb25b9f54cbd2765670d97a973b528fa9103"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/one-phase.json",
+      "bytes": 163,
+      "sha256": "cf4129b2c658864bbe17f4baef30083289852c0f59e0e1b233f1087c7ca8689b"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/package-verification-Spark29.json",
+      "bytes": 1134,
+      "sha256": "af43c880bbb0a7e6142629c51367a1ca9bfb87135bda17d5517fedf2b5b9879a"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/package-verification-Spark30.json",
+      "bytes": 1134,
+      "sha256": "af43c880bbb0a7e6142629c51367a1ca9bfb87135bda17d5517fedf2b5b9879a"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/one-Spark30/pilot_correctness.json",
+      "bytes": 199,
+      "sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/one-Spark30/residue_nll.tsv",
+      "bytes": 711628,
+      "sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/one-Spark30/scoring_interval.json",
+      "bytes": 320,
+      "sha256": "18f346ca2d2bf0700aaed3c446492ec92170649dae47e360efe8745843f812e9"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/one-Spark30/timings.json",
+      "bytes": 15185,
+      "sha256": "60138ac763f3d94e125e7b0c9637cde19fcadf05dbdc807fec57710d63650231"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/two-Spark29/pilot_correctness.json",
+      "bytes": 199,
+      "sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/two-Spark29/residue_nll.tsv",
+      "bytes": 191249,
+      "sha256": "6d64e4d3e67cc8e81cda027a7f6485577cb2227b3e940f7bd1cb59abc6a1fbdc"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/two-Spark29/scoring_interval.json",
+      "bytes": 320,
+      "sha256": "77ec5e73880bed53c3df3f37da3a079c0da13109fec3e24ade192427e2497b29"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/two-Spark29/timings.json",
+      "bytes": 6113,
+      "sha256": "eb23015ae2eb9b6b11ffb8b5c409a3d639a529e62fc4ee85ab9fef96d6121f9f"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/two-Spark30/pilot_correctness.json",
+      "bytes": 199,
+      "sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/two-Spark30/residue_nll.tsv",
+      "bytes": 520480,
+      "sha256": "24664e8364738510a0507112f0c067b7ef36572ad5f5c7c165f6d46c26f96282"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/two-Spark30/scoring_interval.json",
+      "bytes": 321,
+      "sha256": "8165818138ab6d26d41716b2d1579ca82ea4921e6be5611f5aa41d5909985085"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runs/two-Spark30/timings.json",
+      "bytes": 11884,
+      "sha256": "5c982b978d098e5dcd69a62458c7bff80b57a81a5b72dbfff1e09d42f91565d9"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runtime-Spark29.json",
+      "bytes": 420,
+      "sha256": "80c6e1a6327e07aa21e7d22e615a05b74945a9677f60722f5df7f448326830e7"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/runtime-Spark30.json",
+      "bytes": 421,
+      "sha256": "946680708c7bca9509aa8e25dc6d5bac749ff64bf7b556ded06b0ceaa88a64c2"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/two-Spark29.json",
+      "bytes": 7822,
+      "sha256": "0fd9d28a425f28090a223f5db1a60e18680f2f2ed769da42e84870e796b30e2e"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/two-Spark30.json",
+      "bytes": 13875,
+      "sha256": "9088a03443ffbb30da031a4e22afc0c5dc2eccb0010b8207a115ada605a017e4"
+    },
+    {
+      "path": "submission/venue_confirmation_v1/evidence/two-merged.tsv",
+      "bytes": 717934,
+      "sha256": "ea043d2df33841260d322caebe2a8939750f0df9818920653008b872ffbfee84"
+    },
+    {
+      "path": "submission/venue_frontier_v1/ASSIGNMENT.json",
+      "bytes": 153262,
+      "sha256": "d30165a1f27cf597b975215a9ffb0cada30859130508ec466080aa3287d36e24"
+    },
+    {
+      "path": "submission/venue_frontier_v1/FRONTIER_RESULT.md",
+      "bytes": 8039,
+      "sha256": "1911e49a3759d4769ab0fe8046ba697a0d0467ebb8d569c40eefbecd636d0402"
+    },
+    {
+      "path": "submission/venue_frontier_v1/NODE_OBSERVATIONS.json",
+      "bytes": 2251,
+      "sha256": "0bf813a9b12550d86d72b20b5b675e83634e689f20af489f394d254ef73dfe64"
+    },
+    {
+      "path": "submission/venue_frontier_v1/PREPARATION_ATTEMPTS.json",
+      "bytes": 1176,
+      "sha256": "52f15e1b12f8d31a4a4718cf5b034316e91f7ac6a9f28fa5b9a1e162e86a0986"
+    },
+    {
+      "path": "submission/venue_frontier_v1/PUBLICATION_PROVENANCE.json",
+      "bytes": 15355,
+      "sha256": "f5b368b4b3c9d4378104079354c884bcd6ba0c4adb80caec528e580c5a22ae6c"
+    },
+    {
+      "path": "submission/venue_frontier_v1/QA.json",
+      "bytes": 437,
+      "sha256": "7b892a070571c89a48c2118ff7405ab54edc2e39778cfafb1306c31098e8e4fc"
+    },
+    {
+      "path": "submission/venue_frontier_v1/READBACK_RECEIPT.json",
+      "bytes": 6459,
+      "sha256": "bc6daf1854a1b4d1944a66166d7d155a91997fc7827b26029294b42c38f55a6f"
+    },
+    {
+      "path": "submission/venue_frontier_v1/RESOURCE_RECONCILIATION.json",
+      "bytes": 689,
+      "sha256": "393eb2bf584b3f13f90795ae626a9f9ecf7da5baab07dda703e2ce3a0dc7609b"
+    },
+    {
+      "path": "submission/venue_frontier_v1/RESULT.json",
+      "bytes": 3229,
+      "sha256": "2017978dce330260d1fa4e4a958eee7555869c82019935c6dc9d6b4a14d53ed8"
+    },
+    {
+      "path": "submission/venue_frontier_v1/TIMING_BREAKDOWN.json",
+      "bytes": 936,
+      "sha256": "077785bacccae55ff276a48445dbd5837ef3bbda34f263377615ccf6b451d3ca"
+    },
+    {
+      "path": "submission/venue_frontier_v1/WORKFLOW_RECEIPT.json",
+      "bytes": 1718,
+      "sha256": "115bfb4353830c6394563e98fd93aeda6d0a13cb439f5bc5e73843ad12d97c06"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/matched-result.json",
+      "bytes": 1222,
+      "sha256": "db0d8f2d9067ad46d031f4a172de75192a4b346ae61a1d0c25c5a45f4da9d16a"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/node-observations-Spark29.json",
+      "bytes": 38645,
+      "sha256": "c2705e2e3801007dbe1f4f1ce25bb2d53d9196dee74a4237601f1578c02d033d"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/node-observations-Spark30.json",
+      "bytes": 39482,
+      "sha256": "fbd501365025fc41bf9ef33b5f309e60c4db06276abb18f50b0f059521ef32d7"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/package-verification-Spark29.json",
+      "bytes": 1134,
+      "sha256": "af43c880bbb0a7e6142629c51367a1ca9bfb87135bda17d5517fedf2b5b9879a"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/package-verification-Spark30.json",
+      "bytes": 1134,
+      "sha256": "af43c880bbb0a7e6142629c51367a1ca9bfb87135bda17d5517fedf2b5b9879a"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runs/two-Spark29/pilot_correctness.json",
+      "bytes": 199,
+      "sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runs/two-Spark29/residue_nll.tsv",
+      "bytes": 191249,
+      "sha256": "6d64e4d3e67cc8e81cda027a7f6485577cb2227b3e940f7bd1cb59abc6a1fbdc"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runs/two-Spark29/scoring_interval.json",
+      "bytes": 320,
+      "sha256": "3db7d26171359925e911e7d0d2efbc831f842c4718e7c4005aa7de9ed6fbe914"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runs/two-Spark29/timings.json",
+      "bytes": 6111,
+      "sha256": "922db57b1000dbff2c135521814700ac13faa80431df2ee992ab231ad77ce9ab"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runs/two-Spark30/pilot_correctness.json",
+      "bytes": 199,
+      "sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runs/two-Spark30/residue_nll.tsv",
+      "bytes": 520480,
+      "sha256": "24664e8364738510a0507112f0c067b7ef36572ad5f5c7c165f6d46c26f96282"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runs/two-Spark30/scoring_interval.json",
+      "bytes": 320,
+      "sha256": "aefb8bd916cec1a3e77481f136e6daf68bf94d025ee419aa8db225e0eb1c03bf"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runs/two-Spark30/timings.json",
+      "bytes": 11889,
+      "sha256": "02a393c94c196d482af2f8851569735e2e87b4361b3c5224d4e19b32aa23b353"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runtime-Spark29.json",
+      "bytes": 421,
+      "sha256": "3026a15c3b52ecaa31e9afeac75bc6c768e89c9bfc4cc1d5ead127c032b3e34c"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/runtime-Spark30.json",
+      "bytes": 421,
+      "sha256": "b544dbe094f814efb05d1c7be528f917d87cf1cb1c234c235d53812cbe7567c6"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/two-Spark29.json",
+      "bytes": 7820,
+      "sha256": "945ee33fe71ee4e11d812741d23bbe1addef88291a85b2de1dfd799fea0e3e4e"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/two-Spark30.json",
+      "bytes": 13879,
+      "sha256": "b9cf93720d3bda20332664039c8310254527f0e5a08327b1377a73ad825bc27e"
+    },
+    {
+      "path": "submission/venue_frontier_v1/evidence/two-merged.tsv",
+      "bytes": 717934,
+      "sha256": "ea043d2df33841260d322caebe2a8939750f0df9818920653008b872ffbfee84"
+    }
+  ],
+  "scope": "This reviewed union delta; manifest and checks excluded from self-hashing"
+}

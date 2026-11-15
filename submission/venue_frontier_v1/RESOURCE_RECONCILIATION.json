@@ -1,0 +1,13 @@
+{
+  "science_workflow_status": "STAGE_STATUS_FINISHED",
+  "all_stages_finished": true,
+  "all_three_job_exits": 0,
+  "additional_scientific_jobs": "NONE",
+  "gpu_jobs_completed_at_utc": [
+    "2026-11-15T17:08:49.834528Z",
+    "2026-11-15T17:08:49.896867Z"
+  ],
+  "node_inventory_followup": "Read-only node show failed with server allocation lookup error; no global inventory or zero-allocation claim",
+  "node_inventory_error": "failed to get workflow stage for allocation: sql: no rows in result set",
+  "cleanup_basis": "Fuzzball final workflow receipt shows every job, export, and volume stage finished without error; no additional job was submitted to inspect cleanup"
+}
