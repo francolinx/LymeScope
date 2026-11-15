@@ -1,0 +1,82 @@
+{
+  "schema": "lymescope.shared_storage_plan.v1",
+  "status": "HOLD_NOT_SUBMITTED",
+  "scientific_commit": "aafe818a20ea025370cf4b65145a9684e80aaaef",
+  "package_path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z",
+  "run_id": "venue-v021-20261115T140000Z",
+  "provisioner": "team15",
+  "volume": "lymescope-project",
+  "volume_id": "01a1dc69-7808-7695-b6d3-f8a3f6e5a437",
+  "provisioner_id_from_historical_volume": "4dfde680-0cc5-3488-9376-7cf20605b12f",
+  "vast_backend": "UNVERIFIED",
+  "live_volume_readback": "TIMEOUT",
+  "object_prefix": "fb://group/lymescope/ospc-v0.2.1/venue-v021-20261115T140000Z",
+  "volume_root": "/project/ospc-v0.2.1/venue-v021-20261115T140000Z",
+  "science": {
+    "archive_bytes": 6543360,
+    "archive_sha256": "bb9d036a96a918c62906398c269858eb12b53aac7c46f5b7f485002c61ada455",
+    "expanded_bytes": 6443982,
+    "regular_files": 106
+  },
+  "model": {
+    "archive_bytes": 31395840,
+    "archive_sha256": "4e24f435628bb2c3b1a1a27664807c5d8c41ce7a94d3c2031b0f96363cb5d9ab",
+    "expanded_bytes": 31387085,
+    "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+    "file_names": [
+      "README.md",
+      "config.json",
+      "model.safetensors",
+      "special_tokens_map.json",
+      "tokenizer_config.json",
+      "vocab.txt"
+    ],
+    "files": [
+      {
+        "name": "README.md",
+        "bytes": 1705,
+        "git_blob_oid": "78b8e54d14b2ccb65a6f3456cc72e603ddd8658d",
+        "sha256": "462a2f24724e19c6be0efab926315c294a863c9a9770e2c8b3d859b2d81a07de"
+      },
+      {
+        "name": "config.json",
+        "bytes": 775,
+        "git_blob_oid": "c2c6e65a87d9d20d47699ae236d605b80c741dd3",
+        "sha256": "facb9355e8252149f6f99dff5fd1e32e890c3c655362b261d0c81cd6b5839c85"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 31384292,
+        "sha256": "24c5fa474c48f3b754b86efe752d5f189d2bcd88190fa2270fc92b2ef3034189"
+      },
+      {
+        "name": "special_tokens_map.json",
+        "bytes": 125,
+        "git_blob_oid": "ba0f9b53dbbf27934f7555e5d31e37bdea9317f1",
+        "sha256": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1"
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 95,
+        "git_blob_oid": "3f0d47e841e1cb75257aeaf76d156802899a217e",
+        "sha256": "7e9161ecdb548ec45a41cbc6b24aa4476fdd418461f491c4207baa99419a29ad"
+      },
+      {
+        "name": "vocab.txt",
+        "bytes": 93,
+        "git_blob_oid": "6b946952cc35537226f07fd70957ee2f848880d2",
+        "sha256": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03"
+      }
+    ]
+  },
+  "output_and_receipt_budget_bytes": 33554432,
+  "incremental_reservation_bytes": 134217728,
+  "historical_quota_bytes": 1073741824,
+  "current_used_bytes": null,
+  "current_free_quota_bytes": null,
+  "scientific_jobs_submitted": 0,
+  "staging_jobs_submitted": 0,
+  "archive_written": false,
+  "peak_payload_plus_output_budget_bytes": 109324699,
+  "peak_quota_percent": 10.181656014174223
+}

@@ -10,6 +10,7 @@ The complete fallback is commit `9e46ec46b85ed2990f89e16cbf6e7aba707e0c95`, prot
 2. Obtain [the single bounded authorization](BOUNDED_VENUE_APPROVAL.md) for event access, transfer and the pilot/one-node/two-node trial. The overnight sprint does not authorize those actions.
 3. Confirm Team 15 access and assigned **physical Spark29 and Spark30**, preserving existing volumes, services and users' workloads. Record the supported scheduler placement method. Do not assume a generic two-worker job guarantees these physical nodes.
 4. Inspect the existing `lymescope-project` volume and already available runtime/image. The historical image is `docker://nvcr.io/nvidia/pytorch:25.11-py3`; this is a starting candidate, not proof of current dependencies or a license to pull/install anything.
+   Use the additive [shared-storage checklist](../workflows/ospc-spark-v0.2.1/STAGING_CHECKLIST.md): confirm VAST identity separately from NFS behavior, existing-volume policy and 128 MiB quota headroom. The preferred prepared route stages one shared cache through Fuzzball object ingress; no new volume is proposed.
 5. Open `docs/index.html` locally and rehearse the four stories before any venue GPU test. Keep the frozen viewer and original PNG/SVG figures available. Browser rendering still needs a real check.
 
 ## 08:00–08:30 — Verify and stage the exact science

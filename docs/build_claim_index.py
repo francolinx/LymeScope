@@ -71,9 +71,9 @@ def build():
         contacts['assemblies'][2],refs=['https://www.rcsb.org/structure/1G5Z','https://doi.org/10.1074/jbc.M010062200'])
     add('C12','Current v2 unknown/unobserved contacts and SASA remain null, distinct from observed false and calculated zero.','DATA_SEMANTICS',[EXP+'/results/laptop_evidence_v1.json',EXP+'/provenance/analysis_corrections.json'],
         'Typed adapter and explicit coordinate status; v2 supersedes the earlier false labels.','The schema suffix evidence.v1 does not mean the superseded comparison_v1 aggregate.')
-    add('C13','CIQ Fuzzball ran a CUDA calculation on Spark30 and verified identical stored bytes on Spark29 and Spark30.','EVENT_INFRASTRUCTURE',[ 'findings/phase-b-results.json'],
+    add('C13','CIQ Fuzzball ran a CUDA calculation on Spark30 and verified identical stored bytes on Spark29 and Spark30.','EVENT_INFRASTRUCTURE',['findings/phase-b-results.json','findings/phase-b-compatibility.json','workflows/ospc-spark-v0.2.1/storage-inspection.json'],
         'Saved CUDA and shared-NFS write/read receipts with physical-node attribution.','Infrastructure proof, not the scientific throughput benchmark. Vendor/backend identity is not established by identical-byte reads alone.',
-        {'cuda':'PASS','shared_storage':'PASS','event_scientific_benchmark':'NOT_RUN'})
+        {'cuda':'PASS','shared_storage':'PASS','historical_storage_driver':'NFS','vast_backend':'UNVERIFIED','current_cli_storage_reads':'TIMEOUT','event_scientific_benchmark':'NOT_RUN'})
     add('C14','The matched event scientific one-node/two-node comparison is prepared but NOT RUN.','PLANNED_WORKFLOW',['workflows/ospc-spark-v0.2.1/trial.HOLD.json'],
         'Spark30 all tasks, then concurrent Spark29/Spark30 shards; identical batch-8 protocol.','Authorization, staging, runtime, placement and venue pilots are gates. No measured speedup.',
         {'one_node_masks':6305,'two_node_masks':[3156,3149],'one_node_calls':805,'two_node_calls':[403,402],'speedup':None},status='NOT_RUN')

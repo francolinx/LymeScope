@@ -1,0 +1,85 @@
+{
+  "schema": "lymescope.storage_inspection.v1",
+  "checked_at": "2026-11-15T09:51:30Z",
+  "scope": "Existing Windows CLI/context only; no context changes or reauthentication",
+  "vast_backend": "UNVERIFIED",
+  "backend_target_visible": false,
+  "backend_target": null,
+  "cli_path": "C:/Users/franc/bin/fuzzball.exe",
+  "cli_version_context": "4.3.1 (existing recorded version; live agent version not refreshed)",
+  "commands": [
+    {
+      "command": "fuzzball volume provisioner list -o json",
+      "status": "TIMEOUT",
+      "timeout_seconds": 12,
+      "server_response_received": false
+    },
+    {
+      "command": "fuzzball volume provisioner info team15 -o json",
+      "status": "TIMEOUT",
+      "timeout_seconds": 12,
+      "server_response_received": false
+    },
+    {
+      "command": "fuzzball volume info team15 lymescope-project -o json",
+      "status": "TIMEOUT",
+      "timeout_seconds": 12,
+      "server_response_received": false
+    },
+    {
+      "command": "fuzzball volume list --provisioner team15",
+      "status": "TIMEOUT",
+      "timeout_seconds": 12,
+      "server_response_received": false
+    }
+  ],
+  "historical": {
+    "driver_type": "NFS",
+    "local": false,
+    "provisioner": "team15",
+    "provisioner_id_from_volume": "4dfde680-0cc5-3488-9376-7cf20605b12f",
+    "volume": "lymescope-project",
+    "volume_id": "01a1dc69-7808-7695-b6d3-f8a3f6e5a437",
+    "volume_status": "VOLUME_STATUS_ENABLED",
+    "persistent": true,
+    "capacity_bytes": 1073741824,
+    "permissions_decimal": 488,
+    "permissions_octal": "0750",
+    "owner_uid": 100036,
+    "owner_gid": 100056,
+    "team15_in_access_policy": true,
+    "sources": [
+      "findings/phase-b-compatibility.json",
+      "findings/phase-b-volume.json",
+      "findings/phase-b-results.json"
+    ]
+  },
+  "current_volume_status": "NOT_READ",
+  "current_used_bytes": null,
+  "current_free_quota_bytes": null,
+  "existing_storage_proof": {
+    "sentinel_bytes": 78,
+    "sha256": "39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d",
+    "writer_physical_node": "CIQ-CHI-SPARK30",
+    "reader_physical_nodes": [
+      "CIQ-CHI-SPARK29",
+      "CIQ-CHI-SPARK30"
+    ],
+    "writer_workflow_id": "2f5d31fa-223c-4f5f-8df4-721fee85309a",
+    "reader_workflow_id": "9d279ac6-741f-48b1-88c3-1a61a0a56aa6",
+    "scientific_workload": false
+  },
+  "staging_uploads": 0,
+  "remote_jobs_submitted": 0,
+  "volumes_created_or_deleted": 0,
+  "credentials_or_internal_addresses_included": false,
+  "local_cli_help_verified": [
+    "object put LOCAL_PATH FB_URI",
+    "object describe FB_URI",
+    "workflow validate FUZZFILE"
+  ],
+  "documentation_sources": [
+    "https://docs.ciq.com/fuzzball/4.2/appendices/workflow-syntax",
+    "https://docs.ciq.com/fuzzball/4.2/volumes/vols-operations/vols-ops-ingress"
+  ]
+}

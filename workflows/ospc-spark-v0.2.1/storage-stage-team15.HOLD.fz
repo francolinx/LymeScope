@@ -1,0 +1,260 @@
+# HOLD: no workflow submission or uploads authorized.
+version: v4
+files:
+  storage-plan.json: |
+    {
+      "schema": "lymescope.shared_storage_plan.v1",
+      "status": "HOLD_NOT_SUBMITTED",
+      "scientific_commit": "aafe818a20ea025370cf4b65145a9684e80aaaef",
+      "package_path": "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z",
+      "run_id": "venue-v021-20261115T140000Z",
+      "provisioner": "team15",
+      "volume": "lymescope-project",
+      "volume_id": "01a1dc69-7808-7695-b6d3-f8a3f6e5a437",
+      "provisioner_id_from_historical_volume": "4dfde680-0cc5-3488-9376-7cf20605b12f",
+      "vast_backend": "UNVERIFIED",
+      "live_volume_readback": "TIMEOUT",
+      "object_prefix": "fb://group/lymescope/ospc-v0.2.1/venue-v021-20261115T140000Z",
+      "volume_root": "/project/ospc-v0.2.1/venue-v021-20261115T140000Z",
+      "science": {
+        "archive_bytes": 6543360,
+        "archive_sha256": "bb9d036a96a918c62906398c269858eb12b53aac7c46f5b7f485002c61ada455",
+        "expanded_bytes": 6443982,
+        "regular_files": 106
+      },
+      "model": {
+        "archive_bytes": 31395840,
+        "archive_sha256": "4e24f435628bb2c3b1a1a27664807c5d8c41ce7a94d3c2031b0f96363cb5d9ab",
+        "expanded_bytes": 31387085,
+        "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+        "file_names": [
+          "README.md",
+          "config.json",
+          "model.safetensors",
+          "special_tokens_map.json",
+          "tokenizer_config.json",
+          "vocab.txt"
+        ],
+        "files": [
+          {
+            "name": "README.md",
+            "bytes": 1705,
+            "git_blob_oid": "78b8e54d14b2ccb65a6f3456cc72e603ddd8658d",
+            "sha256": "462a2f24724e19c6be0efab926315c294a863c9a9770e2c8b3d859b2d81a07de"
+          },
+          {
+            "name": "config.json",
+            "bytes": 775,
+            "git_blob_oid": "c2c6e65a87d9d20d47699ae236d605b80c741dd3",
+            "sha256": "facb9355e8252149f6f99dff5fd1e32e890c3c655362b261d0c81cd6b5839c85"
+          },
+          {
+            "name": "model.safetensors",
+            "bytes": 31384292,
+            "sha256": "24c5fa474c48f3b754b86efe752d5f189d2bcd88190fa2270fc92b2ef3034189"
+          },
+          {
+            "name": "special_tokens_map.json",
+            "bytes": 125,
+            "git_blob_oid": "ba0f9b53dbbf27934f7555e5d31e37bdea9317f1",
+            "sha256": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1"
+          },
+          {
+            "name": "tokenizer_config.json",
+            "bytes": 95,
+            "git_blob_oid": "3f0d47e841e1cb75257aeaf76d156802899a217e",
+            "sha256": "7e9161ecdb548ec45a41cbc6b24aa4476fdd418461f491c4207baa99419a29ad"
+          },
+          {
+            "name": "vocab.txt",
+            "bytes": 93,
+            "git_blob_oid": "6b946952cc35537226f07fd70957ee2f848880d2",
+            "sha256": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03"
+          }
+        ]
+      },
+      "output_and_receipt_budget_bytes": 33554432,
+      "incremental_reservation_bytes": 134217728,
+      "historical_quota_bytes": 1073741824,
+      "current_used_bytes": null,
+      "current_free_quota_bytes": null,
+      "scientific_jobs_submitted": 0,
+      "staging_jobs_submitted": 0,
+      "archive_written": false,
+      "peak_payload_plus_output_budget_bytes": 109324699,
+      "peak_quota_percent": 10.181656014174223
+    }
+  stage_shared.py: |
+    """Prepared storage transport/verification only; never model inference.
+
+    The committed Fuzzfile remains HOLD. This script requires explicit execution
+    selection and operates only in a fresh run directory. Failed partial writes are
+    retained for inspection, never deleted or overwritten.
+    """
+    import argparse
+    import hashlib
+    import json
+    import os
+    from pathlib import Path, PurePosixPath
+    import shutil
+    import subprocess
+    import sys
+    import tarfile
+    import time
+
+
+    def sha(path):
+        digest=hashlib.sha256()
+        with Path(path).open('rb') as stream:
+            for block in iter(lambda:stream.read(1024*1024),b''):digest.update(block)
+        return digest.hexdigest()
+
+
+    def check_archive(path,expected):
+        path=Path(path)
+        if path.is_symlink() or not path.is_file():raise ValueError('Archive must be a regular non-symlink file')
+        if path.stat().st_size!=expected['archive_bytes'] or sha(path)!=expected['archive_sha256']:
+            raise ValueError('Archive size/SHA256 differs from reviewed plan')
+
+
+    def members_checked(archive,kind,package_path,expected_bytes,model_names):
+        members=archive.getmembers();seen=set();file_names=set();size=0
+        for item in members:
+            name=PurePosixPath(item.name)
+            if name.is_absolute() or '..' in name.parts or '\\' in item.name or ':' in item.name or not name.parts:
+                raise ValueError('Unsafe archive path')
+            normalized=name.as_posix()
+            if normalized in seen:raise ValueError('Duplicate archive path')
+            seen.add(normalized)
+            if not(item.isfile() or item.isdir()):raise ValueError('Archive links/devices are forbidden')
+            if kind=='science':
+                allowed=(normalized==package_path or normalized.startswith(package_path+'/')
+                         or item.isdir() and package_path.startswith(normalized+'/'))
+                if not allowed:raise ValueError('File outside pinned scientific package')
+            elif normalized not in model_names or not item.isfile():
+                raise ValueError('Model archive must contain exactly the six reviewed files')
+            if item.isfile():size+=item.size;file_names.add(normalized)
+        if size!=expected_bytes:raise ValueError('Expanded payload size mismatch')
+        if kind=='model' and file_names!=set(model_names):raise ValueError('Missing model files')
+        return members
+
+
+    def extract_new(path,destination,kind,plan):
+        destination=Path(destination)
+        if destination.exists() or destination.is_symlink():raise FileExistsError('Preserve existing extraction destination')
+        expected=plan[kind]
+        with tarfile.open(path,'r:') as archive:
+            members=members_checked(archive,kind,plan['package_path'],expected['expanded_bytes'],plan['model']['file_names'])
+            destination.mkdir()
+            for member in members:
+                target=destination.joinpath(*PurePosixPath(member.name).parts)
+                if member.isdir():target.mkdir(parents=True,exist_ok=True);continue
+                target.parent.mkdir(parents=True,exist_ok=True)
+                with archive.extractfile(member) as source,target.open('xb') as output:
+                    shutil.copyfileobj(source,output,1024*1024);output.flush();os.fsync(output.fileno())
+
+
+    def stage(root,plan):
+        start=time.perf_counter();root=Path(root)
+        if root.is_symlink() or not root.is_dir():raise ValueError('Run root must exist from authorized ingress')
+        root=root.resolve()
+        if {p.name for p in root.iterdir()}!={'incoming'}:raise ValueError('Fresh run root must contain only incoming archives')
+        incoming=root/'incoming'
+        if incoming.is_symlink():raise ValueError('Incoming directory must not be a symlink')
+        if {p.name for p in incoming.iterdir()}!={'science.tar','model.tar'}:raise ValueError('Unexpected incoming files')
+        # Filesystem free space is only an additional guard, not proof of per-volume quota.
+        if shutil.disk_usage(root).free<plan['incremental_reservation_bytes']:
+            raise ValueError('Insufficient filesystem free space; volume quota also requires prior confirmation')
+        t=time.perf_counter()
+        for kind in ('science','model'):check_archive(incoming/(kind+'.tar'),plan[kind])
+        archive_read_s=time.perf_counter()-t
+        t=time.perf_counter()
+        extract_new(incoming/'science.tar',root/'science-tree','science',plan)
+        extract_new(incoming/'model.tar',root/'model','model',plan)
+        extract_write_s=time.perf_counter()-t
+        receipts=root/'receipts';receipts.mkdir()
+        package=root/'science-tree'/plan['package_path']
+        t=time.perf_counter()
+        result=subprocess.run([sys.executable,'-B',str(package/'src/verify_package.py'),
+            '--model-dir',str(root/'model'),'--output',str(receipts/'package-model-verification.json')],
+            cwd=package,capture_output=True,text=True,timeout=90)
+        verify_s=time.perf_counter()-t
+        (receipts/'verification.log').write_text(result.stdout+result.stderr,encoding='utf-8')
+        if result.returncode:raise RuntimeError('Published package/model verification failed; partial artifacts retained')
+        receipt={'schema':'lymescope.shared_storage_staging.v1','status':'STAGED_AND_HASH_VERIFIED',
+            'scientific_commit':plan['scientific_commit'],'model_revision':plan['model']['revision'],
+            'root':str(root),'archive_bytes':sum(plan[k]['archive_bytes'] for k in ('science','model')),
+            'expanded_bytes':sum(plan[k]['expanded_bytes'] for k in ('science','model')),
+            'archive_hash_read_elapsed_s':archive_read_s,'extract_write_and_fsync_elapsed_s':extract_write_s,
+            'published_verification_elapsed_s':verify_s,'staging_process_elapsed_s':time.perf_counter()-start,
+            'model_inference':False,'vast_backend_status':'UNVERIFIED_UNLESS_SEPARATE_PROVIDER_EVIDENCE',
+            'quota_free_space_verified_by_script':False,
+            'timing_limit':'CPU hashing, extraction and fsync included; not raw disk throughput or total workflow makespan',
+            'ingress_stage_timing':'REQUIRES_FUZZBALL_STAGE_RECEIPT',
+            'physical_node':'REQUIRES_SCHEDULER_ATTRIBUTION'}
+        with (receipts/'staging.json').open('x',encoding='utf-8') as stream:
+            json.dump(receipt,stream,indent=2,allow_nan=False);stream.write('\n');stream.flush();os.fsync(stream.fileno())
+        print(json.dumps(receipt,indent=2))
+
+
+    if __name__=='__main__':
+        parser=argparse.ArgumentParser(description=__doc__)
+        parser.add_argument('--plan',required=True,type=Path)
+        parser.add_argument('--root',required=True,type=Path)
+        parser.add_argument('--execute-approved-stage',action='store_true')
+        args=parser.parse_args()
+        if not args.execute_approved_stage:parser.error('HOLD: no staging writes without explicit execution selection')
+        if sys.flags.optimize:parser.error('Published verification assertions require normal Python, not -O')
+        stage(args.root,json.loads(args.plan.read_text(encoding='utf-8')))
+volumes:
+  project:
+    use: team15
+    name: lymescope-project
+    # Ingress is DISABLED: it runs before jobs, so a job guard alone cannot stop it.
+    # After approval, enable the following block in a NEW reviewed execution copy.
+    # ingress:
+    #   - source:
+    #       uri: fuzzball://group/lymescope/ospc-v0.2.1/venue-v021-20261115T140000Z/science.tar
+    #     destination:
+    #       uri: file://ospc-v0.2.1/venue-v021-20261115T140000Z/incoming/science.tar
+    #     policy:
+    #       timeout:
+    #         execute: 2m
+    #   - source:
+    #       uri: fuzzball://group/lymescope/ospc-v0.2.1/venue-v021-20261115T140000Z/model.tar
+    #     destination:
+    #       uri: file://ospc-v0.2.1/venue-v021-20261115T140000Z/incoming/model.tar
+    #     policy:
+    #       timeout:
+    #         execute: 2m
+jobs:
+  stage-and-verify:
+    image:
+      uri: docker://nvcr.io/nvidia/pytorch:25.11-py3
+    resource:
+      cpu:
+        cores: 1
+      memory:
+        size: 1GiB
+      annotations:
+        fuzzball.io/provisioner_definition_id: team15
+    policy:
+      timeout:
+        execute: 2m
+      restart: never
+    env:
+      - HF_HUB_OFFLINE=1
+      - TRANSFORMERS_OFFLINE=1
+      - PYTHONDONTWRITEBYTECODE=1
+    mounts:
+      /project: project
+    files:
+      /opt/lymescope/storage-plan.json: file://storage-plan.json
+      /opt/lymescope/stage_shared.py: file://stage_shared.py
+    script: |
+      #!/bin/bash
+      set -euo pipefail
+      echo "HOLD: staging is not authorized; no project writes performed" >&2
+      exit 78
+      # Unreachable preparation; remove the guard only in an approved execution copy.
+      python3 -B /opt/lymescope/stage_shared.py --plan /opt/lymescope/storage-plan.json --root /project/ospc-v0.2.1/venue-v021-20261115T140000Z --execute-approved-stage

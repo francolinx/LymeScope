@@ -1,0 +1,44 @@
+{
+  "schema": "lymescope.storage_preparation_validation.v1",
+  "base_laptop_commit": "5e6b7cac188b752dcfaa1e26e23e34739e88ed6b",
+  "scientific_source_commit": "aafe818a20ea025370cf4b65145a9684e80aaaef",
+  "execution_kind": "OFFLINE_FIXTURES_AND_READ_ONLY_CLI_ONLY",
+  "storage_tests": {
+    "command": "C:/Users/franc/anaconda3/python.exe -B -m unittest -v test_storage_plan",
+    "cwd": "workflows/ospc-spark-v0.2.1",
+    "passed": 8,
+    "failed": 0,
+    "covers": [
+      "HOLD workflow: existing volume only, no active ingress or GPU request",
+      "inline helper/plan match source files",
+      "byte and quota arithmetic",
+      "safe synthetic extraction",
+      "path traversal, links and duplicate members rejected",
+      "existing destinations preserved",
+      "archive corruption rejected"
+    ],
+    "real_model_or_remote_storage_test": false
+  },
+  "presentation_tests": {
+    "command": "C:/Users/franc/anaconda3/python.exe -B -m unittest -v test_frontier test_presentation",
+    "cwd": "demo/v0.2.0",
+    "passed": 11,
+    "failed": 0
+  },
+  "cli_workflow_validation": {
+    "command": "fuzzball workflow validate workflows/ospc-spark-v0.2.1/storage-stage-team15.HOLD.fz",
+    "status": "TIMEOUT",
+    "timeout_seconds": 12,
+    "server_validation": "NOT_VERIFIED",
+    "workflow_submitted": false
+  },
+  "scientific_tree_preservation": {
+    "frozen_v010_unchanged": true,
+    "published_spark_package_unchanged": true
+  },
+  "remote_uploads": 0,
+  "remote_jobs": 0,
+  "model_downloads": 0,
+  "new_remote_volumes": 0,
+  "status": "PASS_OFFLINE_ONLY; VAST_IDENTITY_AND_LIVE_VOLUME_ACCESS_UNVERIFIED"
+}

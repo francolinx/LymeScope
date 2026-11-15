@@ -10,6 +10,7 @@ Approve Team 15 access and the existing project volume for **one staged correctn
 | Model | Existing six-file `facebook/esm2_t6_8M_UR50D` safetensors cache; revision `c731040fcd8d73dceaa04b0a8e6329b345b0f5df` |
 | Transfer | Reuse the personal-Spark tar, 31,395,840 bytes; SHA256 `4e24f435628bb2c3b1a1a27664807c5d8c41ce7a94d3c2031b0f96363cb5d9ab`. At most **100 MiB of project/model payload total** across both destination copies; record actual bytes and hashes |
 | Destination | Approved project-local cache and new output directories only; no global environment changes or GitHub weight upload |
+| Shared-storage staging | One CPU-only stage/verify job, 1 CPU / 1 GiB / no GPU, 120-second execution cap, existing `team15/lymescope-project` only. Confirm at least 128 MiB quota headroom and permitted model storage. Ingress transfer caps are two minutes per archive; current [HOLD workflow](../workflows/ospc-spark-v0.2.1/storage-stage-team15.HOLD.fz) has ingress disabled |
 | Runtime | Existing verified event image/runtime, starting from the historical PyTorch candidate. Read versions and verify dependencies; **stop and list missing dependencies instead of installing** |
 | Pilot | One Q07337 pilot on each node: 210 scientific masks and 27 scoring calls each; three warm-up and three validation calls per pilot |
 | One-node trial | Spark30: all 6,305 masks / 805 scoring calls |

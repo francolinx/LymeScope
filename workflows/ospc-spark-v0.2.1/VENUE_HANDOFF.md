@@ -8,6 +8,8 @@ Authorize event access and transfer of this existing scientific package plus the
 
 This is a proposed scope, not approval. Nothing has been transferred or executed from the laptop.
 
+Storage addendum: [VAST_STORAGE_PLAN.md](VAST_STORAGE_PLAN.md) and [STAGING_CHECKLIST.md](STAGING_CHECKLIST.md) now specify the existing shared-volume route, exact byte contracts and an inert v4 staging workflow. This prepares a single shared model/package copy; it changes no scientific task or scoring setting. VAST backend identity remains UNVERIFIED, and current live storage reads timed out. No remote write is authorized by that read-only inspection.
+
 ## Stage existing bytes
 
 - Scientific source/data/figures are committed. Preserve their bytes and verify `FILE_MANIFEST.json` with the supplied `src/verify_package.py` in a fresh venue copy.

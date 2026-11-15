@@ -170,6 +170,8 @@ Saved CUDA and shared-NFS write/read receipts with physical-node attribution.
 **Limits:** Infrastructure proof, not the scientific throughput benchmark. Vendor/backend identity is not established by identical-byte reads alone.
 
 - [findings/phase-b-results.json](../findings/phase-b-results.json) · SHA256 `0e85a5ef8a39fe7cdd0e72d5572491e3788f80f84609f73fab3431c18fcacedf`
+- [findings/phase-b-compatibility.json](../findings/phase-b-compatibility.json) · SHA256 `43028ba6d40b1df7e87d81b348436f2024630d483e88226bc7e4b22021b108b8`
+- [workflows/ospc-spark-v0.2.1/storage-inspection.json](../workflows/ospc-spark-v0.2.1/storage-inspection.json) · SHA256 `aa48bbb2527c0df5bb9675316c8cdcc5759a89b756b40cfdc2d91ebe75469e94`
 
 ## C14
 

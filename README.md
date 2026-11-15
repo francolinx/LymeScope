@@ -84,7 +84,7 @@ flowchart LR
   E --- H["Team 15 shared NFS storage"]
 ```
 
-Saved event receipts demonstrate a real CUDA calculation on Spark30 and identical shared-storage bytes read on Spark29 and Spark30. They establish infrastructure, not scientific scaling. VAST is part of the event’s storage context; the recorded NFS test alone does not attribute the backend or measure storage performance. [Receipts / C13](docs/claim-index.md#c13)
+Saved event receipts demonstrate a real CUDA calculation on Spark30 and identical shared-storage bytes read on Spark29 and Spark30. They establish infrastructure, not scientific scaling. **VAST backend identity remains UNVERIFIED.** The saved provisioner is NFS; current CLI reads timed out, and NFS alone does not identify its storage vendor. The [scientific shared-storage plan](workflows/ospc-spark-v0.2.1/VAST_STORAGE_PLAN.md) reuses the existing 1 GiB volume, with exact object-cache ingress, one shared model copy and separate output shards—all **PLANNED**. [VAST evidence and blockers](submission/VAST_EVIDENCE.md) · [Receipts / C13](docs/claim-index.md#c13)
 
 The morning trial reuses the exact batch-8 scorer and existing six-file model cache. Independent GPU task shards are **not** NCCL/RDMA or distributed-model capacity. Physical-node attribution, runtime/pilot checks, exact task coverage, fixed numerical tolerance and complete coordinator makespan are acceptance gates. [Morning runbook](docs/MORNING_RUNBOOK.md) · [Exact venue contract](workflows/ospc-spark-v0.2.1/VENUE_HANDOFF.md) · [C14](docs/claim-index.md#c14)
 

@@ -464,6 +464,18 @@
           "sha256": "0e85a5ef8a39fe7cdd0e72d5572491e3788f80f84609f73fab3431c18fcacedf",
           "bytes": 13429,
           "commit": null
+        },
+        {
+          "path": "findings/phase-b-compatibility.json",
+          "sha256": "43028ba6d40b1df7e87d81b348436f2024630d483e88226bc7e4b22021b108b8",
+          "bytes": 3419,
+          "commit": null
+        },
+        {
+          "path": "workflows/ospc-spark-v0.2.1/storage-inspection.json",
+          "sha256": "aa48bbb2527c0df5bb9675316c8cdcc5759a89b756b40cfdc2d91ebe75469e94",
+          "bytes": 2810,
+          "commit": null
         }
       ],
       "method": "Saved CUDA and shared-NFS write/read receipts with physical-node attribution.",
@@ -474,6 +486,9 @@
       "metrics": {
         "cuda": "PASS",
         "shared_storage": "PASS",
+        "historical_storage_driver": "NFS",
+        "vast_backend": "UNVERIFIED",
+        "current_cli_storage_reads": "TIMEOUT",
         "event_scientific_benchmark": "NOT_RUN"
       }
     },
