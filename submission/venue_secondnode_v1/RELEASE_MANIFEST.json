@@ -1,0 +1,217 @@
+{
+  "schema": "lymescope.public_release_manifest.v1",
+  "base_commit": "8242a29114af0709641366c0ac412491ec1565e1",
+  "scope": "All outgoing reviewed files except this manifest itself. Hashes describe published bytes; original export hashes are in READBACK_RECEIPT.json.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 31825,
+      "sha256": "8d0f21ecd0b263edf3d9500d4d383aa09a8e9ac27709263db20cb94637041ef6"
+    },
+    {
+      "path": "demo/venue-secondnode-v1/index.html",
+      "bytes": 11129,
+      "sha256": "6a0ddee01733a11411cfa965517738396de88c5cdb20e6b3170b9e68c4e451da"
+    },
+    {
+      "path": "docs/claim-index.json",
+      "bytes": 30590,
+      "sha256": "93ffcedb6675f64c69a979ef85ea427d1e4a2559d46e3ab2b85e1a9aab9e810a"
+    },
+    {
+      "path": "docs/claim-index.md",
+      "bytes": 17203,
+      "sha256": "4e4df58d352ea80167fab655a127107c2b3a39fd13b8155421cfa524d50d2dcb"
+    },
+    {
+      "path": "submission/ONE_PAGER.md",
+      "bytes": 4721,
+      "sha256": "6f7c51f192a0013f1f5bd8f1a330c6fad7cbe9b7c804f73a5704c2bd7cea463e"
+    },
+    {
+      "path": "submission/SUBMISSION_CHECKLIST.md",
+      "bytes": 5028,
+      "sha256": "9c2e4803c08c8d5e673d6ce1134e4239a18efabd1ed13cbdd691c0501dbf1049"
+    },
+    {
+      "path": "submission/VAST_EVIDENCE.md",
+      "bytes": 4141,
+      "sha256": "b42e3adea3ed84edb5e0f4879d316ed030113a0f836559686f923d9fe4a55156"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/DEMO_INSERT.md",
+      "bytes": 1208,
+      "sha256": "bec37d17e60f6bb874f2783fd3f63f5fe389df9586a9079ac245774ae1c19e48"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/FILE_COUNT_AND_PREFLIGHT.json",
+      "bytes": 587,
+      "sha256": "deabe57cd7f3e581d62927083dfcf4b7973cf2b3fd9ad14f6cf4e8bc7baa13a5"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/PUBLICATION_PROVENANCE.json",
+      "bytes": 14832,
+      "sha256": "990e7cb180a63e1e5190c5a51add6a79f502feab55f152510661ba6105324a33"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/READBACK_RECEIPT.json",
+      "bytes": 8850,
+      "sha256": "0879041f78dc09aa69517ca1eb16b4a67fccbcb583a899481b4431910f3c2cba"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/RELEASE_CHECKS.json",
+      "bytes": 4772,
+      "sha256": "0e0ac15341c82d2aaeb471adb88ac8f1f937da52aa929633ea48c291a9835bd9"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/RESULT.json",
+      "bytes": 2152,
+      "sha256": "05aa47a6d52fb4aa58de01de02147ecf366e107b2f04c67fa8064585183b1523"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/SPRINT_RESULT.md",
+      "bytes": 8172,
+      "sha256": "2171eb7eba16f28b329b8942336594a0b7e2d0ee0e83dc452226f9676c5654e1"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/TIMING_BREAKDOWN.json",
+      "bytes": 3346,
+      "sha256": "3fc663b0fd8f0fc720b71f09d07a2324d22b99c60980a7e5222443a33d6c0518"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/WORKFLOW_RECEIPT.json",
+      "bytes": 1907,
+      "sha256": "f5590c55f4d9e863e864b2760873db3284a5128d002cf45abe9b59ed37bc54f9"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/WORKLOAD_CHECKS.json",
+      "bytes": 438,
+      "sha256": "121124e808fa44fc1fe2ac67ca9d5f6a3b962e6384922916483d42cd9d2e8cd6"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/matched-result.json",
+      "bytes": 1146,
+      "sha256": "7736ccedfb46160d872277fc79b5341cdbdda00bf072327290a8e91483f514e1"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/one-Spark30.json",
+      "bytes": 17507,
+      "sha256": "b8572bfc90f58192744002ad755af9af7754fb1bb404702940e950e445d0c665"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/one-phase.json",
+      "bytes": 163,
+      "sha256": "30009fd9e5299ae53ce6a43aa2ca52a91ed100b2496a0897c2eec272404d4899"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/pilot-Spark29.json",
+      "bytes": 4967,
+      "sha256": "871d72547b95ba50a6be2713d3641e7cea4303f7788467d1f9d24b796cbde10b"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/one-Spark30/pilot_correctness.json",
+      "bytes": 199,
+      "sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/one-Spark30/residue_nll.tsv",
+      "bytes": 711628,
+      "sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/one-Spark30/scoring_interval.json",
+      "bytes": 247,
+      "sha256": "14e4b3d00c44d2f006ea2851ad5120865edfdb1578a7df4bcb106289997d9438"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/one-Spark30/timings.json",
+      "bytes": 15184,
+      "sha256": "f4e6ea4d47e3e339a6d80612d22a57ccce314d60de2c91b455f5ce1a193dbb16"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/pilot-Spark29/pilot_correctness.json",
+      "bytes": 718,
+      "sha256": "bd2f84e24a4a18c4a901e363d5a65cdb71d6a8e209cc79fe968be9dd0abd805c"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/pilot-Spark29/residue_nll.tsv",
+      "bytes": 23616,
+      "sha256": "c55a8edff430b36c29a6e56068a85ec53ab29f3c79d8e51f09d9e5161f527dda"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/pilot-Spark29/scoring_interval.json",
+      "bytes": 247,
+      "sha256": "1ae835c8b7e11dd06e1762ad5e649a13a7388c51c209fa4d3ca3023420f9d99c"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/pilot-Spark29/timings.json",
+      "bytes": 3225,
+      "sha256": "08081d2f577f5a1f8069bdafdc35ae0db62b83a77dc7893c58914247a1ea778b"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/two-Spark29/pilot_correctness.json",
+      "bytes": 199,
+      "sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/two-Spark29/residue_nll.tsv",
+      "bytes": 357119,
+      "sha256": "e1b208f869c3337b9639a43caa9e63ef7182de34ba95f72018f84b4677e7f77f"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/two-Spark29/scoring_interval.json",
+      "bytes": 246,
+      "sha256": "7e0b95c1937decad7f7e278c87f55ed467d2cf03c1cd1d83e413913d04f77e68"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/two-Spark29/timings.json",
+      "bytes": 8997,
+      "sha256": "8da1ce860b09db993c9779c82b4df3cfd4b11878fd16245de46cc927b37a9761"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/two-Spark30/pilot_correctness.json",
+      "bytes": 199,
+      "sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/two-Spark30/residue_nll.tsv",
+      "bytes": 354610,
+      "sha256": "65649f31b3f2e7a46f72cf1ad0e207d5166e8227ac5a3e54bd29f9ddcf1bd965"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/two-Spark30/scoring_interval.json",
+      "bytes": 247,
+      "sha256": "e7f01b617998abe9261419febcafe88a0544f057722d55453cb2aa79f5fe32ff"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/two-Spark30/timings.json",
+      "bytes": 9002,
+      "sha256": "257d26e4a1b8da65e9102667c5b98477bdfe364c1f21986d4297fdd62f1642d1"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runtime-Spark29.json",
+      "bytes": 420,
+      "sha256": "9a72a7701cdf295fc6e4d85ef6ea8793f9bac9e0ff471e21d932bcf3fea66a5c"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runtime-Spark30.json",
+      "bytes": 421,
+      "sha256": "02c06be72b4e4cf88af999bc5063cafc1bec65225b60ee5f4c07863d5260d94c"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/two-Spark29.json",
+      "bytes": 10758,
+      "sha256": "f831b3878eab5c42f43d3fdf2fa60da707db4e08ec8ecfb7943d5874e99c360c"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/two-Spark30.json",
+      "bytes": 10764,
+      "sha256": "fe60ffa664c174303f30a664bf53a9022ebb85d98c63440e2fe38c1cda8b4a33"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/two-merged.tsv",
+      "bytes": 717934,
+      "sha256": "c3675c9810d650b2358a70fff9e0df5b0d779718b699f22682c4a4ee2595cb69"
+    }
+  ]
+}

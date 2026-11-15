@@ -175,15 +175,19 @@ Saved CUDA and shared-NFS write/read receipts with physical-node attribution.
 
 ## C14
 
-The matched event scientific one-node/two-node comparison is prepared but NOT RUN.
+The original matched event benchmark reproduced all 6,305 tasks exactly with zero saved-score deviation and negative scaling: 52.111 s single-node versus 67.982 s two-node prepared-input coordinator makespan.
 
-**Level:** PLANNED_WORKFLOW · **Status:** NOT_RUN
+**Level:** MEASURED_EVENT_SCIENTIFIC_BENCHMARK · **Status:** VERIFIED_SAVED_EVIDENCE
 
-Spark30 all tasks, then concurrent Spark29/Spark30 shards; identical batch-8 protocol.
+Unchanged batch-8 scorer and pinned model; Spark30 full panel then concurrent Spark29/Spark30 disjoint shards. Exact task coverage and fixed-tolerance comparison against frozen scores.
 
-**Limits:** Authorization, staging, runtime, placement and venue pilots are gates. No measured speedup.
+**Limits:** One prepared-input comparison within one workflow, both workers reserved; Spark29 idle during single-node science. Common staging/export excluded; no separate cold-launch comparison, calibrated UTC clocks, variance estimate or acceleration claim.
 
-- [workflows/ospc-spark-v0.2.1/trial.HOLD.json](../workflows/ospc-spark-v0.2.1/trial.HOLD.json) · SHA256 `7e1d408df0cc974e384cfc7a729539abfb24f6e2917537a29446858c6bdc4a13`
+- [submission/venue_secondnode_v1/RESULT.json](../submission/venue_secondnode_v1/RESULT.json) · SHA256 `05aa47a6d52fb4aa58de01de02147ecf366e107b2f04c67fa8064585183b1523`
+- [submission/venue_secondnode_v1/WORKFLOW_RECEIPT.json](../submission/venue_secondnode_v1/WORKFLOW_RECEIPT.json) · SHA256 `f5590c55f4d9e863e864b2760873db3284a5128d002cf45abe9b59ed37bc54f9`
+- [submission/venue_secondnode_v1/PUBLICATION_PROVENANCE.json](../submission/venue_secondnode_v1/PUBLICATION_PROVENANCE.json) · SHA256 `990e7cb180a63e1e5190c5a51add6a79f502feab55f152510661ba6105324a33`
+
+Historical [NOT RUN trial receipt](../workflows/ospc-spark-v0.2.1/trial.HOLD.json) is preserved unchanged. VAST backing is separately supported by onsite confirmation and scientific readback in the [completed report](../submission/venue_secondnode_v1/SPRINT_RESULT.md).
 
 ## C15
 

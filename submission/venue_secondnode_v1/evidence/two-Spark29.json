@@ -1,0 +1,269 @@
+{
+  "status": "PASS",
+  "mode": "two",
+  "node_by_gpu_inventory": "Spark29",
+  "started_at_utc": "2026-11-15T16:42:08.214707+00:00",
+  "finished_at_utc": "2026-11-15T16:43:15.491403+00:00",
+  "process_and_validation_s": 67.27672402400094,
+  "comparison": {
+    "status": "PASS",
+    "task_count": 3156,
+    "max_absolute_error_nats": 0.0,
+    "max_relative_error": 0.0
+  },
+  "timings": {
+    "device": "NVIDIA GB10",
+    "torch": "2.10.0a0+b558c986e8.nv25.11",
+    "transformers": "5.20.0",
+    "cuda_runtime": "13.0",
+    "model_id": "facebook/esm2_t6_8M_UR50D",
+    "model_revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+    "parameter_count": 7512474,
+    "precision": "float32; TF32 disabled; eager attention; no autocast",
+    "masking": "one independent mask per original residue; all model vocabulary classes in log-softmax",
+    "batch_size": 8,
+    "shards": 2,
+    "shard": 0,
+    "pilot": false,
+    "task_count": 3156,
+    "scoring_masked_examples": 3156,
+    "warmup_masked_examples": 24,
+    "validation_masked_examples": 0,
+    "scoring_forward_passes": 403,
+    "warmup_forward_passes": 3,
+    "validation_forward_passes": 0,
+    "total_forward_passes": 406,
+    "model_load_and_cuda_transfer_s": 2.2784819709995645,
+    "first_forward_after_load_s": 0.6780785549999564,
+    "warmup_forward_s": [
+      0.6780785549999564,
+      0.03600485799870512,
+      0.035282119000839884
+    ],
+    "warm_scoring_wall_s": 42.397250731000895,
+    "end_to_end_wall_s": 50.596552377999615,
+    "peak_gpu_allocated_bytes": 137579008,
+    "peak_gpu_reserved_bytes": 186646528,
+    "process_max_rss_bytes": 1547059200,
+    "sequence_timings": [
+      {
+        "accession": "Q07337",
+        "sequence_sha256": "8939ee76df09336cca51badd169a15d142bcd48b90b928cfcebc1ef733ac1d7e",
+        "scored_positions": "all full-length ungapped standard residues 1..L",
+        "mean_nll_nats": 2.519368981973994,
+        "ppl": 12.420756468957089,
+        "masks": 210,
+        "gpu_inference_plus_logsoftmax_s": 1.1071728069982782,
+        "sequence_wall_s": 1.2405836010002531
+      },
+      {
+        "accession": "Q44977",
+        "sequence_sha256": "aa269b89d1dd5ede930c86d7d48266d13ec37ce76f9a24b9e8e5abdabec071fb",
+        "scored_positions": "all full-length ungapped standard residues 1..L",
+        "mean_nll_nats": 2.435731384264012,
+        "ppl": 11.424171117570886,
+        "masks": 211,
+        "gpu_inference_plus_logsoftmax_s": 1.030901135995009,
+        "sequence_wall_s": 1.1292784189990925
+      },
+      {
+        "accession": "Q9REF7",
+        "sequence_sha256": "162c6d4d7a87b316bd7dfe43a1ae6d6a40ab6473ef245f0bd63d21ae3396dfa6",
+        "scored_positions": "all full-length ungapped standard residues 1..L",
+        "mean_nll_nats": 2.523075514960756,
+        "ppl": 12.466879838620331,
+        "masks": 207,
+        "gpu_inference_plus_logsoftmax_s": 1.484297619001154,
+        "sequence_wall_s": 1.6272231610000745
+      },
+      {
+        "accession": "L0CTI9",
+        "sequence_sha256": "6583cb327ce748ac8b371281c79c013979ac3ff17c69291d98e2dda99c72a106",
+        "scored_positions": "all full-length ungapped standard residues 1..L",
+        "mean_nll_nats": 2.407141058179245,
+        "ppl": 11.10217525657027,
+        "masks": 210,
+        "gpu_inference_plus_logsoftmax_s": 2.927590468003473,
+        "sequence_wall_s": 3.1955032410005515
+      },
+      {
+        "accession": "A0ABR6P7H7",
+        "sequence_sha256": "da3ab838359318cfbc0cb53c9cfb9c063a60fdb8affd0eb3d74e5c3b18ce38dd",
+        "scored_positions": "all full-length ungapped standard residues 1..L",
+        "mean_nll_nats": 2.439896384639998,
+        "ppl": 11.471852021133927,
+        "masks": 212,
+        "gpu_inference_plus_logsoftmax_s": 2.929700700999092,
+        "sequence_wall_s": 3.2019246479994763
+      },
+      {
+        "accession": "A0ABR6PAS3",
+        "sequence_sha256": "dfca37baec8b042c07ea99c437250907d740c45b1fff5dfb195ff2ca12cf800e",
+        "scored_positions": "all full-length ungapped standard residues 1..L",
+        "mean_nll_nats": 2.4929251881303616,
+        "ppl": 12.096609275056824,
+        "masks": 211,
+        "gpu_inference_plus_logsoftmax_s": 2.9341287090064725,
+        "sequence_wall_s": 3.205858041999818
+      },
+      {
+        "accession": "Q44669",
+        "sequence_sha256": "5b779b0fd714cf6b5aa2c5485d4f2a921d952f0f6273384e913252fdab3250d2",
+        "scored_positions": "all full-length ungapped standard residues 1..L",
+        "mean_nll_nats": 2.5247310889655017,
+        "ppl": 12.487536775627138,
+        "masks": 212,
+        "gpu_inference_plus_logsoftmax_s": 2.9296768300027907,
+        "sequence_wall_s": 3.2040041300006123
+      },
+      {
+        "accession": "Q44705",
+        "sequence_sha256": "0d3d9ee1f39eeed86224ba5439dd4692cb4f60306fbfc8f586d5a198c3012f1f",
+        "scored_positions": "all full-length ungapped standard residues 1..L",
+        "mean_nll_nats": 2.4824600022943484,
+        "ppl": 11.970676117306159,
+        "masks": 212,
+        "gpu_inference_plus_logsoftmax_s": 2.9216949620004016,
+        "sequence_wall_s": 3.1994986680001603
+      },
+      {
+        "accession": "Q9Z679",
+        "sequence_sha256": "a9c7f13d858bd843391b30219ab2132a329fc99dbbda265bbab25d5f05fa3e54",
+        "scored_positions": "all full-length ungapped standard residues 1..L",
+        "mean_nll_nats": 2.4747794404722905,
+        "ppl": 11.879086778370668,
+        "masks": 210,
+        "gpu_inference_plus_logsoftmax_s": 2.9268436299953464,
+        "sequence_wall_s": 3.2013215890001447
+      },
+      {
+        "accession": "Q44670",
+        "sequence_sha256": "5cb91e29b75851ffa92f9e89e3d6b96ec0fe15fd4d074ef2ac925ec2cfbdf7bb",
+        "scored_positions": "all full-length ungapped standard residues 1..L",
+        "mean_nll_nats": 2.441831194412239,
+        "ppl": 11.49406935876023,
+        "masks": 212,
+        "gpu_inference_plus_logsoftmax_s": 2.927120987997114,
+        "sequence_wall_s": 3.20317151800009
+      },
+      {
+        "accession": "Q45177",
+        "sequence_sha256": "673360d0cdfc8fbcafab1fbb17209a2d9a98beb14077deda08173349f3c3eba5",
+        "scored_positions": "all full-length ungapped standard residues 1..L",
+        "mean_nll_nats": 2.5302247960721638,
+        "ppl": 12.55632843274829,
+        "masks": 207,
+        "gpu_inference_plus_logsoftmax_s": 2.823788600997432,
+        "sequence_wall_s": 3.0863633649987605
+      },
+      {
+        "accession": "Q49576",
+        "sequence_sha256": "2c0864444f44bb316f11b7b9d80b74748d91655ec1268c0583e941c20417ad06",
+        "scored_positions": "all full-length ungapped standard residues 1..L",
+        "mean_nll_nats": 2.4645431063586782,
+        "ppl": 11.758108719422385,
+        "masks": 211,
+        "gpu_inference_plus_logsoftmax_s": 2.9242523530047038,
+        "sequence_wall_s": 3.201576165000006
+      },
+      {
+        "accession": "Q45178",
+        "sequence_sha256": "0504b0736c985cb5ce61f75ac59c25bac82764ce345090aa40c9fa32ed968121",
+        "scored_positions": "all full-length ungapped standard residues 1..L",
+        "mean_nll_nats": 2.4926420698003358,
+        "ppl": 12.093184988001985,
+        "masks": 210,
+        "gpu_inference_plus_logsoftmax_s": 2.928792971993971,
+        "sequence_wall_s": 3.201792662999651
+      },
+      {
+        "accession": "Q49577",
+        "sequence_sha256": "718425e3d1f03b7e92422b408acbc35130d18d1d6b60f06d8b79ef3f713c832c",
+        "scored_positions": "all full-length ungapped standard residues 1..L",
+        "mean_nll_nats": 2.46018127814764,
+        "ppl": 11.706933558867313,
+        "masks": 211,
+        "gpu_inference_plus_logsoftmax_s": 2.927233847000025,
+        "sequence_wall_s": 3.1996375489998172
+      },
+      {
+        "accession": "Q45647",
+        "sequence_sha256": "3d105b4393b4a9d27eeac47c77749af36b307092cb2a99d7b654b939444ea8da",
+        "scored_positions": "all full-length ungapped standard residues 1..L",
+        "mean_nll_nats": 2.478247022350219,
+        "ppl": 11.92034998483702,
+        "masks": 210,
+        "gpu_inference_plus_logsoftmax_s": 2.930525685002067,
+        "sequence_wall_s": 3.2071687520001433
+      }
+    ],
+    "method_contract_sha256": "78c9126f67ebd4ea3a0d58d28a4c8e926686f72d5dc1270837ff1a598b9ab311",
+    "model_files": [
+      {
+        "name": "README.md",
+        "bytes": 1705,
+        "git_blob_oid": "78b8e54d14b2ccb65a6f3456cc72e603ddd8658d",
+        "sha256": "462a2f24724e19c6be0efab926315c294a863c9a9770e2c8b3d859b2d81a07de"
+      },
+      {
+        "name": "config.json",
+        "bytes": 775,
+        "git_blob_oid": "c2c6e65a87d9d20d47699ae236d605b80c741dd3",
+        "sha256": "facb9355e8252149f6f99dff5fd1e32e890c3c655362b261d0c81cd6b5839c85"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 31384292,
+        "sha256": "24c5fa474c48f3b754b86efe752d5f189d2bcd88190fa2270fc92b2ef3034189"
+      },
+      {
+        "name": "special_tokens_map.json",
+        "bytes": 125,
+        "git_blob_oid": "ba0f9b53dbbf27934f7555e5d31e37bdea9317f1",
+        "sha256": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1"
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 95,
+        "git_blob_oid": "3f0d47e841e1cb75257aeaf76d156802899a217e",
+        "sha256": "7e9161ecdb548ec45a41cbc6b24aa4476fdd418461f491c4207baa99419a29ad"
+      },
+      {
+        "name": "vocab.txt",
+        "bytes": 93,
+        "git_blob_oid": "6b946952cc35537226f07fd70957ee2f848880d2",
+        "sha256": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03"
+      }
+    ],
+    "score_sha256": "e1b208f869c3337b9639a43caa9e63ef7182de34ba95f72018f84b4677e7f77f",
+    "timing_scope": "Personal Spark with existing services; not a matched event-cluster benchmark. Cold load means new process with uncontrolled OS page cache, not guaranteed cold disk."
+  },
+  "persistent_readback": [
+    {
+      "name": "pilot_correctness.json",
+      "bytes": 199,
+      "sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8"
+    },
+    {
+      "name": "residue_nll.tsv",
+      "bytes": 357119,
+      "sha256": "e1b208f869c3337b9639a43caa9e63ef7182de34ba95f72018f84b4677e7f77f"
+    },
+    {
+      "name": "scoring_interval.json",
+      "bytes": 246,
+      "sha256": "7e0b95c1937decad7f7e278c87f55ed467d2cf03c1cd1d83e413913d04f77e68"
+    },
+    {
+      "name": "timings.json",
+      "bytes": 9019,
+      "sha256": "1f7a1a5598aea70a368752209543e36915759aad52a85a7de0f08efe59cf8816"
+    }
+  ],
+  "scoring_interval": {
+    "warm_scoring_started_at_utc": "2026-11-15T16:42:31.227665+00:00",
+    "warm_scoring_started_epoch": 1794760951.227702,
+    "warm_scoring_finished_at_utc": "2026-11-15T16:43:13.624967+00:00",
+    "warm_scoring_finished_epoch": 1794760993.6250281
+  }
+}

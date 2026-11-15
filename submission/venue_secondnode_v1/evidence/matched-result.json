@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "scope": "Prepared-input coordinator phases within one workflow; two workers reserved, Spark29 idle during single-node scoring",
+  "two_started_at_utc": "2026-11-15T16:42:08.017274+00:00",
+  "two_finished_at_utc": "2026-11-15T16:43:15.999534+00:00",
+  "two_coordinator_makespan_s": 67.98228979600026,
+  "one_phase": {
+    "started_at_utc": "2026-11-15T16:41:15.691074+00:00",
+    "finished_at_utc": "2026-11-15T16:42:07.801578+00:00",
+    "coordinator_makespan_s": 52.11052724599904
+  },
+  "merged_comparison": {
+    "status": "PASS",
+    "task_count": 6305,
+    "max_absolute_error_nats": 0.0,
+    "tolerance": "abs(candidate-reference) <= 1e-4 + 1e-5*abs(reference)",
+    "reference_sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+    "candidate_sha256": "c3675c9810d650b2358a70fff9e0df5b0d779718b699f22682c4a4ee2595cb69",
+    "max_relative_error": 0.0,
+    "warm_scoring_overlap_s": 16.233048915863037,
+    "merged_sha256": "c3675c9810d650b2358a70fff9e0df5b0d779718b699f22682c4a4ee2595cb69"
+  },
+  "shared_setup_excluded_from_both_phases": true,
+  "no_whole_workflow_speedup_claim": true
+}

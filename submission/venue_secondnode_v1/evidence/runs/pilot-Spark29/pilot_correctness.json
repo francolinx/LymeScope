@@ -1,0 +1,27 @@
+{
+  "checks": [
+    {
+      "sequence_position": 1,
+      "batch_one_nll": 0.00028896331787109375,
+      "batched_nll": 0.000289159914245829,
+      "absolute_error": 1.9659637473523617e-07
+    },
+    {
+      "sequence_position": 105,
+      "batch_one_nll": 2.3556926250457764,
+      "batched_nll": 2.355691909790039,
+      "absolute_error": 7.152557373046875e-07
+    },
+    {
+      "sequence_position": 210,
+      "batch_one_nll": 3.6744940280914307,
+      "batched_nll": 3.6744930744171143,
+      "absolute_error": 9.5367431640625e-07
+    }
+  ],
+  "status": "PASS",
+  "tokenizer_exact_original_residues": true,
+  "single_mask_each_row": true,
+  "special_tokens_preserved": true,
+  "finite_nonnegative_scores": true
+}

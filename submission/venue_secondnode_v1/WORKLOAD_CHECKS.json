@@ -1,0 +1,18 @@
+{
+  "full_masks": 6305,
+  "full_scoring_calls": 805,
+  "shards": [
+    {
+      "shard": 0,
+      "masks": 3156,
+      "scoring_calls": 403
+    },
+    {
+      "shard": 1,
+      "masks": 3149,
+      "scoring_calls": 402
+    }
+  ],
+  "frozen_scorer_sha256": "bbb127ad43cbef3784f90b11e3e15fadf9c3ca599840926bf07bf1588a4c9a81",
+  "frozen_comparator_sha256": "cfafda3d97a45e895e9a30e9934b3671403572ede21da4b5d66a63ee3aad6ac5"
+}

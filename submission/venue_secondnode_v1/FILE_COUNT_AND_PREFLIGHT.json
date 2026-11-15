@@ -1,0 +1,18 @@
+{
+  "regular_archive_files": 106,
+  "manifest_payload_files": 104,
+  "additional_files": [
+    "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/FILE_MANIFEST.json",
+    "sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/SHA256SUMS"
+  ],
+  "omissions": [],
+  "workflow_sha256": "887b73fc847d6bc796ae80733262da59604872ae50233941a9fafc8314960eba",
+  "checks": [
+    "Python syntax",
+    "existing persistent volume named",
+    "no science ingress",
+    "one existing cached model object ingress",
+    "restart never",
+    "archive manifest exact membership"
+  ]
+}

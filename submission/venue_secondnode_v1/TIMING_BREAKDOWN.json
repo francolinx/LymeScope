@@ -1,0 +1,88 @@
+{
+  "runtime_versions": {
+    "python": "3.12.3 (main, Aug 14 2025, 17:47:21) [GCC 13.3.0]",
+    "torch": "2.10.0a0+b558c986e8.nv25.11",
+    "cuda": "13.0",
+    "transformers": "5.20.0",
+    "tokenizers": "0.23.3",
+    "safetensors": "0.8.0",
+    "numpy": "2.5.4",
+    "scipy": "1.16.3"
+  },
+  "image_cache_hit": true,
+  "image_staging_s": 0.41735,
+  "model_object_ingress_s": 0.831479,
+  "shared_runtime_restore_s": 29.061633,
+  "common_worker_imports_and_gpu_check_s": {
+    "Spark29": 29.99016438400031,
+    "Spark30": 29.810308766000162
+  },
+  "entire_workflow_s": 224.697596,
+  "egress_window_s": 6.542391,
+  "egress_files": 25,
+  "laptop_readback_s": 4.053705199999968,
+  "runs": {
+    "pilot-Spark29": {
+      "task_count": 210,
+      "scoring_forward_passes": 27,
+      "model_load_and_cuda_transfer_s": 2.6108809760007716,
+      "warmup_forward_s": [
+        1.509252045001631,
+        0.035718483000891865,
+        0.03465630299979239
+      ],
+      "warm_scoring_wall_s": 1.3765512450008828,
+      "end_to_end_wall_s": 5.949836534000497,
+      "peak_gpu_allocated_bytes": 136708096,
+      "peak_gpu_reserved_bytes": 182452224,
+      "process_max_rss_bytes": 1610874880
+    },
+    "one-Spark30": {
+      "task_count": 6305,
+      "scoring_forward_passes": 805,
+      "model_load_and_cuda_transfer_s": 2.4200313900000765,
+      "warmup_forward_s": [
+        1.211421498001073,
+        0.03459377100080019,
+        0.0337755130003643
+      ],
+      "warm_scoring_wall_s": 30.22403099300027,
+      "end_to_end_wall_s": 34.082290677000856,
+      "peak_gpu_allocated_bytes": 138363392,
+      "peak_gpu_reserved_bytes": 249561088,
+      "process_max_rss_bytes": 1549561856
+    },
+    "two-Spark29": {
+      "task_count": 3156,
+      "scoring_forward_passes": 403,
+      "model_load_and_cuda_transfer_s": 2.2784819709995645,
+      "warmup_forward_s": [
+        0.6780785549999564,
+        0.03600485799870512,
+        0.035282119000839884
+      ],
+      "warm_scoring_wall_s": 42.397250731000895,
+      "end_to_end_wall_s": 50.596552377999615,
+      "peak_gpu_allocated_bytes": 137579008,
+      "peak_gpu_reserved_bytes": 186646528,
+      "process_max_rss_bytes": 1547059200
+    },
+    "two-Spark30": {
+      "task_count": 3149,
+      "scoring_forward_passes": 402,
+      "model_load_and_cuda_transfer_s": 2.187382644000536,
+      "warmup_forward_s": [
+        0.6757285410003533,
+        0.037146688999200705,
+        0.03600799900050333
+      ],
+      "warm_scoring_wall_s": 16.23305110199908,
+      "end_to_end_wall_s": 24.867257822001193,
+      "peak_gpu_allocated_bytes": 138363392,
+      "peak_gpu_reserved_bytes": 249561088,
+      "process_max_rss_bytes": 1547440128
+    }
+  },
+  "clock_note": "Worker UTC timestamps mark actual scorer warm-loop entry/exit; perf_counter measures durations. Readiness release coordinated before warm loops. No independent clock calibration was performed.",
+  "timing_scope": "One workflow, two prepared-input coordinator phases. Common restoration, initial allocation and final egress reported separately, excluded from both phase ratios. Two workers reserved throughout; Spark29 idle during one-node scoring. Queue/dispatch cannot be separated exactly at subsecond resolution from the available scheduler events."
+}

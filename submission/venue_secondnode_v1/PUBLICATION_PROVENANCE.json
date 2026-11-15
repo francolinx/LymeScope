@@ -1,0 +1,311 @@
+{
+  "schema": "lymescope.verified_fallback_publication.v1",
+  "release": "lymescope-venue-verified-20261115",
+  "base_commit": "8242a29114af0709641366c0ac412491ec1565e1",
+  "completed_workflow_id": "79319e56-f368-4eba-8cae-7c646737b9fc",
+  "workflow_finished_at_utc": "2026-11-15T16:43:33.281543Z",
+  "source_artifact_manifest_sha256": "b927df9c1650b4e347ce11659ece160e7de79bc86a923b2fd83d9bc2dd07d035",
+  "verification": "All 25 original export sizes and SHA256 values independently rechecked against the immutable readback receipt before publication; no scientific jobs run.",
+  "original_export_count": 25,
+  "original_export_bytes": 2250063,
+  "source_documents": [
+    {
+      "path": "submission/venue_secondnode_v1/SPRINT_RESULT.md",
+      "sha256": "af3a4d61173ea859b67e8d7196c61a5eabd545f1f8eee7e9cb65e342ef4d2b3a"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/DEMO_INSERT.md",
+      "sha256": "bec37d17e60f6bb874f2783fd3f63f5fe389df9586a9079ac245774ae1c19e48"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/RESULT.json",
+      "sha256": "05aa47a6d52fb4aa58de01de02147ecf366e107b2f04c67fa8064585183b1523"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/READBACK_RECEIPT.json",
+      "sha256": "0879041f78dc09aa69517ca1eb16b4a67fccbcb583a899481b4431910f3c2cba"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/WORKLOAD_CHECKS.json",
+      "sha256": "121124e808fa44fc1fe2ac67ca9d5f6a3b962e6384922916483d42cd9d2e8cd6"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/TIMING_BREAKDOWN.json",
+      "sha256": "3fc663b0fd8f0fc720b71f09d07a2324d22b99c60980a7e5222443a33d6c0518"
+    }
+  ],
+  "sanitization": "Public report rewritten from original report; scheduler receipt reduced to completed workflow/jobs; host fields and GPU UUIDs removed; physical nodes labeled Spark29/Spark30. Score TSVs, acceptance metrics, model identity and method hashes unchanged. Original hashes refer to original bytes, published hashes to sanitized bytes.",
+  "excluded": "Execution configurations, runtime restoration code, private paths, raw host inventories, transcripts, operational handoffs, model weights and later optimization experiments.",
+  "artifacts": [
+    {
+      "path": "submission/venue_secondnode_v1/evidence/pilot-Spark29.json",
+      "original_sha256": "a379ee6e370f5cd59baff67a7a1558c51af617ecfc5a665a23351b8af4082db2",
+      "original_bytes": 4991,
+      "published_sha256": "871d72547b95ba50a6be2713d3641e7cea4303f7788467d1f9d24b796cbde10b",
+      "published_bytes": 4967,
+      "byte_identical": false,
+      "removed_fields": [
+        "/timings/host"
+      ],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/one-Spark30.json",
+      "original_sha256": "e198c778227dd57f3df218e6796543a43a9e5a834e60b9072c67d355dc91a6b8",
+      "original_bytes": 17531,
+      "published_sha256": "b8572bfc90f58192744002ad755af9af7754fb1bb404702940e950e445d0c665",
+      "published_bytes": 17507,
+      "byte_identical": false,
+      "removed_fields": [
+        "/timings/host"
+      ],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/two-Spark29.json",
+      "original_sha256": "bd26b296190ca30421c63294a750284f3bedc50ae4d562bf585ab33e3c41757f",
+      "original_bytes": 10782,
+      "published_sha256": "f831b3878eab5c42f43d3fdf2fa60da707db4e08ec8ecfb7943d5874e99c360c",
+      "published_bytes": 10758,
+      "byte_identical": false,
+      "removed_fields": [
+        "/timings/host"
+      ],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/two-Spark30.json",
+      "original_sha256": "23396c57b51e288dc79ad2e79108922cb353299553f0687c8fa6c80423a3fb86",
+      "original_bytes": 10788,
+      "published_sha256": "fe60ffa664c174303f30a664bf53a9022ebb85d98c63440e2fe38c1cda8b4a33",
+      "published_bytes": 10764,
+      "byte_identical": false,
+      "removed_fields": [
+        "/timings/host"
+      ],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runtime-Spark29.json",
+      "original_sha256": "e6a35312e81fecb33f67f47dda0c9f3d3417a39c6e4bae6f1fbc31f5be838cc0",
+      "original_bytes": 478,
+      "published_sha256": "9a72a7701cdf295fc6e4d85ef6ea8793f9bac9e0ff471e21d932bcf3fea66a5c",
+      "published_bytes": 420,
+      "byte_identical": false,
+      "removed_fields": [
+        "/gpu_uuid"
+      ],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runtime-Spark30.json",
+      "original_sha256": "ac87a5472f8b97fca5ebac1a08bfce361377ee9ad2e9ec90210c7e6ef14c7431",
+      "original_bytes": 479,
+      "published_sha256": "02c06be72b4e4cf88af999bc5063cafc1bec65225b60ee5f4c07863d5260d94c",
+      "published_bytes": 421,
+      "byte_identical": false,
+      "removed_fields": [
+        "/gpu_uuid"
+      ],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/one-phase.json",
+      "original_sha256": "30009fd9e5299ae53ce6a43aa2ca52a91ed100b2496a0897c2eec272404d4899",
+      "original_bytes": 163,
+      "published_sha256": "30009fd9e5299ae53ce6a43aa2ca52a91ed100b2496a0897c2eec272404d4899",
+      "published_bytes": 163,
+      "byte_identical": true,
+      "removed_fields": [],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/matched-result.json",
+      "original_sha256": "7736ccedfb46160d872277fc79b5341cdbdda00bf072327290a8e91483f514e1",
+      "original_bytes": 1146,
+      "published_sha256": "7736ccedfb46160d872277fc79b5341cdbdda00bf072327290a8e91483f514e1",
+      "published_bytes": 1146,
+      "byte_identical": true,
+      "removed_fields": [],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/two-merged.tsv",
+      "original_sha256": "c3675c9810d650b2358a70fff9e0df5b0d779718b699f22682c4a4ee2595cb69",
+      "original_bytes": 717934,
+      "published_sha256": "c3675c9810d650b2358a70fff9e0df5b0d779718b699f22682c4a4ee2595cb69",
+      "published_bytes": 717934,
+      "byte_identical": true,
+      "removed_fields": [],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/pilot-Spark29/timings.json",
+      "original_sha256": "ecbcdbd5c36856ca536d603f80b7f5a7fea1a02e9318c9f7d2b779c09988e537",
+      "original_bytes": 3247,
+      "published_sha256": "08081d2f577f5a1f8069bdafdc35ae0db62b83a77dc7893c58914247a1ea778b",
+      "published_bytes": 3225,
+      "byte_identical": false,
+      "removed_fields": [
+        "/host"
+      ],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/pilot-Spark29/residue_nll.tsv",
+      "original_sha256": "c55a8edff430b36c29a6e56068a85ec53ab29f3c79d8e51f09d9e5161f527dda",
+      "original_bytes": 23616,
+      "published_sha256": "c55a8edff430b36c29a6e56068a85ec53ab29f3c79d8e51f09d9e5161f527dda",
+      "published_bytes": 23616,
+      "byte_identical": true,
+      "removed_fields": [],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/pilot-Spark29/scoring_interval.json",
+      "original_sha256": "1ae835c8b7e11dd06e1762ad5e649a13a7388c51c209fa4d3ca3023420f9d99c",
+      "original_bytes": 247,
+      "published_sha256": "1ae835c8b7e11dd06e1762ad5e649a13a7388c51c209fa4d3ca3023420f9d99c",
+      "published_bytes": 247,
+      "byte_identical": true,
+      "removed_fields": [],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/pilot-Spark29/pilot_correctness.json",
+      "original_sha256": "bd2f84e24a4a18c4a901e363d5a65cdb71d6a8e209cc79fe968be9dd0abd805c",
+      "original_bytes": 718,
+      "published_sha256": "bd2f84e24a4a18c4a901e363d5a65cdb71d6a8e209cc79fe968be9dd0abd805c",
+      "published_bytes": 718,
+      "byte_identical": true,
+      "removed_fields": [],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/one-Spark30/timings.json",
+      "original_sha256": "6663ef14e0b0d2e064de880f4e6a1384821a226db9fd7efe39771adc5f6acee5",
+      "original_bytes": 15206,
+      "published_sha256": "f4e6ea4d47e3e339a6d80612d22a57ccce314d60de2c91b455f5ce1a193dbb16",
+      "published_bytes": 15184,
+      "byte_identical": false,
+      "removed_fields": [
+        "/host"
+      ],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/one-Spark30/residue_nll.tsv",
+      "original_sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+      "original_bytes": 711628,
+      "published_sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+      "published_bytes": 711628,
+      "byte_identical": true,
+      "removed_fields": [],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/one-Spark30/scoring_interval.json",
+      "original_sha256": "14e4b3d00c44d2f006ea2851ad5120865edfdb1578a7df4bcb106289997d9438",
+      "original_bytes": 247,
+      "published_sha256": "14e4b3d00c44d2f006ea2851ad5120865edfdb1578a7df4bcb106289997d9438",
+      "published_bytes": 247,
+      "byte_identical": true,
+      "removed_fields": [],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/one-Spark30/pilot_correctness.json",
+      "original_sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "original_bytes": 199,
+      "published_sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "published_bytes": 199,
+      "byte_identical": true,
+      "removed_fields": [],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/two-Spark29/timings.json",
+      "original_sha256": "1f7a1a5598aea70a368752209543e36915759aad52a85a7de0f08efe59cf8816",
+      "original_bytes": 9019,
+      "published_sha256": "8da1ce860b09db993c9779c82b4df3cfd4b11878fd16245de46cc927b37a9761",
+      "published_bytes": 8997,
+      "byte_identical": false,
+      "removed_fields": [
+        "/host"
+      ],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/two-Spark29/residue_nll.tsv",
+      "original_sha256": "e1b208f869c3337b9639a43caa9e63ef7182de34ba95f72018f84b4677e7f77f",
+      "original_bytes": 357119,
+      "published_sha256": "e1b208f869c3337b9639a43caa9e63ef7182de34ba95f72018f84b4677e7f77f",
+      "published_bytes": 357119,
+      "byte_identical": true,
+      "removed_fields": [],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/two-Spark29/scoring_interval.json",
+      "original_sha256": "7e0b95c1937decad7f7e278c87f55ed467d2cf03c1cd1d83e413913d04f77e68",
+      "original_bytes": 246,
+      "published_sha256": "7e0b95c1937decad7f7e278c87f55ed467d2cf03c1cd1d83e413913d04f77e68",
+      "published_bytes": 246,
+      "byte_identical": true,
+      "removed_fields": [],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/two-Spark29/pilot_correctness.json",
+      "original_sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "original_bytes": 199,
+      "published_sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "published_bytes": 199,
+      "byte_identical": true,
+      "removed_fields": [],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/two-Spark30/timings.json",
+      "original_sha256": "9f2c3dace57cfa7e1e1427f99678e1f2f2dfa4992f7725cd27519f3a802bce69",
+      "original_bytes": 9024,
+      "published_sha256": "257d26e4a1b8da65e9102667c5b98477bdfe364c1f21986d4297fdd62f1642d1",
+      "published_bytes": 9002,
+      "byte_identical": false,
+      "removed_fields": [
+        "/host"
+      ],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/two-Spark30/residue_nll.tsv",
+      "original_sha256": "65649f31b3f2e7a46f72cf1ad0e207d5166e8227ac5a3e54bd29f9ddcf1bd965",
+      "original_bytes": 354610,
+      "published_sha256": "65649f31b3f2e7a46f72cf1ad0e207d5166e8227ac5a3e54bd29f9ddcf1bd965",
+      "published_bytes": 354610,
+      "byte_identical": true,
+      "removed_fields": [],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/two-Spark30/scoring_interval.json",
+      "original_sha256": "e7f01b617998abe9261419febcafe88a0544f057722d55453cb2aa79f5fe32ff",
+      "original_bytes": 247,
+      "published_sha256": "e7f01b617998abe9261419febcafe88a0544f057722d55453cb2aa79f5fe32ff",
+      "published_bytes": 247,
+      "byte_identical": true,
+      "removed_fields": [],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    },
+    {
+      "path": "submission/venue_secondnode_v1/evidence/runs/two-Spark30/pilot_correctness.json",
+      "original_sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "original_bytes": 199,
+      "published_sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "published_bytes": 199,
+      "byte_identical": true,
+      "removed_fields": [],
+      "node_labels": "Public Spark29/Spark30 labels; no GPU UUID or container hostname"
+    }
+  ]
+}

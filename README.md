@@ -17,6 +17,26 @@ LymeScope focuses on **OspC, outer surface protein C**, a Borrelia surface antig
 
 *Original saved scientific output. Lower NLL means more predictable under the pinned checkpoint. Incomplete columns remain visible and are excluded from full-coverage ranks. [Full-size SVG](sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_agreement_predictability.svg) · [Exact data](sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_comparison_v2/column_comparison.tsv).*
 
+## Verified event results — November 15, 2026
+
+**The first validated full event benchmark completed at 10:43:33 AM Central on physical Spark29 and Spark30 NVIDIA GB10s.** All **6,305 original scientific tasks** completed exactly once, with **zero saved-score deviation** from the frozen reference and **16.233 seconds of overlapping scoring**.
+
+The two-node workload reproduced all 6,305 scientific evaluations exactly, but took longer than the single-node baseline in this measurement.
+
+| Measured scope | One node: Spark30 | Two nodes: Spark29 + Spark30 |
+|---|---:|---:|
+| Warm scoring wall time | **30.224031 s** | **42.397251 s** (maximum shard) |
+| Spark29 shard warm scoring | — | **42.397251 s** |
+| Spark30 shard warm scoring | — | **16.233051 s** |
+| Prepared-input coordinator makespan | **52.110527 s** | **67.982290 s** |
+| Original tasks / scoring forwards | 6,305 / 805 | 3,156 + 3,149 / 403 + 402 |
+
+**Negative scaling: two nodes took 30.5% longer.** The single/two coordinator time ratio was **0.767×**, below parity; no acceleration is claimed. Both phases shared one workflow and prepared inputs, with both workers reserved and Spark29 idle during the single-node phase. Coordinator timings include startup, model loading, scoring, output writing, readback/validation and the two-node merge; common staging and final export are excluded. Separate cold-launch workflow comparisons were not measured. Node asymmetry and timing variance remain unresolved.
+
+All **25 exported artifacts** passed independent hash/readback verification. **VAST backing was confirmed onsite**, and actual scientific persistence was verified; no storage-throughput claim is made. The original biology, pinned model and negative B11 result below are unchanged.
+
+[Sanitized event report](submission/venue_secondnode_v1/SPRINT_RESULT.md) · [Exact acceptance data](submission/venue_secondnode_v1/RESULT.json) · [Completed workflow receipt](submission/venue_secondnode_v1/WORKFLOW_RECEIPT.json) · [Readback and publication provenance](submission/venue_secondnode_v1/PUBLICATION_PROVENANCE.json) · [Completed demo insert](submission/venue_secondnode_v1/DEMO_INSERT.md) · [Offline display with timing bars (HTML source)](demo/venue-secondnode-v1/index.html). The HTML runs from a local checkout; this link is not a hosted web app. This release covers only workflow `79319e56-f368-4eba-8cae-7c646737b9fc` and its preserved pilot evidence, not subsequent optimization.
+
 ## How to read the evidence
 
 | Label | Meaning here |
@@ -28,7 +48,7 @@ LymeScope focuses on **OspC, outer surface protein C**, a Borrelia surface antig
 | **PLANNED** | A prepared workflow or research proposal, not a completed measurement |
 | **NOT RUN** | No result exists for that execution; a placeholder is not evidence |
 
-**UNVERIFIED** marks an unresolved identity or observation, such as the VAST backend. A result may be measured on a personal Spark while its biological interpretation remains exploratory.
+**UNVERIFIED** marks an unresolved observation, such as the cause of the measured node-performance asymmetry. A result may be measured on a personal Spark while its biological interpretation remains exploratory.
 
 | Guided story | Inspect | Evidence boundary |
 |---|---|---|
@@ -51,7 +71,7 @@ LymeScope focuses on **OspC, outer surface protein C**, a Borrelia surface antig
 | Sensitivity | **239** overlapping subsets | 30 leave-one-out, 200 half-panels, nine metadata-group omissions; zero additional model calls |
 | 1GGQ dimer geometry | **118** contact pairs; **51** residues/partner at ≤4.5 Å | OspC–OspC contacts, not antibody contacts |
 | Calculated SASA loss | **4,081.16 Å²** total; **2,040.58 Å²** mean partner interface | 1.40 Å probe; 1,920 points/atom; static incomplete construct |
-| Matched event scientific benchmark | **NOT RUN** | No measured one-node/two-node speedup |
+| Matched event scientific benchmark | **VERIFIED: exact reproduction, negative scaling** | 52.111 s one node / 67.982 s two nodes; prepared-input phases |
 
 [C02](docs/claim-index.md#c02) · [C04–C05](docs/claim-index.md#c04) · [C07](docs/claim-index.md#c07) · [C09–C10](docs/claim-index.md#c09) · [Original SASA figure](sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/calculated_sasa_dimer_context.svg)
 
@@ -162,26 +182,16 @@ flowchart LR
   A["Frozen panel + explicit mapping"] --> B["Personal NVIDIA GB10: completed ESM-2"]
   B --> C["Pinned scientific evidence in Git"]
   C --> D["Offline guided workbench"]
-  C -. "Authorized staging pending" .-> E["CIQ Fuzzball / Team 15"]
-  E -. "Scientific trial pending" .-> F["Spark30: 6,305 masks"]
-  E -. "Concurrent trial pending" .-> G["Spark29 + Spark30: 3,156 / 3,149"]
-  E --- H["Team 15 shared NFS storage"]
+  C --> E["CIQ Fuzzball: verified original event benchmark"]
+  E --> F["Spark30: 6,305 masks"]
+  E --> G["Concurrent Spark29 + Spark30: 3,156 / 3,149"]
+  E --- H["Staff-confirmed VAST: scientific inputs/results"]
+  E --- I["Pinned model: separate ephemeral storage"]
 ```
 
-Saved event receipts demonstrate a real CUDA calculation on Spark30 and identical shared-storage bytes read on Spark29 and Spark30. They establish infrastructure, not scientific scaling. **VAST backend identity remains UNVERIFIED.** The saved provisioner is NFS; current CLI reads timed out, and NFS alone does not identify its storage vendor. The [scientific shared-storage plan](workflows/ospc-spark-v0.2.1/VAST_STORAGE_PLAN.md) reuses the existing 1 GiB volume, with exact object-cache ingress, one shared model copy and separate output shards—all **PLANNED**. [VAST evidence and blockers](submission/VAST_EVIDENCE.md) · [Receipts / C13](docs/claim-index.md#c13)
+The [verified results above](#verified-event-results--november-15-2026) supersede the earlier event-status placeholders. Both 210-mask correctness pilots passed; the full panel and merged shards matched the frozen reference exactly under `abs(candidate-reference) <= 1e-4 + 1e-5*abs(reference)`. Three warm-up forwards per process are separate. Batch 8, the frozen scorer and the pinned six-file checkpoint were unchanged. Independent task shards do not establish NCCL/RDMA performance or distributed-model capacity.
 
-**MEASURED infrastructure evidence:** Fuzzball scheduled a CUDA matrix operation on physical Spark30's NVIDIA GB10; `ones(32,32) @ ones(32,32)` produced a summed result of **32,768** on `cuda:0`. A **78-byte** persistent sentinel written by Spark30 was read with identical SHA256 on both Spark29 and Spark30. Those receipts demonstrate GPU execution and shared-storage consistency, not a scientific throughput speedup. The event runtime receipt records PyTorch 2.10.0a0, CUDA 13.0 and an image-cache hit. [Original event receipts](findings/phase-b-results.json)
-
-The proposed scientific storage path is: verified inputs and the pinned model cache → existing Team 15 shared volume (**VAST backing unverified**) → Fuzzball tasks on Spark29/Spark30 → separate persistent output shards → exact merge/numerical validation → LymeScope evidence. Every scientific transfer/run on this path is **PLANNED**. No new volume or storage tuning is required by this plan.
-
-| Current exact trial | Physical node(s) | Successful masks required | Scoring forwards |
-|---|---|---:|---:|
-| **NOT RUN · one node** | Spark30 | 6,305 | 805 |
-| **NOT RUN · two concurrent shards** | Spark29 / Spark30 | 3,156 / 3,149 | 403 / 402 |
-
-Three warm-up calls per process are separate. First pass the 210-position Q07337 pilot on each actual runtime, then require identical tasks/hashes and numerical agreement within `abs(error) <= 1e-4 + 1e-5*abs(reference)`. Record queue/startup, staging, model load/transfer, warm compute, output writes, merge and total coordinator makespan separately. No event speedup exists yet; negative scaling would be reported honestly.
-
-The morning trial reuses the exact batch-8 scorer and existing six-file model cache. Independent GPU task shards are **not** NCCL/RDMA or distributed-model capacity. Physical-node attribution, runtime/pilot checks, exact task coverage, fixed numerical tolerance and complete coordinator makespan are acceptance gates. [Morning runbook](docs/MORNING_RUNBOOK.md) · [Exact venue contract](workflows/ospc-spark-v0.2.1/VENUE_HANDOFF.md) · [C14](docs/claim-index.md#c14)
+The [original CUDA/sentinel receipts](findings/phase-b-results.json), [morning runbook](docs/MORNING_RUNBOOK.md), [venue contract](workflows/ospc-spark-v0.2.1/VENUE_HANDOFF.md) and HOLD workflows remain historical preparation/infrastructure evidence. Their NOT RUN labels describe those earlier artifacts. The current result is in the [sanitized event report](submission/venue_secondnode_v1/SPRINT_RESULT.md); no later optimization is included in this fallback.
 
 ## Challenge, reproduce, inspect
 
@@ -209,9 +219,9 @@ This selected 30-sequence panel is unweighted and alignment-dependent; correlate
 | Personal-Spark ESM-2 full panel | **MEASURED**, 6,305 masks; 9.909 s warm GPU scoring |
 | Experimental dimer geometry and SASA | **VERIFIED EXPERIMENTAL STRUCTURE / CALCULATED**, with missingness |
 | Antibody mapping and added-discordance diagnostic | **CALCULATED / EXPLORATORY**, primary result negative |
-| Event CUDA operation and shared-byte reads | **MEASURED infrastructure only** |
-| Event identical one/two-node scientific benchmark | **PLANNED / NOT RUN** |
-| VAST vendor/backend identity | **UNVERIFIED** |
+| Event CUDA operation and shared-byte reads | **MEASURED historical infrastructure evidence** |
+| Event identical one/two-node scientific benchmark | **VERIFIED**, 6,305 exact tasks; zero deviation; negative scaling |
+| VAST vendor/backend identity | **CONFIRMED onsite**; scientific I/O/readback verified; no throughput claim |
 | README/workbench browser rendering and Pages hosting | **NOT VERIFIED / not enabled** |
 
 The source code and saved evidence allow scrutiny without treating a proposed application as an established result. Original structure investigators, the [UniProt Consortium](https://www.uniprot.org/help/publications), [MAFFT authors](https://doi.org/10.1093/molbev/mst010) and Meta FAIR are credited. [PDB archive data are CC0](https://www.rcsb.org/pages/policies); [UniProt content carries attribution terms](https://rest.uniprot.org/help/license). Paper content has its own rights; no project license is invented. Organizer eligibility and submission-route confirmation remain open checklist items.

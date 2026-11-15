@@ -1,0 +1,53 @@
+{
+  "schema": "lymescope.second_node.local_acceptance.v1",
+  "status": "PASS",
+  "recorded_at_utc": "2026-11-15T16:44:54.291948+00:00",
+  "pilot_comparison": {
+    "status": "PASS",
+    "task_count": 210,
+    "max_absolute_error_nats": 0.0,
+    "tolerance": "abs(candidate-reference) <= 1e-4 + 1e-5*abs(reference)",
+    "reference_sha256": "c55a8edff430b36c29a6e56068a85ec53ab29f3c79d8e51f09d9e5161f527dda",
+    "candidate_sha256": "c55a8edff430b36c29a6e56068a85ec53ab29f3c79d8e51f09d9e5161f527dda"
+  },
+  "single_vs_frozen_reference": {
+    "status": "PASS",
+    "task_count": 6305,
+    "max_absolute_error_nats": 0.0,
+    "tolerance": "abs(candidate-reference) <= 1e-4 + 1e-5*abs(reference)",
+    "reference_sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+    "candidate_sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f"
+  },
+  "merged_vs_single": {
+    "status": "PASS",
+    "task_count": 6305,
+    "max_absolute_error_nats": 0.0,
+    "tolerance": "abs(candidate-reference) <= 1e-4 + 1e-5*abs(reference)",
+    "reference_sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+    "candidate_sha256": "c3675c9810d650b2358a70fff9e0df5b0d779718b699f22682c4a4ee2595cb69"
+  },
+  "max_relative_error": 0.0,
+  "exact_tasks": 6305,
+  "duplicates": 0,
+  "missing": 0,
+  "shard_task_counts": [
+    3156,
+    3149
+  ],
+  "scoring_overlap_s": 16.233048915863037,
+  "single_warm_scoring_s": 30.22403099300027,
+  "two_max_warm_scoring_s": 42.397250731000895,
+  "warm_scoring_speedup": 0.7128771434912982,
+  "single_coordinator_s": 52.11052724599904,
+  "two_coordinator_s": 67.98228979600026,
+  "coordinator_speedup": 0.7665309215439955,
+  "coordinator_slowdown_percent": 30.457881331875857,
+  "scope": "Prepared-input phases within one workflow; common staging excluded from both; Spark29 worker reserved but idle for single-node science; no cold-launch end-to-end speedup claim",
+  "gpu_inference_and_logsoftmax_s": {
+    "single": 27.568537385992386,
+    "two_shards": [
+      38.65372130799733,
+      14.759241211986591
+    ]
+  }
+}

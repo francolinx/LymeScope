@@ -1,0 +1,53 @@
+{
+  "schema": "lymescope.public_workflow_receipt.v1",
+  "workflow_status": "STAGE_STATUS_FINISHED",
+  "source_sha256": "f1eea2b0ce291a190d31475bf526a6f0cfe11d9f4b44d0afa5857ce69c98f56d",
+  "scope": "Sanitized extract of completed workflow and three jobs. Storage/image/file stage paths and unrelated operational identifiers omitted. Timings and exit codes unchanged.",
+  "stages": [
+    {
+      "id": "79319e56-f368-4eba-8cae-7c646737b9fc",
+      "kind": "STAGE_KIND_WORKFLOW",
+      "name": "79319e56-f368-4eba-8cae-7c646737b9fc",
+      "status": "STAGE_STATUS_FINISHED",
+      "startTime": "2026-11-15T16:39:48.583947Z",
+      "endTime": "2026-11-15T16:43:33.281543Z",
+      "duration_s": 224.697596,
+      "physical_node": null
+    },
+    {
+      "id": "ce0814b4-d6e2-57a8-8312-910e9421cea7",
+      "kind": "STAGE_KIND_JOB",
+      "name": "stage-runtime",
+      "status": "STAGE_STATUS_FINISHED",
+      "startTime": "2026-11-15T16:39:50.767886Z",
+      "endTime": "2026-11-15T16:40:19.829519Z",
+      "duration_s": 29.061633,
+      "physical_node": "Spark30",
+      "exit_code": "0"
+    },
+    {
+      "id": "3cb9809a-e25c-5aba-a112-48b6727f0a6d",
+      "kind": "STAGE_KIND_JOB",
+      "name": "worker-a",
+      "status": "STAGE_STATUS_FINISHED",
+      "startTime": "2026-11-15T16:40:20.650634Z",
+      "endTime": "2026-11-15T16:43:17.938046Z",
+      "duration_s": 177.287412,
+      "physical_node": "Spark29",
+      "exit_code": "0"
+    },
+    {
+      "id": "408e7d1c-34e5-5011-9610-a17e1ad551b5",
+      "kind": "STAGE_KIND_JOB",
+      "name": "worker-b",
+      "status": "STAGE_STATUS_FINISHED",
+      "startTime": "2026-11-15T16:40:20.595168Z",
+      "endTime": "2026-11-15T16:43:17.385455Z",
+      "duration_s": 176.790287,
+      "physical_node": "Spark30",
+      "exit_code": "0"
+    }
+  ],
+  "cleanup_warnings": [],
+  "preserved_Spark30_pilot_workflow_id": "37c34002-2578-4fe5-ac48-8798147235d3"
+}

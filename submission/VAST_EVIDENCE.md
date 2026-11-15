@@ -1,5 +1,11 @@
 # VAST / shared-storage evidence
 
+**Current result — November 15, 2026:** VAST backing confirmed by onsite staff; scientific inputs/results persisted and all 25 exported artifacts passed independent hash/readback verification. The original matched event workload completed with exact reproduction and negative scaling. Model weights used separate ephemeral storage. Effective quota and storage throughput were not independently measured. [Completed report](venue_secondnode_v1/SPRINT_RESULT.md) · [Readback receipt](venue_secondnode_v1/READBACK_RECEIPT.json).
+
+## Historical pre-execution plan (superseded status)
+
+The text below records the earlier preparation state; its NOT RUN, quota estimates and pending confirmations are historical, not the current result.
+
 **VAST backend: UNVERIFIED. Scientific storage integration: PREPARED, NOT RUN.**
 
 The existing Team 15 persistent volume is meaningful infrastructure: Spark30 wrote a 78-byte sentinel and both Spark29 and Spark30 read the identical SHA256, `39fdbdc8e6d379b229fbab22b10b75fb803d6a257df97604adebe9a2d9be870d`. The writer workflow is `2f5d31fa-223c-4f5f-8df4-721fee85309a`; the reader workflow is `9d279ac6-741f-48b1-88c3-1a61a0a56aa6`. Those completed tests did not run the protein-model workload or measure storage bandwidth.

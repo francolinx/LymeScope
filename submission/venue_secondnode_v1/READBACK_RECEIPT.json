@@ -1,0 +1,207 @@
+{
+  "workflow_id": "79319e56-f368-4eba-8cae-7c646737b9fc",
+  "recorded_at_utc": "2026-11-15T16:44:13.961876+00:00",
+  "laptop_transfer_and_hash_readback_s": 4.053705199999968,
+  "files": [
+    {
+      "file": "pilot-Spark29.json",
+      "bytes": 4991,
+      "sha256": "a379ee6e370f5cd59baff67a7a1558c51af617ecfc5a665a23351b8af4082db2",
+      "object_digest": "sha256:a379ee6e370f5cd59baff67a7a1558c51af617ecfc5a665a23351b8af4082db2",
+      "laptop_readback_pass": true,
+      "download_s": 0.5554603999989922
+    },
+    {
+      "file": "one-Spark30.json",
+      "bytes": 17531,
+      "sha256": "e198c778227dd57f3df218e6796543a43a9e5a834e60b9072c67d355dc91a6b8",
+      "object_digest": "sha256:e198c778227dd57f3df218e6796543a43a9e5a834e60b9072c67d355dc91a6b8",
+      "laptop_readback_pass": true,
+      "download_s": 0.5519442000004346
+    },
+    {
+      "file": "two-Spark29.json",
+      "bytes": 10782,
+      "sha256": "bd26b296190ca30421c63294a750284f3bedc50ae4d562bf585ab33e3c41757f",
+      "object_digest": "sha256:bd26b296190ca30421c63294a750284f3bedc50ae4d562bf585ab33e3c41757f",
+      "laptop_readback_pass": true,
+      "download_s": 0.5788975000032224
+    },
+    {
+      "file": "two-Spark30.json",
+      "bytes": 10788,
+      "sha256": "23396c57b51e288dc79ad2e79108922cb353299553f0687c8fa6c80423a3fb86",
+      "object_digest": "sha256:23396c57b51e288dc79ad2e79108922cb353299553f0687c8fa6c80423a3fb86",
+      "laptop_readback_pass": true,
+      "download_s": 0.5481921999962651
+    },
+    {
+      "file": "runtime-Spark29.json",
+      "bytes": 478,
+      "sha256": "e6a35312e81fecb33f67f47dda0c9f3d3417a39c6e4bae6f1fbc31f5be838cc0",
+      "object_digest": "sha256:e6a35312e81fecb33f67f47dda0c9f3d3417a39c6e4bae6f1fbc31f5be838cc0",
+      "laptop_readback_pass": true,
+      "download_s": 0.2444441999978153
+    },
+    {
+      "file": "runtime-Spark30.json",
+      "bytes": 479,
+      "sha256": "ac87a5472f8b97fca5ebac1a08bfce361377ee9ad2e9ec90210c7e6ef14c7431",
+      "object_digest": "sha256:ac87a5472f8b97fca5ebac1a08bfce361377ee9ad2e9ec90210c7e6ef14c7431",
+      "laptop_readback_pass": true,
+      "download_s": 0.20490919999429025
+    },
+    {
+      "file": "one-phase.json",
+      "bytes": 163,
+      "sha256": "30009fd9e5299ae53ce6a43aa2ca52a91ed100b2496a0897c2eec272404d4899",
+      "object_digest": "sha256:30009fd9e5299ae53ce6a43aa2ca52a91ed100b2496a0897c2eec272404d4899",
+      "laptop_readback_pass": true,
+      "download_s": 0.23243150000052992
+    },
+    {
+      "file": "matched-result.json",
+      "bytes": 1146,
+      "sha256": "7736ccedfb46160d872277fc79b5341cdbdda00bf072327290a8e91483f514e1",
+      "object_digest": "sha256:7736ccedfb46160d872277fc79b5341cdbdda00bf072327290a8e91483f514e1",
+      "laptop_readback_pass": true,
+      "download_s": 0.20379919999686535
+    },
+    {
+      "file": "two-merged.tsv",
+      "bytes": 717934,
+      "sha256": "c3675c9810d650b2358a70fff9e0df5b0d779718b699f22682c4a4ee2595cb69",
+      "object_digest": "sha256:c3675c9810d650b2358a70fff9e0df5b0d779718b699f22682c4a4ee2595cb69",
+      "laptop_readback_pass": true,
+      "download_s": 0.2195332999981474
+    },
+    {
+      "file": "runs/pilot-Spark29/timings.json",
+      "bytes": 3247,
+      "sha256": "ecbcdbd5c36856ca536d603f80b7f5a7fea1a02e9318c9f7d2b779c09988e537",
+      "object_digest": "sha256:ecbcdbd5c36856ca536d603f80b7f5a7fea1a02e9318c9f7d2b779c09988e537",
+      "laptop_readback_pass": true,
+      "download_s": 0.21995400000014342
+    },
+    {
+      "file": "runs/pilot-Spark29/residue_nll.tsv",
+      "bytes": 23616,
+      "sha256": "c55a8edff430b36c29a6e56068a85ec53ab29f3c79d8e51f09d9e5161f527dda",
+      "object_digest": "sha256:c55a8edff430b36c29a6e56068a85ec53ab29f3c79d8e51f09d9e5161f527dda",
+      "laptop_readback_pass": true,
+      "download_s": 0.21714570000040112
+    },
+    {
+      "file": "runs/pilot-Spark29/scoring_interval.json",
+      "bytes": 247,
+      "sha256": "1ae835c8b7e11dd06e1762ad5e649a13a7388c51c209fa4d3ca3023420f9d99c",
+      "object_digest": "sha256:1ae835c8b7e11dd06e1762ad5e649a13a7388c51c209fa4d3ca3023420f9d99c",
+      "laptop_readback_pass": true,
+      "download_s": 0.18435939999471884
+    },
+    {
+      "file": "runs/pilot-Spark29/pilot_correctness.json",
+      "bytes": 718,
+      "sha256": "bd2f84e24a4a18c4a901e363d5a65cdb71d6a8e209cc79fe968be9dd0abd805c",
+      "object_digest": "sha256:bd2f84e24a4a18c4a901e363d5a65cdb71d6a8e209cc79fe968be9dd0abd805c",
+      "laptop_readback_pass": true,
+      "download_s": 0.1949938999969163
+    },
+    {
+      "file": "runs/one-Spark30/timings.json",
+      "bytes": 15206,
+      "sha256": "6663ef14e0b0d2e064de880f4e6a1384821a226db9fd7efe39771adc5f6acee5",
+      "object_digest": "sha256:6663ef14e0b0d2e064de880f4e6a1384821a226db9fd7efe39771adc5f6acee5",
+      "laptop_readback_pass": true,
+      "download_s": 0.19762030000129016
+    },
+    {
+      "file": "runs/one-Spark30/residue_nll.tsv",
+      "bytes": 711628,
+      "sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+      "object_digest": "sha256:b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+      "laptop_readback_pass": true,
+      "download_s": 0.2688057999985176
+    },
+    {
+      "file": "runs/one-Spark30/scoring_interval.json",
+      "bytes": 247,
+      "sha256": "14e4b3d00c44d2f006ea2851ad5120865edfdb1578a7df4bcb106289997d9438",
+      "object_digest": "sha256:14e4b3d00c44d2f006ea2851ad5120865edfdb1578a7df4bcb106289997d9438",
+      "laptop_readback_pass": true,
+      "download_s": 0.19369929999811575
+    },
+    {
+      "file": "runs/one-Spark30/pilot_correctness.json",
+      "bytes": 199,
+      "sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "object_digest": "sha256:2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "laptop_readback_pass": true,
+      "download_s": 0.21959110000170767
+    },
+    {
+      "file": "runs/two-Spark29/timings.json",
+      "bytes": 9019,
+      "sha256": "1f7a1a5598aea70a368752209543e36915759aad52a85a7de0f08efe59cf8816",
+      "object_digest": "sha256:1f7a1a5598aea70a368752209543e36915759aad52a85a7de0f08efe59cf8816",
+      "laptop_readback_pass": true,
+      "download_s": 0.19860260000132257
+    },
+    {
+      "file": "runs/two-Spark29/residue_nll.tsv",
+      "bytes": 357119,
+      "sha256": "e1b208f869c3337b9639a43caa9e63ef7182de34ba95f72018f84b4677e7f77f",
+      "object_digest": "sha256:e1b208f869c3337b9639a43caa9e63ef7182de34ba95f72018f84b4677e7f77f",
+      "laptop_readback_pass": true,
+      "download_s": 0.2215368999968632
+    },
+    {
+      "file": "runs/two-Spark29/scoring_interval.json",
+      "bytes": 246,
+      "sha256": "7e0b95c1937decad7f7e278c87f55ed467d2cf03c1cd1d83e413913d04f77e68",
+      "object_digest": "sha256:7e0b95c1937decad7f7e278c87f55ed467d2cf03c1cd1d83e413913d04f77e68",
+      "laptop_readback_pass": true,
+      "download_s": 0.2013228999931016
+    },
+    {
+      "file": "runs/two-Spark29/pilot_correctness.json",
+      "bytes": 199,
+      "sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "object_digest": "sha256:2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "laptop_readback_pass": true,
+      "download_s": 0.6536819999964791
+    },
+    {
+      "file": "runs/two-Spark30/timings.json",
+      "bytes": 9024,
+      "sha256": "9f2c3dace57cfa7e1e1427f99678e1f2f2dfa4992f7725cd27519f3a802bce69",
+      "object_digest": "sha256:9f2c3dace57cfa7e1e1427f99678e1f2f2dfa4992f7725cd27519f3a802bce69",
+      "laptop_readback_pass": true,
+      "download_s": 0.6535758000027272
+    },
+    {
+      "file": "runs/two-Spark30/residue_nll.tsv",
+      "bytes": 354610,
+      "sha256": "65649f31b3f2e7a46f72cf1ad0e207d5166e8227ac5a3e54bd29f9ddcf1bd965",
+      "object_digest": "sha256:65649f31b3f2e7a46f72cf1ad0e207d5166e8227ac5a3e54bd29f9ddcf1bd965",
+      "laptop_readback_pass": true,
+      "download_s": 0.9790424000020721
+    },
+    {
+      "file": "runs/two-Spark30/scoring_interval.json",
+      "bytes": 247,
+      "sha256": "e7f01b617998abe9261419febcafe88a0544f057722d55453cb2aa79f5fe32ff",
+      "object_digest": "sha256:e7f01b617998abe9261419febcafe88a0544f057722d55453cb2aa79f5fe32ff",
+      "laptop_readback_pass": true,
+      "download_s": 0.6285871999934898
+    },
+    {
+      "file": "runs/two-Spark30/pilot_correctness.json",
+      "bytes": 199,
+      "sha256": "2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "object_digest": "sha256:2c70f26d7c872fdb2a8c02a90fb07c75376dff8617359484ed14520912e55ee8",
+      "laptop_readback_pass": true,
+      "download_s": 0.24840319999930216
+    }
+  ]
+}
