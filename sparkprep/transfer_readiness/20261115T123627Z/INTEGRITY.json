@@ -1,0 +1,63 @@
+{
+  "checked_utc": "2026-11-15T12:37:20.844052+00:00",
+  "host": "spark-6771",
+  "model_archive": "/home/darkstar90/lymescope-sparkprep/.model-cache/transfer/esm2_t6_8M_UR50D_c731040fcd8d73dceaa04b0a8e6329b345b0f5df_six_files.tar",
+  "model_archive_status": "VERIFIED",
+  "bytes": 31395840,
+  "sha256": "4e24f435628bb2c3b1a1a27664807c5d8c41ce7a94d3c2031b0f96363cb5d9ab",
+  "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+  "revision_proof": "All six contents match the preserved immutable-revision download receipt; five upstream Git blob IDs and weight SHA256 also verified where recorded. The tar does not itself contain a revision marker.",
+  "files": [
+    {
+      "name": "README.md",
+      "bytes": 1705,
+      "sha256": "462a2f24724e19c6be0efab926315c294a863c9a9770e2c8b3d859b2d81a07de"
+    },
+    {
+      "name": "config.json",
+      "bytes": 775,
+      "sha256": "facb9355e8252149f6f99dff5fd1e32e890c3c655362b261d0c81cd6b5839c85"
+    },
+    {
+      "name": "model.safetensors",
+      "bytes": 31384292,
+      "sha256": "24c5fa474c48f3b754b86efe752d5f189d2bcd88190fa2270fc92b2ef3034189"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "bytes": 125,
+      "sha256": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 95,
+      "sha256": "7e9161ecdb548ec45a41cbc6b24aa4476fdd418461f491c4207baa99419a29ad"
+    },
+    {
+      "name": "vocab.txt",
+      "bytes": 93,
+      "sha256": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03"
+    }
+  ],
+  "scientific_packages": [
+    {
+      "path": "/home/darkstar90/lymescope-sparkprep/experiments/exports/lymescope_stretch_v0.2.1_full_panel_20261115T075845Z.tar.gz",
+      "status": "VERIFIED",
+      "bytes": 2340578,
+      "sha256": "e24097ab102ff7a7b571477983a5d47fff80ee0b9ab19203e0e0f1e810e95968",
+      "safe_readable_files": 106,
+      "internal_hashed_entries": 104
+    },
+    {
+      "path": "/home/darkstar90/lymescope-sparkprep/experiments/exports/lymescope_frontier_v0.3.0_20261115T091901Z.tar.gz",
+      "status": "VERIFIED",
+      "bytes": 3495094,
+      "sha256": "843af025c1c2c3ee1ed9bdd2b6c5b89605d4cdb9bd2814a523f2a4dbd8968304",
+      "safe_readable_files": 85,
+      "internal_hashed_entries": 83
+    }
+  ],
+  "secure_transfer_route_status": "BLOCKED",
+  "route_summary": "Known Windows peers reported offline in local device inventory. No configured trusted laptop SSH destination or active SSH session. No login, new host trust, or configuration changes attempted.",
+  "laptop_copy_status": "NOT VERIFIED; transfer remains outstanding until the laptop verifies expected size and SHA256."
+}
