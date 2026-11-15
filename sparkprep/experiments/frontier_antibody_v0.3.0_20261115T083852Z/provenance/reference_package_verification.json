@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "package_file_hashes_checked": 104,
+  "manifest_sha256": "80f722f142ec2b56ed448ebcf568d2c98b038b5d86e15a3747b8c66c4f374252",
+  "model_files_checked": [],
+  "network_access": false,
+  "model_inference": false
+}

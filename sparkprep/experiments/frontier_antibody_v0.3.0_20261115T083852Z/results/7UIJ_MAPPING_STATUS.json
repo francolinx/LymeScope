@@ -1,0 +1,237 @@
+{
+  "pdb_id": "7UIJ",
+  "assembly_id": "1",
+  "entry_title": [
+    "Structural studies of B5-OspC complex"
+  ],
+  "method": [
+    "X-RAY DIFFRACTION"
+  ],
+  "resolution_A": [
+    "2.7010"
+  ],
+  "revisions": [
+    {
+      "ordinal": "1",
+      "data_content_type": "Structure model",
+      "major_revision": "1",
+      "minor_revision": "0",
+      "revision_date": "2023-04-05"
+    },
+    {
+      "ordinal": "2",
+      "data_content_type": "Structure model",
+      "major_revision": "1",
+      "minor_revision": "1",
+      "revision_date": "2023-10-18"
+    },
+    {
+      "ordinal": "3",
+      "data_content_type": "Structure model",
+      "major_revision": "1",
+      "minor_revision": "2",
+      "revision_date": "2023-10-25"
+    },
+    {
+      "ordinal": "4",
+      "data_content_type": "Structure model",
+      "major_revision": "1",
+      "minor_revision": "3",
+      "revision_date": "2024-11-20"
+    }
+  ],
+  "OspC_entity": "3",
+  "Fab_entities": [
+    "1",
+    "2"
+  ],
+  "construct_length": 164,
+  "reference_accession": "Q07337",
+  "native_range": [
+    38,
+    201
+  ],
+  "exact_construct_sequence_sha256": "059ae29db90103d554495753608b7cf6d3658b633b01ebd10a3640f2eb0c7881",
+  "reference_sequence_sha256": "8939ee76df09336cca51badd169a15d142bcd48b90b928cfcebc1ef733ac1d7e",
+  "chain_instances": [
+    {
+      "instance": "A@1",
+      "label_chain": "A",
+      "entity_id": "1",
+      "auth_chains": [
+        "H"
+      ],
+      "role": "Fab",
+      "entity_description": "Monoclonal B5 Fab Heavy Chain",
+      "operator": {
+        "id": "1",
+        "type": "identity operation",
+        "name": "1_555",
+        "symmetry_operation": "x,y,z",
+        "matrix[1][1]": "1.0000000000",
+        "matrix[1][2]": "0.0000000000",
+        "matrix[1][3]": "0.0000000000",
+        "vector[1]": "0.0000000000",
+        "matrix[2][1]": "0.0000000000",
+        "matrix[2][2]": "1.0000000000",
+        "matrix[2][3]": "0.0000000000",
+        "vector[2]": "0.0000000000",
+        "matrix[3][1]": "0.0000000000",
+        "matrix[3][2]": "0.0000000000",
+        "matrix[3][3]": "1.0000000000",
+        "vector[3]": "0.0000000000"
+      }
+    },
+    {
+      "instance": "B@1",
+      "label_chain": "B",
+      "entity_id": "2",
+      "auth_chains": [
+        "L"
+      ],
+      "role": "Fab",
+      "entity_description": "Monoclonal B5 Fab Light Chain",
+      "operator": {
+        "id": "1",
+        "type": "identity operation",
+        "name": "1_555",
+        "symmetry_operation": "x,y,z",
+        "matrix[1][1]": "1.0000000000",
+        "matrix[1][2]": "0.0000000000",
+        "matrix[1][3]": "0.0000000000",
+        "vector[1]": "0.0000000000",
+        "matrix[2][1]": "0.0000000000",
+        "matrix[2][2]": "1.0000000000",
+        "matrix[2][3]": "0.0000000000",
+        "vector[2]": "0.0000000000",
+        "matrix[3][1]": "0.0000000000",
+        "matrix[3][2]": "0.0000000000",
+        "matrix[3][3]": "1.0000000000",
+        "vector[3]": "0.0000000000"
+      }
+    },
+    {
+      "instance": "C@1",
+      "label_chain": "C",
+      "entity_id": "1",
+      "auth_chains": [
+        "A"
+      ],
+      "role": "Fab",
+      "entity_description": "Monoclonal B5 Fab Heavy Chain",
+      "operator": {
+        "id": "1",
+        "type": "identity operation",
+        "name": "1_555",
+        "symmetry_operation": "x,y,z",
+        "matrix[1][1]": "1.0000000000",
+        "matrix[1][2]": "0.0000000000",
+        "matrix[1][3]": "0.0000000000",
+        "vector[1]": "0.0000000000",
+        "matrix[2][1]": "0.0000000000",
+        "matrix[2][2]": "1.0000000000",
+        "matrix[2][3]": "0.0000000000",
+        "vector[2]": "0.0000000000",
+        "matrix[3][1]": "0.0000000000",
+        "matrix[3][2]": "0.0000000000",
+        "matrix[3][3]": "1.0000000000",
+        "vector[3]": "0.0000000000"
+      }
+    },
+    {
+      "instance": "D@1",
+      "label_chain": "D",
+      "entity_id": "2",
+      "auth_chains": [
+        "B"
+      ],
+      "role": "Fab",
+      "entity_description": "Monoclonal B5 Fab Light Chain",
+      "operator": {
+        "id": "1",
+        "type": "identity operation",
+        "name": "1_555",
+        "symmetry_operation": "x,y,z",
+        "matrix[1][1]": "1.0000000000",
+        "matrix[1][2]": "0.0000000000",
+        "matrix[1][3]": "0.0000000000",
+        "vector[1]": "0.0000000000",
+        "matrix[2][1]": "0.0000000000",
+        "matrix[2][2]": "1.0000000000",
+        "matrix[2][3]": "0.0000000000",
+        "vector[2]": "0.0000000000",
+        "matrix[3][1]": "0.0000000000",
+        "matrix[3][2]": "0.0000000000",
+        "matrix[3][3]": "1.0000000000",
+        "vector[3]": "0.0000000000"
+      }
+    },
+    {
+      "instance": "E@1",
+      "label_chain": "E",
+      "entity_id": "3",
+      "auth_chains": [
+        "C"
+      ],
+      "role": "OspC",
+      "entity_description": "Outer surface protein C",
+      "operator": {
+        "id": "1",
+        "type": "identity operation",
+        "name": "1_555",
+        "symmetry_operation": "x,y,z",
+        "matrix[1][1]": "1.0000000000",
+        "matrix[1][2]": "0.0000000000",
+        "matrix[1][3]": "0.0000000000",
+        "vector[1]": "0.0000000000",
+        "matrix[2][1]": "0.0000000000",
+        "matrix[2][2]": "1.0000000000",
+        "matrix[2][3]": "0.0000000000",
+        "vector[2]": "0.0000000000",
+        "matrix[3][1]": "0.0000000000",
+        "matrix[3][2]": "0.0000000000",
+        "matrix[3][3]": "1.0000000000",
+        "vector[3]": "0.0000000000"
+      }
+    },
+    {
+      "instance": "F@1",
+      "label_chain": "F",
+      "entity_id": "3",
+      "auth_chains": [
+        "D"
+      ],
+      "role": "OspC",
+      "entity_description": "Outer surface protein C",
+      "operator": {
+        "id": "1",
+        "type": "identity operation",
+        "name": "1_555",
+        "symmetry_operation": "x,y,z",
+        "matrix[1][1]": "1.0000000000",
+        "matrix[1][2]": "0.0000000000",
+        "matrix[1][3]": "0.0000000000",
+        "vector[1]": "0.0000000000",
+        "matrix[2][1]": "0.0000000000",
+        "matrix[2][2]": "1.0000000000",
+        "matrix[2][3]": "0.0000000000",
+        "vector[2]": "0.0000000000",
+        "matrix[3][1]": "0.0000000000",
+        "matrix[3][2]": "0.0000000000",
+        "matrix[3][3]": "1.0000000000",
+        "vector[3]": "0.0000000000"
+      }
+    }
+  ],
+  "alt_selection_audit": [],
+  "atom_selection": "model1; positive occupancy; no H/D; one occupancy-selected residue alt plus common atoms; canonical protein only; assembly roles from entity descriptions",
+  "observation_counts": {
+    "UNOBSERVED": 15,
+    "COMPLETE_CANONICAL_HEAVY_ATOMS": 313
+  },
+  "contact_positions_by_cutoff": {
+    "4.0": 23,
+    "4.5": 27,
+    "5.0": 29
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETED",
+  "reference_commit": "aafe818a20ea025370cf4b65145a9684e80aaaef",
+  "manifest_entries_verified": 104,
+  "reference_experiment_tests_passed": 16,
+  "source_raw_scores": 6305,
+  "source_distinct_task_ids": 6305,
+  "source_model_revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+  "source_scoring_forward_passes": 805,
+  "source_warm_scoring_s": 9.909293619999517,
+  "additional_model_forward_passes_this_sprint": 0,
+  "source_raw_SHA256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+  "input_mapping_reused_without_modification": true
+}

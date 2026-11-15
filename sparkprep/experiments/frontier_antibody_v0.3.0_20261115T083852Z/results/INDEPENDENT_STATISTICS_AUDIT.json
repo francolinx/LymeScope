@@ -1,0 +1,180 @@
+{
+  "status": "PASS",
+  "independent_optimizer": "Newton/IRLS with explicit Hessian and line search vs original L-BFGS-B",
+  "primary_cutoff_A": 4.5,
+  "models_checked": 12,
+  "fold_fits_checked": 96,
+  "max_probability_difference": 2.829079411237334e-06,
+  "signed_D_pairwise_AUROC": 0.4620101306318315,
+  "ROC_tie_pair_count_agreement": true,
+  "models": [
+    {
+      "pdb_id": "9BIF",
+      "model": "B0",
+      "max_probability_difference_LBFGS_vs_Newton": 0.0,
+      "newton_gradient_inf_norm": 9.325873406851315e-15,
+      "newton_OOF_metrics": {
+        "n": 152,
+        "contacts": 31,
+        "prevalence": 0.20394736842105263,
+        "brier": 0.17748046050976124,
+        "log_loss": 0.5534338819453118,
+        "auroc": 0.18728339109570782
+      }
+    },
+    {
+      "pdb_id": "9BIF",
+      "model": "B1",
+      "max_probability_difference_LBFGS_vs_Newton": 3.7791131335396244e-10,
+      "newton_gradient_inf_norm": 8.989475830389893e-13,
+      "newton_OOF_metrics": {
+        "n": 152,
+        "contacts": 31,
+        "prevalence": 0.20394736842105263,
+        "brier": 0.17792824741615454,
+        "log_loss": 0.5618269848811219,
+        "auroc": 0.28312450013329776
+      }
+    },
+    {
+      "pdb_id": "9BIF",
+      "model": "B2",
+      "max_probability_difference_LBFGS_vs_Newton": 4.702117992749777e-07,
+      "newton_gradient_inf_norm": 2.55443652341647e-11,
+      "newton_OOF_metrics": {
+        "n": 152,
+        "contacts": 31,
+        "prevalence": 0.20394736842105263,
+        "brier": 0.16863361868104168,
+        "log_loss": 0.5340554004822327,
+        "auroc": 0.620634497467342
+      }
+    },
+    {
+      "pdb_id": "9BIF",
+      "model": "B3",
+      "max_probability_difference_LBFGS_vs_Newton": 5.971845335184245e-07,
+      "newton_gradient_inf_norm": 8.728440192840026e-11,
+      "newton_OOF_metrics": {
+        "n": 152,
+        "contacts": 31,
+        "prevalence": 0.20394736842105263,
+        "brier": 0.17402192325054636,
+        "log_loss": 0.5464398302602473,
+        "auroc": 0.6163689682751267
+      }
+    },
+    {
+      "pdb_id": "9BIF",
+      "model": "B4",
+      "max_probability_difference_LBFGS_vs_Newton": 9.708041283085223e-07,
+      "newton_gradient_inf_norm": 9.614975482463706e-11,
+      "newton_OOF_metrics": {
+        "n": 152,
+        "contacts": 31,
+        "prevalence": 0.20394736842105263,
+        "brier": 0.1677078025302773,
+        "log_loss": 0.5276009325632938,
+        "auroc": 0.6480938416422287
+      }
+    },
+    {
+      "pdb_id": "9BIF",
+      "model": "B5",
+      "max_probability_difference_LBFGS_vs_Newton": 1.0552947444786298e-06,
+      "newton_gradient_inf_norm": 8.520220640129139e-11,
+      "newton_OOF_metrics": {
+        "n": 152,
+        "contacts": 31,
+        "prevalence": 0.20394736842105263,
+        "brier": 0.1684460358615399,
+        "log_loss": 0.5311146684468255,
+        "auroc": 0.6446280991735537
+      }
+    },
+    {
+      "pdb_id": "7UIJ",
+      "model": "B0",
+      "max_probability_difference_LBFGS_vs_Newton": 0.0,
+      "newton_gradient_inf_norm": 6.439293542825908e-15,
+      "newton_OOF_metrics": {
+        "n": 152,
+        "contacts": 25,
+        "prevalence": 0.16447368421052633,
+        "brier": 0.14396694842377383,
+        "log_loss": 0.4721436090133,
+        "auroc": 0.235748031496063
+      }
+    },
+    {
+      "pdb_id": "7UIJ",
+      "model": "B1",
+      "max_probability_difference_LBFGS_vs_Newton": 1.5591207214171732e-09,
+      "newton_gradient_inf_norm": 4.6775416873146014e-11,
+      "newton_OOF_metrics": {
+        "n": 152,
+        "contacts": 25,
+        "prevalence": 0.16447368421052633,
+        "brier": 0.14807456756074244,
+        "log_loss": 0.489792212217795,
+        "auroc": 0.19811023622047244
+      }
+    },
+    {
+      "pdb_id": "7UIJ",
+      "model": "B2",
+      "max_probability_difference_LBFGS_vs_Newton": 6.424884650968465e-07,
+      "newton_gradient_inf_norm": 2.3487212175155037e-11,
+      "newton_OOF_metrics": {
+        "n": 152,
+        "contacts": 25,
+        "prevalence": 0.16447368421052633,
+        "brier": 0.1483659266306583,
+        "log_loss": 0.4627845490644555,
+        "auroc": 0.6365354330708661
+      }
+    },
+    {
+      "pdb_id": "7UIJ",
+      "model": "B3",
+      "max_probability_difference_LBFGS_vs_Newton": 5.04029110393045e-07,
+      "newton_gradient_inf_norm": 6.249600836838454e-11,
+      "newton_OOF_metrics": {
+        "n": 152,
+        "contacts": 25,
+        "prevalence": 0.16447368421052633,
+        "brier": 0.14939131382125426,
+        "log_loss": 0.46904857240986786,
+        "auroc": 0.628976377952756
+      }
+    },
+    {
+      "pdb_id": "7UIJ",
+      "model": "B4",
+      "max_probability_difference_LBFGS_vs_Newton": 2.829079411237334e-06,
+      "newton_gradient_inf_norm": 9.548073442999794e-11,
+      "newton_OOF_metrics": {
+        "n": 152,
+        "contacts": 25,
+        "prevalence": 0.16447368421052633,
+        "brier": 0.14929912471420953,
+        "log_loss": 0.4660554627976116,
+        "auroc": 0.6340157480314961
+      }
+    },
+    {
+      "pdb_id": "7UIJ",
+      "model": "B5",
+      "max_probability_difference_LBFGS_vs_Newton": 7.10908324763615e-07,
+      "newton_gradient_inf_norm": 2.8169688803814097e-12,
+      "newton_OOF_metrics": {
+        "n": 152,
+        "contacts": 25,
+        "prevalence": 0.16447368421052633,
+        "brier": 0.14807567010038564,
+        "log_loss": 0.4638317812678494,
+        "auroc": 0.628976377952756
+      }
+    }
+  ]
+}

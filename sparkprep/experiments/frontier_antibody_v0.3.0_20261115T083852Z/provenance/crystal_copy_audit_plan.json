@@ -1,0 +1,8 @@
+{
+  "status": "POSTHOC_QUALITY_AUDIT_ONLY",
+  "declared_utc": "2026-11-15T08:57:23.495321+00:00",
+  "purpose": "Quantify observed-contact variation across all four deposited 9BIF biological assemblies. No redefinition or selection of the predeclared primary assembly1 endpoint; no additional model fitting or inference.",
+  "cutoff_A": 4.5,
+  "eligible_universe": "Report all exact-construct positions, and observed-in-every-copy intersection separately.",
+  "primary_result_known": "B3 worsens predeclared primary Brier by +0.0053883; this audit cannot replace that outcome."
+}

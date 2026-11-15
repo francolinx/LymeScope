@@ -1,0 +1,15 @@
+{
+  "observed_start_utc": "2026-11-15T08:38:52Z",
+  "role": "SPARK",
+  "host": "spark-6771",
+  "user": "darkstar90",
+  "OS": "Linux aarch64",
+  "initial_shell_cwd": "/home/darkstar90",
+  "source_workspace": "/home/darkstar90/lymescope-sparkprep",
+  "review_checkout": "/home/darkstar90/lymescope-stretch-review-20261115T072916Z",
+  "starting_branch": "feat/ospc-esm2-spark-pilot",
+  "starting_commit": "aafe818a20ea025370cf4b65145a9684e80aaaef",
+  "starting_working_tree": "CLEAN",
+  "initial_remote_main": "8058846c05d4dccd60117dd29ef784af43570418",
+  "initial_feature_remote": "aafe818a20ea025370cf4b65145a9684e80aaaef"
+}

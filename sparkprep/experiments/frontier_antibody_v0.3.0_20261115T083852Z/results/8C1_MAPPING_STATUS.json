@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETED_LITERATURE_REGION_ONLY",
+  "region_native_Q07337": [
+    130,
+    150
+  ],
+  "published_identity_anchors": {
+    "141": "K",
+    "142": "H",
+    "143": "T",
+    "144": "D"
+  },
+  "contact_labels": "NOT_ASSIGNED",
+  "primary_source": "https://doi.org/10.1128/spectrum.02883-24",
+  "later_deposition_notice": {
+    "pdb_id": "9BX7",
+    "public_record": "https://www.rcsb.org/structure/9BX7",
+    "release_date": "2025-08-27",
+    "title": "Fab 8C1 in complex with OspCA peptide P20 (residues 131-150)",
+    "status": "SOURCE_VERIFIED_NOTICE_NOT_RETRIEVED_OR_ANALYZED",
+    "limitation": "Separate later peptide-complex deposition, citation marked to be published. Not treated as the 2025 paper structure or pooled into endpoints."
+  }
+}

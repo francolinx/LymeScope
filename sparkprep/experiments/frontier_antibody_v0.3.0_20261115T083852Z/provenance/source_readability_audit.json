@@ -1,0 +1,89 @@
+{
+  "method": "Existing Python stdlib ast.unparse; no formatter package installed. Semantic AST equality verified before writing. Narrative comments/assumptions are retained in module docstrings and METHODS_AND_LIMITATIONS.md; copied historical CIF parser is unchanged.",
+  "files": [
+    {
+      "path": "src/map_complex.py",
+      "original_sha256": "b9241904cc4330044690a60cc3e03b0504cb5f858a558792bc7f9be0cfafc511",
+      "formatted_sha256": "ce9eea188392e421df078181c9c0894c8820afe8f52da45d6e5da32729f3b913",
+      "AST_equivalence": "PASS"
+    },
+    {
+      "path": "src/audit_geometry.py",
+      "original_sha256": "ebd8e036336256cd617d618a235e452c042f29255c3594c7aa1341b5ddecd3d7",
+      "formatted_sha256": "ac1bc9574df3a35d2f9676e5854bcba18c0101cf5bd7e094de786bb278140016",
+      "AST_equivalence": "PASS"
+    },
+    {
+      "path": "src/build_site_table.py",
+      "original_sha256": "8057d3ce3ea1feb3d097ea5fc139259dae3b7973f313c0d60d6181dceefd1e6f",
+      "formatted_sha256": "a840fe1df5cc145747dbba337961b19249156ca2e15870a81ba393d4acba559b",
+      "AST_equivalence": "PASS"
+    },
+    {
+      "path": "src/audit_crystal_copies.py",
+      "original_sha256": "a37a484c426e6967097fba0e167400bfa21437930e76f9379de1dfc142813d76",
+      "formatted_sha256": "30fee943c54c0a056b60a396025ff7f818de26489d71e8447791b45aa09ddfda",
+      "AST_equivalence": "PASS"
+    },
+    {
+      "path": "src/audit_missingness.py",
+      "original_sha256": "c270dccfe80039bb2acbd1017090febfc1eb5758c2fc7374e146ab80fdcd95d1",
+      "formatted_sha256": "8956b5d2677e9236a7462416fd0794d6cbff5f09a2cbbafab302f18b0a028131",
+      "AST_equivalence": "PASS"
+    },
+    {
+      "path": "src/map_literature_region.py",
+      "original_sha256": "14d9dc280c4a409c895ba8abc1aa519bfa953415b986a7e8e8636371807e65f0",
+      "formatted_sha256": "bae702b0d8b7ed8bd5deaa0f2549ce186362f37148561e61b37c1203493872c7",
+      "AST_equivalence": "PASS"
+    },
+    {
+      "path": "src/exploratory_analysis.py",
+      "original_sha256": "d33e70836f064bb76a594125585a254674ccbf4ac92df692a8e7ad369d95efe6",
+      "formatted_sha256": "841393407d5d4f96006382aced11371cc253d1696a4714bea9d3300d83791ea4",
+      "AST_equivalence": "PASS"
+    },
+    {
+      "path": "src/audit_statistics.py",
+      "original_sha256": "dbda3f945ae7504d8285ed1cd06641c40a17c43cd77e25a43c97e541160338ce",
+      "formatted_sha256": "0f9e82cd9c2bb1f745810209361b6accea1f67d54f76f50b72cfb5cd0a1646ac",
+      "AST_equivalence": "PASS"
+    },
+    {
+      "path": "src/reproduce.py",
+      "original_sha256": "94b2549966c88cb5bb9b1146c09aa536815dafbe6ea38c658da2ca55a4430f2f",
+      "formatted_sha256": "ca568ab605f25ee0b5a1d2867ba50b380fa5e7853b7349efb2a09a0e7eca9b4f",
+      "AST_equivalence": "PASS"
+    },
+    {
+      "path": "src/common.py",
+      "original_sha256": "a55d4055c0b79cdc4d1c52e6b9ae0fba843a09fa8ee3e54ba13efb0d1762152e",
+      "formatted_sha256": "7e7d9539b5be14c43127a36071db994d0bc1dbb5fe70fa953fa592b6651f2a27",
+      "AST_equivalence": "PASS"
+    },
+    {
+      "path": "src/plot_frontier.py",
+      "original_sha256": "fa2b879dd44b498bacda6e1ccd54ccf8782d8952b0b88d4679bbc76bc23d7922",
+      "formatted_sha256": "1f5a97c59e5cf94bd6f5f60220d9b2df7446b673a694a17e3e07c353e78265b5",
+      "AST_equivalence": "PASS"
+    },
+    {
+      "path": "src/export_evidence.py",
+      "original_sha256": "82393604f9e729966807ff9e164333cd091b833f82f8e96555bbfbecadd8c076",
+      "formatted_sha256": "3b98002e211cc10394c669deb974eef21bed2cb2f81d47bacba8641de26e9f1d",
+      "AST_equivalence": "PASS"
+    },
+    {
+      "path": "src/retrieve_sources.py",
+      "original_sha256": "309ee4d8a7c9308c8a55b3e2c6584bc0f82e4c3c0826a0c012c0c93a61718002",
+      "formatted_sha256": "8b1a3faa1b95d6a4636533ff01cddd1359ed010295facd9efd9ca8168ecacc24",
+      "AST_equivalence": "PASS"
+    },
+    {
+      "path": "tests/test_frontier.py",
+      "original_sha256": "6d42dcded02aa9f1df041a3a047bb02cc4285b32c85edf9efe892aa23813a34f",
+      "formatted_sha256": "4f523ad61b5ce19336b8dcfef2c721fff3b47f4130925fbc3f988730947a6b83",
+      "AST_equivalence": "PASS"
+    }
+  ]
+}

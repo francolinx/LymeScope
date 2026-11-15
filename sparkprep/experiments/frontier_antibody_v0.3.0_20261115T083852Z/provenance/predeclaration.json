@@ -1,0 +1,18 @@
+{
+  "declared_utc": "2026-11-15T08:41:50.925929+00:00",
+  "question_sha256": "6c0102fa0a113d003b3186400ffbc77881f4b8ab8bfa07519a257f95f40cccbf",
+  "outcome_comparison_status": "NOT_RUN_AT_DECLARATION",
+  "primary_pdb": "9BIF",
+  "assembly_id": "1",
+  "contact_cutoff_A": 4.5,
+  "distance_sensitivity_A": [
+    4.0,
+    5.0
+  ],
+  "blocks": 8,
+  "guard_alignment_columns": 5,
+  "L2_lambda": 1.0,
+  "minimum_sites": 60,
+  "minimum_class_count": 10,
+  "primary_comparison": "OOF_Brier_B3_minus_B2"
+}

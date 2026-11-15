@@ -1,0 +1,64 @@
+[
+  {
+    "doi": "10.4049/jimmunol.2400247",
+    "lookup_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.4049%2Fjimmunol.2400247&format=json&pageSize=1",
+    "retrieved_utc": "2026-11-15T08:49:52.570726+00:00",
+    "source_payload_sha256": "40e4c00833d9bb31734262bea7aaaacd4c7a47a366edfda11ad9a0bc5b84ef7b",
+    "metadata": {
+      "id": "39240158",
+      "source": "MED",
+      "pmid": "39240158",
+      "doi": "10.4049/jimmunol.2400247",
+      "title": "Structure of a Human Monoclonal Antibody in Complex with Outer Surface Protein C of the Lyme Disease Spirochete, Borreliella burgdorferi.",
+      "authorString": "Rudolph MJ, Chen Y, Vorauer C, Vance DJ, Piazza CL, Willsey GG, McCarthy K, Muriuki B, Cavacini LA, Guttman M, Mantis NJ.",
+      "journalTitle": "J Immunol",
+      "issue": "8",
+      "journalVolume": "213",
+      "pubYear": "2024",
+      "isOpenAccess": "N",
+      "firstPublicationDate": "2024-10-01"
+    }
+  },
+  {
+    "doi": "10.1128/mbio.02981-22",
+    "lookup_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1128%2Fmbio.02981-22&format=json&pageSize=1",
+    "retrieved_utc": "2026-11-15T08:49:53.068431+00:00",
+    "source_payload_sha256": "818417897de69b6806535c8460ff0833cbe07d4036d7dec3d6ca9ca9702ad9c9",
+    "metadata": {
+      "id": "36976016",
+      "source": "MED",
+      "pmid": "36976016",
+      "pmcid": "PMC10128040",
+      "doi": "10.1128/mbio.02981-22",
+      "title": "Structural Elucidation of a Protective B Cell Epitope on Outer Surface Protein C (OspC) of the Lyme Disease Spirochete, Borreliella burgdorferi.",
+      "authorString": "Rudolph MJ, Davis SA, Haque HME, Weis DD, Vance DJ, Piazza CL, Ejemel M, Cavacini L, Wang Y, Mbow ML, Gilmore RD, Mantis NJ.",
+      "journalTitle": "mBio",
+      "issue": "2",
+      "journalVolume": "14",
+      "pubYear": "2023",
+      "isOpenAccess": "Y",
+      "firstPublicationDate": "2023-03-28"
+    }
+  },
+  {
+    "doi": "10.1128/spectrum.02883-24",
+    "lookup_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1128%2Fspectrum.02883-24&format=json&pageSize=1",
+    "retrieved_utc": "2026-11-15T08:49:53.591001+00:00",
+    "source_payload_sha256": "44c98854781e10d443ac823501a5ac3bbffb20438aec1414f980ff40e8d39138",
+    "metadata": {
+      "id": "39950825",
+      "source": "MED",
+      "pmid": "39950825",
+      "pmcid": "PMC11960070",
+      "doi": "10.1128/spectrum.02883-24",
+      "title": "A type-specific B-cell epitope at the apex of outer surface protein C (OspC) of the Lyme disease spirochete, &lt;i&gt;Borreliella burgdorferi&lt;/i&gt;.",
+      "authorString": "Vance DJ, Freeman-Gallant G, McCarthy K, Piazza CL, Chen Y, Vorauer C, Muriuki B, Rudolph MJ, Cavacini L, Guttman M, Mantis NJ.",
+      "journalTitle": "Microbiol Spectr",
+      "issue": "4",
+      "journalVolume": "13",
+      "pubYear": "2025",
+      "isOpenAccess": "Y",
+      "firstPublicationDate": "2025-02-14"
+    }
+  }
+]

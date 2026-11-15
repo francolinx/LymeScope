@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "destination": "/home/darkstar90/lymescope-stretch-private-20261115T072916Z/frontier_clean_reproduction_20261115T090400Z",
+  "network_retrieval": "NOT_RUN",
+  "new_ESM_inference": "NOT_RUN",
+  "input_source": "Archived exact-byte local files only",
+  "stages": [
+    {
+      "script": "map_complex.py",
+      "elapsed_s": 1.1172385579993716
+    },
+    {
+      "script": "build_site_table.py",
+      "elapsed_s": 0.11446235699986573
+    },
+    {
+      "script": "exploratory_analysis.py",
+      "elapsed_s": 0.5652916069993807
+    },
+    {
+      "script": "map_literature_region.py",
+      "elapsed_s": 0.015906068998447154
+    },
+    {
+      "script": "audit_geometry.py",
+      "elapsed_s": 1.2183703580012661
+    },
+    {
+      "script": "audit_statistics.py",
+      "elapsed_s": 0.4149951590006822
+    },
+    {
+      "script": "audit_missingness.py",
+      "elapsed_s": 1.1171708459987713
+    },
+    {
+      "script": "audit_crystal_copies.py",
+      "elapsed_s": 3.0750875390003785
+    },
+    {
+      "script": "export_evidence.py",
+      "elapsed_s": 1.321018875001755
+    },
+    {
+      "script": "plot_frontier.py",
+      "elapsed_s": 0.5656430540002475
+    }
+  ],
+  "exact_artifact_comparisons": [
+    "EXPERIMENTAL_MAPPING.tsv",
+    "results/9BIF_RESIDUE_MAPPING.tsv",
+    "results/7UIJ_RESIDUE_MAPPING.tsv",
+    "results/9BIF_FAB_CONTACT_PAIRS_5A.tsv",
+    "results/7UIJ_FAB_CONTACT_PAIRS_5A.tsv",
+    "results/ELIGIBILITY_GATES.json",
+    "results/8C1_LITERATURE_REGION.tsv",
+    "results/9BIF_CRYSTAL_COPY_CONTACTS.tsv"
+  ],
+  "numeric_json_comparisons_tolerance_1e_8": [
+    "ANALYSIS_RESULTS.json",
+    "results/INDEPENDENT_GEOMETRY_AUDIT.json",
+    "results/INDEPENDENT_STATISTICS_AUDIT.json",
+    "results/MISSINGNESS_AUDIT.json",
+    "results/9BIF_CRYSTAL_COPY_AUDIT.json",
+    "results/FRONTIER_EVIDENCE.json"
+  ],
+  "OOF_predictions_checked": 5320,
+  "OOF_probability_max_abs_difference": 0,
+  "tests_passed": 24,
+  "elapsed_total_s": 11.022814597999968,
+  "figure_note": "Regenerated from actual data. Renderer metadata/font outputs may differ; numerical results rather than image byte identity are the reproducibility endpoint."
+}

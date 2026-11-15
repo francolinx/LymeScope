@@ -1,0 +1,21 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "architecture": "aarch64",
+  "hostname": "spark-6771",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "new_model_inference": false,
+  "dependencies_installed": false,
+  "thread_limits": {
+    "OMP_NUM_THREADS": 4,
+    "OPENBLAS_NUM_THREADS": 4
+  },
+  "solver": {
+    "primary": "L-BFGS-B",
+    "deterministic_failure_recovery": "Newton/Hessian same fixed objective"
+  },
+  "recorded_utc": "2026-11-15T09:15:28.184977+00:00"
+}

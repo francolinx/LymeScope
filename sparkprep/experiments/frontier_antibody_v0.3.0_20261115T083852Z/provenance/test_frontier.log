@@ -1,0 +1,31 @@
+test_all_official_source_hashes (test_frontier.MappingTests.test_all_official_source_hashes) ... ok
+test_all_reused_input_bytes (test_frontier.MappingTests.test_all_reused_input_bytes) ... ok
+test_alternate_selection_fixture (test_frontier.MappingTests.test_alternate_selection_fixture) ... ok
+test_contact_types_are_distinct (test_frontier.MappingTests.test_contact_types_are_distinct) ... ok
+test_coordinate_derived_distance_audit (test_frontier.MappingTests.test_coordinate_derived_distance_audit) ... ok
+test_depositor_unobserved_records_match (test_frontier.MappingTests.test_depositor_unobserved_records_match) ... ok
+test_exact_natural_construct_both_complexes (test_frontier.MappingTests.test_exact_natural_construct_both_complexes) ... ok
+test_expected_canonical_heavy_atoms (test_frontier.MappingTests.test_expected_canonical_heavy_atoms) ... ok
+test_label_author_namespaces (test_frontier.MappingTests.test_label_author_namespaces) ... ok
+test_literature_region_is_not_contacts (test_frontier.MappingTests.test_literature_region_is_not_contacts) ... ok
+test_missing_labels_not_negative_labels (test_frontier.MappingTests.test_missing_labels_not_negative_labels) ... ok
+test_no_antigen_atoms_count_as_Fab (test_frontier.MappingTests.test_no_antigen_atoms_count_as_Fab) ... ok
+test_predeclaration_immutable (test_frontier.MappingTests.test_predeclaration_immutable) ... ok
+test_reference_rejects_other_real_natural_sequence (test_frontier.MappingTests.test_reference_rejects_other_real_natural_sequence) ... ok
+test_strict_site_counts (test_frontier.MappingTests.test_strict_site_counts) ... ok
+test_typed_adapter_nulls (test_frontier.MappingTests.test_typed_adapter_nulls) ... ok
+test_AUC_known_orders_and_ties (test_frontier.NumericalTests.test_AUC_known_orders_and_ties) ... ok
+test_fold_assignments_and_guards (test_frontier.NumericalTests.test_fold_assignments_and_guards) ... ok
+test_independent_optimizers_agree (test_frontier.NumericalTests.test_independent_optimizers_agree) ... ok
+test_intercept_MLE (test_frontier.NumericalTests.test_intercept_MLE) ... ok
+test_metrics_analytical_constant (test_frontier.NumericalTests.test_metrics_analytical_constant) ... ok
+test_numeric_fallback_preserves_fixed_objective (test_frontier.NumericalTests.test_numeric_fallback_preserves_fixed_objective) ... ok
+test_primary_effect_recomputed_from_OOF (test_frontier.NumericalTests.test_primary_effect_recomputed_from_OOF) ... ok
+test_primary_unchanged_after_secondary_solver_recovery (test_frontier.NumericalTests.test_primary_unchanged_after_secondary_solver_recovery) ... ok
+test_single_class_fails_explicitly (test_frontier.NumericalTests.test_single_class_fails_explicitly) ... ok
+test_training_only_standardization (test_frontier.NumericalTests.test_training_only_standardization) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.993s
+
+OK
