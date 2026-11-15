@@ -1,0 +1,46 @@
+[
+  {
+    "pdb_id": "9BIF",
+    "status": "PASS",
+    "residue_distance_minima_checked": 312,
+    "max_abs_distance_error_A": 0,
+    "all_fixed_cutoff_labels_match": true,
+    "reference_superposition": [
+      {
+        "instance": "C@1",
+        "matched_CA": 155,
+        "CA_RMSD_to_1GGQ_chain_A_A": 0.47868545937469403,
+        "proper_rotation_determinant": 1.0000000000000013
+      },
+      {
+        "instance": "D@1",
+        "matched_CA": 156,
+        "CA_RMSD_to_1GGQ_chain_A_A": 0.5014986581272672,
+        "proper_rotation_determinant": 1.0000000000000024
+      }
+    ],
+    "insertion_codes_in_selected_Fab_atoms": []
+  },
+  {
+    "pdb_id": "7UIJ",
+    "status": "PASS",
+    "residue_distance_minima_checked": 313,
+    "max_abs_distance_error_A": 0,
+    "all_fixed_cutoff_labels_match": true,
+    "reference_superposition": [
+      {
+        "instance": "E@1",
+        "matched_CA": 155,
+        "CA_RMSD_to_1GGQ_chain_A_A": 0.5286885346317565,
+        "proper_rotation_determinant": 1.0000000000000013
+      },
+      {
+        "instance": "F@1",
+        "matched_CA": 158,
+        "CA_RMSD_to_1GGQ_chain_A_A": 0.5189210424191781,
+        "proper_rotation_determinant": 1.0
+      }
+    ],
+    "insertion_codes_in_selected_Fab_atoms": []
+  }
+]

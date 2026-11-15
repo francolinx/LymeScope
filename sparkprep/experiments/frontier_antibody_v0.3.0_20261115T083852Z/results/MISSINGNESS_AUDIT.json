@@ -1,0 +1,428 @@
+[
+  {
+    "pdb_id": "9BIF",
+    "status": "COMPLETED",
+    "chains": [
+      {
+        "instance": "A@1",
+        "auth_chains": [
+          "H"
+        ],
+        "role": "Fab",
+        "construct_residues": 228,
+        "observed_residues": 214,
+        "missing_residues": 14,
+        "all_missing_match_depositor_unobserved_records": true,
+        "gaps": [
+          {
+            "missing_label_range": [
+              34,
+              34
+            ],
+            "missing_count": 1,
+            "observed_flanks": [
+              {
+                "observed_label_seq_id": 33,
+                "auth_residue_number": "33",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": 6.040098840250881
+              },
+              {
+                "observed_label_seq_id": 35,
+                "auth_residue_number": "35",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": 8.736481557240301
+              }
+            ]
+          },
+          {
+            "missing_label_range": [
+              136,
+              141
+            ],
+            "missing_count": 6,
+            "observed_flanks": [
+              {
+                "observed_label_seq_id": 135,
+                "auth_residue_number": "135",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": 58.26269019707209
+              },
+              {
+                "observed_label_seq_id": 142,
+                "auth_residue_number": "142",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": 55.16221665234276
+              }
+            ]
+          },
+          {
+            "missing_label_range": [
+              222,
+              228
+            ],
+            "missing_count": 7,
+            "observed_flanks": [
+              {
+                "observed_label_seq_id": 221,
+                "auth_residue_number": "221",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": 58.47765539930616
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "instance": "B@1",
+        "auth_chains": [
+          "L"
+        ],
+        "role": "Fab",
+        "construct_residues": 215,
+        "observed_residues": 214,
+        "missing_residues": 1,
+        "all_missing_match_depositor_unobserved_records": true,
+        "gaps": [
+          {
+            "missing_label_range": [
+              215,
+              215
+            ],
+            "missing_count": 1,
+            "observed_flanks": [
+              {
+                "observed_label_seq_id": 214,
+                "auth_residue_number": "214",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": 67.77206505633424
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "instance": "C@1",
+        "auth_chains": [
+          "A"
+        ],
+        "role": "OspC",
+        "construct_residues": 164,
+        "observed_residues": 155,
+        "missing_residues": 9,
+        "all_missing_match_depositor_unobserved_records": true,
+        "gaps": [
+          {
+            "missing_label_range": [
+              1,
+              7
+            ],
+            "missing_count": 7,
+            "observed_flanks": [
+              {
+                "observed_label_seq_id": 8,
+                "auth_residue_number": "45",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": null
+              }
+            ]
+          },
+          {
+            "missing_label_range": [
+              163,
+              164
+            ],
+            "missing_count": 2,
+            "observed_flanks": [
+              {
+                "observed_label_seq_id": 162,
+                "auth_residue_number": "199",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "instance": "D@1",
+        "auth_chains": [
+          "B"
+        ],
+        "role": "OspC",
+        "construct_residues": 164,
+        "observed_residues": 157,
+        "missing_residues": 7,
+        "all_missing_match_depositor_unobserved_records": true,
+        "gaps": [
+          {
+            "missing_label_range": [
+              1,
+              7
+            ],
+            "missing_count": 7,
+            "observed_flanks": [
+              {
+                "observed_label_seq_id": 8,
+                "auth_residue_number": "45",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "instance": "E@1",
+        "auth_chains": [
+          "C"
+        ],
+        "role": "Fab",
+        "construct_residues": 228,
+        "observed_residues": 215,
+        "missing_residues": 13,
+        "all_missing_match_depositor_unobserved_records": true,
+        "gaps": [
+          {
+            "missing_label_range": [
+              136,
+              141
+            ],
+            "missing_count": 6,
+            "observed_flanks": [
+              {
+                "observed_label_seq_id": 135,
+                "auth_residue_number": "135",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": 58.52612741331858
+              },
+              {
+                "observed_label_seq_id": 142,
+                "auth_residue_number": "142",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": 54.082151408759614
+              }
+            ]
+          },
+          {
+            "missing_label_range": [
+              222,
+              228
+            ],
+            "missing_count": 7,
+            "observed_flanks": [
+              {
+                "observed_label_seq_id": 221,
+                "auth_residue_number": "221",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": 59.989713009815276
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "instance": "F@1",
+        "auth_chains": [
+          "D"
+        ],
+        "role": "Fab",
+        "construct_residues": 215,
+        "observed_residues": 215,
+        "missing_residues": 0,
+        "all_missing_match_depositor_unobserved_records": true,
+        "gaps": []
+      }
+    ],
+    "interpretation": "Flanking distances describe known coordinates only; they do not reconstruct the missing residue or prove that an unmodeled loop cannot contact antigen. Noncontact labels mean no observed atom contact under the endpoint, not lack of binding potential."
+  },
+  {
+    "pdb_id": "7UIJ",
+    "status": "COMPLETED",
+    "chains": [
+      {
+        "instance": "A@1",
+        "auth_chains": [
+          "H"
+        ],
+        "role": "Fab",
+        "construct_residues": 236,
+        "observed_residues": 215,
+        "missing_residues": 21,
+        "all_missing_match_depositor_unobserved_records": true,
+        "gaps": [
+          {
+            "missing_label_range": [
+              216,
+              236
+            ],
+            "missing_count": 21,
+            "observed_flanks": [
+              {
+                "observed_label_seq_id": 215,
+                "auth_residue_number": "215",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": 52.83871245592573
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "instance": "B@1",
+        "auth_chains": [
+          "L"
+        ],
+        "role": "Fab",
+        "construct_residues": 214,
+        "observed_residues": 214,
+        "missing_residues": 0,
+        "all_missing_match_depositor_unobserved_records": true,
+        "gaps": []
+      },
+      {
+        "instance": "C@1",
+        "auth_chains": [
+          "A"
+        ],
+        "role": "Fab",
+        "construct_residues": 236,
+        "observed_residues": 210,
+        "missing_residues": 26,
+        "all_missing_match_depositor_unobserved_records": true,
+        "gaps": [
+          {
+            "missing_label_range": [
+              130,
+              134
+            ],
+            "missing_count": 5,
+            "observed_flanks": [
+              {
+                "observed_label_seq_id": 129,
+                "auth_residue_number": "129",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": 51.794844569705965
+              },
+              {
+                "observed_label_seq_id": 135,
+                "auth_residue_number": "135",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": 53.84899981429553
+              }
+            ]
+          },
+          {
+            "missing_label_range": [
+              216,
+              236
+            ],
+            "missing_count": 21,
+            "observed_flanks": [
+              {
+                "observed_label_seq_id": 215,
+                "auth_residue_number": "215",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": 54.696430687934296
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "instance": "D@1",
+        "auth_chains": [
+          "B"
+        ],
+        "role": "Fab",
+        "construct_residues": 214,
+        "observed_residues": 208,
+        "missing_residues": 6,
+        "all_missing_match_depositor_unobserved_records": true,
+        "gaps": [
+          {
+            "missing_label_range": [
+              209,
+              214
+            ],
+            "missing_count": 6,
+            "observed_flanks": [
+              {
+                "observed_label_seq_id": 208,
+                "auth_residue_number": "208",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": 55.910853347091745
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "instance": "E@1",
+        "auth_chains": [
+          "C"
+        ],
+        "role": "OspC",
+        "construct_residues": 164,
+        "observed_residues": 155,
+        "missing_residues": 9,
+        "all_missing_match_depositor_unobserved_records": true,
+        "gaps": [
+          {
+            "missing_label_range": [
+              1,
+              8
+            ],
+            "missing_count": 8,
+            "observed_flanks": [
+              {
+                "observed_label_seq_id": 9,
+                "auth_residue_number": "46",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": null
+              }
+            ]
+          },
+          {
+            "missing_label_range": [
+              164,
+              164
+            ],
+            "missing_count": 1,
+            "observed_flanks": [
+              {
+                "observed_label_seq_id": 163,
+                "auth_residue_number": "200",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "instance": "F@1",
+        "auth_chains": [
+          "D"
+        ],
+        "role": "OspC",
+        "construct_residues": 164,
+        "observed_residues": 158,
+        "missing_residues": 6,
+        "all_missing_match_depositor_unobserved_records": true,
+        "gaps": [
+          {
+            "missing_label_range": [
+              1,
+              5
+            ],
+            "missing_count": 5,
+            "observed_flanks": [
+              {
+                "observed_label_seq_id": 6,
+                "auth_residue_number": "43",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": null
+              }
+            ]
+          },
+          {
+            "missing_label_range": [
+              164,
+              164
+            ],
+            "missing_count": 1,
+            "observed_flanks": [
+              {
+                "observed_label_seq_id": 163,
+                "auth_residue_number": "200",
+                "minimum_flanking_CA_to_observed_OspC_heavy_atom_A": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "interpretation": "Flanking distances describe known coordinates only; they do not reconstruct the missing residue or prove that an unmodeled loop cannot contact antigen. Noncontact labels mean no observed atom contact under the endpoint, not lack of binding potential."
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETED",
+  "v0_2_1_manifest_unchanged_since_sprint_start": true,
+  "v0_2_1_exact_manifest_entries": 104,
+  "v0_1_0_exact_scientific_files": 55,
+  "raw_ESM_scores_sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+  "no_prior_experiment_files_modified": true
+}

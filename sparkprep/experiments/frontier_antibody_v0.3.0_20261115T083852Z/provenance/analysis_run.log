@@ -1,0 +1,129 @@
+{
+  "primary_n": 152,
+  "contacts": 31,
+  "descriptives": {
+    "modal_fraction": {
+      "contact_mean": 0.8258064516129031,
+      "noncontact_mean": 0.7669421487603305,
+      "mean_contact_minus_noncontact": 0.0588643028525726,
+      "contact_median": 0.9666666666666667,
+      "noncontact_median": 0.8666666666666667,
+      "pooled_standardized_mean_difference": 0.2538272726853475,
+      "auroc_raw_higher_score": 0.5798453745667822
+    },
+    "mean_nll_nats": {
+      "contact_mean": 2.3227169029815222,
+      "noncontact_mean": 2.634193085901665,
+      "mean_contact_minus_noncontact": -0.3114761829201429,
+      "contact_median": 2.403257203102112,
+      "noncontact_median": 2.536737855275472,
+      "pooled_standardized_mean_difference": -0.41435481149380265,
+      "auroc_raw_higher_score": 0.37749933351106374
+    },
+    "signed_discordance": {
+      "contact_mean": -0.07109613224201573,
+      "noncontact_mean": -0.03223551663171744,
+      "mean_contact_minus_noncontact": -0.03886061561029829,
+      "contact_median": -0.12686567164179105,
+      "noncontact_median": -0.05721393034825871,
+      "pooled_standardized_mean_difference": -0.10415122791324606,
+      "auroc_raw_higher_score": 0.4620101306318315
+    },
+    "reference_dimer_sasa_A2": {
+      "contact_mean": 57.374018372523004,
+      "noncontact_mean": 37.00612944775362,
+      "mean_contact_minus_noncontact": 20.36788892476938,
+      "contact_median": 53.59858921718319,
+      "noncontact_median": 27.189387477384777,
+      "pooled_standardized_mean_difference": 0.5233900485570955,
+      "auroc_raw_higher_score": 0.6634230871767529
+    },
+    "reference_dimerization_sasa_loss_A2": {
+      "contact_mean": 17.766037927855795,
+      "noncontact_mean": 11.464610911843524,
+      "mean_contact_minus_noncontact": 6.301427016012271,
+      "contact_median": 8.36534128819317,
+      "noncontact_median": 0.0,
+      "pooled_standardized_mean_difference": 0.26346741698841114,
+      "auroc_raw_higher_score": 0.6038389762729939
+    },
+    "reference_dimer_contact": {
+      "contact_mean": 0.5161290322580645,
+      "noncontact_mean": 0.2727272727272727,
+      "mean_contact_minus_noncontact": 0.2434017595307918,
+      "contact_median": 1.0,
+      "noncontact_median": 0.0,
+      "pooled_standardized_mean_difference": 0.5291181274615545,
+      "auroc_raw_higher_score": 0.6217008797653959
+    },
+    "Q07337_nll_nats": {
+      "contact_mean": 2.2946855868062666,
+      "noncontact_mean": 2.686992432460312,
+      "mean_contact_minus_noncontact": -0.3923068456540455,
+      "contact_median": 2.089339256286621,
+      "noncontact_median": 2.5415868759155273,
+      "pooled_standardized_mean_difference": -0.4118472289544704,
+      "auroc_raw_higher_score": 0.3841642228739003
+    },
+    "absolute_discordance": {
+      "contact_mean": 0.2969025838549189,
+      "noncontact_mean": 0.3050450228197854,
+      "mean_contact_minus_noncontact": -0.008142438964866494,
+      "contact_median": 0.2960199004975124,
+      "noncontact_median": 0.24378109452736318,
+      "pooled_standardized_mean_difference": -0.037235215498106836,
+      "auroc_raw_higher_score": 0.4984004265529192
+    }
+  },
+  "OOF": {
+    "B0": {
+      "n": 152,
+      "contacts": 31,
+      "prevalence": 0.20394736842105263,
+      "brier": 0.17748046050976124,
+      "log_loss": 0.5534338819453118,
+      "auroc": 0.18728339109570782
+    },
+    "B1": {
+      "n": 152,
+      "contacts": 31,
+      "prevalence": 0.20394736842105263,
+      "brier": 0.1779282474240005,
+      "log_loss": 0.5618269849096293,
+      "auroc": 0.28312450013329776
+    },
+    "B2": {
+      "n": 152,
+      "contacts": 31,
+      "prevalence": 0.20394736842105263,
+      "brier": 0.1686336055872799,
+      "log_loss": 0.5340553893694818,
+      "auroc": 0.620634497467342
+    },
+    "B3": {
+      "n": 152,
+      "contacts": 31,
+      "prevalence": 0.20394736842105263,
+      "brier": 0.1740219332031673,
+      "log_loss": 0.5464398644622703,
+      "auroc": 0.6163689682751267
+    },
+    "B4": {
+      "n": 152,
+      "contacts": 31,
+      "prevalence": 0.20394736842105263,
+      "brier": 0.16770781223794828,
+      "log_loss": 0.5276009661824314,
+      "auroc": 0.6480938416422287
+    },
+    "B5": {
+      "n": 152,
+      "contacts": 31,
+      "prevalence": 0.20394736842105263,
+      "brier": 0.16844602376163545,
+      "log_loss": 0.5311145951666927,
+      "auroc": 0.6446280991735537
+    }
+  },
+  "primary_delta_Brier": 0.005388327615887395
+}

@@ -1,0 +1,106 @@
+[
+  {
+    "file": "inputs/9BIF.cif",
+    "url": "https://files.rcsb.org/download/9BIF.cif",
+    "retrieved_utc": "2026-11-15T08:42:12.468718+00:00",
+    "bytes": 6788086,
+    "sha256": "5b46c89e31b034591fcaff67d8286220e28240ec04d0142c0ba8bf02896eb325",
+    "headers": {
+      "Last-Modified": "Thu, 25 Sep 2025 16:53:40 GMT",
+      "ETag": "W/\"a259a9606fb173ba6eebe5296e227717-identity\"",
+      "Content-Type": "chemical/x-cif"
+    },
+    "status": "RETRIEVED"
+  },
+  {
+    "file": "inputs/9BIF_entry.json",
+    "url": "https://data.rcsb.org/rest/v1/core/entry/9BIF",
+    "retrieved_utc": "2026-11-15T08:42:11.852887+00:00",
+    "bytes": 9897,
+    "sha256": "562b68d8f6d43403c37d53fc4efe5275041177e8e3278074dc2f25ad23b84344",
+    "headers": {
+      "Last-Modified": null,
+      "ETag": null,
+      "Content-Type": "application/json"
+    },
+    "status": "RETRIEVED"
+  },
+  {
+    "file": "inputs/9BIF_entity_1.json",
+    "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/9BIF/1",
+    "retrieved_utc": "2026-11-15T08:42:11.895293+00:00",
+    "bytes": 18586,
+    "sha256": "abd6c805ca808be60594aa623dab10b6dc56c135b315511c65e60abf9d9764f8",
+    "headers": {
+      "Last-Modified": null,
+      "ETag": null,
+      "Content-Type": "application/json"
+    },
+    "status": "RETRIEVED"
+  },
+  {
+    "file": "inputs/9BIF_entity_2.json",
+    "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/9BIF/2",
+    "retrieved_utc": "2026-11-15T08:42:12.152427+00:00",
+    "bytes": 17770,
+    "sha256": "32bbf5bd8a1584bc030b8926bdc02b9c53dbfdbdfbc3b67854db3c57fa1facdc",
+    "headers": {
+      "Last-Modified": null,
+      "ETag": null,
+      "Content-Type": "application/json"
+    },
+    "status": "RETRIEVED"
+  },
+  {
+    "file": "inputs/9BIF_entity_3.json",
+    "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/9BIF/3",
+    "retrieved_utc": "2026-11-15T08:42:12.117929+00:00",
+    "bytes": 13466,
+    "sha256": "a36e8d08d672ced253db6daac76c7b02a881309defb9ab04400e32297065405a",
+    "headers": {
+      "Last-Modified": null,
+      "ETag": null,
+      "Content-Type": "application/json"
+    },
+    "status": "RETRIEVED"
+  },
+  {
+    "file": "inputs/7UIJ.cif",
+    "url": "https://files.rcsb.org/download/7UIJ.cif",
+    "retrieved_utc": "2026-11-15T08:42:13.621320+00:00",
+    "bytes": 1714403,
+    "sha256": "7d2e247e4121a7ec4359815a31f2b72d9ef94dcb4ccbc473028ecac4e5f18986",
+    "headers": {
+      "Last-Modified": "Thu, 25 Sep 2025 17:44:49 GMT",
+      "ETag": "W/\"457f3749ed3b717ca8328cc88f542bac-identity\"",
+      "Content-Type": "chemical/x-cif"
+    },
+    "status": "RETRIEVED"
+  },
+  {
+    "file": "inputs/7UIJ_entry.json",
+    "url": "https://data.rcsb.org/rest/v1/core/entry/7UIJ",
+    "retrieved_utc": "2026-11-15T08:42:12.565202+00:00",
+    "bytes": 18509,
+    "sha256": "8f5a99f52c0a0747911b55568f800eece8b69ce9b93489634791c55d7d06b328",
+    "headers": {
+      "Last-Modified": null,
+      "ETag": null,
+      "Content-Type": "application/json"
+    },
+    "status": "RETRIEVED"
+  },
+  {
+    "file": "inputs/7UIJ_entity_3.json",
+    "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/7UIJ/3",
+    "retrieved_utc": "2026-11-15T08:42:12.627183+00:00",
+    "bytes": 13489,
+    "sha256": "f051e89e1e0e0ecbf61d2b76d4e5ba847704f9c76f7612d418198908d4828a21",
+    "headers": {
+      "Last-Modified": null,
+      "ETag": null,
+      "Content-Type": "application/json"
+    },
+    "status": "RETRIEVED"
+  }
+]

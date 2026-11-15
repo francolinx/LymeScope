@@ -1,0 +1,53 @@
+{
+  "source_commit": "aafe818a20ea025370cf4b65145a9684e80aaaef",
+  "copies": [
+    {
+      "source_experiment_relative_path": "inputs/panel.fasta",
+      "new_input_path": "inputs/frozen_panel.fasta",
+      "bytes": 8360,
+      "sha256": "5e57f71028675fb90e41a0594ff60cb2f81f2b03dd33d7c19c6e62d1a961ee05"
+    },
+    {
+      "source_experiment_relative_path": "inputs/aligned.fasta",
+      "new_input_path": "inputs/frozen_aligned.fasta",
+      "bytes": 8625,
+      "sha256": "f7db9b8788ebaf1997f719da83a0c97b831b3a7649bcf905925b6dfd55ff82dd"
+    },
+    {
+      "source_experiment_relative_path": "inputs/baseline_alignment_to_structure.tsv",
+      "new_input_path": "inputs/frozen_reference_mapping.tsv",
+      "bytes": 11897,
+      "sha256": "d132d09615ac04eceea7c43a25f3128ab13ef45342a6c7307e9d4aa20249efae"
+    },
+    {
+      "source_experiment_relative_path": "inputs/1GGQ.cif",
+      "new_input_path": "inputs/1GGQ_reference.cif",
+      "bytes": 536284,
+      "sha256": "03a30187a21aed2d9c487cb31e27b805242d3bbb890a2473c58bdbd5884cc6f0"
+    },
+    {
+      "source_experiment_relative_path": "results/full_panel_v1/residue_nll.tsv",
+      "new_input_path": "inputs/frozen_residue_nll.tsv",
+      "bytes": 711628,
+      "sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f"
+    },
+    {
+      "source_experiment_relative_path": "results/full_panel_comparison_v2/column_comparison.tsv",
+      "new_input_path": "inputs/frozen_column_comparison_v2.tsv",
+      "bytes": 58988,
+      "sha256": "9dd159882c783ae23f2c50535e2acf8afc572390a48c984766fc0bb0e5edc02d"
+    },
+    {
+      "source_experiment_relative_path": "results/sasa_dimer_context.tsv",
+      "new_input_path": "inputs/frozen_sasa_dimer.tsv",
+      "bytes": 91887,
+      "sha256": "bee61c0cd4e16ab9bd409386ed65415bd0f62cb5def792f219fcafe6c2d08b1d"
+    }
+  ],
+  "frozen_uniprot_record_extraction": {
+    "parent_path": "/home/darkstar90/lymescope-sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/inputs/source_data/selected_uniprot_records.json",
+    "parent_sha256": "dcf6e4eff8fd415ea1fcedea3973b35ca53f3d94da08e35af29834eec04545df",
+    "accession": "Q07337",
+    "record_sequence_sha256": "8939ee76df09336cca51badd169a15d142bcd48b90b928cfcebc1ef733ac1d7e"
+  }
+}

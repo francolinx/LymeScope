@@ -1,0 +1,17 @@
+{
+  "overall": "COMPLETED",
+  "primary_B11_mapping": "COMPLETED",
+  "secondary_B5_mapping": "COMPLETED",
+  "predeclared_comparison": "COMPLETED",
+  "incremental_discordance_hypothesis": "NOT_SUPPORTED_BY_THIS_DIAGNOSTIC",
+  "literature_8C1_region": "COMPLETED",
+  "8C1_atomic_contact_analysis": "NOT RUN",
+  "independent_external_biological_validation": "NOT RUN",
+  "new_ESM_inference": "NOT RUN",
+  "event_cluster_benchmark": "NOT RUN",
+  "laptop_submission_integration": "NOT RUN \u2014 OWNED_BY_LAPTOP",
+  "new_frontier_tests_passed": 26,
+  "existing_v021_experiment_tests_passed": 16,
+  "current_OOF_predictions": 5472,
+  "new_scientific_directory": "frontier_antibody_v0.3.0_20261115T083852Z"
+}

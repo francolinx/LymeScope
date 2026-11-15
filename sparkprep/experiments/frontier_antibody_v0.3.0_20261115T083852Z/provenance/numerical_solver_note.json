@@ -1,0 +1,16 @@
+{
+  "status": "NUMERICAL_RECOVERY_SAME_PREDECLARED_OBJECTIVE",
+  "recorded_utc": "2026-11-15T09:05:54.588215+00:00",
+  "first_failure": {
+    "pdb_id": "7UIJ",
+    "cutoff_A": 4.0,
+    "model": "B1",
+    "held_block": 5,
+    "train_n": 123,
+    "train_contacts": 16,
+    "LBFGS_message": "ABNORMAL: "
+  },
+  "fixed_recovery_rule": "Only on L-BFGS non-success, solve the identical convex objective using deterministic Newton/Hessian and line search, require gradient convergence; preserve original failure and selected solver in fit metadata. No hyperparameter, feature, split, label or endpoint change.",
+  "primary_9BIF_result": "All primary fits had succeeded already. Numeric results must remain unchanged.",
+  "initial_partial_output": "provenance/ANALYSIS_BEFORE_SOLVER_RECOVERY.json"
+}

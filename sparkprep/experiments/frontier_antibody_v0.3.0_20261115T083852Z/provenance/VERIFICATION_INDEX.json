@@ -1,0 +1,19 @@
+{
+  "current": {
+    "frontier_unit_tests": "provenance/test_frontier.log (26 tests)",
+    "prior_reference_experiment_tests": "provenance/test_frozen_v021_reference.log (16 tests)",
+    "source_and_frozen_integrity": "provenance/BASELINE_INTEGRITY.json",
+    "offline_full_reproduction": "provenance/REPRODUCTION_RECEIPT.json (5472 OOF predictions, 26 tests)",
+    "full_distance_audit": "results/INDEPENDENT_GEOMETRY_AUDIT.json",
+    "independent_logistic_solver_audit": "results/INDEPENDENT_STATISTICS_AUDIT.json",
+    "scientific_outcomes": "ANALYSIS_RESULTS.json",
+    "display_adapter": "results/FRONTIER_EVIDENCE.json"
+  },
+  "historical_retained": {
+    "provenance/ANALYSIS_BEFORE_SOLVER_RECOVERY.json": "Initial partial secondary optimizer output. The primary result is identical to current.",
+    "provenance/clean_reproduction.log": "Earlier pre-recovery replay (24 tests/5320 predictions), superseded by the final receipt.",
+    "provenance/clean_reproduction_final.log": "Final full replay (26 tests/5472 predictions)."
+  },
+  "solver_recovery": "Same objective/penalty/split, one secondary B1 optimizer failure recovered; source and first failure preserved.",
+  "additional_ESM_inference_forward_passes": 0
+}
