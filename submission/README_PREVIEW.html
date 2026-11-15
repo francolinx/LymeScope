@@ -1,0 +1,175 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'; base-uri 'none'">
+<title>LymeScope — local README preview</title><style>body{margin:0;background:#f3f7f7;color:#183440;font:17px/1.65 system-ui,sans-serif}main{max-width:940px;margin:32px auto;padding:32px;background:white}h1,h2{line-height:1.2}h1{letter-spacing:.12em;font-size:46px}h2{border-top:1px solid #cfe0e3;padding-top:25px;margin-top:38px}a{color:#086b78}img,svg{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto}td,th{padding:10px;border:1px solid #d3e1e4}code{overflow-wrap:anywhere}blockquote{border-left:4px solid #188a87;margin-left:0;padding:6px 20px;background:#edf7f6}summary{cursor:pointer}picture{display:block}@media(max-width:600px){main{padding:18px;margin:0}h1{font-size:34px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style><main><p><strong>Local preview.</strong> GitHub rendering has not been verified.</p><h1>LYMESCOPE</h1>
+<p><strong>Making the invisible biology of Lyme disease explorable.</strong></p>
+<p>Lyme disease is the most common vector-borne disease in the United States. More than 80,000 cases are reported to CDC annually. Insurance-claims analysis estimates approximately 476,000 Americans diagnosed and treated each year; this is not a count of confirmed infections and may overestimate them because billing codes can be inaccurate. Surveillance also has underreporting and classification limitations. <a href="https://www.cdc.gov/lyme/data-research/facts-stats/">CDC surveillance and estimates</a> · <a href="https://www.hhs.gov/lyme/index.html">HHS overview</a></p>
+<blockquote>
+<p><strong>Project lead statement - draft awaiting personal approval:</strong> "I want to make complex biological evidence easier to inspect, so researchers can see both what a result supports and what still needs testing."</p>
+</blockquote>
+<p><strong>Our question:</strong> In a selected, cross-species panel of 30 natural OspC sequences, which aligned positions agree, how many observations support that agreement, and where do those positions map to an experimental structure? A separately prepared ESM-2 extension asks whether observed agreement and masked-residue predictability differ.</p>
+<p><strong>Computed:</strong> a CPU MAFFT alignment, descriptive column statistics and explicit mapping to deposited OspC coordinates. <strong>New integration:</strong> an offline, traceable path from sequence -&gt; alignment -&gt; coverage -&gt; structure, with a separate biological-context presentation and a tested masked-scoring implementation. <strong>For scientists:</strong> inspect denominators and missing coordinates before deciding which differences merit follow-up. <strong>Evidence boundary:</strong> the coordinates come from published X-ray experiments; alignment, agreement and geometric proximity are computational descriptions. Model scores are <strong>not yet measured</strong>. LymeScope provides no diagnosis, clinical recommendation, protective-antigen discovery or safety assessment.</p>
+<p><a href="../demo/v0.2.0/index.html">Open the offline demo</a> · <a href="../sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/index.html">Frozen results viewer</a> · <a href="ONE_PAGER.md">One-page submission</a> · <a href="DEMO_SCRIPT.md">Five-minute script</a></p>
+<p>Download/clone the repository, then open the HTML locally. GitHub's file view shows HTML source; no hosted demo is implied. No model, server or network connection is needed for the saved-results demonstration. <a href="../RUN_LOCALLY.md">Local instructions</a></p>
+<h2>Start with the denominator</h2>
+<p><picture><source media="(prefers-reduced-motion: reduce)" srcset="../demo/v0.2.0/assets/coverage-evidence.png"><img src="../demo/v0.2.0/assets/coverage-evidence.gif" alt="Both columns show 100 percent agreement: column 1 has 30 of 30 observations; column 154 has one observation and 29 gaps." width="960"></picture></p>
+<p><strong>Actual saved statistics, animated originally for this project.</strong> Column 1 is identical at 30/30 coverage. Column 154 contains one observed N and 29 gaps. Column 173 similarly has one observed G. The percentage is correctly calculated from one observation; that is insufficient support for broad conservation in this panel. Both sparse columns are reference gaps and receive no invented 3D coordinates. <a href="../demo/v0.2.0/assets/coverage-evidence.png">Static alternative</a> · <a href="../sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/METHOD_AND_LIMITATIONS.md">Saved methods</a></p>
+<table>
+<thead>
+<tr>
+<th>Population</th>
+<th style="text-align: right;">Count</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Selected natural sequences</td>
+<td style="text-align: right;">30</td>
+<td>Convenience panel; not all Lyme-associated diversity</td>
+</tr>
+<tr>
+<td>Fixed alignment columns</td>
+<td style="text-align: right;">218</td>
+<td>202 fully covered; 16 with gaps</td>
+</tr>
+<tr>
+<td>F: fully covered columns</td>
+<td style="text-align: right;">202</td>
+<td>Primary comparison population</td>
+</tr>
+<tr>
+<td>Identical within F</td>
+<td style="text-align: right;">76</td>
+<td>Agreement within this selected panel</td>
+</tr>
+<tr>
+<td>M: mapped, observed 1GGQ residues</td>
+<td style="text-align: right;">162</td>
+<td>Experimental chain-A coordinates available</td>
+</tr>
+<tr>
+<td>MF: F intersection M</td>
+<td style="text-align: right;">159</td>
+<td>Full coverage and observed coordinates</td>
+</tr>
+<tr>
+<td>M minus F</td>
+<td style="text-align: right;">3</td>
+<td>Columns 75, 86, 119; descriptive scores require denominators</td>
+</tr>
+</tbody>
+</table>
+<h2>From letters to an experimental protein</h2>
+<p>OspC is a bacterial surface protein studied in Lyme disease. We use the deposited 1GGQ structure, not an AI-generated fold. The original analysis maps 162 observed chain-A residues; 11 corresponding residues lack coordinates. Construct boundaries and reference gaps remain explicit. <a href="https://doi.org/10.1093/emboj/20.5.971">Kumaran et al., 2001</a></p>
+<p><picture><source media="(prefers-reduced-motion: reduce)" srcset="../demo/v0.2.0/assets/ospc-rotation.png"><img src="../demo/v0.2.0/assets/ospc-rotation.gif" alt="A rigid rotation of the 162 observed C-alpha coordinates of experimental OspC structure 1GGQ chain A; missing residues are not drawn." width="960"></picture></p>
+<p><strong>Experimental-coordinate rendering.</strong> This original C-alpha trace uses a rotating camera, not folding, dynamics, a molecular surface or a new structure prediction. <a href="../demo/v0.2.0/assets/ospc-rotation.png">Static alternative</a> · <a href="https://www.rcsb.org/structure/1GGQ">PDB 1GGQ</a></p>
+<p><picture><source media="(prefers-reduced-motion: reduce)" srcset="../demo/v0.2.0/assets/alignment-map.png"><img src="../demo/v0.2.0/assets/alignment-map.gif" alt="The actual 30 by 218 alignment transitions to agreement and coverage tracks. Teal tiles match an observed mode, amber tiles differ, and dark tiles are gaps." width="960"></picture></p>
+<p><strong>Saved alignment, presentation transition.</strong> The display collapses rows visually without realigning or renumbering columns. Amber bars show observed modal fractions; teal bars show coverage. <a href="../demo/v0.2.0/assets/alignment-map.png">Static alternative</a> · <a href="../sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/aligned.fasta">Frozen alignment</a></p>
+<details>
+<summary><strong>Explore the dimer, an exact residue correspondence and the proposed compute workflow</strong></summary>
+<p><img alt="Validated 1GGQ assembly 1 with chain A in teal, B in blue, and interchain C-alpha proximity regions in amber." src="../demo/v0.2.0/assets/ospc-dimer.gif" /></p>
+<p><strong>Deposited assembly + computational proxy.</strong> Assembly 1 is the author/software-supported A/B dimer with an identity operator. Amber marks residues whose nearest other-chain C-alpha is at most 8 angstroms (49/162 per chain). This is a contact proxy, not measured solvent or antibody accessibility or a binding-site discovery. <a href="../demo/v0.2.0/assets/ospc-dimer.png">Static alternative</a> · <a href="../demo/v0.2.0/context.json">Checked assembly and mapping</a> · <a href="https://doi.org/10.1093/emboj/20.5.971">Original paper</a></p>
+<p><img alt="Alignment column 68 maps through Q07337 native position 67 to observed 1GGQ chain A Ser67, with 30 of 30 coverage and 66.7 percent modal agreement." src="../demo/v0.2.0/assets/residue-mapping.gif" /></p>
+<p><strong>Explicit saved correspondence.</strong> Alignment column 68 -&gt; Q07337 position 67 -&gt; observed 1GGQ A Ser67. <a href="../demo/v0.2.0/assets/residue-mapping.png">Static alternative</a> · <a href="../sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/alignment_to_structure.tsv">Frozen mapping</a></p>
+<p><img alt="Conceptual one-node versus two-node task distribution: 415 model calls versus disjoint shards of 208 and 207 calls, for the same 6305 masked examples. No timing is measured." src="../demo/v0.2.0/assets/task-shards.gif" /></p>
+<p><strong>Conceptual, unexecuted workflow.</strong> Whole-sequence shards preserve the same 6,305 examples and batching protocol. Dots illustrate task distribution; they encode no timing, bandwidth or speedup. <a href="../demo/v0.2.0/assets/task-shards.png">Static alternative</a> · <a href="../sparkprep/analysis/ospc_masked_v0.2.0/plans/workload.json">Locked workload</a></p>
+</details>
+<p>All six assets are original renders from saved data or explicitly conceptual diagrams. <a href="../demo/v0.2.0/assets/manifest.json">Asset inventory, dimensions, sizes and hashes</a>. The offline demo defaults to static previews with deliberate play/stop controls.</p>
+<h2>What local AI supercomputing contributes</h2>
+<p>The completed biological baseline ran on the personal DGX Spark CPU. Separate event evidence demonstrates CIQ Fuzzball scheduling of a real PyTorch CUDA calculation on NVIDIA GB10 at Spark30, plus persistent Team 15 storage and reads of identical saved bytes on Spark29 and Spark30. These are infrastructure results, not scientific acceleration. <a href="../findings/phase-b-results.json">Saved event receipts</a> · <a href="../portable_results/index.html">Infrastructure viewer</a></p>
+<p>The prepared extension uses <strong>Meta FAIR's ESM-2 8M</strong> to score the original amino acid after masking exactly that residue. It preserves sequence identity, offsets, alignment mapping and contributor counts. Full-coverage columns define the primary agreement/NLL comparison. Leave-out analyses reuse per-sequence scores. The exact input needs <strong>6,305 masked examples / 415 scoring forwards</strong> at per-sequence batch size 16. Pilot and warm-up calls are separate.</p>
+<table>
+<thead>
+<tr>
+<th>Evidence</th>
+<th>Current state</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frozen CPU alignment, statistics and reference mapping</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td>CUDA calculation and two-node shared-storage read</td>
+<td>Completed infrastructure proof</td>
+</tr>
+<tr>
+<td>Offline scorer, ingestion and sensitivity tests</td>
+<td>Passed fixtures; not real inference</td>
+</tr>
+<tr>
+<td>ESM-2 masked scores and real-model pilot</td>
+<td><strong>Not yet measured</strong></td>
+</tr>
+<tr>
+<td>Matched one-node / two-node scientific benchmark</td>
+<td><strong>Not run; no speedup claim</strong></td>
+</tr>
+</tbody>
+</table>
+<p><a href="../sparkprep/analysis/ospc_masked_v0.2.0/README.md">Scoring contract and implementation</a> · <a href="../sparkprep/analysis/ospc_masked_v0.2.0/STAGING_REQUEST.md">Bounded model-staging request</a> · <a href="CLAIM_VERIFICATION.md">Claim verification</a></p>
+<h2>A history of making biology visible</h2>
+<p><img alt="Accessible timeline from experimental structures in 1958 and NMR in the 1980s through computational methods, CASP, AlphaFold, Meta FAIR ESMFold and LymeScope in 2026. Full chronological text follows." src="../demo/v0.2.0/assets/biology-timeline.svg" /></p>
+<table>
+<thead>
+<tr>
+<th>Era</th>
+<th>Milestone and primary source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1958</td>
+<td>Experimental X-ray myoglobin model: <a href="https://www.nature.com/articles/181662a0">Kendrew et al.</a></td>
+</tr>
+<tr>
+<td>1980s</td>
+<td>NMR constraints and distance geometry for solution conformations: <a href="https://pubmed.ncbi.nlm.nih.gov/2582141/">Havel &amp; Wuthrich, 1985</a></td>
+</tr>
+<tr>
+<td>1992-97</td>
+<td>Computational routes include <a href="https://www.nature.com/articles/358086a0">threading</a>, <a href="https://doi.org/10.1006/jmbi.1993.1626">comparative/homology modeling</a> and <a href="https://pubmed.ncbi.nlm.nih.gov/9149153/">fragment-based ab initio assembly</a>. These are examples, not claims of first invention.</td>
+</tr>
+<tr>
+<td>1994</td>
+<td>CASP starts blind assessments: <a href="https://www.ebi.ac.uk/training/online/courses/alphafold/validation-and-impact/how-have-alphafolds-predictions-of-protein-structure-been-validated/">EMBL-EBI</a></td>
+</tr>
+<tr>
+<td>2018</td>
+<td>AlphaFold enters CASP13: <a href="https://deepmind.google/science/alphafold/">DeepMind chronology</a></td>
+</tr>
+<tr>
+<td>2020 / 2021</td>
+<td>AlphaFold2 at CASP14; research publication the following year: <a href="https://www.nature.com/articles/s41586-021-03819-2">Jumper et al.</a></td>
+</tr>
+<tr>
+<td>2021 / 2022</td>
+<td>AlphaFold DB launches and expands to over 200 million predicted structures: <a href="https://www.ebi.ac.uk/about/news/technology-and-innovation/alphafold-200-million/">EMBL-EBI</a></td>
+</tr>
+<tr>
+<td>2023</td>
+<td>Meta FAIR/Meta AI publishes ESMFold and large-scale protein-language-model research: <a href="https://pubmed.ncbi.nlm.nih.gov/36927031/">Lin et al.</a></td>
+</tr>
+<tr>
+<td>2024</td>
+<td>AlphaFold3 predicts joint biomolecular structures, including interactions: <a href="https://www.nature.com/articles/s41586-024-07487-w">Abramson et al.</a></td>
+</tr>
+<tr>
+<td>2026</td>
+<td>LymeScope integrates existing evidence into an accessible local workflow; CPU OspC baseline complete, model scoring pending.</td>
+</tr>
+</tbody>
+</table>
+<p>Prediction does not replace experiments. No universal "40-60% accuracy" scale or cross-era performance percentage is used. ESMFold history is context: LymeScope's pending scorer is <strong>ESM-2</strong>, not ESMFold.</p>
+<h2>A credible future for digitized biology</h2>
+<p>Computational protein research may help formulate and test ideas for medicines, targeted biological sensing, drug delivery, biomanufacturing, environmental remediation, pandemic preparedness, and molecular interactions relevant to cancer or neurodegenerative disease. These possibilities span different methods and experiments; they are not capabilities delivered by this OspC atlas. Structure prediction and open resources can support hypotheses; function, delivery, specificity and safety require their own validation. <a href="https://www.ebi.ac.uk/about/news/technology-and-innovation/alphafold-200-million/">EMBL-EBI research context</a> · <a href="https://www.nature.com/articles/s41586-024-07487-w">Interaction-model research</a></p>
+<p>LymeScope's contribution today is narrower and inspectable: connect an observation to its supporting sequences, coordinates, sources and limitations.</p>
+<h2>Reproduce, review, present</h2>
+<ul>
+<li><a href="SUBMISSION_CHECKLIST.md">Submission checklist</a>, <a href="ONE_PAGER.md">one-pager</a>, <a href="DEMO_SCRIPT.md">4:30 narration + 30-second buffer</a>.</li>
+<li><a href="SOURCE_REFERENCES.md">Sources and attribution</a>, <a href="CLAIM_VERIFICATION.md">claims and evidence</a>, <a href="validation.json">validation receipt</a>.</li>
+<li>Frozen inputs, outputs and manifests remain at <a href="../sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/">v0.1.0</a>. New presentation/scorer code uses v0.2.0. Historical receipts are preserved.</li>
+<li>Model weights are excluded. Downloads, execution and main publication need separate approval. No project license is invented; public visibility is not third-party redistribution permission.</li>
+<li>Submission: <strong>November 15, 2026, noon Central</strong>. Live demo: <strong>1:00 PM</strong>, five minutes maximum. Research cutoff: <strong>10:30 AM Central</strong>. The submission stands on completed CPU evidence regardless of later GPU results.</li>
+</ul></main></html>

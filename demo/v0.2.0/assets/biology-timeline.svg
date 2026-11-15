@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 660 1640" role="img" aria-labelledby="title description">
+<title id="title">From experimental structures to inspectable local biology</title>
+<desc id="description">Ten milestones, 1958 to 2026. Experimental observations and predictions remain distinct. Full chronological text and references accompany this timeline in README.md.</desc>
+<rect width="660" height="1640" rx="20" fill="#071b26"/>
+<g font-family="Segoe UI,Arial,sans-serif" fill="#edf6f5">
+<text x="30" y="48" font-size="19" fill="#4ed9c1" letter-spacing="1">A HISTORY OF MAKING BIOLOGY VISIBLE</text>
+<text x="30" y="94" font-size="33" font-weight="700">Evidence. Models. New questions.</text>
+<path d="M49 140 V1550" stroke="#2a5562" stroke-width="3"/>
+<a href="https://www.nature.com/articles/181662a0"><circle cx="49" cy="160" r="8" fill="#4ed9c1"/>
+<text x="80" y="167" font-size="24" font-weight="700" fill="#4ed9c1">1958</text>
+<text x="80" y="208" font-size="27" font-weight="650">Seeing a protein</text>
+<text x="80" y="244" font-size="22" fill="#a8c2ca">X-ray analysis yields a myoglobin model.</text></a>
+<a href="https://pubmed.ncbi.nlm.nih.gov/2582141/"><circle cx="49" cy="305" r="8" fill="#4ed9c1"/>
+<text x="80" y="312" font-size="24" font-weight="700" fill="#4ed9c1">1980s</text>
+<text x="80" y="353" font-size="27" font-weight="650">Structures in solution</text>
+<text x="80" y="389" font-size="22" fill="#a8c2ca">NMR constraints and distance geometry.</text></a>
+<a href="https://pubmed.ncbi.nlm.nih.gov/9149153/"><circle cx="49" cy="450" r="8" fill="#4ed9c1"/>
+<text x="80" y="457" font-size="24" font-weight="700" fill="#4ed9c1">1992–97</text>
+<text x="80" y="498" font-size="27" font-weight="650">Computational routes</text>
+<text x="80" y="534" font-size="22" fill="#a8c2ca">Threading, homology and fragment assembly.</text></a>
+<a href="https://www.ebi.ac.uk/training/online/courses/alphafold/validation-and-impact/how-have-alphafolds-predictions-of-protein-structure-been-validated/"><circle cx="49" cy="595" r="8" fill="#4ed9c1"/>
+<text x="80" y="602" font-size="24" font-weight="700" fill="#4ed9c1">1994</text>
+<text x="80" y="643" font-size="27" font-weight="650">CASP begins</text>
+<text x="80" y="679" font-size="22" fill="#a8c2ca">Blind tests against experimental targets.</text></a>
+<a href="https://deepmind.google/science/alphafold/"><circle cx="49" cy="740" r="8" fill="#4ed9c1"/>
+<text x="80" y="747" font-size="24" font-weight="700" fill="#4ed9c1">2018</text>
+<text x="80" y="788" font-size="27" font-weight="650">AlphaFold at CASP13</text>
+<text x="80" y="824" font-size="22" fill="#a8c2ca">Deep learning in the structure benchmark.</text></a>
+<a href="https://www.nature.com/articles/s41586-021-03819-2"><circle cx="49" cy="885" r="8" fill="#4ed9c1"/>
+<text x="80" y="892" font-size="24" font-weight="700" fill="#4ed9c1">2020 / 21</text>
+<text x="80" y="933" font-size="27" font-weight="650">AlphaFold2</text>
+<text x="80" y="969" font-size="22" fill="#a8c2ca">CASP14 in 2020; research paper in 2021.</text></a>
+<a href="https://www.ebi.ac.uk/about/news/technology-and-innovation/alphafold-200-million/"><circle cx="49" cy="1030" r="8" fill="#4ed9c1"/>
+<text x="80" y="1037" font-size="24" font-weight="700" fill="#4ed9c1">2021 / 22</text>
+<text x="80" y="1078" font-size="27" font-weight="650">Predictions become a resource</text>
+<text x="80" y="1114" font-size="22" fill="#a8c2ca">AlphaFold DB launches, then expands.</text></a>
+<a href="https://pubmed.ncbi.nlm.nih.gov/36927031/"><circle cx="49" cy="1175" r="8" fill="#4ed9c1"/>
+<text x="80" y="1182" font-size="24" font-weight="700" fill="#4ed9c1">2023</text>
+<text x="80" y="1223" font-size="27" font-weight="650">Language models meet structure</text>
+<text x="80" y="1259" font-size="22" fill="#a8c2ca">Meta FAIR publishes ESMFold research.</text></a>
+<a href="https://www.nature.com/articles/s41586-024-07487-w"><circle cx="49" cy="1320" r="8" fill="#4ed9c1"/>
+<text x="80" y="1327" font-size="24" font-weight="700" fill="#4ed9c1">2024</text>
+<text x="80" y="1368" font-size="27" font-weight="650">Molecular interactions</text>
+<text x="80" y="1404" font-size="22" fill="#a8c2ca">AlphaFold3: joint structure prediction.</text></a>
+<a href="https://github.com/francolinx/LymeScope"><circle cx="49" cy="1465" r="8" fill="#ffc16b"/>
+<text x="80" y="1472" font-size="24" font-weight="700" fill="#ffc16b">2026</text>
+<text x="80" y="1513" font-size="27" font-weight="650">LymeScope: inspect the evidence</text>
+<text x="80" y="1549" font-size="22" fill="#a8c2ca">Local workflow; CPU OspC baseline complete.</text></a>
+<text x="30" y="1604" font-size="19" fill="#a8c2ca">Not a universal accuracy scale. Experiments remain essential.</text>
+</g></svg>

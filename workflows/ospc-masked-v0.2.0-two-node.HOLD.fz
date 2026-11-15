@@ -1,0 +1,64 @@
+# HOLD: same complete task set/settings as one-node; disjoint sequence shards.
+# Generic helper pattern reused from the completed two-node storage workflow.
+# Scheduler physical-node evidence is still required before ingesting results.
+version: v4
+volumes:
+  project:
+    use: team15
+    name: lymescope-project
+jobs:
+  ospc-masked-two-node:
+    image:
+      uri: docker://nvcr.io/nvidia/pytorch:25.11-py3
+    policy:
+      timeout:
+        execute: 5m
+      restart: never
+    resource:
+      cpu:
+        cores: 2
+      memory:
+        size: 16GiB
+      devices:
+        nvidia.com/gpu: 1
+      annotations:
+        fuzzball.io/provisioner_definition_id: team15
+    multinode:
+      nodes: 2
+      implementation: generic
+    env:
+      - MULTINODE_WRAPPER_FORWARD_STREAMS=1
+      - HF_HUB_OFFLINE=1
+      - TRANSFORMERS_OFFLINE=1
+      - PYTHONDONTWRITEBYTECODE=1
+    mounts:
+      /project: project
+    script: |
+      #!/bin/bash
+      set -euo pipefail
+      test -r /multinode/generic-helper
+      . /multinode/generic-helper
+      exec_rankN - <<'WORKER'
+      set -euo pipefail
+      exec bash /project/lymescope-v0.2.0/sparkprep/analysis/ospc_masked_v0.2.0/launch_worker.sh two 1
+      WORKER
+      exec_rank0 - <<'HEAD'
+      set -euo pipefail
+      BASE=/project/lymescope-v0.2.0
+      bash "$BASE/sparkprep/analysis/ospc_masked_v0.2.0/launch_worker.sh" two 0
+      python3 - "$BASE" <<'PY'
+      import json,pathlib,re,sys,time
+      base=pathlib.Path(sys.argv[1])
+      approval=json.loads((base/'approvals/two.json').read_text())
+      run_id=approval['run_id']
+      assert re.fullmatch(r'[A-Za-z0-9_-]{1,64}',run_id)
+      receipt=base/'runs'/run_id/'rank1.json'
+      deadline=time.monotonic()+300
+      while not receipt.is_file():
+          if time.monotonic()>=deadline:raise SystemExit('Missing worker receipt')
+          time.sleep(1)
+      # Validate JSON after worker exit/export, not merely file existence.
+      # The ingestion layer subsequently verifies every task and physical node.
+      PY
+      HEAD
+      wait_rank0

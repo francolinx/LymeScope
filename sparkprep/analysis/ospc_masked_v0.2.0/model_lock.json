@@ -1,0 +1,18 @@
+{
+  "model_id": "facebook/esm2_t6_8M_UR50D",
+  "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+  "metadata_source": "https://huggingface.co/api/models/facebook/esm2_t6_8M_UR50D?blobs=true",
+  "staging_status": "NOT_STAGED; approval required",
+  "total_cap_bytes": 104857600,
+  "expected_total_bytes": 31385380,
+  "project_local_cache": "models/esm2_t6_8M_UR50D/c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+  "files": [
+    {"path": "model.safetensors", "bytes": 31384292, "sha256": "24c5fa474c48f3b754b86efe752d5f189d2bcd88190fa2270fc92b2ef3034189"},
+    {"path": "config.json", "bytes": 775, "git_blob_sha1": "c2c6e65a87d9d20d47699ae236d605b80c741dd3"},
+    {"path": "special_tokens_map.json", "bytes": 125, "git_blob_sha1": "ba0f9b53dbbf27934f7555e5d31e37bdea9317f1"},
+    {"path": "tokenizer_config.json", "bytes": 95, "git_blob_sha1": "3f0d47e841e1cb75257aeaf76d156802899a217e"},
+    {"path": "vocab.txt", "bytes": 93, "git_blob_sha1": "6b946952cc35537226f07fd70957ee2f848880d2"}
+  ],
+  "hash_policy": "Verify known weight SHA256 and exact pinned Git blob identities for the four small files; record raw-file SHA256 for every staged file. Never download .bin, .pt, TensorFlow or alternative weights.",
+  "weight_publication": "Forbidden: existing models/ ignore protection applies. Publish only code and small provenance records."
+}

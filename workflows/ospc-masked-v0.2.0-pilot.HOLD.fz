@@ -1,0 +1,35 @@
+# HOLD: prepared only; no submission or runtime/image availability validation.
+# Reuses the recorded Phase B image/volume; no implicit image pull is approved.
+version: v4
+volumes:
+  project:
+    use: team15
+    name: lymescope-project
+jobs:
+  ospc-real-model-pilot:
+    image:
+      uri: docker://nvcr.io/nvidia/pytorch:25.11-py3
+    policy:
+      timeout:
+        execute: 5m
+      restart: never
+    resource:
+      cpu:
+        cores: 2
+      memory:
+        size: 16GiB
+      devices:
+        nvidia.com/gpu: 1
+      annotations:
+        fuzzball.io/provisioner_definition_id: team15
+    env:
+      - HF_HUB_OFFLINE=1
+      - TRANSFORMERS_OFFLINE=1
+      - PYTHONDONTWRITEBYTECODE=1
+    mounts:
+      /project: project
+    script: |
+      #!/bin/bash
+      set -euo pipefail
+      # Missing or non-approved scope receipt fails before any model load.
+      exec bash /project/lymescope-v0.2.0/sparkprep/analysis/ospc_masked_v0.2.0/launch_worker.sh pilot 0

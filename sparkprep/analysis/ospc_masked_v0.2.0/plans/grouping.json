@@ -1,0 +1,566 @@
+{
+  "metadata_sha256": "7acfdae37aa8b7f610a96df252fae4a216993f857877f9570b9d1a580a4b16ea",
+  "provenance_fields": [
+    "accession",
+    "organism",
+    "taxon_id",
+    "strain",
+    "strain_provenance",
+    "quality_flags"
+  ],
+  "records": [
+    {
+      "accession": "Q07337",
+      "organism": "Borreliella burgdorferi (strain ATCC 35210 / DSM 4680 / CIP 102532 / B31)",
+      "taxon_id": "224326",
+      "strain": "ATCC 35210 / DSM 4680 / CIP 102532 / B31",
+      "strain_provenance": "UniProt organism scientificName",
+      "quality_flags": "multiple_reference_strains"
+    },
+    {
+      "accession": "P0DW54",
+      "organism": "Borreliella burgdorferi",
+      "taxon_id": "139",
+      "strain": "",
+      "strain_provenance": "multiple reference strains; see strain_reference_comments",
+      "quality_flags": "multiple_reference_strains;strain_unresolved_or_missing;strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q44977",
+      "organism": "Borreliella burgdorferi",
+      "taxon_id": "139",
+      "strain": "",
+      "strain_provenance": "multiple reference strains; see strain_reference_comments",
+      "quality_flags": "multiple_reference_strains;strain_unresolved_or_missing;strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q44646",
+      "organism": "Borreliella afzelii",
+      "taxon_id": "29518",
+      "strain": "PLud",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q9REF7",
+      "organism": "Borreliella bavariensis",
+      "taxon_id": "664662",
+      "strain": "PHoe",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q07336",
+      "organism": "Borreliella burgdorferi",
+      "taxon_id": "139",
+      "strain": "PBi",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "L0CTI9",
+      "organism": "Borreliella garinii",
+      "taxon_id": "29519",
+      "strain": "234",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "B8F168",
+      "organism": "Borreliella garinii PBr",
+      "taxon_id": "498743",
+      "strain": "PBr",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "A0ABR6P7H7",
+      "organism": "Borreliella spielmanii",
+      "taxon_id": "88916",
+      "strain": "DSM 16813",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "L0CUY6",
+      "organism": "Borreliella valaisiana",
+      "taxon_id": "62088",
+      "strain": "1046",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "A0ABR6PAS3",
+      "organism": "Borreliella yangtzensis",
+      "taxon_id": "683292",
+      "strain": "DSM 24625",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "A0A806C7D2",
+      "organism": "[Borrelia] finlandensis",
+      "taxon_id": "498741",
+      "strain": "SV1",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q44669",
+      "organism": "Borreliella afzelii",
+      "taxon_id": "29518",
+      "strain": "PBo",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q45187",
+      "organism": "Borreliella bavariensis",
+      "taxon_id": "664662",
+      "strain": "",
+      "strain_provenance": "multiple reference strains; see strain_reference_comments",
+      "quality_flags": "multiple_reference_strains;strain_unresolved_or_missing;strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q44705",
+      "organism": "Borreliella burgdorferi",
+      "taxon_id": "139",
+      "strain": "2591",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q45175",
+      "organism": "Borreliella garinii",
+      "taxon_id": "29519",
+      "strain": "TIs1",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q9Z679",
+      "organism": "Borreliella spielmanii",
+      "taxon_id": "88916",
+      "strain": "A14S",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q9Z6C6",
+      "organism": "Borreliella valaisiana",
+      "taxon_id": "62088",
+      "strain": "M49",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q44670",
+      "organism": "Borreliella afzelii",
+      "taxon_id": "29518",
+      "strain": "PLj7",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q44717",
+      "organism": "Borreliella burgdorferi",
+      "taxon_id": "139",
+      "strain": "N40",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q45177",
+      "organism": "Borreliella garinii",
+      "taxon_id": "29519",
+      "strain": "HT57",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q9Z6C8",
+      "organism": "Borreliella valaisiana",
+      "taxon_id": "62088",
+      "strain": "UK",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q49576",
+      "organism": "Borreliella afzelii",
+      "taxon_id": "29518",
+      "strain": "HT10",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q44718",
+      "organism": "Borreliella burgdorferi",
+      "taxon_id": "139",
+      "strain": "DN127cl9-2",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q45178",
+      "organism": "Borreliella garinii",
+      "taxon_id": "29519",
+      "strain": "HT64",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q9Z357",
+      "organism": "Borreliella valaisiana",
+      "taxon_id": "62088",
+      "strain": "",
+      "strain_provenance": "multiple reference strains; see strain_reference_comments",
+      "quality_flags": "multiple_reference_strains;strain_unresolved_or_missing;strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q49577",
+      "organism": "Borreliella afzelii",
+      "taxon_id": "29518",
+      "strain": "HT25",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q44719",
+      "organism": "Borreliella burgdorferi",
+      "taxon_id": "139",
+      "strain": "HB19",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q45647",
+      "organism": "Borreliella garinii",
+      "taxon_id": "29519",
+      "strain": "HT37",
+      "strain_provenance": "UniProt referenceComments STRAIN (single distinct value)",
+      "quality_flags": "strain_not_supplied_in_organism_field"
+    },
+    {
+      "accession": "Q9Z3C1",
+      "organism": "Borreliella valaisiana",
+      "taxon_id": "62088",
+      "strain": "",
+      "strain_provenance": "multiple reference strains; see strain_reference_comments",
+      "quality_flags": "multiple_reference_strains;strain_unresolved_or_missing;strain_not_supplied_in_organism_field"
+    }
+  ],
+  "folds": [
+    {
+      "name": "leave-accession-Q07337",
+      "removed": [
+        "Q07337"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-P0DW54",
+      "removed": [
+        "P0DW54"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q44977",
+      "removed": [
+        "Q44977"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q44646",
+      "removed": [
+        "Q44646"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q9REF7",
+      "removed": [
+        "Q9REF7"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q07336",
+      "removed": [
+        "Q07336"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-L0CTI9",
+      "removed": [
+        "L0CTI9"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-B8F168",
+      "removed": [
+        "B8F168"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-A0ABR6P7H7",
+      "removed": [
+        "A0ABR6P7H7"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-L0CUY6",
+      "removed": [
+        "L0CUY6"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-A0ABR6PAS3",
+      "removed": [
+        "A0ABR6PAS3"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-A0A806C7D2",
+      "removed": [
+        "A0A806C7D2"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q44669",
+      "removed": [
+        "Q44669"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q45187",
+      "removed": [
+        "Q45187"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q44705",
+      "removed": [
+        "Q44705"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q45175",
+      "removed": [
+        "Q45175"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q9Z679",
+      "removed": [
+        "Q9Z679"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q9Z6C6",
+      "removed": [
+        "Q9Z6C6"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q44670",
+      "removed": [
+        "Q44670"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q44717",
+      "removed": [
+        "Q44717"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q45177",
+      "removed": [
+        "Q45177"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q9Z6C8",
+      "removed": [
+        "Q9Z6C8"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q49576",
+      "removed": [
+        "Q49576"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q44718",
+      "removed": [
+        "Q44718"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q45178",
+      "removed": [
+        "Q45178"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q9Z357",
+      "removed": [
+        "Q9Z357"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q49577",
+      "removed": [
+        "Q49577"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q44719",
+      "removed": [
+        "Q44719"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q45647",
+      "removed": [
+        "Q45647"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-accession-Q9Z3C1",
+      "removed": [
+        "Q9Z3C1"
+      ],
+      "grouping": "accession"
+    },
+    {
+      "name": "leave-supplied-taxon-139",
+      "removed": [
+        "P0DW54",
+        "Q44977",
+        "Q07336",
+        "Q44705",
+        "Q44717",
+        "Q44718",
+        "Q44719"
+      ],
+      "grouping": "exact supplied taxon_id",
+      "value": "139"
+    },
+    {
+      "name": "leave-supplied-taxon-224326",
+      "removed": [
+        "Q07337"
+      ],
+      "grouping": "exact supplied taxon_id",
+      "value": "224326"
+    },
+    {
+      "name": "leave-supplied-taxon-29518",
+      "removed": [
+        "Q44646",
+        "Q44669",
+        "Q44670",
+        "Q49576",
+        "Q49577"
+      ],
+      "grouping": "exact supplied taxon_id",
+      "value": "29518"
+    },
+    {
+      "name": "leave-supplied-taxon-29519",
+      "removed": [
+        "L0CTI9",
+        "Q45175",
+        "Q45177",
+        "Q45178",
+        "Q45647"
+      ],
+      "grouping": "exact supplied taxon_id",
+      "value": "29519"
+    },
+    {
+      "name": "leave-supplied-taxon-498741",
+      "removed": [
+        "A0A806C7D2"
+      ],
+      "grouping": "exact supplied taxon_id",
+      "value": "498741"
+    },
+    {
+      "name": "leave-supplied-taxon-498743",
+      "removed": [
+        "B8F168"
+      ],
+      "grouping": "exact supplied taxon_id",
+      "value": "498743"
+    },
+    {
+      "name": "leave-supplied-taxon-62088",
+      "removed": [
+        "L0CUY6",
+        "Q9Z6C6",
+        "Q9Z6C8",
+        "Q9Z357",
+        "Q9Z3C1"
+      ],
+      "grouping": "exact supplied taxon_id",
+      "value": "62088"
+    },
+    {
+      "name": "leave-supplied-taxon-664662",
+      "removed": [
+        "Q9REF7",
+        "Q45187"
+      ],
+      "grouping": "exact supplied taxon_id",
+      "value": "664662"
+    },
+    {
+      "name": "leave-supplied-taxon-683292",
+      "removed": [
+        "A0ABR6PAS3"
+      ],
+      "grouping": "exact supplied taxon_id",
+      "value": "683292"
+    },
+    {
+      "name": "leave-supplied-taxon-88916",
+      "removed": [
+        "A0ABR6P7H7",
+        "Q9Z679"
+      ],
+      "grouping": "exact supplied taxon_id",
+      "value": "88916"
+    }
+  ],
+  "interpretation": "Taxon labels are not normalized species or independent biological replicates. These are explicit metadata sensitivity groups; unresolved strain labels are preserved. No significance tests."
+}

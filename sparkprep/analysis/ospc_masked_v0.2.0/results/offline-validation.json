@@ -1,0 +1,130 @@
+{
+  "checked_at": "2026-11-15T07:47:16.825374+00:00",
+  "checks": [
+    {
+      "name": "existing_importer",
+      "command": [
+        "C:/Python314/python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_tests": 8,
+      "kind": "offline_only"
+    },
+    {
+      "name": "existing_baseline",
+      "command": [
+        "C:/Python314/python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_baseline"
+      ],
+      "cwd": "sparkprep\\analysis\\ospc_comparison_v0.1.0",
+      "exit_code": 0,
+      "expected_tests": 7,
+      "kind": "offline_only"
+    },
+    {
+      "name": "existing_frozen_results",
+      "command": [
+        "C:/Python314/python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-v"
+      ],
+      "cwd": "sparkprep\\analysis\\ospc_comparison_v0.1.0\\results_v0.1.0\\source",
+      "exit_code": 0,
+      "expected_tests": 11,
+      "kind": "offline_only"
+    },
+    {
+      "name": "masked_offline",
+      "command": [
+        "C:/Python314/python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_offline"
+      ],
+      "cwd": "sparkprep\\analysis\\ospc_masked_v0.2.0",
+      "exit_code": 0,
+      "expected_tests": 23,
+      "kind": "offline_only"
+    },
+    {
+      "name": "overlay_data",
+      "command": [
+        "C:/Python314/python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_overlay"
+      ],
+      "cwd": "demo\\v0.2.0",
+      "exit_code": 0,
+      "expected_tests": 7,
+      "kind": "offline_only"
+    },
+    {
+      "name": "presentation_media",
+      "command": [
+        "C:/Users/franc/anaconda3/python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_presentation"
+      ],
+      "cwd": "demo\\v0.2.0",
+      "exit_code": 0,
+      "expected_tests": 5,
+      "kind": "offline_only",
+      "rechecked_at": "2026-11-15T07:47:16.728056+00:00"
+    },
+    {
+      "name": "overlay_ui_fixtures",
+      "command": [
+        "node",
+        "test_ui_handlers.cjs"
+      ],
+      "cwd": "demo\\v0.2.0",
+      "exit_code": 0,
+      "expected_tests": null,
+      "kind": "offline_only"
+    }
+  ],
+  "real_model_pilot": "NOT_RUN",
+  "scientific_benchmark": "NOT_RUN",
+  "browser_rendering": "NOT_VERIFIED",
+  "browser_error": "The browser access host is unavailable",
+  "gpu_runs": 0,
+  "cluster_calls": 0,
+  "model_downloads": 0,
+  "python_syntax": "PASS",
+  "plan_sha256": "5c165db0dad49b483aab5a0feb5868b8e77a91dc342cacbdc23cfc27681c4f8e",
+  "source_sha256": "2307bc5f072babc529133f4e108d05ee2bf92e24bf233c121995d214a4552adb",
+  "total_python_tests_passed": 61,
+  "existing_tests_passed": 26,
+  "new_tests_passed": 35,
+  "media_frames_decoded": 360,
+  "representative_frames_visually_inspected": [
+    0,
+    20,
+    40
+  ],
+  "main_publication": "NOT_PERFORMED",
+  "pdf": "NOT_GENERATED_LOCAL_TOOLS_MISSING"
+}

@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-11-15T07:28:58.680672+00:00",
+  "baseline_head_rechecked": "8058846c05d4dccd60117dd29ef784af43570418",
+  "branch": "feature/ospc-masked-scoring-v0.2.0",
+  "repository": "https://github.com/francolinx/LymeScope",
+  "visibility": "public",
+  "visibility_source": "GitHub get_repo targeted metadata read during this task",
+  "visibility_changed": false,
+  "submission": "DRAFT_NOT_SUBMITTED",
+  "organizer_eligibility": "OPEN_USER_CONFIRMATION",
+  "rules_source": "https://ciq.com/events/local-ai-hackathon-2026",
+  "project_license": "NOT_SELECTED",
+  "rendering": "NOT_VERIFIED",
+  "browser_error": "The browser access host is unavailable"
+}

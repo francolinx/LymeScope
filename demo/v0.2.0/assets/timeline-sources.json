@@ -1,0 +1,62 @@
+[
+  [
+    "1958",
+    "Seeing a protein",
+    "X-ray analysis yields a myoglobin model.",
+    "https://www.nature.com/articles/181662a0"
+  ],
+  [
+    "1980s",
+    "Structures in solution",
+    "NMR constraints and distance geometry.",
+    "https://pubmed.ncbi.nlm.nih.gov/2582141/"
+  ],
+  [
+    "1992–97",
+    "Computational routes",
+    "Threading, homology and fragment assembly.",
+    "https://pubmed.ncbi.nlm.nih.gov/9149153/"
+  ],
+  [
+    "1994",
+    "CASP begins",
+    "Blind tests against experimental targets.",
+    "https://www.ebi.ac.uk/training/online/courses/alphafold/validation-and-impact/how-have-alphafolds-predictions-of-protein-structure-been-validated/"
+  ],
+  [
+    "2018",
+    "AlphaFold at CASP13",
+    "Deep learning in the structure benchmark.",
+    "https://deepmind.google/science/alphafold/"
+  ],
+  [
+    "2020 / 21",
+    "AlphaFold2",
+    "CASP14 in 2020; research paper in 2021.",
+    "https://www.nature.com/articles/s41586-021-03819-2"
+  ],
+  [
+    "2021 / 22",
+    "Predictions become a resource",
+    "AlphaFold DB launches, then expands.",
+    "https://www.ebi.ac.uk/about/news/technology-and-innovation/alphafold-200-million/"
+  ],
+  [
+    "2023",
+    "Language models meet structure",
+    "Meta FAIR publishes ESMFold research.",
+    "https://pubmed.ncbi.nlm.nih.gov/36927031/"
+  ],
+  [
+    "2024",
+    "Molecular interactions",
+    "AlphaFold3: joint structure prediction.",
+    "https://www.nature.com/articles/s41586-024-07487-w"
+  ],
+  [
+    "2026",
+    "LymeScope: inspect the evidence",
+    "Local workflow; CPU OspC baseline complete.",
+    "https://github.com/francolinx/LymeScope"
+  ]
+]

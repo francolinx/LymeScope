@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-11-15T07:27:59.680686+00:00",
+  "checks": [
+    {
+      "path": "workflows/ospc-masked-v0.2.0-one-node.HOLD.fz",
+      "yaml_syntax": "PASS",
+      "shell_syntax": "PASS",
+      "source_pattern": "existing Phase B workflows",
+      "current_scheduler_validation": "NOT_RUN",
+      "submission": "NOT_RUN"
+    },
+    {
+      "path": "workflows/ospc-masked-v0.2.0-pilot.HOLD.fz",
+      "yaml_syntax": "PASS",
+      "shell_syntax": "PASS",
+      "source_pattern": "existing Phase B workflows",
+      "current_scheduler_validation": "NOT_RUN",
+      "submission": "NOT_RUN"
+    },
+    {
+      "path": "workflows/ospc-masked-v0.2.0-two-node.HOLD.fz",
+      "yaml_syntax": "PASS",
+      "shell_syntax": "PASS",
+      "source_pattern": "existing Phase B workflows",
+      "current_scheduler_validation": "NOT_RUN",
+      "submission": "NOT_RUN"
+    }
+  ],
+  "launch_worker_shell_syntax": "PASS",
+  "meaning": "Local parsing and bounded resource/structure checks only; no scheduler or runtime call."
+}

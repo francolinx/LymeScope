@@ -1,0 +1,124 @@
+{
+  "checked_at": "2026-11-15T07:17:31.651334+00:00",
+  "scope": "Known local interpreters, project environments and exact requested-model cache directories only",
+  "runtimes": [
+    {
+      "python": "C:\\Python314\\python.exe",
+      "version": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+      "packages": {
+        "torch": {
+          "installed": false,
+          "version": null
+        },
+        "transformers": {
+          "installed": false,
+          "version": null
+        },
+        "safetensors": {
+          "installed": false,
+          "version": null
+        },
+        "tokenizers": {
+          "installed": false,
+          "version": null
+        },
+        "numpy": {
+          "installed": false,
+          "version": null
+        },
+        "huggingface_hub": {
+          "installed": true,
+          "version": "2.1.1"
+        }
+      }
+    },
+    {
+      "python": "C:\\Users\\franc\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "version": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+      "packages": {
+        "torch": {
+          "installed": false,
+          "version": null
+        },
+        "transformers": {
+          "installed": false,
+          "version": null
+        },
+        "safetensors": {
+          "installed": false,
+          "version": null
+        },
+        "tokenizers": {
+          "installed": false,
+          "version": null
+        },
+        "numpy": {
+          "installed": false,
+          "version": null
+        },
+        "huggingface_hub": {
+          "installed": false,
+          "version": null
+        }
+      }
+    },
+    {
+      "python": "C:\\Users\\franc\\anaconda3\\python.exe",
+      "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+      "packages": {
+        "torch": {
+          "installed": false,
+          "version": null
+        },
+        "transformers": {
+          "installed": false,
+          "version": null
+        },
+        "safetensors": {
+          "installed": false,
+          "version": null
+        },
+        "tokenizers": {
+          "installed": false,
+          "version": null
+        },
+        "numpy": {
+          "installed": true,
+          "version": "2.1.3"
+        },
+        "huggingface_hub": {
+          "installed": false,
+          "version": null
+        }
+      }
+    }
+  ],
+  "model_cache_locations": [
+    {
+      "path": "C:\\Users\\franc\\Projects\\LymeScope\\models\\esm2_t6_8M_UR50D\\c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\franc\\Projects\\LymeScope\\.cache\\huggingface\\hub\\models--facebook--esm2_t6_8M_UR50D",
+      "exists": false
+    },
+    {
+      "path": "C:\\Users\\franc\\.cache\\huggingface\\hub\\models--facebook--esm2_t6_8M_UR50D",
+      "exists": false
+    },
+    {
+      "path": "D:\\GB10_ARSENAL\\hf_cache\\hub\\models--facebook--esm2_t6_8M_UR50D",
+      "exists": false
+    }
+  ],
+  "model_id": "facebook/esm2_t6_8M_UR50D",
+  "required_revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+  "inference_import_tests": "NOT_RUN",
+  "gpu_availability": "NOT_PROBED",
+  "remote_runtime": "NOT_INSPECTED",
+  "model_downloads": 0,
+  "package_installs": 0,
+  "gpu_runs": 0,
+  "cluster_calls": 0,
+  "historical_runtime_records": "Not used as proof of current availability"
+}

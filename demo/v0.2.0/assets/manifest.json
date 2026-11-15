@@ -1,0 +1,159 @@
+{
+  "version": "0.2.0",
+  "origin": "Original project-generated presentation assets; no copied video",
+  "generator_sha256": "6f3ed0f68624738339445f3260a0ee40b5aeefc6bea9701bdd83aace72391792",
+  "source_hashes": {
+    "viewer_data.json": "d0b13b25800b908ed2a515b15c394666df34f361db1242d715978a1ee8e67f1e",
+    "aligned.fasta": "f7db9b8788ebaf1997f719da83a0c97b831b3a7649bcf905925b6dfd55ff82dd",
+    "inputs/input_sequences.fasta": "5e57f71028675fb90e41a0594ff60cb2f81f2b03dd33d7c19c6e62d1a961ee05",
+    "inputs/source_data/selected_uniprot_records.json": "dcf6e4eff8fd415ea1fcedea3973b35ca53f3d94da08e35af29834eec04545df",
+    "inputs/reference_structures/1GGQ.cif": "03a30187a21aed2d9c487cb31e27b805242d3bbb890a2473c58bdbd5884cc6f0",
+    "inputs/reference_structures/1G5Z.cif": "6957fc6ffae86cd7e0dea264fe2484275a6e992dfa4859565f4c9868d7c453e7",
+    "source/cif_reader.py": "6b8aa5e9645310f72072c1a01e05d27b654bb4cbaad77cd4dea6c62d8401acc2",
+    "source/baseline.py": "81e3a6a69ac10fd70998f64c1d8b420d197fcfb71ecb2bac9769b0920d179af8"
+  },
+  "camera_motion": "Rigid illustration, not dynamics",
+  "browser_playback": "NOT VERIFIED",
+  "assets": [
+    {
+      "path": "ospc-rotation.gif",
+      "static_preview": "ospc-rotation.png",
+      "width": 960,
+      "height": 640,
+      "bytes": 610070,
+      "sha256": "052c7f0a3807f4a457e3eb02ecd29c446f685fc558c9ce93560f8851975ec3dd",
+      "decoded_frames": 60,
+      "duration_ms": 10800,
+      "loop": 0,
+      "evidence_kind": "experimental_coordinates",
+      "caption": "A. Observed OspC chain A rotates without changing its deposited coordinates.",
+      "details": {
+        "pdb": "1GGQ",
+        "chain": "A",
+        "observed_CA": 162
+      },
+      "verification": "All GIF frames decoded; static previews inspected separately; browser playback not yet verified"
+    },
+    {
+      "path": "alignment-map.gif",
+      "static_preview": "alignment-map.png",
+      "width": 960,
+      "height": 640,
+      "bytes": 1247235,
+      "sha256": "f1f95acaa6ca6989037c6533fdc91ac92f2b4864143aa986a5f922dcbcd13294",
+      "decoded_frames": 60,
+      "duration_ms": 10800,
+      "loop": 0,
+      "evidence_kind": "saved_alignment_statistics",
+      "caption": "B. The frozen 30 \u00d7 218 alignment collapses visually into its saved column summaries.",
+      "details": {
+        "sequence_count": 30,
+        "alignment_columns": 218,
+        "full_coverage_columns": 202
+      },
+      "verification": "All GIF frames decoded; static previews inspected separately; browser playback not yet verified"
+    },
+    {
+      "path": "coverage-evidence.gif",
+      "static_preview": "coverage-evidence.png",
+      "width": 960,
+      "height": 640,
+      "bytes": 93435,
+      "sha256": "dccde7b21311dd85698f9afe92e7218eac289cc9687838cd6098ced097686c62",
+      "decoded_frames": 60,
+      "duration_ms": 10800,
+      "loop": 0,
+      "evidence_kind": "saved_alignment_statistics",
+      "caption": "C. Column 1 and column 154 both have 100% observed agreement; support is 30/30 versus 1/30.",
+      "details": {
+        "full_column": 1,
+        "sparse_column": 154,
+        "sparse_mode": "N",
+        "sparse_gaps": 29
+      },
+      "verification": "All GIF frames decoded; static previews inspected separately; browser playback not yet verified"
+    },
+    {
+      "path": "ospc-dimer.gif",
+      "static_preview": "ospc-dimer.png",
+      "width": 960,
+      "height": 640,
+      "bytes": 960551,
+      "sha256": "477f388681ea92350c5a539cc8829248d7c9e58c9f22c7f2311d88ac75b7603d",
+      "decoded_frames": 60,
+      "duration_ms": 10800,
+      "loop": 0,
+      "evidence_kind": "experimental_assembly_plus_geometric_proxy",
+      "caption": "D. Validated deposited A/B assembly; amber marks a declared interchain C\u03b1-distance proxy.",
+      "details": {
+        "assembly": {
+          "id": "1",
+          "details": "author_and_software_defined_assembly",
+          "method_details": "PISA",
+          "oligomeric_details": "dimeric",
+          "oligomeric_count": "2"
+        },
+        "chain_A_proxy_count": 49,
+        "chain_B_proxy_count": 49,
+        "threshold_A": 8
+      },
+      "verification": "All GIF frames decoded; static previews inspected separately; browser playback not yet verified"
+    },
+    {
+      "path": "residue-mapping.gif",
+      "static_preview": "residue-mapping.png",
+      "width": 960,
+      "height": 640,
+      "bytes": 500223,
+      "sha256": "36ff938aaba1785110f619bac911e6b3713842c2ba83d81f20c04e8a4582d7e5",
+      "decoded_frames": 60,
+      "duration_ms": 10800,
+      "loop": 0,
+      "evidence_kind": "saved_explicit_mapping",
+      "caption": "E. An explicit saved mapping connects alignment column 68 to observed 1GGQ A Ser67.",
+      "details": {
+        "alignment_column": 68,
+        "native_position": 67,
+        "author_residue": "67",
+        "chain": "A",
+        "residue": "S"
+      },
+      "verification": "All GIF frames decoded; static previews inspected separately; browser playback not yet verified"
+    },
+    {
+      "path": "task-shards.gif",
+      "static_preview": "task-shards.png",
+      "width": 960,
+      "height": 640,
+      "bytes": 166061,
+      "sha256": "0f6993ca5e7ff10d935d8544be6d78136459522dede5174dfb0a5774105e3561",
+      "decoded_frames": 60,
+      "duration_ms": 10800,
+      "loop": 0,
+      "evidence_kind": "conceptual_unexecuted_workflow",
+      "caption": "F. Same 6,305 masked examples; per-sequence batching gives 415 forwards, split 208/207.",
+      "details": {
+        "model": "facebook/esm2_t6_8M_UR50D",
+        "execution": "NOT RUN",
+        "masked_examples": 6305,
+        "scoring_calls": 415,
+        "shard_calls": [
+          208,
+          207
+        ]
+      },
+      "verification": "All GIF frames decoded; static previews inspected separately; browser playback not yet verified"
+    }
+  ],
+  "visual_review": {
+    "static_previews": "INSPECTED",
+    "representative_gif_frames": [
+      0,
+      20,
+      40
+    ],
+    "contact_sheet": "../qa/animation-contact-sheet.png",
+    "browser_playback": "NOT_VERIFIED",
+    "observations": "Examined frames retain readable labels, distinct chains and explicit evidence/proxy/unrun distinctions. No clipped labels observed in examined media frames."
+  }
+}
