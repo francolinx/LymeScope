@@ -1,0 +1,9 @@
+{
+  "status": "SUPERSEDED_BY_method_contract.json",
+  "algorithm": "singleton_mask_original_residue_nll_natural_log_full_vocab",
+  "formula": "NLL(s,i) = -log softmax(logits(model(s with only residue i replaced by MASK))[i,:])[original_token(s_i)]",
+  "log_base": "e",
+  "denominator": "full model vocabulary, pending external definition confirmation",
+  "scope": "6305 original ungapped natural residues; exact mapping to frozen 218 alignment columns; no scoring of gaps or BOS/EOS",
+  "provenance": "Canonical implementation candidate, not claimed as Claude final definition."
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scored_masks": 6305,
+  "distinct_sequences": 30,
+  "columns_independently_aggregated": 218,
+  "sequence_mean_and_exp_checks": 30,
+  "forward_count_check": 805,
+  "reference_observed_columns": 162,
+  "input_hashes_verified": true,
+  "source_scores_sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+  "method": "Independent CSV arithmetic (math.fsum) and exact mapping checks; no additional model inference."
+}

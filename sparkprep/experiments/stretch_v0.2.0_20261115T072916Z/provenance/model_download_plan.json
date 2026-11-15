@@ -1,0 +1,40 @@
+{
+  "model_id": "facebook/esm2_t6_8M_UR50D",
+  "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+  "approval": "APPROVED: provenance/model_approval.json",
+  "files": [
+    {
+      "name": "README.md",
+      "bytes": 1705,
+      "git_blob_oid": "78b8e54d14b2ccb65a6f3456cc72e603ddd8658d"
+    },
+    {
+      "name": "config.json",
+      "bytes": 775,
+      "git_blob_oid": "c2c6e65a87d9d20d47699ae236d605b80c741dd3"
+    },
+    {
+      "name": "model.safetensors",
+      "bytes": 31384292,
+      "sha256": "24c5fa474c48f3b754b86efe752d5f189d2bcd88190fa2270fc92b2ef3034189"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "bytes": 125,
+      "git_blob_oid": "ba0f9b53dbbf27934f7555e5d31e37bdea9317f1"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 95,
+      "git_blob_oid": "3f0d47e841e1cb75257aeaf76d156802899a217e"
+    },
+    {
+      "name": "vocab.txt",
+      "bytes": 93,
+      "git_blob_oid": "6b946952cc35537226f07fd70957ee2f848880d2"
+    }
+  ],
+  "total_download_bytes": 31387085,
+  "dependencies": "Existing ftvenv, no dependency installations.",
+  "cached_model_matches": []
+}

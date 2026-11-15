@@ -1,0 +1,6 @@
+{
+  "approved": true,
+  "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+  "cap_bytes": 32000000,
+  "authorization": "User explicitly approved exactly six pinned files, existing dependencies, and one real-sequence CUDA pilot; full sweep remains gated on resource review."
+}

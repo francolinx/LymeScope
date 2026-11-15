@@ -1,0 +1,78 @@
+{
+  "method": "Independent Shrake-Rupley-style Fibonacci sphere surface sampling, heavy-atom element radii, probe 1.40 A. SASA is the area swept by probe centers, not molecular/solvent-excluded surface.",
+  "vdw_radii_A": {
+    "C": 1.7,
+    "N": 1.55,
+    "O": 1.52,
+    "S": 1.8
+  },
+  "coordinates": "Existing experimental biological dimer assembly1; identical atom selections for monomer and dimer; missing atoms/residues are not reconstructed. Model1, positive occupancy, alt . or A, canonical protein residues only; waters/ions omitted.",
+  "analytical_tests": {
+    "isolated_sphere_error_A2": 4.263256414560601e-14,
+    "two_overlapping_spheres_expected_each_A2": 89.59822248038091,
+    "two_overlapping_spheres_max_abs_error_A2": 0.01379048728313137,
+    "nonoverlapping_spheres_error_A2": 4.263256414560601e-14
+  },
+  "calculations": [
+    {
+      "pdb_id": "1GGQ",
+      "assembly_id": 1,
+      "sphere_points_per_atom": 480,
+      "heavy_atoms": 2423,
+      "monomer_sasa_sum_A2": 18611.15054218824,
+      "dimer_sasa_A2": 14530.334884612388,
+      "total_sasa_loss_A2": 4080.81565757585,
+      "mean_partner_interface_area_A2": 2040.407828787925,
+      "elapsed_s": 1.0124888319987804
+    },
+    {
+      "pdb_id": "1GGQ",
+      "assembly_id": 1,
+      "sphere_points_per_atom": 960,
+      "heavy_atoms": 2423,
+      "monomer_sasa_sum_A2": 18624.48874844871,
+      "dimer_sasa_A2": 14531.282019819575,
+      "total_sasa_loss_A2": 4093.206728629136,
+      "mean_partner_interface_area_A2": 2046.603364314568,
+      "elapsed_s": 1.179486665998411
+    },
+    {
+      "pdb_id": "1GGQ",
+      "assembly_id": 1,
+      "sphere_points_per_atom": 1920,
+      "heavy_atoms": 2423,
+      "monomer_sasa_sum_A2": 18609.796890127665,
+      "dimer_sasa_A2": 14528.63860391203,
+      "total_sasa_loss_A2": 4081.158286215635,
+      "mean_partner_interface_area_A2": 2040.5791431078176,
+      "elapsed_s": 1.4700093469982676
+    },
+    {
+      "pdb_id": "1G5Z",
+      "assembly_id": 1,
+      "sphere_points_per_atom": 960,
+      "heavy_atoms": 2480,
+      "monomer_sasa_sum_A2": 19449.448673973548,
+      "dimer_sasa_A2": 15342.546202278016,
+      "total_sasa_loss_A2": 4106.90247169553,
+      "mean_partner_interface_area_A2": 2053.451235847765,
+      "elapsed_s": 1.2057229809979617
+    }
+  ],
+  "1GGQ_960_to_1920_relative_total_loss_difference": 0.0029522114969652152,
+  "1GGQ_960_to_1920_max_residue_delta_difference_A2": 1.2721742006033168,
+  "elapsed_total_s": 4.978035219999583,
+  "process_max_rss_bytes": 81080320,
+  "additional_model_forward_passes": 0,
+  "interpretation": [
+    "Total SASA loss = SASA_A + SASA_B - SASA_AB. Mean partner interface area is half that total; both reported to avoid convention ambiguity.",
+    "This is calculated geometric accessible area for incomplete static crystal constructs, not experimental solvent exposure or physiological accessibility.",
+    "A heavy-atom contact cutoff and sampled area burial measure different things; neither implies antigenicity or protection.",
+    "No relative SASA normalization or exposed/buried classification threshold is introduced.",
+    "Point sampling, orientation, radii, probe, missing residues/atoms and conformational state affect results. 1G5Z has only a single sampling resolution here."
+  ],
+  "references": [
+    "https://doi.org/10.1016/0022-2836(73)90011-9",
+    "https://biopython.org/docs/dev/api/Bio.PDB.SASA.html"
+  ]
+}

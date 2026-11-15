@@ -1,0 +1,53 @@
+{
+  "integrated_main": "8058846c05d4dccd60117dd29ef784af43570418",
+  "files": [
+    {
+      "source_relative_to_frozen_results": "inputs/input_sequences.fasta",
+      "package_path": "inputs/panel.fasta",
+      "bytes": 8360,
+      "sha256": "5e57f71028675fb90e41a0594ff60cb2f81f2b03dd33d7c19c6e62d1a961ee05"
+    },
+    {
+      "source_relative_to_frozen_results": "inputs/sequence_metadata.tsv",
+      "package_path": "inputs/sequence_metadata.tsv",
+      "bytes": 22157,
+      "sha256": "7acfdae37aa8b7f610a96df252fae4a216993f857877f9570b9d1a580a4b16ea"
+    },
+    {
+      "source_relative_to_frozen_results": "aligned.fasta",
+      "package_path": "inputs/aligned.fasta",
+      "bytes": 8625,
+      "sha256": "f7db9b8788ebaf1997f719da83a0c97b831b3a7649bcf905925b6dfd55ff82dd"
+    },
+    {
+      "source_relative_to_frozen_results": "alignment_to_structure.tsv",
+      "package_path": "inputs/baseline_alignment_to_structure.tsv",
+      "bytes": 11897,
+      "sha256": "d132d09615ac04eceea7c43a25f3128ab13ef45342a6c7307e9d4aa20249efae"
+    },
+    {
+      "source_relative_to_frozen_results": "conservation_coverage.tsv",
+      "package_path": "inputs/baseline_conservation_coverage.tsv",
+      "bytes": 7490,
+      "sha256": "a39c94cc5478a6e4e76be7ec5dda1e2e8ce21a0ac2cbe5b117a2f4ebab129150"
+    },
+    {
+      "source_relative_to_frozen_results": "summary.json",
+      "package_path": "inputs/baseline_summary.json",
+      "bytes": 712,
+      "sha256": "4e646c4587aa9006770b871d3c048ac8e5c0d4c0032d4f783acc41cc8df851e6"
+    },
+    {
+      "source_relative_to_frozen_results": "inputs/reference_structures/1GGQ.cif",
+      "package_path": "inputs/1GGQ.cif",
+      "bytes": 536284,
+      "sha256": "03a30187a21aed2d9c487cb31e27b805242d3bbb890a2473c58bdbd5884cc6f0"
+    },
+    {
+      "source_relative_to_frozen_results": "inputs/reference_structures/1G5Z.cif",
+      "package_path": "inputs/1G5Z.cif",
+      "bytes": 188325,
+      "sha256": "6957fc6ffae86cd7e0dea264fe2484275a6e992dfa4859565f4c9868d7c453e7"
+    }
+  ]
+}

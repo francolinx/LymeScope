@@ -1,0 +1,40 @@
+{
+  "host": "spark-6771",
+  "utc": "2026-11-15T07:36:05Z",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "executable": "/home/darkstar90/ftvenv/bin/python",
+  "packages": {
+    "torch": "2.14.1",
+    "transformers": "5.20.0",
+    "safetensors": "0.8.0",
+    "tokenizers": "0.23.3",
+    "huggingface-hub": "2.2.0",
+    "numpy": "2.5.4",
+    "biopython": null,
+    "scipy": "1.18.1"
+  },
+  "torch_cuda": "13.0",
+  "cuda_available": true,
+  "compiled_arches": [
+    "sm_80",
+    "sm_90",
+    "sm_100",
+    "sm_110",
+    "sm_120"
+  ],
+  "device": "NVIDIA GB10",
+  "capability": [
+    12,
+    1
+  ],
+  "memory_before": [
+    57240748032,
+    130660909056
+  ],
+  "test_pass": true,
+  "max_abs_error": 0.0,
+  "checksum": 16777216.0,
+  "elapsed_s": 0.023040323998429812,
+  "peak_allocated_bytes": 33590272,
+  "peak_reserved_bytes": 35651584
+}

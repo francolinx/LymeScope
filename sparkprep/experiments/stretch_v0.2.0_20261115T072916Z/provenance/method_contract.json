@@ -1,0 +1,11 @@
+{
+  "status": "CONFIRMED_FINAL",
+  "algorithm": "singleton_mask_original_residue_nll_natural_log_full_vocab",
+  "formula": "NLL(s,i) = -log softmax(logits(model(s with only residue i replaced by MASK))[i,:])[original_token(s_i)]",
+  "log_base": "e",
+  "denominator": "ESM-2 full vocabulary softmax probability of the original standard amino acid; no canonical-amino-acid renormalization.",
+  "scope": "6305 original ungapped natural residues; exact mapping to frozen 218 alignment columns; no scoring of gaps or BOS/EOS",
+  "provenance": "User supplied Claude final scientific definition in this session, 2026-11-15.",
+  "column_aggregation": "col_nll[c] = arithmetic mean of singleton-mask original-residue NLL over observed standard residues at column c",
+  "sequence_aggregation": "ppl[s] = exp(arithmetic mean NLL over all ungapped standard residues of the full-length natural sequence)"
+}

@@ -1,0 +1,13 @@
+test_1g5z_symmetry (test_science.ScienceTests.test_1g5z_symmetry) ... ok
+test_alignment_mapping_bijection (test_science.ScienceTests.test_alignment_mapping_bijection) ... ok
+test_cell_contacts_against_exhaustive_real_atoms (test_science.ScienceTests.test_cell_contacts_against_exhaustive_real_atoms) ... ok
+test_frozen_input_hashes (test_science.ScienceTests.test_frozen_input_hashes) ... ok
+test_sensitivity_defined_denominator (test_science.ScienceTests.test_sensitivity_defined_denominator) ... ok
+test_shard_partition (test_science.ScienceTests.test_shard_partition) ... ok
+test_full_vocabulary_nll_known_uniform (test_science.TorchMaskTests.test_full_vocabulary_nll_known_uniform) ... ok
+test_mask_single_original_only (test_science.TorchMaskTests.test_mask_single_original_only) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.642s
+
+OK

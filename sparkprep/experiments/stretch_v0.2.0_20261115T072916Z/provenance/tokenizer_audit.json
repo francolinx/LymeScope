@@ -1,0 +1,32 @@
+{
+  "vocabulary_size": 33,
+  "cls_token_id": 0,
+  "eos_token_id": 2,
+  "pad_token_id": 1,
+  "mask_token_id": 32,
+  "unk_token_id": 3,
+  "standard_residue_token_ids": {
+    "A": 5,
+    "C": 23,
+    "D": 13,
+    "E": 9,
+    "F": 18,
+    "G": 6,
+    "H": 21,
+    "I": 12,
+    "K": 15,
+    "L": 4,
+    "M": 20,
+    "N": 17,
+    "P": 14,
+    "Q": 16,
+    "R": 10,
+    "S": 8,
+    "T": 11,
+    "V": 7,
+    "W": 22,
+    "Y": 19
+  },
+  "first_residue_token_index": 1,
+  "model_cache_six_file_reverification": "PASS"
+}

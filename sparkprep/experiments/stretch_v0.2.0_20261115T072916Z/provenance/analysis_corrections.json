@@ -1,0 +1,5 @@
+{
+  "correction": "full_panel_comparison_v1 labeled unmapped/unobserved structure contacts False. In v2 these are blank and have explicit observation_status. A non-contact label is retained only for observed 1GGQ assembly1 chain A residues. Per-residue NLL and numerical aggregates are unchanged.",
+  "superseded": "results/full_panel_comparison_v1",
+  "current": "results/full_panel_comparison_v2"
+}

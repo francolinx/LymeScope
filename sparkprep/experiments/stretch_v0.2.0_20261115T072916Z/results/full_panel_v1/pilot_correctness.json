@@ -1,0 +1,8 @@
+{
+  "checks": [],
+  "status": "NOT_APPLICABLE",
+  "tokenizer_exact_original_residues": true,
+  "single_mask_each_row": true,
+  "special_tokens_preserved": true,
+  "finite_nonnegative_scores": true
+}
