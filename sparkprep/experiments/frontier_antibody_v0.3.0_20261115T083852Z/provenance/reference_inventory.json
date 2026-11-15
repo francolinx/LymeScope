@@ -1,0 +1,47 @@
+{
+  "source_commit": "aafe818a20ea025370cf4b65145a9684e80aaaef",
+  "files": [
+    {
+      "prior_experiment_relative_path": "inputs/panel.fasta",
+      "bytes": 8360,
+      "sha256": "5e57f71028675fb90e41a0594ff60cb2f81f2b03dd33d7c19c6e62d1a961ee05"
+    },
+    {
+      "prior_experiment_relative_path": "inputs/aligned.fasta",
+      "bytes": 8625,
+      "sha256": "f7db9b8788ebaf1997f719da83a0c97b831b3a7649bcf905925b6dfd55ff82dd"
+    },
+    {
+      "prior_experiment_relative_path": "inputs/baseline_alignment_to_structure.tsv",
+      "bytes": 11897,
+      "sha256": "d132d09615ac04eceea7c43a25f3128ab13ef45342a6c7307e9d4aa20249efae"
+    },
+    {
+      "prior_experiment_relative_path": "results/full_panel_v1/residue_nll.tsv",
+      "bytes": 711628,
+      "sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f"
+    },
+    {
+      "prior_experiment_relative_path": "results/full_panel_v1/timings.json",
+      "bytes": 15230,
+      "sha256": "84ac459bfc1df0e1986f6852967fcfeca8725b23e408063364a9b1e2c673fa1d"
+    },
+    {
+      "prior_experiment_relative_path": "results/full_panel_comparison_v2/column_comparison.tsv",
+      "bytes": 58988,
+      "sha256": "9dd159882c783ae23f2c50535e2acf8afc572390a48c984766fc0bb0e5edc02d"
+    },
+    {
+      "prior_experiment_relative_path": "results/sasa_dimer_context.tsv",
+      "bytes": 91887,
+      "sha256": "bee61c0cd4e16ab9bd409386ed65415bd0f62cb5def792f219fcafe6c2d08b1d"
+    },
+    {
+      "prior_experiment_relative_path": "results/laptop_evidence_v1.json",
+      "bytes": 352567,
+      "sha256": "35ff10c8979ad364e0e39cb2350439b1cfd742212a2bf66594a13b993dab57d5"
+    }
+  ],
+  "v0_2_1_manifest_sha256": "80f722f142ec2b56ed448ebcf568d2c98b038b5d86e15a3747b8c66c4f374252",
+  "verification_status": "PASS_104_manifest_entries"
+}
