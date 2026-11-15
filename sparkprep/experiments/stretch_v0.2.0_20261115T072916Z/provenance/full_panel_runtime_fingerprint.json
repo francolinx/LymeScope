@@ -1,0 +1,17 @@
+{
+  "python": "3.12.3",
+  "architecture": "aarch64",
+  "torch": "2.14.1+cu130",
+  "torch_git_version": "5c4886908584029761b579af026dcfb627c84070",
+  "torch_cuda": "13.0",
+  "torch_compiled_arches": [
+    "sm_80",
+    "sm_90",
+    "sm_100",
+    "sm_110",
+    "sm_120"
+  ],
+  "transformers": "5.20.0",
+  "inference_source_sha256": "bbb127ad43cbef3784f90b11e3e15fadf9c3ca599840926bf07bf1588a4c9a81",
+  "recorded_after_run_utc": "2026-11-15T07:51:39.858198+00:00"
+}

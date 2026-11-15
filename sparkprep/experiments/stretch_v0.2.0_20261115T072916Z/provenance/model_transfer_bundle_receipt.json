@@ -1,0 +1,12 @@
+{
+  "kind": "LOCAL_ONLY_MODEL_TRANSFER_BUNDLE_NOT_FOR_GIT",
+  "path": "/home/darkstar90/lymescope-sparkprep/.model-cache/transfer/esm2_t6_8M_UR50D_c731040fcd8d73dceaa04b0a8e6329b345b0f5df_six_files.tar",
+  "bytes": 31395840,
+  "sha256": "4e24f435628bb2c3b1a1a27664807c5d8c41ce7a94d3c2031b0f96363cb5d9ab",
+  "model_revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+  "six_file_uncompressed_payload_bytes": 31387085,
+  "extra_network_download_bytes": 0,
+  "archive_safe_names_and_six_internal_sha256": "PASS",
+  "publish_weights": false,
+  "venue_transfer": "Not performed; requires authorized venue access/transfer."
+}

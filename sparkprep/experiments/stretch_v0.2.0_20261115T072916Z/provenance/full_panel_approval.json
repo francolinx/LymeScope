@@ -1,0 +1,8 @@
+{
+  "authorization": "User explicitly instructed continuation/autopilot after reviewing the concrete bounded full-panel proposal. No extra model download, larger model or event access authorized.",
+  "scope": "Previously proposed bounded full-panel sweep; fixed 6305 masks, batch8, existing pinned model, no downloads, no event access or larger model.",
+  "max_wall_seconds": 120,
+  "max_gpu_allocated_bytes": 2147483648,
+  "max_gpu_reserved_bytes": 4294967296,
+  "max_process_rss_bytes": 17179869184
+}

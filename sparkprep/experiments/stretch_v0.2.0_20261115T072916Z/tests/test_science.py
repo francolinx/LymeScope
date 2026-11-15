@@ -34,6 +34,34 @@ class ScienceTests(unittest.TestCase):
   from compare_runs import compare
   p=ROOT/'results/pilot_v1/residue_nll.tsv'
   with self.assertRaisesRegex(AssertionError,'incomplete panel'):compare(p,p)
+ def test_complete_model_results_independent_audit(self):
+  from validate_full_results import validate
+  result=validate();self.assertEqual(result['scored_masks'],6305);self.assertEqual(result['columns_independently_aggregated'],218)
+ def test_unknown_structure_contact_is_never_false(self):
+  rows=list(csv.DictReader((ROOT/'results/full_panel_comparison_v2/column_comparison.tsv').read_text().splitlines(),delimiter='\t'))
+  self.assertEqual(sum(r['reference_1GGQ_assembly1_observation_status']=='observed' for r in rows),162)
+  for row in rows:
+   if row['reference_1GGQ_assembly1_observation_status']!='observed':self.assertEqual(row['reference_1GGQ_assembly1_interchain_contact_4_5_A'],'')
+  self.assertEqual(rows[3]['reference_1GGQ_assembly1_interchain_contact_4_5_A'],'');self.assertEqual(rows[208]['reference_1GGQ_assembly1_interchain_contact_4_5_A'],'')
+ def test_typed_evidence_structure_mapping(self):
+  evidence=json.loads((ROOT/'results/laptop_evidence_v1.json').read_text());panel=fasta(ROOT/'inputs/panel.fasta');aligned=fasta(ROOT/'inputs/aligned.fasta');self.assertEqual(len(evidence['experimental_1GGQ_dimer_CA']),324)
+  for atom in evidence['experimental_1GGQ_dimer_CA']:
+   from dimer_context import AA
+   pos=atom['sequence_position'];col=atom['alignment_column'];self.assertEqual(AA[atom['residue_name']],panel['Q07337'][pos-1]);self.assertEqual(panel['Q07337'][pos-1],aligned['Q07337'][col-1])
+  self.assertIsNone(evidence['columns'][3]['reference_1GGQ_A_contact_4_5_A'])
+ def test_average_rank_ties(self):
+  from summarize_scores import rank
+  self.assertEqual(rank([1,3,1,2]),[0.5,3.0,0.5,2.0])
+ def test_calculated_sasa_analytical_spheres(self):
+  from sasa_context import analytical_checks
+  result=analytical_checks();self.assertLess(result['isolated_sphere_error_A2'],1e-10);self.assertLess(result['two_overlapping_spheres_max_abs_error_A2'],.15)
+ def test_calculated_sasa_monotonicity_and_resolution(self):
+  rows=list(csv.DictReader((ROOT/'results/sasa_dimer_context.tsv').read_text().splitlines(),delimiter='\t'));summary=json.loads((ROOT/'results/sasa_context_summary.json').read_text())
+  for row in rows:self.assertGreaterEqual(float(row['delta_sasa_A2']),0);self.assertGreaterEqual(float(row['monomer_sasa_A2']),float(row['dimer_sasa_A2'])-1e-9)
+  self.assertLess(summary['1GGQ_960_to_1920_relative_total_loss_difference'],.02)
+  import math
+  for calc in summary['calculations']:
+   selected=[float(r['delta_sasa_A2']) for r in rows if r['pdb_id']==calc['pdb_id'] and int(r['sphere_points_per_atom'])==calc['sphere_points_per_atom']];self.assertAlmostEqual(math.fsum(selected),calc['total_sasa_loss_A2'],places=8)
 class TorchMaskTests(unittest.TestCase):
  def test_mask_single_original_only(self):
   import torch

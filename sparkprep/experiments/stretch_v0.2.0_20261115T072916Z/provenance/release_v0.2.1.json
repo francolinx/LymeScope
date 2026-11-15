@@ -1,0 +1,20 @@
+{
+  "release": "v0.2.1",
+  "package_created_utc": "20261115T075845Z",
+  "integrated_input_base": "8058846c05d4dccd60117dd29ef784af43570418",
+  "prior_pilot_commit": "69ceeee72bf705a7ddca1e0a1031e4703e44a64a",
+  "branch": "feat/ospc-esm2-spark-pilot",
+  "full_panel_score_sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+  "frozen_v0_1_0_files_unchanged": 55,
+  "scientific_masks": 6305,
+  "scoring_forward_passes": 805,
+  "unit_tests_passed": 16,
+  "event_benchmark": "NOT_RUN",
+  "model_weights_in_scientific_package": false,
+  "intentional_exclusions": [
+    "Python bytecode/__pycache__",
+    "Project-local model files and model-only transfer tar",
+    "Unrelated private cache/process/package inventories"
+  ],
+  "historical_outputs": "Pilot files/archive and the superseded v1 aggregate are retained with explicit current v2 pointers."
+}

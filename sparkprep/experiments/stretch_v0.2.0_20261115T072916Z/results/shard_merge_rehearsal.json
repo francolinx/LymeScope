@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "kind": "OFFLINE_ROUTING_MERGE_REHEARSAL_NOT_TWO_NODE_INFERENCE",
+  "source_scores_sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+  "model_forward_passes": 0,
+  "event_access": false,
+  "expected_shard_masks": [
+    3156,
+    3149
+  ],
+  "actual_routed_masks": [
+    3156,
+    3149
+  ],
+  "task_sets_disjoint_and_complete": true,
+  "numeric_merge_validation": {
+    "status": "PASS",
+    "task_count": 6305,
+    "max_absolute_error_nats": 0.0,
+    "tolerance": "abs(candidate-reference) <= 1e-4 + 1e-5*abs(reference)",
+    "reference_sha256": "b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f",
+    "candidate_sha256": "b1bb6d0d6e729d4bf2dac885bc554c318758ccd893b1855d555cffb31e5db235"
+  },
+  "merged_bytes_sha256": "b1bb6d0d6e729d4bf2dac885bc554c318758ccd893b1855d555cffb31e5db235",
+  "negative_tests": {
+    "missing_shard": {
+      "correctly_rejected": true,
+      "error": "('Missing tasks', 3149)"
+    },
+    "duplicated_shard": {
+      "correctly_rejected": true,
+      "error": "('Unexpected/duplicate task', 'Q07337:1')"
+    }
+  },
+  "ephemeral_files": "Routing TSVs were test intermediates in a temporary directory; original raw scores and deterministic source reproduce them."
+}

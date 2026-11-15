@@ -1,18 +1,18 @@
 # OspC masked-original-residue workload — implementation contract v1
 
-Status: the personal-Spark real-model Q07337 correctness pilot passed. Full-panel execution requires approval of the measured resource proposal. No event node has been contacted. This package extends the frozen v0.1.0 analysis; its files are unchanged.
+Status: the personal-Spark real-model Q07337 correctness pilot and approved full-panel run passed. The complete 6,305-mask result is now the reference dataset. No event node has been contacted. This package extends the frozen v0.1.0 analysis; its files are unchanged.
 
 ## Immutable inputs and scientific question
 
 Use `inputs/panel.fasta` (30 original natural sequences) and the exact `inputs/aligned.fasta` (218 columns). `provenance/frozen_inputs.json` pins source file bytes; `results/shard_manifest.json` records all accessions, sequence SHA256, lengths and deterministic assignments. Removing gaps reproduces every original sequence exactly. There are 6,305 original standard residues and therefore exactly 6,305 scored masking examples. The 202 fully covered columns and 76 fully covered identical columns are preserved baseline facts.
 
-Research question: where do empirical panel agreement and model predictability diverge? The pilot alone does not answer that across the panel. Conservation, learned conditional likelihood, contact geometry, accessibility, antigenicity and protection remain separate concepts.
+Research question: where do empirical panel agreement and model predictability diverge? The completed panel comparison and sensitivity analysis are in SCIENCE_FINDINGS.md; they are descriptive rather than a biological validation. Conservation, learned conditional likelihood, contact geometry, accessibility, antigenicity and protection remain separate concepts.
 
 ## Pinned model and runtime
 
 Model: `facebook/esm2_t6_8M_UR50D`, revision `c731040fcd8d73dceaa04b0a8e6329b345b0f5df`; 7,512,474 actual parameters. Only six files are allowed; all identities/sizes/checksums are in `provenance/model_download_receipt.json`. Approved payload and verified actual payload: 31,387,085 bytes, below 32,000,000 bytes. No weights are included in Git or the portable scientific archive.
 
-Tested personal runtime: Linux aarch64, Python 3.12.3, PyTorch 2.14.1+cu130, CUDA runtime 13.0, Transformers 5.20.0, safetensors 0.8.0, tokenizers 0.23.3, huggingface-hub 2.2.0, numpy 2.5.4. Driver 580.178.04, NVIDIA GB10 capability 12.1. Do not silently substitute a runtime: record venue actual versions and validate against the reference scores/tolerance. If unavailable, report runtime mismatch rather than install packages without approval. Matplotlib is used only to reproduce the optional scientific figure, not inference.
+Tested personal runtime: Linux aarch64, Python 3.12.3, PyTorch 2.14.1+cu130, CUDA runtime 13.0, Transformers 5.20.0, safetensors 0.8.0, tokenizers 0.23.3, huggingface-hub 2.2.0, numpy 2.5.4, scipy 1.18.1 (CPU SASA calculation/tests). Driver 580.178.04, NVIDIA GB10 capability 12.1. Do not silently substitute a runtime: record venue actual versions and validate against the reference scores/tolerance. If unavailable, report runtime mismatch rather than install packages without approval. Matplotlib is used only to reproduce the optional scientific figure, not inference.
 
 ## Exact scoring and correctness
 
@@ -20,7 +20,7 @@ Tested personal runtime: Linux aarch64, Python 3.12.3, PyTorch 2.14.1+cu130, CUD
 
 No alignment gaps, CLS, EOS or padding are masked/scored. Token count must equal L+2; token 0 is CLS, tokens 1..L are the exact original residues, token L+1 is EOS. Unknown/special residue tokens cause failure. `residue_alignment_mapping.tsv` gives the accession:position task key and exact frozen alignment column. Each sequence SHA256 is carried into every score row. Full-length sequences include precursor/signal-peptide context; no mature-protein trimming is performed.
 
-Use model.eval(), torch.inference_mode(), float32, eager attention, TF32 disabled, no autocast or gradients; seed 0, deterministic algorithms, CUBLAS_WORKSPACE_CONFIG=:4096:8, four CPU threads, batch size 8 (last batch may be smaller). A pilot scores all 210 residues of Q07337 and independently recomputes first/middle/last positions in batch size one, using logsumexp minus original-token logit. Ten tests cover masking and a known analytical full-vocabulary probability, task completeness and alignment/structure mapping.
+Use model.eval(), torch.inference_mode(), float32, eager attention, TF32 disabled, no autocast or gradients; seed 0, deterministic algorithms, CUBLAS_WORKSPACE_CONFIG=:4096:8, four CPU threads, batch size 8 (last batch may be smaller). A pilot scores all 210 residues of Q07337 and independently recomputes first/middle/last positions in batch size one, using logsumexp minus original-token logit. Sixteen tests cover masking and a known analytical full-vocabulary probability, task completeness and alignment/structure mapping.
 
 ## Task assignment and exact counts
 
@@ -33,6 +33,7 @@ After explicit venue access authorization, transfer this package and a separatel
 ```bash
 # Run from the extracted package directory. Output directories must be new.
 export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1
+"$PYTHON" src/verify_package.py --model-dir "$MODEL"
 "$PYTHON" -m unittest discover -s tests -v
 # One node, full scientific task set:
 timeout 120s "$PYTHON" src/masked_nll.py --model-dir "$MODEL" --method-contract provenance/method_contract.json --shards 1 --shard 0 --batch-size 8 --output results/event_one_node_run1
@@ -55,7 +56,7 @@ Synchronize CUDA around every timed forward/log-softmax block and report model l
 
 Personal pilot: model load+transfer 0.338836 s; first forward 0.299191 s; next warm forwards 0.012495/0.011979 s; 210-mask warm scoring 0.384158 s; inference+log-softmax 0.342025 s. Peak allocated GPU 135,659,520 bytes, reserved GPU 182,452,224 bytes; RSS 1,716,289,536 bytes. Recorded process wall is 1.104543 s after imports through correctness/score export, not shell startup-to-exit.
 
-Full-panel proposal, pending approval: about 12 seconds warm scoring by linear pilot extrapolation, hard external process timeout 120 seconds, allocated GPU cap 2 GiB, reserved cap 4 GiB, process RSS cap 16 GiB, require at least 8 GiB free GPU-visible memory after model load. These are abort thresholds, not measured full-panel usage or hard memory reservations. Do not train, expand the panel, change model or increase batch size. The code checks memory/time after each bounded batch; external timeout bounds a stalled process. Leave existing services untouched.
+Approved full-panel run completed: model load+transfer 0.313129 s, first forward 0.237833 s, warm scoring wall 9.909294 s, process wall after imports 10.510127 s; peak allocated GPU 137,314,816 bytes, reserved GPU 247,463,936 bytes, process RSS 1,650,778,112 bytes. All 210 pilot values repeat exactly. The same workload retains hard external process timeout 120 seconds, allocated GPU cap 2 GiB, reserved cap 4 GiB, process RSS cap 16 GiB, require at least 8 GiB free GPU-visible memory after model load. These are abort thresholds rather than hard memory reservations; measured usage is reported above. Do not train, expand the panel, change model or increase batch size. The code checks memory/time after each bounded batch; external timeout bounds a stalled process. Leave existing services untouched.
 
 For a benchmark, record one coordinator's launch-to-completion makespan for each trial, including dispatch/collection overhead as explicitly selected, plus individual node timings. Do not add per-node elapsed times and call that two-node wall time. Approximate compute-only two-node wall by max(shard warm-scoring times), labeled accordingly; report coordinator makespan separately. One trial is demonstrative, not a robust performance distribution. Personal-Spark timings are never matched event-cluster baselines.
 
@@ -70,3 +71,14 @@ For a benchmark, record one coordinator's launch-to-completion makespan for each
 On this Spark, weights are in `/home/darkstar90/lymescope-sparkprep/.model-cache/esm2_t6_8M_UR50D_c731040fcd8d73dceaa04b0a8e6329b345b0f5df`, outside tracked paths. Stage only these six verified files to each event node by an authorized transfer, with an additional 31,387,085 bytes per node. Validate hashes before loading. Do not redownload blindly or upload caches to GitHub. Dependencies must already match or need a separate approval.
 
 If model load/GPU execution fails, record NOT RUN with the exact error; run standard-library CPU panel/structure checks and preserve their results. Do not invent NLLs, silently swap checkpoint/device/dtype, repair drivers, install packages or submit event jobs without approval. The tests requiring torch can run in the existing CPU-capable runtime; CPU real-model scoring would need a bounded measured proposal if GPU execution fails.
+
+
+## Completed reference data and structural-context extensions
+
+Use `results/full_panel_v1/residue_nll.tsv` as the complete personal reference (SHA256 b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f). `full_panel_comparison_v2/` is the current aggregate. The v1 aggregate is preserved but superseded because unobserved structure contacts were previously False instead of null; NLL values did not change. `full_panel_validation.json` records independent arithmetic, identifier, token-position, original-sequence-hash, count and observation checks. `shard_merge_rehearsal.json` is CPU routing of existing scores with zero additional model forwards; it is NOT a two-node inference measurement. Actual two-node execution remains venue work.
+
+`joint_sensitivity.py` reuses fixed per-sequence scores in the 239 recorded real-panel subsets. No additional model calls occur. `sasa_context.py` is an optional CPU-only numerical geometric calculation, using the existing numpy/scipy runtime. It computes heavy-atom Shrake-Rupley-style SASA with explicitly recorded radii/probe/sampling and checks analytic spheres plus resolution sensitivity. It does not compute relative SASA or infer physiological exposure. Contacts, calculated SASA, agreement and NLL remain separate fields. The typed demo adapter `results/laptop_evidence_v1.json` includes 218 columns, 30 sequence summaries, 324 existing 1GGQ CA coordinates and nulls for unknown structure context. See LAPTOP_HANDOFF.md.
+
+A local, uncompressed model transfer bundle was prepared without additional network payload: `.model-cache/transfer/esm2_t6_8M_UR50D_c731040fcd8d73dceaa04b0a8e6329b345b0f5df_six_files.tar`, 31,395,840 bytes, SHA256 4e24f435628bb2c3b1a1a27664807c5d8c41ce7a94d3c2031b0f96363cb5d9ab. It contains only the six already verified model files; weights are never part of Git or the scientific archive. Transfer/extract it into a new local model directory on each authorized venue node, then run the offline verifier before inference. No venue transfer has occurred.
+
+The next consequential requirement is fresh authorization/access and a usable matching runtime on the actual event nodes. Do not claim a speedup until a genuine one-node and concurrent two-node run have passed full task/numerical validation and recorded comparable wall-time scopes. No larger model or extra download is proposed.

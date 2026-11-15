@@ -29,11 +29,12 @@ def run(paths,output):
  write_tsv(out/'sequence_summary.tsv',sequence_summaries)
  bycol=collections.defaultdict(list)
  for row in rows:bycol[int(row['alignment_column'])].append(row)
- sensitivity=list(csv.DictReader((ROOT/'results/panel_sensitivity.tsv').read_text().splitlines(),delimiter='\t'));contactrows=list(csv.DictReader((ROOT/'results/dimer_alignment_mapping.tsv').read_text().splitlines(),delimiter='\t'));contacts={int(r['alignment_column']) for r in contactrows if r['pdb_id']=='1GGQ' and r['assembly_id']=='1' and r['contact_4_5_A']=='True' and r['alignment_column']}
+ sensitivity=list(csv.DictReader((ROOT/'results/panel_sensitivity.tsv').read_text().splitlines(),delimiter='\t'));contactrows=list(csv.DictReader((ROOT/'results/dimer_alignment_mapping.tsv').read_text().splitlines(),delimiter='\t'));reference_rows=[r for r in contactrows if r['pdb_id']=='1GGQ' and r['assembly_id']=='1' and r['instance']=='A@1' and r['panel_accession']=='Q07337' and r['alignment_column']]
+ observed_reference={int(r['alignment_column']) for r in reference_rows};contacts={int(r['alignment_column']) for r in reference_rows if r['contact_4_5_A']=='True'}
  result=[]
  for s in sensitivity:
   col=int(s['alignment_column']);rs=bycol[col];scores=[float(r['nll_nats']) for r in rs];counts=collections.Counter(r['original_residue'] for r in rs);n=len(rs)
-  result.append({**s,'observed_residue_masks':n,'mean_original_residue_nll_nats':statistics.mean(scores),'sd_original_residue_nll_nats':statistics.stdev(scores) if n>1 else '', 'empirical_entropy_nats':-sum((v/n)*math.log(v/n) for v in counts.values()),'reference_1GGQ_assembly1_interchain_contact_4_5_A':col in contacts})
+  result.append({**s,'observed_residue_masks':n,'mean_original_residue_nll_nats':statistics.mean(scores),'sd_original_residue_nll_nats':statistics.stdev(scores) if n>1 else '', 'empirical_entropy_nats':-sum((v/n)*math.log(v/n) for v in counts.values()),'reference_1GGQ_assembly1_observation_status':'observed' if col in observed_reference else 'unobserved_or_unmapped','reference_1GGQ_assembly1_interchain_contact_4_5_A':col in contacts if col in observed_reference else ''})
  full=[r for r in result if float(r['coverage'])==1];ag=rank([float(r['modal_fraction']) for r in full]);pred=rank([-r['mean_original_residue_nll_nats'] for r in full]);N=len(full)
  for i,r in enumerate(full):r.update(agreement_percentile_rank=ag[i]/(N-1),predictability_percentile_rank=pred[i]/(N-1),agreement_minus_predictability_percentile=(ag[i]-pred[i])/(N-1))
  for r in result:
