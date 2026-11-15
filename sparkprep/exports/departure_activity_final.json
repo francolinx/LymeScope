@@ -1,0 +1,11 @@
+{
+  "checked_utc": "2026-11-15T00:09:39.006064+00:00",
+  "hostname": "spark-6771",
+  "uid": 1000,
+  "visible_process_count": 543,
+  "active_build_or_aligner_processes": [],
+  "recognized_project_script_processes": [],
+  "processes_with_open_writable_workspace_files": [],
+  "process_fd_directories_unreadable": 376,
+  "limitations": "Point-in-time read-only host snapshot. Open writable descriptors indicate potential writing, not guaranteed activity. Other users/processes may be inaccessible; future work is not predicted. No environment or file contents read; no task stopped; no shutdown/reboot."
+}

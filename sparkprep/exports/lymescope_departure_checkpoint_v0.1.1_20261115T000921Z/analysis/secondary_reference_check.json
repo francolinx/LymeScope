@@ -1,0 +1,18 @@
+{
+  "pdb_id": "1G5Z",
+  "chain": "A",
+  "scheme_residues": 164,
+  "observed_CA_residues": 164,
+  "unobserved_category_present": false,
+  "empty_list_explanation": "The prior [] was an absent optional unobserved-residue category, not missing atom coordinates. All 164 scheme residues have positive-occupancy CA atoms in model 1.",
+  "exact_construct_matches": [
+    {
+      "accession": "Q44717",
+      "start_1based": 40,
+      "end_1based": 203
+    }
+  ],
+  "historical_CIF_accession": "O31117 retained as supplied; no invented renumbering",
+  "scores_mapped": false,
+  "reason": "First scored reference is 1GGQ chain A."
+}

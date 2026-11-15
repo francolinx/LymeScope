@@ -1,0 +1,16 @@
+test_ambiguous_and_missing (test_baseline.BaselineTests.test_ambiguous_and_missing) ... ok
+test_gaps (test_baseline.BaselineTests.test_gaps) ... ok
+test_identical (test_baseline.BaselineTests.test_identical) ... ok
+test_mapping_insertion_and_unobserved (test_baseline.BaselineTests.test_mapping_insertion_and_unobserved) ... ok
+test_undefined (test_baseline.BaselineTests.test_undefined) ... ok
+test_variable_tie (test_baseline.BaselineTests.test_variable_tie) ... ok
+test_all_saved_statistics (test_results.ScientificResultsTests.test_all_saved_statistics) ... ok
+test_real_structure_mapping (test_results.ScientificResultsTests.test_real_structure_mapping) ... ok
+test_roundtrip_and_identifiers (test_results.ScientificResultsTests.test_roundtrip_and_identifiers) ... ok
+test_saved_tsv_matches_viewer (test_results.ScientificResultsTests.test_saved_tsv_matches_viewer) ... ok
+test_secondary_empty_category_explanation (test_results.ScientificResultsTests.test_secondary_empty_category_explanation) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.061s
+
+OK

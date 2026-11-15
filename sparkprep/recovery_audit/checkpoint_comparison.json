@@ -1,0 +1,1323 @@
+{
+  "mapping": "analysis/* -> analysis/ospc_comparison_v0.1.0/results_v0.1.0/* except nested early-source directory; provenance and packaging metadata -> exports/<checkpoint>/*; other files retain relative paths",
+  "files": [
+    {
+      "checkpoint_path": "CHECKPOINT_MANIFEST.json",
+      "source_relative_path": "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/CHECKPOINT_MANIFEST.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 14593,
+        "sha256": "5d959bd8187ce84b516a44730815ec175a3c04914d67bb6c31bfb423598fdedf"
+      },
+      "current": {
+        "bytes": 14593,
+        "sha256": "5d959bd8187ce84b516a44730815ec175a3c04914d67bb6c31bfb423598fdedf"
+      }
+    },
+    {
+      "checkpoint_path": "CONTENTS.txt",
+      "source_relative_path": "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/CONTENTS.txt",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 3831,
+        "sha256": "9f5e3fb25ab77cf2ba0cd95eceb54288bb149943420d3e018c8544f2bde9747f"
+      },
+      "current": {
+        "bytes": 3831,
+        "sha256": "9f5e3fb25ab77cf2ba0cd95eceb54288bb149943420d3e018c8544f2bde9747f"
+      }
+    },
+    {
+      "checkpoint_path": "README_CHECKPOINT.md",
+      "source_relative_path": "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/README_CHECKPOINT.md",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 1249,
+        "sha256": "b9bce2c4a059cfba4ba1402afdcb8aa74f704c56eac4db5b081b4f6ff1da1413"
+      },
+      "current": {
+        "bytes": 1249,
+        "sha256": "b9bce2c4a059cfba4ba1402afdcb8aa74f704c56eac4db5b081b4f6ff1da1413"
+      }
+    },
+    {
+      "checkpoint_path": "RESUME_ON_SPARK.md",
+      "source_relative_path": "RESUME_ON_SPARK.md",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 6613,
+        "sha256": "68fc659cf8faa97d2aa21eeed79234690b2d84df2ffab24f46a1a0efd079bbdf"
+      },
+      "current": {
+        "bytes": 6613,
+        "sha256": "68fc659cf8faa97d2aa21eeed79234690b2d84df2ffab24f46a1a0efd079bbdf"
+      }
+    },
+    {
+      "checkpoint_path": "SECRET_SCAN.json",
+      "source_relative_path": "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/SECRET_SCAN.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 624,
+        "sha256": "083b58de0f7981a9150039ba99c30b168ca74d77d49d7fd593c0393b83083bce"
+      },
+      "current": {
+        "bytes": 624,
+        "sha256": "083b58de0f7981a9150039ba99c30b168ca74d77d49d7fd593c0393b83083bce"
+      }
+    },
+    {
+      "checkpoint_path": "SHA256SUMS",
+      "source_relative_path": "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/SHA256SUMS",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 8375,
+        "sha256": "29ee77da5bab0be2087dbe6a3d056a9bb677d121ff67d3c8e3c9be747e35bba8"
+      },
+      "current": {
+        "bytes": 8375,
+        "sha256": "29ee77da5bab0be2087dbe6a3d056a9bb677d121ff67d3c8e3c9be747e35bba8"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/METHOD_AND_LIMITATIONS.md",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/METHOD_AND_LIMITATIONS.md",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 10535,
+        "sha256": "f90f86101ed085f45af3275a0f426967752da55a2205cbc9ed429b3b9b36f178"
+      },
+      "current": {
+        "bytes": 10535,
+        "sha256": "f90f86101ed085f45af3275a0f426967752da55a2205cbc9ed429b3b9b36f178"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/OPEN_RESULTS.md",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/OPEN_RESULTS.md",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 766,
+        "sha256": "a3d6ed2e6cc6ab26be788e5ec11aa4b07a075210423ddb82cb0a14f451b31aff"
+      },
+      "current": {
+        "bytes": 766,
+        "sha256": "a3d6ed2e6cc6ab26be788e5ec11aa4b07a075210423ddb82cb0a14f451b31aff"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/SHA256SUMS",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/SHA256SUMS",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 5027,
+        "sha256": "fba3fcc6e2d0227dd7c341592084d42d4a6c8f26f2afed85fcc0e2df2c4efdbf"
+      },
+      "current": {
+        "bytes": 5027,
+        "sha256": "fba3fcc6e2d0227dd7c341592084d42d4a6c8f26f2afed85fcc0e2df2c4efdbf"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/aligned.fasta",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/aligned.fasta",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 8625,
+        "sha256": "f7db9b8788ebaf1997f719da83a0c97b831b3a7649bcf905925b6dfd55ff82dd"
+      },
+      "current": {
+        "bytes": 8625,
+        "sha256": "f7db9b8788ebaf1997f719da83a0c97b831b3a7649bcf905925b6dfd55ff82dd"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/alignment_run.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/alignment_run.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 1603,
+        "sha256": "ac63aa39734ce10e00ea77996d6004d6a79480dd87611ea187059047874fdd79"
+      },
+      "current": {
+        "bytes": 1603,
+        "sha256": "ac63aa39734ce10e00ea77996d6004d6a79480dd87611ea187059047874fdd79"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/alignment_to_structure.tsv",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/alignment_to_structure.tsv",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 11897,
+        "sha256": "d132d09615ac04eceea7c43a25f3128ab13ef45342a6c7307e9d4aa20249efae"
+      },
+      "current": {
+        "bytes": 11897,
+        "sha256": "d132d09615ac04eceea7c43a25f3128ab13ef45342a6c7307e9d4aa20249efae"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/analysis_manifest.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/analysis_manifest.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 10018,
+        "sha256": "24cee300d769d3c8cfdd9e47e6e7973a6882f287c3be1546d5e6bfeaacc3e7b5"
+      },
+      "current": {
+        "bytes": 10018,
+        "sha256": "24cee300d769d3c8cfdd9e47e6e7973a6882f287c3be1546d5e6bfeaacc3e7b5"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/conservation_coverage.tsv",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/conservation_coverage.tsv",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 7490,
+        "sha256": "a39c94cc5478a6e4e76be7ec5dda1e2e8ce21a0ac2cbe5b117a2f4ebab129150"
+      },
+      "current": {
+        "bytes": 7490,
+        "sha256": "a39c94cc5478a6e4e76be7ec5dda1e2e8ce21a0ac2cbe5b117a2f4ebab129150"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/index.html",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/index.html",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 304111,
+        "sha256": "9e92cbe685a165413b210b1896fba5610230c9a934826e0cae2a05d37af1a97b"
+      },
+      "current": {
+        "bytes": 304111,
+        "sha256": "9e92cbe685a165413b210b1896fba5610230c9a934826e0cae2a05d37af1a97b"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/inputs/READY_FOR_CLUSTER.md",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/inputs/READY_FOR_CLUSTER.md",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 3891,
+        "sha256": "5d25f3891e54c2aa75075c8baba2a38857f0eaa277f52c0ac85629eeecd180f1"
+      },
+      "current": {
+        "bytes": 3891,
+        "sha256": "5d25f3891e54c2aa75075c8baba2a38857f0eaa277f52c0ac85629eeecd180f1"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/inputs/evidence/1G5Z_europepmc.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/inputs/evidence/1G5Z_europepmc.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 6750,
+        "sha256": "3448a9bfd913bf959e44d5952701b17817780c0e512337d5f74acef5a42ab2f2"
+      },
+      "current": {
+        "bytes": 6750,
+        "sha256": "3448a9bfd913bf959e44d5952701b17817780c0e512337d5f74acef5a42ab2f2"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/inputs/evidence/1GGQ_europepmc.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/inputs/evidence/1GGQ_europepmc.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 1260,
+        "sha256": "3fe814c2c59d5d515d4406c22ff4ff041ebc0526c28ae663dcce00f502cf6b10"
+      },
+      "current": {
+        "bytes": 1260,
+        "sha256": "3fe814c2c59d5d515d4406c22ff4ff041ebc0526c28ae663dcce00f502cf6b10"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/inputs/evidence/primary_bibliographic_records.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/inputs/evidence/primary_bibliographic_records.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 61246,
+        "sha256": "e893ec29f78730df8f1b7ac2d62bee8c9f62b72fbc6370a6362431f2373506a9"
+      },
+      "current": {
+        "bytes": 61246,
+        "sha256": "e893ec29f78730df8f1b7ac2d62bee8c9f62b72fbc6370a6362431f2373506a9"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/inputs/evidence/rcsb_usage.html",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/inputs/evidence/rcsb_usage.html",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 56921,
+        "sha256": "3fae3d58742360ab55b818b5c1615fa918d9333219dbd0a03acdd07e7001e67b"
+      },
+      "current": {
+        "bytes": 56921,
+        "sha256": "3fae3d58742360ab55b818b5c1615fa918d9333219dbd0a03acdd07e7001e67b"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/inputs/evidence/uniprot_license.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/inputs/evidence/uniprot_license.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 914,
+        "sha256": "5960c22bf17f22286504b927dbb3ca41713c571ed91a10fe7a88ddd964b416ce"
+      },
+      "current": {
+        "bytes": 914,
+        "sha256": "5960c22bf17f22286504b927dbb3ca41713c571ed91a10fe7a88ddd964b416ce"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/inputs/input_sequences.fasta",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/inputs/input_sequences.fasta",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 8360,
+        "sha256": "5e57f71028675fb90e41a0594ff60cb2f81f2b03dd33d7c19c6e62d1a961ee05"
+      },
+      "current": {
+        "bytes": 8360,
+        "sha256": "5e57f71028675fb90e41a0594ff60cb2f81f2b03dd33d7c19c6e62d1a961ee05"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/inputs/reference_structures/1G5Z.cif",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/inputs/reference_structures/1G5Z.cif",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 188325,
+        "sha256": "6957fc6ffae86cd7e0dea264fe2484275a6e992dfa4859565f4c9868d7c453e7"
+      },
+      "current": {
+        "bytes": 188325,
+        "sha256": "6957fc6ffae86cd7e0dea264fe2484275a6e992dfa4859565f4c9868d7c453e7"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/inputs/reference_structures/1G5Z.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/inputs/reference_structures/1G5Z.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 11477,
+        "sha256": "e9cfdba13b927d07431057a7248adfee38b1e063472a2299300fdfbd669f6564"
+      },
+      "current": {
+        "bytes": 11477,
+        "sha256": "e9cfdba13b927d07431057a7248adfee38b1e063472a2299300fdfbd669f6564"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/inputs/reference_structures/1GGQ.cif",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/inputs/reference_structures/1GGQ.cif",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 536284,
+        "sha256": "03a30187a21aed2d9c487cb31e27b805242d3bbb890a2473c58bdbd5884cc6f0"
+      },
+      "current": {
+        "bytes": 536284,
+        "sha256": "03a30187a21aed2d9c487cb31e27b805242d3bbb890a2473c58bdbd5884cc6f0"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/inputs/reference_structures/1GGQ.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/inputs/reference_structures/1GGQ.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 15992,
+        "sha256": "b4d2469cedd498ecb3e1743db06368c03dff9fcf7836c3d907c7d0aa1dc233fd"
+      },
+      "current": {
+        "bytes": 15992,
+        "sha256": "b4d2469cedd498ecb3e1743db06368c03dff9fcf7836c3d907c7d0aa1dc233fd"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/inputs/reference_structures/reference_summary.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/inputs/reference_structures/reference_summary.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 19067,
+        "sha256": "7149ec1c5453f225e8c50fb6b7fb6d24433210e17738e879cf857392ffc214cf"
+      },
+      "current": {
+        "bytes": 19067,
+        "sha256": "7149ec1c5453f225e8c50fb6b7fb6d24433210e17738e879cf857392ffc214cf"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/inputs/sequence_metadata.tsv",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/inputs/sequence_metadata.tsv",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 22157,
+        "sha256": "7acfdae37aa8b7f610a96df252fae4a216993f857877f9570b9d1a580a4b16ea"
+      },
+      "current": {
+        "bytes": 22157,
+        "sha256": "7acfdae37aa8b7f610a96df252fae4a216993f857877f9570b9d1a580a4b16ea"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/inputs/source_data/selected_uniprot_records.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/inputs/source_data/selected_uniprot_records.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 533349,
+        "sha256": "dcf6e4eff8fd415ea1fcedea3973b35ca53f3d94da08e35af29834eec04545df"
+      },
+      "current": {
+        "bytes": 533349,
+        "sha256": "dcf6e4eff8fd415ea1fcedea3973b35ca53f3d94da08e35af29834eec04545df"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/inputs/source_manifest.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/inputs/source_manifest.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 9669,
+        "sha256": "d3a34454cb96253af7336d371b290b96fde722f5ee6a43931c7d4365cfcc9baa"
+      },
+      "current": {
+        "bytes": 9669,
+        "sha256": "d3a34454cb96253af7336d371b290b96fde722f5ee6a43931c7d4365cfcc9baa"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/mafft_stderr.log",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/mafft_stderr.log",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 10262,
+        "sha256": "62236cdd8eb95812d3c0fe571f5c1a4c54b760bdd438ba40f1c6f52229dd7dfc"
+      },
+      "current": {
+        "bytes": 10262,
+        "sha256": "62236cdd8eb95812d3c0fe571f5c1a4c54b760bdd438ba40f1c6f52229dd7dfc"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/ospc_comparison_v0.1.0/baseline.py",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/baseline.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 4718,
+        "sha256": "8870272020a64da3461d45d8db6bc2eabf7cd1c67486746e7a7b9f459200660e"
+      },
+      "current": {
+        "bytes": 4718,
+        "sha256": "8870272020a64da3461d45d8db6bc2eabf7cd1c67486746e7a7b9f459200660e"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/ospc_comparison_v0.1.0/cif_reader.py",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/cif_reader.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 1025,
+        "sha256": "aad13756caaa2a81a8b029fd9a5bcf4c3f69489e898c0b13c9fe32979d8571a8"
+      },
+      "current": {
+        "bytes": 1025,
+        "sha256": "aad13756caaa2a81a8b029fd9a5bcf4c3f69489e898c0b13c9fe32979d8571a8"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/ospc_comparison_v0.1.0/inspect_reference.py",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/inspect_reference.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 2879,
+        "sha256": "ae487d10f1997492c637c2d1a8158dcb5dbd511bb3b46f45373289247f1f5fdb"
+      },
+      "current": {
+        "bytes": 2879,
+        "sha256": "ae487d10f1997492c637c2d1a8158dcb5dbd511bb3b46f45373289247f1f5fdb"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/ospc_comparison_v0.1.0/run_alignment_analysis.py",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/run_alignment_analysis.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 10615,
+        "sha256": "94a7d369fbbc6040bef7efa9d6ec9a7903019d9210421cae567dfc68815441c4"
+      },
+      "current": {
+        "bytes": 10615,
+        "sha256": "94a7d369fbbc6040bef7efa9d6ec9a7903019d9210421cae567dfc68815441c4"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/ospc_comparison_v0.1.0/save_partial.py",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/save_partial.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 9458,
+        "sha256": "bf1eb0d11eae1f63b57ff2b539038a93b12b0e258b38cb5174925fb13a884b6d"
+      },
+      "current": {
+        "bytes": 9458,
+        "sha256": "bf1eb0d11eae1f63b57ff2b539038a93b12b0e258b38cb5174925fb13a884b6d"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/ospc_comparison_v0.1.0/test_baseline.py",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/test_baseline.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 2442,
+        "sha256": "cbe09efa8a06709c19edd09b685fbe55b944530c409c8ccf4401bb65536f83f3"
+      },
+      "current": {
+        "bytes": 2442,
+        "sha256": "cbe09efa8a06709c19edd09b685fbe55b944530c409c8ccf4401bb65536f83f3"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/panel_scope.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/panel_scope.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 948,
+        "sha256": "ad9c3bd7b1429c80090535a3c3ef007d4028d14c2f549b0845b1e328b062924d"
+      },
+      "current": {
+        "bytes": 948,
+        "sha256": "ad9c3bd7b1429c80090535a3c3ef007d4028d14c2f549b0845b1e328b062924d"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/reference_inspection.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/reference_inspection.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 23087,
+        "sha256": "20fc0d4cbb6e3f2d9a8b12eb1aa66d006c0fd8e29c9f7a240408055df24d7d6b"
+      },
+      "current": {
+        "bytes": 23087,
+        "sha256": "20fc0d4cbb6e3f2d9a8b12eb1aa66d006c0fd8e29c9f7a240408055df24d7d6b"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/runtime_inventory_personal_spark.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/runtime_inventory_personal_spark.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 12700,
+        "sha256": "96a29c8aa47cf93e80aa9068b7dbc34c792325be6b3be28b78a8af73824d6528"
+      },
+      "current": {
+        "bytes": 12700,
+        "sha256": "96a29c8aa47cf93e80aa9068b7dbc34c792325be6b3be28b78a8af73824d6528"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/sanity_aligned.fasta",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/sanity_aligned.fasta",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 93,
+        "sha256": "fb69bcfc6ba9c73e2798058b24f98bf9b74123c9be96fa8aa61c5e3c7376f62c"
+      },
+      "current": {
+        "bytes": 93,
+        "sha256": "fb69bcfc6ba9c73e2798058b24f98bf9b74123c9be96fa8aa61c5e3c7376f62c"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/sanity_check.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/sanity_check.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 645,
+        "sha256": "b1062c273f9950be8ce86086a467661dd7c7695c1c9c715e93db159bdf68c112"
+      },
+      "current": {
+        "bytes": 645,
+        "sha256": "b1062c273f9950be8ce86086a467661dd7c7695c1c9c715e93db159bdf68c112"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/sanity_input.fasta",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/sanity_input.fasta",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 93,
+        "sha256": "fb69bcfc6ba9c73e2798058b24f98bf9b74123c9be96fa8aa61c5e3c7376f62c"
+      },
+      "current": {
+        "bytes": 93,
+        "sha256": "fb69bcfc6ba9c73e2798058b24f98bf9b74123c9be96fa8aa61c5e3c7376f62c"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/sanity_stderr.log",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/sanity_stderr.log",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 1591,
+        "sha256": "892b9f4634c126bd2d91be118e88c1b3892519ac9c906effbbcbd087397e8fbd"
+      },
+      "current": {
+        "bytes": 1591,
+        "sha256": "892b9f4634c126bd2d91be118e88c1b3892519ac9c906effbbcbd087397e8fbd"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/secondary_reference_check.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/secondary_reference_check.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 625,
+        "sha256": "a862cae7fa7859ffd4d0c85ee2adaa0ae344b9b492ae1838b17dcb537cd8279d"
+      },
+      "current": {
+        "bytes": 625,
+        "sha256": "a862cae7fa7859ffd4d0c85ee2adaa0ae344b9b492ae1838b17dcb537cd8279d"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/sequence_validation.tsv",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/sequence_validation.tsv",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 4907,
+        "sha256": "203f1e51db8fd54fe982d65ef7551199dbebca0fef63bb3b745004ef96203da0"
+      },
+      "current": {
+        "bytes": 4907,
+        "sha256": "203f1e51db8fd54fe982d65ef7551199dbebca0fef63bb3b745004ef96203da0"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/source/baseline.py",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/source/baseline.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 5114,
+        "sha256": "81e3a6a69ac10fd70998f64c1d8b420d197fcfb71ecb2bac9769b0920d179af8"
+      },
+      "current": {
+        "bytes": 5114,
+        "sha256": "81e3a6a69ac10fd70998f64c1d8b420d197fcfb71ecb2bac9769b0920d179af8"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/source/build_view.py",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/source/build_view.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 11956,
+        "sha256": "e9a7458307bef9efa5046b55c7fc75e5d18811b77794bd488d7848fa40f18ded"
+      },
+      "current": {
+        "bytes": 11956,
+        "sha256": "e9a7458307bef9efa5046b55c7fc75e5d18811b77794bd488d7848fa40f18ded"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/source/cif_reader.py",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/source/cif_reader.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 1086,
+        "sha256": "6b8aa5e9645310f72072c1a01e05d27b654bb4cbaad77cd4dea6c62d8401acc2"
+      },
+      "current": {
+        "bytes": 1086,
+        "sha256": "6b8aa5e9645310f72072c1a01e05d27b654bb4cbaad77cd4dea6c62d8401acc2"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/source/finalize_export.py",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/source/finalize_export.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 14208,
+        "sha256": "f3eb3ec8887aade2e63073e1733d623c827b954ea819fe949351bfb0e2a5bb13"
+      },
+      "current": {
+        "bytes": 14208,
+        "sha256": "f3eb3ec8887aade2e63073e1733d623c827b954ea819fe949351bfb0e2a5bb13"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/source/inspect_reference.py",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/source/inspect_reference.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 2879,
+        "sha256": "ae487d10f1997492c637c2d1a8158dcb5dbd511bb3b46f45373289247f1f5fdb"
+      },
+      "current": {
+        "bytes": 2879,
+        "sha256": "ae487d10f1997492c637c2d1a8158dcb5dbd511bb3b46f45373289247f1f5fdb"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/source/run_alignment_analysis.py",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/source/run_alignment_analysis.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 10615,
+        "sha256": "94a7d369fbbc6040bef7efa9d6ec9a7903019d9210421cae567dfc68815441c4"
+      },
+      "current": {
+        "bytes": 10615,
+        "sha256": "94a7d369fbbc6040bef7efa9d6ec9a7903019d9210421cae567dfc68815441c4"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/source/test_baseline.py",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/source/test_baseline.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 1505,
+        "sha256": "08ae94ca460af5f5680f67325a5cf167f0c65c2a576d1e33c9b84db061e8aba1"
+      },
+      "current": {
+        "bytes": 1505,
+        "sha256": "08ae94ca460af5f5680f67325a5cf167f0c65c2a576d1e33c9b84db061e8aba1"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/source/test_results.py",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/source/test_results.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 2551,
+        "sha256": "eeaf5cd88410bd2913ae51f8f4bdb78f40329378fb86b58ec24605f3e50c26de"
+      },
+      "current": {
+        "bytes": 2551,
+        "sha256": "eeaf5cd88410bd2913ae51f8f4bdb78f40329378fb86b58ec24605f3e50c26de"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/structure_residues.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/structure_residues.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 88690,
+        "sha256": "495cb517a5b79803b2cb1e611e33be88fa747f841d0a4842a6a37af9a2c12df5"
+      },
+      "current": {
+        "bytes": 88690,
+        "sha256": "495cb517a5b79803b2cb1e611e33be88fa747f841d0a4842a6a37af9a2c12df5"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/structure_residues.tsv",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/structure_residues.tsv",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 12936,
+        "sha256": "b49ef4200bc29d8c3acfb5ede4ad438cfe14254221d6ba80b21f922f1ae4058d"
+      },
+      "current": {
+        "bytes": 12936,
+        "sha256": "b49ef4200bc29d8c3acfb5ede4ad438cfe14254221d6ba80b21f922f1ae4058d"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/summary.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/summary.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 712,
+        "sha256": "4e646c4587aa9006770b871d3c048ac8e5c0d4c0032d4f783acc41cc8df851e6"
+      },
+      "current": {
+        "bytes": 712,
+        "sha256": "4e646c4587aa9006770b871d3c048ac8e5c0d4c0032d4f783acc41cc8df851e6"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/tests.log",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/tests.log",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 1106,
+        "sha256": "0d0aa210b782e9f3d0d948ab5e4576759e065bcb49717d9ba3a10cea6aeca738"
+      },
+      "current": {
+        "bytes": 1106,
+        "sha256": "0d0aa210b782e9f3d0d948ab5e4576759e065bcb49717d9ba3a10cea6aeca738"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/tool_provenance/MAFFT_LICENSE",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/tool_provenance/MAFFT_LICENSE",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 1763,
+        "sha256": "5b88dda69a361f21c241a3938c8b454d327c87137499acd963ffa13ad7f9426d"
+      },
+      "current": {
+        "bytes": 1763,
+        "sha256": "5b88dda69a361f21c241a3938c8b454d327c87137499acd963ffa13ad7f9426d"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/tool_provenance/Makefile.configured",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/tool_provenance/Makefile.configured",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 20325,
+        "sha256": "4e2c0d97337695d22aa11bc5e550dfec563dbb09b809d1eb6981fb90c6e8fe6a"
+      },
+      "current": {
+        "bytes": 20325,
+        "sha256": "4e2c0d97337695d22aa11bc5e550dfec563dbb09b809d1eb6981fb90c6e8fe6a"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/tool_provenance/Makefile.original",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/tool_provenance/Makefile.original",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 20281,
+        "sha256": "f71475644f956fff5626c18cb40b62b7d90261661c0a724b7dba6071ad960544"
+      },
+      "current": {
+        "bytes": 20281,
+        "sha256": "f71475644f956fff5626c18cb40b62b7d90261661c0a724b7dba6071ad960544"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/tool_provenance/build.log",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/tool_provenance/build.log",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 49804,
+        "sha256": "adebb1646c0c32ae15302b2ea8b99ccb8c8ae1b20f944baa47e559d739e99f36"
+      },
+      "current": {
+        "bytes": 49804,
+        "sha256": "adebb1646c0c32ae15302b2ea8b99ccb8c8ae1b20f944baa47e559d739e99f36"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/tool_provenance/install.log",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/tool_provenance/install.log",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 3449,
+        "sha256": "dc77fed139524a9476e6b397285497f7a5d8010b06e36d75863aea72c246dfdb"
+      },
+      "current": {
+        "bytes": 3449,
+        "sha256": "dc77fed139524a9476e6b397285497f7a5d8010b06e36d75863aea72c246dfdb"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/tool_provenance/install_dry_run.log",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/tool_provenance/install_dry_run.log",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 13449,
+        "sha256": "39b388f244c29715ba0086fbb626abe6b1df8ec6f726d365377f093818584461"
+      },
+      "current": {
+        "bytes": 13449,
+        "sha256": "39b388f244c29715ba0086fbb626abe6b1df8ec6f726d365377f093818584461"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/tool_provenance.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/tool_provenance.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 10294,
+        "sha256": "daf5abf0185c12f9c068c9ac1b7e9b803a552d7b49db9c2f666f213943b70d43"
+      },
+      "current": {
+        "bytes": 10294,
+        "sha256": "daf5abf0185c12f9c068c9ac1b7e9b803a552d7b49db9c2f666f213943b70d43"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/viewer_data.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/viewer_data.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 292411,
+        "sha256": "d0b13b25800b908ed2a515b15c394666df34f361db1242d715978a1ee8e67f1e"
+      },
+      "current": {
+        "bytes": 292411,
+        "sha256": "d0b13b25800b908ed2a515b15c394666df34f361db1242d715978a1ee8e67f1e"
+      }
+    },
+    {
+      "checkpoint_path": "analysis/viewer_validation.json",
+      "source_relative_path": "analysis/ospc_comparison_v0.1.0/results_v0.1.0/viewer_validation.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 334,
+        "sha256": "b16f5eed7af046debafb36a0d81156cf984879332d051dad6afc44ccff6cef5a"
+      },
+      "current": {
+        "bytes": 334,
+        "sha256": "b16f5eed7af046debafb36a0d81156cf984879332d051dad6afc44ccff6cef5a"
+      }
+    },
+    {
+      "checkpoint_path": "provenance/departure_activity_before.json",
+      "source_relative_path": "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/provenance/departure_activity_before.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 603,
+        "sha256": "e8b09d10815ce21486834dc092be0a955ffefd91d6e62aa3115cbd180952c4e6"
+      },
+      "current": {
+        "bytes": 603,
+        "sha256": "e8b09d10815ce21486834dc092be0a955ffefd91d6e62aa3115cbd180952c4e6"
+      }
+    },
+    {
+      "checkpoint_path": "provenance/frozen_input_handoff.json",
+      "source_relative_path": "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/provenance/frozen_input_handoff.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 381,
+        "sha256": "693f953a23b134bbee6698d6ae2648fdfca0b83a57b09a8d01a5e43b5d778931"
+      },
+      "current": {
+        "bytes": 381,
+        "sha256": "693f953a23b134bbee6698d6ae2648fdfca0b83a57b09a8d01a5e43b5d778931"
+      }
+    },
+    {
+      "checkpoint_path": "provenance/git_status.json",
+      "source_relative_path": "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/provenance/git_status.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 406,
+        "sha256": "d0b674b95378459240d43fb4f9a8ecda21525183d683c54f52a5845b88c6db2b"
+      },
+      "current": {
+        "bytes": 406,
+        "sha256": "d0b674b95378459240d43fb4f9a8ecda21525183d683c54f52a5845b88c6db2b"
+      }
+    },
+    {
+      "checkpoint_path": "provenance/process_snapshot.json",
+      "source_relative_path": "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/provenance/process_snapshot.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 507,
+        "sha256": "cfb9a2f00d33134eef834726eadb766c43cdc3fd1dfdc2d488d0f4110acbc50a"
+      },
+      "current": {
+        "bytes": 507,
+        "sha256": "cfb9a2f00d33134eef834726eadb766c43cdc3fd1dfdc2d488d0f4110acbc50a"
+      }
+    },
+    {
+      "checkpoint_path": "provenance/runtime_inventory.json",
+      "source_relative_path": "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/provenance/runtime_inventory.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 12700,
+        "sha256": "96a29c8aa47cf93e80aa9068b7dbc34c792325be6b3be28b78a8af73824d6528"
+      },
+      "current": {
+        "bytes": 12700,
+        "sha256": "96a29c8aa47cf93e80aa9068b7dbc34c792325be6b3be28b78a8af73824d6528"
+      }
+    },
+    {
+      "checkpoint_path": "provenance/tool_versions.json",
+      "source_relative_path": "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/provenance/tool_versions.json",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 1033,
+        "sha256": "9de48dafde8237492d6f8621dc47ba8620a6fd714761c97d5bbe955b35aba92d"
+      },
+      "current": {
+        "bytes": 1033,
+        "sha256": "9de48dafde8237492d6f8621dc47ba8620a6fd714761c97d5bbe955b35aba92d"
+      }
+    },
+    {
+      "checkpoint_path": "scripts/check_checkpoint_processes.py",
+      "source_relative_path": "scripts/check_checkpoint_processes.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 2105,
+        "sha256": "90721a63844c6409aa7b409da2a4a685343d772256a7caee1c9988842b9f747e"
+      },
+      "current": {
+        "bytes": 2105,
+        "sha256": "90721a63844c6409aa7b409da2a4a685343d772256a7caee1c9988842b9f747e"
+      }
+    },
+    {
+      "checkpoint_path": "scripts/create_departure_checkpoint.py",
+      "source_relative_path": "scripts/create_departure_checkpoint.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 15001,
+        "sha256": "65d11a458e35a675cded02d0b7864d398df9d047d42ffd69e79b758c1d68505e"
+      },
+      "current": {
+        "bytes": 15001,
+        "sha256": "65d11a458e35a675cded02d0b7864d398df9d047d42ffd69e79b758c1d68505e"
+      }
+    },
+    {
+      "checkpoint_path": "scripts/create_source_checkpoint.py",
+      "source_relative_path": "scripts/create_source_checkpoint.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 10707,
+        "sha256": "9a5fe1d32daaeec047da5c690b357e176a43e1bd8cdc16a1ffa07e6d9111a20c"
+      },
+      "current": {
+        "bytes": 10707,
+        "sha256": "9a5fe1d32daaeec047da5c690b357e176a43e1bd8cdc16a1ffa07e6d9111a20c"
+      }
+    },
+    {
+      "checkpoint_path": "scripts/departure_activity.py",
+      "source_relative_path": "scripts/departure_activity.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 2791,
+        "sha256": "3e2889c534127940122b358fe545ab719df91dd3c84f6f004b62e9d9191c9fcb"
+      },
+      "current": {
+        "bytes": 2791,
+        "sha256": "3e2889c534127940122b358fe545ab719df91dd3c84f6f004b62e9d9191c9fcb"
+      }
+    },
+    {
+      "checkpoint_path": "scripts/download.py",
+      "source_relative_path": "scripts/download.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 2390,
+        "sha256": "ec74a7ce2cff2fdf389fba3ba0e1487a8d8958e88d786efebc1dfa998badb2fc"
+      },
+      "current": {
+        "bytes": 2390,
+        "sha256": "ec74a7ce2cff2fdf389fba3ba0e1487a8d8958e88d786efebc1dfa998badb2fc"
+      }
+    },
+    {
+      "checkpoint_path": "scripts/export_bundle.py",
+      "source_relative_path": "scripts/export_bundle.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 7207,
+        "sha256": "a416147a6276785749e15341626e2f272ff87cfbe04f470df5aa1dbdf8b7fc86"
+      },
+      "current": {
+        "bytes": 7207,
+        "sha256": "a416147a6276785749e15341626e2f272ff87cfbe04f470df5aa1dbdf8b7fc86"
+      }
+    },
+    {
+      "checkpoint_path": "scripts/freeze_early_handoff.py",
+      "source_relative_path": "scripts/freeze_early_handoff.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 8170,
+        "sha256": "4798b6d57ede155fcb6373f35536eb436fa9b9e1f3630f0cc28ecc74feb5e2af"
+      },
+      "current": {
+        "bytes": 8170,
+        "sha256": "4798b6d57ede155fcb6373f35536eb436fa9b9e1f3630f0cc28ecc74feb5e2af"
+      }
+    },
+    {
+      "checkpoint_path": "scripts/inventory.py",
+      "source_relative_path": "scripts/inventory.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 2119,
+        "sha256": "dca75ddc6e834ef200ff2437066e5cb1844b9205e9ed4f1e04f7cceb825b96a6"
+      },
+      "current": {
+        "bytes": 2119,
+        "sha256": "dca75ddc6e834ef200ff2437066e5cb1844b9205e9ed4f1e04f7cceb825b96a6"
+      }
+    },
+    {
+      "checkpoint_path": "scripts/prepare.py",
+      "source_relative_path": "scripts/prepare.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 13270,
+        "sha256": "5cc1125ecda81cc666610a8f9b9c0ea7a7a0c12206f129c62363c5cc8655bc7f"
+      },
+      "current": {
+        "bytes": 13270,
+        "sha256": "5cc1125ecda81cc666610a8f9b9c0ea7a7a0c12206f129c62363c5cc8655bc7f"
+      }
+    },
+    {
+      "checkpoint_path": "scripts/reproduce_checkpoint_analysis.py",
+      "source_relative_path": "scripts/reproduce_checkpoint_analysis.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 4737,
+        "sha256": "33e7979a5d9ad055ef527895160b3719378d1aa5ef5348d26e0f914fdd474a2c"
+      },
+      "current": {
+        "bytes": 4737,
+        "sha256": "33e7979a5d9ad055ef527895160b3719378d1aa5ef5348d26e0f914fdd474a2c"
+      }
+    },
+    {
+      "checkpoint_path": "scripts/start_ospc_analysis.py",
+      "source_relative_path": "scripts/start_ospc_analysis.py",
+      "status": "UNCHANGED",
+      "checkpoint": {
+        "bytes": 2679,
+        "sha256": "bd0717465648c4c0e866e350126c9888885729d05c03f3741c4aa1e1b9b79d5f"
+      },
+      "current": {
+        "bytes": 2679,
+        "sha256": "bd0717465648c4c0e866e350126c9888885729d05c03f3741c4aa1e1b9b79d5f"
+      }
+    }
+  ],
+  "not_packaged_at_mapped_path": [
+    "READY_FOR_CLUSTER.md",
+    "analysis/ospc_comparison_v0.1.0/CONTINUATION_RESULTS.json",
+    "analysis/ospc_comparison_v0.1.0/METHOD_AND_LIMITATIONS.md",
+    "analysis/ospc_comparison_v0.1.0/SHA256SUMS",
+    "analysis/ospc_comparison_v0.1.0/analysis_manifest.json",
+    "analysis/ospc_comparison_v0.1.0/analysis_state.json",
+    "analysis/ospc_comparison_v0.1.0/frozen_inputs/READY_FOR_CLUSTER.md",
+    "analysis/ospc_comparison_v0.1.0/frozen_inputs/evidence/1G5Z_europepmc.json",
+    "analysis/ospc_comparison_v0.1.0/frozen_inputs/evidence/1GGQ_europepmc.json",
+    "analysis/ospc_comparison_v0.1.0/frozen_inputs/evidence/primary_bibliographic_records.json",
+    "analysis/ospc_comparison_v0.1.0/frozen_inputs/evidence/rcsb_usage.html",
+    "analysis/ospc_comparison_v0.1.0/frozen_inputs/evidence/uniprot_license.json",
+    "analysis/ospc_comparison_v0.1.0/frozen_inputs/input_sequences.fasta",
+    "analysis/ospc_comparison_v0.1.0/frozen_inputs/reference_structures/1G5Z.cif",
+    "analysis/ospc_comparison_v0.1.0/frozen_inputs/reference_structures/1G5Z.json",
+    "analysis/ospc_comparison_v0.1.0/frozen_inputs/reference_structures/1GGQ.cif",
+    "analysis/ospc_comparison_v0.1.0/frozen_inputs/reference_structures/1GGQ.json",
+    "analysis/ospc_comparison_v0.1.0/frozen_inputs/reference_structures/reference_summary.json",
+    "analysis/ospc_comparison_v0.1.0/frozen_inputs/sequence_metadata.tsv",
+    "analysis/ospc_comparison_v0.1.0/frozen_inputs/source_data/selected_uniprot_records.json",
+    "analysis/ospc_comparison_v0.1.0/frozen_inputs/source_manifest.json",
+    "analysis/ospc_comparison_v0.1.0/index.html",
+    "analysis/ospc_comparison_v0.1.0/panel_scope.json",
+    "analysis/ospc_comparison_v0.1.0/reference_inspection.json",
+    "analysis/ospc_comparison_v0.1.0/reference_residues.json",
+    "analysis/ospc_comparison_v0.1.0/reference_residues.tsv",
+    "analysis/ospc_comparison_v0.1.0/runtime_inventory_personal_spark.json",
+    "analysis/ospc_comparison_v0.1.0/tests.log",
+    "analysis/ospc_comparison_v0.1.0/viewer_data.json",
+    "data_quality_report.md",
+    "evidence/1G5Z_europepmc.json",
+    "evidence/1GGQ_europepmc.json",
+    "evidence/PMC10128040.html",
+    "evidence/ospc_epitope_bibliography.json",
+    "evidence/primary_bibliographic_records.json",
+    "evidence/rcsb_usage.html",
+    "evidence/uniprot_license.html",
+    "evidence/uniprot_license.json",
+    "exports/SHA256SUMS",
+    "exports/checkpoint_process_snapshot_after.json",
+    "exports/checkpoint_process_snapshot_before.json",
+    "exports/departure_activity_before.json",
+    "exports/departure_activity_final.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/RESUME_ON_SPARK.md",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/METHOD_AND_LIMITATIONS.md",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/OPEN_RESULTS.md",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/SHA256SUMS",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/aligned.fasta",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/alignment_run.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/alignment_to_structure.tsv",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/analysis_manifest.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/conservation_coverage.tsv",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/index.html",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/inputs/READY_FOR_CLUSTER.md",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/inputs/evidence/1G5Z_europepmc.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/inputs/evidence/1GGQ_europepmc.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/inputs/evidence/primary_bibliographic_records.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/inputs/evidence/rcsb_usage.html",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/inputs/evidence/uniprot_license.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/inputs/input_sequences.fasta",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/inputs/reference_structures/1G5Z.cif",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/inputs/reference_structures/1G5Z.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/inputs/reference_structures/1GGQ.cif",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/inputs/reference_structures/1GGQ.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/inputs/reference_structures/reference_summary.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/inputs/sequence_metadata.tsv",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/inputs/source_data/selected_uniprot_records.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/inputs/source_manifest.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/mafft_stderr.log",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/ospc_comparison_v0.1.0/baseline.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/ospc_comparison_v0.1.0/cif_reader.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/ospc_comparison_v0.1.0/inspect_reference.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/ospc_comparison_v0.1.0/run_alignment_analysis.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/ospc_comparison_v0.1.0/save_partial.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/ospc_comparison_v0.1.0/test_baseline.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/panel_scope.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/reference_inspection.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/runtime_inventory_personal_spark.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/sanity_aligned.fasta",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/sanity_check.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/sanity_input.fasta",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/sanity_stderr.log",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/secondary_reference_check.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/sequence_validation.tsv",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/source/baseline.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/source/build_view.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/source/cif_reader.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/source/finalize_export.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/source/inspect_reference.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/source/run_alignment_analysis.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/source/test_baseline.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/source/test_results.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/structure_residues.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/structure_residues.tsv",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/summary.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/tests.log",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/tool_provenance/MAFFT_LICENSE",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/tool_provenance/Makefile.configured",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/tool_provenance/Makefile.original",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/tool_provenance/build.log",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/tool_provenance/install.log",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/tool_provenance/install_dry_run.log",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/tool_provenance.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/viewer_data.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/analysis/viewer_validation.json",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/scripts/check_checkpoint_processes.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/scripts/create_departure_checkpoint.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/scripts/create_source_checkpoint.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/scripts/departure_activity.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/scripts/download.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/scripts/export_bundle.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/scripts/freeze_early_handoff.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/scripts/inventory.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/scripts/prepare.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/scripts/reproduce_checkpoint_analysis.py",
+    "exports/lymescope_departure_checkpoint_v0.1.1_20261115T000921Z/scripts/start_ospc_analysis.py",
+    "exports/lymescope_ospc_handoff_v0.1.0/READY_FOR_CLUSTER.md",
+    "exports/lymescope_ospc_handoff_v0.1.0/SHA256SUMS",
+    "exports/lymescope_ospc_handoff_v0.1.0/evidence/1G5Z_europepmc.json",
+    "exports/lymescope_ospc_handoff_v0.1.0/evidence/1GGQ_europepmc.json",
+    "exports/lymescope_ospc_handoff_v0.1.0/evidence/primary_bibliographic_records.json",
+    "exports/lymescope_ospc_handoff_v0.1.0/evidence/rcsb_usage.html",
+    "exports/lymescope_ospc_handoff_v0.1.0/evidence/uniprot_license.json",
+    "exports/lymescope_ospc_handoff_v0.1.0/input_sequences.fasta",
+    "exports/lymescope_ospc_handoff_v0.1.0/reference_structures/1G5Z.cif",
+    "exports/lymescope_ospc_handoff_v0.1.0/reference_structures/1G5Z.json",
+    "exports/lymescope_ospc_handoff_v0.1.0/reference_structures/1GGQ.cif",
+    "exports/lymescope_ospc_handoff_v0.1.0/reference_structures/1GGQ.json",
+    "exports/lymescope_ospc_handoff_v0.1.0/reference_structures/reference_summary.json",
+    "exports/lymescope_ospc_handoff_v0.1.0/sequence_metadata.tsv",
+    "exports/lymescope_ospc_handoff_v0.1.0/source_data/selected_uniprot_records.json",
+    "exports/lymescope_ospc_handoff_v0.1.0/source_manifest.json",
+    "exports/lymescope_ospc_handoff_v0.1.0.receipt.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/CHECKPOINT_MANIFEST.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/README_CHECKPOINT.md",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/SHA256SUMS",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/METHOD_AND_LIMITATIONS.md",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/OPEN_RESULTS.md",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/SHA256SUMS",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/aligned.fasta",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/alignment_run.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/alignment_to_structure.tsv",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/analysis_manifest.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/conservation_coverage.tsv",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/index.html",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/inputs/READY_FOR_CLUSTER.md",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/inputs/evidence/1G5Z_europepmc.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/inputs/evidence/1GGQ_europepmc.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/inputs/evidence/primary_bibliographic_records.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/inputs/evidence/rcsb_usage.html",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/inputs/evidence/uniprot_license.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/inputs/input_sequences.fasta",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/inputs/reference_structures/1G5Z.cif",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/inputs/reference_structures/1G5Z.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/inputs/reference_structures/1GGQ.cif",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/inputs/reference_structures/1GGQ.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/inputs/reference_structures/reference_summary.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/inputs/sequence_metadata.tsv",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/inputs/source_data/selected_uniprot_records.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/inputs/source_manifest.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/mafft_stderr.log",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/ospc_comparison_v0.1.0/baseline.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/ospc_comparison_v0.1.0/cif_reader.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/ospc_comparison_v0.1.0/inspect_reference.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/ospc_comparison_v0.1.0/run_alignment_analysis.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/ospc_comparison_v0.1.0/save_partial.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/ospc_comparison_v0.1.0/test_baseline.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/panel_scope.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/reference_inspection.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/runtime_inventory_personal_spark.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/sanity_aligned.fasta",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/sanity_check.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/sanity_input.fasta",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/sanity_stderr.log",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/secondary_reference_check.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/sequence_validation.tsv",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/source/baseline.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/source/build_view.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/source/cif_reader.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/source/finalize_export.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/source/inspect_reference.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/source/run_alignment_analysis.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/source/test_baseline.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/source/test_results.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/structure_residues.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/structure_residues.tsv",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/summary.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/tests.log",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/tool_provenance/MAFFT_LICENSE",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/tool_provenance/Makefile.configured",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/tool_provenance/Makefile.original",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/tool_provenance/build.log",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/tool_provenance/install.log",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/tool_provenance/install_dry_run.log",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/tool_provenance.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/viewer_data.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/analysis/viewer_validation.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/provenance/process_snapshot.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/provenance/runtime_inventory.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/provenance/tool_versions.json",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/scripts/check_checkpoint_processes.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/scripts/create_source_checkpoint.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/scripts/download.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/scripts/export_bundle.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/scripts/freeze_early_handoff.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/scripts/inventory.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/scripts/prepare.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/scripts/reproduce_checkpoint_analysis.py",
+    "exports/lymescope_source_analysis_checkpoint_v0.1.0/scripts/start_ospc_analysis.py",
+    "exports/validation.json",
+    "input_sequences.fasta",
+    "reference_structures/1G5Z.cif",
+    "reference_structures/1G5Z.json",
+    "reference_structures/1GGQ.cif",
+    "reference_structures/1GGQ.json",
+    "reference_structures/reference_summary.json",
+    "runtime_inventory.json",
+    "sequence_metadata.tsv",
+    "source_data/candidate_quality.tsv",
+    "source_data/ospc_candidates.json",
+    "source_data/proteome.fasta",
+    "source_data/proteome.json",
+    "source_data/proteome_annotations.tsv",
+    "source_manifest.json"
+  ]
+}

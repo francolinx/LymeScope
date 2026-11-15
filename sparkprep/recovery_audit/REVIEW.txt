@@ -1,0 +1,17 @@
+Spark recovery audit — 20261115T031226Z
+
+Host spark-6771; source snapshot stable across all 960 entries; no writable file handles observed. Both named archives PASS exact size/SHA256, readability, safe paths and internal checksums.
+
+Base main: 727deea5f8fb0b07d7ae2d348aef7ed738ab8fef
+Proposed recovery branch: recovery/spark-20261115T031226Z
+Publication pending. Main unchanged.
+
+Categories: {"LOCAL_ONLY": 308, "INTENTIONALLY_EXCLUDED": 652, "REMOTE_ONLY": 1}. Full paths, raw-file SHA256 and sizes are in comparison_provenance.json. Remote-only applies to the sparkprep import namespace; unrelated laptop files are retained. No other remote branches were returned.
+
+Checkpoint mapped comparison: {'UNCHANGED': 84}. Not-packaged-at-mapped-path files: 224 (includes original input/evidence and redundant export versions, not necessarily newly created science). See checkpoint_comparison.json for exact paths.
+
+Excluded archives, compiled MAFFT installation/browser profile, Python bytecode and redundant validation extraction remain in the private snapshot. No .pt files were encountered. Reviewed scientific export variants retain their relative paths for review rather than choosing winners.
+
+Reconstruction: use preserved scientific inputs/source and recorded MAFFT 7.525 Makefiles, license, build/install logs and tool_provenance.json. Restore omitted original packages from the private local snapshot if needed; no scientific output was recreated. Review scripts before executing; their original absolute workspace paths may need configuration on laptop.
+
+Limitations: direct network clone is unavailable. API-fetched Git objects reconstruct staging; two unrelated existing remote PNGs cannot be read by text-only connector, and their original references remain unchanged. No full source backup is off-device until publication verification completes. Original archives and private operational data remain local.

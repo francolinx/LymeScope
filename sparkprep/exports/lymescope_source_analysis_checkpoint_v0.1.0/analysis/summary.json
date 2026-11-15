@@ -1,0 +1,20 @@
+{
+  "sequence_count": 30,
+  "alignment_columns": 218,
+  "fully_observed_columns": 202,
+  "columns_with_gaps": 16,
+  "ambiguous_missing_residues": 0,
+  "undefined_columns": 0,
+  "all_observed_residues_identical_columns": 82,
+  "fully_covered_identical_columns": 76,
+  "coverage_min": 0.03333333333333333,
+  "mean_modal_fraction": 0.8126502897828802,
+  "observed_structure_residues_scored": 162,
+  "structure_mapping_status_counts": {
+    "outside_construct": 37,
+    "reference_gap": 8,
+    "unobserved": 11,
+    "observed": 162
+  },
+  "interpretation": "Conserved within this analyzed panel only; unweighted, alignment-dependent descriptive baseline. Not universally representative or evidence of protection."
+}

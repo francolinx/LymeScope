@@ -1,0 +1,174 @@
+{
+  "status": "PREALIGNMENT_PARTIAL; scientific comparison blocked",
+  "created_utc": "2026-11-14T23:47:56.693905+00:00",
+  "inputs": {
+    "status": "awaiting_alignment_dependency_approval",
+    "created_utc": "2026-11-14T23:46:16.682016+00:00",
+    "frozen_archive": "/home/darkstar90/lymescope-sparkprep/exports/lymescope_ospc_handoff_v0.1.0.tar.gz",
+    "frozen_archive_sha256": "1ce0fff5a1b8d7d24ed6d70844f798484ac81231bcf2350ddcd8f6551ec1fa0f",
+    "manifest_paths": {
+      "input_sequences.fasta": "input_sequences.fasta",
+      "sequence_metadata.tsv": "sequence_metadata.tsv",
+      "1GGQ.cif": "reference_structures/1GGQ.cif",
+      "1G5Z.cif": "reference_structures/1G5Z.cif",
+      "1GGQ.json": "reference_structures/1GGQ.json",
+      "1G5Z.json": "reference_structures/1G5Z.json",
+      "reference_summary.json": "reference_structures/reference_summary.json"
+    },
+    "aligner_search": "No mafft, muscle, clustalo, kalign or t_coffee found on PATH; no MAFFT in checked standard/local bin and known venv locations.",
+    "missing_dependency": "Established multiple-sequence aligner; proposed isolated MAFFT 7.525 source install pending user approval.",
+    "alignment_generated": false
+  },
+  "files": [
+    {
+      "path": "METHOD_AND_LIMITATIONS.md",
+      "bytes": 4497,
+      "sha256": "706c96be004985908818163895a450a3e1b71d6887fbabb111e39b4810ee490c"
+    },
+    {
+      "path": "analysis_state.json",
+      "bytes": 1037,
+      "sha256": "debf40d786f35ad885a863e03f9771afd9eec94dc20d13996757c85e506349b1"
+    },
+    {
+      "path": "baseline.py",
+      "bytes": 4718,
+      "sha256": "8870272020a64da3461d45d8db6bc2eabf7cd1c67486746e7a7b9f459200660e"
+    },
+    {
+      "path": "cif_reader.py",
+      "bytes": 1025,
+      "sha256": "aad13756caaa2a81a8b029fd9a5bcf4c3f69489e898c0b13c9fe32979d8571a8"
+    },
+    {
+      "path": "frozen_inputs/READY_FOR_CLUSTER.md",
+      "bytes": 3891,
+      "sha256": "5d25f3891e54c2aa75075c8baba2a38857f0eaa277f52c0ac85629eeecd180f1"
+    },
+    {
+      "path": "frozen_inputs/evidence/1G5Z_europepmc.json",
+      "bytes": 6750,
+      "sha256": "3448a9bfd913bf959e44d5952701b17817780c0e512337d5f74acef5a42ab2f2"
+    },
+    {
+      "path": "frozen_inputs/evidence/1GGQ_europepmc.json",
+      "bytes": 1260,
+      "sha256": "3fe814c2c59d5d515d4406c22ff4ff041ebc0526c28ae663dcce00f502cf6b10"
+    },
+    {
+      "path": "frozen_inputs/evidence/primary_bibliographic_records.json",
+      "bytes": 61246,
+      "sha256": "e893ec29f78730df8f1b7ac2d62bee8c9f62b72fbc6370a6362431f2373506a9"
+    },
+    {
+      "path": "frozen_inputs/evidence/rcsb_usage.html",
+      "bytes": 56921,
+      "sha256": "3fae3d58742360ab55b818b5c1615fa918d9333219dbd0a03acdd07e7001e67b"
+    },
+    {
+      "path": "frozen_inputs/evidence/uniprot_license.json",
+      "bytes": 914,
+      "sha256": "5960c22bf17f22286504b927dbb3ca41713c571ed91a10fe7a88ddd964b416ce"
+    },
+    {
+      "path": "frozen_inputs/input_sequences.fasta",
+      "bytes": 8360,
+      "sha256": "5e57f71028675fb90e41a0594ff60cb2f81f2b03dd33d7c19c6e62d1a961ee05"
+    },
+    {
+      "path": "frozen_inputs/reference_structures/1G5Z.cif",
+      "bytes": 188325,
+      "sha256": "6957fc6ffae86cd7e0dea264fe2484275a6e992dfa4859565f4c9868d7c453e7"
+    },
+    {
+      "path": "frozen_inputs/reference_structures/1G5Z.json",
+      "bytes": 11477,
+      "sha256": "e9cfdba13b927d07431057a7248adfee38b1e063472a2299300fdfbd669f6564"
+    },
+    {
+      "path": "frozen_inputs/reference_structures/1GGQ.cif",
+      "bytes": 536284,
+      "sha256": "03a30187a21aed2d9c487cb31e27b805242d3bbb890a2473c58bdbd5884cc6f0"
+    },
+    {
+      "path": "frozen_inputs/reference_structures/1GGQ.json",
+      "bytes": 15992,
+      "sha256": "b4d2469cedd498ecb3e1743db06368c03dff9fcf7836c3d907c7d0aa1dc233fd"
+    },
+    {
+      "path": "frozen_inputs/reference_structures/reference_summary.json",
+      "bytes": 19067,
+      "sha256": "7149ec1c5453f225e8c50fb6b7fb6d24433210e17738e879cf857392ffc214cf"
+    },
+    {
+      "path": "frozen_inputs/sequence_metadata.tsv",
+      "bytes": 22157,
+      "sha256": "7acfdae37aa8b7f610a96df252fae4a216993f857877f9570b9d1a580a4b16ea"
+    },
+    {
+      "path": "frozen_inputs/source_data/selected_uniprot_records.json",
+      "bytes": 533349,
+      "sha256": "dcf6e4eff8fd415ea1fcedea3973b35ca53f3d94da08e35af29834eec04545df"
+    },
+    {
+      "path": "frozen_inputs/source_manifest.json",
+      "bytes": 9669,
+      "sha256": "d3a34454cb96253af7336d371b290b96fde722f5ee6a43931c7d4365cfcc9baa"
+    },
+    {
+      "path": "index.html",
+      "bytes": 22455,
+      "sha256": "3d0b9f002efd0c68323a328a23197cbc63ac3e9c42af4d66271b98cd3fd17e0d"
+    },
+    {
+      "path": "inspect_reference.py",
+      "bytes": 2879,
+      "sha256": "ae487d10f1997492c637c2d1a8158dcb5dbd511bb3b46f45373289247f1f5fdb"
+    },
+    {
+      "path": "panel_scope.json",
+      "bytes": 948,
+      "sha256": "ad9c3bd7b1429c80090535a3c3ef007d4028d14c2f549b0845b1e328b062924d"
+    },
+    {
+      "path": "reference_inspection.json",
+      "bytes": 23087,
+      "sha256": "20fc0d4cbb6e3f2d9a8b12eb1aa66d006c0fd8e29c9f7a240408055df24d7d6b"
+    },
+    {
+      "path": "reference_residues.json",
+      "bytes": 74117,
+      "sha256": "72bd7b59e61b77346cdb2d2249457d901da0a441daa2ee023ea8d1e2ddac0cb0"
+    },
+    {
+      "path": "reference_residues.tsv",
+      "bytes": 9732,
+      "sha256": "f535f6fbfc5e1951e407c44cea3f5f33bd397f224d3975374a056eff2e97a4ce"
+    },
+    {
+      "path": "runtime_inventory_personal_spark.json",
+      "bytes": 12700,
+      "sha256": "96a29c8aa47cf93e80aa9068b7dbc34c792325be6b3be28b78a8af73824d6528"
+    },
+    {
+      "path": "save_partial.py",
+      "bytes": 9458,
+      "sha256": "bf1eb0d11eae1f63b57ff2b539038a93b12b0e258b38cb5174925fb13a884b6d"
+    },
+    {
+      "path": "test_baseline.py",
+      "bytes": 2442,
+      "sha256": "cbe09efa8a06709c19edd09b685fbe55b944530c409c8ccf4401bb65536f83f3"
+    },
+    {
+      "path": "tests.log",
+      "bytes": 1470,
+      "sha256": "757a78a1a4e09585d759f263e1680a367a54e06689f5886d27922b80833f8196"
+    },
+    {
+      "path": "viewer_data.json",
+      "bytes": 83608,
+      "sha256": "d0b094b958ecafa4ab060491abac32fd72510dc96d07f774f980aa474cf2a01d"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "awaiting_alignment_dependency_approval",
+  "created_utc": "2026-11-14T23:46:16.682016+00:00",
+  "frozen_archive": "/home/darkstar90/lymescope-sparkprep/exports/lymescope_ospc_handoff_v0.1.0.tar.gz",
+  "frozen_archive_sha256": "1ce0fff5a1b8d7d24ed6d70844f798484ac81231bcf2350ddcd8f6551ec1fa0f",
+  "manifest_paths": {
+    "input_sequences.fasta": "input_sequences.fasta",
+    "sequence_metadata.tsv": "sequence_metadata.tsv",
+    "1GGQ.cif": "reference_structures/1GGQ.cif",
+    "1G5Z.cif": "reference_structures/1G5Z.cif",
+    "1GGQ.json": "reference_structures/1GGQ.json",
+    "1G5Z.json": "reference_structures/1G5Z.json",
+    "reference_summary.json": "reference_structures/reference_summary.json"
+  },
+  "aligner_search": "No mafft, muscle, clustalo, kalign or t_coffee found on PATH; no MAFFT in checked standard/local bin and known venv locations.",
+  "missing_dependency": "Established multiple-sequence aligner; proposed isolated MAFFT 7.525 source install pending user approval.",
+  "alignment_generated": false
+}

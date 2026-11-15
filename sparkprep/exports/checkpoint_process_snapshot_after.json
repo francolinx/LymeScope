@@ -1,0 +1,8 @@
+{
+  "checked_utc": "2026-11-15T00:02:16.317977+00:00",
+  "visible_process_count": 547,
+  "active_build_or_aligner_processes": [],
+  "recognized_project_script_processes": [],
+  "method": "Host process names plus whitelisted project script basenames for processes with workspace cwd. No environment or unrelated command arguments retained.",
+  "limitations": "Point-in-time snapshot; no processes killed; no shutdown/reboot."
+}

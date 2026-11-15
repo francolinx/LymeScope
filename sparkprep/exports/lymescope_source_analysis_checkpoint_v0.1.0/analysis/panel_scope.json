@@ -1,0 +1,32 @@
+{
+  "sequences": 30,
+  "unique_accessions": 30,
+  "organism_labels": {
+    "Borreliella burgdorferi (strain ATCC 35210 / DSM 4680 / CIP 102532 / B31)": 1,
+    "Borreliella burgdorferi": 7,
+    "Borreliella afzelii": 5,
+    "Borreliella bavariensis": 2,
+    "Borreliella garinii": 5,
+    "Borreliella garinii PBr": 1,
+    "Borreliella spielmanii": 2,
+    "Borreliella valaisiana": 5,
+    "Borreliella yangtzensis": 1,
+    "[Borrelia] finlandensis": 1
+  },
+  "taxon_ids": {
+    "224326": 1,
+    "139": 7,
+    "29518": 5,
+    "664662": 2,
+    "29519": 5,
+    "498743": 1,
+    "88916": 2,
+    "62088": 5,
+    "683292": 1,
+    "498741": 1
+  },
+  "distinct_nonblank_strain_labels": 25,
+  "blank_strain_fields": 5,
+  "multiple_reference_strain_records": 6,
+  "interpretation": "Sequence-distinct convenience panel; strain labels are not a count of distinct biological strains; missing/merged reference strains retained; not universally representative."
+}

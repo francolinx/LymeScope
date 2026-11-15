@@ -1,0 +1,233 @@
+{
+  "scope": "PERSONAL Spark only; no event-cluster measurements",
+  "retrieved_utc": "2026-11-14T23:26:31.250989+00:00",
+  "hostname": "spark-6771",
+  "username": "darkstar90",
+  "architecture": "aarch64",
+  "checks": [
+    {
+      "command": [
+        "uname",
+        "-a"
+      ],
+      "returncode": 0,
+      "stdout": "Linux spark-6771 7.0.0-1019-nvidia #19~24.04.2-Ubuntu SMP PREEMPT_DYNAMIC Sun Sep  6 18:35:11 UTC 2 aarch64 aarch64 aarch64 GNU/Linux\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "nvidia-smi"
+      ],
+      "returncode": 9,
+      "stdout": "NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "free",
+        "-b"
+      ],
+      "returncode": 0,
+      "stdout": "               total        used        free      shared  buff/cache   available\nMem:     130661138432 47541760000 55383228416   209498112 29122064384 83119378432\nSwap:    17179865088           0 17179865088\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "df",
+        "-B1",
+        "."
+      ],
+      "returncode": 0,
+      "stdout": "Filesystem         1B-blocks          Used     Available Use% Mounted on\n/dev/nvme0n1p2 4031871553536 1045864210432 2781166608384  28% /home/darkstar90/lymescope-sparkprep\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "image",
+        "ls",
+        "--format",
+        "{{json .}}"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "permission denied while trying to connect to the docker API at unix:///var/run/docker.sock\n"
+    },
+    {
+      "command": [
+        "lspci"
+      ],
+      "returncode": 0,
+      "stdout": "0000:00:00.0 PCI bridge: NVIDIA Corporation Device 22ce (rev 01)\n0002:00:00.0 PCI bridge: NVIDIA Corporation Device 22ce (rev 01)\n0004:00:00.0 PCI bridge: NVIDIA Corporation Device 22ce (rev 01)\n0004:01:00.0 Non-Volatile memory controller: Samsung Electronics Co Ltd Device a810\n0007:00:00.0 PCI bridge: NVIDIA Corporation Device 22d0 (rev 01)\n0007:01:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. Device 8127 (rev 05)\n0009:00:00.0 PCI bridge: NVIDIA Corporation Device 22d0 (rev 01)\n0009:01:00.0 Network controller: MEDIATEK Corp. Device 7925\n000f:00:00.0 PCI bridge: NVIDIA Corporation Device 22d1\n000f:01:00.0 VGA compatible controller: NVIDIA Corporation Device 2e12 (rev a1)\n",
+      "stderr": ""
+    }
+  ],
+  "python_environments": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-c",
+        "import json,sys,importlib.util\nr={'python':sys.version,'executable':sys.executable}\nif importlib.util.find_spec('torch'):\n try:\n  import torch\n  r.update(torch_version=torch.__version__,cuda_build=torch.version.cuda,cuda_available=torch.cuda.is_available())\n  try:\n   x=torch.tensor([1.,2.],device='cuda');r['tiny_gpu_result']=(x*x).sum().item()\n  except Exception as e:r['tiny_gpu_error']=str(e)\n except Exception as e:r['torch_import_error']=str(e)\nelse:r['torch_available']=False\nprint(json.dumps(r))"
+      ],
+      "returncode": 0,
+      "stdout": "{\"python\": \"3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]\", \"executable\": \"/usr/bin/python3\", \"torch_available\": false}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/darkstar90/cnh-venv/bin/python",
+        "-c",
+        "import json,sys,importlib.util\nr={'python':sys.version,'executable':sys.executable}\nif importlib.util.find_spec('torch'):\n try:\n  import torch\n  r.update(torch_version=torch.__version__,cuda_build=torch.version.cuda,cuda_available=torch.cuda.is_available())\n  try:\n   x=torch.tensor([1.,2.],device='cuda');r['tiny_gpu_result']=(x*x).sum().item()\n  except Exception as e:r['tiny_gpu_error']=str(e)\n except Exception as e:r['torch_import_error']=str(e)\nelse:r['torch_available']=False\nprint(json.dumps(r))"
+      ],
+      "returncode": 0,
+      "stdout": "{\"python\": \"3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]\", \"executable\": \"/home/darkstar90/cnh-venv/bin/python\", \"torch_version\": \"2.15.0+cu132\", \"cuda_build\": \"13.2\", \"cuda_available\": false, \"tiny_gpu_error\": \"No CUDA GPUs are available\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/darkstar90/ftvenv/bin/python",
+        "-c",
+        "import json,sys,importlib.util\nr={'python':sys.version,'executable':sys.executable}\nif importlib.util.find_spec('torch'):\n try:\n  import torch\n  r.update(torch_version=torch.__version__,cuda_build=torch.version.cuda,cuda_available=torch.cuda.is_available())\n  try:\n   x=torch.tensor([1.,2.],device='cuda');r['tiny_gpu_result']=(x*x).sum().item()\n  except Exception as e:r['tiny_gpu_error']=str(e)\n except Exception as e:r['torch_import_error']=str(e)\nelse:r['torch_available']=False\nprint(json.dumps(r))"
+      ],
+      "returncode": 0,
+      "stdout": "{\"python\": \"3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]\", \"executable\": \"/home/darkstar90/ftvenv/bin/python\", \"torch_version\": \"2.14.1+cu130\", \"cuda_build\": \"13.0\", \"cuda_available\": false, \"tiny_gpu_error\": \"No CUDA GPUs are available\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/darkstar90/gymvenv/bin/python",
+        "-c",
+        "import json,sys,importlib.util\nr={'python':sys.version,'executable':sys.executable}\nif importlib.util.find_spec('torch'):\n try:\n  import torch\n  r.update(torch_version=torch.__version__,cuda_build=torch.version.cuda,cuda_available=torch.cuda.is_available())\n  try:\n   x=torch.tensor([1.,2.],device='cuda');r['tiny_gpu_result']=(x*x).sum().item()\n  except Exception as e:r['tiny_gpu_error']=str(e)\n except Exception as e:r['torch_import_error']=str(e)\nelse:r['torch_available']=False\nprint(json.dumps(r))"
+      ],
+      "returncode": 0,
+      "stdout": "{\"python\": \"3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]\", \"executable\": \"/home/darkstar90/gymvenv/bin/python\", \"torch_available\": false}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/darkstar90/gymvenv313/bin/python",
+        "-c",
+        "import json,sys,importlib.util\nr={'python':sys.version,'executable':sys.executable}\nif importlib.util.find_spec('torch'):\n try:\n  import torch\n  r.update(torch_version=torch.__version__,cuda_build=torch.version.cuda,cuda_available=torch.cuda.is_available())\n  try:\n   x=torch.tensor([1.,2.],device='cuda');r['tiny_gpu_result']=(x*x).sum().item()\n  except Exception as e:r['tiny_gpu_error']=str(e)\n except Exception as e:r['torch_import_error']=str(e)\nelse:r['torch_available']=False\nprint(json.dumps(r))"
+      ],
+      "returncode": 0,
+      "stdout": "{\"python\": \"3.13.16 (main, Oct  3 2026, 01:04:33) [Clang 22.1.3 ]\", \"executable\": \"/home/darkstar90/gymvenv313/bin/python\", \"torch_available\": false}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/darkstar90/forge/.venv/bin/python",
+        "-c",
+        "import json,sys,importlib.util\nr={'python':sys.version,'executable':sys.executable}\nif importlib.util.find_spec('torch'):\n try:\n  import torch\n  r.update(torch_version=torch.__version__,cuda_build=torch.version.cuda,cuda_available=torch.cuda.is_available())\n  try:\n   x=torch.tensor([1.,2.],device='cuda');r['tiny_gpu_result']=(x*x).sum().item()\n  except Exception as e:r['tiny_gpu_error']=str(e)\n except Exception as e:r['torch_import_error']=str(e)\nelse:r['torch_available']=False\nprint(json.dumps(r))"
+      ],
+      "returncode": 0,
+      "stdout": "{\"python\": \"3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]\", \"executable\": \"/home/darkstar90/forge/.venv/bin/python\", \"torch_version\": \"2.14.1+cu130\", \"cuda_build\": \"13.0\", \"cuda_available\": false, \"tiny_gpu_error\": \"No CUDA GPUs are available\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/darkstar90/gmaps-spark-workpackage/.venv/bin/python",
+        "-c",
+        "import json,sys,importlib.util\nr={'python':sys.version,'executable':sys.executable}\nif importlib.util.find_spec('torch'):\n try:\n  import torch\n  r.update(torch_version=torch.__version__,cuda_build=torch.version.cuda,cuda_available=torch.cuda.is_available())\n  try:\n   x=torch.tensor([1.,2.],device='cuda');r['tiny_gpu_result']=(x*x).sum().item()\n  except Exception as e:r['tiny_gpu_error']=str(e)\n except Exception as e:r['torch_import_error']=str(e)\nelse:r['torch_available']=False\nprint(json.dumps(r))"
+      ],
+      "returncode": 0,
+      "stdout": "{\"python\": \"3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]\", \"executable\": \"/home/darkstar90/gmaps-spark-workpackage/.venv/bin/python\", \"torch_available\": false}\n",
+      "stderr": ""
+    }
+  ],
+  "huggingface_cache": {
+    "path": "/home/darkstar90/.cache/huggingface/hub",
+    "entries": [
+      ".locks",
+      "CACHEDIR.TAG",
+      "blobs",
+      "datasets--Voxel51--VisDrone2019-DET",
+      "datasets--Voxel51--visdrone-mot",
+      "models--BAAI--bge-small-en-v1.5",
+      "models--MIT--ast-finetuned-audioset-10-10-0.4593",
+      "models--Qwen--Qwen2.5-VL-7B-Instruct",
+      "models--Qwen--Qwen3-1.7B",
+      "models--Qwen--Qwen3-4B",
+      "models--Qwen--Qwen3-8B",
+      "models--Qwen--Qwen3-VL-2B-Instruct",
+      "models--Qwen--Qwen3-VL-4B-Instruct",
+      "models--Qwen--Qwen3-VL-8B-Instruct",
+      "models--aaditya--Llama3-OpenBioLLM-8B",
+      "models--alejp1998--AerialPerson-YOLO26",
+      "models--depth-anything--Depth-Anything-V2-Small-hf",
+      "models--facebook--dinov2-small",
+      "models--facebook--sam2-hiera-small",
+      "models--facebook--sam2.1-hiera-small",
+      "models--facebook--sam2.1-hiera-tiny",
+      "models--google--medgemma-1.5-4b-it",
+      "models--google--medgemma-4b-it",
+      "models--hexgrad--Kokoro-82M",
+      "models--laion--clap-htsat-unfused",
+      "models--m42-health--Llama3-Med42-8B",
+      "models--nvidia--NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+      "models--nvidia--NVIDIA-Nemotron-3-Nano-4B-BF16",
+      "models--nvidia--NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+      "models--nvidia--NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark",
+      "models--nvidia--Qwen3.6-35B-A3B-NVFP4",
+      "models--nvidia--parakeet-tdt-0.6b-v3",
+      "models--openai--whisper-large-v3-turbo"
+    ],
+    "note": "Targeted names only; cache presence does not verify weight completeness. No weights downloaded."
+  },
+  "torch_cache": {
+    "path": "/home/darkstar90/.cache/torch",
+    "entries": [
+      "kernels"
+    ],
+    "note": "Targeted names only; cache presence does not verify weight completeness. No weights downloaded."
+  },
+  "kernel_driver_version": "NVRM version: NVIDIA UNIX Open Kernel Module for aarch64  580.178.04  Release Build  (dvs-builder@U22-I3-G08-04-4)  Tue Jul  7 13:36:23 UTC 2026\nGCC version:  gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) \n",
+  "device_nodes": [
+    "/dev/nvidia-caps"
+  ],
+  "protein_package_inventory": [
+    {
+      "python": "/usr/bin/python3",
+      "returncode": 0,
+      "stdout": "{}\n",
+      "stderr": ""
+    },
+    {
+      "python": "/home/darkstar90/cnh-venv/bin/python",
+      "returncode": 0,
+      "stdout": "{\"torch\": \"2.15.0\", \"transformers\": \"5.22.2\", \"safetensors\": \"0.8.0\"}\n",
+      "stderr": ""
+    },
+    {
+      "python": "/home/darkstar90/ftvenv/bin/python",
+      "returncode": 0,
+      "stdout": "{\"torch\": \"2.14.1\", \"transformers\": \"5.20.0\", \"accelerate\": \"1.15.0\", \"safetensors\": \"0.8.0\"}\n",
+      "stderr": ""
+    },
+    {
+      "python": "/home/darkstar90/gymvenv/bin/python",
+      "returncode": 0,
+      "stdout": "{}\n",
+      "stderr": ""
+    },
+    {
+      "python": "/home/darkstar90/gymvenv313/bin/python",
+      "returncode": 0,
+      "stdout": "{}\n",
+      "stderr": ""
+    },
+    {
+      "python": "/home/darkstar90/forge/.venv/bin/python",
+      "returncode": 0,
+      "stdout": "{\"torch\": \"2.14.1+cu130\", \"transformers\": \"5.22.2\", \"accelerate\": \"1.15.0\", \"safetensors\": \"0.8.0\"}\n",
+      "stderr": ""
+    },
+    {
+      "python": "/home/darkstar90/gmaps-spark-workpackage/.venv/bin/python",
+      "returncode": 0,
+      "stdout": "{}\n",
+      "stderr": ""
+    }
+  ],
+  "cache_assessment": "No named ESM/protein/folding model directory in standard HF hub listing; torch cache contains kernels only. Other paths were not exhaustively searched; completeness of model files unverified.",
+  "container_assessment": "docker image ls failed: permission denied on unix:///var/run/docker.sock. No sudo or socket permission changes attempted. Image inventory remains unknown."
+}

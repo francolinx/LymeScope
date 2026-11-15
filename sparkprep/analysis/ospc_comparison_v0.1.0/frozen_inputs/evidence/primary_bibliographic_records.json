@@ -1,0 +1,2394 @@
+[
+  {
+    "source": "RCSB 1GGQ",
+    "citation": {
+      "country": "UK",
+      "id": "primary",
+      "journal_abbrev": "EMBO J.",
+      "journal_id_ASTM": "EMJODG",
+      "journal_id_CSD": "0897",
+      "journal_id_ISSN": "0261-4189",
+      "journal_volume": "20",
+      "page_first": "971",
+      "page_last": "978",
+      "pdbx_database_id_DOI": "10.1093/emboj/20.5.971",
+      "pdbx_database_id_PubMed": 11230121,
+      "rcsb_ORCID_identifiers": [
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "rcsb_authors": [
+        "Kumaran, D.",
+        "Eswaramoorthy, S.",
+        "Luft, B.J.",
+        "Koide, S.",
+        "Dunn, J.J.",
+        "Lawson, C.L.",
+        "Swaminathan, S."
+      ],
+      "rcsb_journal_abbrev": "EMBO J",
+      "title": "Crystal structure of outer surface protein C (OspC) from the Lyme disease spirochete, Borrelia burgdorferi.",
+      "year": 2001
+    }
+  },
+  {
+    "source": "RCSB 1G5Z",
+    "citation": {
+      "country": "US",
+      "id": "primary",
+      "journal_abbrev": "J.Biol.Chem.",
+      "journal_id_ASTM": "JBCHA3",
+      "journal_id_CSD": "0071",
+      "journal_id_ISSN": "0021-9258",
+      "journal_volume": "276",
+      "page_first": "10010",
+      "page_last": "10015",
+      "pdbx_database_id_DOI": "10.1074/jbc.M010062200",
+      "pdbx_database_id_PubMed": 11139584,
+      "rcsb_ORCID_identifiers": [
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "rcsb_authors": [
+        "Eicken, C.",
+        "Sharma, V.",
+        "Klabunde, T.",
+        "Owens, R.T.",
+        "Pikas, D.S.",
+        "Hook, M.",
+        "Sacchettini, J.C."
+      ],
+      "rcsb_journal_abbrev": "J Biol Chem",
+      "title": "Crystal structure of Lyme disease antigen outer surface protein C from Borrelia burgdorferi.",
+      "year": 2001
+    }
+  },
+  {
+    "source": "UniProt UP000001807",
+    "citation": {
+      "id": "10672174",
+      "citationType": "journal article",
+      "authors": [
+        "Casjens S.",
+        "Palmer N.",
+        "van Vugt R.",
+        "Huang W.M.",
+        "Stevenson B.",
+        "Rosa P.",
+        "Lathigra R.",
+        "Sutton G.G.",
+        "Peterson J.D.",
+        "Dodson R.J.",
+        "Haft D.H.",
+        "Hickey E.K.",
+        "Gwinn M.L.",
+        "White O.",
+        "Fraser C.M."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "10672174"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1046/j.1365-2958.2000.01698.x"
+        }
+      ],
+      "title": "A bacterial genome in flux: the twelve linear and nine circular extrachromosomal DNAs in an infectious isolate of the Lyme disease spirochete Borrelia burgdorferi.",
+      "publicationDate": "2000",
+      "journal": "Mol. Microbiol.",
+      "firstPage": "490",
+      "lastPage": "516",
+      "volume": "35"
+    }
+  },
+  {
+    "source": "UniProt UP000001807",
+    "citation": {
+      "id": "9403685",
+      "citationType": "journal article",
+      "authors": [
+        "Fraser C.M.",
+        "Casjens S.",
+        "Huang W.M.",
+        "Sutton G.G.",
+        "Clayton R.A.",
+        "Lathigra R.",
+        "White O.",
+        "Ketchum K.A.",
+        "Dodson R.J.",
+        "Hickey E.K.",
+        "Gwinn M.L.",
+        "Dougherty B.A.",
+        "Tomb J.-F.",
+        "Fleischmann R.D.",
+        "Richardson D.L.",
+        "Peterson J.D.",
+        "Kerlavage A.R.",
+        "Quackenbush J.",
+        "Salzberg S.L.",
+        "Hanson M.",
+        "van Vugt R.",
+        "Palmer N.",
+        "Adams M.D.",
+        "Gocayne J.D.",
+        "Weidman J.F.",
+        "Utterback T.R.",
+        "Watthey L.",
+        "McDonald L.A.",
+        "Artiach P.",
+        "Bowman C.",
+        "Garland S.A.",
+        "Fujii C.",
+        "Cotton M.D.",
+        "Horst K.",
+        "Roberts K.M.",
+        "Hatch B.",
+        "Smith H.O.",
+        "Venter J.C."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "9403685"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1038/37551"
+        }
+      ],
+      "title": "Genomic sequence of a Lyme disease spirochaete, Borrelia burgdorferi.",
+      "publicationDate": "1997",
+      "journal": "Nature",
+      "firstPage": "580",
+      "lastPage": "586",
+      "volume": "390"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "8098841",
+      "citationType": "journal article",
+      "authors": [
+        "Jauris-Heipke S.",
+        "Fuchs R.",
+        "Motz M.",
+        "Preac-Mursic V.",
+        "Schwab E.",
+        "Will G.",
+        "Wilske B."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "8098841"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1007/bf00195949"
+        }
+      ],
+      "title": "Genetic heterogenity of the genes coding for the outer surface protein C (OspC) and the flagellin of Borrelia burgdorferi.",
+      "publicationDate": "1993",
+      "journal": "Med. Microbiol. Immunol.",
+      "firstPage": "37",
+      "lastPage": "50",
+      "volume": "182"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "8478108",
+      "citationType": "journal article",
+      "authors": [
+        "Wilske B.",
+        "Preace-Mursic V.",
+        "Jauris S.",
+        "Pradel I.",
+        "Soutschek E.",
+        "Schwab E.",
+        "Wanner G."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "8478108"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1128/iai.61.5.2182-2191.1993"
+        }
+      ],
+      "title": "Immunological and molecular polymorphisms of OspC, an immunodominant major outer surface protein of Borrelia burgdorferi.",
+      "publicationDate": "1993",
+      "journal": "Infect. Immun.",
+      "firstPage": "2182",
+      "lastPage": "2191",
+      "volume": "61"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "8225587",
+      "citationType": "journal article",
+      "authors": [
+        "Padula S.J.",
+        "Sampieri A.",
+        "Dias F.",
+        "Szczepanski A.",
+        "Ryan R.W."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "8225587"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1128/iai.61.12.5097-5105.1993"
+        }
+      ],
+      "title": "Molecular characterization and expression of p23 (OspC) from a North American strain of Borrelia burgdorferi.",
+      "publicationDate": "1993",
+      "journal": "Infect. Immun.",
+      "firstPage": "5097",
+      "lastPage": "5105",
+      "volume": "61"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "7665660",
+      "citationType": "journal article",
+      "authors": [
+        "Jauris-Heipke S.",
+        "Liegl G.",
+        "Preac-Mursic V.",
+        "Roessler D.",
+        "Schwab E.",
+        "Soutschek E.",
+        "Will G.",
+        "Wilske B."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7665660"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1128/jcm.33.7.1860-1866.1995"
+        }
+      ],
+      "title": "Molecular analysis of genes encoding outer surface protein C (OspC) of Borrelia burgdorferi sensu lato: relationship to ospA genotype and evidence of lateral gene exchange of ospC.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "1860",
+      "lastPage": "1866",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "7494039",
+      "citationType": "journal article",
+      "authors": [
+        "Fukunaga M.",
+        "Hamase A."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7494039"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1128/jcm.33.9.2415-2420.1995"
+        }
+      ],
+      "title": "Outer surface protein C gene sequence analysis of Borrelia burgdorferi sensu lato isolates from Japan.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "2415",
+      "lastPage": "2420",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "9403685",
+      "citationType": "journal article",
+      "authors": [
+        "Fraser C.M.",
+        "Casjens S.",
+        "Huang W.M.",
+        "Sutton G.G.",
+        "Clayton R.A.",
+        "Lathigra R.",
+        "White O.",
+        "Ketchum K.A.",
+        "Dodson R.J.",
+        "Hickey E.K.",
+        "Gwinn M.L.",
+        "Dougherty B.A.",
+        "Tomb J.-F.",
+        "Fleischmann R.D.",
+        "Richardson D.L.",
+        "Peterson J.D.",
+        "Kerlavage A.R.",
+        "Quackenbush J.",
+        "Salzberg S.L.",
+        "Hanson M.",
+        "van Vugt R.",
+        "Palmer N.",
+        "Adams M.D.",
+        "Gocayne J.D.",
+        "Weidman J.F.",
+        "Utterback T.R.",
+        "Watthey L.",
+        "McDonald L.A.",
+        "Artiach P.",
+        "Bowman C.",
+        "Garland S.A.",
+        "Fujii C.",
+        "Cotton M.D.",
+        "Horst K.",
+        "Roberts K.M.",
+        "Hatch B.",
+        "Smith H.O.",
+        "Venter J.C."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "9403685"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1038/37551"
+        }
+      ],
+      "title": "Genomic sequence of a Lyme disease spirochaete, Borrelia burgdorferi.",
+      "publicationDate": "1997",
+      "journal": "Nature",
+      "firstPage": "580",
+      "lastPage": "586",
+      "volume": "390"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "8709845",
+      "citationType": "journal article",
+      "authors": [
+        "Livey I.",
+        "Gibbs C.P.",
+        "Schuster R.",
+        "Dorner F."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "8709845"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1111/j.1365-2958.1995.mmi_18020257.x"
+        }
+      ],
+      "title": "Evidence for lateral transfer and recombination in OspC variation in Lyme disease Borrelia.",
+      "publicationDate": "1995",
+      "journal": "Mol. Microbiol.",
+      "firstPage": "257",
+      "lastPage": "269",
+      "volume": "18"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "8478109",
+      "citationType": "journal article",
+      "authors": [
+        "Sadziene A.",
+        "Wilske B.",
+        "Ferdows M.S.",
+        "Barbour A.G."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "8478109"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1128/iai.61.5.2192-2195.1993"
+        }
+      ],
+      "title": "The cryptic ospC gene of Borrelia burgdorferi B31 is located on a circular plasmid.",
+      "publicationDate": "1993",
+      "journal": "Infect. Immun.",
+      "firstPage": "2192",
+      "lastPage": "2195",
+      "volume": "61"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "7708747",
+      "citationType": "journal article",
+      "authors": [
+        "Schwan T.G.",
+        "Piesman J.",
+        "Golde W.T.",
+        "Dolan M.C.",
+        "Rosa P.A."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7708747"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1073/pnas.92.7.2909"
+        }
+      ],
+      "title": "Induction of an outer surface protein on Borrelia burgdorferi during tick feeding.",
+      "publicationDate": "1995",
+      "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+      "firstPage": "2909",
+      "lastPage": "2913",
+      "volume": "92"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "11854355",
+      "citationType": "journal article",
+      "authors": [
+        "Liang F.T.",
+        "Jacobs M.B.",
+        "Bowers L.C.",
+        "Philipp M.T."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "11854355"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1084/jem.20011870"
+        }
+      ],
+      "title": "An immune evasion mechanism for spirochetal persistence in Lyme borreliosis.",
+      "publicationDate": "2002",
+      "journal": "J. Exp. Med.",
+      "firstPage": "415",
+      "lastPage": "422",
+      "volume": "195"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "14970347",
+      "citationType": "journal article",
+      "authors": [
+        "Grimm D.",
+        "Tilly K.",
+        "Byram R.",
+        "Stewart P.E.",
+        "Krum J.G.",
+        "Bueschel D.M.",
+        "Schwan T.G.",
+        "Policastro P.F.",
+        "Elias A.F.",
+        "Rosa P.A."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "14970347"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1073/pnas.0306845101"
+        }
+      ],
+      "title": "Outer-surface protein C of the Lyme disease spirochete: a protein induced in ticks for infection of mammals.",
+      "publicationDate": "2004",
+      "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+      "firstPage": "3142",
+      "lastPage": "3147",
+      "volume": "101"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "16714588",
+      "citationType": "journal article",
+      "authors": [
+        "Tilly K.",
+        "Krum J.G.",
+        "Bestor A.",
+        "Jewett M.W.",
+        "Grimm D.",
+        "Bueschel D.",
+        "Byram R.",
+        "Dorward D.",
+        "Vanraden M.J.",
+        "Stewart P.",
+        "Rosa P."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "16714588"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1128/iai.01950-05"
+        }
+      ],
+      "title": "Borrelia burgdorferi OspC protein required exclusively in a crucial early stage of mammalian infection.",
+      "publicationDate": "2006",
+      "journal": "Infect. Immun.",
+      "firstPage": "3554",
+      "lastPage": "3564",
+      "volume": "74"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "18752445",
+      "citationType": "journal article",
+      "authors": [
+        "Hovius J.W.",
+        "Schuijt T.J.",
+        "de Groot K.A.",
+        "Roelofs J.J.",
+        "Oei G.A.",
+        "Marquart J.A.",
+        "de Beer R.",
+        "van 't Veer C.",
+        "van der Poll T.",
+        "Ramamoorthi N.",
+        "Fikrig E.",
+        "van Dam A.P."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "18752445"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1086/591917"
+        }
+      ],
+      "title": "Preferential protection of Borrelia burgdorferi sensu stricto by a Salp15 homologue in Ixodes ricinus saliva.",
+      "publicationDate": "2008",
+      "journal": "J. Infect. Dis.",
+      "firstPage": "1189",
+      "lastPage": "1197",
+      "volume": "198"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "20199597",
+      "citationType": "journal article",
+      "authors": [
+        "Earnhart C.G.",
+        "Leblanc D.V.",
+        "Alix K.E.",
+        "Desrosiers D.C.",
+        "Radolf J.D.",
+        "Marconi R.T."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "20199597"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1111/j.1365-2958.2010.07103.x"
+        }
+      ],
+      "title": "Identification of residues within ligand-binding domain 1 (LBD1) of the Borrelia burgdorferi OspC protein required for function in the mammalian environment.",
+      "publicationDate": "2010",
+      "journal": "Mol. Microbiol.",
+      "firstPage": "393",
+      "lastPage": "408",
+      "volume": "76"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "22433849",
+      "citationType": "journal article",
+      "authors": [
+        "Oender O.",
+        "Humphrey P.T.",
+        "McOmber B.",
+        "Korobova F.",
+        "Francella N.",
+        "Greenbaum D.C.",
+        "Brisson D."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "22433849"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1074/jbc.m111.290775"
+        }
+      ],
+      "title": "OspC is potent plasminogen receptor on surface of Borrelia burgdorferi.",
+      "publicationDate": "2012",
+      "journal": "J. Biol. Chem.",
+      "firstPage": "16860",
+      "lastPage": "16868",
+      "volume": "287"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "26438793",
+      "citationType": "journal article",
+      "authors": [
+        "Carrasco S.E.",
+        "Troxell B.",
+        "Yang Y.",
+        "Brandt S.L.",
+        "Li H.",
+        "Sandusky G.E.",
+        "Condon K.W.",
+        "Serezani C.H.",
+        "Yang X.F."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "26438793"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1128/iai.01215-15"
+        }
+      ],
+      "title": "Outer surface protein OspC is an antiphagocytic factor that protects Borrelia burgdorferi from phagocytosis by macrophages.",
+      "publicationDate": "2015",
+      "journal": "Infect. Immun.",
+      "firstPage": "4848",
+      "lastPage": "4860",
+      "volume": "83"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "27611840",
+      "citationType": "journal article",
+      "authors": [
+        "Skare J.T.",
+        "Shaw D.K.",
+        "Trzeciakowski J.P.",
+        "Hyde J.A."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "27611840"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1371/journal.pone.0162501"
+        }
+      ],
+      "title": "In Vivo Imaging Demonstrates That Borrelia burgdorferi ospC Is Uniquely Expressed Temporally and Spatially throughout Experimental Infection.",
+      "publicationDate": "2016",
+      "journal": "PLoS ONE",
+      "firstPage": "e0162501",
+      "lastPage": "e0162501",
+      "volume": "11"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "28873507",
+      "citationType": "journal article",
+      "authors": [
+        "Caine J.A.",
+        "Lin Y.P.",
+        "Kessler J.R.",
+        "Sato H.",
+        "Leong J.M.",
+        "Coburn J."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "28873507"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1111/cmi.12786"
+        }
+      ],
+      "title": "Borrelia burgdorferi outer surface protein C (OspC) binds complement component C4b and confers bloodstream survival.",
+      "publicationDate": "2017",
+      "journal": "Cell. Microbiol.",
+      "firstPage": "0",
+      "lastPage": "0",
+      "volume": "19"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "33285028",
+      "citationType": "journal article",
+      "authors": [
+        "Caine J.A.",
+        "Lin Y.P.",
+        "Kessler J.R.",
+        "Sato H.",
+        "Leong J.M.",
+        "Coburn J."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "33285028"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1111/cmi.13286"
+        }
+      ],
+      "title": "Corrigendum.",
+      "publicationDate": "2021",
+      "journal": "Cell. Microbiol.",
+      "firstPage": "e13286",
+      "lastPage": "e13286",
+      "volume": "23"
+    }
+  },
+  {
+    "source": "UniProt Q07337",
+    "citation": {
+      "id": "11230121",
+      "citationType": "journal article",
+      "authors": [
+        "Kumaran D.",
+        "Eswaramoorthy S.",
+        "Luft B.J.",
+        "Koide S.",
+        "Dunn J.J.",
+        "Lawson C.L.",
+        "Swaminathan S."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "11230121"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1093/emboj/20.5.971"
+        }
+      ],
+      "title": "Crystal structure of outer surface protein C (OspC) from the Lyme disease spirochete, Borrelia burgdorferi.",
+      "publicationDate": "2001",
+      "journal": "EMBO J.",
+      "firstPage": "971",
+      "lastPage": "978",
+      "volume": "20"
+    }
+  },
+  {
+    "source": "UniProt P0DW54",
+    "citation": {
+      "id": "7665660",
+      "citationType": "journal article",
+      "authors": [
+        "Jauris-Heipke S.",
+        "Liegl G.",
+        "Preac-Mursic V.",
+        "Roessler D.",
+        "Schwab E.",
+        "Soutschek E.",
+        "Will G.",
+        "Wilske B."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7665660"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1128/jcm.33.7.1860-1866.1995"
+        }
+      ],
+      "title": "Molecular analysis of genes encoding outer surface protein C (OspC) of Borrelia burgdorferi sensu lato: relationship to ospA genotype and evidence of lateral gene exchange of ospC.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "1860",
+      "lastPage": "1866",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt P0DW54",
+    "citation": {
+      "id": "8253951",
+      "citationType": "journal article",
+      "authors": [
+        "Theisen M.",
+        "Frederiksen B.",
+        "Lebech A.M.",
+        "Vuust J.",
+        "Hansen K."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "8253951"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1128/jcm.31.10.2570-2576.1993"
+        }
+      ],
+      "title": "Polymorphism in ospC gene of Borrelia burgdorferi and immunoreactivity of OspC protein: implications for taxonomy and for use of OspC protein as a diagnostic antigen.",
+      "publicationDate": "1993",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "2570",
+      "lastPage": "2576",
+      "volume": "31"
+    }
+  },
+  {
+    "source": "UniProt P0DW54",
+    "citation": {
+      "id": "8709845",
+      "citationType": "journal article",
+      "authors": [
+        "Livey I.",
+        "Gibbs C.P.",
+        "Schuster R.",
+        "Dorner F."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "8709845"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1111/j.1365-2958.1995.mmi_18020257.x"
+        }
+      ],
+      "title": "Evidence for lateral transfer and recombination in OspC variation in Lyme disease Borrelia.",
+      "publicationDate": "1995",
+      "journal": "Mol. Microbiol.",
+      "firstPage": "257",
+      "lastPage": "269",
+      "volume": "18"
+    }
+  },
+  {
+    "source": "UniProt P0DW54",
+    "citation": {
+      "id": "8551229",
+      "citationType": "journal article",
+      "authors": [
+        "Montgomery R.R.",
+        "Malawista S.E.",
+        "Feen K.J.",
+        "Bockenstedt L.K."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "8551229"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1084/jem.183.1.261"
+        }
+      ],
+      "title": "Direct demonstration of antigenic substitution of Borrelia burgdorferi ex vivo: exploration of the paradox of the early immune response to outer surface proteins A and C in Lyme disease.",
+      "publicationDate": "1996",
+      "journal": "J. Exp. Med.",
+      "firstPage": "261",
+      "lastPage": "269",
+      "volume": "183"
+    }
+  },
+  {
+    "source": "UniProt P0DW54",
+    "citation": {
+      "id": "14722614",
+      "citationType": "journal article",
+      "authors": [
+        "Pal U.",
+        "Yang X.",
+        "Chen M.",
+        "Bockenstedt L.K.",
+        "Anderson J.F.",
+        "Flavell R.A.",
+        "Norgard M.V.",
+        "Fikrig E."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "14722614"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1172/jci19894"
+        }
+      ],
+      "title": "OspC facilitates Borrelia burgdorferi invasion of Ixodes scapularis salivary glands.",
+      "publicationDate": "2004",
+      "journal": "J. Clin. Invest.",
+      "firstPage": "220",
+      "lastPage": "230",
+      "volume": "113"
+    }
+  },
+  {
+    "source": "UniProt P0DW54",
+    "citation": {
+      "id": "16049492",
+      "citationType": "journal article",
+      "authors": [
+        "Ramamoorthi N.",
+        "Narasimhan S.",
+        "Pal U.",
+        "Bao F.",
+        "Yang X.F.",
+        "Fish D.",
+        "Anguita J.",
+        "Norgard M.V.",
+        "Kantor F.S.",
+        "Anderson J.F.",
+        "Koski R.A.",
+        "Fikrig E."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "16049492"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1038/nature03812"
+        }
+      ],
+      "title": "The Lyme disease agent exploits a tick protein to infect the mammalian host.",
+      "publicationDate": "2005",
+      "journal": "Nature",
+      "firstPage": "573",
+      "lastPage": "577",
+      "volume": "436"
+    }
+  },
+  {
+    "source": "UniProt P0DW54",
+    "citation": {
+      "id": "18752445",
+      "citationType": "journal article",
+      "authors": [
+        "Hovius J.W.",
+        "Schuijt T.J.",
+        "de Groot K.A.",
+        "Roelofs J.J.",
+        "Oei G.A.",
+        "Marquart J.A.",
+        "de Beer R.",
+        "van 't Veer C.",
+        "van der Poll T.",
+        "Ramamoorthi N.",
+        "Fikrig E.",
+        "van Dam A.P."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "18752445"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1086/591917"
+        }
+      ],
+      "title": "Preferential protection of Borrelia burgdorferi sensu stricto by a Salp15 homologue in Ixodes ricinus saliva.",
+      "publicationDate": "2008",
+      "journal": "J. Infect. Dis.",
+      "firstPage": "1189",
+      "lastPage": "1197",
+      "volume": "198"
+    }
+  },
+  {
+    "source": "UniProt P0DW54",
+    "citation": {
+      "id": "22290150",
+      "citationType": "journal article",
+      "authors": [
+        "Chan K.",
+        "Casjens S.",
+        "Parveen N."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "22290150"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1128/iai.06326-11"
+        }
+      ],
+      "title": "Detection of Established Virulence Genes and Plasmids To Differentiate Borrelia burgdorferi Strains.",
+      "publicationDate": "2012",
+      "journal": "Infect. Immun.",
+      "firstPage": "1519",
+      "lastPage": "1529",
+      "volume": "80"
+    }
+  },
+  {
+    "source": "UniProt P0DW54",
+    "citation": {
+      "id": "28873507",
+      "citationType": "journal article",
+      "authors": [
+        "Caine J.A.",
+        "Lin Y.P.",
+        "Kessler J.R.",
+        "Sato H.",
+        "Leong J.M.",
+        "Coburn J."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "28873507"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1111/cmi.12786"
+        }
+      ],
+      "title": "Borrelia burgdorferi outer surface protein C (OspC) binds complement component C4b and confers bloodstream survival.",
+      "publicationDate": "2017",
+      "journal": "Cell. Microbiol.",
+      "firstPage": "0",
+      "lastPage": "0",
+      "volume": "19"
+    }
+  },
+  {
+    "source": "UniProt P0DW54",
+    "citation": {
+      "id": "33285028",
+      "citationType": "journal article",
+      "authors": [
+        "Caine J.A.",
+        "Lin Y.P.",
+        "Kessler J.R.",
+        "Sato H.",
+        "Leong J.M.",
+        "Coburn J."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "33285028"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1111/cmi.13286"
+        }
+      ],
+      "title": "Corrigendum.",
+      "publicationDate": "2021",
+      "journal": "Cell. Microbiol.",
+      "firstPage": "e13286",
+      "lastPage": "e13286",
+      "volume": "23"
+    }
+  },
+  {
+    "source": "UniProt P0DW54",
+    "citation": {
+      "id": "11230121",
+      "citationType": "journal article",
+      "authors": [
+        "Kumaran D.",
+        "Eswaramoorthy S.",
+        "Luft B.J.",
+        "Koide S.",
+        "Dunn J.J.",
+        "Lawson C.L.",
+        "Swaminathan S."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "11230121"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1093/emboj/20.5.971"
+        }
+      ],
+      "title": "Crystal structure of outer surface protein C (OspC) from the Lyme disease spirochete, Borrelia burgdorferi.",
+      "publicationDate": "2001",
+      "journal": "EMBO J.",
+      "firstPage": "971",
+      "lastPage": "978",
+      "volume": "20"
+    }
+  },
+  {
+    "source": "UniProt P0DW54",
+    "citation": {
+      "id": "11139584",
+      "citationType": "journal article",
+      "authors": [
+        "Eicken C.",
+        "Sharma V.",
+        "Klabunde T.",
+        "Owens R.T.",
+        "Pikas D.S.",
+        "Hook M.",
+        "Sacchettini J.C."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "11139584"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1074/jbc.m010062200"
+        }
+      ],
+      "title": "Crystal structure of Lyme disease antigen outer surface protein C from Borrelia burgdorferi.",
+      "publicationDate": "2001",
+      "journal": "J. Biol. Chem.",
+      "firstPage": "10010",
+      "lastPage": "10015",
+      "volume": "276"
+    }
+  },
+  {
+    "source": "UniProt Q44977",
+    "citation": {
+      "id": "7665660",
+      "citationType": "journal article",
+      "authors": [
+        "Jauris-Heipke S.",
+        "Liegl G.",
+        "Preac-Mursic V.",
+        "Roessler D.",
+        "Schwab E.",
+        "Soutschek E.",
+        "Will G.",
+        "Wilske B."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7665660"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1128/jcm.33.7.1860-1866.1995"
+        }
+      ],
+      "title": "Molecular analysis of genes encoding outer surface protein C (OspC) of Borrelia burgdorferi sensu lato: relationship to ospA genotype and evidence of lateral gene exchange of ospC.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "1860",
+      "lastPage": "1866",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt Q44977",
+    "citation": {
+      "id": "16530482",
+      "citationType": "journal article",
+      "authors": [
+        "Schulte-Spechtel U.C.",
+        "Fingerle V.",
+        "Goettner G.",
+        "Rogge S.",
+        "Wilske B."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "16530482"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1016/j.ijmm.2006.01.006"
+        }
+      ],
+      "title": "Molecular analysis of decorin-binding protein A (DbpA) reveals five major groups among European Borrelia burgdorferi sensu lato strains with impact for the development of serological assays and indicates lateral gene transfer of the dbpA gene.",
+      "publicationDate": "2006",
+      "journal": "Int. J. Med. Microbiol.",
+      "firstPage": "250",
+      "lastPage": "266",
+      "volume": "296"
+    }
+  },
+  {
+    "source": "UniProt Q44977",
+    "citation": {
+      "id": "18598631",
+      "citationType": "journal article",
+      "authors": [
+        "Qiu W.G.",
+        "Bruno J.F.",
+        "McCaig W.D.",
+        "Xu Y.",
+        "Livey I.",
+        "Schriefer M.E.",
+        "Luft B.J."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "18598631"
+        },
+        {
+          "database": "DOI",
+          "id": "10.3201/eid1407.070880"
+        }
+      ],
+      "title": "Wide distribution of a high-virulence Borrelia burgdorferi clone in Europe and North America.",
+      "publicationDate": "2008",
+      "journal": "Emerg. Infect. Dis.",
+      "firstPage": "1097",
+      "lastPage": "1104",
+      "volume": "14"
+    }
+  },
+  {
+    "source": "UniProt Q44977",
+    "citation": {
+      "id": "33401196",
+      "citationType": "journal article",
+      "authors": [
+        "Bierwagen P.",
+        "Sliwiak J.",
+        "Jaskolski M.",
+        "Urbanowicz A."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "33401196"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1016/j.ttbdis.2020.101630"
+        }
+      ],
+      "title": "Strong interactions between Salp15 homologues from the tick I. ricinus and distinct types of the outer surface OspC protein from Borrelia.",
+      "publicationDate": "2021",
+      "journal": "Ticks Tick Borne Dis.",
+      "firstPage": "101630",
+      "lastPage": "101630",
+      "volume": "12"
+    }
+  },
+  {
+    "source": "UniProt Q44646",
+    "citation": {
+      "id": "7699024",
+      "citationType": "journal article",
+      "authors": [
+        "Wilske B.",
+        "Jauris-Heipke S.",
+        "Lobentanzer R.",
+        "Pradel I.",
+        "Preac-Mursic V.",
+        "Rossler D.",
+        "Soutschek E.",
+        "Johnson R.C."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7699024"
+        }
+      ],
+      "title": "Phenotypic analysis of outer surface protein C (OspC) of Borrelia burgdorferi sensu lato by monoclonal antibodies: relationship to genospecies and OspA serotype.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "103",
+      "lastPage": "109",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt Q44646",
+    "citation": {
+      "id": "7665660",
+      "citationType": "journal article",
+      "authors": [
+        "Jauris-Heipke S.",
+        "Liegl G.",
+        "Preac-Mursic V.",
+        "Roessler D.",
+        "Schwab E.",
+        "Soutschek E.",
+        "Will G.",
+        "Wilske B."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7665660"
+        }
+      ],
+      "title": "Molecular analysis of genes encoding outer surface protein C (OspC) of Borrelia burgdorferi sensu lato: relationship to ospA genotype and evidence of lateral gene exchange of ospC.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "1860",
+      "lastPage": "1866",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt Q9REF7",
+    "citation": {
+      "id": "10565915",
+      "citationType": "journal article",
+      "authors": [
+        "Marconi R.T.",
+        "Hohenberger S.",
+        "Jauris-Heipke S.",
+        "Schulte-Spechtel U.",
+        "LaVoie C.P.",
+        "Roessler D.",
+        "Wilske B."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "10565915"
+        }
+      ],
+      "title": "Genetic analysis of Borrelia garinii OspA serotype 4 strains associated with neuroborreliosis: evidence for extensive genetic homogeneity.",
+      "publicationDate": "1999",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "3965",
+      "lastPage": "3970",
+      "volume": "37"
+    }
+  },
+  {
+    "source": "UniProt Q07336",
+    "citation": {
+      "id": "8478108",
+      "citationType": "journal article",
+      "authors": [
+        "Wilske B.",
+        "Preace-Mursic V.",
+        "Jauris S.",
+        "Pradel I.",
+        "Soutschek E.",
+        "Schwab E.",
+        "Wanner G."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "8478108"
+        }
+      ],
+      "title": "Immunological and molecular polymorphisms of OspC, an immunodominant major outer surface protein of Borrelia burgdorferi.",
+      "publicationDate": "1993",
+      "journal": "Infect. Immun.",
+      "firstPage": "2182",
+      "lastPage": "2191",
+      "volume": "61"
+    }
+  },
+  {
+    "source": "UniProt Q07336",
+    "citation": {
+      "id": "8098841",
+      "citationType": "journal article",
+      "authors": [
+        "Jauris-Heipke S.",
+        "Fuchs R.",
+        "Motz M.",
+        "Preac-Mursic V.",
+        "Schwab E.",
+        "Will G.",
+        "Wilske B."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "8098841"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1007/BF00195949"
+        }
+      ],
+      "title": "Genetic heterogenity of the genes coding for the outer surface protein C (OspC) and the flagellin of Borrelia burgdorferi.",
+      "publicationDate": "1993",
+      "journal": "Med. Microbiol. Immunol.",
+      "firstPage": "37",
+      "lastPage": "50",
+      "volume": "182"
+    }
+  },
+  {
+    "source": "UniProt L0CTI9",
+    "citation": {
+      "id": "24438159",
+      "citationType": "journal article",
+      "authors": [
+        "Ni X.B.",
+        "Jia N.",
+        "Jiang B.G.",
+        "Sun T.",
+        "Zheng Y.C.",
+        "Huo Q.B.",
+        "Liu K.",
+        "Ma L.",
+        "Zhao Q.M.",
+        "Yang H.",
+        "Wang X.",
+        "Jiang J.F.",
+        "Cao W.C."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "24438159"
+        }
+      ],
+      "title": "Lyme Borreliosis Caused by Diverse Genospecies of Borrelia burgdorferi sensu lato in northeastern China.",
+      "publicationDate": "2014",
+      "journal": "Clin. Microbiol. Infect.",
+      "firstPage": "0",
+      "lastPage": "0",
+      "volume": "0"
+    }
+  },
+  {
+    "source": "UniProt B8F168",
+    "citation": {
+      "id": "22123755",
+      "citationType": "journal article",
+      "authors": [
+        "Casjens S.R.",
+        "Mongodin E.F.",
+        "Qiu W.-G.",
+        "Dunn J.J.",
+        "Luft B.J.",
+        "Fraser-Liggett C.M.",
+        "Schutzer S.E."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "22123755"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1128/JB.05951-11"
+        }
+      ],
+      "title": "Whole-genome sequences of two Borrelia afzelii and two Borrelia garinii Lyme disease agent isolates.",
+      "publicationDate": "2011",
+      "journal": "J. Bacteriol.",
+      "firstPage": "6995",
+      "lastPage": "6996",
+      "volume": "193"
+    }
+  },
+  {
+    "source": "UniProt L0CUY6",
+    "citation": {
+      "id": "24438159",
+      "citationType": "journal article",
+      "authors": [
+        "Ni X.B.",
+        "Jia N.",
+        "Jiang B.G.",
+        "Sun T.",
+        "Zheng Y.C.",
+        "Huo Q.B.",
+        "Liu K.",
+        "Ma L.",
+        "Zhao Q.M.",
+        "Yang H.",
+        "Wang X.",
+        "Jiang J.F.",
+        "Cao W.C."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "24438159"
+        }
+      ],
+      "title": "Lyme Borreliosis Caused by Diverse Genospecies of Borrelia burgdorferi sensu lato in northeastern China.",
+      "publicationDate": "2014",
+      "journal": "Clin. Microbiol. Infect.",
+      "firstPage": "0",
+      "lastPage": "0",
+      "volume": "0"
+    }
+  },
+  {
+    "source": "UniProt A0A806C7D2",
+    "citation": {
+      "id": "21217002",
+      "citationType": "journal article",
+      "authors": [
+        "Casjens S.R.",
+        "Fraser-Liggett C.M.",
+        "Mongodin E.F.",
+        "Qiu W.G.",
+        "Dunn J.J.",
+        "Luft B.J.",
+        "Schutzer S.E."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "21217002"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1128/JB.01521-10"
+        }
+      ],
+      "title": "Whole genome sequence of an unusual Borrelia burgdorferi sensu lato isolate.",
+      "publicationDate": "2011",
+      "journal": "J. Bacteriol.",
+      "firstPage": "1489",
+      "lastPage": "1490",
+      "volume": "193"
+    }
+  },
+  {
+    "source": "UniProt Q44669",
+    "citation": {
+      "id": "7665660",
+      "citationType": "journal article",
+      "authors": [
+        "Jauris-Heipke S.",
+        "Liegl G.",
+        "Preac-Mursic V.",
+        "Roessler D.",
+        "Schwab E.",
+        "Soutschek E.",
+        "Will G.",
+        "Wilske B."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7665660"
+        }
+      ],
+      "title": "Molecular analysis of genes encoding outer surface protein C (OspC) of Borrelia burgdorferi sensu lato: relationship to ospA genotype and evidence of lateral gene exchange of ospC.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "1860",
+      "lastPage": "1866",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt Q45187",
+    "citation": {
+      "id": "7699024",
+      "citationType": "journal article",
+      "authors": [
+        "Wilske B.",
+        "Jauris-Heipke S.",
+        "Lobentanzer R.",
+        "Pradel I.",
+        "Preac-Mursic V.",
+        "Rossler D.",
+        "Soutschek E.",
+        "Johnson R.C."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7699024"
+        }
+      ],
+      "title": "Phenotypic analysis of outer surface protein C (OspC) of Borrelia burgdorferi sensu lato by monoclonal antibodies: relationship to genospecies and OspA serotype.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "103",
+      "lastPage": "109",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt Q45187",
+    "citation": {
+      "id": "7665660",
+      "citationType": "journal article",
+      "authors": [
+        "Jauris-Heipke S.",
+        "Liegl G.",
+        "Preac-Mursic V.",
+        "Roessler D.",
+        "Schwab E.",
+        "Soutschek E.",
+        "Will G.",
+        "Wilske B."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7665660"
+        }
+      ],
+      "title": "Molecular analysis of genes encoding outer surface protein C (OspC) of Borrelia burgdorferi sensu lato: relationship to ospA genotype and evidence of lateral gene exchange of ospC.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "1860",
+      "lastPage": "1866",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt Q45187",
+    "citation": {
+      "id": "10565915",
+      "citationType": "journal article",
+      "authors": [
+        "Marconi R.T.",
+        "Hohenberger S.",
+        "Jauris-Heipke S.",
+        "Schulte-Spechtel U.",
+        "LaVoie C.P.",
+        "Roessler D.",
+        "Wilske B."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "10565915"
+        }
+      ],
+      "title": "Genetic analysis of Borrelia garinii OspA serotype 4 strains associated with neuroborreliosis: evidence for extensive genetic homogeneity.",
+      "publicationDate": "1999",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "3965",
+      "lastPage": "3970",
+      "volume": "37"
+    }
+  },
+  {
+    "source": "UniProt Q45187",
+    "citation": {
+      "id": "CI-DV6IJG6BCEUMK",
+      "citationType": "journal article",
+      "authors": [
+        "Schulte-Spechtel U.C.",
+        "Fingerle V.",
+        "Goettner G.",
+        "Rogge S.",
+        "Wilske B."
+      ],
+      "title": "Molecular analysis of decorin-binding protein A (DbpA) reveals five major groups among European Borrelia burgdorferi sensu lato strains with impact for the development of serological assays and indicates lateral gene transfer of the dbpA gene.",
+      "publicationDate": "2006",
+      "journal": "Int. J. Med. Microbiol.",
+      "firstPage": "250",
+      "lastPage": "266",
+      "volume": "296"
+    }
+  },
+  {
+    "source": "UniProt Q44705",
+    "citation": {
+      "id": "8225587",
+      "citationType": "journal article",
+      "authors": [
+        "Padula S.J.",
+        "Sampieri A.",
+        "Dias F.",
+        "Szczepanski A.",
+        "Ryan R.W."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "8225587"
+        }
+      ],
+      "title": "Molecular characterization and expression of p23 (OspC) from a North American strain of Borrelia burgdorferi.",
+      "publicationDate": "1993",
+      "journal": "Infect. Immun.",
+      "firstPage": "5097",
+      "lastPage": "5105",
+      "volume": "61"
+    }
+  },
+  {
+    "source": "UniProt Q45175",
+    "citation": {
+      "id": "7699024",
+      "citationType": "journal article",
+      "authors": [
+        "Wilske B.",
+        "Jauris-Heipke S.",
+        "Lobentanzer R.",
+        "Pradel I.",
+        "Preac-Mursic V.",
+        "Rossler D.",
+        "Soutschek E.",
+        "Johnson R.C."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7699024"
+        }
+      ],
+      "title": "Phenotypic analysis of outer surface protein C (OspC) of Borrelia burgdorferi sensu lato by monoclonal antibodies: relationship to genospecies and OspA serotype.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "103",
+      "lastPage": "109",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt Q45175",
+    "citation": {
+      "id": "7665660",
+      "citationType": "journal article",
+      "authors": [
+        "Jauris-Heipke S.",
+        "Liegl G.",
+        "Preac-Mursic V.",
+        "Roessler D.",
+        "Schwab E.",
+        "Soutschek E.",
+        "Will G.",
+        "Wilske B."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7665660"
+        }
+      ],
+      "title": "Molecular analysis of genes encoding outer surface protein C (OspC) of Borrelia burgdorferi sensu lato: relationship to ospA genotype and evidence of lateral gene exchange of ospC.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "1860",
+      "lastPage": "1866",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt Q9Z679",
+    "citation": {
+      "id": "10449497",
+      "citationType": "journal article",
+      "authors": [
+        "Wang G.",
+        "van Dam A.P.",
+        "Dankert J."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "10449497"
+        }
+      ],
+      "title": "Phenotypic and genetic characterization of a novel Borrelia burgdorferi sensu lato isolate from a patient with lyme borreliosis.",
+      "publicationDate": "1999",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "3025",
+      "lastPage": "3028",
+      "volume": "37"
+    }
+  },
+  {
+    "source": "UniProt Q9Z6C6",
+    "citation": {
+      "id": "10474195",
+      "citationType": "journal article",
+      "authors": [
+        "Wang G.",
+        "van Dam A.P.",
+        "Dankert J."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "10474195"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1111/j.1574-6968.1999.tb13745.x"
+        }
+      ],
+      "title": "Evidence for frequent OspC gene transfer between Borrelia valaisiana sp. nov. and other Lyme disease spirochetes.",
+      "publicationDate": "1999",
+      "journal": "FEMS Microbiol. Lett.",
+      "firstPage": "289",
+      "lastPage": "296",
+      "volume": "177"
+    }
+  },
+  {
+    "source": "UniProt Q44670",
+    "citation": {
+      "id": "7699024",
+      "citationType": "journal article",
+      "authors": [
+        "Wilske B.",
+        "Jauris-Heipke S.",
+        "Lobentanzer R.",
+        "Pradel I.",
+        "Preac-Mursic V.",
+        "Rossler D.",
+        "Soutschek E.",
+        "Johnson R.C."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7699024"
+        }
+      ],
+      "title": "Phenotypic analysis of outer surface protein C (OspC) of Borrelia burgdorferi sensu lato by monoclonal antibodies: relationship to genospecies and OspA serotype.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "103",
+      "lastPage": "109",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt Q44670",
+    "citation": {
+      "id": "7665660",
+      "citationType": "journal article",
+      "authors": [
+        "Jauris-Heipke S.",
+        "Liegl G.",
+        "Preac-Mursic V.",
+        "Roessler D.",
+        "Schwab E.",
+        "Soutschek E.",
+        "Will G.",
+        "Wilske B."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7665660"
+        }
+      ],
+      "title": "Molecular analysis of genes encoding outer surface protein C (OspC) of Borrelia burgdorferi sensu lato: relationship to ospA genotype and evidence of lateral gene exchange of ospC.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "1860",
+      "lastPage": "1866",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt Q44717",
+    "citation": {
+      "id": "8039931",
+      "citationType": "journal article",
+      "authors": [
+        "Stevenson B.",
+        "Bockenstedt L.K.",
+        "Barthold S.W."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "8039931"
+        }
+      ],
+      "title": "Expression and gene sequence of outer surface protein C of Borrelia burgdorferi reisolated from chronically infected mice.",
+      "publicationDate": "1994",
+      "journal": "Infect. Immun.",
+      "firstPage": "3568",
+      "lastPage": "3571",
+      "volume": "62"
+    }
+  },
+  {
+    "source": "UniProt Q44717",
+    "citation": {
+      "id": "9282748",
+      "citationType": "journal article",
+      "authors": [
+        "Tilly K.",
+        "Casjens S.",
+        "Stevenson B.",
+        "Bono J.L.",
+        "Samuels D.S.",
+        "Hogan D.",
+        "Rosa P."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "9282748"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1046/j.1365-2958.1997.4711838.x"
+        }
+      ],
+      "title": "The Borrelia burgdorferi circular plasmid cp26: conservation of plasmid structure and targeted inactivation of the ospC gene.",
+      "publicationDate": "1997",
+      "journal": "Mol. Microbiol.",
+      "firstPage": "361",
+      "lastPage": "374",
+      "volume": "25"
+    }
+  },
+  {
+    "source": "UniProt Q44717",
+    "citation": {
+      "id": "11139584",
+      "citationType": "journal article",
+      "authors": [
+        "Eicken C.",
+        "Sharma V.",
+        "Klabunde T.",
+        "Owens R.T.",
+        "Pikas D.S.",
+        "Hook M.",
+        "Sacchettini J.C."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "11139584"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1074/jbc.m010062200"
+        }
+      ],
+      "title": "Crystal structure of Lyme disease antigen outer surface protein C from Borrelia burgdorferi.",
+      "publicationDate": "2001",
+      "journal": "J. Biol. Chem.",
+      "firstPage": "10010",
+      "lastPage": "10015",
+      "volume": "276"
+    }
+  },
+  {
+    "source": "UniProt Q44717",
+    "citation": {
+      "id": "12198612",
+      "citationType": "journal article",
+      "authors": [
+        "Wang G.",
+        "Ojaimi C.",
+        "Wu H.",
+        "Saksenberg V.",
+        "Iyer R.",
+        "Liveris D.",
+        "McClain S.A.",
+        "Wormser G.P.",
+        "Schwartz I."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "12198612"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1086/343043"
+        }
+      ],
+      "title": "Disease severity in a murine model of lyme borreliosis is associated with the genotype of the infecting Borrelia burgdorferi sensu stricto strain.",
+      "publicationDate": "2002",
+      "journal": "J. Infect. Dis.",
+      "firstPage": "782",
+      "lastPage": "791",
+      "volume": "186"
+    }
+  },
+  {
+    "source": "UniProt Q44717",
+    "citation": {
+      "id": "16684623",
+      "citationType": "journal article",
+      "authors": [
+        "Attie O.",
+        "Bruno J.F.",
+        "Xu Y.",
+        "Qiu D.",
+        "Luft B.J.",
+        "Qiu W.G."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "16684623"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1016/j.meegid.2006.02.008"
+        }
+      ],
+      "title": "Co-evolution of the outer surface protein C gene (ospC) and intraspecific lineages of Borrelia burgdorferi sensu stricto in the northeastern United States.",
+      "publicationDate": "2007",
+      "journal": "Infect. Genet. Evol.",
+      "firstPage": "1",
+      "lastPage": "12",
+      "volume": "7"
+    }
+  },
+  {
+    "source": "UniProt Q45177",
+    "citation": {
+      "id": "7494039",
+      "citationType": "journal article",
+      "authors": [
+        "Fukunaga M.",
+        "Hamase A."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7494039"
+        }
+      ],
+      "title": "Outer surface protein C gene sequence analysis of Borrelia burgdorferi sensu lato isolates from Japan.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "2415",
+      "lastPage": "2420",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt Q9Z6C8",
+    "citation": {
+      "id": "10474195",
+      "citationType": "journal article",
+      "authors": [
+        "Wang G.",
+        "van Dam A.P.",
+        "Dankert J."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "10474195"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1111/j.1574-6968.1999.tb13745.x"
+        }
+      ],
+      "title": "Evidence for frequent OspC gene transfer between Borrelia valaisiana sp. nov. and other Lyme disease spirochetes.",
+      "publicationDate": "1999",
+      "journal": "FEMS Microbiol. Lett.",
+      "firstPage": "289",
+      "lastPage": "296",
+      "volume": "177"
+    }
+  },
+  {
+    "source": "UniProt Q49576",
+    "citation": {
+      "id": "7494039",
+      "citationType": "journal article",
+      "authors": [
+        "Fukunaga M.",
+        "Hamase A."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7494039"
+        }
+      ],
+      "title": "Outer surface protein C gene sequence analysis of Borrelia burgdorferi sensu lato isolates from Japan.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "2415",
+      "lastPage": "2420",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt Q44718",
+    "citation": {
+      "id": "7851744",
+      "citationType": "journal article",
+      "authors": [
+        "Stevenson B.",
+        "Barthold S.W."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7851744"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1016/0378-1097(94)00456-0"
+        }
+      ],
+      "title": "Expression and sequence of outer surface protein C among North American isolates of Borrelia burgdorferi.",
+      "publicationDate": "1994",
+      "journal": "FEMS Microbiol. Lett.",
+      "firstPage": "367",
+      "lastPage": "372",
+      "volume": "124"
+    }
+  },
+  {
+    "source": "UniProt Q45178",
+    "citation": {
+      "id": "7494039",
+      "citationType": "journal article",
+      "authors": [
+        "Fukunaga M.",
+        "Hamase A."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7494039"
+        }
+      ],
+      "title": "Outer surface protein C gene sequence analysis of Borrelia burgdorferi sensu lato isolates from Japan.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "2415",
+      "lastPage": "2420",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt Q9Z357",
+    "citation": {
+      "id": "10474195",
+      "citationType": "journal article",
+      "authors": [
+        "Wang G.",
+        "van Dam A.P.",
+        "Dankert J."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "10474195"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1111/j.1574-6968.1999.tb13745.x"
+        }
+      ],
+      "title": "Evidence for frequent OspC gene transfer between Borrelia valaisiana sp. nov. and other Lyme disease spirochetes.",
+      "publicationDate": "1999",
+      "journal": "FEMS Microbiol. Lett.",
+      "firstPage": "289",
+      "lastPage": "296",
+      "volume": "177"
+    }
+  },
+  {
+    "source": "UniProt Q49577",
+    "citation": {
+      "id": "7494039",
+      "citationType": "journal article",
+      "authors": [
+        "Fukunaga M.",
+        "Hamase A."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7494039"
+        }
+      ],
+      "title": "Outer surface protein C gene sequence analysis of Borrelia burgdorferi sensu lato isolates from Japan.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "2415",
+      "lastPage": "2420",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt Q44719",
+    "citation": {
+      "id": "7851744",
+      "citationType": "journal article",
+      "authors": [
+        "Stevenson B.",
+        "Barthold S.W."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7851744"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1016/0378-1097(94)00456-0"
+        }
+      ],
+      "title": "Expression and sequence of outer surface protein C among North American isolates of Borrelia burgdorferi.",
+      "publicationDate": "1994",
+      "journal": "FEMS Microbiol. Lett.",
+      "firstPage": "367",
+      "lastPage": "372",
+      "volume": "124"
+    }
+  },
+  {
+    "source": "UniProt Q44719",
+    "citation": {
+      "id": "12198612",
+      "citationType": "journal article",
+      "authors": [
+        "Wang G.",
+        "Ojaimi C.",
+        "Wu H.",
+        "Saksenberg V.",
+        "Iyer R.",
+        "Liveris D.",
+        "McClain S.A.",
+        "Wormser G.P.",
+        "Schwartz I."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "12198612"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1086/343043"
+        }
+      ],
+      "title": "Disease severity in a murine model of lyme borreliosis is associated with the genotype of the infecting Borrelia burgdorferi sensu stricto strain.",
+      "publicationDate": "2002",
+      "journal": "J. Infect. Dis.",
+      "firstPage": "782",
+      "lastPage": "791",
+      "volume": "186"
+    }
+  },
+  {
+    "source": "UniProt Q45647",
+    "citation": {
+      "id": "7494039",
+      "citationType": "journal article",
+      "authors": [
+        "Fukunaga M.",
+        "Hamase A."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "7494039"
+        }
+      ],
+      "title": "Outer surface protein C gene sequence analysis of Borrelia burgdorferi sensu lato isolates from Japan.",
+      "publicationDate": "1995",
+      "journal": "J. Clin. Microbiol.",
+      "firstPage": "2415",
+      "lastPage": "2420",
+      "volume": "33"
+    }
+  },
+  {
+    "source": "UniProt Q9Z3C1",
+    "citation": {
+      "id": "10474195",
+      "citationType": "journal article",
+      "authors": [
+        "Wang G.",
+        "van Dam A.P.",
+        "Dankert J."
+      ],
+      "citationCrossReferences": [
+        {
+          "database": "PubMed",
+          "id": "10474195"
+        },
+        {
+          "database": "DOI",
+          "id": "10.1111/j.1574-6968.1999.tb13745.x"
+        }
+      ],
+      "title": "Evidence for frequent OspC gene transfer between Borrelia valaisiana sp. nov. and other Lyme disease spirochetes.",
+      "publicationDate": "1999",
+      "journal": "FEMS Microbiol. Lett.",
+      "firstPage": "289",
+      "lastPage": "296",
+      "volume": "177"
+    }
+  }
+]

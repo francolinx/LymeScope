@@ -1,0 +1,18 @@
+test_ambiguous_and_missing (test_baseline.BaselineTests.test_ambiguous_and_missing) ... ok
+test_gaps (test_baseline.BaselineTests.test_gaps) ... ok
+test_identical (test_baseline.BaselineTests.test_identical) ... ok
+test_mapping_insertion_and_unobserved (test_baseline.BaselineTests.test_mapping_insertion_and_unobserved) ... ok
+test_undefined (test_baseline.BaselineTests.test_undefined) ... ok
+test_variable_tie (test_baseline.BaselineTests.test_variable_tie) ... ok
+test_actual_frozen_reference_correspondence (test_baseline.FrozenReferenceTests.test_actual_frozen_reference_correspondence) ... /home/darkstar90/lymescope-sparkprep/analysis/ospc_comparison_v0.1.0/baseline.py:7: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/darkstar90/lymescope-sparkprep/analysis/ospc_comparison_v0.1.0/frozen_inputs/input_sequences.fasta' mode='r' encoding='UTF-8'>
+  for line in open(path):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/home/darkstar90/lymescope-sparkprep/analysis/ospc_comparison_v0.1.0/cif_reader.py:20: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/darkstar90/lymescope-sparkprep/analysis/ospc_comparison_v0.1.0/frozen_inputs/reference_structures/1GGQ.cif' mode='r' encoding='UTF-8'>
+  ts=list(cif_tokens(path));out={};i=0
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.059s
+
+OK

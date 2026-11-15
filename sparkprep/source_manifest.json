@@ -1,0 +1,372 @@
+{
+  "scope": "public data only; PERSONAL Spark",
+  "download_limit_bytes": 500000000,
+  "max_concurrent_downloads": 1,
+  "sources": [
+    {
+      "path": "source_data/proteome.json",
+      "url": "https://rest.uniprot.org/proteomes/UP000001807",
+      "description": "UniProt proteome metadata",
+      "retrieved_utc": "2026-11-14T23:27:03.637572+00:00",
+      "curl_returncode": 0,
+      "status": "ok",
+      "diagnostic": null,
+      "bytes": 11080,
+      "sha256": "1a71e386222942c993edd6f69892baccdb817fe43b0dd7b8db0eedfdedf44373",
+      "usage_restrictions": "UniProt copyrightable data CC BY 4.0; attribution required; patent/other rights may apply. See evidence/uniprot_license.json.",
+      "source_identifier": "UP000001807"
+    },
+    {
+      "path": "source_data/proteome.fasta",
+      "url": "https://rest.uniprot.org/uniprotkb/stream?query=proteome%3AUP000001807&format=fasta",
+      "description": "UniProt proteome canonical FASTA",
+      "retrieved_utc": "2026-11-14T23:27:03.637806+00:00",
+      "curl_returncode": 0,
+      "status": "ok",
+      "diagnostic": null,
+      "bytes": 593737,
+      "sha256": "39fcc0f84f9c20341cea0d4793f8f628b6809c8e2cce842ef085253be921a3ac",
+      "usage_restrictions": "UniProt copyrightable data CC BY 4.0; attribution required; patent/other rights may apply. See evidence/uniprot_license.json.",
+      "source_identifier": "UP000001807"
+    },
+    {
+      "path": "source_data/proteome_annotations.tsv",
+      "url": "https://rest.uniprot.org/uniprotkb/stream?query=proteome%3AUP000001807&format=tsv&fields=accession%2Cid%2Cprotein_name%2Cgene_names%2Corganism_name%2Corganism_id%2Clength%2Cprotein_existence%2Csequence_version",
+      "description": "UniProt identifier/annotation table",
+      "retrieved_utc": "2026-11-14T23:27:04.819852+00:00",
+      "curl_returncode": 0,
+      "status": "ok",
+      "diagnostic": null,
+      "bytes": 253112,
+      "sha256": "ac9be42ba71c28c0bd577c167b877cd686745fc4858150d2acf4aed16b3c0475",
+      "usage_restrictions": "UniProt copyrightable data CC BY 4.0; attribution required; patent/other rights may apply. See evidence/uniprot_license.json.",
+      "source_identifier": "UP000001807"
+    },
+    {
+      "path": "source_data/ospc_candidates.json",
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=%28gene%3AospC+OR+protein_name%3A%22outer+surface+protein+C%22%29+AND+taxonomy_id%3A64895&format=json&size=500",
+      "description": "Provisional OspC candidate pool; first API page, not exhaustive",
+      "retrieved_utc": "2026-11-14T23:27:06.265299+00:00",
+      "curl_returncode": 0,
+      "status": "ok",
+      "diagnostic": null,
+      "bytes": 2852932,
+      "sha256": "1e7b6bda6db9f2427fb1834ec327e6eeec7e1f48f8d38b244db7e806c39006b9",
+      "usage_restrictions": "UniProt copyrightable data CC BY 4.0; attribution required; patent/other rights may apply. See evidence/uniprot_license.json.",
+      "source_identifier": "https://rest.uniprot.org/uniprotkb/search?query=%28gene%3AospC+OR+protein_name%3A%22outer+surface+protein+C%22%29+AND+taxonomy_id%3A64895&format=json&size=500"
+    },
+    {
+      "path": "reference_structures/1GGQ.cif",
+      "url": "https://files.rcsb.org/download/1GGQ.cif",
+      "description": "Pre-existing experimental reference coordinates",
+      "retrieved_utc": "2026-11-14T23:27:09.629349+00:00",
+      "curl_returncode": 0,
+      "status": "ok",
+      "diagnostic": null,
+      "bytes": 536284,
+      "sha256": "03a30187a21aed2d9c487cb31e27b805242d3bbb890a2473c58bdbd5884cc6f0",
+      "usage_restrictions": "PDB archive CC0; RCSB API same except externally integrated annotations may carry source restrictions. Cite entry and primary study.",
+      "source_identifier": "1GGQ"
+    },
+    {
+      "path": "reference_structures/1GGQ.json",
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1GGQ",
+      "description": "RCSB entry metadata and primary citation",
+      "retrieved_utc": "2026-11-14T23:27:10.097521+00:00",
+      "curl_returncode": 0,
+      "status": "ok",
+      "diagnostic": null,
+      "bytes": 15992,
+      "sha256": "b4d2469cedd498ecb3e1743db06368c03dff9fcf7836c3d907c7d0aa1dc233fd",
+      "usage_restrictions": "PDB archive CC0; RCSB API same except externally integrated annotations may carry source restrictions. Cite entry and primary study.",
+      "source_identifier": "1GGQ"
+    },
+    {
+      "path": "reference_structures/1G5Z.cif",
+      "url": "https://files.rcsb.org/download/1G5Z.cif",
+      "description": "Pre-existing experimental reference coordinates",
+      "retrieved_utc": "2026-11-14T23:27:15.307095+00:00",
+      "curl_returncode": 0,
+      "status": "ok",
+      "diagnostic": null,
+      "bytes": 188325,
+      "sha256": "6957fc6ffae86cd7e0dea264fe2484275a6e992dfa4859565f4c9868d7c453e7",
+      "usage_restrictions": "PDB archive CC0; RCSB API same except externally integrated annotations may carry source restrictions. Cite entry and primary study.",
+      "source_identifier": "1G5Z"
+    },
+    {
+      "path": "reference_structures/1G5Z.json",
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1G5Z",
+      "description": "RCSB entry metadata and primary citation",
+      "retrieved_utc": "2026-11-14T23:27:16.040430+00:00",
+      "curl_returncode": 0,
+      "status": "ok",
+      "diagnostic": null,
+      "bytes": 11477,
+      "sha256": "e9cfdba13b927d07431057a7248adfee38b1e063472a2299300fdfbd669f6564",
+      "usage_restrictions": "PDB archive CC0; RCSB API same except externally integrated annotations may carry source restrictions. Cite entry and primary study.",
+      "source_identifier": "1G5Z"
+    },
+    {
+      "path": "evidence/uniprot_license.html",
+      "url": "https://www.uniprot.org/help/license",
+      "description": "UniProt usage terms",
+      "retrieved_utc": "2026-11-14T23:27:16.267586+00:00",
+      "curl_returncode": 0,
+      "status": "ok",
+      "diagnostic": null,
+      "bytes": 5570,
+      "sha256": "09b04c1e5a69a5787e29a3d60d34dda88a79d0afd522a3721927d45bb6041998",
+      "usage_restrictions": "UniProt copyrightable data CC BY 4.0; attribution required; patent/other rights may apply. See evidence/uniprot_license.json.",
+      "source_identifier": "https://www.uniprot.org/help/license"
+    },
+    {
+      "path": "evidence/rcsb_usage.html",
+      "url": "https://www.rcsb.org/pages/policies",
+      "description": "RCSB usage policies",
+      "retrieved_utc": "2026-11-14T23:27:16.731004+00:00",
+      "curl_returncode": 0,
+      "status": "ok",
+      "diagnostic": null,
+      "bytes": 56921,
+      "sha256": "3fae3d58742360ab55b818b5c1615fa918d9333219dbd0a03acdd07e7001e67b",
+      "usage_restrictions": "Bibliographic/policy evidence retained with attribution and source URL; no blanket license for linked third-party material.",
+      "source_identifier": "https://www.rcsb.org/pages/policies"
+    },
+    {
+      "path": "evidence/uniprot_license.json",
+      "url": "https://rest.uniprot.org/help/license",
+      "description": "UniProt license, CC BY 4.0 with patent/other-rights disclaimer",
+      "retrieved_utc": "2026-11-14T23:27:37.022613+00:00",
+      "status": "ok",
+      "bytes": 914,
+      "sha256": "5960c22bf17f22286504b927dbb3ca41713c571ed91a10fe7a88ddd964b416ce",
+      "usage_restrictions": "UniProt copyrightable data CC BY 4.0; attribution required; patent/other rights may apply. See evidence/uniprot_license.json.",
+      "source_identifier": "https://rest.uniprot.org/help/license"
+    },
+    {
+      "path": "evidence/1GGQ_europepmc.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:11230121%20AND%20SRC:MED&format=json",
+      "description": "Primary bibliographic metadata; full text not downloaded; OA flag N",
+      "retrieved_utc": "2026-11-14T23:27:36.563425+00:00",
+      "status": "ok",
+      "bytes": 1260,
+      "sha256": "3fe814c2c59d5d515d4406c22ff4ff041ebc0526c28ae663dcce00f502cf6b10",
+      "usage_restrictions": "Bibliographic/policy evidence retained with attribution and source URL; no blanket license for linked third-party material.",
+      "source_identifier": "1GGQ"
+    },
+    {
+      "path": "evidence/1G5Z_europepmc.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:11139584%20AND%20SRC:MED&format=json&resultType=core",
+      "description": "Primary bibliographic metadata; full text not downloaded",
+      "retrieved_utc": "2026-11-14T23:27:44.442728+00:00",
+      "status": "ok",
+      "bytes": 6750,
+      "sha256": "3448a9bfd913bf959e44d5952701b17817780c0e512337d5f74acef5a42ab2f2",
+      "usage_restrictions": "Bibliographic/policy evidence retained with attribution and source URL; no blanket license for linked third-party material.",
+      "source_identifier": "1G5Z"
+    },
+    {
+      "path": "evidence/ospc_epitope_bibliography.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1128/mbio.02981-22&format=json&resultType=core",
+      "description": "Primary study bibliographic record; OA status and CC BY license",
+      "retrieved_utc": "2026-11-14T23:27:43.734743+00:00",
+      "status": "ok",
+      "bytes": 10527,
+      "sha256": "f29dc47c7282b44b88a0d7557d1bb1e8627266e89cad93dee05655bc4ab6372a",
+      "usage_restrictions": "Bibliographic/policy evidence retained with attribution and source URL; no blanket license for linked third-party material.",
+      "source_identifier": "PMC10128040 / DOI:10.1128/mbio.02981-22"
+    },
+    {
+      "path": "evidence/PMC10128040.html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10128040/?pdf=0",
+      "description": "Permitted open-access primary article, CC BY 4.0. Authors/title/DOI in accompanying bibliographic record; retained HTML unmodified.",
+      "retrieved_utc": "2026-11-14T23:28:14.739095+00:00",
+      "status": "ok",
+      "bytes": 302089,
+      "sha256": "18846bdf9b27daa1e46d79f241fd5abf5e1a79da92321470f7cf11383a589456",
+      "usage_restrictions": "CC BY 4.0; attribute primary article authors, DOI 10.1128/mbio.02981-22, and license; no changes to archived HTML.",
+      "source_identifier": "PMC10128040 / DOI:10.1128/mbio.02981-22"
+    }
+  ],
+  "retrieval_blockers": [
+    {
+      "issue": "Sandbox DNS failures",
+      "detail": "curl exit 6: Could not resolve host (UniProt/RCSB); resolved by approved network execution. No credentials inspected."
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10128040/fullTextXML",
+      "status": "failed",
+      "http_status": 500,
+      "retrieved_utc": "2026-11-14T23:28:14.739095+00:00",
+      "fallback": "PMC HTML retrieved successfully; failed XML not included"
+    }
+  ],
+  "successful_public_download_bytes": 4846970,
+  "prepared_utc": "2026-11-14T23:31:03.096597+00:00",
+  "hash_policy": "SHA256 over raw file bytes. Derived artifacts listed separately. Manifest excludes its own hash; internal/export SHA256SUMS cover it and the archive respectively.",
+  "artifacts": [
+    {
+      "path": "READY_FOR_CLUSTER.md",
+      "bytes": 4503,
+      "sha256": "4adf07869062e6a1269068ffc306bc3459890fcdd42bb4e7157f24e883cb764a",
+      "provenance": "derived locally; see scripts and source records"
+    },
+    {
+      "path": "data_quality_report.md",
+      "bytes": 5343,
+      "sha256": "ebd317d645af28e19cdc9208c9c9c4d28fd00a35200b59c50799e808dd2475df",
+      "provenance": "derived locally; see scripts and source records"
+    },
+    {
+      "path": "evidence/1G5Z_europepmc.json",
+      "bytes": 6750,
+      "sha256": "3448a9bfd913bf959e44d5952701b17817780c0e512337d5f74acef5a42ab2f2",
+      "provenance": "retrieved"
+    },
+    {
+      "path": "evidence/1GGQ_europepmc.json",
+      "bytes": 1260,
+      "sha256": "3fe814c2c59d5d515d4406c22ff4ff041ebc0526c28ae663dcce00f502cf6b10",
+      "provenance": "retrieved"
+    },
+    {
+      "path": "evidence/PMC10128040.html",
+      "bytes": 302089,
+      "sha256": "18846bdf9b27daa1e46d79f241fd5abf5e1a79da92321470f7cf11383a589456",
+      "provenance": "retrieved"
+    },
+    {
+      "path": "evidence/ospc_epitope_bibliography.json",
+      "bytes": 10527,
+      "sha256": "f29dc47c7282b44b88a0d7557d1bb1e8627266e89cad93dee05655bc4ab6372a",
+      "provenance": "retrieved"
+    },
+    {
+      "path": "evidence/primary_bibliographic_records.json",
+      "bytes": 61246,
+      "sha256": "e893ec29f78730df8f1b7ac2d62bee8c9f62b72fbc6370a6362431f2373506a9",
+      "provenance": "derived locally; see scripts and source records"
+    },
+    {
+      "path": "evidence/rcsb_usage.html",
+      "bytes": 56921,
+      "sha256": "3fae3d58742360ab55b818b5c1615fa918d9333219dbd0a03acdd07e7001e67b",
+      "provenance": "retrieved"
+    },
+    {
+      "path": "evidence/uniprot_license.html",
+      "bytes": 5570,
+      "sha256": "09b04c1e5a69a5787e29a3d60d34dda88a79d0afd522a3721927d45bb6041998",
+      "provenance": "retrieved"
+    },
+    {
+      "path": "evidence/uniprot_license.json",
+      "bytes": 914,
+      "sha256": "5960c22bf17f22286504b927dbb3ca41713c571ed91a10fe7a88ddd964b416ce",
+      "provenance": "retrieved"
+    },
+    {
+      "path": "input_sequences.fasta",
+      "bytes": 8360,
+      "sha256": "5e57f71028675fb90e41a0594ff60cb2f81f2b03dd33d7c19c6e62d1a961ee05",
+      "provenance": "derived locally; see scripts and source records"
+    },
+    {
+      "path": "reference_structures/1G5Z.cif",
+      "bytes": 188325,
+      "sha256": "6957fc6ffae86cd7e0dea264fe2484275a6e992dfa4859565f4c9868d7c453e7",
+      "provenance": "retrieved"
+    },
+    {
+      "path": "reference_structures/1G5Z.json",
+      "bytes": 11477,
+      "sha256": "e9cfdba13b927d07431057a7248adfee38b1e063472a2299300fdfbd669f6564",
+      "provenance": "retrieved"
+    },
+    {
+      "path": "reference_structures/1GGQ.cif",
+      "bytes": 536284,
+      "sha256": "03a30187a21aed2d9c487cb31e27b805242d3bbb890a2473c58bdbd5884cc6f0",
+      "provenance": "retrieved"
+    },
+    {
+      "path": "reference_structures/1GGQ.json",
+      "bytes": 15992,
+      "sha256": "b4d2469cedd498ecb3e1743db06368c03dff9fcf7836c3d907c7d0aa1dc233fd",
+      "provenance": "retrieved"
+    },
+    {
+      "path": "reference_structures/reference_summary.json",
+      "bytes": 19067,
+      "sha256": "7149ec1c5453f225e8c50fb6b7fb6d24433210e17738e879cf857392ffc214cf",
+      "provenance": "derived locally; see scripts and source records"
+    },
+    {
+      "path": "runtime_inventory.json",
+      "bytes": 12700,
+      "sha256": "96a29c8aa47cf93e80aa9068b7dbc34c792325be6b3be28b78a8af73824d6528",
+      "provenance": "derived locally; see scripts and source records"
+    },
+    {
+      "path": "scripts/download.py",
+      "bytes": 2390,
+      "sha256": "ec74a7ce2cff2fdf389fba3ba0e1487a8d8958e88d786efebc1dfa998badb2fc",
+      "provenance": "derived locally; see scripts and source records"
+    },
+    {
+      "path": "scripts/export_bundle.py",
+      "bytes": 7207,
+      "sha256": "a416147a6276785749e15341626e2f272ff87cfbe04f470df5aa1dbdf8b7fc86",
+      "provenance": "derived locally; see scripts and source records"
+    },
+    {
+      "path": "scripts/inventory.py",
+      "bytes": 2119,
+      "sha256": "dca75ddc6e834ef200ff2437066e5cb1844b9205e9ed4f1e04f7cceb825b96a6",
+      "provenance": "derived locally; see scripts and source records"
+    },
+    {
+      "path": "scripts/prepare.py",
+      "bytes": 13270,
+      "sha256": "5cc1125ecda81cc666610a8f9b9c0ea7a7a0c12206f129c62363c5cc8655bc7f",
+      "provenance": "derived locally; see scripts and source records"
+    },
+    {
+      "path": "sequence_metadata.tsv",
+      "bytes": 22157,
+      "sha256": "7acfdae37aa8b7f610a96df252fae4a216993f857877f9570b9d1a580a4b16ea",
+      "provenance": "derived locally; see scripts and source records"
+    },
+    {
+      "path": "source_data/candidate_quality.tsv",
+      "bytes": 344319,
+      "sha256": "50b7b4831f729edfc75030a8b1dfbeb53526bce64e3df75c42db19ea57514ea8",
+      "provenance": "derived locally; see scripts and source records"
+    },
+    {
+      "path": "source_data/ospc_candidates.json",
+      "bytes": 2852932,
+      "sha256": "1e7b6bda6db9f2427fb1834ec327e6eeec7e1f48f8d38b244db7e806c39006b9",
+      "provenance": "retrieved"
+    },
+    {
+      "path": "source_data/proteome.fasta",
+      "bytes": 593737,
+      "sha256": "39fcc0f84f9c20341cea0d4793f8f628b6809c8e2cce842ef085253be921a3ac",
+      "provenance": "retrieved"
+    },
+    {
+      "path": "source_data/proteome.json",
+      "bytes": 11080,
+      "sha256": "1a71e386222942c993edd6f69892baccdb817fe43b0dd7b8db0eedfdedf44373",
+      "provenance": "retrieved"
+    },
+    {
+      "path": "source_data/proteome_annotations.tsv",
+      "bytes": 253112,
+      "sha256": "ac9be42ba71c28c0bd577c167b877cd686745fc4858150d2acf4aed16b3c0475",
+      "provenance": "retrieved"
+    }
+  ]
+}

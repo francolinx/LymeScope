@@ -1,0 +1,9 @@
+{
+  "returncode": 0,
+  "rendered_bytes": 1070420,
+  "column_218_rendered": true,
+  "details_populated": true,
+  "metadata_rendered": true,
+  "browser": "google-chrome headless; offline file URL; fresh workspace-only profile",
+  "initial_sandbox_blocker": "Crashpad setsockopt Operation not permitted; retried with sandbox approval"
+}

@@ -1,0 +1,12 @@
+{
+  "verified_utc": "2026-11-14T23:31:03.096597+00:00",
+  "proteome_fasta_count": 1291,
+  "proteome_table_rows": 1291,
+  "proteome_accession_sets_match": true,
+  "panel_count": 30,
+  "panel_sequences_distinct": true,
+  "archived_files_checked": 28,
+  "archive_bytes": 820418,
+  "archive_sha256": "fc358543eda4a58dbe87d6d78ba8a8d0502cd00d2ea2255eddfd577f090da312",
+  "public_download_bytes": 4846970
+}

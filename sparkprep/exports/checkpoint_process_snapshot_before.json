@@ -1,0 +1,8 @@
+{
+  "checked_utc": "2026-11-14T23:59:58.856691+00:00",
+  "visible_process_count": 545,
+  "active_build_or_aligner_processes": [],
+  "recognized_project_script_processes": [],
+  "method": "Read-only host ps process names and limited recognized project script basenames for processes whose cwd is inside workspace. No environment, credentials or unrelated command arguments recorded.",
+  "limitations": "Point-in-time process snapshot; cannot predict subsequent work. Unrelated processes were not stopped."
+}

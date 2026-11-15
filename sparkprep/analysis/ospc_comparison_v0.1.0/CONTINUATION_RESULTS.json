@@ -1,0 +1,11 @@
+{
+  "version": "v0.1.0",
+  "status": "completed scientific alignment baseline; not transferred",
+  "path": "/home/darkstar90/lymescope-sparkprep/exports/lymescope_ospc_analysis_v0.1.0.tar.gz",
+  "bytes": 374714,
+  "sha256": "deae2140d0dc040169c71c0e7a1aa364ea80228ca08454a2507056b2ea8e0527",
+  "frozen_input_unchanged": true,
+  "archive_payload_hash_checks": "all passed",
+  "analysis_directory": "/home/darkstar90/lymescope-sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0",
+  "tests_passed": 11
+}

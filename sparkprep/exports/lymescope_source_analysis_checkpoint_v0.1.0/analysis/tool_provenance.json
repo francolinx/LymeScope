@@ -1,0 +1,317 @@
+{
+  "official_source_url": "https://mafft.cbrc.jp/alignment/software/mafft-7.525-without-extensions-src.tgz",
+  "retrieved_utc": "2026-11-14T23:50:19.559641+00:00",
+  "source_archive_bytes": 622798,
+  "source_archive_sha256": "edb34ae9b26d6b55328c18fa060ed741bca8cd599c2f4f8fad0e0871c8082265",
+  "installation_prefix": "/home/darkstar90/lymescope-sparkprep/tools/mafft-7.525",
+  "executable": "/home/darkstar90/lymescope-sparkprep/tools/mafft-7.525/bin/mafft",
+  "version": "v7.525 (2024/Mar/13)",
+  "version_command": [
+    "/home/darkstar90/lymescope-sparkprep/tools/mafft-7.525/bin/mafft",
+    "--version"
+  ],
+  "executable_sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a",
+  "build_command": [
+    "make",
+    "-j2"
+  ],
+  "install_command": [
+    "make",
+    "install"
+  ],
+  "build_cwd": "/home/darkstar90/lymescope-sparkprep/tools/mafft-7.525/source/mafft-7.525-without-extensions/core",
+  "configured_makefile_sha256": "4e2c0d97337695d22aa11bc5e550dfec563dbb09b809d1eb6981fb90c6e8fe6a",
+  "installed_files": [
+    {
+      "path": "bin/einsi",
+      "bytes": 109833,
+      "sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a"
+    },
+    {
+      "path": "bin/fftns",
+      "bytes": 109833,
+      "sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a"
+    },
+    {
+      "path": "bin/fftnsi",
+      "bytes": 109833,
+      "sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a"
+    },
+    {
+      "path": "bin/ginsi",
+      "bytes": 109833,
+      "sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a"
+    },
+    {
+      "path": "bin/linsi",
+      "bytes": 109833,
+      "sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a"
+    },
+    {
+      "path": "bin/mafft",
+      "bytes": 109833,
+      "sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a"
+    },
+    {
+      "path": "bin/mafft-distance",
+      "bytes": 403464,
+      "sha256": "085b1d54dd87bf2cfa17b1fa64d1e6c2d2cdd93c0abe2562f77874e513f59a7b"
+    },
+    {
+      "path": "bin/mafft-einsi",
+      "bytes": 109833,
+      "sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a"
+    },
+    {
+      "path": "bin/mafft-fftns",
+      "bytes": 109833,
+      "sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a"
+    },
+    {
+      "path": "bin/mafft-fftnsi",
+      "bytes": 109833,
+      "sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a"
+    },
+    {
+      "path": "bin/mafft-ginsi",
+      "bytes": 109833,
+      "sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a"
+    },
+    {
+      "path": "bin/mafft-homologs.rb",
+      "bytes": 11591,
+      "sha256": "e4cd5b16d60dfff50adc189a84ad3258521532752327fe2a61e869b235aa0dfe"
+    },
+    {
+      "path": "bin/mafft-linsi",
+      "bytes": 109833,
+      "sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a"
+    },
+    {
+      "path": "bin/mafft-nwns",
+      "bytes": 109833,
+      "sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a"
+    },
+    {
+      "path": "bin/mafft-nwnsi",
+      "bytes": 109833,
+      "sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a"
+    },
+    {
+      "path": "bin/mafft-profile",
+      "bytes": 600072,
+      "sha256": "c5d6b54418e526d1fa7b26487c9a7a6cb9e0c89b229f1f2870d733ffc03c3368"
+    },
+    {
+      "path": "bin/mafft-qinsi",
+      "bytes": 109833,
+      "sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a"
+    },
+    {
+      "path": "bin/mafft-sparsecore.rb",
+      "bytes": 7828,
+      "sha256": "6bf424bddc2a2f91be0b70457a51c5a2b6a3168634eb8f8ef2d46f1fc422a3ea"
+    },
+    {
+      "path": "bin/mafft-xinsi",
+      "bytes": 109833,
+      "sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a"
+    },
+    {
+      "path": "bin/nwns",
+      "bytes": 109833,
+      "sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a"
+    },
+    {
+      "path": "bin/nwnsi",
+      "bytes": 109833,
+      "sha256": "e9ad7cd5321db0e4e9d1b9375c5bc5d15fc9d3055590730669a8e7e877b3061a"
+    },
+    {
+      "path": "libexec/mafft/addsingle",
+      "bytes": 665608,
+      "sha256": "fd6523f9a993ca5c080fa4ee73b69e8f50614a8006d4ea54d6db7a03863f0cab"
+    },
+    {
+      "path": "libexec/mafft/contrafoldwrap",
+      "bytes": 403464,
+      "sha256": "0b5aade53a27e1ee83aa4db874cbfcaf31fd34d6dec889c851c4c110107bd7a2"
+    },
+    {
+      "path": "libexec/mafft/countlen",
+      "bytes": 133272,
+      "sha256": "af92c8e271922e6270e3c82341836e6cf1e0ff520af261a73da911b86207d83b"
+    },
+    {
+      "path": "libexec/mafft/disttbfast",
+      "bytes": 665608,
+      "sha256": "251184e54789fb6b5370118373ecf6ac5d2603ea5dd43d5490496c4045b61584"
+    },
+    {
+      "path": "libexec/mafft/dndblast",
+      "bytes": 403464,
+      "sha256": "c7a2dbb3519042c9cd2c5d9860e235e285a839dd6975da802a1c6c5e93589000"
+    },
+    {
+      "path": "libexec/mafft/dndfast7",
+      "bytes": 403464,
+      "sha256": "7bfc29ae0a429120459886e298577a56794f2dfa9434b893611ea8c991b94ef0"
+    },
+    {
+      "path": "libexec/mafft/dndpre",
+      "bytes": 403480,
+      "sha256": "5fbdaecf5b032bd7c96849287cb9d53ea3168ee2de688069552ab75433fdd325"
+    },
+    {
+      "path": "libexec/mafft/dvtditr",
+      "bytes": 665608,
+      "sha256": "c61923340cd192c24971824f9bb9b8ab7a699c0548e8ea62aed71ee196a04551"
+    },
+    {
+      "path": "libexec/mafft/f2cl",
+      "bytes": 206856,
+      "sha256": "ffa201cfa6cdd383296c79e0a7e3fd8af36ff7062c917d8d54039b8d816eb5b3"
+    },
+    {
+      "path": "libexec/mafft/filter",
+      "bytes": 329880,
+      "sha256": "c70cab8cecb49ede2cf169a8b5aee11fe2143fc2669be0114116d1328363eca0"
+    },
+    {
+      "path": "libexec/mafft/getlag",
+      "bytes": 600072,
+      "sha256": "e7273773a0878fe8d82bb14d19dae0d1e3ffd39a2bab8e0f9e42b48b5cf51163"
+    },
+    {
+      "path": "libexec/mafft/hex2maffttext",
+      "bytes": 67496,
+      "sha256": "9189ea540134158c5f45cc5f41731b57fb4514d8b477ca41bfb083524f8cd4af"
+    },
+    {
+      "path": "libexec/mafft/mafft-distance",
+      "bytes": 403464,
+      "sha256": "085b1d54dd87bf2cfa17b1fa64d1e6c2d2cdd93c0abe2562f77874e513f59a7b"
+    },
+    {
+      "path": "libexec/mafft/mafft-profile",
+      "bytes": 600072,
+      "sha256": "c5d6b54418e526d1fa7b26487c9a7a6cb9e0c89b229f1f2870d733ffc03c3368"
+    },
+    {
+      "path": "libexec/mafft/mafftash_premafft.pl",
+      "bytes": 10475,
+      "sha256": "0594ba064e06ad0b647a9927bc73541edd85fd18c09a65c7a5c849b318b93ef9"
+    },
+    {
+      "path": "libexec/mafft/maffttext2hex",
+      "bytes": 67496,
+      "sha256": "5dd0f8451c7c57ae2517d9ce9c0c0967a9edcc664507c234433103a10a9ec210"
+    },
+    {
+      "path": "libexec/mafft/makedirectionlist",
+      "bytes": 665624,
+      "sha256": "05d16a16233885a3fc5122b2db27c5a988e43ec36780e4900a49f3cdebb23a27"
+    },
+    {
+      "path": "libexec/mafft/mccaskillwrap",
+      "bytes": 403464,
+      "sha256": "4b79aff6d0b2a78ab98e8919f0f3c41334258ac98826ec134b862a6a0685af2b"
+    },
+    {
+      "path": "libexec/mafft/multi2hat3s",
+      "bytes": 403464,
+      "sha256": "4882530e5e90dcba8f721aa40cf57a2c6550e83b1e0eeb13366d374dd6d56c49"
+    },
+    {
+      "path": "libexec/mafft/nodepair",
+      "bytes": 665608,
+      "sha256": "070f4fcbcdaf8bfa6a6810a379380206e49f3233e4ffbdddf5237daef93ef968"
+    },
+    {
+      "path": "libexec/mafft/pairash",
+      "bytes": 600072,
+      "sha256": "217dd260e6c5bf060dd76088e203b17242e72ce377e42adabdd58b72145d4b1c"
+    },
+    {
+      "path": "libexec/mafft/pairlocalalign",
+      "bytes": 665608,
+      "sha256": "934a004684698cda4c91b5fd1db6099ad5b6e89335dd8a28f9e5df273b82bff1"
+    },
+    {
+      "path": "libexec/mafft/regtable2seq",
+      "bytes": 329880,
+      "sha256": "b08e7c72828be10e7437eb9362f415ee413dcfa828d4d9097883ae7e975b95f2"
+    },
+    {
+      "path": "libexec/mafft/replaceu",
+      "bytes": 329880,
+      "sha256": "54a3967ef522d687085001565acc2b99db7526cceef2e973eafef239e4522e89"
+    },
+    {
+      "path": "libexec/mafft/restoreu",
+      "bytes": 329880,
+      "sha256": "b077b941adf85f32afc01beb8d926c6c0a46a89a1cd15383b232e08fdb81ee95"
+    },
+    {
+      "path": "libexec/mafft/score",
+      "bytes": 403464,
+      "sha256": "dd4bd0200598c69eb7c02bea2e431e87c51ffbe642b69b80560ea2eb01f81d94"
+    },
+    {
+      "path": "libexec/mafft/seekquencer_premafft.pl",
+      "bytes": 15541,
+      "sha256": "bfe2f4cd579c3734ac9a4979c9a1b577bef8993f5242c342019df2c490d82fd3"
+    },
+    {
+      "path": "libexec/mafft/seq2regtable",
+      "bytes": 133272,
+      "sha256": "3ec46e4a4d403f885f18dce96c8d26aa7e8b68b80885ff3afc38157ffda003e2"
+    },
+    {
+      "path": "libexec/mafft/setcore",
+      "bytes": 600072,
+      "sha256": "cc3e69e182ee0430a3732916053016b4dc483824eddfabb377c2a761817b8b75"
+    },
+    {
+      "path": "libexec/mafft/setdirection",
+      "bytes": 329888,
+      "sha256": "fb5904d386782a7c514cd888baa1ebb908c112d226224b357d9b323cf0ab21d3"
+    },
+    {
+      "path": "libexec/mafft/sextet5",
+      "bytes": 403464,
+      "sha256": "6d8cc28b8f9cf1212c68709b955c60351a778d28a9e5022f54f06dd39f3b21f2"
+    },
+    {
+      "path": "libexec/mafft/splittbfast",
+      "bytes": 665608,
+      "sha256": "27d75b912783adb018b39127566554ea913e04686c7256330bef864ad3fee57c"
+    },
+    {
+      "path": "libexec/mafft/tbfast",
+      "bytes": 731144,
+      "sha256": "3bb1f0dffb293d771011cede290df7a8c5813078534f009eb926a8c3d2e60c87"
+    },
+    {
+      "path": "libexec/mafft/version",
+      "bytes": 67496,
+      "sha256": "c465020df90cc9a66eadbe529232c9d72df4e4e08e8a061e478bff8606105df5"
+    },
+    {
+      "path": "share/man/man1/mafft-homologs.1",
+      "bytes": 4550,
+      "sha256": "af8149827654a2db14de0f4104a58681548af261b48fa1c74870aa08c870a847"
+    },
+    {
+      "path": "share/man/man1/mafft.1",
+      "bytes": 14771,
+      "sha256": "319b30bf9cd7a1cd1e64848950b84196268c8208faf5fc90d0e9d5ffe9fa6875"
+    }
+  ],
+  "environment_overrides": {
+    "MAFFT_BINARIES": "unset for subprocess only",
+    "TMPDIR": "/home/darkstar90/lymescope-sparkprep/tools/mafft-7.525/tmp",
+    "MAFFT_TMPDIR": "/home/darkstar90/lymescope-sparkprep/tools/mafft-7.525/tmp"
+  },
+  "no_global_environment_changes": true
+}

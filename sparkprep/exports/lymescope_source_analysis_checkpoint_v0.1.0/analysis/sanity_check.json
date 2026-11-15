@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/home/darkstar90/lymescope-sparkprep/tools/mafft-7.525/bin/mafft",
+    "--amino",
+    "--localpair",
+    "--maxiterate",
+    "1000",
+    "--thread",
+    "1",
+    "--inputorder",
+    "/home/darkstar90/lymescope-sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/sanity_input.fasta"
+  ],
+  "returncode": 0,
+  "passed": true,
+  "identical_sequence_fixture": "3 sequences, 20 standard amino acids each; identifiers and exact sequences preserved",
+  "input_sha256": "fb69bcfc6ba9c73e2798058b24f98bf9b74123c9be96fa8aa61c5e3c7376f62c",
+  "output_sha256": "fb69bcfc6ba9c73e2798058b24f98bf9b74123c9be96fa8aa61c5e3c7376f62c"
+}
