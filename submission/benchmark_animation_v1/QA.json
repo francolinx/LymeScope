@@ -1,0 +1,113 @@
+{
+  "schema": "lymescope.animation_publication_review.v1",
+  "status": "PASS",
+  "reviewed_at_utc": "2026-11-15T18:12:45.136321+00:00",
+  "base_commit": "2da74ca9f788b48d0de8556d39c91071a74c7e07",
+  "original_animation_commit": "1d4f91ebeee9dfd2ff8459243e68210a5a45236b",
+  "original_review_sha256": "f7131184ee9eba7f0ef193abcfc1e9f81d31b6f2f7e9e5a8d0395c9ff22a7d42",
+  "frame_checks": {
+    "dimensions": [
+      1600,
+      900
+    ],
+    "decoded_unique_frames": 30,
+    "duration_ms": 10840,
+    "durations_ms": [
+      2400,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      6200
+    ],
+    "loop": 0,
+    "gif_bytes": 237435,
+    "fixed_timing_panel_variants": 1,
+    "png_integrity": "PASS",
+    "regenerated": false
+  },
+  "preservation": {
+    "current_readme_preserved_verbatim_around_insertion": true,
+    "original_six_gif_elements_and_bytes_unchanged": true,
+    "inline_gif_count": 7,
+    "new_image_outside_details": true,
+    "newer_8_3_percent_confirmation_and_limitations_unchanged": true,
+    "all_existing_non_readme_files_unchanged": true,
+    "protected_branches_unchanged": true,
+    "no_new_scientific_jobs": true
+  },
+  "source_checks": "First exploratory asset data matches the current published receipt. Original and fresh confirmation figures/ratio verified against their separate unchanged receipts.",
+  "security_review": "PASS: scoped animation assets, generator/provenance and additive README only; secret, private-path, private-IP and raw-host-field scans clear; no weights, private transcripts or unrelated files.",
+  "browser_rendering": {
+    "desktop": "UNVERIFIED",
+    "mobile": "UNVERIFIED",
+    "reason": "Supported browser access timed out; GitHub-rendered Markdown/API and raw-asset checks used instead."
+  },
+  "publication_authorization": "Explicit project-lead authorization; organizer receipt is not a prerequisite. This GitHub release is not an organizer submission.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 36346,
+      "sha256": "0c47e8676474413b4bbe40532b29ba1b6ebbe643c4e1c803961436f2daaf275a"
+    },
+    {
+      "path": "demo/benchmark-comparison-v1/benchmark-comparison.gif",
+      "bytes": 237435,
+      "sha256": "0cec8aeda7c8d37e54f906c8dbacf9a6f77c7047afeac2959c99c116e3af47ac"
+    },
+    {
+      "path": "demo/benchmark-comparison-v1/benchmark-comparison.png",
+      "bytes": 292449,
+      "sha256": "67adfa9774437293b4486e889c9c695a11d77ca0aa21b3576a42b4567fc97e46"
+    },
+    {
+      "path": "submission/benchmark_animation_v1/EXPLORATORY_RESULT.json",
+      "bytes": 3229,
+      "sha256": "2017978dce330260d1fa4e4a958eee7555869c82019935c6dc9d6b4a14d53ed8"
+    },
+    {
+      "path": "submission/benchmark_animation_v1/PROVENANCE.json",
+      "bytes": 2751,
+      "sha256": "c5107556ffbf5cf1e4058790ca3d0479491d908ebf6a40996fd83d69d91916c2"
+    },
+    {
+      "path": "submission/benchmark_animation_v1/build_animation.py",
+      "bytes": 8291,
+      "sha256": "23b90bbc50c73403d6b0ff43a3b1c20c0e2e42e5a808dfcee51c91c78ff8a6d5"
+    }
+  ],
+  "github_rendered_markdown_prepublication": {
+    "github_markdown_api": "PASS",
+    "rendered_inline_gif_count": 7,
+    "new_gif_details_depth": 0,
+    "relative_paths_checked": 63,
+    "missing_relative_paths": [],
+    "desktop_visual": "UNVERIFIED: browser unavailable",
+    "mobile_visual": "UNVERIFIED: browser unavailable",
+    "rendered_html_sha256": "2a50805c1adf56fe2f5734dfc7c6f5ce7a27b68f96bb1fa53b624eca5e9977fc"
+  }
+}

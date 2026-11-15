@@ -1,0 +1,63 @@
+{
+  "schema": "lymescope.benchmark_animation.v1",
+  "base_commit": "6ad4bb776a1f0a89132f465fd6f63ecff93c73a2",
+  "dimensions": [
+    1600,
+    900
+  ],
+  "aspect_ratio": "16:9",
+  "loop_duration_ms": 10840,
+  "original": {
+    "Spark29_masks": 3156,
+    "Spark30_masks": 3149,
+    "coordinator_s": 67.98228979600026
+  },
+  "exploratory": {
+    "Spark29_masks": 1691,
+    "Spark30_masks": 4614,
+    "coordinator_s": 51.95236732900048
+  },
+  "single_node_coordinator_s": 52.11052724599904,
+  "coordinator_time_reduction_percent": 23.57955655083407,
+  "total_tasks": 6305,
+  "max_absolute_error_nats": 0,
+  "max_relative_error": 0,
+  "source_workflows": {
+    "original": "79319e56-f368-4eba-8cae-7c646737b9fc",
+    "exploratory": "3f511bf2-b3b7-4346-b5d8-9a56cef5fc53"
+  },
+  "sources": [
+    {
+      "path": "submission/venue_secondnode_v1/RESULT.json",
+      "sha256": "05aa47a6d52fb4aa58de01de02147ecf366e107b2f04c67fa8064585183b1523"
+    },
+    {
+      "path": "submission/benchmark_animation_v1/EXPLORATORY_RESULT.json",
+      "sha256": "2017978dce330260d1fa4e4a958eee7555869c82019935c6dc9d6b4a14d53ed8"
+    }
+  ],
+  "animation_semantics": "Only the allocation boundary moves. Intermediate widths illustrate reassignment, not observed intermediate partitions or telemetry. Recorded endpoint masks are printed only at actual recorded allocations. Coordinator bars remain fixed across every frame.",
+  "limitations": [
+    "One post-hoc exploratory trial chosen after the original run; no repeated timing uncertainty estimate.",
+    "Near parity with single node, not established acceleration.",
+    "Prepared-input phases exclude common setup and final export; no whole-workflow speedup.",
+    "Exploratory trial added a diagnostic sampler; no causal attribution to scheduling alone."
+  ],
+  "assets": [
+    {
+      "path": "demo/benchmark-comparison-v1/benchmark-comparison.gif",
+      "bytes": 237435,
+      "sha256": "0cec8aeda7c8d37e54f906c8dbacf9a6f77c7047afeac2959c99c116e3af47ac"
+    },
+    {
+      "path": "demo/benchmark-comparison-v1/benchmark-comparison.png",
+      "bytes": 292449,
+      "sha256": "67adfa9774437293b4486e889c9c695a11d77ca0aa21b3576a42b4567fc97e46"
+    }
+  ],
+  "original_animation_commit": "1d4f91ebeee9dfd2ff8459243e68210a5a45236b",
+  "publication_base_commit": "2da74ca9f788b48d0de8556d39c91071a74c7e07",
+  "reapplication": "Original GIF/PNG and generator reused byte-for-byte. README insertion alone added to the current main README. First exploratory and fresh confirmation pairs explicitly separated; no animation regenerated.",
+  "current_published_first_exploratory_receipt": "submission/venue_frontier_v1/RESULT.json",
+  "current_published_confirmation_receipt": "submission/venue_confirmation_v1/RESULT.json"
+}

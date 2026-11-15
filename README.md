@@ -37,6 +37,18 @@ All **25 exported artifacts** passed independent hash/readback verification. **V
 
 [Sanitized event report](submission/venue_secondnode_v1/SPRINT_RESULT.md) · [Exact acceptance data](submission/venue_secondnode_v1/RESULT.json) · [Completed workflow receipt](submission/venue_secondnode_v1/WORKFLOW_RECEIPT.json) · [Readback and publication provenance](submission/venue_secondnode_v1/PUBLICATION_PROVENANCE.json) · [Completed demo insert](submission/venue_secondnode_v1/DEMO_INSERT.md) · [Offline display with timing bars (HTML source)](demo/venue-secondnode-v1/index.html). The HTML runs from a local checkout; this link is not a hosted web app. This release covers only workflow `79319e56-f368-4eba-8cae-7c646737b9fc` and its preserved pilot evidence, not subsequent optimization.
 
+### Watch the two-node optimization
+
+**The animation shows the first exploratory experiment, not the newer confirmation pair.**
+
+![Animated comparison of equal-count and throughput-informed workload distribution across two NVIDIA GB10 nodes](demo/benchmark-comparison-v1/benchmark-comparison.gif)
+
+**First experiment (shown):** Spark29/Spark30 work changed from **3,156 / 3,149** to **1,691 / 4,614 masks**. Coordinator time fell from **67.982 to 51.952 s: 23.6% shorter**, near parity with its **52.111 s single-node reference**, not demonstrated single-node acceleration. The split was selected after the original run. All **6,305 scientific scores matched exactly**, with zero numerical deviation. Only the allocation transition is illustrative; measured timing bars stay fixed.
+
+**Newer confirmation (reported separately below):** **54.568 s single node versus 50.039 s optimized two nodes**, **8.3% shorter / approximately 1.091×** in one preliminary comparison pair. Both comparisons concern prepared-input coordinator phases, excluding common staging and final export; no full cold-launch speedup was established.
+
+[Static PNG fallback](demo/benchmark-comparison-v1/benchmark-comparison.png) · [First exploratory receipt](submission/venue_frontier_v1/RESULT.json) · [Fresh confirmation and limitations](submission/venue_confirmation_v1/FINAL_CONFIRMATION.md) · [Animation provenance](submission/benchmark_animation_v1/PROVENANCE.json).
+
 ## Separate exploratory workload-placement result
 
 After the original negative-scaling result above, one post-hoc whole-sequence reassignment preserved the same 6,305 natural tasks, pinned model, batch 8 and float32/eager method. All scores again matched the frozen reference and original event single-node output with zero maximum absolute and relative deviation.

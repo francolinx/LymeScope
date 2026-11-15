@@ -1,0 +1,75 @@
+{
+  "schema": "lymescope.frontier.local_acceptance.v1",
+  "status": "PASS",
+  "recorded_at_utc": "2026-11-15T17:11:05.194063+00:00",
+  "workflow_id": "3f511bf2-b3b7-4346-b5d8-9a56cef5fc53",
+  "post_hoc_exploratory": true,
+  "checks": {
+    "merged_vs_frozen": {
+      "status": "PASS",
+      "tasks": 6305,
+      "max_absolute_error_nats": 0.0,
+      "max_relative_error": 0.0
+    },
+    "merged_vs_original_single": {
+      "status": "PASS",
+      "tasks": 6305,
+      "max_absolute_error_nats": 0.0,
+      "max_relative_error": 0.0
+    }
+  },
+  "exact_tasks": 6305,
+  "duplicates": 0,
+  "missing": 0,
+  "scoring_calls": 805,
+  "shards": {
+    "Spark29": {
+      "masks": 1691,
+      "scoring_calls": 216,
+      "warm_scoring_s": 22.70720556699962,
+      "model_load_and_cuda_transfer_s": 2.4986224329986726,
+      "process_wall_s": 31.7007235279998,
+      "peak_gpu_allocated_bytes": 138363392,
+      "peak_gpu_reserved_bytes": 249561088,
+      "process_max_rss_bytes": 1547268096
+    },
+    "Spark30": {
+      "masks": 4614,
+      "scoring_calls": 589,
+      "warm_scoring_s": 22.87061741800062,
+      "model_load_and_cuda_transfer_s": 2.3902359570001863,
+      "process_wall_s": 32.11026545399909,
+      "peak_gpu_allocated_bytes": 137579008,
+      "peak_gpu_reserved_bytes": 186646528,
+      "process_max_rss_bytes": 1548488704
+    }
+  },
+  "scoring_overlap_s": 22.70728349685669,
+  "warm_max_s": 22.87061741800062,
+  "coordinator_s": 51.95236732900048,
+  "original_single_coordinator_s": 52.11052724599904,
+  "original_equal_count_coordinator_s": 67.98228979600026,
+  "coordinator_improvement_vs_original_two_percent": 23.57955655083407,
+  "coordinator_speedup_vs_original_two": 1.3085503758757817,
+  "coordinator_improvement_vs_single_percent": 0.3035085717938091,
+  "coordinator_speedup_vs_single": 1.0030443255068047,
+  "warm_improvement_vs_original_two_percent": 46.05636680758261,
+  "warm_speedup_vs_single": 1.321522302638496,
+  "full_workflow_s": 128.642661,
+  "scope": "Prepared-input coordinator phases; common runtime/model setup and final object export excluded. Whole-workflow speedup not measured.",
+  "cautions": [
+    "One post-hoc exploratory trial; no repeated timing uncertainty estimate.",
+    "About 1 Hz diagnostic sampler only present in exploratory trial.",
+    "Historical asymmetry root cause UNRESOLVED; no causal attribution to scheduling, clocks, power or contention.",
+    "0.3% prepared-phase difference versus single node is near parity, not established acceleration.",
+    "Scoring interval overlap uses host UTC epochs; no independent clock calibration.",
+    "Subset TSV shard=0 refers to each adapter-selected whole-sequence set; assignment.json defines physical partitions."
+  ],
+  "assignment_provenance": {
+    "local_crlf_sha256": "7eadd000efafefe8a5839730ef16754b8d5ae23224fcf6973de8546cc6c582c8",
+    "executed_lf_sha256": "bc65b4c29ea0959e5df52fbbe8687c5c3c7893b741d3b3d4464097f79bc85547",
+    "difference": "CRLF versus LF only; JSON and normalized text identical"
+  },
+  "merged_sha256": "ea043d2df33841260d322caebe2a8939750f0df9818920653008b872ffbfee84",
+  "original_evidence_manifest_verified": true
+}
