@@ -8,6 +8,8 @@ EXP = 'sparkprep/experiments/stretch_v0.2.0_20261115T072916Z'
 FROZEN = 'sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0'
 SPARK_COMMIT = 'aafe818a20ea025370cf4b65145a9684e80aaaef'
 BASELINE_COMMIT = '8058846c05d4dccd60117dd29ef784af43570418'
+FRONTIER = 'sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z'
+FRONTIER_COMMIT = '82fb8b53018ba4012ccebf02a29efa87b892f6ed'
 
 
 def read(path):
@@ -22,6 +24,7 @@ def build():
     contacts = read(EXP+'/results/dimer_context_summary.json')
     sasa = next(x for x in adapter['calculated_sasa_method']['calculations'] if x['pdb_id']=='1GGQ' and x['sphere_points_per_atom']==1920)
     inventory = read('docs/frontier_v0.3.0/experimental-evidence.json')
+    frontier = read('demo/v0.2.0/context.json')['frontier_science']
     claims = []
 
     def add(identifier, assertion, level, paths, method, limitations, metrics=None, refs=(), status='VERIFIED_SAVED_EVIDENCE'):
@@ -29,7 +32,7 @@ def build():
         for path in paths:
             raw=(ROOT/path).read_bytes()
             sources.append({'path':path,'sha256':hashlib.sha256(raw).hexdigest(), 'bytes':len(raw),
-                            'commit':SPARK_COMMIT if path.startswith(EXP) else BASELINE_COMMIT if path.startswith(FROZEN) else None})
+                            'commit':SPARK_COMMIT if path.startswith(EXP) else FRONTIER_COMMIT if path.startswith(FRONTIER) else BASELINE_COMMIT if path.startswith(FROZEN) else None})
         claims.append({'claim_id':identifier,'assertion':assertion,'evidence_level':level,'sources':sources,
                        'method':method,'run_id':'stretch_v0.2.0_20261115T072916Z/full_panel_v1' if level=='PERSONAL_SPARK_COMPUTATION' else None,
                        'primary_references':list(refs),'interpretation_limitations':limitations,
@@ -77,16 +80,20 @@ def build():
     add('C14','The matched event scientific one-node/two-node comparison is prepared but NOT RUN.','PLANNED_WORKFLOW',['workflows/ospc-spark-v0.2.1/trial.HOLD.json'],
         'Spark30 all tasks, then concurrent Spark29/Spark30 shards; identical batch-8 protocol.','Authorization, staging, runtime, placement and venue pilots are gates. No measured speedup.',
         {'one_node_masks':6305,'two_node_masks':[3156,3149],'one_node_calls':805,'two_node_calls':[403,402],'speedup':None},status='NOT_RUN')
-    add('C15','Published B11/9BIF, B5/7UIJ and the 8C1 study supply independent experimental context; no antibody residue overlay is yet imported.','PUBLISHED_EXPERIMENTAL_CONTEXT',['docs/frontier_v0.3.0/experimental-evidence.json'],
-        'Official PDB metadata and primary paper records checked; educational source card only.','Published numbering requires validated chain/sequence/alignment mapping. Homodimer contacts are not antibody contacts.',
+    add('C15','Exact experimental mappings identify 31/152 eligible B11 contacts and 25/152 eligible B5 contacts in separate site sets; 8C1 remains literature-region evidence only.','COMPUTED_EXPERIMENTAL_ANTIBODY_CONTACTS',[FRONTIER+'/results/FRONTIER_EVIDENCE.json',FRONTIER+'/EXPERIMENTAL_MAPPING.tsv'],
+        'Deposited assembly 1; exact Q07337 construct mapping; observed Fab/OspC heavy-atom distance <=4.5 angstroms; two complete antigen copies for strict labels.','Observed construct contacts (32 B11, 27 B5) differ from strict eligible counts. Missing Fab loops limit negative labels. Homodimer contacts and SASA are distinct; 8C1 contacts remain null.',
         {'mapping_status':inventory['mapping_status'],'mapped_contact_positions':inventory['mapped_antibody_contact_positions']},
-        refs=[s['primary_reference'] for s in inventory['sources']],status='SOURCE_VERIFIED_MAPPING_PENDING')
+        refs=[s['primary_reference'] for s in inventory['sources']])
     add('C16','The animations use saved alignment/coordinates and rigid camera motion; they are not new predicted structures or dynamics.','PRESENTATION_OF_SAVED_EVIDENCE',['demo/v0.2.0/assets/manifest.json'],
         'Original Pillow/NumPy renders, static alternatives, source hashes and decoded-frame checks.','The legacy dimer amber color is a separate 8 Å Cα proxy (49 residues/chain), not the 4.5 Å heavy-atom field. Browser playback requires its own check.')
     add('C17','The published personal-Spark experiment reports sixteen passing tests and an independent full-result arithmetic audit.','PUBLISHED_VALIDATION',[EXP+'/provenance/tests_full_release.log',EXP+'/results/full_panel_validation.json'],
         'Saved runtime test receipt plus independent CSV arithmetic, task identity and mapping checks.','Laptop offline fixtures do not validate new real-model inference; local runtime limitations are reported separately.',{'published_tests_passed':16})
+    add('C18','Adding signed discordance worsens primary B11 blocked Brier error from 0.168634 to 0.174022 (+0.005388); AUROC changes 0.620634 to 0.616369.','NEGATIVE_PREDECLARED_DIAGNOSTIC',[FRONTIER+'/EXPERIMENT_QUESTION.md',FRONTIER+'/results/COMPARISON_METRICS.tsv',FRONTIER+'/ANALYSIS_RESULTS.json'],
+        'B2 agreement + reference amino-acid identity + unbound geometry versus B3 adding frozen signed discordance. Eight contiguous held-region blocks with five-column guards; fixed ridge penalty. Reused 6,305 masked scores; zero new inference.',
+        'No demonstrated incremental predictive value. One correlated antigen/reference; no external functional validation, independent-site significance, new epitope or protection claim. Small exploratory mean-NLL-added difference does not establish new biology.',
+        {'primary_summary':frontier['primary_summary'],'B2':frontier['primary_metrics']['B2'],'B3':frontier['primary_metrics']['B3'],'additional_model_calls':0})
     document={'schema':'lymescope.claim_index.v1','publication_scope':'feature/ospc-masked-scoring-v0.2.0',
-              'scientific_source_commit':SPARK_COMMIT,'baseline_commit':BASELINE_COMMIT,'claims':claims,
+              'scientific_source_commit':SPARK_COMMIT,'frontier_source_commit':FRONTIER_COMMIT,'baseline_commit':BASELINE_COMMIT,'claims':claims,
               'rule':'Every claim identifies measurement level, source bytes, method and limits. Pending work is not a result.'}
     (ROOT/'docs/claim-index.json').write_text(json.dumps(document,indent=2,ensure_ascii=False,allow_nan=False)+'\n',encoding='utf-8',newline='\n')
     md=['# LymeScope claim index','','Machine-readable companion: [claim-index.json](claim-index.json). Generated from saved evidence; no new inference.','']

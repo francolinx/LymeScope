@@ -2,6 +2,7 @@
   "schema": "lymescope.claim_index.v1",
   "publication_scope": "feature/ospc-masked-scoring-v0.2.0",
   "scientific_source_commit": "aafe818a20ea025370cf4b65145a9684e80aaaef",
+  "frontier_source_commit": "82fb8b53018ba4012ccebf02a29efa87b892f6ed",
   "baseline_commit": "8058846c05d4dccd60117dd29ef784af43570418",
   "claims": [
     {
@@ -525,28 +526,46 @@
     },
     {
       "claim_id": "C15",
-      "assertion": "Published B11/9BIF, B5/7UIJ and the 8C1 study supply independent experimental context; no antibody residue overlay is yet imported.",
-      "evidence_level": "PUBLISHED_EXPERIMENTAL_CONTEXT",
+      "assertion": "Exact experimental mappings identify 31/152 eligible B11 contacts and 25/152 eligible B5 contacts in separate site sets; 8C1 remains literature-region evidence only.",
+      "evidence_level": "COMPUTED_EXPERIMENTAL_ANTIBODY_CONTACTS",
       "sources": [
         {
-          "path": "docs/frontier_v0.3.0/experimental-evidence.json",
-          "sha256": "517479305fe353d8c054b6729f121b133910f5d338fd7bdb0fdb3a269cf605ca",
-          "bytes": 3304,
-          "commit": null
+          "path": "sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/results/FRONTIER_EVIDENCE.json",
+          "sha256": "546a7ec9f03340009818aeaaf94b0a7dd8156be287f12831dd442ed80a774673",
+          "bytes": 1758450,
+          "commit": "82fb8b53018ba4012ccebf02a29efa87b892f6ed"
+        },
+        {
+          "path": "sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/EXPERIMENTAL_MAPPING.tsv",
+          "sha256": "0981c54c9fa5008ff717c4f729348b04f5449676c1674739268d92deeaa0c95a",
+          "bytes": 84013,
+          "commit": "82fb8b53018ba4012ccebf02a29efa87b892f6ed"
         }
       ],
-      "method": "Official PDB metadata and primary paper records checked; educational source card only.",
+      "method": "Deposited assembly 1; exact Q07337 construct mapping; observed Fab/OspC heavy-atom distance <=4.5 angstroms; two complete antigen copies for strict labels.",
       "run_id": null,
       "primary_references": [
         "https://pubmed.ncbi.nlm.nih.gov/39240158/",
         "https://pubmed.ncbi.nlm.nih.gov/36976016/",
         "https://journals.asm.org/doi/10.1128/spectrum.02883-24"
       ],
-      "interpretation_limitations": "Published numbering requires validated chain/sequence/alignment mapping. Homodimer contacts are not antibody contacts.",
-      "verification_status": "SOURCE_VERIFIED_MAPPING_PENDING",
+      "interpretation_limitations": "Observed construct contacts (32 B11, 27 B5) differ from strict eligible counts. Missing Fab loops limit negative labels. Homodimer contacts and SASA are distinct; 8C1 contacts remain null.",
+      "verification_status": "VERIFIED_SAVED_EVIDENCE",
       "metrics": {
-        "mapping_status": "PENDING_SPARK_VALIDATION",
-        "mapped_contact_positions": null
+        "mapping_status": "IMPORTED_VERIFIED_EXPERIMENTAL_MAPPING",
+        "mapped_contact_positions": {
+          "9BIF": {
+            "eligible_contacts": 31,
+            "eligible_sites": 152,
+            "observed_construct_contacts": 32
+          },
+          "7UIJ": {
+            "eligible_contacts": 25,
+            "eligible_sites": 152,
+            "observed_construct_contacts": 27
+          },
+          "8C1": null
+        }
       }
     },
     {
@@ -593,6 +612,59 @@
       "verification_status": "VERIFIED_SAVED_EVIDENCE",
       "metrics": {
         "published_tests_passed": 16
+      }
+    },
+    {
+      "claim_id": "C18",
+      "assertion": "Adding signed discordance worsens primary B11 blocked Brier error from 0.168634 to 0.174022 (+0.005388); AUROC changes 0.620634 to 0.616369.",
+      "evidence_level": "NEGATIVE_PREDECLARED_DIAGNOSTIC",
+      "sources": [
+        {
+          "path": "sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/EXPERIMENT_QUESTION.md",
+          "sha256": "6c0102fa0a113d003b3186400ffbc77881f4b8ab8bfa07519a257f95f40cccbf",
+          "bytes": 6871,
+          "commit": "82fb8b53018ba4012ccebf02a29efa87b892f6ed"
+        },
+        {
+          "path": "sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/results/COMPARISON_METRICS.tsv",
+          "sha256": "d587d52659733b12b48c91ee899b90783f269c7057efb3e59460834a55bd9749",
+          "bytes": 4685,
+          "commit": "82fb8b53018ba4012ccebf02a29efa87b892f6ed"
+        },
+        {
+          "path": "sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/ANALYSIS_RESULTS.json",
+          "sha256": "ea8ac41f529dfcab15eb551a170aa87b333dda6a9a8c60de17b75d75cba30b1a",
+          "bytes": 853390,
+          "commit": "82fb8b53018ba4012ccebf02a29efa87b892f6ed"
+        }
+      ],
+      "method": "B2 agreement + reference amino-acid identity + unbound geometry versus B3 adding frozen signed discordance. Eight contiguous held-region blocks with five-column guards; fixed ridge penalty. Reused 6,305 masked scores; zero new inference.",
+      "run_id": null,
+      "primary_references": [],
+      "interpretation_limitations": "No demonstrated incremental predictive value. One correlated antigen/reference; no external functional validation, independent-site significance, new epitope or protection claim. Small exploratory mean-NLL-added difference does not establish new biology.",
+      "verification_status": "VERIFIED_SAVED_EVIDENCE",
+      "metrics": {
+        "primary_summary": {
+          "pdb_id": "9BIF",
+          "cutoff_A": 4.5,
+          "eligible_n": 152,
+          "contact_n": 31,
+          "noncontact_n": 121,
+          "status": "COMPLETED",
+          "model_status": "COMPLETED",
+          "primary_delta_oof_brier_B3_minus_B2": 0.005388327615887395,
+          "delta_oof_logloss_B3_minus_B2": 0.012384475092788505,
+          "delta_oof_auroc_B3_minus_B2": -0.004265529192215345
+        },
+        "B2": {
+          "brier": 0.1686336055872799,
+          "auroc": 0.620634497467342
+        },
+        "B3": {
+          "brier": 0.1740219332031673,
+          "auroc": 0.6163689682751267
+        },
+        "additional_model_calls": 0
       }
     }
   ],

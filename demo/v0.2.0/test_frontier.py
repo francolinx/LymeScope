@@ -13,8 +13,8 @@ DOCS=ROOT/'docs'
 class FrontierTests(unittest.TestCase):
     def test_claim_index_sources_are_exact_and_levels_explicit(self):
         claims=json.loads((DOCS/'claim-index.json').read_text(encoding='utf-8'))['claims']
-        self.assertEqual(len(claims),17)
-        self.assertEqual(len({c['claim_id'] for c in claims}),17)
+        self.assertEqual(len(claims),18)
+        self.assertEqual(len({c['claim_id'] for c in claims}),18)
         for c in claims:
             for key in ('assertion','evidence_level','method','interpretation_limitations','verification_status'):
                 self.assertTrue(c[key],(c['claim_id'],key))
@@ -29,11 +29,11 @@ class FrontierTests(unittest.TestCase):
 
     def test_no_unvalidated_antibody_labels(self):
         data=json.loads((DOCS/'frontier_v0.3.0/experimental-evidence.json').read_text(encoding='utf-8'))
-        self.assertEqual(data['mapping_status'],'PENDING_SPARK_VALIDATION')
-        self.assertIsNone(data['mapped_antibody_contact_positions'])
-        self.assertIsNone(data['antibody_contact_by_alignment_column'])
+        self.assertEqual(data['mapping_status'],'IMPORTED_VERIFIED_EXPERIMENTAL_MAPPING')
+        self.assertEqual(data['mapped_antibody_contact_positions']['9BIF']['eligible_contacts'],31)
+        self.assertIsNone(data['mapped_antibody_contact_positions']['8C1'])
         self.assertEqual([s['pdb_id'] for s in data['sources']],['9BIF','7UIJ',None])
-        self.assertTrue(all(s['lymescope_mapping']=='NOT_IMPORTED' for s in data['sources']))
+        self.assertEqual(data['sources'][-1]['lymescope_mapping'],'IMPORTED_LITERATURE_REGION_ONLY')
 
     def test_packaged_assets_match_original_bytes(self):
         m=json.loads((DOCS/'workbench-manifest.json').read_text())

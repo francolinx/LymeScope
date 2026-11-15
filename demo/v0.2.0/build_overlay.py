@@ -143,6 +143,8 @@ def write_overlay():
     data['spark_science'] = load_evidence(data)
     data['model_scoring'] = 'COMPLETED_PERSONAL_SPARK'
     data['experimental_evidence'] = json.loads((REPO / 'docs/frontier_v0.3.0/experimental-evidence.json').read_text(encoding='utf-8'))
+    from frontier_adapter import load_evidence as load_frontier
+    data['frontier_science'] = load_frontier(data['spark_science']['evidence']['columns'])
     # Only this versioned demo layer is generated; no frozen file is written.
     (HERE / "context.json").write_text(json.dumps(data, indent=2, allow_nan=False) + "\n", encoding="utf-8", newline="\n")
     embedded = json.dumps(data, ensure_ascii=False, allow_nan=False).replace("<", "\\u003c")

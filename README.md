@@ -25,7 +25,7 @@ git clone --branch feature/ospc-masked-scoring-v0.2.0 https://github.com/francol
 | **1 · The coverage trap** | Column 154: 100% modal agreement, **1/30** observations | One observation cannot support broad conservation |
 | **2 · The model disagreement** | Column 177: G:30, NLL **4.01135**; column 129: mixed residues, NLL **1.54783** | NLL measures conditional predictability, not conservation or immunogenicity |
 | **3 · The homodimer** | Experimental 1GGQ A/B; verified contacts and separate calculated SASA | Static geometry is not physiological antibody accessibility |
-| **4 · What experiments add** | Published B11/9BIF, B5/7UIJ and 8C1 evidence | Antibody mapping stays pending until independently validated |
+| **4 · What experiments add** | Verified B11 footprint and a **negative** predeclared diagnostic; supporting B5 context | No incremental predictive value demonstrated; 8C1 remains literature-only |
 
 [C03](docs/claim-index.md#c03) · [C08](docs/claim-index.md#c08) · [C09–C12](docs/claim-index.md#c09) · [Independent evidence C15](docs/claim-index.md#c15)
 
@@ -93,14 +93,25 @@ The morning trial reuses the exact batch-8 scorer and existing six-file model ca
 - **Start here:** [claim index](docs/claim-index.md) / [machine-readable JSON](docs/claim-index.json), [methods and limits](sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/SCIENCE_FINDINGS.md), [raw 6,305 scores](sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_v1/residue_nll.tsv).
 - **Exact source:** personal-Spark commit [`aafe818a20ea025370cf4b65145a9684e80aaaef`](https://github.com/francolinx/LymeScope/commit/aafe818a20ea025370cf4b65145a9684e80aaaef); frozen baseline `8058846c05d4dccd60117dd29ef784af43570418`. Raw-score SHA256: `b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f`.
 - **Model:** `facebook/esm2_t6_8M_UR50D`, revision `c731040fcd8d73dceaa04b0a8e6329b345b0f5df`; eval/inference, float32, eager attention, full-vocabulary log-softmax. Full natural sequences, with exact accession/position/sequence-hash provenance. [C06](docs/claim-index.md#c06).
-- **Validation:** [published 16-test Spark receipt](sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/provenance/tests_full_release.log), [laptop integration checks](submission/spark-integration-validation.json), [frontier sprint checks](submission/frontier-validation.json). Offline fixtures are distinct from actual inference; browser rendering is not inferred from tests.
+- **Validation:** [published 16-test Spark receipt](sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/provenance/tests_full_release.log), [laptop integration checks](submission/spark-integration-validation.json), [historical frontier sprint checks](submission/frontier-validation.json), [current optional science import: 59 passing Python tests and both offline UI copies](submission/frontier-science-integration-validation.json). Offline fixtures are distinct from actual inference; browser rendering is not inferred from tests.
 - **Attribution:** [primary sources and terms](submission/SOURCE_REFERENCES.md). No project license is invented; public visibility does not grant redistribution rights to third-party material.
 
-## The next falsifiable question
+## A hypothesis tested — and not supported
 
-Does disagreement between empirical agreement and model predictability add information about **experimentally observed antibody-interaction regions**, beyond amino-acid identity, ordinary conservation and structural geometry? The next comparison must preserve construct coverage, map numbering explicitly, distinguish antibody contacts from homodimer contacts, and retain negative or inconclusive outcomes. [B11 / 9BIF](https://www.rcsb.org/structure/9BIF) · [B5 / 7UIJ](https://www.rcsb.org/structure/7UIJ) · [8C1 primary study](https://doi.org/10.1128/spectrum.02883-24)
+Does agreement–predictability discordance add information about **experimentally observed antibody contacts**, beyond agreement, reference amino-acid identity and unbound structural geometry? The optional personal-Spark sprint tested this predeclared question using the existing scores and exact experimental-complex mappings. **Adding signed discordance did not improve the primary B11 diagnostic.** [Evidence C18](docs/claim-index.md#c18)
 
-The educational evidence card is source-verified; a new residue-level antibody overlay is **pending validated Spark output**. No sequence design, clinical recommendation or immune-protection prediction is delivered here. [C15](docs/claim-index.md#c15)
+![Original frontier figure: real experimental antibody footprint and a negative added-discordance diagnostic.](sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/results/FRONTIER_EXPERIMENT.png)
+
+| Primary B11 comparison · 152 eligible sites | Blocked Brier (lower is better) | AUROC |
+|---|---:|---:|
+| Agreement + amino-acid identity + geometry | 0.168634 | 0.620634 |
+| Same baseline + signed discordance | 0.174022 | 0.616369 |
+
+**Brier error worsened by +0.005388.** These are correlated sites in one selected antigen/reference, evaluated with eight held-region blocks and five-column guards, not external functional validation. The figure also retains a small exploratory mean-NLL-added difference; it does not establish a biological advance or overturn the primary negative result. No new inference occurred. [Exact result](sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/RESULT_SUMMARY.md) · [Methods and limitations](sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/METHODS_AND_LIMITATIONS.md)
+
+Story 4 exposes **31 eligible B11 contacts / 152 sites** in 9BIF and supporting **25 / 152** B5 contacts in 7UIJ's own eligible set. Whole-construct observed counts are 32 and 27 respectively. The **8C1 HDX region is literature-derived**, with null atomic-contact labels. Antibody contacts, homodimer contacts and calculated SASA stay separate; missing coordinates remain unknown. These are pre-existing experimental structures, not AI-generated folds, and no new antibody target or protection claim is made. [C15](docs/claim-index.md#c15) · [Original SVG](sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/results/FRONTIER_EXPERIMENT.svg)
+
+Pinned frontier source: [`82fb8b53018ba4012ccebf02a29efa87b892f6ed`](https://github.com/francolinx/LymeScope/commit/82fb8b53018ba4012ccebf02a29efa87b892f6ed). The next research step would require separately justified data or an external validation design; this negative diagnostic is retained in full. The v0.2.1 masked-scoring result and venue contract are unchanged.
 
 **Submission:** [one-page summary](submission/ONE_PAGER.md) · [five-minute demo](submission/DEMO_SCRIPT.md) · [checklist](submission/SUBMISSION_CHECKLIST.md). November 15: research cutoff **10:30 AM Central**, submission **noon**, live demo **1:00 PM**. The completed personal-Spark result and offline fallback do not depend on a venue GPU run.
 

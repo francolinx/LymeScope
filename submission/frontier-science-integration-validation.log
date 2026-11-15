@@ -1,0 +1,83 @@
+Published frontier suite
+test_all_official_source_hashes (test_frontier.MappingTests.test_all_official_source_hashes) ... ok
+test_all_reused_input_bytes (test_frontier.MappingTests.test_all_reused_input_bytes) ... ok
+test_alternate_selection_fixture (test_frontier.MappingTests.test_alternate_selection_fixture) ... ok
+test_contact_types_are_distinct (test_frontier.MappingTests.test_contact_types_are_distinct) ... ok
+test_coordinate_derived_distance_audit (test_frontier.MappingTests.test_coordinate_derived_distance_audit) ... ok
+test_depositor_unobserved_records_match (test_frontier.MappingTests.test_depositor_unobserved_records_match) ... ok
+test_exact_natural_construct_both_complexes (test_frontier.MappingTests.test_exact_natural_construct_both_complexes) ... ok
+test_expected_canonical_heavy_atoms (test_frontier.MappingTests.test_expected_canonical_heavy_atoms) ... ok
+test_label_author_namespaces (test_frontier.MappingTests.test_label_author_namespaces) ... ok
+test_literature_region_is_not_contacts (test_frontier.MappingTests.test_literature_region_is_not_contacts) ... ok
+test_missing_labels_not_negative_labels (test_frontier.MappingTests.test_missing_labels_not_negative_labels) ... ok
+test_no_antigen_atoms_count_as_Fab (test_frontier.MappingTests.test_no_antigen_atoms_count_as_Fab) ... ok
+test_predeclaration_immutable (test_frontier.MappingTests.test_predeclaration_immutable) ... ok
+test_reference_rejects_other_real_natural_sequence (test_frontier.MappingTests.test_reference_rejects_other_real_natural_sequence) ... ok
+test_strict_site_counts (test_frontier.MappingTests.test_strict_site_counts) ... ok
+test_typed_adapter_nulls (test_frontier.MappingTests.test_typed_adapter_nulls) ... ok
+test_AUC_known_orders_and_ties (test_frontier.NumericalTests.test_AUC_known_orders_and_ties) ... ok
+test_fold_assignments_and_guards (test_frontier.NumericalTests.test_fold_assignments_and_guards) ... ok
+test_independent_optimizers_agree (test_frontier.NumericalTests.test_independent_optimizers_agree) ... ok
+test_intercept_MLE (test_frontier.NumericalTests.test_intercept_MLE) ... ok
+test_metrics_analytical_constant (test_frontier.NumericalTests.test_metrics_analytical_constant) ... ok
+test_numeric_fallback_preserves_fixed_objective (test_frontier.NumericalTests.test_numeric_fallback_preserves_fixed_objective) ... ok
+test_primary_effect_recomputed_from_OOF (test_frontier.NumericalTests.test_primary_effect_recomputed_from_OOF) ... ok
+test_primary_unchanged_after_secondary_solver_recovery (test_frontier.NumericalTests.test_primary_unchanged_after_secondary_solver_recovery) ... ok
+test_single_class_fails_explicitly (test_frontier.NumericalTests.test_single_class_fails_explicitly) ... ok
+test_training_only_standardization (test_frontier.NumericalTests.test_training_only_standardization) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 3.279s
+
+OK
+
+Laptop integration suite
+test_imported_negative_result_matches_original_metric_table (test_frontier_adapter.FrontierAdapterTests.test_imported_negative_result_matches_original_metric_table) ... ok
+test_literature_region_cannot_be_promoted_to_contacts (test_frontier_adapter.FrontierAdapterTests.test_literature_region_cannot_be_promoted_to_contacts) ... ok
+test_observed_contact_and_strict_eligibility_remain_separate (test_frontier_adapter.FrontierAdapterTests.test_observed_contact_and_strict_eligibility_remain_separate) ... ok
+test_reject_cross_complex_namespace_and_duplicate_column (test_frontier_adapter.FrontierAdapterTests.test_reject_cross_complex_namespace_and_duplicate_column) ... ok
+test_reject_positive_relabeling_of_primary_result (test_frontier_adapter.FrontierAdapterTests.test_reject_positive_relabeling_of_primary_result) ... ok
+test_reject_reused_nll_or_geometry_changes (test_frontier_adapter.FrontierAdapterTests.test_reject_reused_nll_or_geometry_changes) ... ok
+test_reject_unknown_converted_to_false (test_frontier_adapter.FrontierAdapterTests.test_reject_unknown_converted_to_false) ... ok
+test_assembly_validation_precedes_proxy (test_overlay.OverlayTests.test_assembly_validation_precedes_proxy) ... ok
+test_cleavage_is_annotated_not_a_sequence_deletion (test_overlay.OverlayTests.test_cleavage_is_annotated_not_a_sequence_deletion) ... ok
+test_generated_data_matches_builder_and_published_spark_adapter (test_overlay.OverlayTests.test_generated_data_matches_builder_and_published_spark_adapter) ... ok
+test_low_coverage_columns_never_gain_coordinates (test_overlay.OverlayTests.test_low_coverage_columns_never_gain_coordinates) ... ok
+test_population_sets_are_distinct (test_overlay.OverlayTests.test_population_sets_are_distinct) ... ok
+test_proxy_is_defined_only_on_observed_primary_coordinates (test_overlay.OverlayTests.test_proxy_is_defined_only_on_observed_primary_coordinates) ... ok
+test_secondary_reference_numbering_and_provenance (test_overlay.OverlayTests.test_secondary_reference_numbering_and_provenance) ... ok
+test_illustrative_values_and_sensitivity_match_saved_results (test_spark_adapter.SparkAdapterTests.test_illustrative_values_and_sensitivity_match_saved_results) ... ok
+test_published_counts_and_current_aggregate (test_spark_adapter.SparkAdapterTests.test_published_counts_and_current_aggregate) ... ok
+test_reject_incomplete_column_ranking (test_spark_adapter.SparkAdapterTests.test_reject_incomplete_column_ranking) ... ok
+test_reject_loss_of_null_semantics (test_spark_adapter.SparkAdapterTests.test_reject_loss_of_null_semantics) ... ok
+test_reject_superseded_aggregate (test_spark_adapter.SparkAdapterTests.test_reject_superseded_aggregate) ... ok
+test_reject_unbatched_call_estimate (test_spark_adapter.SparkAdapterTests.test_reject_unbatched_call_estimate) ... ok
+test_rendered_payload_preserves_source_columns (test_spark_adapter.SparkAdapterTests.test_rendered_payload_preserves_source_columns) ... ok
+test_unknown_is_not_false_or_zero (test_spark_adapter.SparkAdapterTests.test_unknown_is_not_false_or_zero) ... ok
+test_claim_index_sources_are_exact_and_levels_explicit (test_frontier.FrontierTests.test_claim_index_sources_are_exact_and_levels_explicit) ... ok
+test_no_unvalidated_antibody_labels (test_frontier.FrontierTests.test_no_unvalidated_antibody_labels) ... ok
+test_package_local_links_and_media (test_frontier.FrontierTests.test_package_local_links_and_media) ... ok
+test_packaged_assets_match_original_bytes (test_frontier.FrontierTests.test_packaged_assets_match_original_bytes) ... ok
+test_packaged_embedded_data_are_identical (test_frontier.FrontierTests.test_packaged_embedded_data_are_identical) ... ok
+test_three_original_readme_animations_have_static_alternatives (test_frontier.FrontierTests.test_three_original_readme_animations_have_static_alternatives) ... ok
+test_all_document_and_demo_relative_links_resolve (test_presentation.PresentationTests.test_all_document_and_demo_relative_links_resolve) ... ok
+test_scientific_asset_claims_match_saved_context (test_presentation.PresentationTests.test_scientific_asset_claims_match_saved_context) ... ok
+test_six_actual_looping_gifs_and_static_alternatives (test_presentation.PresentationTests.test_six_actual_looping_gifs_and_static_alternatives) ... ok
+test_static_first_demo_and_required_submission_files (test_presentation.PresentationTests.test_static_first_demo_and_required_submission_files) ... ok
+test_timeline_is_accessible_and_sourced (test_presentation.PresentationTests.test_timeline_is_accessible_and_sourced) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 1.839s
+
+OK
+
+UI controls (source and package); targeted stale-label search
+PASS: offline UI handlers, all 218 saved NLLs, 30 sequence rows, null/false/zero, navigation and reference switching. Browser rendering NOT tested.
+PASS: four stories, negative frontier metrics, 31 eligible B11 contact controls, all 218 contact states and eligibility, literature-only nulls, static-first dimer and navigation. Browser rendering NOT tested.
+PASS: offline UI handlers, all 218 saved NLLs, 30 sequence rows, null/false/zero, navigation and reference switching. Browser rendering NOT tested.
+PASS: four stories, negative frontier metrics, 31 eligible B11 contact controls, all 218 contact states and eligibility, literature-only nulls, static-first dimer and navigation. Browser rendering NOT tested.
+demo/v0.2.0/README.md:5:The Frontier extension reuses this application: `guided.html`/`guided.js` add four saved-evidence stories, not a second scientific implementation. Coverage, 177/129 model disagreement, the observed homodimer, and source-verified antibody evidence remain separate. Antibody contact mapping is explicitly pending and null. Story changes restore static images. `docs/build_workbench.py` produces an offline/Pages-ready copy in `docs/index.html`; it never configures hosting. The packaged assets match their originals byte-for-byte.
+docs/frontier_v0.3.0\VISUAL_REVIEW.md:28:5. Antibody story: B11/B5/8C1 are cited source cards. Local antibody mapping is visibly pending; no invented overlay appears.
+submission\SOURCE_REFERENCES.md:36:- Rudolph et al. (2024), human B11 Fab–OspC complex: [PDB 9BIF](https://www.rcsb.org/structure/9BIF), [J. Immunology DOI](https://doi.org/10.4049/jimmunol.2400247). X-ray resolution 3.09 Å; entry version 1.0. Published experimental evidence is distinct from our pending residue mapping.
+docs/frontier_v0.3.0\LAPTOP_INTEGRATION_HANDOFF.md:11:- [Guided offline workbench](../index.html): four stories added to the existing demo; actual 177/129 counts and NLL, coverage trap, original dimer animation and explicit pending antibody evidence.
+docs/frontier_v0.3.0\LAPTOP_INTEGRATION_HANDOFF.md:13:- [Machine-readable claim index](../claim-index.json): 17 claims with source hashes, measurement levels and interpretation limits.

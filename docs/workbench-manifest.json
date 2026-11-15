@@ -2,9 +2,10 @@
   "schema": "lymescope.offline_workbench.v1",
   "status": "PREPARED_NOT_HOSTED_OR_BROWSER_VERIFIED",
   "source_demo": "demo/v0.2.0/index.html",
-  "source_demo_sha256": "b531e5473c1b1c352581972d52a2280242979611ca2bd22998a898b399939b82",
-  "page_sha256": "1f7891c06a17671999dc7c6c0b9c24f68913ceb0b9eb0da908e19570d3f32b02",
+  "source_demo_sha256": "8609204acb7a9530335a5f8dbf5e3c605e00af41daee6a57a1f22272445d68b5",
+  "page_sha256": "dfb738ab839a9b345fbd5b5f3914715e26bbce452ae13f4d55372810059c6208",
   "scientific_source_commit": "aafe818a20ea025370cf4b65145a9684e80aaaef",
+  "frontier_source_commit": "82fb8b53018ba4012ccebf02a29efa87b892f6ed",
   "files": [
     {
       "source": "demo/v0.2.0/assets/coverage-evidence.png",
@@ -103,13 +104,25 @@
       "sha256": "d2df1df05686a5729e26106cc9e1b39c9ec0e2ed7a3be789d914b8eba5b74e81"
     },
     {
+      "source": "sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/results/FRONTIER_EXPERIMENT.png",
+      "path": "workbench-assets/science/FRONTIER_EXPERIMENT.png",
+      "bytes": 408600,
+      "sha256": "7cdb50b7be0cd21ca6fc25b150eb7e656e4f7e3c21f5fa298f6350a6ac8a842f"
+    },
+    {
+      "source": "sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/results/FRONTIER_EXPERIMENT.svg",
+      "path": "workbench-assets/science/FRONTIER_EXPERIMENT.svg",
+      "bytes": 345779,
+      "sha256": "44ae468da338d6f5dc940947446756b6fd2643f7a9b486a643f4d3b578715c11"
+    },
+    {
       "source": "demo/v0.2.0/context.json",
       "path": "workbench-data.json",
-      "bytes": 774125,
-      "sha256": "e85b4a5a97e67f834ae8555abaf6631944593a54e86454b708239cf9316bc216"
+      "bytes": 1358448,
+      "sha256": "87ebb5ed2de0f6ba20b33619d8284e41ab56bee421cdc321264c46956fa00d89"
     }
   ],
-  "total_copied_bytes": 6326904,
+  "total_copied_bytes": 7665606,
   "model_weights_included": false,
   "hosting_settings_changed": false
 }

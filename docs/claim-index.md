@@ -187,15 +187,16 @@ Spark30 all tasks, then concurrent Spark29/Spark30 shards; identical batch-8 pro
 
 ## C15
 
-Published B11/9BIF, B5/7UIJ and the 8C1 study supply independent experimental context; no antibody residue overlay is yet imported.
+Exact experimental mappings identify 31/152 eligible B11 contacts and 25/152 eligible B5 contacts in separate site sets; 8C1 remains literature-region evidence only.
 
-**Level:** PUBLISHED_EXPERIMENTAL_CONTEXT · **Status:** SOURCE_VERIFIED_MAPPING_PENDING
+**Level:** COMPUTED_EXPERIMENTAL_ANTIBODY_CONTACTS · **Status:** VERIFIED_SAVED_EVIDENCE
 
-Official PDB metadata and primary paper records checked; educational source card only.
+Deposited assembly 1; exact Q07337 construct mapping; observed Fab/OspC heavy-atom distance <=4.5 angstroms; two complete antigen copies for strict labels.
 
-**Limits:** Published numbering requires validated chain/sequence/alignment mapping. Homodimer contacts are not antibody contacts.
+**Limits:** Observed construct contacts (32 B11, 27 B5) differ from strict eligible counts. Missing Fab loops limit negative labels. Homodimer contacts and SASA are distinct; 8C1 contacts remain null.
 
-- [docs/frontier_v0.3.0/experimental-evidence.json](../docs/frontier_v0.3.0/experimental-evidence.json) · SHA256 `517479305fe353d8c054b6729f121b133910f5d338fd7bdb0fdb3a269cf605ca`
+- [sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/results/FRONTIER_EVIDENCE.json](../sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/results/FRONTIER_EVIDENCE.json) · SHA256 `546a7ec9f03340009818aeaaf94b0a7dd8156be287f12831dd442ed80a774673`
+- [sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/EXPERIMENTAL_MAPPING.tsv](../sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/EXPERIMENTAL_MAPPING.tsv) · SHA256 `0981c54c9fa5008ff717c4f729348b04f5449676c1674739268d92deeaa0c95a`
 - [Primary source 1](https://pubmed.ncbi.nlm.nih.gov/39240158/)
 - [Primary source 2](https://pubmed.ncbi.nlm.nih.gov/36976016/)
 - [Primary source 3](https://journals.asm.org/doi/10.1128/spectrum.02883-24)
@@ -224,3 +225,17 @@ Saved runtime test receipt plus independent CSV arithmetic, task identity and ma
 
 - [sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/provenance/tests_full_release.log](../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/provenance/tests_full_release.log) · SHA256 `2435c770b78306d2c4f92ec4dfc09cfb7b958dcaee72e053013aaa8b165c73d9`
 - [sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_validation.json](../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_validation.json) · SHA256 `972b1a4705885859315558b7eb9c36dfb1d542f472cdbfaf7ad324a1a8570e01`
+
+## C18
+
+Adding signed discordance worsens primary B11 blocked Brier error from 0.168634 to 0.174022 (+0.005388); AUROC changes 0.620634 to 0.616369.
+
+**Level:** NEGATIVE_PREDECLARED_DIAGNOSTIC · **Status:** VERIFIED_SAVED_EVIDENCE
+
+B2 agreement + reference amino-acid identity + unbound geometry versus B3 adding frozen signed discordance. Eight contiguous held-region blocks with five-column guards; fixed ridge penalty. Reused 6,305 masked scores; zero new inference.
+
+**Limits:** No demonstrated incremental predictive value. One correlated antigen/reference; no external functional validation, independent-site significance, new epitope or protection claim. Small exploratory mean-NLL-added difference does not establish new biology.
+
+- [sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/EXPERIMENT_QUESTION.md](../sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/EXPERIMENT_QUESTION.md) · SHA256 `6c0102fa0a113d003b3186400ffbc77881f4b8ab8bfa07519a257f95f40cccbf`
+- [sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/results/COMPARISON_METRICS.tsv](../sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/results/COMPARISON_METRICS.tsv) · SHA256 `d587d52659733b12b48c91ee899b90783f269c7057efb3e59460834a55bd9749`
+- [sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/ANALYSIS_RESULTS.json](../sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/ANALYSIS_RESULTS.json) · SHA256 `ea8ac41f529dfcab15eb551a170aa87b333dda6a9a8c60de17b75d75cba30b1a`

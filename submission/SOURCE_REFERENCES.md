@@ -31,12 +31,12 @@ Reviewed November 15, 2026. These links identify primary research, institutional
 
 ## Independent experimental antibody evidence
 
-These primary records were checked on November 15, 2026. They support educational source cards only. No antibody-contact residue labels have been imported into the LymeScope alignment.
+These primary records were checked on November 15, 2026. The optional mapped-complex experiment is now imported from pinned commit [`82fb8b53018ba4012ccebf02a29efa87b892f6ed`](https://github.com/francolinx/LymeScope/commit/82fb8b53018ba4012ccebf02a29efa87b892f6ed). Its [source receipts and methods](../sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z/EVIDENCE_SOURCES.md) preserve exact experimental coordinate versions, URLs and hashes. Figures are original computations from those coordinates, not copied paper figures or predicted folds.
 
-- Rudolph et al. (2024), human B11 Fab–OspC complex: [PDB 9BIF](https://www.rcsb.org/structure/9BIF), [J. Immunology DOI](https://doi.org/10.4049/jimmunol.2400247). X-ray resolution 3.09 Å; entry version 1.0. Published experimental evidence is distinct from our pending residue mapping.
+- Rudolph et al. (2024), human B11 Fab–OspC complex: [PDB 9BIF](https://www.rcsb.org/structure/9BIF), [J. Immunology DOI](https://doi.org/10.4049/jimmunol.2400247). X-ray resolution 3.09 Å; entry version 1.0. Exact mapping and observed contacts are imported; the additional signed-discordance diagnostic is negative.
 - Rudolph et al. (2023), mouse B5–OspC complex: [PDB 7UIJ](https://www.rcsb.org/structure/7UIJ), [mBio DOI](https://doi.org/10.1128/mbio.02981-22). X-ray resolution 2.70 Å; entry version 1.3. An antibody interface must not be replaced by an OspC homodimer contact proxy.
 - Vance et al. (2025), 8C1 type-specific binding-region study: [Microbiology Spectrum DOI](https://doi.org/10.1128/spectrum.02883-24). A literature-defined region is not a list of observed atomic contacts. No structure is assigned to this card.
-- [Machine-readable source inventory](../docs/frontier_v0.3.0/experimental-evidence.json), [claim index](../docs/claim-index.json). Precursor, author, label and frozen-alignment numbering require explicit correspondence before any overlay.
+- [Machine-readable source inventory](../docs/frontier_v0.3.0/experimental-evidence.json), [claim index](../docs/claim-index.json). Precursor, author, label and frozen-alignment numbering retain explicit, separate correspondence fields. B11 and B5 are related structural observations, not independent clinical validation; 8C1's HDX interval is mapped as a literature region with null contact values.
 
 ## Rights and event eligibility
 

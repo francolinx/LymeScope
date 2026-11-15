@@ -19,6 +19,7 @@ for(const id of ['context','column','column-detail','mapping','regions','process
 for(const id of ['model-observation','science-detail','sequence-scores'])ids.set(id,new Element());
 for(const id of ['story-coverage','story-disagreement','story-dimer','story-experiment','story-step','story-image','story-media-actions','story-motion','story-status','story-title','story-intro','story-content','story-caption','story-caution','story-back','story-next'])ids.set(id,new Element());
 ids.get('context').textContent=JSON.stringify(context);
+ids.set('frontier-media',new Element());
 const buttons=[154,173].map(column=>{const x=new Element('button');x.dataset.column=String(column);return x;});
 const document={getElementById:id=>{assert(ids.has(id),id);return ids.get(id);},createElement:tag=>new Element(tag),querySelectorAll:selector=>{assert.equal(selector,'[data-column]');return buttons;}};
 vm.runInNewContext(source,{document});
@@ -80,9 +81,32 @@ assert.match(ids.get('story-image').src,/ospc-dimer.png$/);
 ids.get('story-motion').events.click();assert.match(ids.get('story-image').src,/ospc-dimer.gif$/);
 ids.get('story-next').events.click();
 assert.match(text(ids.get('story-content')),/Human antibody B11/);
-assert.match(text(ids.get('story-status')),/MAPPING PENDING/);
-assert.equal(context.experimental_evidence.antibody_contact_by_alignment_column,null);
+assert.match(text(ids.get('story-status')),/NEGATIVE PRIMARY RESULT/);
+assert.match(text(ids.get('story-content')),/31 \/ 152/);
+assert.match(text(ids.get('story-content')),/0.168634 → 0.174022/);
+assert.match(text(ids.get('story-content')),/0.620634 → 0.616369/);
+assert.match(text(ids.get('story-content')),/unknown \/ unavailable/);
+assert.equal(context.experimental_evidence.mapped_antibody_contact_positions['8C1'],null);
+assert.equal(ids.get('frontier-media').hidden,false);
+function descendants(element){return [element,...element.children.flatMap(descendants)];}
+const footprintElements=descendants(ids.get('story-content'));
+const footprintInput=footprintElements.find(x=>x.tag==='input');
+const footprintButtons=footprintElements.filter(x=>x.tag==='button');
+assert.equal(footprintButtons.length,31);
+footprintButtons[0].events.click();assert.match(text(ids.get('story-content')),/Included in the 152-site diagnostic/);
+for(const site of context.frontier_science.complexes['9BIF'].sites){
+  footprintInput.events.change({target:{value:site.alignment_column}});
+  const display=text(ids.get('story-content'));
+  const value=site.observed_contact_union_4_5_A;
+  assert(display.includes('Observed Fab contact union (≤4.5 Å): '+(value===null?'unknown / unavailable':value?'yes, observed contact':'no observed contact')));
+  assert(display.includes(site.strict_eligible?'Included in the 152-site diagnostic':'Excluded from the diagnostic'));
+}
+footprintInput.events.change({target:{value:75}});
+assert.match(text(ids.get('story-content')),/Excluded from the diagnostic: PANEL_COVERAGE_LT_30/);
+footprintInput.events.change({target:{value:154}});
+assert.match(text(ids.get('story-content')),/Q07337 native position: unmapped/);
 assert.equal(ids.get('story-image').hidden,true);
 ids.get('story-back').events.click();assert.match(ids.get('story-image').src,/ospc-dimer.png$/);
+assert.equal(ids.get('frontier-media').hidden,true);
 ids.get('story-coverage').events.click();assert.match(text(ids.get('story-title')),/one observation/);
-console.log('PASS: four guided stories, measured comparisons, explicit pending antibody mapping, static-first dimer and navigation.');
+console.log('PASS: four stories, negative frontier metrics, 31 eligible B11 contact controls, all 218 contact states and eligibility, literature-only nulls, static-first dimer and navigation. Browser rendering NOT tested.');

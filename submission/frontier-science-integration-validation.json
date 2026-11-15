@@ -1,0 +1,133 @@
+{
+  "schema": "lymescope.frontier_science_integration_validation.v1",
+  "checked_at": "2026-11-15T11:53:57.964Z",
+  "starting_laptop_commit": "4898f5531c91df26a64be0aa92e177be3b63f223",
+  "local_merge_commit": "93cd21ed13ee62215d2177adbf3a7cf73b4c45ee",
+  "scientific_source_commit": "82fb8b53018ba4012ccebf02a29efa87b892f6ed",
+  "reused_masked_score_source_commit": "aafe818a20ea025370cf4b65145a9684e80aaaef",
+  "branch": "feature/ospc-masked-scoring-v0.2.0",
+  "scope": "Targeted offline scientific import and presentation validation; not an inference or browser-rendering run.",
+  "checks": [
+    {
+      "name": "published_frontier_mapping_and_numerical_tests",
+      "cwd": "sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z",
+      "command": "C:/Users/franc/anaconda3/python.exe -B -m unittest discover -s tests -v",
+      "tests_passed": 26,
+      "exit_code": 0
+    },
+    {
+      "name": "laptop_adapters_overlay_claims_packaging_presentation",
+      "cwd": "demo/v0.2.0",
+      "command": "C:/Users/franc/anaconda3/python.exe -B -m unittest -v test_frontier_adapter test_overlay test_spark_adapter test_frontier test_presentation",
+      "tests_passed": 33,
+      "new_adapter_tests": 7,
+      "exit_code": 0
+    },
+    {
+      "name": "source_demo_ui_fixture",
+      "command": "node demo/v0.2.0/test_ui_handlers.cjs",
+      "exit_code": 0
+    },
+    {
+      "name": "packaged_demo_ui_fixture",
+      "command": "node demo/v0.2.0/test_ui_handlers.cjs docs/index.html",
+      "exit_code": 0
+    }
+  ],
+  "python_tests_passed": 59,
+  "node_ui_fixture_runs_passed": 2,
+  "fixture_scope": {
+    "saved_nll_columns": 218,
+    "sequence_summaries": 30,
+    "guided_stories": 4,
+    "b11_contact_columns": 218,
+    "b11_eligible_contact_controls": 31,
+    "null_false_zero_and_eligibility_distinct": true
+  },
+  "previous_baseline_receipt": "submission/frontier-baseline-tests.json",
+  "previous_baseline_tests": 26,
+  "previous_baseline_tests_rerun_for_this_import": false,
+  "preservation": {
+    "frozen_v010_matches_baseline": true,
+    "v021_package_matches_aafe818": true,
+    "v030_package_matches_82fb8b5": true,
+    "venue_contract_and_storage_plan_unchanged": true,
+    "existing_animation_assets_unchanged": true,
+    "historical_validation_receipts_unchanged": true,
+    "main": "8058846c05d4dccd60117dd29ef784af43570418"
+  },
+  "primary_result": {
+    "brier_baseline": 0.1686336055872799,
+    "brier_plus_signed_discordance": 0.1740219332031673,
+    "delta": 0.005388327615887395,
+    "auroc_baseline": 0.620634497467342,
+    "auroc_plus_signed_discordance": 0.6163689682751267,
+    "incremental_value": "NOT_DEMONSTRATED"
+  },
+  "browser": {
+    "launch": "NOT_CONFIRMED",
+    "rendering": "NOT_VERIFIED",
+    "screenshot": "NOT_CAPTURED",
+    "last_scoped_tool_error": "The browser access host is unavailable",
+    "new_browser_attempt": false,
+    "alternate_route_used": false
+  },
+  "saved_frontier_png": "DIRECTLY_INSPECTED",
+  "svg": "PARSED_AND_BYTE_PRESERVED",
+  "new_model_inference_runs": 0,
+  "event_jobs": 0,
+  "model_downloads": 0,
+  "package_installs": 0,
+  "event_scientific_benchmark": "NOT_RUN",
+  "push_performed": false,
+  "organizer_submission_performed": false,
+  "not_run": [
+    "Browser layout, keyboard and overflow validation",
+    "Print pagination and PDF export",
+    "New real-model inference or venue pilot",
+    "Event one-node/two-node numerical/performance benchmark"
+  ],
+  "runtime": {
+    "python": "C:/Users/franc/anaconda3/python.exe",
+    "PYTHONUTF8": "1",
+    "bytecode_writes": false
+  },
+  "notes": [
+    "Source demo and packaged copy pass offline controls; no pixel-level browser claim.",
+    "Published v0.2.1 real-model results are reused, not rerun. Prior Windows limitations (no torch; Unix resource unavailable) remain separate from the 59 passing tests.",
+    "All assertions are descriptive or predeclared within-reference diagnostics; no population significance or functional prediction claim."
+  ],
+  "final_document_links_and_assets_recheck": {
+    "passed": 5,
+    "additional_distinct_tests": 0,
+    "reason": "Current source-reference documentation and receipt links were updated after the first pass"
+  },
+  "publication_review": {
+    "reviewed_project_files": 117,
+    "matched_secret_patterns": 0,
+    "credential_stores_or_caches_opened": false,
+    "scan_is_not_a_comprehensive_security_audit": true
+  },
+  "new_media": [
+    {
+      "path": "docs/workbench-assets/science/FRONTIER_EXPERIMENT.png",
+      "bytes": 408600,
+      "sha256": "7cdb50b7be0cd21ca6fc25b150eb7e656e4f7e3c21f5fa298f6350a6ac8a842f"
+    },
+    {
+      "path": "docs/workbench-assets/science/FRONTIER_EXPERIMENT.svg",
+      "bytes": 345779,
+      "sha256": "44ae468da338d6f5dc940947446756b6fd2643f7a9b486a643f4d3b578715c11"
+    }
+  ],
+  "final_deliverable_hashes": {
+    "README.md": "5f679879ebed11c584a392c0ad1ffaa6ded93aa991dfe85b54fd3566dab144b6",
+    "demo/v0.2.0/index.html": "8609204acb7a9530335a5f8dbf5e3c605e00af41daee6a57a1f22272445d68b5",
+    "docs/index.html": "dfb738ab839a9b345fbd5b5f3914715e26bbce452ae13f4d55372810059c6208",
+    "docs/workbench-manifest.json": "a0a9688fcad93360a86893fe4ced942825ea7b1fb470f79eb257abfdd6fc227e",
+    "submission/ONE_PAGER.md": "fe8165491dcd4b0c847d55052c8b2408a29e19b471a8333d3c09b87679cd95c9",
+    "submission/ONE_PAGER.html": "6f00d1a4a317a20c67fc20fd0fb5b517775549704633da42a11baf67d1b4c8b8",
+    "submission/DEMO_SCRIPT.md": "1f4b0b63c6d5e16c83b6c5630e448d246c5472db66cdd96bf1b97e327436f774"
+  },
+  "resolved_current_document_statuses": "Current demo README and SOURCE_REFERENCES now describe completed mapping; earlier handoff/visual-review files retain historical pending status and are superseded by FINAL_SCIENCE_INTEGRATION.md."
+}

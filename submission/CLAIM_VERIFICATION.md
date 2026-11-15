@@ -1,6 +1,6 @@
 # Claim verification — Frontier integration
 
-The discoverable [17-claim index](../docs/claim-index.md) and [JSON index](../docs/claim-index.json) now connect assertions to exact source paths, SHA256 hashes, methods, evidence levels and limitations. This human checklist supplements that index; historical validation receipts remain unchanged.
+The discoverable [18-claim index](../docs/claim-index.md) and [JSON index](../docs/claim-index.json) connect assertions to exact source paths, SHA256 hashes, methods, evidence levels and limitations. This human checklist supplements that index; historical validation receipts remain unchanged.
 
 | Claim or visual | Evidence and verification | Allowed interpretation |
 |---|---|---|
@@ -24,7 +24,9 @@ The discoverable [17-claim index](../docs/claim-index.md) and [JSON index](../do
 | Calculated SASA | Separate saved CPU calculation, explicit radii/probe/resolution | Static incomplete constructs; not measured physiological accessibility |
 | Null contact/SASA fields | v2 typed adapter plus local rejection/UI tests | Unknown is not false or zero; no fabricated coordinates |
 | Event one/two-node scientific benchmark | Prepared exact batch-8 contract; no event scientific receipt | NOT RUN; no speedup claim |
-| B11 / B5 / 8C1 educational cards | Primary PDB/publication metadata and source inventory | Published experimental context only; alignment-level antibody labels are pending and null |
+| B11 / B5 exact contact mappings | Pinned 82fb8b5 adapter, original figure, source manifests and explicit per-complex alignment maps | 31/152 B11 and 25/152 B5 eligible contacts; whole-construct observed counts 32/27 differ. Unknown remains null; no observed contact is not non-binding |
+| Negative signed-discordance diagnostic | Predeclared B11 B2/B3 blocked Brier 0.168634/0.174022; AUROC 0.620634/0.616369 | No demonstrated incremental predictive value; correlated sites, one selected antigen, no external functional validation |
+| 8C1 literature HDX region | Q07337 130–150, identity anchors and per-position alignment projection | Regional evidence only; all atomic-contact labels null. 9BX7 not analyzed |
 | Four-story workbench | Saved coverage, current v2 NLL, original dimer images and source cards | Offline control fixtures passed; browser rendering remains unverified |
 | GitHub Pages package | Local docs/index.html and byte-checked asset copies | Prepared source only; no hosting settings changed or live-site claim |
 | Historical milestones | Linked primary/institutional sources | No universal historical accuracy percentage |

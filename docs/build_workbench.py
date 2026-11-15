@@ -14,6 +14,8 @@ DOCS=ROOT/'docs'
 DEMO=ROOT/'demo/v0.2.0'
 EXPERIMENT=ROOT/'sparkprep/experiments/stretch_v0.2.0_20261115T072916Z'
 SOURCE_COMMIT='aafe818a20ea025370cf4b65145a9684e80aaaef'
+FRONTIER=ROOT/'sparkprep/experiments/frontier_antibody_v0.3.0_20261115T083852Z'
+FRONTIER_COMMIT='82fb8b53018ba4012ccebf02a29efa87b892f6ed'
 BRANCH='feature/ospc-masked-scoring-v0.2.0'
 SCENES=('coverage-evidence','ospc-rotation','alignment-map','residue-mapping','ospc-dimer')
 FIGURES=('full_panel_agreement_predictability','experimental_dimer_comparison','calculated_sasa_dimer_context')
@@ -28,6 +30,8 @@ def build():
         for ext in ('png','gif'):copies[DEMO/'assets'/f'{scene}.{ext}']=DOCS/'workbench-assets'/f'{scene}.{ext}'
     for figure in FIGURES:
         for ext in ('png','svg'):copies[EXPERIMENT/'results'/f'{figure}.{ext}']=DOCS/'workbench-assets/science'/f'{figure}.{ext}'
+    for ext in ('png','svg'):
+        copies[FRONTIER/'results'/f'FRONTIER_EXPERIMENT.{ext}']=DOCS/'workbench-assets/science'/f'FRONTIER_EXPERIMENT.{ext}'
     # The six-scene historical asset manifest includes an intentionally omitted
     # batch-16 animation. Link to the original rather than ship a partial bundle
     # with a manifest that appears to promise that obsolete scene locally.
@@ -50,7 +54,7 @@ def build():
             dest=source.relative_to(DOCS).as_posix()
         else:
             assert source.is_relative_to(ROOT),value
-            ref=SOURCE_COMMIT if source.is_relative_to(EXPERIMENT) else BRANCH
+            ref=SOURCE_COMMIT if source.is_relative_to(EXPERIMENT) else FRONTIER_COMMIT if source.is_relative_to(FRONTIER) else BRANCH
             dest=f'https://github.com/francolinx/LymeScope/blob/{ref}/'+quote(source.relative_to(ROOT).as_posix(),safe='/')
         if parsed.fragment:dest+='#'+parsed.fragment
         return attr+'="'+dest+'"'
@@ -65,6 +69,7 @@ def build():
     manifest={'schema':'lymescope.offline_workbench.v1','status':'PREPARED_NOT_HOSTED_OR_BROWSER_VERIFIED',
               'source_demo':'demo/v0.2.0/index.html','source_demo_sha256':digest(DEMO/'index.html'),
               'page_sha256':digest(DOCS/'index.html'),'scientific_source_commit':SOURCE_COMMIT,
+              'frontier_source_commit':FRONTIER_COMMIT,
               'files':records,'total_copied_bytes':sum(x['bytes'] for x in records),
               'model_weights_included':False,'hosting_settings_changed':False}
     (DOCS/'workbench-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8',newline='\n')
