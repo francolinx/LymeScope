@@ -1,0 +1,9 @@
+# Personal-Spark OspC stretch checkpoint v0.2.0
+
+Incremental extension of the integrated frozen 30-sequence OspC analysis. Start with REPORT.md for actual results and VENUE_CONTRACT.md for the exact portable execution contract. No frozen v0.1.0 scientific files were edited; provenance/frozen_results_unchanged.json verifies 55 exact files against integrated main 8058846c05d4dccd60117dd29ef784af43570418.
+
+The Q07337 real-model singleton-mask pilot passed on the personal GB10. A full-panel NLL result is not yet present: it requires review/approval of the measured pilot resource proposal. Existing CPU results include fixed-alignment panel-composition sensitivity, all 6,305 residue/alignment task mappings, and deposited biological-dimer heavy-atom contacts. These are separate measures, not protection or antigenicity predictions. The scientific figure is results/panel_sensitivity_dimer_context.png (SVG also included); its PLM-pending note means panel-wide comparison remains pending, despite the completed one-sequence correctness pilot.
+
+Directories: inputs/ contains exact frozen copies; src/ contains portable analysis, offline scoring and validation; tests/ contains ten meaningful correctness tests; results/ contains computed versioned outputs and pilot_v1/; provenance/ contains immutable model identities, approvals, runtime and hashes. Complete package inventory and SHA256 are listed in FILE_MANIFEST.json and SHA256SUMS, excluding those checksum documents themselves to avoid recursive hashing.
+
+Weights live separately in the project-local .model-cache and must never be staged into Git. The six-file receipt is publishable; the six model files are not included. Private unrelated cache/hardware inventories remain outside this package. No event cluster was accessed and no driver/package configuration was changed.

@@ -1,0 +1,43 @@
+{
+  "model_id": "facebook/esm2_t6_8M_UR50D",
+  "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+  "downloaded_bytes": 31387085,
+  "files": [
+    {
+      "name": "README.md",
+      "bytes": 1705,
+      "git_blob_oid": "78b8e54d14b2ccb65a6f3456cc72e603ddd8658d",
+      "sha256": "462a2f24724e19c6be0efab926315c294a863c9a9770e2c8b3d859b2d81a07de"
+    },
+    {
+      "name": "config.json",
+      "bytes": 775,
+      "git_blob_oid": "c2c6e65a87d9d20d47699ae236d605b80c741dd3",
+      "sha256": "facb9355e8252149f6f99dff5fd1e32e890c3c655362b261d0c81cd6b5839c85"
+    },
+    {
+      "name": "model.safetensors",
+      "bytes": 31384292,
+      "sha256": "24c5fa474c48f3b754b86efe752d5f189d2bcd88190fa2270fc92b2ef3034189"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "bytes": 125,
+      "git_blob_oid": "ba0f9b53dbbf27934f7555e5d31e37bdea9317f1",
+      "sha256": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 95,
+      "git_blob_oid": "3f0d47e841e1cb75257aeaf76d156802899a217e",
+      "sha256": "7e9161ecdb548ec45a41cbc6b24aa4476fdd418461f491c4207baa99419a29ad"
+    },
+    {
+      "name": "vocab.txt",
+      "bytes": 93,
+      "git_blob_oid": "6b946952cc35537226f07fd70957ee2f848880d2",
+      "sha256": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03"
+    }
+  ],
+  "approval_record_sha256": "47cceeb38adfee7b8d59e7e7f5ccb3caa94b2ee0e8eabdd69f1bdfbd26db5abe"
+}

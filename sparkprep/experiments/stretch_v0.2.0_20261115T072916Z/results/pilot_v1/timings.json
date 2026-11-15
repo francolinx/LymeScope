@@ -1,0 +1,88 @@
+{
+  "host": "spark-6771",
+  "device": "NVIDIA GB10",
+  "torch": "2.14.1+cu130",
+  "transformers": "5.20.0",
+  "cuda_runtime": "13.0",
+  "model_id": "facebook/esm2_t6_8M_UR50D",
+  "model_revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+  "parameter_count": 7512474,
+  "precision": "float32; TF32 disabled; eager attention; no autocast",
+  "masking": "one independent mask per original residue; all model vocabulary classes in log-softmax",
+  "batch_size": 8,
+  "shards": 1,
+  "shard": 0,
+  "pilot": true,
+  "task_count": 210,
+  "scoring_masked_examples": 210,
+  "warmup_masked_examples": 24,
+  "validation_masked_examples": 3,
+  "scoring_forward_passes": 27,
+  "warmup_forward_passes": 3,
+  "validation_forward_passes": 3,
+  "total_forward_passes": 33,
+  "model_load_and_cuda_transfer_s": 0.3388364279999223,
+  "first_forward_after_load_s": 0.29919134200099506,
+  "warmup_forward_s": [
+    0.29919134200099506,
+    0.012495316001150059,
+    0.011978807000559755
+  ],
+  "warm_scoring_wall_s": 0.38415839200024493,
+  "end_to_end_wall_s": 1.1045433559993398,
+  "peak_gpu_allocated_bytes": 135659520,
+  "peak_gpu_reserved_bytes": 182452224,
+  "process_max_rss_bytes": 1716289536,
+  "sequence_timings": [
+    {
+      "accession": "Q07337",
+      "sequence_sha256": "8939ee76df09336cca51badd169a15d142bcd48b90b928cfcebc1ef733ac1d7e",
+      "scored_positions": "all full-length ungapped standard residues 1..L",
+      "mean_nll_nats": 2.519368981973994,
+      "ppl": 12.420756468957089,
+      "masks": 210,
+      "gpu_inference_plus_logsoftmax_s": 0.3420249179871462,
+      "sequence_wall_s": 0.38360782000017934
+    }
+  ],
+  "method_contract_sha256": "78c9126f67ebd4ea3a0d58d28a4c8e926686f72d5dc1270837ff1a598b9ab311",
+  "model_files": [
+    {
+      "name": "README.md",
+      "bytes": 1705,
+      "git_blob_oid": "78b8e54d14b2ccb65a6f3456cc72e603ddd8658d",
+      "sha256": "462a2f24724e19c6be0efab926315c294a863c9a9770e2c8b3d859b2d81a07de"
+    },
+    {
+      "name": "config.json",
+      "bytes": 775,
+      "git_blob_oid": "c2c6e65a87d9d20d47699ae236d605b80c741dd3",
+      "sha256": "facb9355e8252149f6f99dff5fd1e32e890c3c655362b261d0c81cd6b5839c85"
+    },
+    {
+      "name": "model.safetensors",
+      "bytes": 31384292,
+      "sha256": "24c5fa474c48f3b754b86efe752d5f189d2bcd88190fa2270fc92b2ef3034189"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "bytes": 125,
+      "git_blob_oid": "ba0f9b53dbbf27934f7555e5d31e37bdea9317f1",
+      "sha256": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 95,
+      "git_blob_oid": "3f0d47e841e1cb75257aeaf76d156802899a217e",
+      "sha256": "7e9161ecdb548ec45a41cbc6b24aa4476fdd418461f491c4207baa99419a29ad"
+    },
+    {
+      "name": "vocab.txt",
+      "bytes": 93,
+      "git_blob_oid": "6b946952cc35537226f07fd70957ee2f848880d2",
+      "sha256": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03"
+    }
+  ],
+  "score_sha256": "c55a8edff430b36c29a6e56068a85ec53ab29f3c79d8e51f09d9e5161f527dda",
+  "timing_scope": "Personal Spark with existing services; not a matched event-cluster benchmark. Cold load means new process with uncontrolled OS page cache, not guaranteed cold disk."
+}

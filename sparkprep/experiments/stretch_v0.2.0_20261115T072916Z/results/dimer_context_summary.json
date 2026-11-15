@@ -1,0 +1,94 @@
+{
+  "method": "minimum interchain nonhydrogen atom distance <=4.5 A; model1, positive occupancy, alt . or A; deposited biological dimer assembly operators applied; waters/ions/nonprotein excluded",
+  "assemblies": [
+    {
+      "pdb_id": "1GGQ",
+      "assembly_id": "1",
+      "assembly_details": {
+        "id": "1",
+        "details": "author_and_software_defined_assembly",
+        "method_details": "PISA",
+        "oligomeric_details": "dimeric",
+        "oligomeric_count": "2"
+      },
+      "instances": [
+        {
+          "instance": "A@1",
+          "heavy_atoms": 1210
+        },
+        {
+          "instance": "B@1",
+          "heavy_atoms": 1213
+        }
+      ],
+      "residue_pairs_within_4_5_A": 118,
+      "left_contact_residues": 51,
+      "right_contact_residues": 51,
+      "pairs_at_4_0_A": 73,
+      "pairs_at_5_0_A": 156
+    },
+    {
+      "pdb_id": "1GGQ",
+      "assembly_id": "2",
+      "assembly_details": {
+        "id": "2",
+        "details": "author_and_software_defined_assembly",
+        "method_details": "PISA",
+        "oligomeric_details": "dimeric",
+        "oligomeric_count": "2"
+      },
+      "instances": [
+        {
+          "instance": "C@1",
+          "heavy_atoms": 1210
+        },
+        {
+          "instance": "D@1",
+          "heavy_atoms": 1213
+        }
+      ],
+      "residue_pairs_within_4_5_A": 117,
+      "left_contact_residues": 51,
+      "right_contact_residues": 51,
+      "pairs_at_4_0_A": 72,
+      "pairs_at_5_0_A": 155
+    },
+    {
+      "pdb_id": "1G5Z",
+      "assembly_id": "1",
+      "assembly_details": {
+        "id": "1",
+        "details": "author_and_software_defined_assembly",
+        "method_details": "PISA,PQS",
+        "oligomeric_details": "dimeric",
+        "oligomeric_count": "2"
+      },
+      "instances": [
+        {
+          "instance": "A@1",
+          "heavy_atoms": 1240
+        },
+        {
+          "instance": "A@2",
+          "heavy_atoms": 1240
+        }
+      ],
+      "residue_pairs_within_4_5_A": 120,
+      "left_contact_residues": 51,
+      "right_contact_residues": 51,
+      "pairs_at_4_0_A": 76,
+      "pairs_at_5_0_A": 143
+    }
+  ],
+  "mapping_status_counts": {
+    "exact_residue_identity_validated": 976
+  },
+  "limitations": [
+    "Contact counts are coordinate/construct/cutoff dependent and do not measure solvent-accessible surface area or buried area.",
+    "Missing residues are not classified as non-contact surface.",
+    "1GGQ dimers are alternative copies from one crystal, not independent biological replicates.",
+    "1G5Z symmetry-generated partner is explicitly transformed; no arbitrary asymmetric-unit pairing.",
+    "No mapped contact implies antigenicity, binding or protection.",
+    "1G5Z requires exact whole-construct natural sequence identity; historical accession correspondence alone is not accepted."
+  ]
+}
