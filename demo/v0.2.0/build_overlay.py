@@ -139,6 +139,9 @@ def build_context():
 
 def write_overlay():
     data = build_context()
+    from spark_adapter import load_evidence
+    data['spark_science'] = load_evidence(data)
+    data['model_scoring'] = 'COMPLETED_PERSONAL_SPARK'
     # Only this versioned demo layer is generated; no frozen file is written.
     (HERE / "context.json").write_text(json.dumps(data, indent=2, allow_nan=False) + "\n", encoding="utf-8", newline="\n")
     embedded = json.dumps(data, ensure_ascii=False, allow_nan=False).replace("<", "\\u003c")

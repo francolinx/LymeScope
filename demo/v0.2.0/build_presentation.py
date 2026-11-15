@@ -43,11 +43,11 @@ def build():
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'; base-uri 'none'">
 <title>LymeScope — local README preview</title><style>body{margin:0;background:#f3f7f7;color:#183440;font:17px/1.65 system-ui,sans-serif}main{max-width:940px;margin:32px auto;padding:32px;background:white}h1,h2{line-height:1.2}h1{letter-spacing:.12em;font-size:46px}h2{border-top:1px solid #cfe0e3;padding-top:25px;margin-top:38px}a{color:#086b78}img,svg{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto}td,th{padding:10px;border:1px solid #d3e1e4}code{overflow-wrap:anywhere}blockquote{border-left:4px solid #188a87;margin-left:0;padding:6px 20px;background:#edf7f6}summary{cursor:pointer}picture{display:block}@media(max-width:600px){main{padding:18px;margin:0}h1{font-size:34px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style><main><p><strong>Local preview.</strong> GitHub rendering has not been verified.</p>'''+body+'</main></html>'
     for attr in ('src','srcset','href'):
-        for folder in ('demo','sparkprep','findings','portable_results','docs'):
+        for folder in ('demo','sparkprep','findings','portable_results','docs','workflows'):
             doc=doc.replace(f'{attr}="{folder}/',f'{attr}="../{folder}/')
     doc=doc.replace('href="submission/','href="').replace('href="RUN_LOCALLY.md','href="../RUN_LOCALLY.md')
     (ROOT/'submission').mkdir(exist_ok=True)
-    (ROOT/'submission'/'README_PREVIEW.html').write_text(doc,encoding='utf-8')
+    (ROOT/'submission'/'README_PREVIEW.html').write_text(doc,encoding='utf-8',newline='\n')
 
 
 if __name__=='__main__':build()

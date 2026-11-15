@@ -70,7 +70,9 @@ class PresentationTests(unittest.TestCase):
     def test_static_first_demo_and_required_submission_files(self):
         page=(HERE/'index.html').read_text(encoding='utf-8')
         self.assertIn('id="scene-image" src="assets/coverage-evidence.png"',page)
-        self.assertIn('Play animation',page);self.assertIn('Not yet measured',page)
+        self.assertIn('Play animation',page);self.assertIn('Event two-node: NOT RUN',page)
+        self.assertIn('full_panel_agreement_predictability.png', page)
+        self.assertLess(page.index('id="spark-results"'), page.index('class="cinema"'))
         for name in ['ONE_PAGER.md','DEMO_SCRIPT.md','SOURCE_REFERENCES.md','CLAIM_VERIFICATION.md','SUBMISSION_CHECKLIST.md']:
             self.assertTrue((ROOT/'submission'/name).is_file())
         readme=(ROOT/'README.md').read_text(encoding='utf-8')

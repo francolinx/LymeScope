@@ -6,10 +6,44 @@
 <blockquote>
 <p><strong>Project lead statement - draft awaiting personal approval:</strong> "I want to make complex biological evidence easier to inspect, so researchers can see both what a result supports and what still needs testing."</p>
 </blockquote>
-<p><strong>Our question:</strong> In a selected, cross-species panel of 30 natural OspC sequences, which aligned positions agree, how many observations support that agreement, and where do those positions map to an experimental structure? A separately prepared ESM-2 extension asks whether observed agreement and masked-residue predictability differ.</p>
-<p><strong>Computed:</strong> a CPU MAFFT alignment, descriptive column statistics and explicit mapping to deposited OspC coordinates. <strong>New integration:</strong> an offline, traceable path from sequence -&gt; alignment -&gt; coverage -&gt; structure, with a separate biological-context presentation and a tested masked-scoring implementation. <strong>For scientists:</strong> inspect denominators and missing coordinates before deciding which differences merit follow-up. <strong>Evidence boundary:</strong> the coordinates come from published X-ray experiments; alignment, agreement and geometric proximity are computational descriptions. Model scores are <strong>not yet measured</strong>. LymeScope provides no diagnosis, clinical recommendation, protective-antigen discovery or safety assessment.</p>
+<p><strong>Our question:</strong> In a selected, cross-species panel of 30 natural OspC sequences, which aligned positions agree, how many observations support that agreement, and where do those positions map to an experimental structure? The completed personal-Spark ESM-2 experiment compares empirical agreement with masked-residue predictability.</p>
+<p><strong>Computed:</strong> a CPU MAFFT alignment, descriptive column statistics, explicit mapping to deposited OspC coordinates, and 6,305 real original-residue ESM-2 masks on the personal Spark. <strong>New integration:</strong> the published v2 scientific adapter and original figures feed the existing offline demo. <strong>For scientists:</strong> inspect denominators and missing coordinates before deciding which differences merit follow-up. <strong>Evidence boundary:</strong> agreement, model NLL, geometric contacts and calculated SASA are distinct measurements. Coordinates come from published X-ray experiments. No event-cluster scientific speedup has been measured. LymeScope provides no diagnosis, clinical recommendation, protective-antigen discovery or safety assessment.</p>
 <p><a href="../demo/v0.2.0/index.html">Open the offline demo</a> · <a href="../sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/index.html">Frozen results viewer</a> · <a href="ONE_PAGER.md">One-page submission</a> · <a href="DEMO_SCRIPT.md">Five-minute script</a></p>
 <p>Download/clone the repository, then open the HTML locally. GitHub's file view shows HTML source; no hosted demo is implied. No model, server or network connection is needed for the saved-results demonstration. <a href="../RUN_LOCALLY.md">Local instructions</a></p>
+<h2>Completed personal-Spark scientific result</h2>
+<p><img alt="Saved full-panel agreement and masked-original-residue NLL with coverage and structure-observation states." src="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_agreement_predictability.png" /></p>
+<p><strong>Current aggregate: full_panel_comparison_v2.</strong> Agreement versus model predictability has descriptive Spearman <strong>rho = 0.134696 over the 202 fully covered columns (F)</strong>. Columns 177/58 versus 129/137 retain opposite rank-discordance directions across <strong>239</strong> fixed-alignment perturbations: 30 sequence omissions, 200 half-panels and nine metadata-group omissions. These overlapping designs are sensitivity checks, not a confidence interval or significance test. They reuse saved per-sequence scores with zero additional model calls.</p>
+<p>Meta FAIR ESM-2 8M revision <code>c731040fcd8d73dceaa04b0a8e6329b345b0f5df</code> used float32/eager attention, TF32 disabled, one mask per example and the full 33-token softmax. Batch size <strong>8 within each sequence</strong> produced <strong>6,305 successful masks / 805 scoring forwards</strong>, plus three separate warm-up forwards / 24 examples. Personal <code>spark-6771</code> / NVIDIA GB10 timings: <strong>9.909294 s warm scoring</strong>, <strong>0.313129 s model load plus CUDA transfer</strong>, <strong>10.510127 s process wall after imports through validation/export</strong>. The last figure is not complete workflow time or an event-cluster comparison.</p>
+<table>
+<thead>
+<tr>
+<th>Measurement</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Empirical agreement</td>
+<td>Modal fraction among observed natural residues; coverage remains visible</td>
+</tr>
+<tr>
+<td>Masked original-residue NLL</td>
+<td>Model conditional predictability; lower is more predictable</td>
+</tr>
+<tr>
+<td>Heavy-atom contact</td>
+<td>Interchain distance ≤4.5 Å in the verified deposited assembly</td>
+</tr>
+<tr>
+<td>Calculated SASA</td>
+<td>Separate static-construct calculation in Å²; not measured physiological or antibody accessibility</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Existing experimental 1GGQ and symmetry-generated 1G5Z dimers." src="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/experimental_dimer_comparison.png" /></p>
+<p><img alt="Separately calculated monomer/dimer SASA and area loss; missing positions remain missing." src="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/calculated_sasa_dimer_context.png" /></p>
+<p>1GGQ assembly 1 has <strong>118</strong> interchain heavy-atom residue contact pairs and <strong>51</strong> contacting residues per partner. Calculated total SASA loss is <strong>4,081.16 Å²</strong>; mean partner interface area is half that loss, <strong>2,040.58 Å²</strong> (1.40 Å probe; 1,920 sphere points/atom). 1G5Z uses the verified symmetry-generated dimer and exact construct correspondence. Unknown contacts/SASA stay <strong>null</strong>, distinct from false and zero. ESM-2 generated no protein structure.</p>
+<p>Exact source: <a href="https://github.com/francolinx/LymeScope/tree/aafe818a20ea025370cf4b65145a9684e80aaaef/sparkprep/experiments/stretch_v0.2.0_20261115T072916Z"><code>aafe818a20ea025370cf4b65145a9684e80aaaef</code></a>, release v0.2.1. <a href="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/SCIENCE_FINDINGS.md">Findings</a> · <a href="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/laptop_evidence_v1.json">Typed adapter</a> · <a href="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_comparison_v2/column_comparison.tsv">Current v2 columns</a> · <a href="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/results/full_panel_v1/residue_nll.tsv">Raw scores</a>. Raw-score SHA256: <code>b27d926285a8dc338abceba953229089be4f35fcba7c166c1a922be146a6317f</code>. The original scientific PNG/SVG figures are reused unchanged; earlier presentation assets remain below.</p>
 <h2>Start with the denominator</h2>
 <p><picture><source media="(prefers-reduced-motion: reduce)" srcset="../demo/v0.2.0/assets/coverage-evidence.png"><img src="../demo/v0.2.0/assets/coverage-evidence.gif" alt="Both columns show 100 percent agreement: column 1 has 30 of 30 observations; column 154 has one observation and 29 gaps." width="960"></picture></p>
 <p><strong>Actual saved statistics, animated originally for this project.</strong> Column 1 is identical at 30/30 coverage. Column 154 contains one observed N and 29 gaps. Column 173 similarly has one observed G. The percentage is correctly calculated from one observation; that is insufficient support for broad conservation in this panel. Both sparse columns are reference gaps and receive no invented 3D coordinates. <a href="../demo/v0.2.0/assets/coverage-evidence.png">Static alternative</a> · <a href="../sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/METHOD_AND_LIMITATIONS.md">Saved methods</a></p>
@@ -71,13 +105,12 @@
 <p><strong>Deposited assembly + computational proxy.</strong> Assembly 1 is the author/software-supported A/B dimer with an identity operator. Amber marks residues whose nearest other-chain C-alpha is at most 8 angstroms (49/162 per chain). This is a contact proxy, not measured solvent or antibody accessibility or a binding-site discovery. <a href="../demo/v0.2.0/assets/ospc-dimer.png">Static alternative</a> · <a href="../demo/v0.2.0/context.json">Checked assembly and mapping</a> · <a href="https://doi.org/10.1093/emboj/20.5.971">Original paper</a></p>
 <p><img alt="Alignment column 68 maps through Q07337 native position 67 to observed 1GGQ chain A Ser67, with 30 of 30 coverage and 66.7 percent modal agreement." src="../demo/v0.2.0/assets/residue-mapping.gif" /></p>
 <p><strong>Explicit saved correspondence.</strong> Alignment column 68 -&gt; Q07337 position 67 -&gt; observed 1GGQ A Ser67. <a href="../demo/v0.2.0/assets/residue-mapping.png">Static alternative</a> · <a href="../sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/alignment_to_structure.tsv">Frozen mapping</a></p>
-<p><img alt="Conceptual one-node versus two-node task distribution: 415 model calls versus disjoint shards of 208 and 207 calls, for the same 6305 masked examples. No timing is measured." src="../demo/v0.2.0/assets/task-shards.gif" /></p>
-<p><strong>Conceptual, unexecuted workflow.</strong> Whole-sequence shards preserve the same 6,305 examples and batching protocol. Dots illustrate task distribution; they encode no timing, bandwidth or speedup. <a href="../demo/v0.2.0/assets/task-shards.png">Static alternative</a> · <a href="../sparkprep/analysis/ospc_masked_v0.2.0/plans/workload.json">Locked workload</a></p>
+<p>The earlier batch-16 task animation is retained on disk as development history; it is not the current batch-8 venue workload.</p>
 </details>
 <p>All six assets are original renders from saved data or explicitly conceptual diagrams. <a href="../demo/v0.2.0/assets/manifest.json">Asset inventory, dimensions, sizes and hashes</a>. The offline demo defaults to static previews with deliberate play/stop controls.</p>
 <h2>What local AI supercomputing contributes</h2>
 <p>The completed biological baseline ran on the personal DGX Spark CPU. Separate event evidence demonstrates CIQ Fuzzball scheduling of a real PyTorch CUDA calculation on NVIDIA GB10 at Spark30, plus persistent Team 15 storage and reads of identical saved bytes on Spark29 and Spark30. These are infrastructure results, not scientific acceleration. <a href="../findings/phase-b-results.json">Saved event receipts</a> · <a href="../portable_results/index.html">Infrastructure viewer</a></p>
-<p>The prepared extension uses <strong>Meta FAIR's ESM-2 8M</strong> to score the original amino acid after masking exactly that residue. It preserves sequence identity, offsets, alignment mapping and contributor counts. Full-coverage columns define the primary agreement/NLL comparison. Leave-out analyses reuse per-sequence scores. The exact input needs <strong>6,305 masked examples / 415 scoring forwards</strong> at per-sequence batch size 16. Pilot and warm-up calls are separate.</p>
+<p>The personal-Spark pilot and full-panel inference are complete. The earlier laptop scorer and its fixtures remain preserved development work; the venue trial will reuse the published <strong>batch-8</strong> scorer and inputs.</p>
 <table>
 <thead>
 <tr>
@@ -99,8 +132,8 @@
 <td>Passed fixtures; not real inference</td>
 </tr>
 <tr>
-<td>ESM-2 masked scores and real-model pilot</td>
-<td><strong>Not yet measured</strong></td>
+<td>Personal-Spark ESM-2 masked scores and real-model pilot</td>
+<td>Completed; 16 published passing tests and full-data arithmetic audit</td>
 </tr>
 <tr>
 <td>Matched one-node / two-node scientific benchmark</td>
@@ -108,7 +141,7 @@
 </tr>
 </tbody>
 </table>
-<p><a href="../sparkprep/analysis/ospc_masked_v0.2.0/README.md">Scoring contract and implementation</a> · <a href="../sparkprep/analysis/ospc_masked_v0.2.0/STAGING_REQUEST.md">Bounded model-staging request</a> · <a href="CLAIM_VERIFICATION.md">Claim verification</a></p>
+<p>The prepared event trial is Spark30: <strong>6,305 masks / 805 calls</strong>; concurrent Spark29 + Spark30: <strong>3,156 / 3,149 masks</strong>, <strong>403 / 402 calls</strong>. Independent Fuzzball GPU tasks require physical-node evidence, verified transfer, current runtime and successful venue pilots. <a href="../workflows/ospc-spark-v0.2.1/VENUE_HANDOFF.md">Exact venue handoff</a> · <a href="../sparkprep/experiments/stretch_v0.2.0_20261115T072916Z/VENUE_CONTRACT.md">Scientific contract</a> · <a href="CLAIM_VERIFICATION.md">Claim verification</a>. The six-file model-only tar remains on the personal Spark outside Git; no redownload is needed or authorized here.</p>
 <h2>A history of making biology visible</h2>
 <p><img alt="Accessible timeline from experimental structures in 1958 and NMR in the 1980s through computational methods, CASP, AlphaFold, Meta FAIR ESMFold and LymeScope in 2026. Full chronological text follows." src="../demo/v0.2.0/assets/biology-timeline.svg" /></p>
 <table>
@@ -157,11 +190,11 @@
 </tr>
 <tr>
 <td>2026</td>
-<td>LymeScope integrates existing evidence into an accessible local workflow; CPU OspC baseline complete, model scoring pending.</td>
+<td>LymeScope integrates existing evidence into an accessible local workflow; CPU baseline and personal-Spark masked scoring complete; event benchmark pending.</td>
 </tr>
 </tbody>
 </table>
-<p>Prediction does not replace experiments. No universal "40-60% accuracy" scale or cross-era performance percentage is used. ESMFold history is context: LymeScope's pending scorer is <strong>ESM-2</strong>, not ESMFold.</p>
+<p>Prediction does not replace experiments. No universal "40-60% accuracy" scale or cross-era performance percentage is used. ESMFold history is context: LymeScope's completed scorer is <strong>ESM-2</strong>, not ESMFold.</p>
 <h2>A credible future for digitized biology</h2>
 <p>Computational protein research may help formulate and test ideas for medicines, targeted biological sensing, drug delivery, biomanufacturing, environmental remediation, pandemic preparedness, and molecular interactions relevant to cancer or neurodegenerative disease. These possibilities span different methods and experiments; they are not capabilities delivered by this OspC atlas. Structure prediction and open resources can support hypotheses; function, delivery, specificity and safety require their own validation. <a href="https://www.ebi.ac.uk/about/news/technology-and-innovation/alphafold-200-million/">EMBL-EBI research context</a> · <a href="https://www.nature.com/articles/s41586-024-07487-w">Interaction-model research</a></p>
 <p>LymeScope's contribution today is narrower and inspectable: connect an observation to its supporting sequences, coordinates, sources and limitations.</p>
@@ -171,5 +204,5 @@
 <li><a href="SOURCE_REFERENCES.md">Sources and attribution</a>, <a href="CLAIM_VERIFICATION.md">claims and evidence</a>, <a href="validation.json">validation receipt</a>.</li>
 <li>Frozen inputs, outputs and manifests remain at <a href="../sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/">v0.1.0</a>. New presentation/scorer code uses v0.2.0. Historical receipts are preserved.</li>
 <li>Model weights are excluded. Downloads, execution and main publication need separate approval. No project license is invented; public visibility is not third-party redistribution permission.</li>
-<li>Submission: <strong>November 15, 2026, noon Central</strong>. Live demo: <strong>1:00 PM</strong>, five minutes maximum. Research cutoff: <strong>10:30 AM Central</strong>. The submission stands on completed CPU evidence regardless of later GPU results.</li>
+<li>Submission: <strong>November 15, 2026, noon Central</strong>. Live demo: <strong>1:00 PM</strong>, five minutes maximum. Research cutoff: <strong>10:30 AM Central</strong>. The submission stands on completed CPU and personal-Spark GPU evidence; event timing remains optional.</li>
 </ul></main></html>

@@ -1,5 +1,8 @@
 # LymeScope demo — five minutes
 
+> Current measured-result script: [submission/DEMO_SCRIPT.md](../../submission/DEMO_SCRIPT.md). The unrun-model script below is a preserved historical checkpoint.
+
+
 Primary local page: `demo/v0.2.0/index.html`. The original viewer is linked at the top. Keep `DEMO_4M30S.md` as the shorter existing script; this version adds the targeted biological context. No live model, cluster or internet connection is needed. Actual browser rendering still requires the normal approved browser check; do not infer it from unit tests.
 
 | Time | Action and factual narration |

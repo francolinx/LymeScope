@@ -60,10 +60,12 @@ class OverlayTests(unittest.TestCase):
         self.assertEqual(ref["historical_deposited_correspondence"][0]["pdbx_db_accession"], "O31117")
         self.assertTrue(all(r["nearest_other_chain_CA_A"] is None for r in ref["mapping"]))
 
-    def test_generated_data_matches_builder_and_keeps_unrun_status(self):
+    def test_generated_data_matches_builder_and_published_spark_adapter(self):
         saved = json.loads((__import__('pathlib').Path(__file__).parent / "context.json").read_text())
-        self.assertEqual(saved, self.data)
-        self.assertEqual(saved["model_scoring"], "NOT RUN")
+        from spark_adapter import load_evidence
+        expected = dict(self.data, spark_science=load_evidence(self.data), model_scoring='COMPLETED_PERSONAL_SPARK')
+        self.assertEqual(saved, expected)
+        self.assertEqual(saved['spark_science']['event_benchmark'], 'NOT_RUN')
 
 
 if __name__ == "__main__":

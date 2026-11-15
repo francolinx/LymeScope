@@ -1,5 +1,7 @@
 # LymeScope: an inspectable OspC comparison
 
+> Current submission with completed personal-Spark results: [submission/ONE_PAGER.md](../../submission/ONE_PAGER.md). The draft below is a preserved historical checkpoint.
+
 **Submission draft — completed evidence only.** Repository: https://github.com/francolinx/LymeScope
 
 LymeScope makes a small protein comparison inspectable from frozen inputs through saved results. Our question is narrow: where are residues conserved within this particular OspC panel, how many sequences support each observation, and which positions correspond to an existing experimental structure?

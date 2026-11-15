@@ -16,6 +16,7 @@ class Element {
 }
 const ids=new Map();
 for(const id of ['context','column','column-detail','mapping','regions','processing','assembly','proxy-note','correspondence','reference-summary','full-count','observed-count','intersection-count','previous','next','reference','research-observation','scene','scene-image','scene-caption','motion'])ids.set(id,new Element());
+for(const id of ['model-observation','science-detail','sequence-scores'])ids.set(id,new Element());
 ids.get('context').textContent=JSON.stringify(context);
 const buttons=[154,173].map(column=>{const x=new Element('button');x.dataset.column=String(column);return x;});
 const document={getElementById:id=>{assert(ids.has(id),id);return ids.get(id);},createElement:tag=>new Element(tag),querySelectorAll:selector=>{assert.equal(selector,'[data-column]');return buttons;}};
@@ -44,4 +45,23 @@ buttons[0].events.click();assert.match(text(ids.get('column-detail')),/1\/30 cov
 assert.match(text(ids.get('column-detail')),/alignment-only/);
 assert(!html.includes('__CONTEXT_JSON__'));
 assert(!/<(?:script|link|img)[^>]*(?:src|href)=["']https?:/i.test(html));
-console.log('PASS: offline UI-handler fixtures (population counts, navigation, bounds, reference switch, low coverage, unrun labels). Browser rendering NOT tested.');
+assert.equal(ids.get('sequence-scores').rows.length,30);
+assert.match(text(ids.get('science-detail')),/unknown/);
+assert.match(text(ids.get('science-detail')),/3.17222 nats/);
+assert.match(text(ids.get('science-detail')),/not eligible/);
+ids.get('column').events.change({target:{value:58}});
+assert.match(text(ids.get('science-detail')),/3.96498 nats/);
+assert.match(text(ids.get('science-detail')),/yes, observed/);
+assert.match(text(ids.get('science-detail')),/79.11/);
+ids.get('column').events.change({target:{value:177}});
+assert.match(text(ids.get('science-detail')),/4.01135 nats/);
+assert.match(text(ids.get('science-detail')),/no, observed/);
+assert.match(text(ids.get('science-detail')),/loss 0.00/);
+assert.match(text(ids.get('science-detail')),/1GGQ A/); // secondary map never relabels primary values
+for(const c of context.spark_science.evidence.columns){
+  ids.get('column').events.change({target:{value:c.alignment_column}});
+  const display=text(ids.get('science-detail'));
+  assert(display.includes(c.mean_masked_nll_nats.toFixed(5)+' nats'));
+  if(c.reference_1GGQ_A_contact_4_5_A===null)assert.match(display,/contact.*unknown/);
+}
+console.log('PASS: offline UI handlers, all 218 saved NLLs, 30 sequence rows, null/false/zero, navigation and reference switching. Browser rendering NOT tested.');

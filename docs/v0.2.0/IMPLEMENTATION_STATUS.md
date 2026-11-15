@@ -1,5 +1,7 @@
 # Incremental implementation status
 
+> Current milestone: personal-Spark commit `aafe818a20ea025370cf4b65145a9684e80aaaef` is integrated into the existing feature branch. Its v2 adapter and original figures feed the demo. See [integration status](../../submission/SPARK_INTEGRATION.md). The pre-milestone status below is historical; personal-model NOT RUN statements are superseded.
+
 Baseline preserved: `8058846c05d4dccd60117dd29ef784af43570418`. Work is isolated on `feature/ospc-masked-scoring-v0.2.0`; main and all tracked v0.1.0 inputs, outputs, manifests and viewer files remain unchanged. No model downloads, GPU runs, cluster calls, driver changes, package installs, repository recovery or backup work occurred.
 
 ## Implemented locally

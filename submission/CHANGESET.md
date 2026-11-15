@@ -1,5 +1,7 @@
 # Exact local change inventory
 
+> Historical inventory for commit `36ee4d9`. The later Spark integration is recorded in [SPARK_INTEGRATION.md](SPARK_INTEGRATION.md); this original inventory is preserved.
+
 Baseline: `8058846c05d4dccd60117dd29ef784af43570418`. Branch: `feature/ospc-masked-scoring-v0.2.0`.
 
 Only the root README changes an existing tracked file. All other listed files are new versioned implementation, presentation or submission artifacts. Frozen evidence, old receipts, application code and main are unchanged.

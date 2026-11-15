@@ -7,17 +7,17 @@ Target: November 15, 2026, **12:00 PM Central** submission; **1:00 PM** live dem
 - [x] Root README opening, research question, completed evidence, limits and local-run links.
 - [x] Six original GIFs, static PNG alternatives, accessible SVG timeline and searchable text.
 - [x] Separate versioned demo overlay; frozen viewer and scientific outputs unchanged.
-- [x] Model and scaling placeholders explicit; no fabricated benchmark.
+- [x] Completed personal-Spark NLL and original scientific figures integrated; event timing remains NOT RUN.
 - [ ] Project lead approves the personal statement before publication.
 - [ ] Organizer confirms eligibility/pre-existing work/personal hardware/AI-assistance questions and submission destination.
 - [ ] Presenter performs final browser check and rehearsal; automation rendering remains unavailable until reported otherwise.
 - [ ] Main publication approval, then ordinary push/readback; no push performed here.
 - [ ] Submit through the actual organizer channel; no submission performed here.
 
-Validation results are in [validation.json](validation.json). Public visibility was checked during this session; visibility was not changed. Recheck at actual publication if delayed. No project license has been selected.
+The original validation receipt is preserved in [validation.json](validation.json); current integration checks are in [spark-integration-validation.json](spark-integration-validation.json). Public visibility was checked in the prior session and was not changed. Recheck at actual publication. No project license has been selected.
 
 PDF: **NOT GENERATED**. Existing Anaconda has Pillow/Markdown, but not ReportLab, PyMuPDF or Poppler preview tools. The approved fallback is Markdown; no packages are installed to manufacture a PDF. Layout as a single printed page remains a presenter/export check.
 
-Awaiting a separately authorized personal-Spark/event experiment: exact model staging and compatible runtime, Gate B pilot, then matched scientific runs and ingestion. Model staging is capped at 100 MiB for five pinned files in the ignored project-local cache. The prepared local scientific extension and workflow files do not grant permission to run them.
+Personal-Spark inference is complete at published commit `aafe818a20ea025370cf4b65145a9684e80aaaef`. Event access/transfer, current runtime, placement and pilots remain separate gates. The prepared [venue handoff](../workflows/ospc-spark-v0.2.1/VENUE_HANDOFF.md) reuses the six-file model cache; no new download or job is authorized by preparation.
 
-Manual visual checklist: open local demo, select column 1 then 154/173, verify 30/30 versus 1/30, choose 68 and its reference, switch 1G5Z, play/stop each scene, narrow the window, check legends/table scrolling, and verify all model states still read Not yet measured/NOT RUN. Open [README preview](README_PREVIEW.html) separately; it is not proof of GitHub's renderer.
+Manual visual checklist: open local demo and all three scientific figures; select 58 (NLL 3.96498, contact yes, calculated loss 79.11 Å²), 177 (NLL 4.01135, contact no, zero sampled loss), and 154/173 (1/30, unknown structure, no rank). Switch 1G5Z without relabeling primary 1GGQ values. Check table scrolling, narrow layout and play/stop. Only the event benchmark remains NOT RUN. Browser rendering/screenshot remain NOT VERIFIED: “The browser access host is unavailable.” Open [README preview](README_PREVIEW.html) separately; it is not proof of GitHub rendering.

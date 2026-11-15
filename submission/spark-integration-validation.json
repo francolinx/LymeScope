@@ -1,0 +1,92 @@
+{
+  "checked_at": "2026-11-15T08:24:38.892307+00:00",
+  "source_commit": "aafe818a20ea025370cf4b65145a9684e80aaaef",
+  "local_model_inference_runs": 0,
+  "cluster_calls": 0,
+  "browser_launch": "NOT_CONFIRMED",
+  "browser_rendering": "NOT_VERIFIED",
+  "browser_error": "The browser access host is unavailable",
+  "published_spark_tests": {
+    "passed": 16,
+    "locally_rerun_inference": false
+  },
+  "unavailable_tests": [
+    {
+      "test": "ScienceTests.test_calculated_sasa_analytical_spheres",
+      "status": "NOT_RUN",
+      "prior_attempt": "ModuleNotFoundError: No module named resource",
+      "reason": "Published Linux source imports Unix resource; unavailable on Windows"
+    },
+    {
+      "test": "TorchMaskTests.test_mask_single_original_only",
+      "status": "NOT_RUN",
+      "reason": "torch absent"
+    },
+    {
+      "test": "TorchMaskTests.test_full_vocabulary_nll_known_uniform",
+      "status": "NOT_RUN",
+      "reason": "torch absent"
+    }
+  ],
+  "checks": [
+    {
+      "name": "adapter_and_overlay",
+      "exit_code": 0,
+      "expected_tests": 15,
+      "command": [
+        "C:/Python314/python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_overlay",
+        "test_spark_adapter"
+      ]
+    },
+    {
+      "name": "published_available_cpu_science",
+      "exit_code": 0,
+      "expected_tests": 13,
+      "command": [
+        "C:\\Users\\franc\\anaconda3\\python.exe",
+        "-B",
+        "-c",
+        "import unittest,sys;from test_science import ScienceTests;names=[n for n in unittest.defaultTestLoader.getTestCaseNames(ScienceTests) if n!='test_calculated_sasa_analytical_spheres'];suite=unittest.TestSuite(ScienceTests(n) for n in names);r=unittest.TextTestRunner(verbosity=2).run(suite);sys.exit(not r.wasSuccessful())"
+      ]
+    },
+    {
+      "name": "presentation_and_links",
+      "exit_code": 0,
+      "expected_tests": 5,
+      "command": [
+        "C:\\Users\\franc\\anaconda3\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_presentation"
+      ]
+    },
+    {
+      "name": "all_column_ui_fixtures",
+      "exit_code": 0,
+      "expected_tests": null,
+      "command": [
+        "node",
+        "test_ui_handlers.cjs"
+      ]
+    }
+  ],
+  "venue_task_specification": "PASS_OFFLINE_ONLY",
+  "preservation": {
+    "imported_science_unchanged": true,
+    "frozen_baseline_unchanged": true,
+    "main_unchanged": true
+  },
+  "all_available_checks_passed": true,
+  "model_downloads": 0,
+  "secret_pattern_review": {
+    "files": 30,
+    "matches": 0
+  }
+}

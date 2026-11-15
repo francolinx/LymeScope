@@ -1,5 +1,7 @@
 # View saved LymeScope results
 
+> Current demo: [demo/v0.2.0/index.html](demo/v0.2.0/index.html) includes the completed personal-Spark 6,305-mask experiment and original scientific figures. Keep repository directories together; no model, server or network is required to view saved results. Browser rendering is NOT VERIFIED: the normal tool returned “The browser access host is unavailable.” The frozen viewer and historical receipts below remain available.
+
 ## Completed personal-Spark analysis
 
 Open [sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/index.html](sparkprep/analysis/ospc_comparison_v0.1.0/results_v0.1.0/index.html) directly in Chrome or Edge. Keep the completed results directory intact. Its data and viewer code are embedded; the scientific tables and method notes are linked locally. No server, package installation, cluster connection, model download or new alignment run is needed.

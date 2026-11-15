@@ -12,11 +12,16 @@
 | Column 68 → native 67 → A Ser67 | Saved explicit mapping; residue and coordinates checked | One experimental correspondence; 30/30 coverage, 66.7% agreement |
 | Signal/tether/construct/observed regions | Saved annotation evidence and CIF mapping | Predicted processing boundary; tether candidate, not measured removal/flexibility |
 | Secondary 1G5Z | Exact unique 164-residue match, atom/residue/author-number checks | Mapped reference only; no unvalidated second-chain contact rendering |
-| 6,305 masks and 415 model calls | Actual FASTA inventory; per-sequence ceil at batch 16 | Locked workload counts; actual successful calls still NOT RUN |
-| Task-shard animation | Deterministic plan, whole-sequence split 208/207 | Conceptual distribution; no speedup/time encoding |
+| 6,305 masks and 805 scoring calls | Published personal-Spark full-panel timing receipt; per-sequence batch 8 | Actual successful inference; three warm-up calls separate |
+| Earlier batch-16 task animation | Preserved development artifact; removed from current selector/README | Not the current venue protocol |
 | GB10 CUDA and shared storage | Existing event receipts identify Spark30 calculation and Spark29/30 reads | Infrastructure only, not scientific scaling |
 | Scorer correctness | Offline fixture tests | Gate A only; not real inference |
-| ESM model results, pilot, one/two-node scientific benchmark | No completed receipts | NOT MEASURED / NOT RUN |
+| Personal-Spark ESM-2 pilot/full panel | Commit aafe818a20ea025370cf4b65145a9684e80aaaef, release v0.2.1 | Completed; 9.909294 s warm scoring is not event or full-workflow timing |
+| Spearman rho 0.134696 and 239 sensitivity designs | Current v2 columns and joint sensitivity summary; F=202 | Descriptive correlation; overlapping sensitivity, not significance/CI |
+| 4.5 Å heavy-atom contacts | Published checked 1GGQ and symmetry-generated 1G5Z assemblies | Distinct from the earlier 8 Å C-alpha proxy |
+| Calculated SASA | Separate saved CPU calculation, explicit radii/probe/resolution | Static incomplete constructs; not measured physiological accessibility |
+| Null contact/SASA fields | v2 typed adapter plus local rejection/UI tests | Unknown is not false or zero; no fabricated coordinates |
+| Event one/two-node scientific benchmark | Prepared exact batch-8 contract; no event scientific receipt | NOT RUN; no speedup claim |
 | Historical milestones | Linked primary/institutional sources | No universal historical accuracy percentage |
 | Future applications | Explicit prospective research framing | Not current LymeScope features or clinical promises |
 | Personal motivation | Proposed wording submitted to lead | DRAFT until explicitly approved; no invented personal illness |
